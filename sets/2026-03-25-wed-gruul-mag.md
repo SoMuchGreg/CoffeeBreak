@@ -16,7 +16,7 @@
 **Shamans (4):** Tymoti, Ebonybolt, Lynelen, Pergatori
 
 **Absent (2):** Rhoator, Tonsen
-**Bench (2):** Gresac, Keatala
+**Bench (2):** Gresac, Roossy/Keatala
 
 **Header stats:** Melee 7, Ranged 9, Healers 7
 
@@ -25,7 +25,7 @@
 | Player         | Bench count (cumulative) |
 |----------------|--------------------------|
 | Gresac         | 1                        |
-| Keatala        | 1                        |
+| Roossy/Keatala | 1                        |
 
 ## Actual Roster (25-man)
 
@@ -79,4 +79,4 @@
 - Eselman confirmed feral DPS here (not tanking or healing).
 - CodeHunt still on hunter at this date; later switched to healer shaman Rainbound.
 - CodeHunt sometimes signs up under his old hunter name even when playing Rainbound — watch for this in future screenshots.
-- First recorded bench: Gresac and Keatala.
+- First recorded bench: Gresac and Roossy/Keatala.

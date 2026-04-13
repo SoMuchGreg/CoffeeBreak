@@ -19,7 +19,7 @@ All other priority-2 and priority-3 players: 0 times benched from Karazhan.
 
 | Player            | Times benched | Dates benched |
 |-------------------|---------------|---------------|
-| Keatala           | 2             | 25.03, 12.04  |
+| Roossy/Keatala    | 2             | 25.03, 12.04  |
 | Gresac            | 1             | 25.03         |
 | Heligeman/Fugleman | 1             | 12.04         |
 | OomToDoom         | 1             | 12.04         |

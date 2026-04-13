@@ -38,16 +38,8 @@ CoffeeBreak's purpose, directory structure, and key file pointers are documented
 
 > ⚠️ **Do NOT read `changelog/*.md` during roster formation.** The changelog is a historical audit trail of rule transitions, not a source of active rules. Reading it risks applying superseded wordings or transition-specific notes that are no longer load-bearing. Active rules live in `rules/`, `config/`, and `reference/`. See `reference/file-operations-manual.md` → "Changelog scope rule" for the full policy.
 
-1. Read `config/project.md` for raid schedule, officers, terminology, and settings.
-2. Read all files in `rules/` for the current rule set.
-3. Read all existing files in `sets/` (in order) for bench history and predecessor context.
-4. Parse the Discord signup screenshot provided by the user.
-5. **Cross-reference every player name against `rules/04-player-specs.md`** to identify class. But **always check the spec icon in the signup screenshot** — it shows the player's chosen spec for THIS raid and takes precedence over any previously recorded spec/role. Players can change specs between raids.
-6. For icon/color reference, read `reference/class-colors-and-spec-icons.md` and compare against reference images in `reference/icons/`.
-7. If any player's class/spec is unknown after cross-referencing, ask before proceeding.
-8. Generate the roster, verifying every rule is satisfied.
-9. List who is benched (if applicable) and why they were chosen for the bench.
+For every roster-generation task, follow `reference/file-operations-manual.md`. That document is the **single source of truth** for the end-to-end workflow (reading list, parsing, roster building, presentation, set-writing). Do not paraphrase or summarize its steps here or anywhere else — read it fresh each session. The two events most relevant to roster generation are `"Event: New signup screenshot received"` and `"Event: User asks me to form raid groups"`; start from whichever matches the user's trigger.
 
 ## File operations manual
 
-See `reference/file-operations-manual.md` for the complete guide on which files to read and update for every type of interaction (new signup, rule change, player info, etc.), including a dependency map and checklist.
+`reference/file-operations-manual.md` is the comprehensive guide for every type of interaction (new signup, rule change, player info, join/leave, etc.), including the canonical reading list, the file dependency map, and the quick-checklist. If a workflow question isn't answered by the rule files themselves, the manual has the answer.

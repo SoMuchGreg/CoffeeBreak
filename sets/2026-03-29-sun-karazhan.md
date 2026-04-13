@@ -44,7 +44,7 @@
 | Eselman      | OT     | Druid   |
 | BaeBay       | DPS    | Rogue   |
 | Lynelen      | DPS    | Shaman  |
-| Keatala      | Healer | Druid   |
+| Roossy/Keatala | Healer | Druid |
 | OomToDoom    | DPS    | Mage    |
 | Dwarfytron   | DPS    | Hunter  |
 | Ebonybolt    | DPS    | Shaman  |

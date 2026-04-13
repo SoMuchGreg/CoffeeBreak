@@ -75,9 +75,9 @@ This means every team **must have at least 1 Paladin tank** (for AoE) AND **at l
 
 - **1 Enhancement Shaman per team** (if possible — soft rule, depends on signups)
 - **Distribute evenly across the 3 teams:** Hunters, Mages, Fury Warriors, and Warlocks
-- **Pergatori** (Elemental Shaman) goes on the team with the most casters
-- **Yxanb** (Feral Druid) goes on the team with the most physical/melee DPS
-- **Jar** (Balance Druid) goes on the most balanced team (buffs both spell crit via Moonkin Aura and melee hit via Improved Faerie Fire)
+- **Elemental Shamans** go on the team with the most casters
+- **Feral Druids playing DPS** (not tanking) go on the team with the most physical/melee DPS
+- **Balance Druids** go on the most balanced team
 
 ### Under-cap team count
 
@@ -86,10 +86,21 @@ The number of Karazhan teams depends on the signup count. The default raid forma
 | Signups | Action |
 |---------|--------|
 | **≤ 24** | Form **2 teams** (20 raid spots). Excess signups beyond 20 are benched even though signups are under the 30-spot cap. Selection of who benches follows the standard fair-rotation rules in `rules/02-bench-rotation.md`. This is the one case where the "everyone plays under-cap" default in General principles is constrained by Karazhan's per-team structural requirement. |
-| **25 – 26** | Ambiguous case. **Ask the user** before proceeding — they will choose between (a) forming 2 teams and benching 5–6 players or (b) recruiting outside-of-guild players to fill a 3rd team. |
-| **27 – 29** | Form **3 teams** (30 spots). **Recruit outside-of-guild players** to fill the remaining DPS and Healer slots. **Do NOT recruit outside tanks** — tank slots must always be filled by guild members. |
+| **25 – 26** | Ambiguous case. **Ask the user** before proceeding — they will choose between (a) forming 2 teams and benching 5–6 players or (b) recruiting outside-of-guild players (PUGs) to fill a 3rd team. If option (b) is chosen, follow "Recording outside recruits (PUGs)" below. |
+| **27 – 29** | Form **3 teams** (30 spots). **Recruit outside-of-guild players (PUGs)** to fill the remaining DPS and Healer slots — follow "Recording outside recruits (PUGs)" below. **Do NOT recruit outside tanks** — tank slots must always be filled by guild members. |
 | **30** | Form 3 full teams. Standard case, no special handling. |
 | **31+** | Over-cap. Normal benching rules from `rules/02-bench-rotation.md` apply. |
+
+#### Recording outside recruits (PUGs)
+
+When outside recruitment is triggered (the 27–29 case above, or the 25–26 case if the user chooses option b), follow these conventions:
+
+- **Name in the roster table:** literally `PUG Heal` or `PUG DPS` — whichever role they fill. Do not use a real character name. PUGs have **no persistent identity** in this project.
+- **Do not add PUGs to `rules/04-player-specs.md`.** The player roster tracks guild members only. PUGs never appear in `rules/04`.
+- **Do not count PUGs in `derived/bench-history.md`.** Fair bench rotation applies to guild members only. PUGs never appear in `derived/bench-history.md`.
+- **No cross-raid identity.** Even if the same real person returns as a PUG for multiple raids, record them as a fresh anonymous `PUG Heal` / `PUG DPS` entry each time. This project has no cross-raid knowledge of PUG identity and does not attempt to build one.
+- **Team placement — PUGs concentrated on a single team.** Of the three Karazhan teams, **two must be fully staffed with guild members** (10 guild members each). The **remaining team** (whichever one the raid leader designates) contains the leftover guild members plus the PUGs. Do not spread PUGs across multiple teams — concentrate them on one team so the other two stay fully internal.
+- **Finding the PUGs is the raid leader's job**, not Claude's. Claude's role is to (a) detect when this case applies, (b) propose the "2 all-guild teams + 1 mixed team" composition, (c) flag to the user the exact number of PUG DPS and PUG Heal slots that need to be filled, and (d) record the PUGs in the set file under the generic `PUG ...` names after the raid leader confirms the raid will proceed.
 
 #### Insufficient-tanks override
 

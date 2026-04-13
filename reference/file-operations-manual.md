@@ -8,20 +8,23 @@ Step-by-step guide for when to read and update each file, organized by trigger e
 
 ### Step 1 — Read (before parsing)
 
+This table is the **canonical reading list** for every roster-generation task. Do not rely on any partial summary elsewhere — read every file listed here.
+
 | File | Why |
 |------|-----|
-| `rules/04-player-specs.md` | Know existing players' classes, specs, raid spot priority, and notes |
-| `reference/class-colors-and-spec-icons.md` | Identify unknown players by icon/color |
-| `reference/icons/specs/*.jpg` | Compare spec icons side-by-side if needed |
-| `reference/icons/classes/*.png` | Compare class icons side-by-side if needed |
-| `derived/bench-history.md` | Know who has been benched most/least for fair rotation |
-| `rules/01-raid-compositions.md` | Know required tank/healer/DPS counts |
-| `rules/02-bench-rotation.md` | Know bench rules, raid spot priority logic, and selection algorithm |
-| `rules/03-player-constraints.md` | Know must-together, must-not-together, availability constraints |
-| `reference/party-group-composition-guide.md` | Comprehensive TBC raid composition reference: buff scope, Shaman totems, raid-wide debuffs, per-spec target counts (§8 — used by the 25-man fair-rotation tiebreaker in `rules/02-bench-rotation.md`). **§3, §4, §9 (party-group templates and assignment framework) are not yet in use — see the note below.** |
+| `config/project.md` | Raid schedule, terminology, active settings |
+| `rules/01-raid-compositions.md` | Composition targets, dual-spec flex rule, under-cap behavior, Resto Druid cap |
+| `rules/02-bench-rotation.md` | Selection algorithm, raid spot priority, fair rotation, tiebreakers |
+| `rules/03-player-constraints.md` | Must-together / must-not-together / availability / loot / enchanter constraints |
+| `rules/04-player-specs.md` | Existing players' classes, specs, raid spot priority, notes |
+| `derived/bench-history.md` | Cumulative bench counts per player per raid location — used for fair-rotation decisions |
+| `reference/class-colors-and-spec-icons.md` | Class colors and spec icon reference for parsing screenshots |
+| `reference/icons/specs/*.jpg` | Spec icon reference images (compare side-by-side when unsure) |
+| `reference/icons/classes/*.png` | Class icon reference images (compare side-by-side when unsure) |
+| `reference/raid-composition-guide.md` | Comprehensive TBC raid composition reference: buff scope, Shaman totems, raid-wide debuffs, per-spec target counts (§8 — used by the 25-man fair-rotation tiebreaker in `rules/02-bench-rotation.md`). **§3, §4, §9 (party-group templates and assignment framework) are not yet in use — see the note below.** |
 | All files in `sets/` | Predecessor context, especially recent bench history |
 
-> **Party-group assignments are NOT currently produced.** Inside `reference/party-group-composition-guide.md`, only **§3 (Optimal Party Group Templates)**, **§4 (Karazhan Group Composition)**, and **§9 (Practical Group Assignment Framework)** are party-group-specific — those three sections are **future reference material only**. Do not apply them when forming a roster, and do not produce party-group (5-man sub-group) breakdowns inside any set file. The rest of that guide (§1, §2, §5, §6, §7, §8) is canonical reference material in active use, and §8 in particular is the canonical source for the 25-man fair-rotation tiebreaker. When the user formalizes party-group rules (see `config/project.md` → "What's next"), §3, §4, and §9 will become active and this note can be removed.
+> **Party-group assignments are NOT currently produced.** Inside `reference/raid-composition-guide.md`, only **§3 (Optimal Party Group Templates)**, **§4 (Karazhan Group Composition)**, and **§9 (Practical Group Assignment Framework)** are party-group-specific — those three sections are **future reference material only**. Do not apply them when forming a roster, and do not produce party-group (5-man sub-group) breakdowns inside any set file. The rest of that guide (§1, §2, §5, §6, §7, §8) is canonical reference material in active use, and §8 in particular is the canonical source for the 25-man fair-rotation tiebreaker. When the user formalizes party-group rules (see `config/project.md` → "What's next"), §3, §4, and §9 will become active and this note can be removed.
 
 ### Step 2 — Parse the screenshot
 
@@ -70,7 +73,7 @@ Same as above, but:
 |------|----------------|
 | The relevant `rules/*.md` file | Add/modify the rule |
 | `changelog/*.md` | **Create entry** documenting what changed and when |
-| `config/project.md` | Update if it affects raid schedule, officers, or settings |
+| `config/project.md` | Update if it affects raid schedule, terminology, or settings |
 | `CLAUDE.md` | Update if it affects the workflow process |
 
 ### Then check:
@@ -136,6 +139,24 @@ The only legitimate reasons to read a changelog entry are: the user explicitly a
 
 ---
 
+## Event: User renames a player
+
+(e.g., "rename Abc to Xyz" or "Iop now goes by Iop/Jkl")
+
+### Update:
+
+| File | What to update |
+|------|----------------|
+| `rules/04-player-specs.md` | Update the `Player` column to the new canonical name. Update the `Character(s)` column to match. If the old name should remain discoverable for cross-referencing older Discord screenshots, add a brief *"Previously known as X"* note in the `Notes` column. |
+| `derived/bench-history.md` | Update every row that references the old player name to the new canonical name. This is derived data, not a historical record — normalize it, don't preserve the old label. |
+| `sets/*.md` | Update every historical set that references the old name, wherever it appears (signup lists, roster tables, bench tables, Notes sections). A pure name normalization doesn't violate the sets-are-immutable principle — it updates the label without changing any factual content. |
+
+### Afterwards:
+- **Do not write a changelog entry.** Player renames are per-player data changes, not rule changes, and per the "Changelog scope rule" above, player data never appears in changelogs.
+- **Verify completeness** by running `Grep <old_name>` across the whole project. The only legitimate remaining hit should be the optional alias note in `rules/04-player-specs.md` (if you added one). Any other hit is a missed reference that needs fixing.
+
+---
+
 ## Event: A player joins or leaves the guild
 
 ### Update:
@@ -174,7 +195,7 @@ INPUTS for generating a set:
 REFERENCE for parsing screenshots and raid composition decisions:
   ├── reference/class-colors-and-spec-icons.md       ← parsing screenshots (class colors, spec icons)
   ├── reference/icons/**/*                            ← parsing screenshots (icon image files)
-  └── reference/party-group-composition-guide.md      ← TBC raid composition reference (§8 used by tiebreaker)
+  └── reference/raid-composition-guide.md      ← TBC raid composition reference (§8 used by tiebreaker)
 
 OUTPUTS:
   ├── sets/*.md                    ← actual sets, one per raid night (each set is also INPUT for the next)

@@ -50,7 +50,7 @@ This tiebreaker is strictly **within** fair rotation: it never overrides a candi
 
 #### 25-man raids
 
-The composition target for any 25-man raid is the **"Quick Reference: Number of Each Spec Typically Desired (25-Man Raid General Guidelines)"** table in `reference/party-group-composition-guide.md` § 8. Refer to that table directly — do not duplicate it here (single source of truth).
+The composition target for any 25-man raid is the **"Quick Reference: Number of Each Spec Typically Desired (25-Man Raid General Guidelines)"** table in `reference/raid-composition-guide.md` § 8. Refer to that table directly — do not duplicate it here (single source of truth).
 
 Section 8 lists each spec with a **range** (e.g., `Enhancement Shaman 1-2`, `Restoration Druid 1-2`, `BM Hunter 2-4`). A spec's current representation in the proposed roster is classified as:
 
@@ -82,7 +82,7 @@ When fair rotation leaves a tie among Karazhan benching candidates, apply this *
 
 Note that this tier may require an iterative pass: you may need to tentatively assign teams, identify the over-stacked picks, then re-check after each bench decision.
 
-**Tier 2 — 25-man class desirability.** When Tier 1 doesn't break the tie, prefer to **keep** the candidate whose class has the highest combined upper-bound count in `reference/party-group-composition-guide.md` § 8 "Quick Reference: Number of Each Spec Typically Desired (25-Man Raid General Guidelines)". Compute each tied candidate's per-class score by **summing the upper bounds of every Section 8 row that belongs to the same class** (e.g., Warlock = Destruction's 5 + Affliction's 1 = 6; Mage = Fire/Arcane's 2 = 2). Rank the tied candidates by that score and keep the highest. The reasoning: classes with higher 25-man target counts are higher-impact in general, and Karazhan has no per-spec target table of its own, so 25-man Section 8 acts as a secondary desirability signal.
+**Tier 2 — 25-man class desirability.** When Tier 1 doesn't break the tie, prefer to **keep** the candidate whose class has the highest combined upper-bound count in `reference/raid-composition-guide.md` § 8 "Quick Reference: Number of Each Spec Typically Desired (25-Man Raid General Guidelines)". Compute each tied candidate's per-class score by **summing the upper bounds of every Section 8 row that belongs to the same class** (e.g., Warlock = Destruction's 5 + Affliction's 1 = 6; Mage = Fire/Arcane's 2 = 2). Rank the tied candidates by that score and keep the highest. The reasoning: classes with higher 25-man target counts are higher-impact in general, and Karazhan has no per-spec target table of its own, so 25-man Section 8 acts as a secondary desirability signal.
 
 If both Tier 1 and Tier 2 leave the tie unresolved (e.g., the tied candidates share the same class, or their classes have equal Section 8 sums), fall through to the final fallback below (alphabetical).
 

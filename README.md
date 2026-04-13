@@ -10,7 +10,7 @@ Form raid groups from Discord signups, respecting strict composition rules, play
 
 | Directory    | Purpose                                                       |
 |------------- |---------------------------------------------------------------|
-| `config/`    | Raid schedule, officers, terminology, settings (canonical configuration data) |
+| `config/`    | Raid schedule, terminology, settings (canonical configuration data) |
 | `rules/`     | Composition rules, bench rotation, player constraints, player specs |
 | `sets/`      | Generated raid rosters (one per raid night, chronologically chained) |
 | `derived/`   | Derived summaries computed from `sets/` (currently bench history) |
@@ -26,7 +26,7 @@ Claude Code reads the rule files, parses Discord signup screenshots provided by 
 ## Key files
 
 - `CLAUDE.md` — Persistent instructions for Claude Code sessions (workflow, principles, communication conventions)
-- `config/project.md` — Raid schedule, officers, terminology, settings
+- `config/project.md` — Raid schedule, terminology, settings
 - `rules/01-raid-compositions.md` — Tank/healer/DPS targets per raid type, plus dual-spec flex policy
 - `rules/02-bench-rotation.md` — Bench fairness, raid spot priority, selection algorithm, tiebreakers
 - `rules/03-player-constraints.md` — Must-be-together / must-not-be-together / availability constraints
