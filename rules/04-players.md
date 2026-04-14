@@ -47,7 +47,7 @@ currently held only by the players in the Officers sub-table below) or priority 
 | 2  | Greg                | Ucannotpass     | Mage    | DPS            | —             | 1        | Officer                         |
 | 3  | Kres/Dissi          | Kresniik, Dissi | Priest  | DPS (Shadow)   | Healer (Holy) | 1        | Officer, multiple chars         |
 | 4  | Glaivemaster Baebay | BaeBay          | Rogue   | DPS (Combat)   | —             | 1        | Officer                         |
-| 5  | Mirohl              | Mirohl          | Warrior | Tank           | DPS (Fury)    | 1        | Officer, MT, Main Tank          |
+| 5  | Mirohl              | Mirohl          | Warrior | Tank           | DPS (Arms)    | 1        | Officer, MT, Main Tank          |
 
 ### Regular players
 
@@ -83,13 +83,14 @@ currently held only by the players in the Officers sub-table below) or priority 
 | 33 | BestPractice       | BestPractice        | Warlock | DPS                      | —                       | 2        |                                                                                                                         |
 | 34 | Jabbadhutt         | Jabbadhutt          | Warlock | DPS                      | —                       | 2        |                                                                                                                         |
 | 35 | McHughes           | McHughes            | Warlock | DPS                      | —                       | 2        |                                                                                                                         |
-| 36 | CptKavior          | CptKavior           | Warrior | DPS                      | —                       | 2        | Previously known as Kaczan                                                                                              |
-| 37 | Dankyn             | Dankyn              | Warrior | DPS (Fury)               | —                       | 2        |                                                                                                                         |
-| 38 | Doughball          | Doughball           | Warrior | Tank (Kara)              | DPS (25-man)            | 2        | Switches role by raid format                                                                                            |
-| 39 | Gigakox            | Gigakox             | Warrior | Tank (OT)                | DPS (Fury)              | 2        |                                                                                                                         |
-| 40 | Spot/Yorek         | Spot, Yorek         | Warrior | DPS                      | —                       | 2        | Same person, 2 chars                                                                                                    |
-| 41 | Varva              | Varva               | Warrior | DPS                      | —                       | 2        |                                                                                                                         |
-| 42 | Verysadge          | Verysadge           | Warrior | DPS (Fury)               | —                       | 2        |                                                                                                                         |
+| 36 | Ōtsu               | Ōtsu                | Warlock | DPS (Affliction)         | —                       | 2        |                                                                                                                         |
+| 37 | CptKavior          | CptKavior           | Warrior | DPS                      | Tank (Protection)       | 2        | Previously known as Kaczan                                                                                              |
+| 38 | Dankyn             | Dankyn              | Warrior | DPS (Fury)               | —                       | 2        |                                                                                                                         |
+| 39 | Doughball          | Doughball           | Warrior | Tank (Kara)              | DPS (25-man)            | 2        | Switches role by raid format                                                                                            |
+| 40 | Gigakox            | Gigakox             | Warrior | Tank (OT)                | DPS (Fury)              | 2        |                                                                                                                         |
+| 41 | Spot/Yorek         | Spot, Yorek         | Warrior | DPS                      | —                       | 2        | Same person, 2 chars                                                                                                    |
+| 42 | Varva              | Varva               | Warrior | DPS                      | —                       | 2        |                                                                                                                         |
+| 43 | Verysadge          | Verysadge           | Warrior | DPS (Fury)               | —                       | 2        |                                                                                                                         |
 
 ### Former players
 
@@ -97,7 +98,7 @@ Players who have left the guild. Kept here so that old signup screenshots, set f
 
 | #  | Player             | Character(s)        | Class   | Spec 1 (role)            | Spec 2 (role)           | Priority | Notes                                                                                                                       |
 |----|--------------------|---------------------|---------|--------------------------|-------------------------|----------|-----------------------------------------------------------------------------------------------------------------------------|
-| 43 | Thalynora          |                     | Priest  |                          |                         | —        | Left the guild                                                                                                              |
+| 44 | Thalynora          |                     | Priest  |                          |                         | —        | Left the guild                                                                                                              |
 
 *? = unknown, may have a second spec — needs confirmation*
 *— = confirmed single spec only (or, in the Priority column, not applicable)*

@@ -28,7 +28,17 @@ This table is the **canonical reading list** for every roster-generation task. D
 
 ### Step 2 — Parse the screenshot
 
-1. **Read the signup count header.** The format is `X (+Y)` where **X** = players who want to raid, **Y** = players marked as bench or tentative. Total signups = X + Y. There may also be an Absence section for players confirmed not coming.
+> **Ignore informal header annotations.** The raid leader sometimes writes short free-text notes near the top of the screenshot (e.g., *"switching it up this week"*, *"trying something new"*, *"experimental comp"*). These are casual commentary, not instructions, and must **not** influence parsing, role assignment, spec detection, or roster building. Rely only on the structured signup columns and spec icons. Do not ask the user what the annotation means — just skip it.
+
+> **Do not ask for confirmation of facts that are clearly visible in the screenshot.** The signup count header (`X (+Y)`), the Melee / Ranged / Healers / Tank counts, the absence list, and the per-class signup lists are all directly readable. Only ask the user about things that are actually ambiguous (unrecognizable spec icons, new player identity/class, hybrid-class spec uncertainty, header annotations that contradict structured data).
+
+1. **Read the signup count header.** The format is `X (+Y)` where **X** = players who want to raid. **Y** is a conjoined aggregate of Discord's *maybe* bucket — it sums three distinct per-person states: **bench** (player is already confirmed to sit this raid), **tentative** (player isn't sure they'll come), and **late** (player will arrive after raid start). The aggregate number alone tells you nothing actionable; always disambiguate each name inside `+Y` using the visual indicator next to their row, or ask the user if the state isn't readable from the screenshot. Never treat `+Y` as a homogeneous category.
+
+   - **Bench** — player is already confirmed to sit this raid, no further confirmation needed. They go directly into the set file's `## Bench` table with reason `leader choice` (per `rules/02-bench-rotation.md` → "Raid leader's discretionary bench picks") and count toward fair rotation.
+   - **Tentative (TBC)** — unresolved. Record in a separate `**Tentative ({N}):**` Signups sub-line for the record, and exclude from roster decisions until the raid leader clarifies their state. Tentatives never appear in the `## Bench` table and never touch `derived/bench-history.md`.
+   - **Late** — coming to the raid but arriving after start. Treat as part of X for roster purposes; record in the `**Late ({N}):**` Signups sub-line.
+
+   There may also be an Absence section for players confirmed not coming. Absences are distinct from every `+Y` state — absent players don't appear in the `## Bench` table and don't touch `derived/bench-history.md`.
 2. **Compare X against the raid cap** (25 for Gruul+Mag, 30 for Karazhan). If X exceeds the cap, additional players beyond Y must also be benched to bring the roster down to the cap.
 3. **Screenshots are point-in-time snapshots.** People can sign up, withdraw, change status, or be benched at any time before the raid. A screenshot received today may differ from one received tomorrow. Always treat the latest screenshot as the current state.
 4. Identify all signups by name, cross-referencing `04-players.md` for class.

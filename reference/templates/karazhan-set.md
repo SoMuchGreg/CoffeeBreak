@@ -36,6 +36,7 @@ algorithm.
 **Warlocks ({N}):** ...
 **Shamans ({N}):** ...
 
+**Tentative ({N}):** ...                             <!-- delete line if none. TBC — not in roster pool until resolved; see reference/file-operations-manual.md Step 2 -->
 **Late ({N}):** ...                                  <!-- delete line if none -->
 **Originally absent but raided ({N}):** ...          <!-- delete line if none -->
 **Absent ({N}):** ...                                <!-- delete line if none -->
@@ -123,16 +124,10 @@ Bench count = cumulative count for this player at this raid LOCATION (Karazhan),
 INCLUDING this raid. Per rules/02-bench-rotation.md, Karazhan and Gruul+Mag bench
 counts are tracked independently.
 
-Reason vocabulary (use one of these — do not invent new values):
-
-  - priority 3        — player is raid spot priority 3 (last resort), benched because all
-                        priority-1 and priority-2 signups filled the spots
-  - fair rotation     — priority-2 overflow, benched per fair-rotation rule
-                        (lowest cumulative bench count for this raid location plays first)
-  - composition cap   — benched by a hard composition rule (e.g., 25-man Resto Druid cap)
-  - voluntary         — signed up as bench/tentative (+Y) in the Discord screenshot
-  - declined flex     — declined a dual-spec swap request when the raid was short on a role
-                        (and would otherwise have been needed to fill that role)
+Reason column — pick one of the valid labels from `rules/02-bench-rotation.md` →
+"Bench reason vocabulary" (single source of truth). Do not invent new labels. If
+a benching case doesn't fit any defined label, flag it to the user before writing
+the set.
 
 Delete the table and replace with `*(None — all 30 spots filled)*` if no one was benched.
 -->
