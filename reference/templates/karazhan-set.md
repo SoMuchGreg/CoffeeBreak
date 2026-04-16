@@ -167,3 +167,30 @@ this raid.
 | Item                        | Competitors                  | Status                       |
 |-----------------------------|------------------------------|------------------------------|
 | ...                         | ... (R), ... (BG)            | ✓ split / ⚠️ ... + ...       |
+
+## Sanity check
+
+<!--
+Record the sub-agent sanity-check verdict from Step 3 of the roster-building
+workflow (reference/file-operations-manual.md). The sub-agent runs before the
+roster is presented to the user.
+
+Structure:
+  1. Verdict line: "YES" or "NO" + one-line summary.
+  2. Bullet list of any violations, acknowledged deviations, or soft rule
+     conflicts the sub-agent flagged.
+  3. If the roster changed AFTER the sanity check (e.g. leader bench swaps),
+     add a "Post-check changes" subsection listing what changed and any new
+     consequences (loot violations, composition shifts) that were not verified
+     by the sub-agent.
+
+Delete this whole section if no sanity check was performed (e.g. historical
+roster data recorded without a roster-building step).
+-->
+
+**Verdict: {YES / NO}** — {one-line summary}.
+
+- ...
+
+**Post-check changes** (not re-verified by sub-agent):         <!-- delete if no changes after check -->
+- ...

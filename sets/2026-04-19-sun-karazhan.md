@@ -62,7 +62,7 @@
 | Siljes/Ejlis        | Healer | Priest               |
 | Thordrel            | Healer | Paladin (Holy)       |
 
-**Composition check:** Target per team: 2T / 2H / 6 DPS = 10. Total target across 3 teams: 30. Actual: 3 × 10 = 30. Status: ⚠️ Team Bakery runs 2 Warrior tanks with no Paladin (user override — see Notes).
+**Composition check:** Target per team: 2T / 2H / 6 DPS = 10. Total target across 3 teams: 30. Actual: 3 × 10 = 30. Status: ⚠️ Team Bakery runs 2 Warrior tanks with no Paladin (Paladin shortage exemption — see Notes).
 
 ## Bench (1)
 
@@ -75,7 +75,7 @@
 - **Bergamotka/Tymoti** — same person confirmed. Rows merged in `rules/04-players.md`. Signed up as Bergamotka this raid.
 - **Siljes/Ejlis** signed up under "Siljes" character. Player renamed from Ejlis to Siljes/Ejlis in `rules/04-players.md`.
 - **Spot/Yorek** renamed to **Spot/Yorekbarn** per user. Updated in `rules/04-players.md`.
-- **Raid-leader override — Paladin tank hard rule waived.** Only 2 Paladin tanks signed up; `rules/01-raid-compositions.md` insufficient-tanks override would drop to 2 teams. User chose to run 3 teams with Team Bakery having 2 Warrior tanks (no AoE coverage) instead.
+- **Paladin tank shortage exemption applied.** Only 2 Paladin tanks signed up for 3 teams; per `rules/01-raid-compositions.md` → Tank composition → Paladin tank shortage exemption, Team Bakery runs 2 Warrior tanks (no AoE coverage).
 - **Heligeman/Fugleman** benched by leader choice; algorithm would have benched Bombzor (Tier 2 tiebreaker, `rules/02-bench-rotation.md`).
 
 ## Loot conflicts
@@ -98,3 +98,14 @@ Per `rules/03-player-constraints.md` — items where 2+ competing players are in
 | Wrynn Dynasty Greaves       | Mirohl (R), Doughball (Bak)                                  | ✓ split                      |
 
 **8/12 fully split.** 4 violations are unavoidable (competitor count exceeds team count or interlocking constraint triangles). Mirohl has 0 competitors on Restaurant for both his items.
+
+## Sanity check
+
+**Verdict: YES** — roster adheres to all rules (sub-agent verified before presenting to user).
+
+- **Paladin tank shortage exemption** applied for Team Bakery (`rules/01-raid-compositions.md`).
+- **Unavoidable loot-split violations:** Ring of a Thousand Marks (Leontes + Yorekbarn, Bakery), Skulker's Greaves (Gigakox + Vaelruna, Bakery). Both confirmed unsolvable with 3 teams.
+- **Soft rule deviation:** Enhancement Shaman distribution 2/1/0 across R/BG/Bak — forced by must-together (Ostbirger + Ebonybolt) and loot constraints.
+
+**Post-check changes** (not re-verified by sub-agent):
+- Bench changed from Bombzor (algorithm pick) → Heligeman/Fugleman (leader choice). Added 2 unavoidable loot violations: Helm of the Fallen Defender (Bombzor + Gigakox, Bakery), Light's Justice (Siljes/Ejlis + Thordrel, BaeGlaives). Both are 4-competitor items on 3 teams.

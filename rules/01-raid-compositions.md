@@ -77,6 +77,8 @@ Each Karazhan team needs **2 tanks** that can collectively cover **3 duties**:
 
 This means every team **must have at least 1 Paladin tank** (for AoE) AND **at least 1 non-mana tank** (Warrior or Feral Druid) — two Paladin tanks on the same team is not feasible. A Feral Druid can off-tank if the main tank is a Paladin (who covers AoE duty).
 
+**Paladin tank shortage exemption:** When fewer Paladin tanks sign up than teams being formed, the AoE tanking requirement is automatically waived for teams that cannot be assigned a Paladin. Distribute available Paladin tanks across as many teams as possible (1 per team); any remaining team runs with 2 non-Paladin tanks and no AoE coverage. This is not a raid-leader override — it fires whenever the Paladin count falls short. The non-mana tank requirement is unaffected: every team must still have at least 1 Warrior or Feral Druid.
+
 ### Healer composition
 
 - **No more than 1 Resto Druid per team** (soft rule — aim for this, but a 2nd Resto Druid is acceptable if signups force it)
@@ -115,7 +117,7 @@ When outside recruitment is triggered (the 27–29 case above, or the 25–26 ca
 
 #### Insufficient-tanks override
 
-Regardless of the signup count above, if the guild can't supply enough tanks to staff 3 teams under the Karazhan tank composition requirements (each team needs **1 Paladin tank** plus **1 non-mana tank** — Warrior or Feral Druid — so 3 teams need 3 of each type, 6 tanks total in the right mix), **drop to 2 teams**. This override applies even at 27+ signups: outside-of-guild recruitment never covers tank slots, so if the guild can't supply the tank mix, the team count must drop.
+If the guild can't supply enough tanks to meet the hard requirements in "Tank composition" above for every team, **drop to 2 teams**. This override applies even at 27+ signups: outside-of-guild recruitment never covers tank slots.
 
 The dual-spec flex rule from "General principles → Handling role shortages" must be exhausted **before** falling back: ask DPS-spec or Healer-spec players whose secondary spec is a tank spec (e.g., players whose `Spec 2 (role)` in `rules/04-players.md` is a tank role) whether they would tank for this raid. Only if that doesn't yield enough tanks does the team count drop.
 
