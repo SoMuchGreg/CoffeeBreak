@@ -8,9 +8,9 @@
 **Paladins (2):** Heligeman/Fugleman, Thordrel
 **Rogue (1):** GlaivemasterBaeba
 **Hunters (3):** Vaelruna, Tonsen, Dwarfytron
-**Priests (2):** Ejlis, Bombzor
+**Priests (2):** Siljes/Ejlis, Bombzor
 **Mages (2):** Greg/Ucannotpass, OomToDoom
-**Shamans (4):** Lynelen, Ebonybolt, Tymoti, Pergatori
+**Shamans (4):** Lynelen, Ebonybolt, Bergamotka/Tymoti, Pergatori
 **Warlocks (3):** McHughes, Jabbadhutt
 
 **Bench (1):** Jar (signed up but couldn't come)
@@ -35,16 +35,16 @@ Raid ran with 24 instead of 25 because Jar couldn't make it.
 | 11 | Greg/Ucannotpass    | DPS    | Mage    |
 | 12 | Lynelen             | DPS    | Shaman  |
 | 13 | Ebonybolt           | DPS    | Shaman  |
-| 14 | Tymoti              | DPS    | Shaman  |
+| 14 | Bergamotka/Tymoti   | DPS    | Shaman  |
 | 15 | Pergatori           | DPS    | Shaman  |
 | 16 | McHughes            | DPS    | Warlock |
 | 17 | Jabbadhutt          | DPS    | Warlock |
 | 18 | Gresac              | Healer | Druid   |
 | 19 | Roossy/Keatala      | Healer | Druid   |
 | 20 | Beaverfist          | Healer | Druid   |
-| 21 | Heligeman/Fugleman   | Healer | Paladin |
+| 21 | Heligeman/Fugleman  | Healer | Paladin |
 | 22 | Thordrel            | Healer | Paladin |
-| 23 | Ejlis               | Healer | Priest  |
+| 23 | Siljes/Ejlis        | Healer | Priest  |
 | 24 | Bombzor             | Healer | Priest  |
 
 **Composition:** 3 tanks, 14 DPS, 7 healers (24 total)

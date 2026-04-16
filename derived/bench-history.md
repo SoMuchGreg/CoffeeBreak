@@ -13,7 +13,7 @@ Players are sorted alphabetically by name. Departed-guild players stay in their 
 | CptKavior           | 1        | 08.04                | 1         | 15.04           | 2     |
 | Dwarfytron          | 1        | 01.04                | 0         | —               | 1     |
 | Gresac              | 0        | —                    | 1         | 25.03           | 1     |
-| Heligeman/Fugleman  | 0        | —                    | 1         | 12.04           | 1     |
+| Heligeman/Fugleman  | 1        | 19.04                | 1         | 12.04           | 2     |
 | Leontes             | 1        | 08.04                | 0         | —               | 1     |
 | Lynelen             | 0        | —                    | 1         | 15.04           | 1     |
 | McJudgin            | 1        | 08.04                | 0         | —               | 1     |

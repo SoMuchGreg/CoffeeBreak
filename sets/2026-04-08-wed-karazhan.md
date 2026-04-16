@@ -10,7 +10,7 @@
 **Mages (2):** OomToDoom, Greg/Ucannotpass
 **Priests (4):** Kres/Dissi, Bombzor, Lightweit, Thalynora
 **Warlocks (3):** Jabbadhutt, BestPractice, McHughes
-**Shamans (5):** Rainbound, Pergatori, Lynelen, Tymoti, Ebonybolt
+**Shamans (5):** Rainbound, Pergatori, Lynelen, Bergamotka/Tymoti, Ebonybolt
 
 **Late (1):** GlaivemasterBaebay
 **Absent (1):** Varva
@@ -26,7 +26,7 @@
 | Mirohl           | MT     | Warrior |
 | Lightstarr       | OT?    | Paladin |
 | Dankyn           | DPS    | Warrior |
-| Tymoti           | DPS    | Shaman  |
+| Bergamotka/Tymoti| DPS    | Shaman  |
 | Vaelruna         | DPS    | Hunter  |
 | Yxanb            | DPS    | Druid   |
 | Kres/Dissi       | DPS    | Priest  |
@@ -73,7 +73,7 @@
 |----------------|--------------------------|
 | McJudgin       | 1                        |
 | Varva          | 1 (also absent)          |
-| CptKavior         | 1                        |
+| CptKavior      | 1                        |
 | Leontes        | 1                        |
 
 ## Notes

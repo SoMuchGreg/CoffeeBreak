@@ -59,48 +59,48 @@ not obvious from the role column.
 
 ### Team Restaurant
 
-| Player | Role   | Class |
-|--------|--------|-------|
-| ...    | MT     | ...   |
-| ...    | OT     | ...   |
-| ...    | DPS    | ...   |
-| ...    | DPS    | ...   |
-| ...    | DPS    | ...   |
-| ...    | DPS    | ...   |
-| ...    | DPS    | ...   |
-| ...    | DPS    | ...   |
-| ...    | Healer | ...   |
-| ...    | Healer | ...   |
+| Player              | Role   | Class                |
+|---------------------|--------|----------------------|
+| ...                 | MT     | ...                  |
+| ...                 | OT     | ...                  |
+| ...                 | DPS    | ...                  |
+| ...                 | DPS    | ...                  |
+| ...                 | DPS    | ...                  |
+| ...                 | DPS    | ...                  |
+| ...                 | DPS    | ...                  |
+| ...                 | DPS    | ...                  |
+| ...                 | Healer | ...                  |
+| ...                 | Healer | ...                  |
 
 ### Team Bakery
 
-| Player | Role   | Class |
-|--------|--------|-------|
-| ...    | MT     | ...   |
-| ...    | OT     | ...   |
-| ...    | DPS    | ...   |
-| ...    | DPS    | ...   |
-| ...    | DPS    | ...   |
-| ...    | DPS    | ...   |
-| ...    | DPS    | ...   |
-| ...    | DPS    | ...   |
-| ...    | Healer | ...   |
-| ...    | Healer | ...   |
+| Player              | Role   | Class                |
+|---------------------|--------|----------------------|
+| ...                 | MT     | ...                  |
+| ...                 | OT     | ...                  |
+| ...                 | DPS    | ...                  |
+| ...                 | DPS    | ...                  |
+| ...                 | DPS    | ...                  |
+| ...                 | DPS    | ...                  |
+| ...                 | DPS    | ...                  |
+| ...                 | DPS    | ...                  |
+| ...                 | Healer | ...                  |
+| ...                 | Healer | ...                  |
 
 ### Team BaeGlaives
 
-| Player | Role   | Class |
-|--------|--------|-------|
-| ...    | MT     | ...   |
-| ...    | OT     | ...   |
-| ...    | DPS    | ...   |
-| ...    | DPS    | ...   |
-| ...    | DPS    | ...   |
-| ...    | DPS    | ...   |
-| ...    | DPS    | ...   |
-| ...    | DPS    | ...   |
-| ...    | Healer | ...   |
-| ...    | Healer | ...   |
+| Player              | Role   | Class                |
+|---------------------|--------|----------------------|
+| ...                 | MT     | ...                  |
+| ...                 | OT     | ...                  |
+| ...                 | DPS    | ...                  |
+| ...                 | DPS    | ...                  |
+| ...                 | DPS    | ...                  |
+| ...                 | DPS    | ...                  |
+| ...                 | DPS    | ...                  |
+| ...                 | DPS    | ...                  |
+| ...                 | Healer | ...                  |
+| ...                 | Healer | ...                  |
 
 **Composition check:** Target per team: 2T / 2H / 6 DPS = 10. Total target across 3 teams: 30. Actual: {3 teams × actual counts} = {actual total}. Status: ✅ / ⚠️ {explanation if not on target}.
 
@@ -113,9 +113,9 @@ because the raid was short on a role (per rules/01-raid-compositions.md →
 Tier 2 = no preference; Tier 3 = reluctance / "absolute last resort" note.
 -->
 
-| Player | Asked to switch from → to     | Tier | Accepted? | Notes |
-|--------|--------------------------------|------|-----------|-------|
-| ...    | DPS (Balance) → Healer (Resto) | 2    | Yes       |       |
+| Player             | Asked to switch from → to      | Tier | Accepted? | Notes |
+|--------------------|--------------------------------|------|-----------|-------|
+| ...                | DPS (Balance) → Healer (Resto) | 2    | Yes       |       |
 
 ## Bench ({N})
 
@@ -132,9 +132,9 @@ the set.
 Delete the table and replace with `*(None — all 30 spots filled)*` if no one was benched.
 -->
 
-| Player | Priority | Bench count (cumulative, after this raid) | Reason         |
-|--------|----------|-------------------------------------------|----------------|
-| ...    | 2        | ...                                       | fair rotation  |
+| Player             | Priority | Bench count (cumulative, after this raid) | Reason        |
+|--------------------|----------|-------------------------------------------|---------------|
+| ...                | 2        | ...                                       | fair rotation |
 
 ## Notes
 
@@ -145,3 +145,25 @@ What belongs here, what does not, and how to phrase it: see
 -->
 
 - ...
+
+## Loot conflicts
+
+<!--
+Per `rules/03-player-constraints.md` — list every item where 2+ competing players
+are in this raid (playing or benched). Skip items where fewer than 2 competitors
+signed up.
+
+Competitors column: player name + team abbreviation (R / Bak / BG) or (bench).
+Status: "✓ split" if all competitors are on different teams (or benched).
+"⚠️ X + Y" naming the pair(s) that share a team — these are loot-split violations.
+
+After the table, add a one-line summary: how many items are fully split out of
+how many listed, plus a note on whether the violations are unavoidable
+(competitor count exceeds team count, interlocking constraint triangles, etc.).
+Delete this whole section if no loot competition items have 2+ competitors in
+this raid.
+-->
+
+| Item                        | Competitors                  | Status                       |
+|-----------------------------|------------------------------|------------------------------|
+| ...                         | ... (R), ... (BG)            | ✓ split / ⚠️ ... + ...       |

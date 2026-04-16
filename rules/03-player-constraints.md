@@ -27,9 +27,21 @@ Players listed here **must not be placed in the same raid team** on any given ni
 
 Players competing for the same item drop **must be placed in different Karazhan teams** so they don't compete against each other for the same loot in the same run.
 
-| Item | Players competing | Notes |
-|------|-------------------|-------|
-| Light's Justice (healing mace) | Gresac, Thordrel | |
+| Item                        | Players competing                       | Notes |
+|-----------------------------|-----------------------------------------|-------|
+| Barbed Choker of Discipline | Mcjudgin, Varthier                      |       |
+| Boots of the Incorrupt      | Lightweit, Siljes                       |       |
+| Helm of the Fallen Champion | Bergamotka, Leontes, Lynelen            |       |
+| Helm of the Fallen Defender | Beaverfist, Bombzor, Gigakox, Mirohl    |       |
+| King's Defender             | Cptkavior, Doughball                    |       |
+| Light's Justice             | Bombzor, Gresac, Siljes, Thordrel       |       |
+| Nathrezim Mindblade         | Beaverfist, Pergatori                   |       |
+| Ring of a Thousand Marks    | Leontes, Verysadge, Yorekbarn           |       |
+| Skulker's Greaves           | Dankyn, Gigakox, Vaelruna, Yxanb        |       |
+| Spiteblade                  | Baebay, Dankyn                          |       |
+| The Decapitator             | Bergamotka, Lynelen, Yorekbarn          |       |
+| The Lightning Capacitor     | Oomtoodoom, Pergatori                   |       |
+| Wrynn Dynasty Greaves       | Doughball, Mirohl                       |       |
 
 **Applies to:** Karazhan only.
 

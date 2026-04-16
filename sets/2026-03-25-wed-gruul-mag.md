@@ -10,10 +10,10 @@
 **Paladins (2):** Sjwammie, Thordrel
 **Rogue (1):** GlaivemasterBaeba
 **Hunters (3):** CodeHunt, Dwarfytron, Vaelruna
-**Priests (3):** Kres/Dissi, Bombzor, Ejlis
+**Priests (3):** Kres/Dissi, Bombzor, Siljes/Ejlis
 **Mages (2):** Greg/Ucannotpass, OomToDoom
 **Warlocks (2):** McHughes, Jabbadhutt
-**Shamans (4):** Tymoti, Ebonybolt, Lynelen, Pergatori
+**Shamans (4):** Bergamotka/Tymoti, Ebonybolt, Lynelen, Pergatori
 
 **Absent (2):** Rhoator, Tonsen
 **Bench (2):** Gresac, Roossy/Keatala
@@ -45,7 +45,7 @@
 | Sjwammie            | Paladin |                         |
 | Thordrel            | Paladin |                         |
 | Bombzor             | Priest  |                         |
-| Ejlis               | Priest  |                         |
+| Siljes/Ejlis        | Priest  |                         |
 | *(7th healer TBD)*  |         | Header shows 7 healers  |
 
 ### DPS (16)
@@ -69,7 +69,7 @@
 | Jabbadhutt          | Warlock |                                    |
 | *(shamans — some DPS, possibly one healing)* | | |
 
-**Shamans (4):** Tymoti, Ebonybolt, Lynelen, Pergatori — exact role split (DPS vs healer) uncertain.
+**Shamans (4):** Bergamotka/Tymoti, Ebonybolt, Lynelen, Pergatori — exact role split (DPS vs healer) uncertain.
 
 ## Notes
 

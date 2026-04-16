@@ -8,10 +8,10 @@
 **Paladins (3):** McJudgin, Thordrel, Leontes
 **Rogue (1):** GlaivemasterBaeba
 **Hunters (3):** Tonsen, Vaelruna, Dwarfytron
-**Priests (2):** Ejlis, Lightweit
+**Priests (2):** Siljes/Ejlis, Lightweit
 **Mage (1):** Greg/Ucannotpass
 **Warlocks (2):** Jabbadhutt, BestPractice
-**Shamans (4):** Pergatori, Lynelen, Ebonybolt, Tymoti
+**Shamans (4):** Pergatori, Lynelen, Ebonybolt, Bergamotka/Tymoti
 
 **Bench (3):** Roossy/Keatala, Heligeman/Fugleman, OomToDoom
 **Absent (2):** Kres/Dissi, Bombzor
@@ -23,7 +23,7 @@
 | Player            | Bench count (cumulative) |
 |-------------------|--------------------------|
 | Roossy/Keatala    | 2 (also 25.03)           |
-| Heligeman/Fugleman | 1                        |
+| Heligeman/Fugleman| 1                        |
 | OomToDoom         | 1                        |
 
 ## Actual Roster (25-man)
@@ -44,7 +44,7 @@ Ran with 25 as expected.
 |---------------------|---------|
 | McJudgin            | Paladin |
 | Thordrel            | Paladin |
-| Ejlis               | Priest  |
+| Siljes/Ejlis        | Priest  |
 | Lightweit           | Priest  |
 | Gresac              | Druid   |
 | Beaverfist          | Druid   |
@@ -68,7 +68,7 @@ Ran with 25 as expected.
 | Pergatori           | Shaman  |
 | Lynelen             | Shaman  |
 | Ebonybolt           | Shaman  |
-| Tymoti              | Shaman  |
+| Bergamotka/Tymoti   | Shaman  |
 
 **Composition:** 3 tanks, 6 healers, 16 DPS (25 total)
 
@@ -77,6 +77,6 @@ Ran with 25 as expected.
 - Jar attended despite Sunday — exception to usual Sunday constraint.
 - Jar played Boomkin (DPS), not Resto.
 - McJudgin healed (Paladin healer in 25-mans, as expected).
-- Spot/Yorek was signed up but is not coming.
+- Spot/Yorekbarn was signed up but is not coming.
 - Leontes played DPS — Paladin, spec still unclear (Ret?).
 - Roossy/Keatala benched for 2nd time — should be prioritized for spots next time.

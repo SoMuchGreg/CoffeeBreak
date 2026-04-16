@@ -8,10 +8,10 @@
 **Paladin (1):** Thordrel
 **Rogues (2):** GlaivemasterBaeb, Drillbabe
 **Hunters (3):** Tonsen, Dwarfytron, Vaelruna
-**Priests (3):** Bombzor, Kres/Dissi, Ejlis
+**Priests (3):** Bombzor, Kres/Dissi, Siljes/Ejlis
 **Mages (2):** OomToDoom, Greg/Ucannotpass
 **Warlocks (3):** McHughes, BestPractice, Jabbadhutt
-**Shamans (4):** Lynelen, Tymoti, Ebonybolt, Pergatori
+**Shamans (4):** Lynelen, Bergamotka/Tymoti, Ebonybolt, Pergatori
 **Late signup:** McJudgin
 
 **Originally absent but raided:** Rhoator
@@ -34,7 +34,7 @@
 | Kresniik     | DPS    | Priest  |
 | Jabbadhutt   | DPS    | Warlock |
 | Pergatori    | DPS    | Shaman  |
-| Ejlis        | Healer | Priest  |
+| Siljes/Ejlis | Healer | Priest  |
 
 ### Team BaeGlaives
 
@@ -44,7 +44,7 @@
 | Eselman      | OT     | Druid   |
 | BaeBay       | DPS    | Rogue   |
 | Lynelen      | DPS    | Shaman  |
-| Roossy/Keatala | Healer | Druid |
+| Roossy/Keatala| Healer | Druid |
 | OomToDoom    | DPS    | Mage    |
 | Dwarfytron   | DPS    | Hunter  |
 | Ebonybolt    | DPS    | Shaman  |
@@ -58,7 +58,7 @@
 | Mirohl       | MT     |         |
 | McJudgin     | OT     |         |
 | Verysadge    | DPS    | Warrior |
-| Tymoti       | DPS    | Shaman  |
+| Bergamotka/Tymoti| DPS    | Shaman  |
 | Beaverfist   | Healer | Druid   |
 | Tonsen       | DPS    | Hunter  |
 | McHughes     | DPS    | Warlock |
