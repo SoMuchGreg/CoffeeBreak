@@ -17,6 +17,18 @@ This file holds CoffeeBreak's **configuration data** — the canonical facts tha
 | 1     | Karazhan           | 10-man raid           | 3          |
 | 2     | Gruul + Magtheridon| 25-man raid           | 1          |
 
+## Old World raids
+
+A historical raid category: **signup tracking only, no roster formation**. No composition targets, no bench rotation, no dual-spec flex — none of the rules under `rules/` apply to these raids. They exist in the project solely to record who signed up.
+
+Raids in this category:
+
+| Abbreviation | Full name          |
+|--------------|--------------------|
+| ZG           | Zul'Gurub          |
+| AQ20         | Ahn'Qiraj (20-man) |
+| Ony          | Onyxia's Lair      |
+
 ## Active settings
 
 | Setting              | Value                     | Notes                                         |

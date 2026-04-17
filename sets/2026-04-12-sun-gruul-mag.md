@@ -22,7 +22,7 @@
 
 | Player            | Bench count (cumulative) |
 |-------------------|--------------------------|
-| Roossy/Keatala    | 2 (also 25.03)           |
+| Roossy/Keatala    | 2                        |
 | Heligeman/Fugleman| 1                        |
 | OomToDoom         | 1                        |
 
