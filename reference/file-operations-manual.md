@@ -30,10 +30,9 @@ For cadence (when to re-read the applicable tier within a session), see `CLAUDE.
 
 | File | Why |
 |------|-----|
-| `derived/bench-history.md` | Cumulative bench counts per player per raid location — used for fair-rotation decisions |
-| `derived/signup-history.md` | Cumulative signup counts per player — statistic only, not consulted by any active rule; read so the current state is in context when Step 4 increments it |
-| `derived/signup-history-karazhan-gruul-mag.md` | Scope-restricted counterpart of `signup-history.md` (Karazhan/Gruul/Mag only); read for the same reason |
-| `derived/signup-rate-karazhan-gruul-mag.md` | Per-member signup rate (percentage) in the same scope as `signup-history-karazhan-gruul-mag.md`; read for the same reason |
+| `derived/bench-history-tbc.md` | Cumulative bench counts per player per raid location — used for fair-rotation decisions |
+| `derived/signup-history-total.md` | Cumulative signup counts per player — statistic only, not consulted by any active rule; read so the current state is in context when Step 4 increments it |
+| `derived/signup-stats-tbc.md` | Combined per-player signup count + signup rate (percentage) for TBC-era sets only; flat table (officers and Regular players together), statistic only; read so the current state is in context when maintained |
 | `reference/class-colors-and-spec-icons.md` | Class colors and spec icon reference for parsing screenshots |
 | `reference/icons/specs/*.jpg` | Spec icon reference images (compare side-by-side when unsure) |
 | `reference/icons/classes/*.png` | Class icon reference images (compare side-by-side when unsure) |
@@ -57,10 +56,10 @@ Read both **Tier 1** and **Tier 2** of the **Reading list** at the top of this f
 1. **Read the signup count header.** The format is `X (+Y)` where **X** = players who want to raid. **Y** is a conjoined aggregate of Discord's *maybe* bucket — it sums three distinct per-person states: **bench** (player is already confirmed to sit this raid), **tentative** (player isn't sure they'll come), and **late** (player will arrive after raid start). The aggregate number alone tells you nothing actionable; always disambiguate each name inside `+Y` using the visual indicator next to their row, or ask the user if the state isn't readable from the screenshot. Never treat `+Y` as a homogeneous category.
 
    - **Bench** — player is already confirmed to sit this raid, no further confirmation needed. They go directly into the set file's `## Bench` table with reason `leader choice` (per `rules/02-bench-rotation.md` → "Raid leader's discretionary bench picks") and count toward fair rotation.
-   - **Tentative (TBC)** — unresolved. Record in a separate `**Tentative ({N}):**` Signups sub-line for the record, and exclude from roster decisions until the raid leader clarifies their state. Tentatives never appear in the `## Bench` table and never touch `derived/bench-history.md`.
+   - **Tentative (TBC)** — unresolved. Record in a separate `**Tentative ({N}):**` Signups sub-line for the record, and exclude from roster decisions until the raid leader clarifies their state. Tentatives never appear in the `## Bench` table and never touch `derived/bench-history-tbc.md`.
    - **Late** — coming to the raid but arriving after start. Treat as part of X for roster purposes; record in the `**Late ({N}):**` Signups sub-line.
 
-   There may also be an Absence section for players confirmed not coming. Absences are distinct from every `+Y` state — absent players don't appear in the `## Bench` table and don't touch `derived/bench-history.md`.
+   There may also be an Absence section for players confirmed not coming. Absences are distinct from every `+Y` state — absent players don't appear in the `## Bench` table and don't touch `derived/bench-history-tbc.md`.
 2. **Compare X against the raid cap** (25 for Gruul+Mag, 30 for Karazhan). If X exceeds the cap, additional players beyond Y must also be benched to bring the roster down to the cap.
 3. **Screenshots are point-in-time snapshots.** People can sign up, withdraw, change status, or be benched at any time before the raid. A screenshot received today may differ from one received tomorrow. Always treat the latest screenshot as the current state.
 4. Identify all signups by name, cross-referencing `04-players.md` for class.
@@ -72,11 +71,11 @@ Read both **Tier 1** and **Tier 2** of the **Reading list** at the top of this f
 
 1. Apply all rules from `rules/`.
 2. Apply **raid spot priority** and the selection algorithm — see `rules/02-bench-rotation.md` (single source of truth for the algorithm). Per-player priority assignments are in `rules/04-players.md`.
-3. Apply fair bench rotation **within each priority level** using counts from `derived/bench-history.md`. Never compare bench counts across priority levels.
+3. Apply fair bench rotation **within each priority level** using counts from `derived/bench-history-tbc.md`. Never compare bench counts across priority levels.
 4. Respect player constraints from `rules/03-player-constraints.md`.
 5. Respect composition caps from `rules/01-raid-compositions.md`.
 6. **Sanity-check the roster with a sub-agent before presenting it.** Once the roster is finalized and you believe it's ready to show the user, spawn a fresh sub-agent (via the `Agent` tool) and have it independently verify rule compliance. The sub-agent must:
-   - Read every active rule file (`rules/*.md`, `config/project.md`, applicable sections of `reference/raid-composition-guide.md`) and the relevant inputs (the parsed signup, `derived/bench-history.md`, all prior `sets/*.md`).
+   - Read every active rule file (`rules/*.md`, `config/project.md`, applicable sections of `reference/raid-composition-guide.md`) and the relevant inputs (the parsed signup, `derived/bench-history-tbc.md`, all prior `sets/*.md`).
    - **Not** read `changelog/*.md` — same exclusion as roster formation itself.
    - Walk through the proposed roster and check it against each rule.
    - Return a clear verdict answering exactly one question: **"Does this roster adhere to all rules specified in this project? YES / NO"** — followed by a short list of any violations found (or "none" if YES).
@@ -90,10 +89,9 @@ Read both **Tier 1** and **Tier 2** of the **Reading list** at the top of this f
 | File | What to update |
 |------|----------------|
 | `sets/YYYY-MM-DD-day-raid.md` | **Create new file.** Start from `reference/templates/karazhan-set.md` (for Karazhan nights) or `reference/templates/25man-set.md` (for any 25-man raid). Copy the template into `sets/` with the date-based filename, fill in every `{placeholder}`, delete every section/sub-line marked `<!-- delete if … -->` that doesn't apply, and follow the section order as-is. |
-| `derived/bench-history.md` | **Update.** For each player benched this raid: find their row (or insert a new one in alphabetical position if absent), increment the count cell for the relevant raid-location column, append the new date to that location's dates cell, and recompute the **Total** cell. The `Total` column is a sum across all raid-location count columns — keep it in sync on every edit. |
-| `derived/signup-history.md` | **Update.** For each distinct canonical player appearing anywhere in the new set's `## Signups` section (any sub-line — class lists, Tentative, Late, Originally absent but raided, Bench, Absent): find their row in the sub-table matching their `rules/04-players.md` classification (Officers / Current members / Former members), or add a new row in that sub-table if absent. Increment **Signups** by 1. Then re-sort each sub-table whose rows changed (by `Signups` desc, alphabetical case-insensitive tiebreak) and renumber `#` from `1`. Count each player once per set regardless of how many sub-lines mention them. See that file's own "What counts as a signup" and "Maintenance" sections for the full rule. |
-| `derived/signup-history-karazhan-gruul-mag.md` | **Update IF** the new/edited set is in scope per that file's **Scope** section (currently: Karazhan, Gruul's Lair, Magtheridon's Lair). Apply the same delta logic as `derived/signup-history.md` above — same counting rule, same sort and renumber — but with two sub-tables (Officers / Current members) rather than three; this file tracks only current members. Skip entirely for out-of-scope sets (currently any old-world set). |
-| `derived/signup-rate-karazhan-gruul-mag.md` | **Update IF** the new/edited set is in scope. See that file's **Scope and maintenance** section — in brief: for every current non-officer member, recompute Signups and Raids-in-window from the player's First signup date, recompute Signup rate, refresh the "Computed as of" header, re-sort by Signup rate desc (alphabetical tiebreak), renumber. Skip for out-of-scope sets. |
+| `derived/bench-history-tbc.md` | **Update.** For each player benched this raid: find their row (or insert a new one in alphabetical position if absent), increment the count cell for the relevant raid-location column, append the new date to that location's dates cell, and recompute the **Total** cell. The `Total` column is a sum across all raid-location count columns — keep it in sync on every edit. |
+| `derived/signup-history-total.md` | **Update.** For each distinct canonical player appearing anywhere in the new set's `## Signups` section (any sub-line — class lists, Tentative, Late, Originally absent but raided, Bench, Absent): find their row in the sub-table matching their `rules/04-players.md` classification (Officers / Current members / Former members), or add a new row in that sub-table if absent. Increment **Signups** by 1. Then re-sort each sub-table whose rows changed (by `Signups` desc, alphabetical case-insensitive tiebreak) and renumber `#` from `1`. Count each player once per set regardless of how many sub-lines mention them. See that file's own "What counts as a signup" and "Maintenance" sections for the full rule. |
+| `derived/signup-stats-tbc.md` | **Update IF** the new/edited set is in scope per that file's **Scope** section (currently TBC-era sets: Karazhan, Gruul's Lair, Magtheridon's Lair). See its **Maintenance** section for the full delta logic — in brief: apply per-player Signups deltas, record First signup for new rows, recompute Signup rate for every row whose Raids-in-window changed, refresh the "Computed as of" header, re-sort by Signup rate desc (alphabetical tiebreak), renumber. Former players are excluded. Skip entirely for out-of-scope sets (currently any old-world set). |
 | `rules/04-players.md` | **Update IF** a new player appeared, or an existing player's spec changed. |
 
 > **Set file format is templated.** Do not invent your own structure. If something genuinely doesn't fit either template, raise it to the user before deviating — the templates are the canonical structure for sets, and consistency across sets is what makes bench history and predecessor reads reliable.
@@ -132,7 +130,7 @@ The `## Notes` section is for **per-raid facts that aren't derivable from the ru
 
 Same as above, but:
 - The roster is already decided — just record it.
-- Still update `bench-history.md` and `04-players.md` with any new information.
+- Still update `bench-history-tbc.md` and `04-players.md` with any new information.
 
 ---
 
@@ -149,7 +147,7 @@ Same as above, but:
 
 ### Then check:
 - Do any existing sets in `sets/` need to be re-evaluated?
-- Does `bench-history.md` need adjustment?
+- Does `bench-history-tbc.md` need adjustment?
 
 ### Writing a changelog entry
 
@@ -201,7 +199,7 @@ Target length: **~15 lines per entry**. Use this structure:
 - ❌ No "currently applies to" tables that list specific players
 - ✅ Generic rule statements, abstract examples, file-level impact descriptions
 
-Player data — names, classes, specs, priorities, bench counts, set rosters — lives in `rules/04-players.md`, `derived/bench-history.md`, and `sets/*.md`. Duplicating player data into a changelog entry creates a stale snapshot the moment any player attribute changes.
+Player data — names, classes, specs, priorities, bench counts, set rosters — lives in `rules/04-players.md`, `derived/bench-history-tbc.md`, and `sets/*.md`. Duplicating player data into a changelog entry creates a stale snapshot the moment any player attribute changes.
 
 ---
 
@@ -227,10 +225,9 @@ Player data — names, classes, specs, priorities, bench counts, set rosters —
 | File | What to update |
 |------|----------------|
 | `rules/04-players.md` | Update the `Player` column to the new canonical name. Update the `Character(s)` column to match. If the old name should remain discoverable for cross-referencing older Discord screenshots, add a brief *"Previously known as X"* note in the `Notes` column. |
-| `derived/bench-history.md` | Update every row that references the old player name to the new canonical name. This is derived data, not a historical record — normalize it, don't preserve the old label. |
-| `derived/signup-history.md` | Same as `bench-history.md` — rename the `Player` column value to the new canonical name. Derived data, normalize it. |
-| `derived/signup-history-karazhan-gruul-mag.md` | Same treatment as `derived/signup-history.md`. Row only exists if the player has in-scope signups; if absent, no action. |
-| `derived/signup-rate-karazhan-gruul-mag.md` | Same treatment as `derived/signup-history-karazhan-gruul-mag.md` — rename the `Player` cell. Row only exists if the player has in-scope signups; if absent, no action. |
+| `derived/bench-history-tbc.md` | Update every row that references the old player name to the new canonical name. This is derived data, not a historical record — normalize it, don't preserve the old label. |
+| `derived/signup-history-total.md` | Same as `bench-history-tbc.md` — rename the `Player` column value to the new canonical name. Derived data, normalize it. |
+| `derived/signup-stats-tbc.md` | Rename the `Player` cell. Derived data, normalize it. Row only exists if the player has in-scope signups; if absent, no action. Re-sort only if the alphabetical tiebreak position changes. |
 | `sets/*.md` | Update every historical set that references the old name, wherever it appears (signup lists, roster tables, bench tables, Notes sections). A pure name normalization doesn't violate the sets-are-immutable principle — it updates the label without changing any factual content. |
 
 ### Afterwards:
@@ -246,10 +243,9 @@ Player data — names, classes, specs, priorities, bench counts, set rosters —
 | File | What to update |
 |------|----------------|
 | `rules/04-players.md` | Add new player row, or strike through departed player |
-| `derived/bench-history.md` | Strike through departed player (keep for history) |
-| `derived/signup-history.md` | Move the row from Current members (or Officers) to Former members; re-sort and renumber both sub-tables. Do **not** strike through (sub-table placement conveys departed status, matching `rules/04-players.md`). |
-| `derived/signup-history-karazhan-gruul-mag.md` | Remove the departed player's row from Current members (or Officers) and renumber the affected sub-table. No Former members sub-table here — see the file's header for the full divergence from `signup-history.md`. Row only exists if the player has in-scope signups; if absent, no action. |
-| `derived/signup-rate-karazhan-gruul-mag.md` | Remove the departed player's row (or the officer-promoted player's row — this file tracks only non-officer current members) and renumber. Row only exists if the player has in-scope signups; if absent, no action. |
+| `derived/bench-history-tbc.md` | Strike through departed player (keep for history) |
+| `derived/signup-history-total.md` | Move the row from Current members (or Officers) to Former members; re-sort and renumber both sub-tables. Do **not** strike through (sub-table placement conveys departed status, matching `rules/04-players.md`). |
+| `derived/signup-stats-tbc.md` | Remove the departed player's row and renumber. Flat table (officers + Regular players combined), so officer promotion/demotion needs no action here. Row only exists if the player has in-scope signups; if absent, no action. |
 | `rules/03-player-constraints.md` | Remove any constraints involving departed player |
 
 ---
@@ -275,10 +271,9 @@ INPUTS for generating a set:
   ├── rules/02-bench-rotation.md
   ├── rules/03-player-constraints.md
   ├── rules/04-players.md
-  ├── derived/bench-history.md     ← summary derived from sets/, kept as a fast-lookup index
-  ├── derived/signup-history.md    ← derived from sets/ — statistic only, not used by any active rule
-  ├── derived/signup-history-karazhan-gruul-mag.md  ← scope-restricted counterpart of signup-history.md
-  └── derived/signup-rate-karazhan-gruul-mag.md     ← signup rate (percentage) in the same scope (statistic only)
+  ├── derived/bench-history-tbc.md     ← summary derived from sets/, kept as a fast-lookup index
+  ├── derived/signup-history-total.md    ← derived from sets/ — statistic only, not used by any active rule
+  └── derived/signup-stats-tbc.md  ← combined signup count + signup rate (percentage), TBC-era sets only (statistic only)
 
 REFERENCE for parsing screenshots and raid composition decisions:
   ├── reference/class-colors-and-spec-icons.md       ← parsing screenshots (class colors, spec icons)
@@ -287,10 +282,9 @@ REFERENCE for parsing screenshots and raid composition decisions:
 
 OUTPUTS:
   ├── sets/*.md                    ← actual sets, one per raid night (each set is also INPUT for the next)
-  ├── derived/bench-history.md     ← updated whenever a new set is created
-  ├── derived/signup-history.md    ← updated whenever a new set is created or edited
-  ├── derived/signup-history-karazhan-gruul-mag.md  ← same, but only for in-scope sets (Karazhan/Gruul/Mag)
-  └── derived/signup-rate-karazhan-gruul-mag.md     ← updated on the same trigger as the history (no calendar drift)
+  ├── derived/bench-history-tbc.md     ← updated whenever a new set is created
+  ├── derived/signup-history-total.md    ← updated whenever a new set is created or edited
+  └── derived/signup-stats-tbc.md  ← same, but only for TBC-era sets; also recomputes Signup rate
 
 REFERENCE for writing new sets (canonical structure for set files):
   ├── reference/templates/karazhan-set.md   ← canonical structure for Karazhan sets
@@ -311,10 +305,10 @@ META (read every session):
 After any interaction, check:
 
 - [ ] New player seen? → `04-players.md`
-- [ ] Someone benched? → `bench-history.md`
-- [ ] New set written or edited? → `signup-history.md` (increment for every player in `## Signups`); also `signup-history-karazhan-gruul-mag.md` and `signup-rate-karazhan-gruul-mag.md` if the set is in scope
+- [ ] Someone benched? → `bench-history-tbc.md`
+- [ ] New set written or edited? → `signup-history-total.md` (increment for every player in `## Signups`); also `signup-stats-tbc.md` if the set is in scope (TBC-era)
 - [ ] Spec changed from previous? → `04-players.md`
 - [ ] Rule added/changed? → `rules/*.md` + `changelog/`
-- [ ] Player left/joined? → `04-players.md` + `03-player-constraints.md` + `bench-history.md`
+- [ ] Player left/joined? → `04-players.md` + `03-player-constraints.md` + `bench-history-tbc.md`
 - [ ] New set created? → `sets/YYYY-MM-DD-day-raid.md`
 - [ ] Constraint added? → `03-player-constraints.md`

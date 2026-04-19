@@ -2,7 +2,7 @@
 
 ## Change
 
-Replaced the two per-location tables in `derived/bench-history.md` (one for Karazhan, one for Gruul+Magtheridon) with a single alphabetical-by-player table containing per-location count and dates columns plus a new **Total** column summing benches across all raid locations. Added a header warning that the table must be read down columns and never across rows, and that the Total column is *only* consulted by the cross-location bench-total tiebreaker (`rules/02-bench-rotation.md` → "Cross-location bench total"), never by the primary fair-rotation comparison. Updated `reference/file-operations-manual.md` → "Step 4 — Write/Update" to describe the new edit-in-place workflow (find the player's row or insert it in alphabetical position; increment the location count cell; append the new date; recompute Total) instead of the old append-row workflow.
+Replaced the two per-location tables in `derived/bench-history-tbc.md` (one for Karazhan, one for Gruul+Magtheridon) with a single alphabetical-by-player table containing per-location count and dates columns plus a new **Total** column summing benches across all raid locations. Added a header warning that the table must be read down columns and never across rows, and that the Total column is *only* consulted by the cross-location bench-total tiebreaker (`rules/02-bench-rotation.md` → "Cross-location bench total"), never by the primary fair-rotation comparison. Updated `reference/file-operations-manual.md` → "Step 4 — Write/Update" to describe the new edit-in-place workflow (find the player's row or insert it in alphabetical position; increment the location count cell; append the new date; recompute Total) instead of the old append-row workflow.
 
 ## Reason
 
@@ -10,5 +10,5 @@ Two consumers benefit. First, the cross-location bench-total tiebreaker added in
 
 ## Files touched
 
-- `derived/bench-history.md` — restructured to single table with Karazhan, Gruul+Mag, and Total columns
+- `derived/bench-history-tbc.md` — restructured to single table with Karazhan, Gruul+Mag, and Total columns
 - `reference/file-operations-manual.md` — Step 4 update instructions rewritten for the new layout

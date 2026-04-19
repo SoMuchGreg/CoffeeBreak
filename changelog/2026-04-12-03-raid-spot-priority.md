@@ -10,6 +10,6 @@ Officer exemption and "LAST RESORT ONLY" flags were duplicated across several fi
 - `rules/04-players.md`
 - `rules/02-bench-rotation.md`
 - `config/project.md`
-- `derived/bench-history.md`
+- `derived/bench-history-tbc.md`
 - `reference/file-operations-manual.md`
 - `README.md`

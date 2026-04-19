@@ -40,7 +40,7 @@ When deciding who to bench, compare players' bench counts **for the specific rai
 
 Cross-priority bench counts are **not** comparable: a priority-3 player with 0 benches does not get a spot before a priority-2 player with 2 benches. Priority always wins over fairness across levels.
 
-Previous bench history (tracked in prior sets and summarized in `derived/bench-history.md`) must be consulted before deciding who sits.
+Previous bench history (tracked in prior sets and summarized in `derived/bench-history-tbc.md`) must be consulted before deciding who sits.
 
 ### Tiebreaker: composition target
 
@@ -90,7 +90,7 @@ If both Tier 1 and Tier 2 leave the tie unresolved (e.g., the tied candidates sh
 
 When the composition-target / Karazhan class tiebreakers above don't discriminate, apply this rule before falling through to alphabetical: **prefer to play the tied candidate with the highest cumulative bench count summed across every raid location the project currently tracks.** Equivalently, prefer to bench the tied candidate with the lowest cross-location total.
 
-"Every raid location" means every location for which bench counts are maintained in `derived/bench-history.md` at the time the roster is being formed — no location is excluded, and this rule automatically extends to any future raid location added to the project without needing to be reworded.
+"Every raid location" means every location for which bench counts are maintained in `derived/bench-history-tbc.md` at the time the roster is being formed — no location is excluded, and this rule automatically extends to any future raid location added to the project without needing to be reworded.
 
 The reasoning: per-location fair rotation (the primary rule) can leave a player who has been benched heavily on other locations still sitting at a tied per-location count here. Giving them the spot in this tie nudges their overall raid participation back toward parity with peers who have been benched less globally.
 
@@ -120,7 +120,7 @@ The raid leader (the user) may at any time designate a specific player to sit on
 - The user marks a player as "likely to be benched" in the signup screenshot or a note.
 - A player is the surplus in a role that exceeds the composition target (e.g., the tank-surplus flex case in `rules/01-raid-compositions.md` → "Handling role surpluses"), and the user picks which surplus player sits rather than offering a flex.
 
-**Discretionary benches still count toward fair bench rotation.** A player placed on the bench by raid leader choice has their cumulative bench count for that raid location **incremented by 1**, exactly as if fair rotation had chosen them. Record them in `derived/bench-history.md` and in the set file's bench table the same way as a fair-rotation bench — only the **reason label** differs (`leader choice` instead of `fair rotation`). This mirrors the general principle that every bench counts toward fair rotation regardless of *why* the player ended up on the bench — see "Bench reason vocabulary" below for the full list of reason labels.
+**Discretionary benches still count toward fair bench rotation.** A player placed on the bench by raid leader choice has their cumulative bench count for that raid location **incremented by 1**, exactly as if fair rotation had chosen them. Record them in `derived/bench-history-tbc.md` and in the set file's bench table the same way as a fair-rotation bench — only the **reason label** differs (`leader choice` instead of `fair rotation`). This mirrors the general principle that every bench counts toward fair rotation regardless of *why* the player ended up on the bench — see "Bench reason vocabulary" below for the full list of reason labels.
 
 **Explicit user exemption (rare).** If the user explicitly instructs the planner that a specific bench should **not** count toward fair rotation (phrasings like "don't count this one", "this bench is free", "no fairness impact"), leave the player's cumulative bench count unchanged AND record the exemption as a line in the set file's **Notes** section explaining which bench and the user's reason. The `Reason` column in the bench table stays whatever label describes how the player ended up benched; the exemption is a prose override, not a reason label in its own right. The default is always that every bench counts — the user must opt out explicitly, per-bench.
 
