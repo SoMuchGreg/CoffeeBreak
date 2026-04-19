@@ -2,7 +2,10 @@
 
 Scope-restricted counterpart of `signup-history.md`. Counts only signups from sets whose content is **exclusively** Karazhan, Gruul's Lair, or Magtheridon's Lair — i.e., all current TBC sets in `sets/`. Old-world sets (ZG/AQ20/Ony, 2026-01-07 through 2026-02-01) are excluded in full.
 
-For counting rules, canonical-name handling, table structure, sort order, sub-table placement, rename/leave handling, and maintenance triggers, see **`signup-history.md`**. Everything there applies identically here — the only difference is which sets feed the counts.
+For counting rules, canonical-name handling, table structure, sort order, sub-table placement, rename/leave handling, and maintenance triggers, see **`signup-history.md`**. Everything there applies identically here, with two differences:
+
+- Only Karazhan / Gruul / Magtheridon sets feed the counts (see **Scope** below).
+- **This file tracks only current members.** The `Former members` sub-table from `signup-history.md` is intentionally omitted here; when a player leaves the guild, remove their row from **Current members** (or **Officers**) and renumber the affected sub-table.
 
 ## Scope
 
@@ -68,30 +71,3 @@ Update on the same trigger as `signup-history.md`, but only for sets that fall w
 | 37 | Blacksi             | 1       |
 | 38 | Spot/Yorekbarn      | 1       |
 | 39 | Varva               | 1       |
-
-### Former members
-
-| #  | Player              | Signups |
-|----|---------------------|---------|
-| 1  | Jinothy             | 7       |
-| 2  | Mairen/Zorÿa        | 5       |
-| 3  | Fredfull            | 4       |
-| 4  | Kryxs               | 4       |
-| 5  | Ryro                | 4       |
-| 6  | Venguard            | 4       |
-| 7  | Zemp                | 4       |
-| 8  | Aserrah             | 3       |
-| 9  | Bhandage            | 3       |
-| 10 | Buns/Sourbuns       | 3       |
-| 11 | Ayujinzhu           | 2       |
-| 12 | Erushi              | 2       |
-| 13 | Lixly               | 2       |
-| 14 | Thalynora           | 2       |
-| 15 | blep                | 1       |
-| 16 | Calendril           | 1       |
-| 17 | David/Dejv          | 1       |
-| 18 | Eebowai             | 1       |
-| 19 | Flippkisi           | 1       |
-| 20 | overaggro           | 1       |
-| 21 | Rasputin            | 1       |
-| 22 | Sickdeer            | 1       |
