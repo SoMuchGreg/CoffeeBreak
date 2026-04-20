@@ -1,24 +1,24 @@
 <!--
 TEMPLATE for a 25-man raid set file. To create a new 25-man set, copy this file
 from `reference/templates/25man-set.md` into `sets/` and rename the copy to
-`YYYY-MM-DD-{day}-{raid-type}.md` (e.g. `sets/2026-04-19-sun-gruul-mag.md`). For
-raid types other than Gruul+Mag (SSC, TK, Hyjal, BT when those unlock), use a
+`YYYY-MM-DD-{day}-{raid-location}.md` (e.g. `sets/2026-04-19-sun-gruul-mag.md`). For
+raid locations other than Gruul+Mag (SSC, TK, Hyjal, BT when those unlock), use a
 short slug like `ssc`, `tk`, etc. Do not edit this template in place — only edit
 the copy under `sets/`.
 
 Fill in every placeholder marked {like-this}. Delete every section or sub-line
-marked `<!-- delete if … -->` if it doesn't apply.
+marked with an HTML comment like `delete line if none` if its condition applies.
 
 Keep the section order as-is — the file-operations-manual and rules assume
 this layout.
 
-The composition target depends on the raid type — the canonical numbers live
+The composition target depends on the raid location — the canonical numbers live
 in `rules/01-raid-compositions.md`. Always look up the target there for the
-specific raid type before filling in the Composition check line below. Never
+specific raid location before filling in the Composition check line below. Never
 copy the target from a previous set without re-verifying it against rule 01.
 -->
 
-# {Raid type} — {Day} {DD.MM.YYYY}
+# {Raid location} — {Day} {DD.MM.YYYY}
 
 > {Optional one-line schedule note}    <!-- delete blockquote line if not applicable -->
 
@@ -49,7 +49,7 @@ to bring the active roster down to 25.
 
 **Header stats:** Melee {N}, Ranged {N}, Healers {N}    <!-- copy from screenshot header -->
 
-## Actual Roster ({raid type})
+## Actual Roster ({raid location})
 
 <!--
 Role-grouped tables. The Class column should record what the player ACTUALLY
@@ -76,7 +76,7 @@ or "Druid (Resto)" etc. when it's not obvious from the role section.
 |--------|-------|
 | ...    | ...   |
 
-**Composition check:** Target {T}/{H}/{DPS} for {raid type} (per `rules/01-raid-compositions.md`). Actual: {T}/{H}/{DPS} = {total}. Status: ✅ / ⚠️ {explanation if not on target, e.g. "1 healer short — flex declined" or "1 over on DPS, ran 26 by user override"}.
+**Composition check:** Target {T}/{H}/{DPS} for {raid location} (per `rules/01-raid-compositions.md`). Actual: {T}/{H}/{DPS} = {total}. Status: ✅ / ⚠️ {explanation if not on target, e.g. "1 healer short — flex declined" or "1 over on DPS, ran 26 by user override"}.
 
 ## Dual-spec flex applied                              <!-- delete this whole section if no flex was used -->
 
@@ -94,9 +94,8 @@ Tier 2 = no preference; Tier 3 = reluctance / "absolute last resort" note.
 ## Bench ({N})
 
 <!--
-Bench count = cumulative count for this player at this raid LOCATION (the specific
-25-man raid type), INCLUDING this raid. Per rules/02-bench-rotation.md, bench counts
-for Karazhan and each 25-man raid type are tracked independently.
+Bench count = cumulative count for this player at this raid location, INCLUDING this raid. Per rules/02-bench-rotation.md, bench counts
+for Karazhan and each 25-man raid location are tracked independently.
 
 Reason column — pick one of the valid labels from `rules/02-bench-rotation.md` →
 "Bench reason vocabulary" (single source of truth). Do not invent new labels. If

@@ -38,14 +38,13 @@ This applies only among soft rules themselves. Hard rules always win over soft r
 
 ### Under-cap behavior (when signups are below the format's optimal cap)
 
-When signups for a raid are below the format's optimal capacity, the **default** is that no one is benched for fair-rotation, priority-3, or capacity reasons — everyone who signed up gets a spot. This default applies fully to 25-man raids (which can flex in size). For Karazhan it is **constrained** by the structural requirement that each team must have exactly 10 players, so the per-format rules below specify what to do at each signup level.
+When signups fall below the format's optimal capacity, fair-rotation, priority-3, and capacity-based benching are suspended — everyone who signed up gets a spot. The only benches that still occur are:
 
-The **only** kinds of benching that can happen under-cap are:
-- **Structural** — Karazhan team-count math (see "Karazhan → Under-cap team count" below)
-- **Self-imposed** — signed up as bench/tentative (`+Y` in the Discord screenshot header)
-- **Declined dual-spec flex** — refused a spec swap when the raid was short on a role
+- **Structural** — format team-count math (currently applies to Karazhan only; see `Karazhan → Under-cap team count` below)
+- **Self-imposed** — player signed up as bench/tentative (`+Y` in the Discord screenshot header)
+- **Declined dual-spec flex** — refused a spec swap when the raid was short on a role (see `Handling role shortages (dual-spec flex)` above)
 
-Format-specific under-cap rules live in the per-format sections below.
+Format-specific under-cap mechanics live with each format — see `Karazhan → Under-cap team count` and `25-man raids → Under-cap behavior (any 25-man)`.
 
 ### Party groups (out of scope)
 
@@ -129,13 +128,13 @@ The dual-spec flex rule from "General principles → Handling role shortages" mu
 
 ## 25-man raids
 
-### General (applies to every 25-man raid type)
+### General (applies to every 25-man raid location)
 
 These general rules apply to **every** 25-man raid we run, current and future (Gruul+Mag today; SSC, TK, Hyjal, BT, etc. when content unlocks).
 
-**Default tank count for any 25-man raid is 2 tanks**, unless the specific raid type below overrides it. Healer and DPS counts are not specified at the general level — they depend on the raid type. See the per-raid-type sections below for canonical numbers.
+**Default tank count for any 25-man raid is 2 tanks**, unless the specific raid location below overrides it. Healer and DPS counts are not specified at the general level — they depend on the raid location. See the per-raid-location sections below for canonical numbers.
 
-> ⚠️ **Do not conflate "25-man" with "Gruul+Mag".** Gruul+Mag is one specific 25-man raid type; it has its own composition (see below) which differs from the general rule of thumb. Future 25-man raid types (SSC, TK, etc.) will each get their own section with their own composition.
+> ⚠️ **Do not conflate "25-man" with "Gruul+Mag".** Gruul+Mag is one specific 25-man raid location; it has its own composition (see below) which differs from the general rule of thumb. Future 25-man raid locations (SSC, TK, etc.) will each get their own section with their own composition.
 
 #### Under-cap behavior (any 25-man)
 

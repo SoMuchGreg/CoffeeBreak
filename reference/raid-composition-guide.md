@@ -6,7 +6,9 @@ In TBC, many important buffs are **party-only** (affect only the 5 members in yo
 
 **TBC 20th Anniversary change:** Heroism/Bloodlust is now **raid-wide** (was party-only in original TBC). It also resets on boss kill or wipe. All other party-only buffs remain party-only.
 
-**Important context:** CoffeeBreak does NOT run meta-optimized raid teams. We compose raids with whatever reliable members sign up. The templates in sections 3-4 are idealized references — in practice, use the **decision-making framework in Section 9** to make the best of whatever roster is available.
+**Important context:** CoffeeBreak does NOT run meta-optimized raid teams. We compose raids with whatever reliable members sign up.
+
+> ⚠️ **Scope note:** Sections **§3, §4, §9** are **out of scope** for roster formation — they describe 5-man party-group breakdowns, which CoffeeBreak does not currently produce. Do not apply them when building a roster. Canonical rule: `rules/01-raid-compositions.md` → "Party groups (out of scope)". In-scope sections: §1, §2, §5, §6, §7, §8.
 
 ---
 
@@ -154,6 +156,8 @@ Shaman totems are the single most important factor in group composition. Each to
 
 ## 3. Optimal Party Group Templates (25-Man)
 
+> ⚠️ **Out of scope for roster formation.** See `rules/01-raid-compositions.md` → "Party groups (out of scope)". Do not apply this section when building a roster.
+
 ### Group 1: Melee / Physical DPS Group
 
 **Goal:** Maximize physical damage output through stacked melee buffs.
@@ -239,6 +243,8 @@ Shaman totems are the single most important factor in group composition. Each to
 ---
 
 ## 4. Karazhan (10-Man) Group Composition
+
+> ⚠️ **Out of scope for roster formation.** See `rules/01-raid-compositions.md` → "Party groups (out of scope)". Do not apply this section when building a roster.
 
 With only 2 groups, you cannot optimize as thoroughly as in 25-man. The key is to split melee/physical and caster/healer interests.
 
@@ -371,6 +377,8 @@ These debuffs affect the boss and benefit the entire raid, but require specific 
 ---
 
 ## 9. Practical Group Assignment Framework (Non-Meta Rosters)
+
+> ⚠️ **Out of scope for roster formation.** See `rules/01-raid-compositions.md` → "Party groups (out of scope)". Do not apply this section when building a roster.
 
 The templates in sections 3-4 assume ideal compositions. In reality, you'll often be missing key specs, have too many of one class, or have unusual comp combinations. Use this framework to make group assignments when the roster doesn't match any template.
 

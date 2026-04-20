@@ -102,7 +102,7 @@ When none of the tiebreakers above discriminate — composition target, Karazhan
 
 #### Interaction with composition caps
 
-Hard composition caps from `rules/01-raid-compositions.md` (e.g., the 25-man Resto Druid cap: max 2 when more than 6 healers sign up) are **applied before** this tiebreaker runs. The cap determines *which* candidates are even eligible; the tiebreaker then resolves fair-rotation ties among the eligible candidates. Section 8's ranges often align with cap bounds (e.g., Section 8 says "Restoration Druid 1-2", rule 01 caps at 2), but the cap is the hard rule and Section 8 is the soft tiebreaker — if they ever diverge for a future raid type, the cap wins.
+Hard composition caps from `rules/01-raid-compositions.md` (e.g., the 25-man Resto Druid cap: max 2 when more than 6 healers sign up) are **applied before** this tiebreaker runs. The cap determines *which* candidates are even eligible; the tiebreaker then resolves fair-rotation ties among the eligible candidates. Section 8's ranges often align with cap bounds (e.g., Section 8 says "Restoration Druid 1-2", rule 01 caps at 2), but the cap is the hard rule and Section 8 is the soft tiebreaker — if they ever diverge for a future raid location, the cap wins.
 
 ## Composition caps override pure fairness (within a priority level)
 

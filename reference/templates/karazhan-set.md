@@ -5,7 +5,7 @@ to `YYYY-MM-DD-{day}-karazhan.md` (e.g. `sets/2026-04-15-wed-karazhan.md`). Do
 not edit this template in place — only edit the copy under `sets/`.
 
 Fill in every placeholder marked {like-this}. Delete every section or sub-line
-marked `<!-- delete if … -->` if it doesn't apply.
+marked with an HTML comment like `delete line if none` if its condition applies.
 
 Keep the section order as-is — the file-operations-manual and rules assume
 this layout.
