@@ -10,23 +10,29 @@ The composition tables in this file (per-team for Karazhan, per-raid for 25-mans
 
 If signups don't include enough players for a required role at a raid's composition target (tanks, healers, or DPS), the raid leader should ask **dual-spec players** whether they'd be willing to switch to their secondary spec for this raid.
 
-- **Dual-spec players** are any player in `rules/04-players.md` whose `Spec 2 (role)` column lists a specific spec (not "—", not "?", not blank). Their second spec is what they may switch to. A "?" in Spec 2 means we don't yet know whether the player has a second spec — those players are **not** eligible for flex by default; the user can clarify on a case-by-case basis.
-- The decision is **the player's**. They may decline. Never unilaterally reassign a player's spec — always ask first.
-- If the player declines, the raid runs short on that role rather than forcing the swap. Move on and ask the next eligible dual-spec player; if no one accepts, the raid runs under-target.
-- **Asking order — three tiers.** Notes in `rules/04-players.md` reveal each player's flex disposition. Ask in this order, exhausting each tier before moving to the next:
-  1. **Most flexible first** — players explicitly noted as flexible across roles (e.g., "Switches role by raid format", "flexes between tank and DPS"). They actively flex specs across raids and are the easiest first ask.
-  2. **No-preference second** — players with confirmed dual specs but no note recording a strong preference one way or the other. Neutral.
-  3. **Last resort last** — players with reluctance notes (e.g., "Strong Resto preference", "extremely reluctant Balance", "Balance spec only as absolute last resort"). Ask only if tiers 1 and 2 didn't fill the role. Respect the spirit of "absolute last resort" notes — these players genuinely don't want to play their off-spec.
-- This flex is composition-time, before the final bench cut. Once a flex swap is accepted, recompute the priority + bench rotation against the new role distribution.
+**Who qualifies.** Dual-spec players are any player in `rules/04-players.md` whose `Spec 2 (role)` column lists a specific spec (not "—", not "?", not blank). Their second spec is what they may switch to. A "?" in Spec 2 means we don't yet know whether the player has a second spec — those players are **not** eligible for flex by default; the user can clarify on a case-by-case basis.
+
+**Consent.** The decision is the player's. They may decline. Never unilaterally reassign a player's spec — always ask first. If the player declines, the raid runs short on that role rather than forcing the swap. Move on and ask the next eligible dual-spec player; if no one accepts, the raid runs under-target.
+
+**Asking order (three tiers).** Notes in `rules/04-players.md` reveal each player's flex disposition. Ask in this order, exhausting each tier before moving to the next:
+
+1. **Most flexible first** — players explicitly noted as flexible across roles (e.g., "Switches role by raid format", "flexes between tank and DPS"). They actively flex specs across raids and are the easiest first ask.
+2. **No-preference second** — players with confirmed dual specs but no note recording a strong preference one way or the other. Neutral.
+3. **Last resort last** — players with reluctance notes (e.g., "Strong Resto preference", "extremely reluctant Balance", "Balance spec only as absolute last resort"). Ask only if tiers 1 and 2 didn't fill the role. Respect the spirit of "absolute last resort" notes — these players genuinely don't want to play their off-spec.
+
+**Timing.** This flex is composition-time, before the final bench cut. Once a flex swap is accepted, recompute the priority + bench rotation against the new role distribution.
 
 ### Handling role surpluses (tank-surplus flex)
 
 The mirror of the dual-spec flex rule above: when **more tanks sign up than the raid's composition target calls for**, dual-spec tank players can flex to their offspec rather than being auto-benched for the surplus. The principle is the same — prefer to use a player's offspec over sitting them on the bench, as long as the composition actually needs what their offspec provides.
 
-- **Identify the excess tank(s).** The raid's "core" tanks for that format are the tanks the raid leader relies on to fill the main-tank / off-tank / third-tank duties for that specific raid (e.g., for Gruul+Mag: Mirohl, Marino-Varthier, Ostbirger). Any tank-column signup beyond the core set is **excess** — they are not needed as a tank for this raid.
-- **Offer the offspec switch first.** Before benching the excess tank, check their `Spec 2 (role)` in `rules/04-players.md`. If they have a usable DPS or Healer offspec that the raid has room for, ask whether they'd play that offspec instead. This is a voluntary swap — never unilaterally reassign.
-- **If accepted**, the excess tank joins as a DPS/Healer and is treated as that role for every subsequent step (raid-spot priority, fair bench rotation, composition targets). Recompute the roster against the new role distribution.
-- **If declined, or if the excess tank has no usable offspec** (no Spec 2, or Spec 2 is also a tank spec), they fall through to the standard bench-rotation rules in Rule 02 like any other signup that doesn't fit.
+**Identify the excess tank(s).** The raid's "core" tanks for that format are the tanks the raid leader relies on to fill the main-tank / off-tank / third-tank duties for that specific raid (e.g., for Gruul+Mag: Mirohl, Marino-Varthier, Ostbirger). Any tank-column signup beyond the core set is **excess** — they are not needed as a tank for this raid.
+
+**Offer the offspec switch first.** Before benching the excess tank, check their `Spec 2 (role)` in `rules/04-players.md`. If they have a usable DPS or Healer offspec that the raid has room for, ask whether they'd play that offspec instead. This is a voluntary swap — never unilaterally reassign.
+
+**If accepted**, the excess tank joins as a DPS/Healer and is treated as that role for every subsequent step (raid-spot priority, fair bench rotation, composition targets). Recompute the roster against the new role distribution.
+
+**If declined, or if the excess tank has no usable offspec** (no Spec 2, or Spec 2 is also a tank spec), they fall through to the standard bench-rotation rules in Rule 02 like any other signup that doesn't fit.
 
 This rule applies to every raid format and every role-with-a-cap (tank is the common case today, but the same logic applies to any future format that caps healers or a specific DPS spec at a target count).
 
