@@ -40,7 +40,7 @@ Players competing for the same item drop **must be placed in different Karazhan 
 | Gloves of the Fallen Champion       | Thordrel                                                 |       |
 | Gloves of the Fallen Defender       | Lightweit                                                |       |
 | Grips of Deftness                   | Mirohl                                                   |       |
-| Helm of the Fallen Champion         | Bergamotka, Leontes, Lynelen                             |       |
+| Helm of the Fallen Champion         | Leontes, Lynelen                                         |       |
 | Helm of the Fallen Defender         | Beaverfist, Bombzor, Gigakox, Keatala, Lightweit, Mirohl |       |
 | Iron Gauntlets of the Maiden        | Mcjudgin                                                 |       |
 | King's Defender                     | Cptkavior, Doughball                                     |       |
@@ -55,14 +55,14 @@ Players competing for the same item drop **must be placed in different Karazhan 
 | Ruby Drape of the Mysticant         | Bestpractice                                             |       |
 | Shield of Impenetrable Darkness     | Mirohl                                                   |       |
 | Shining Chain of the Afterworld     | Lightweit                                                |       |
-| Skulker's Greaves                   | Dankyn, Gigakox, Vaelruna, Yxanb                         |       |
+| Skulker's Greaves                   | Dankyn, Gigakox, Vaelruna                                |       |
 | Spiteblade                          | Baebay, Dankyn, Gigakox                                  |       |
 | Stainless Cloak of the Pure Hearted | Keatala                                                  |       |
 | Stonebough Jerkin                   | Keatala                                                  |       |
 | The Decapitator                     | Bergamotka, Lynelen, Yorekbarn                           |       |
 | The Lightning Capacitor             | Oomtoodoom                                               |       |
 | Vambraces of Courage                | Cptkavior                                                |       |
-| Wrynn Dynasty Greaves               | Doughball, Mirohl, Ostbirger                             |       |
+| Wrynn Dynasty Greaves               | Doughball, Ostbirger                                     |       |
 
 **Applies to:** Karazhan only.
 
