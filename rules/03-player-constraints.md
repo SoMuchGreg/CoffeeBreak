@@ -44,10 +44,13 @@ The **Needlist** lists high-value loot drops players want to roll "need" on, pai
 | Bands of Indwelling                 | Lightweit                                                |       |
 | Barbed Choker of Discipline         | Mcjudgin, Varthier                                       |       |
 | Battlescar Boots                    | Cptkavior                                                |       |
+| Blade of the Unrequited             | Vaelruna                                                 |       |
 | Boots of Foretelling                | Jar, Ucannotpass                                         |       |
 | Boots of the Incorrupt              | Siljes                                                   |       |
+| Cowl of Defiance                    | Yxanb                                                    |       |
 | Crimson Girdle of the Indomitable   | Cptkavior                                                |       |
-| Fiery Warhorse's Reins              | Bestpractice, Jar                                        |       |
+| Fiery Warhorse's Reins              | Bestpractice, Jar, Varthier                              |       |
+| Girdle of Treachery                 | Vaelruna, Yxanb                                          |       |
 | Gloves of the Fallen Champion       | Thordrel                                                 |       |
 | Gloves of the Fallen Defender       | Lightweit                                                |       |
 | Grips of Deftness                   | Mirohl                                                   |       |
