@@ -72,7 +72,7 @@ Content that does NOT belong in each file:
 - **Sets are chained.** Bench history carries forward. Always read all prior sets before generating a new one.
 - **Self-referencing.** Every active project file — everything under `rules/`, `config/`, `reference/`, `sets/`, and `derived/` — becomes input for the next session. This recursion is intentional: past rosters constrain future ones, prior rules constrain new edits, derived state reflects accumulated history. Always read what's already there before adding to it; never write something that ignores the existing context.
 - **Never assume player info.** If you don't know a player's class, spec, or role — ask. Do not guess.
-- **Rules evolve.** When the user updates rules, re-evaluate affected sets.
+- **Rules evolve.** When the user updates rules, recalculate affected sets.
 - **Research is allowed.** TBC class mechanics, raid requirements, etc. can be researched online. Store findings in `reference/`.
 
 ## Before any file edit

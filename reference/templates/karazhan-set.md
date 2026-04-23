@@ -38,10 +38,28 @@ algorithm.
 
 **Tentative ({N}):** ...                             <!-- delete line if none. TBC — not in roster pool until resolved; see reference/file-operations-manual.md Step 2 -->
 **Late ({N}):** ...                                  <!-- delete line if none -->
-**Originally absent but raided ({N}):** ...          <!-- delete line if none -->
-**Absent ({N}):** ...                                <!-- delete line if none -->
+
+<!--
+Do NOT add an `**Absent ({N}):**` sub-line here — Discord "Absent" is ignored
+entirely, see reference/file-operations-manual.md → Step 2 of "New signup
+screenshot received". User-notified withdrawals go in ## Withdrawn signups below.
+-->
 
 **Header stats:** Melee {N}, Ranged {N}, Healers {N}    <!-- copy from screenshot header -->
+
+## Withdrawn signups ({N})                             <!-- delete whole section if no withdrawals -->
+
+<!--
+Players whose signup was rescinded for this raid. Canonical rule, trigger
+phrases, and update procedure: reference/file-operations-manual.md → "Event:
+Player withdraws signup".
+
+Sort alphabetically case-insensitive by canonical player name (rules/04-players.md).
+-->
+
+| Player |
+|--------|
+| ...    |
 
 ## Actual Raid Rosters
 
@@ -171,24 +189,25 @@ this raid.
 ## Sanity check
 
 <!--
-Record the sub-agent sanity-check verdict from Step 3 of the roster-building
-workflow (reference/file-operations-manual.md). The sub-agent runs before the
-roster is presented to the user.
+Record the sub-agent sanity-check verdict. Canonical rule — when the sub-agent
+runs, verdict semantics, and how a fresh check is triggered — lives in
+reference/file-operations-manual.md → Step 3.6 of "Build the roster" and
+Event: Full-roster recalculation.
 
-Structure:
-  1. Verdict line: "YES" or "NO" + one-line summary.
-  2. Bullet list of any violations, acknowledged deviations, or soft rule
-     conflicts the sub-agent flagged.
-  3. If the roster changed AFTER the sanity check (e.g. leader bench swaps),
-     add a "Post-check changes" subsection listing what changed and any new
-     consequences (loot violations, composition shifts) that were not verified
-     by the sub-agent.
+Template layout for this section:
+  1. **Verdict: {YES / GOOD ENOUGH / NO}** — {one-line summary}.
+  2. Bullet list of any violations the sub-agent flagged.
+  3. If the roster changed after the latest sanity check without triggering a
+     new one, add a "Post-check changes" subsection listing what changed.
+
+Multi-verdict history: the Verdict line reflects the MOST RECENT check; earlier
+verdicts, if any, are appended chronologically for audit.
 
 Delete this whole section if no sanity check was performed (e.g. historical
 roster data recorded without a roster-building step).
 -->
 
-**Verdict: {YES / NO}** — {one-line summary}.
+**Verdict: {YES / GOOD ENOUGH / NO}** — {one-line summary}.
 
 - ...
 

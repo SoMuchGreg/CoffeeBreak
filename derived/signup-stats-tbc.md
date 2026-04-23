@@ -31,6 +31,8 @@ For a new or edited in-scope set:
 
 For edits that change an existing set's Signups section, apply the net delta — decrement for players removed, increment for new ones — then redo steps 2–4.
 
+For a withdrawal (user-notified signup rescission): follow `reference/file-operations-manual.md` → "Event: Player withdraws signup". That event is the canonical workflow for both pre-build and post-build cases and specifies this file's decrement behavior, including the `First signup` recompute path.
+
 For guild events: joining the guild shows up organically on a player's first in-scope signup; leaving the guild removes the row (move-out happens when the player's row moves to Former players in `rules/04-players.md`). Officer promotions/demotions need no action here — Officers and Regular players share this flat table.
 
 For renames: update the `Player` cell in-place; re-sort only if the alphabetical tiebreak position changes.

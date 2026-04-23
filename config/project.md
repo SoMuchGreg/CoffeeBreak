@@ -27,6 +27,7 @@ This file holds CoffeeBreak's **configuration data** — the canonical facts tha
 | **Dual-spec flex** | The role-shortage procedure: ask dual-spec players to switch to their `Spec 2` when a role target cannot be met from signups. Voluntary — the player may decline. Canonical rule: `rules/01-raid-compositions.md` → "Handling role shortages (dual-spec flex)". |
 | **Tank-surplus flex** | The mirror procedure: ask an excess tank to switch to a DPS or Healer offspec when more tanks sign up than the raid's composition target calls for. Voluntary — the player may decline. Canonical rule: `rules/01-raid-compositions.md` → "Handling role surpluses (tank-surplus flex)". |
 | **Needlist** | The table of high-value loot drops players want to roll "need" on, paired with the players competing for each drop. Competitors for the same item must be placed in different Karazhan teams. Canonical: `rules/03-player-constraints.md` → "Needlist". |
+| **Withdrawal** (or **withdrawn signup**) | A signup rescission — a player who signed up for a specific raid later revokes that signup. Does **not** count as a signup, but is recorded in the set's `## Withdrawn signups` (unlike the Discord "Absent" emoji state, which also doesn't count but leaves no record anywhere). Canonical rule (trigger phrases, update procedure, pre- vs. post-build cases): `reference/file-operations-manual.md` → "Event: Player withdraws signup". |
 
 ### Deprecated terms
 
