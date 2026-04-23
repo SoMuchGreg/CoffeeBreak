@@ -55,11 +55,11 @@ The **Needlist** lists high-value loot drops players want to roll "need" on, pai
 | Gloves of the Fallen Defender       | Lightweit                                                          |       |
 | Grips of Deftness                   | Leontes, Mirohl                                                    |       |
 | Helm of the Fallen Champion         | Lynelen                                                            |       |
-| Helm of the Fallen Defender         | Beaverfist, Bombzor, Gigakox, Keatala, Kresniik, Lightweit, Mirohl |       |
+| Helm of the Fallen Defender         | Beaverfist, Gigakox, Keatala, Kresniik, Lightweit, Mirohl          |       |
 | Iron Gauntlets of the Maiden        | Mcjudgin                                                           |       |
 | Ironstriders of Urgency             | Leontes                                                            |       |
 | King's Defender                     | Cptkavior, Doughball                                               |       |
-| Light's Justice                     | Bombzor, Siljes                                                    |       |
+| Light's Justice                     | Siljes                                                             |       |
 | Nathrezim Mindblade                 | Beaverfist, Pergatori                                              |       |
 | Nethershard Girdle                  | Ucannotpass                                                        |       |
 | Pendant of the Violet Eye           | Thordrel                                                           |       |
