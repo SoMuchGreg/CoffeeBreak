@@ -1,6 +1,6 @@
 # Project Configuration
 
-This file holds CoffeeBreak's **configuration data** — the canonical facts that other rules and workflows read. The project's purpose and structure live in `README.md`; the session workflow and key principles live in `CLAUDE.md`. This file is data only.
+This file holds Roster Machine's **configuration data** — the canonical facts that other rules and workflows read. The project's purpose and structure live in `README.md`; the session workflow and key principles live in `CLAUDE.md`. This file is data only.
 
 ## Terminology
 
@@ -34,7 +34,7 @@ This file holds CoffeeBreak's **configuration data** — the canonical facts tha
 
 ### Deprecated terms
 
-Do not use the terms below in any project file, chat, or record file — they are ambiguous within CoffeeBreak's vocabulary. For the session-behavior rule that covers the user using these terms, see `CLAUDE.md` → "Communication conventions".
+Do not use the terms below in any project file, chat, or record file — they are ambiguous within Roster Machine's vocabulary. For the session-behavior rule that covers the user using these terms, see `CLAUDE.md` → "Communication conventions".
 
 | Term | Why ambiguous | Use instead |
 |------|---------------|-------------|

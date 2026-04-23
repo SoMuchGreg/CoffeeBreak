@@ -1,6 +1,6 @@
-# CoffeeBreak — Claude Code Session Guide
+# Roster Machine — Claude Code Session Guide
 
-CoffeeBreak's purpose, directory structure, and key file pointers are documented in `README.md` — read that first if you haven't. **This file is the session guide:** how to behave during a session, what principles to follow, and the workflow for generating a raid roster.
+Roster Machine's purpose, directory structure, and key file pointers are documented in `README.md` — read that first if you haven't. **This file is the session guide:** how to behave during a session, what principles to follow, and the workflow for generating a raid roster.
 
 ## Vocabulary
 
@@ -59,7 +59,7 @@ Content that does NOT belong in each file:
 
 ## Auto-memory policy (important)
 
-**CoffeeBreak does not use Claude Code auto-memory.** Do not write any project context, rules, conventions, feedback, or player data to the per-project memory directory. All durable information must live in the repository (`CLAUDE.md`, `rules/`, `config/`, `reference/`, `records/`).
+**Roster Machine does not use Claude Code auto-memory.** Do not write any project context, rules, conventions, feedback, or player data to the per-project memory directory. All durable information must live in the repository (`CLAUDE.md`, `rules/`, `config/`, `reference/`, `records/`).
 
 **Why:** The auto-memory directory is machine-local. The user runs this project on multiple computers and needs identical behavior on each. Anything stored in auto-memory exists on one machine only and silently diverges from the others — exactly the kind of hidden state we want to avoid.
 
@@ -71,7 +71,7 @@ Content that does NOT belong in each file:
 ## Key principles
 
 - **Single source of truth.** Every rule, definition, algorithm, vocabulary table, structural convention, and piece of per-player data lives in **exactly one file**. When the same concept needs to be referenced from elsewhere, the other places must point at the canonical location with a short link — they must never restate or paraphrase the content. Before adding any rule content to a file, check whether the same content already exists somewhere else in the repo; if it does, link to it instead of duplicating it. Duplication drifts: the moment one copy is updated and the other isn't, future sessions can't tell which copy is authoritative. This principle applies to rule files, reference files, templates, and record files alike.
-- **No code.** CoffeeBreak is a markdown-only project. Do not write executable scripts, code files, configuration files for code tooling, or any non-markdown output. The project's value is in the rules and the rosters they produce, not in tooling. If a task seems to call for a script, find a way to express it as a rule or workflow instead.
+- **No code.** Roster Machine is a markdown-only project. Do not write executable scripts, code files, configuration files for code tooling, or any non-markdown output. The project's value is in the rules and the rosters they produce, not in tooling. If a task seems to call for a script, find a way to express it as a rule or workflow instead.
 - **Every rule matters.** Never skip, relax, or approximate a rule. If a conflict is discovered, flag it to the user before proceeding.
 - **Record files are chained.** Bench history carries forward. Always read all prior record files before generating a new one.
 - **Self-referencing.** Every active project file — everything under `rules/`, `config/`, `reference/`, `records/`, and `derived/` — becomes input for the next session. This recursion is intentional: past rosters constrain future ones, prior rules constrain new edits, derived state reflects accumulated history. Always read what's already there before adding to it; never write something that ignores the existing context.

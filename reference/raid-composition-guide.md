@@ -6,9 +6,9 @@ In TBC, many important buffs are **party-only** (affect only the 5 members in yo
 
 **TBC 20th Anniversary change:** Heroism/Bloodlust is now **raid-wide** (was party-only in original TBC). It also resets on boss kill or wipe. All other party-only buffs remain party-only.
 
-**Important context:** CoffeeBreak does NOT run meta-optimized raid teams. We compose raids with whatever reliable members sign up.
+**Important context:** Roster Machine does NOT run meta-optimized raid teams. We compose raids with whatever reliable members sign up.
 
-> ⚠️ **Scope note:** Sections **§3, §4, §9** are **out of scope** for roster formation — they describe 5-man party-group breakdowns, which CoffeeBreak does not currently produce. Do not apply them when building a roster. Canonical rule: `rules/01-raid-compositions.md` → "Party groups (out of scope)". In-scope sections: §1, §2, §5, §6, §7, §8.
+> ⚠️ **Scope note:** Sections **§3, §4, §9** are **out of scope** for roster formation — they describe 5-man party-group breakdowns, which Roster Machine does not currently produce. Do not apply them when building a roster. Canonical rule: `rules/01-raid-compositions.md` → "Party groups (out of scope)". In-scope sections: §1, §2, §5, §6, §7, §8.
 
 ---
 
