@@ -30,7 +30,7 @@ All other priority-2 and priority-3 players: 0 benches at every location.
 
 ## Former guild members
 
-Departed from the guild — kept here so historical sets and bench analyses remain interpretable. These counts do not participate in fair rotation; never compare them to current-member counts.
+Departed from the guild — kept here so historical record files and bench analyses remain interpretable. These counts do not participate in fair rotation; never compare them to current-member counts.
 
 | Player              | Karazhan | Karazhan dates | Gruul+Mag | Gruul+Mag dates | Total |
 |---------------------|----------|----------------|-----------|-----------------|-------|

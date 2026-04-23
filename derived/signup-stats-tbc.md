@@ -1,35 +1,35 @@
 # Signup Stats — TBC
 
-Per-player signup count and signup rate across TBC-era set files in `sets/`. Combines the former `derived/signup-history-karazhan-gruul-mag.md` (raw count) and `derived/signup-rate-karazhan-gruul-mag.md` (percentage) into a single view sorted by Signup rate.
+Per-player signup count and signup rate across TBC-era record files in `records/`. Combines the former `derived/signup-history-karazhan-gruul-mag.md` (raw count) and `derived/signup-rate-karazhan-gruul-mag.md` (percentage) into a single view sorted by Signup rate.
 
 Officers and Regular players share a single flat table here; former players are excluded. For canonical-name handling, what counts as a signup, and per-player counting mechanics, see `signup-history-total.md` — those rules apply identically.
 
 ## What each column means
 
 - **Player** — canonical name from `rules/04-players.md` (Officers or Regular players sub-table). Former players are excluded.
-- **First signup** — earliest date the player appears in the `## Signups (from Discord)` section of any **in-scope** set file in `sets/`.
-- **Signups** — cumulative count of in-scope sets containing the player in `## Signups`. One signup per set per canonical player.
-- **Signup rate** — `Signups ÷ Raids-in-window`, expressed as a percentage (0.0% to 100.0%). **Raids-in-window** is the count of in-scope set files dated on or after the player's First signup. Each player has their own window; fully cumulative, no rolling, no cap.
+- **First signup** — earliest date the player appears in the `## Signups (from Discord)` section of any **in-scope** record file in `records/`.
+- **Signups** — cumulative count of in-scope record files containing the player in `## Signups`. One signup per record file per canonical player.
+- **Signup rate** — `Signups ÷ Raids-in-window`, expressed as a percentage (0.0% to 100.0%). **Raids-in-window** is the count of in-scope record files dated on or after the player's First signup. Each player has their own window; fully cumulative, no rolling, no cap.
 
-The rate is fully cumulative over the player's in-scope tenure — a miss from months ago still drags the current percentage down, and only asymptotically recovers as more attended raids stack up. Both numerator and denominator change only when a new in-scope set is filed, so calendar drift alone never moves the rate.
+The rate is fully cumulative over the player's in-scope tenure — a miss from months ago still drags the current percentage down, and only asymptotically recovers as more attended raids stack up. Both numerator and denominator change only when a new in-scope record file is filed, so calendar drift alone never moves the rate.
 
 ## Scope
 
-**In-scope:** TBC-era set files in `sets/` — currently the 19 files from `2026-02-22-sun-karazhan.md` onward (Karazhan, Gruul's Lair, Magtheridon's Lair). If future TBC content (SSC, TK, MH, BT, Sunwell) gets raided, its sets fall in-scope automatically.
+**In-scope:** TBC-era record files in `records/` — currently the 19 files from `2026-02-22-sun-karazhan.md` onward (Karazhan, Gruul's Lair, Magtheridon's Lair). If future TBC content (SSC, TK, MH, BT, Sunwell) gets raided, its record files fall in-scope automatically.
 
-**Excluded:** the 7 old-world sets (`2026-01-*` and `2026-02-01-*`, ZG/AQ20/Ony) and any set created for content outside TBC.
+**Excluded:** the 7 old-world record files (`2026-01-*` and `2026-02-01-*`, ZG/AQ20/Ony) and any record file created for content outside TBC.
 
 ## Maintenance
 
-Update on any new or edited in-scope set, and whenever a player joins the guild, leaves, is promoted, or is renamed.
+Update on any new or edited in-scope record file, and whenever a player joins the guild, leaves, is promoted, or is renamed.
 
-For a new or edited in-scope set:
-1. For each distinct canonical player in the set's `## Signups` section, look them up in `rules/04-players.md`. If they're in Former players, skip. Otherwise, find their row here (or insert a new one). Increment **Signups** by 1 if they weren't already counted for this set. If this is their first in-scope signup, record **First signup**.
-2. **Raids-in-window grew for everyone whose First signup is on or before this set's date** — recompute **Signup rate** for every affected row (which, for a brand-new most-recent set, is every existing row).
+For a new or edited in-scope record file:
+1. For each distinct canonical player in the record file's `## Signups` section, look them up in `rules/04-players.md`. If they're in Former players, skip. Otherwise, find their row here (or insert a new one). Increment **Signups** by 1 if they weren't already counted for this record file. If this is their first in-scope signup, record **First signup**.
+2. **Raids-in-window grew for everyone whose First signup is on or before this record file's date** — recompute **Signup rate** for every affected row (which, for a brand-new most-recent record file, is every existing row).
 3. Re-sort the whole table by Signup rate desc (alphabetical case-insensitive tiebreak). Renumber `#` from `1`.
 4. Update the **Computed as of** header to today's date.
 
-For edits that change an existing set's Signups section, apply the net delta — decrement for players removed, increment for new ones — then redo steps 2–4.
+For edits that change an existing record file's Signups section, apply the net delta — decrement for players removed, increment for new ones — then redo steps 2–4.
 
 For a withdrawal (user-notified signup rescission): follow `reference/file-operations-manual.md` → "Event: Player withdraws signup". That event is the canonical workflow for both pre-build and post-build cases and specifies this file's decrement behavior, including the `First signup` recompute path.
 
@@ -41,7 +41,7 @@ For renames: update the `Player` cell in-place; re-sort only if the alphabetical
 
 **2026-04-23**
 
-## Players — signup stats (TBC in-scope sets)
+## Players — signup stats (TBC in-scope record files)
 
 | #  | Player              | First signup | Signups | Signup rate |
 |----|---------------------|--------------|---------|-------------|

@@ -56,7 +56,7 @@ Format-specific under-cap mechanics live with each format — see `Karazhan → 
 
 Roster formation produces **raid team** compositions only — never **party-group** (5-man sub-group) breakdowns. Inside `reference/raid-composition-guide.md`, sections **§3 (Optimal Party Group Templates)**, **§4 (Karazhan Group Composition)**, and **§9 (Practical Group Assignment Framework)** are out-of-scope reference material that must not be applied during roster formation.
 
-This scope will change when the user formalizes party-group rules (see `config/project.md` → "What's next"). Until then, do not produce 5-man sub-group breakdowns in any set file, and do not apply §3/§4/§9 when building a roster.
+This scope will change when the user formalizes party-group rules (see `config/project.md` → "What's next"). Until then, do not produce 5-man sub-group breakdowns in any record file, and do not apply §3/§4/§9 when building a roster.
 
 ## Karazhan (10-man)
 
@@ -124,7 +124,7 @@ When outside recruitment is triggered (the 27–29 case above, or the 25–26 ca
 - **Do not count PUGs in `derived/bench-history-tbc.md`.** Fair bench rotation applies to guild members only. PUGs never appear in `derived/bench-history-tbc.md`.
 - **No cross-raid identity.** Even if the same real person returns as a PUG for multiple raids, record them as a fresh anonymous `PUG Heal` / `PUG DPS` entry each time. This project has no cross-raid knowledge of PUG identity and does not attempt to build one.
 - **Team placement — PUGs concentrated on a single team.** Of the three Karazhan teams, **two must be fully staffed with guild members** (10 guild members each). The **remaining team** (whichever one the raid leader designates) contains the leftover guild members plus the PUGs. Do not spread PUGs across multiple teams — concentrate them on one team so the other two stay fully internal.
-- **Finding the PUGs is the raid leader's job**, not Claude's. Claude's role is to (a) detect when this case applies, (b) propose the "2 all-guild teams + 1 mixed team" composition, (c) flag to the user the exact number of PUG DPS and PUG Heal slots that need to be filled, and (d) record the PUGs in the set file under the generic `PUG ...` names after the raid leader confirms the raid will proceed.
+- **Finding the PUGs is the raid leader's job**, not Claude's. Claude's role is to (a) detect when this case applies, (b) propose the "2 all-guild teams + 1 mixed team" composition, (c) flag to the user the exact number of PUG DPS and PUG Heal slots that need to be filled, and (d) record the PUGs in the record file under the generic `PUG ...` names after the raid leader confirms the raid will proceed.
 
 #### Insufficient-tanks override
 

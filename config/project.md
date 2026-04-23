@@ -27,15 +27,19 @@ This file holds CoffeeBreak's **configuration data** — the canonical facts tha
 | **Dual-spec flex** | The role-shortage procedure: ask dual-spec players to switch to their `Spec 2` when a role target cannot be met from signups. Voluntary — the player may decline. Canonical rule: `rules/01-raid-compositions.md` → "Handling role shortages (dual-spec flex)". |
 | **Tank-surplus flex** | The mirror procedure: ask an excess tank to switch to a DPS or Healer offspec when more tanks sign up than the raid's composition target calls for. Voluntary — the player may decline. Canonical rule: `rules/01-raid-compositions.md` → "Handling role surpluses (tank-surplus flex)". |
 | **Needlist** | The table of high-value loot drops players want to roll "need" on, paired with the players competing for each drop. Competitors for the same item must be placed in different Karazhan teams. Canonical: `rules/03-player-constraints.md` → "Needlist". |
-| **Withdrawal** (or **withdrawn signup**) | A signup rescission — a player who signed up for a specific raid later revokes that signup. Does **not** count as a signup, but is recorded in the set's `## Withdrawn signups` (unlike the Discord "Absent" emoji state, which also doesn't count but leaves no record anywhere). Canonical rule (trigger phrases, update procedure, pre- vs. post-build cases): `reference/file-operations-manual.md` → "Event: Player withdraws signup". |
+| **Withdrawal** (or **withdrawn signup**) | A signup rescission — a player who signed up for a specific raid later revokes that signup. Does **not** count as a signup, but is recorded in the record file's `## Withdrawn signups` (unlike the Discord "Absent" emoji state, which also doesn't count but leaves no record anywhere). Canonical rule (trigger phrases, update procedure, pre- vs. post-build cases): `reference/file-operations-manual.md` → "Event: Player withdraws signup". |
+| **Record file** | A file in `records/`. Each wraps a single raid night: signups, any withdrawals, the roster (`## Actual Roster` / `## Actual Raid Rosters`), bench, notes, sanity check. Historical artifact — edited only via the events in `reference/file-operations-manual.md`. Formerly called a "set"; stale references to `sets/` or "set file" are drift, update them on sight. |
+| **Roster** | The composition — who plays which role on which team for a specific raid. Lives inside a record file's `## Actual Roster` (25-man) or `## Actual Raid Rosters` (Karazhan) section. Bare "roster" means the composition; the file that *contains* a roster is a **Record file**, never "roster file". Selection algorithm: `rules/02-bench-rotation.md` → "Raid spot priority (selection order)". |
+| **Player roster** | The canonical directory of known players in `rules/04-players.md` (Officers / Regular players / Former players sub-tables). Distinct from the composition-sense **Roster** above; always qualified with "player" to keep the senses separate. |
 
 ### Deprecated terms
 
-Do not use the terms below in any project file, chat, or set — they are ambiguous within CoffeeBreak's vocabulary. For the session-behavior rule that covers the user using these terms, see `CLAUDE.md` → "Communication conventions".
+Do not use the terms below in any project file, chat, or record file — they are ambiguous within CoffeeBreak's vocabulary. For the session-behavior rule that covers the user using these terms, see `CLAUDE.md` → "Communication conventions".
 
 | Term | Why ambiguous | Use instead |
 |------|---------------|-------------|
 | **Raid type** | Conflates two distinct concepts: **raid format** (10-man / 25-man) and **raid location** (Karazhan, Gruul+Mag, SSC, etc.). Historical usages in this project mostly meant *location*, but neither sense is safe to assume. | **raid format** when you mean the size bucket; **raid location** when you mean a specific raid. |
+| **Set** | Was the project-artifact name for a record file before the rename to `records/`. Now ambiguous between the retired artifact-name and ordinary English uses (git "change set", a "core set of tanks"). | **Record file** for the project artifact. Ordinary English uses ("change set", "core set of tanks") are unaffected — leave them alone. |
 
 ## Raid schedule
 

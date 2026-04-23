@@ -29,7 +29,7 @@ The **Needlist** lists high-value loot drops players want to roll "need" on, pai
 
 ### Maintenance
 
-- **Single-competitor rows are kept.** They record declared interest even when no one else competes. They don't affect the split-across-teams rule on their own, and they don't surface in a set's `## Loot conflicts` section (which filters to 2+ competitors in that raid). When a second player later wants the same drop, the existing row becomes a valid conflict without having to reconstruct history.
+- **Single-competitor rows are kept.** They record declared interest even when no one else competes. They don't affect the split-across-teams rule on their own, and they don't surface in a record file's `## Loot conflicts` section (which filters to 2+ competitors in that raid). When a second player later wants the same drop, the existing row becomes a valid conflict without having to reconstruct history.
 - **Claude never modifies the Needlist from signup screenshots, roster generation, or raid outcomes — only from explicit user instruction.** Triggers:
   - Player declares interest in an item → add the pairing. Insert a new row in alphabetical position if the item is not yet listed.
   - Player withdraws interest or obtains the item → remove the pairing. Drop the row if no competitors remain.

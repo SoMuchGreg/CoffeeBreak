@@ -1,6 +1,6 @@
 # JetBrains IDEs (IntelliJ, WebStorm, PyCharm, RubyMine, etc.)
 # These files are auto-generated, machine-local, and IDE-specific.
-# CoffeeBreak is a markdown-only project — none of its rules or sets read them.
+# CoffeeBreak is a markdown-only project — none of its rules or records read them.
 .idea/
 *.iml
 *.iws

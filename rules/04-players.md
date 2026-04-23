@@ -11,7 +11,7 @@
 - **⚠️ Spec checks need extra care for hybrid classes.** Druids, Paladins, Shamans, and Priests can all flex across roles (tank/healer/DPS), and many of our
   players regularly switch spec from raid to raid. The spec icon in the signup screenshot is the **only authoritative source** for what spec a player is running
   on a given night.
-    - **Druids** — flex across Feral tank, Feral DPS (melee), Balance (ranged DPS), Resto (healer). Past sets have been miscorded (e.g., 2026-04-08 Karazhan:
+    - **Druids** — flex across Feral tank, Feral DPS (melee), Balance (ranged DPS), Resto (healer). Past record files have been miscorded (e.g., 2026-04-08 Karazhan:
       Beaverfist and Jar were both initially recorded as Resto healers but actually ran Balance DPS).
     - **Paladins** — flex across Protection (tank), Holy (healer), Retribution (DPS). McJudgin in particular swaps role by raid format (tank in Karazhan, healer
       in 25-mans). Other paladins may swap between Holy and Ret.
@@ -94,7 +94,7 @@ currently held only by the players in the Officers sub-table below) or priority 
 
 ### Former players
 
-Players who have left the guild. Kept here so that old signup screenshots and set files remain interpretable — never assign anyone from this table to a raid. Do **not** strike through names in this sub-table: the fact that the row lives under *Former players* already conveys that the player is no longer in the guild, and the strikethrough just makes the name harder to read when looking up an old reference.
+Players who have left the guild. Kept here so that old signup screenshots and record files remain interpretable — never assign anyone from this table to a raid. Do **not** strike through names in this sub-table: the fact that the row lives under *Former players* already conveys that the player is no longer in the guild, and the strikethrough just makes the name harder to read when looking up an old reference.
 
 | #  | Player             | Character(s)        | Class   | Spec 1 (role)            | Spec 2 (role)           | Priority | Notes                                                   |
 |----|--------------------|---------------------|---------|--------------------------|-------------------------|----------|---------------------------------------------------------|

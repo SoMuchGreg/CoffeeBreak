@@ -12,9 +12,9 @@ Form raid groups from Discord signups, respecting strict composition rules, play
 |------------- |---------------------------------------------------------------|
 | `config/`    | Raid schedule, terminology, settings (canonical configuration data) |
 | `rules/`     | Composition rules, bench rotation, player constraints, player roster |
-| `sets/`      | Generated raid rosters (one per raid night, chronologically chained) |
-| `derived/`   | Derived summaries computed from `sets/` (bench history, signup history) |
-| `reference/` | TBC research, file-operations manual, set templates, icons    |
+| `records/`   | Generated raid records (one per raid night, chronologically chained) |
+| `derived/`   | Derived summaries computed from `records/` (bench history, signup history) |
+| `reference/` | TBC research, file-operations manual, record-file templates, icons |
 
 The raid schedule itself lives in `config/project.md`.
 

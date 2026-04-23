@@ -77,7 +77,7 @@
 ## Notes
 
 - Rainbound (CodeHunt's shaman) appears in roster under shaman name this time.
-- **Spec correction (recorded retroactively):** Beaverfist and Jar both ran **Balance (DPS)** for this raid, not Resto. Team Bakery healers were Gresac + Bombzor (2). Team BaeGlaives healers were Roossy/Keatala + Lightweit (2). Total raid healers: 6 across 3 teams (normal). Earlier draft of this set incorrectly listed both as Healer.
+- **Spec correction (recorded retroactively):** Beaverfist and Jar both ran **Balance (DPS)** for this raid, not Resto. Team Bakery healers were Gresac + Bombzor (2). Team BaeGlaives healers were Roossy/Keatala + Lightweit (2). Total raid healers: 6 across 3 teams (normal). Earlier draft of this record file incorrectly listed both as Healer.
 - Lightweit is a new Priest player — played Holy (healer) in Team BaeGlaives.
 - Leontes is a Paladin — benched.
 - Thalynora left the guild.

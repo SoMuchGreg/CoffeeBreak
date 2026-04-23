@@ -1,8 +1,8 @@
 <!--
-TEMPLATE for a Karazhan night set file. To create a new Karazhan set, copy this
-file from `reference/templates/karazhan-set.md` into `sets/` and rename the copy
-to `YYYY-MM-DD-{day}-karazhan.md` (e.g. `sets/2026-04-15-wed-karazhan.md`). Do
-not edit this template in place — only edit the copy under `sets/`.
+TEMPLATE for a Karazhan night record file. To create a new Karazhan record file, copy this
+file from `reference/templates/karazhan-record.md` into `records/` and rename the copy
+to `YYYY-MM-DD-{day}-karazhan.md` (e.g. `records/2026-04-15-wed-karazhan.md`). Do
+not edit this template in place — only edit the copy under `records/`.
 
 Fill in every placeholder marked {like-this}. Delete every section or sub-line
 marked with an HTML comment like `delete line if none` if its condition applies.
@@ -145,7 +145,7 @@ counts are tracked independently.
 Reason column — pick one of the valid labels from `rules/02-bench-rotation.md` →
 "Bench reason vocabulary" (single source of truth). Do not invent new labels. If
 a benching case doesn't fit any defined label, flag it to the user before writing
-the set.
+the record file.
 
 Delete the table and replace with `*(None — all 30 spots filled)*` if no one was benched.
 -->
@@ -158,7 +158,7 @@ Delete the table and replace with `*(None — all 30 spots filled)*` if no one w
 
 <!--
 What belongs here, what does not, and how to phrase it: see
-`reference/file-operations-manual.md` → "Writing the `## Notes` section of a set file"
+`reference/file-operations-manual.md` → "Writing the `## Notes` section of a record file"
 (single source of truth — do not duplicate that guidance into this template).
 -->
 
