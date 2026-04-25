@@ -79,7 +79,8 @@
 
 | Role                 | Player                 | Notes                              |
 |----------------------|------------------------|------------------------------------|
-| Maulgar Tank         | Ostbirger              | Tonsen MD                          |
+| Maulgar Tank         | Ostbirger              |                                    |
+| Maulgar Tank MD      | Tonsen                 |                                    |
 | Maulgar Healer       | Thordrel, Siljes/Ejlis |                                    |
 | Mage Tank (Krosh)    | OomToDoom              |                                    |
 | Mage Tank Healer     | Roossy/Keatala         |                                    |
@@ -88,7 +89,8 @@
 | Olm Tank             | CptKavior              | until felhunter                    |
 | Felhunter Subjugate  | Jabbadhutt             | 1 Warlock in roster → 1 slot       |
 | Olm Tank Healer      | Pergatori              |                                    |
-| Blindeye Tank        | Gigakox                | Vaelruna MD                        |
+| Blindeye Tank        | Gigakox                |                                    |
+| Blindeye Tank MD     | Vaelruna               |                                    |
 | Blindeye Tank Healer | Gresac                 |                                    |
 
 ### Magtheridon — Cube Clickers
@@ -100,6 +102,14 @@
 | South West  | Circle   | Kres/Dissi |
 | North East  | Square   | CptKavior  |
 | North West  | Diamond  | Gigakox    |
+
+### Magtheridon — Alternative Experienced Cube Clickers
+
+| Player    | Role | Total cube holds | Prior cubes by direction | Most recent   |
+|-----------|------|------------------|--------------------------|---------------|
+| Greg      | DPS  | 7                | S×4, SE×2, NE×1          | 2026-04-15 SE |
+| Ostbirger | Tank | 3                | NW×3                     | 2026-04-15 NW |
+| Vaelruna  | DPS  | 1                | SW×1                     | 2026-03-08 SW |
 
 ## Bench (1)
 
@@ -119,11 +129,10 @@
 - **Heligeman/Fugleman tentative** — Holy Paladin; did not convert to confirmed signup. Excluded from roster decisions per `reference/file-operations-manual.md` → Step 2.
 - **Beaverfist on bench (leader choice).** Signed up after the roster was made; raid leader chose to bench her rather than reshuffle. Algorithmic fair-rotation pick with the new signups would have been Bergamotka/Tymoti, after composition target → cross-location bench total → alphabetical fallback among the five 0-cross-location-bench priority-2 over-rep DPS candidates (Bergamotka/Tymoti, Dankyn, Ebonybolt, Lenno/Mellymel, Spot/Yorekbarn).
 - **Encounter assignments — leader's final picks** (deviations from algorithmic continuity):
-  - **Cube clickers reshuffled** — leader picks: S Jar, SE Jabbadhutt, SW Kres/Dissi, NE CptKavior, NW Gigakox. Strict algorithm with Ostbirger reserved as Mag MT (per `rules/05-encounter-assignments.md` → core-tank reservation) would have been: S Kres/Dissi (continuity 04-15), SE Greg (continuity 04-15, 04-12), SW Jabbadhutt (continuity 04-12), NE Pergatori (cube-experience fallback, 2 prior holds), NW Vaelruna (cube-experience fallback, 1 prior at SW 03-08). Greg's strong SE continuity yields to leader judgment.
+  - **Cube clickers reshuffled** — leader picks: S Jar, SE Jabbadhutt, SW Kres/Dissi, NE CptKavior, NW Gigakox. Strict algorithm with Ostbirger reserved as Mag MT (only core tank in roster) and Pergatori excluded as a Healer this raid (per `rules/05-encounter-assignments.md` → "Healers excluded from cube clicking") would have been: S Kres/Dissi (continuity 04-15), SE Greg (continuity 04-15, 04-12), SW Jabbadhutt (continuity 04-12), NE Vaelruna (cube-experience fallback, 1 prior at SW 03-08), NW any eligible (Step 4 — no continuity, no remaining cube-experience candidates). Greg's strong SE continuity yields to leader judgment.
   - **Kiggler Tank → Jar.** Beaverfist (continuity holder for Kiggler Tank: 04-15, 04-05) is benched, so her continuity claim doesn't apply this raid. Jar is the only Balance druid in the roster — single-player Kiggler Tank per `rules/05-encounter-assignments.md` → "Kiggler Tank assignment".
   - **Olm Tank Healer → Pergatori.** Leader confirmed.
 - **Jar on Sunday** — signed up despite the usual Sunday availability note in `rules/03-player-constraints.md`; raid-leader-accepted exception (matches 2026-04-12 precedent).
-- **MDs:** Tonsen MD on Maulgar Tank; Vaelruna MD on Blindeye Tank.
 
 ## Sanity check
 
