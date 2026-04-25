@@ -16,7 +16,9 @@
       "Bash(git status:*)",
       "Bash(git ls-files:*)",
       "Bash(git check-ignore:*)",
-      "Bash(grep:*)"
+      "Bash(grep:*)",
+      "Bash(awk:*)",
+      "Bash(sed -n:*)"
     ],
     "deny": [
       "Bash(git -C:*)",
