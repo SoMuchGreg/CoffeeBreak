@@ -151,7 +151,7 @@ A 25-man raid **always runs**, regardless of how few players sign up. There is n
 #### Resto Druid cap (hard rule)
 
 - If **more than 6 healers** sign up for any 25-man raid, **at most 2 Resto Druids** may participate. Any additional Resto Druids must be benched.
-- Resto Druids benched under this rule are still subject to the standard fair bench rotation in Rule 02 — pick whichever Resto Druid(s) have the lowest bench count for that raid location to play, and bench the rest.
+- Resto Druids benched under this rule are still subject to the standard fair bench rotation in Rule 02. Per `rules/02-bench-rotation.md` → "Direction": pick the Resto Druid(s) with the **lowest** cumulative bench count for that raid location **to bench** (equivalently, keep the highest-count Resto Druid(s) on the roster) so the bench burden rotates evenly within the spec.
 - Note: we have a relatively large pool of Resto Druids, so they will statistically be benched more often than other roles. This is expected and not a fairness violation, because the cap is a composition constraint, not a rotation failure.
 - This cap does **not** apply when 6 or fewer healers sign up — in that case, all signed-up Resto Druids may play (subject to the raid's healer slot count).
 

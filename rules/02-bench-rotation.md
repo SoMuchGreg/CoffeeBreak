@@ -15,7 +15,7 @@ Every player has a **raid spot priority** — an integer 1, 2, or 3. Priority is
 
 | Priority | Behavior when forming the roster |
 |----------|----------------------------------|
-| **1** | Always plays. Never benched. If signed up and available, they get a spot. |
+| **1** | If signed up and available, always plays. Benched only via the raid leader's discretionary pick — never by fair rotation. |
 | **2** | Standard. Gets a spot when there is room. Subject to fair bench rotation among priority-2 signups when there is overflow. |
 | **3** | Last resort only. Invited only if open spots remain after every priority-1 and priority-2 signup has been placed. When multiple priority-3 players are signed up but only some are needed, fair bench rotation also applies among them. |
 
@@ -24,7 +24,7 @@ Every player has a **raid spot priority** — an integer 1, 2, or 3. Priority is
 When forming a roster from signups:
 
 1. **Place all priority-1 signups first.** They always play, subject to availability constraints in `rules/03-player-constraints.md`.
-2. **Place priority-2 signups.** If priority-1 + priority-2 signups exceed the spot count, the overflow is benched via **fair bench rotation among priority-2 players** (lowest bench count for the raid location plays first; see Fairness requirement below).
+2. **Place priority-2 signups.** If priority-1 + priority-2 signups exceed the spot count, bench the overflow via **fair bench rotation among priority-2 players**. The direction — who plays vs. who sits — is canonical to the *Fairness requirement* section below; do not paraphrase it here.
 3. **If spots remain after step 2**, fill them with priority-3 signups, again using fair bench rotation among priority-3 players to decide who plays when only some are needed.
 4. **All unplaced signups go to bench.** When recording the bench in the record file, note each player's priority alongside their bench count.
 
@@ -32,11 +32,25 @@ A priority-1 player is **never** displaced by a priority-2 or priority-3 player,
 
 ## Fairness requirement (within a priority level)
 
-Bench assignments must rotate so that **every priority-2 player is benched a similar number of times per raid location** over the course of multiple raid nights. The same rotation principle applies **within** the priority-3 pool — when only some priority-3 signups are needed, prefer those who have been benched most recently or most often.
+### Direction
+
+⚠️ **Read this every time you build a roster with overflow.** Inverting this rule is a recurring error — do not rely on memory for the direction, re-read this section.
+
+When fair rotation picks who sits, the player with the **lowest** cumulative bench count for the raid location and priority level is the one we **send to the bench**. The player with a **higher** count keeps their raid spot. The principle is to *catch up* the under-benched player so cumulative counts equalize over time — fair rotation never protects the under-benched, it draws from them.
+
+**Concrete.** Two priority-2 players are competing for the last roster spot. Cumulative G+M bench counts going in: A = 0, B = 1. **A goes to the bench. B plays.** A's count moves 0 → 1, equalizing with B at 1. This holds regardless of either player's Karazhan bench count — Karazhan and G+M are tracked separately.
+
+The same direction applies in **every** "fair rotation" branch in this file: priority-3 selection (`Raid spot priority` step 3), composition-cap-affected specs (`Composition caps override pure fairness` below — pick the **highest-count** Resto Druid(s) to play, not the lowest), and the tiebreakers that fall under fair rotation.
+
+If you ever find yourself benching a higher-count player over a lower-count one, you have inverted the rule. Stop and re-read the Direction rule above before continuing.
+
+### Rotation goal
+
+Fair rotation distributes bench assignments over many raid nights so that **cumulative bench counts equalize within each priority pool, per raid location**. The goal applies separately to priority-2 and priority-3 (priority-1 players never enter the rotation). The *Direction* sub-section above states the per-decision mechanism that produces this outcome.
 
 Bench counts are tracked **separately** for Karazhan and for Gruul+Magtheridon — a player's Karazhan bench count and their Gruul+Mag bench count are independent.
 
-When deciding who to bench, compare players' bench counts **for the specific raid location being planned**, and **only among players of the same priority level**. A priority-2 player who has been benched 0 times from Gruul+Mag should sit before a priority-2 player who has been benched 1 time from Gruul+Mag, regardless of how many times either has been benched from Karazhan (and vice versa).
+When deciding who to bench, compare players' bench counts **for the specific raid location being planned**, and **only among players of the same priority level**.
 
 Cross-priority bench counts are **not** comparable: a priority-3 player with 0 benches does not get a spot before a priority-2 player with 2 benches. Priority always wins over fairness across levels.
 
@@ -46,7 +60,7 @@ Previous bench history (tracked in prior record files and summarized in `derived
 
 When the fair-rotation rule leaves a tie — two or more candidates with the same cumulative bench count for the raid location and priority level, where not all of them can play — use the raid's **composition target** as the tiebreaker. The goal is to pick the subset of tied candidates whose inclusion brings the roster's spec distribution closest to the target.
 
-This tiebreaker is strictly **within** fair rotation: it never overrides a candidate with a lower cumulative bench count, and it never overrides a player's priority level. It only resolves ties that fair rotation leaves open.
+This tiebreaker is strictly **within** fair rotation. It only fires when two or more candidates have the **same** cumulative bench count for the raid location and priority level — i.e., when the primary fair-rotation rule above leaves a tie. When one candidate's cumulative count is strictly lower than another's, fair rotation has already picked (the lower-count player benches per the *Direction* sub-section above); composition target does **not** revisit that decision. The tiebreaker also never crosses priority levels.
 
 #### 25-man raids
 
@@ -94,7 +108,7 @@ When the composition-target / Karazhan class tiebreakers above don't discriminat
 
 The reasoning: per-location fair rotation (the primary rule) can leave a player who has been benched heavily on other locations still sitting at a tied per-location count here. Giving them the spot in this tie nudges their overall raid participation back toward parity with peers who have been benched less globally.
 
-This tiebreaker is still strictly **within** fair rotation and within a single priority level. It never overrides a candidate with a lower per-location bench count, never overrides priority, and never overrides the composition-target or Karazhan class tiebreakers above it — it only resolves ties those leave open.
+This tiebreaker is still strictly **within** fair rotation and within a single priority level. It only fires when the higher tiebreakers above (composition target / Karazhan class diversity) leave a tie — i.e., two or more candidates with the same per-location bench count whose composition profile is also indistinguishable. When per-location counts differ, the lower-count player benches per the *Direction* sub-section above, regardless of cross-location totals; this tiebreaker does not revisit that. It never crosses priority levels.
 
 #### Final fallback (any raid format)
 
@@ -108,7 +122,7 @@ Hard composition caps from `rules/01-raid-compositions.md` (e.g., the 25-man Res
 
 Some composition rules in `01-raid-compositions.md` cap how many of a given spec may participate in a raid (e.g., the **25-man Resto Druid cap**: max 2 Resto Druids when more than 6 healers sign up). These caps take **priority over cross-spec bench fairness** — a Resto Druid forced to sit by such a cap will have a higher bench count than non-Resto-Druid players of the same priority level over time, and that is expected, not a fairness violation.
 
-Within the affected spec, fair rotation still applies: when the cap forces a Resto Druid to bench, pick whichever Resto Druid has the **lowest bench count for that raid location** (and the same priority level) to play, so the burden rotates among them evenly.
+Within the affected spec, fair rotation still applies — and the direction is the same as everywhere else (see the *Direction* sub-section above). When the cap forces a Resto Druid to bench, pick the Resto Druid(s) with the **lowest** cumulative bench count for that raid location (and same priority level) **to bench** — equivalently, keep the **highest-count** Resto Druid(s) on the roster — so the bench burden rotates evenly within the spec.
 
 Composition caps cannot displace a priority-1 player. If a cap and priority-1 ever conflict (which does not currently happen with any active rule), flag it to the user before proceeding.
 
@@ -139,7 +153,7 @@ Every row in a record file's bench table must use exactly one of the reason labe
 | Reason | Meaning |
 |--------|---------|
 | `priority 3` | Player is raid spot priority 3 (last resort) and was benched because every priority-1 and priority-2 signup filled the available spots. See *Raid spot priority (selection order)* above. |
-| `fair rotation` | Priority-2 or priority-3 overflow benched algorithmically per *Raid spot priority* and *Fairness requirement* above — lowest cumulative bench count for the raid location plays first, tiebreakers apply. Applies within a single priority level when signups exceed spots. |
+| `fair rotation` | Priority-2 or priority-3 overflow benched algorithmically per *Raid spot priority* and *Fairness requirement* above — the player with the **lowest** cumulative bench count for the raid location is the one selected to bench (so cumulative counts equalize over time within the priority pool); tiebreakers apply when counts are tied. See the *Direction* sub-section above for the canonical statement and the concrete example. Applies within a single priority level when signups exceed spots. |
 | `leader choice` | Raid leader discretionarily picked this player — direct instruction, "likely benched" annotation on the signup screenshot, or a role-surplus pick such as the tank-surplus flex in `rules/01-raid-compositions.md` → "Handling role surpluses". See *Raid leader's discretionary bench picks* above for the full rule. |
-| `composition cap` | Benched by a hard composition cap in `rules/01-raid-compositions.md` (e.g., the 25-man Resto Druid cap). Within the capped spec, fair rotation still decides which tied player sits — see *Composition caps override pure fairness* above. |
+| `composition cap` | Benched by a hard composition cap in `rules/01-raid-compositions.md` (e.g., the 25-man Resto Druid cap). Within the capped spec, fair rotation still decides which player sits — see *Composition caps override pure fairness* above. |
 | `declined flex` | Player declined a dual-spec swap when the raid was short on a role, and would otherwise have been needed to fill it (`rules/01-raid-compositions.md` → "Handling role shortages"). |
