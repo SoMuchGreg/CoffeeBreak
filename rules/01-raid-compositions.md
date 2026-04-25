@@ -22,11 +22,17 @@ If signups don't include enough players for a required role at a raid's composit
 
 **Timing.** This flex is composition-time, before the final bench cut. Once a flex swap is accepted, recompute the priority + bench rotation against the new role distribution.
 
+### Core tanks
+
+The raid's "core" tanks for that format are the tanks the raid leader relies on to fill the primary tank duties for that specific raid (e.g., for Gruul+Mag: Marino-Varthier, Ostbirger).
+
+**Substitutes are not core tanks.** A tank filling a core slot in a specific raid because a named core tank is absent (e.g., CptKavior covering for Marino-Varthier when Marino isn't signed up) is **not** a core tank for any rule that references core-tank status. Core-tank membership is tied to the named list above, not to who happens to be filling tank duties this raid.
+
 ### Handling role surpluses (tank-surplus flex)
 
 The mirror of the dual-spec flex rule above: when **more tanks sign up than the raid's composition target calls for**, dual-spec tank players can flex to their offspec rather than being auto-benched for the surplus. The principle is the same — prefer to use a player's offspec over sitting them on the bench, as long as the composition actually needs what their offspec provides.
 
-**Identify the excess tank(s).** The raid's "core" tanks for that format are the tanks the raid leader relies on to fill the primary tank duties for that specific raid (e.g., for Gruul+Mag: Marino-Varthier, Ostbirger). When the format calls for more tanks than the core list provides (e.g., Gruul+Mag's 3-tank target vs. 2 core tanks), the extra slot is filled per-raid from other tank signups. Any tank-column signup beyond the core set plus the raid's chosen extra tanks is **excess** — they are not needed as a tank for this raid.
+**Identify the excess tank(s).** When the format calls for more tanks than the core list provides (e.g., Gruul+Mag's 3-tank target vs. 2 core tanks), the extra slot is filled per-raid from other tank signups. Any tank-column signup beyond the core set plus the raid's chosen extra tanks is **excess** — they are not needed as a tank for this raid.
 
 **Offer the offspec switch first.** Before benching the excess tank, check their `Spec 2 (role)` in `rules/04-players.md`. If they have a usable DPS or Healer offspec that the raid has room for, ask whether they'd play that offspec instead. This is a voluntary swap — never unilaterally reassign.
 

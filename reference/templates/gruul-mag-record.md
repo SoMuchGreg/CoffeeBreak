@@ -133,8 +133,8 @@ Subjugate assignment"). List names comma-separated in the Player cell
 slot (e.g., `Thordrel, —`).
 
 Canonical names per `rules/04-players.md`. The Notes column is free-form — use it
-for per-raid facts such as "Dwarfytron MD", "until felhunter", spec overrides, or
-continuity flags the user should be aware of.
+for per-raid facts such as "until felhunter", spec overrides, or continuity flags
+the user should be aware of.
 
 General raid instructions (positioning and kill order) are invariant and live in
 `rules/05-encounter-assignments.md` → "General raid instructions" — do not
@@ -146,6 +146,7 @@ duplicate them into this section.
 | Role                 | Player | Notes           |
 |----------------------|--------|-----------------|
 | Maulgar Tank         | ...    |                 |
+| Maulgar Tank MD      | ...    |                 |
 | Maulgar Healer       | ...    |                 |
 | Mage Tank (Krosh)    | ...    |                 |
 | Mage Tank Healer     | ...    |                 |
@@ -155,6 +156,7 @@ duplicate them into this section.
 | Felhunter Subjugate  | ...    |                 |
 | Olm Tank Healer      | ...    |                 |
 | Blindeye Tank        | ...    |                 |
+| Blindeye Tank MD     | ...    |                 |
 | Blindeye Tank Healer | ...    |                 |
 
 ### Magtheridon — Cube Clickers
@@ -172,6 +174,20 @@ fill in the Player column.
 | South West  | Circle   | ...    |
 | North East  | Square   | ...    |
 | North West  | Diamond  | ...    |
+
+### Magtheridon — Alternative Experienced Cube Clickers
+
+<!--
+Inclusion criteria, sort order, and column definitions:
+`rules/05-encounter-assignments.md` → "Alternative experienced cube clickers".
+Do not restate them here.
+
+Replace the table with `*(None — no roster member outside the primary cube clickers has prior cube experience.)*` if the list is empty.
+-->
+
+| Player | Role | Total cube holds | Prior cubes by direction | Most recent |
+|--------|------|------------------|--------------------------|-------------|
+| ...    | ...  | ...              | ...                      | ...         |
 
 ## Bench ({N})
 
