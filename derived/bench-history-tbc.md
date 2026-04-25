@@ -10,7 +10,7 @@ Players are sorted alphabetically by name within each table below. A player appe
 
 | Player              | Karazhan | Karazhan dates | Gruul+Mag | Gruul+Mag dates | Total |
 |---------------------|----------|----------------|-----------|-----------------|-------|
-| Beaverfist          | 1        | 18.03          | 0         | —               | 1     |
+| Beaverfist          | 1        | 18.03          | 1         | 26.04           | 2     |
 | CptKavior           | 1        | 08.04          | 1         | 15.04           | 2     |
 | Drillbabe           | 1        | 11.03          | 0         | —               | 1     |
 | Dwarfytron          | 1        | 01.04          | 0         | —               | 1     |

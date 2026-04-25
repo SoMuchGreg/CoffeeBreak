@@ -45,18 +45,18 @@ For renames: update the `Player` cell in-place; re-sort only if the alphabetical
 
 | #  | Player              | First signup | Signups | Signup rate |
 |----|---------------------|--------------|---------|-------------|
-| 1  | Ebonybolt           | 2026-03-22   | 11      | 100.0%      |
-| 2  | Gresac              | 2026-02-22   | 20      | 100.0%      |
-| 3  | Lenno/Mellymel      | 2026-04-26   | 1       | 100.0%      |
-| 4  | Lightweit           | 2026-04-08   | 6       | 100.0%      |
-| 5  | Lynelen             | 2026-03-11   | 14      | 100.0%      |
-| 6  | Pergatori           | 2026-03-22   | 11      | 100.0%      |
-| 7  | Roossy/Keatala      | 2026-03-15   | 13      | 100.0%      |
-| 8  | Greg                | 2026-02-22   | 19      | 95.0%       |
-| 9  | Vaelruna            | 2026-02-22   | 19      | 95.0%       |
-| 10 | Yxanb               | 2026-03-04   | 15      | 93.8%       |
-| 11 | Beaverfist          | 2026-03-15   | 12      | 92.3%       |
-| 12 | Bergamotka/Tymoti   | 2026-03-15   | 12      | 92.3%       |
+| 1  | Beaverfist          | 2026-03-15   | 13      | 100.0%      |
+| 2  | Bergamotka/Tymoti   | 2026-03-15   | 13      | 100.0%      |
+| 3  | Ebonybolt           | 2026-03-22   | 11      | 100.0%      |
+| 4  | Gresac              | 2026-02-22   | 20      | 100.0%      |
+| 5  | Lenno/Mellymel      | 2026-04-26   | 1       | 100.0%      |
+| 6  | Lightweit           | 2026-04-08   | 6       | 100.0%      |
+| 7  | Lynelen             | 2026-03-11   | 14      | 100.0%      |
+| 8  | Pergatori           | 2026-03-22   | 11      | 100.0%      |
+| 9  | Roossy/Keatala      | 2026-03-15   | 13      | 100.0%      |
+| 10 | Greg                | 2026-02-22   | 19      | 95.0%       |
+| 11 | Vaelruna            | 2026-02-22   | 19      | 95.0%       |
+| 12 | Yxanb               | 2026-03-04   | 15      | 93.8%       |
 | 13 | Ostbirger           | 2026-03-22   | 10      | 90.9%       |
 | 14 | Gigakox             | 2026-03-25   | 9       | 90.0%       |
 | 15 | Marino-Varthier     | 2026-02-22   | 18      | 90.0%       |
@@ -75,9 +75,9 @@ For renames: update the `Player` cell in-place; re-sort only if the alphabetical
 | 28 | Spot/Yorekbarn      | 2026-04-19   | 2       | 66.7%       |
 | 29 | Dwarfytron          | 2026-03-22   | 7       | 63.6%       |
 | 30 | Jar                 | 2026-02-25   | 11      | 61.1%       |
-| 31 | BestPractice        | 2026-02-22   | 11      | 55.0%       |
-| 32 | Doughball           | 2026-03-11   | 6       | 42.9%       |
-| 33 | Heligeman/Fugleman  | 2026-04-05   | 3       | 42.9%       |
+| 31 | Heligeman/Fugleman  | 2026-04-05   | 4       | 57.1%       |
+| 32 | BestPractice        | 2026-02-22   | 11      | 55.0%       |
+| 33 | Doughball           | 2026-03-11   | 6       | 42.9%       |
 | 34 | Ōtsu                | 2026-03-04   | 5       | 31.3%       |
 | 35 | CodeHunt/Rainbound  | 2026-03-25   | 3       | 30.0%       |
 | 36 | Sjwammie            | 2026-03-11   | 4       | 28.6%       |

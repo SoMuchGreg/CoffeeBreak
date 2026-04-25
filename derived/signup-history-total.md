@@ -73,8 +73,8 @@ A player's sub-table is determined solely by where they live in `rules/04-player
 | 9  | Yxanb               | 15      |
 | 10 | Dankyn              | 14      |
 | 11 | Lynelen             | 14      |
-| 12 | Beaverfist          | 12      |
-| 13 | Bergamotka/Tymoti   | 12      |
+| 12 | Beaverfist          | 13      |
+| 13 | Bergamotka/Tymoti   | 13      |
 | 14 | BestPractice        | 11      |
 | 15 | Ebonybolt           | 11      |
 | 16 | Jabbadhutt          | 11      |
@@ -82,8 +82,8 @@ A player's sub-table is determined solely by where they live in `rules/04-player
 | 18 | Ostbirger           | 10      |
 | 19 | Tonsen              | 10      |
 | 20 | Gigakox             | 9       |
-| 21 | Dwarfytron          | 7       |
-| 22 | Heligeman/Fugleman  | 7       |
+| 21 | Heligeman/Fugleman  | 8       |
+| 22 | Dwarfytron          | 7       |
 | 23 | Siljes/Ejlis        | 7       |
 | 24 | Doughball           | 6       |
 | 25 | Lightweit           | 6       |
