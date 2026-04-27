@@ -41,17 +41,17 @@ priority `3` (last resort) without explicit user instruction.
 
 ### Officers
 
-| #  | Player              | Character(s)             | Class   | Spec 1 (role) | Spec 2 (role) | Priority | Notes |
-|----|---------------------|--------------------------|---------|---------------|---------------|----------|-------|
-| 1  | Jar                 | Jar, Jardepli            | Druid   | DPS (Balance) | Healer        | 1        |       |
-| 2  | Greg                | Ucannotpass              | Mage    | DPS           | —             | 1        |       |
-| 3  | Kres/Dissi          | Kresniik, Dissi, Griever | Priest  | DPS           | Healer        | 1        |       |
+| #  | Player              | Character(s)             | Class   | Mainspec (role) | Offspec (role) | Priority | Notes |
+|----|---------------------|--------------------------|---------|-----------------|----------------|----------|-------|
+| 1  | Jar                 | Jar, Jardepli            | Druid   | DPS (Balance)   | Healer         | 1        |       |
+| 2  | Greg                | Ucannotpass              | Mage    | DPS             | —              | 1        |       |
+| 3  | Kres/Dissi          | Kresniik, Dissi, Griever | Priest  | DPS             | Healer         | 1        |       |
 
 ### Core tanks
 
 Tanks the raid leader relies on to fill tank duties at any raid format. Concept and selection rules: `rules/01-raid-compositions.md` → "Core tanks".
 
-| #  | Player             | Character(s)          | Class   | Spec 1 (role)       | Spec 2 (role)   | Priority | Notes                                                                                                                                   |
+| #  | Player             | Character(s)          | Class   | Mainspec (role)     | Offspec (role)  | Priority | Notes                                                                                                                                   |
 |----|--------------------|-----------------------|---------|---------------------|-----------------|----------|-----------------------------------------------------------------------------------------------------------------------------------------|
 | 1  | Marino-Varthier    | Varthier              | Paladin | Tank                | —               | 1        | Main tank                                                                                                                               |
 | 2  | Ostbirger          | OstBirger             | Paladin | Tank                | DPS             | 1        | Primary offtank                                                                                                                         |
@@ -63,12 +63,12 @@ Tanks the raid leader relies on to fill tank duties at any raid format. Concept 
 
 Currently empty. Kept so a Regular player promoted to priority `1` has a place to live.
 
-| #  | Player             | Character(s)          | Class   | Spec 1 (role)       | Spec 2 (role)   | Priority | Notes                                                                                                       |
+| #  | Player             | Character(s)          | Class   | Mainspec (role)     | Offspec (role)  | Priority | Notes                                                                                                       |
 |----|--------------------|-----------------------|---------|---------------------|-----------------|----------|-------------------------------------------------------------------------------------------------------------|
 
 #### Priority 2
 
-| #  | Player             | Character(s)          | Class   | Spec 1 (role)     | Spec 2 (role)   | Priority | Notes                                                                                                       |
+| #  | Player             | Character(s)          | Class   | Mainspec (role)   | Offspec (role)  | Priority | Notes                                                                                                       |
 |----|--------------------|-----------------------|---------|-------------------|-----------------|----------|-------------------------------------------------------------------------------------------------------------|
 | 1  | Beaverfist         | Beaverfist, Bävernäve | Druid   | DPS (Balance)     | Healer          | 2        |                                                                                                             |
 | 2  | Gresac             | Gresac, Grounddog     | Druid   | Healer            | DPS (Balance)   | 2        | Reluctant to switch spec. He is fine with being benched on Karazhan even if fair rotation says he should go |
@@ -100,23 +100,23 @@ Currently empty. Kept so a Regular player promoted to priority `1` has a place t
 
 #### Priority 3
 
-| #  | Player             | Character(s)          | Class   | Spec 1 (role)    | Spec 2 (role) | Priority | Notes                                                                                                       |
-|----|--------------------|-----------------------|---------|------------------|--------------|----------|-------------------------------------------------------------------------------------------------------------|
-| 1  | Eselman            | Eselman               | Druid   | DPS (Feral)      | Tank (OT)    | 3        | Feral druid, flexes between tank and DPS                                                                    |
-| 2  | Lightstarr         | Lightstarr            | Paladin | DPS              | Tank         | 3        |                                                                                                             |
-| 3  | Sjwammie           | Sjwammie              | Paladin | Healer           | —            | 3        |                                                                                                             |
-| 4  | Medianos           | Medianos              | Priest  | DPS              | ?            | 3        |                                                                                                             |
-| 5  | Drillbabe          | Drillbabe             | Rogue   | DPS (Subtlety)   | —            | 3        | Reliability concern — history of no-shows after signing up                                                  |
-| 6  | Blacksi            | Blacksi               | Shaman  | DPS (Elemental)  | ?            | 3        |                                                                                                             |
-| 7  | CodeHunt/Rainbound | CodeHunt, Rainbound   | Shaman  | Healer           | —            | 3        |                                                                                                             |
-| 8  | Ōtsu               | Ōtsu                  | Warlock | DPS (Affliction) | —            | 3        |                                                                                                             |
-| 9  | Varva              | Varva                 | Warrior | DPS              | —            | 3        |                                                                                                             |
+| #  | Player             | Character(s)          | Class   | Mainspec (role)  | Offspec (role) | Priority | Notes                                                                                                       |
+|----|--------------------|-----------------------|---------|------------------|----------------|----------|-------------------------------------------------------------------------------------------------------------|
+| 1  | Eselman            | Eselman               | Druid   | DPS (Feral)      | Tank (OT)      | 3        | Feral druid, flexes between tank and DPS                                                                    |
+| 2  | Lightstarr         | Lightstarr            | Paladin | DPS              | Tank           | 3        |                                                                                                             |
+| 3  | Sjwammie           | Sjwammie              | Paladin | Healer           | —              | 3        |                                                                                                             |
+| 4  | Medianos           | Medianos              | Priest  | DPS              | ?              | 3        |                                                                                                             |
+| 5  | Drillbabe          | Drillbabe             | Rogue   | DPS (Subtlety)   | —              | 3        | Reliability concern — history of no-shows after signing up                                                  |
+| 6  | Blacksi            | Blacksi               | Shaman  | DPS (Elemental)  | ?              | 3        |                                                                                                             |
+| 7  | CodeHunt/Rainbound | CodeHunt, Rainbound   | Shaman  | Healer           | —              | 3        |                                                                                                             |
+| 8  | Ōtsu               | Ōtsu                  | Warlock | DPS (Affliction) | —              | 3        |                                                                                                             |
+| 9  | Varva              | Varva                 | Warrior | DPS              | —              | 3        |                                                                                                             |
 
 ### Former players
 
 Players who have left the guild. Kept here so that old signup screenshots and record files remain interpretable — never assign anyone from this table to a raid. Do **not** strike through names in this sub-table: the fact that the row lives under *Former players* already conveys that the player is no longer in the guild, and the strikethrough just makes the name harder to read when looking up an old reference.
 
-| #  | Player              | Character(s)        | Class   | Spec 1 (role)            | Spec 2 (role)           | Priority | Notes                                                   |
+| #  | Player              | Character(s)        | Class   | Mainspec (role)          | Offspec (role)          | Priority | Notes                                                   |
 |----|---------------------|---------------------|---------|--------------------------|-------------------------|----------|---------------------------------------------------------|
 | 1  | Erushi              |                     | Druid   |                          |                         | —        | Left the guild                                          |
 | 2  | Kryxs               |                     | Druid   |                          |                         | —        | Left the guild                                          |
