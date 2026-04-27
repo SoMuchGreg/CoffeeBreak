@@ -10,7 +10,7 @@ The composition tables in this file (per-team for Karazhan, per-raid for 25-mans
 
 If signups don't include enough players for a required role at a raid's composition target (tanks, healers, or DPS), the raid leader should ask **dual-spec players** whether they'd be willing to switch to their secondary spec for this raid.
 
-**Who qualifies.** Dual-spec players are any player in `rules/04-players.md` whose `Offspec (role)` column lists a specific spec (not "—", not "?", not blank). Their second spec is what they may switch to. A "?" in Offspec means we don't yet know whether the player has a second spec — those players are **not** eligible for flex by default; the user can clarify on a case-by-case basis.
+**Who qualifies.** Dual-spec players are any player in `rules/04-players.md` whose `Offspec (role)` column lists a specific spec (not "—", not "?", not blank). Their second spec is what they may switch to. A "?" in `Offspec` means we don't yet know whether the player has a second spec — those players are **not** eligible for flex by default; the user can clarify on a case-by-case basis.
 
 **Consent.** The decision is the player's. They may decline. Never unilaterally reassign a player's spec — always ask first. If the player declines, the raid runs short on that role rather than forcing the swap. Move on and ask the next eligible dual-spec player; if no one accepts, the raid runs under-target.
 
@@ -42,7 +42,7 @@ The mirror of the dual-spec flex rule above: when **more tanks sign up than the 
 
 **If accepted**, the excess tank joins as a DPS/Healer and is treated as that role for every subsequent step (raid-spot priority, fair bench rotation, composition targets). Recompute the roster against the new role distribution.
 
-**If declined, or if the excess tank has no usable offspec** (no Offspec, or Offspec is also a tank spec), they fall through to the standard bench-rotation rules in Rule 02 like any other signup that doesn't fit.
+**If declined, or if the excess tank has no usable offspec**, they fall through to the standard bench-rotation rules in Rule 02 like any other signup that doesn't fit.
 
 This rule applies to every raid format and every role-with-a-cap (tank is the common case today, but the same logic applies to any future format that caps healers or a specific DPS spec at a target count).
 
@@ -142,7 +142,7 @@ When outside recruitment is triggered (the 27–29 case above, or the 25–26 ca
 
 If the guild can't supply enough tanks to meet the hard requirements in "Tank composition" above for every team, **drop to 2 teams**. This override applies even at 27+ signups: outside-of-guild recruitment never covers tank slots.
 
-The dual-spec flex rule from "General principles → Handling role shortages" must be exhausted **before** falling back: ask DPS-spec or Healer-spec players whose secondary spec is a tank spec (e.g., players whose `Offspec (role)` in `rules/04-players.md` is a tank role) whether they would tank for this raid. Only if that doesn't yield enough tanks does the team count drop.
+The dual-spec flex rule from "General principles → Handling role shortages" must be exhausted **before** falling back: ask DPS-spec or Healer-spec players whose secondary spec is a tank spec (e.g., players whose `Offspec (role)` in `rules/04-players.md` lists a tank role) whether they would tank for this raid. Only if that doesn't yield enough tanks does the team count drop.
 
 ## 25-man raids
 
