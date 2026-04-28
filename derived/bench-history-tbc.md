@@ -11,10 +11,13 @@ Players are sorted alphabetically by name within each table below. A player appe
 | Player              | Karazhan | Karazhan dates | Gruul+Mag | Gruul+Mag dates | Total |
 |---------------------|----------|----------------|-----------|-----------------|-------|
 | Beaverfist          | 1        | 18.03          | 1         | 26.04           | 2     |
+| Bergamotka/Tymoti   | 1        | 29.04          | 0         | —               | 1     |
 | CptKavior           | 1        | 08.04          | 1         | 15.04           | 2     |
+| Dankyn              | 1        | 29.04          | 0         | —               | 1     |
 | Drillbabe           | 1        | 11.03          | 0         | —               | 1     |
 | Dwarfytron          | 1        | 01.04          | 0         | —               | 1     |
-| Gresac              | 1        | 22.04          | 1         | 25.03           | 2     |
+| Greg                | 1        | 29.04          | 0         | —               | 1     |
+| Gresac              | 2        | 22.04, 29.04   | 1         | 25.03           | 3     |
 | Heligeman/Fugleman  | 0        | —              | 1         | 12.04           | 1     |
 | Leontes             | 1        | 08.04          | 0         | —               | 1     |
 | Lynelen             | 0        | —              | 1         | 15.04           | 1     |
@@ -24,7 +27,7 @@ Players are sorted alphabetically by name within each table below. A player appe
 | Roossy/Keatala      | 1        | 18.03          | 2         | 25.03, 12.04    | 3     |
 | Tonsen              | 1        | 11.03          | 0         | —               | 1     |
 | Verysadge           | 0        | —              | 1         | 15.04           | 1     |
-| Yxanb               | 0        | —              | 1         | 22.03           | 1     |
+| Yxanb               | 1        | 29.04          | 1         | 22.03           | 2     |
 
 All other priority-2 and priority-3 players: 0 benches at every location.
 

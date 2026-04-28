@@ -56,7 +56,7 @@ The **Needlist** lists high-value loot drops players want to roll "need" on, pai
 | Iron Gauntlets of the Maiden        | Mcjudgin                                                           |       |
 | Ironstriders of Urgency             | Leontes                                                            |       |
 | King's Defender                     | Cptkavior, Doughball                                               |       |
-| Light's Justice                     | Siljes                                                             |       |
+| Light's Justice                     | Pergatori, Siljes                                                  |       |
 | Nathrezim Mindblade                 | Beaverfist, Pergatori                                              |       |
 | Nethershard Girdle                  | Ucannotpass                                                        |       |
 | Pendant of the Violet Eye           | Thordrel                                                           |       |

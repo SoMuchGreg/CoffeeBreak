@@ -51,11 +51,11 @@ priority `3` (last resort) without explicit user instruction.
 
 Tanks the raid leader relies on to fill tank duties at any raid format. Concept and selection rules: `rules/01-raid-compositions.md` → "Core tanks".
 
-| #  | Player             | Character(s)          | Class   | Mainspec (role)     | Offspec (role)  | Priority | Notes                 |
-|----|--------------------|-----------------------|---------|---------------------|-----------------|----------|-----------------------|
-| 1  | Marino-Varthier    | Varthier              | Paladin | Tank                | —               | 1        | Main tank             |
-| 2  | Ostbirger          | OstBirger             | Paladin | Tank                | DPS             | 1        | Primary offtank       |
-| 3  | Gigakox            | Gigakox               | Warrior | Tank                | DPS (Fury)      | 1        | 3rd tank              |
+| #  | Player             | Character(s)          | Class   | Mainspec (role)     | Offspec (role)  | Priority | Notes                        |
+|----|--------------------|-----------------------|---------|---------------------|-----------------|----------|------------------------------|
+| 1  | Marino-Varthier    | Varthier              | Paladin | Tank                | —               | 1        | Main tank                    |
+| 2  | Ostbirger          | OstBirger             | Paladin | Tank                | DPS             | 1        | Primary offtank              |
+| 3  | Gigakox            | Gigakox               | Warrior | Tank                | DPS (Fury)      | 1        | 3rd tank, First line offspec |
 
 ### Regular players
 
@@ -63,8 +63,8 @@ Tanks the raid leader relies on to fill tank duties at any raid format. Concept 
 
 Currently empty. Kept so a Regular player promoted to priority `1` has a place to live.
 
-| #  | Player             | Character(s)          | Class   | Mainspec (role)     | Offspec (role)  | Priority | Notes                                                                                                       |
-|----|--------------------|-----------------------|---------|---------------------|-----------------|----------|-------------------------------------------------------------------------------------------------------------|
+| #  | Player             | Character(s)          | Class   | Mainspec (role)     | Offspec (role)  | Priority | Notes                                                                                             |
+|----|--------------------|-----------------------|---------|---------------------|-----------------|----------|---------------------------------------------------------------------------------------------------|
 
 #### Priority 2
 
@@ -73,7 +73,7 @@ Currently empty. Kept so a Regular player promoted to priority `1` has a place t
 | 1  | Beaverfist         | Beaverfist, Bävernäve | Druid   | DPS (Balance)     | Healer          | 2        | First line offspec                                                                                   |
 | 2  | Gresac             | Gresac, Grounddog     | Druid   | Healer            | DPS (Balance)   | 2        | Reluctant offspec. He is fine with being benched on Karazhan even if fair rotation says he should go |
 | 3  | Roossy/Keatala     | Roossy, Keatala       | Druid   | Healer            | —               | 2        |                                                                                                      |
-| 4  | Yxanb              | Yxanb                 | Druid   | DPS (Feral)       | Tank (Feral)    | 2        |                                                                                                      |
+| 4  | Yxanb              | Yxanb                 | Druid   | DPS (Feral)       | Tank (Feral)    | 2        | Tanks only as last resort                                                                            |
 | 5  | Dwarfytron         | Dwarfytron            | Hunter  | DPS               | —               | 2        |                                                                                                      |
 | 6  | Grundiger          | Grundiger             | Hunter  | DPS               | —               | 2        |                                                                                                      |
 | 7  | Tonsen             | Tonsen                | Hunter  | DPS               | —               | 2        |                                                                                                      |
@@ -86,32 +86,32 @@ Currently empty. Kept so a Regular player promoted to priority `1` has a place t
 | 14 | Thordrel           | Thordrel              | Paladin | Healer            | —               | 2        |                                                                                                      |
 | 15 | Lightweit          | Lightweit             | Priest  | Healer            | ?               | 2        |                                                                                                      |
 | 16 | Siljes/Ejlis       | Ejlis, Siljes         | Priest  | Healer            | DPS             | 2        | First line offspec                                                                                   |
-| 17 | Bergamotka/Tymoti  | Bergamotka, Tymoti    | Shaman  | DPS (Enhancement) | DPS (Elemental) | 2        | Switches spec willingly if needed, Ele gear much worse                                               |
-| 18 | Ebonybolt          | Ebonybolt             | Shaman  | DPS (Enhancement) | Healer          | 2        | Reluctant offspec                                                                                    |
-| 19 | Lynelen            | Lynelen, Kalyl        | Shaman  | DPS (Enhancement) | DPS (Elemental) | 2        | Switches spec willingly if needed                                                                    |
+| 17 | Bergamotka/Tymoti  | Bergamotka, Tymoti    | Shaman  | DPS (Enhancement) | DPS (Elemental) | 2        | Offspecs willingly if needed                                                                         |
+| 18 | Ebonybolt          | Ebonybolt             | Shaman  | DPS (Enhancement) | Healer          | 2        |                                                                                                      |
+| 19 | Lynelen            | Lynelen, Kalyl        | Shaman  | DPS (Enhancement) | DPS (Elemental) | 2        | Offspecs willingly if needed                                                                    |
 | 20 | Pergatori          | Pergatori             | Shaman  | Healer            | DPS (Elemental) | 2        | First line offspec                                                                                   |
 | 21 | BestPractice       | BestPractice          | Warlock | DPS               | —               | 2        |                                                                                                      |
 | 22 | Jabbadhutt         | Jabbadhutt            | Warlock | DPS               | —               | 2        |                                                                                                      |
 | 23 | McHughes           | McHughes              | Warlock | DPS               | —               | 2        |                                                                                                      |
 | 24 | CptKavior          | CptKavior             | Warrior | DPS (Fury)        | Tank            | 2        | First line offspec                                                                                   |
 | 25 | Dankyn             | Dankyn                | Warrior | DPS (Fury)        | Tank            | 2        |                                                                                                      |
-| 26 | Doughball          | Doughball             | Warrior | DPS (Fury)        | Tank            | 2        | First line offspec                                                                                   |
+| 26 | Doughball          | Doughball             | Warrior | DPS (Fury)        | Tank            | 2        |                                                                                                      |
 | 27 | Spot/Yorekbarn     | Spot, Yorekbarn       | Warrior | DPS (Fury)        | —               | 2        |                                                                                                      |
 | 28 | Verysadge          | Verysadge             | Warrior | DPS (Fury)        | —               | 2        |                                                                                                      |
 
 #### Priority 3
 
-| #  | Player             | Character(s)          | Class   | Mainspec (role)  | Offspec (role) | Priority | Notes                                                                                                       |
-|----|--------------------|-----------------------|---------|------------------|----------------|----------|-------------------------------------------------------------------------------------------------------------|
-| 1  | Eselman            | Eselman               | Druid   | DPS (Feral)      | Tank (OT)      | 3        | Feral druid, flexes between tank and DPS                                                                    |
-| 2  | Lightstarr         | Lightstarr            | Paladin | DPS              | Tank           | 3        |                                                                                                             |
-| 3  | Sjwammie           | Sjwammie              | Paladin | Healer           | —              | 3        |                                                                                                             |
-| 4  | Medianos           | Medianos              | Priest  | DPS              | ?              | 3        |                                                                                                             |
-| 5  | Drillbabe          | Drillbabe             | Rogue   | DPS (Subtlety)   | —              | 3        | Reliability concern — history of no-shows after signing up                                                  |
-| 6  | Blacksi            | Blacksi               | Shaman  | DPS (Elemental)  | ?              | 3        |                                                                                                             |
-| 7  | CodeHunt/Rainbound | CodeHunt, Rainbound   | Shaman  | Healer           | —              | 3        |                                                                                                             |
-| 8  | Ōtsu               | Ōtsu                  | Warlock | DPS (Affliction) | —              | 3        |                                                                                                             |
-| 9  | Varva              | Varva                 | Warrior | DPS              | —              | 3        |                                                                                                             |
+| #  | Player             | Character(s)          | Class   | Mainspec (role)  | Offspec (role) | Priority | Notes              |
+|----|--------------------|-----------------------|---------|------------------|----------------|----------|--------------------|
+| 1  | Eselman            | Eselman               | Druid   | DPS (Feral)      | Tank (OT)      | 3        |                    |
+| 2  | Lightstarr         | Lightstarr            | Paladin | DPS              | Tank           | 3        |                    |
+| 3  | Sjwammie           | Sjwammie              | Paladin | Healer           | —              | 3        |                    |
+| 4  | Medianos           | Medianos              | Priest  | DPS              | ?              | 3        |                    |
+| 5  | Drillbabe          | Drillbabe             | Rogue   | DPS (Subtlety)   | —              | 3        | Unreliable signups |
+| 6  | Blacksi            | Blacksi               | Shaman  | DPS (Elemental)  | ?              | 3        |                    |
+| 7  | CodeHunt/Rainbound | CodeHunt, Rainbound   | Shaman  | Healer           | —              | 3        |                    |
+| 8  | Ōtsu               | Ōtsu                  | Warlock | DPS (Affliction) | —              | 3        |                    |
+| 9  | Varva              | Varva                 | Warrior | DPS              | —              | 3        |                    |
 
 ### Former players
 
