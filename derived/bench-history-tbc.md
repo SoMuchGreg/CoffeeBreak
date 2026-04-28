@@ -26,6 +26,7 @@ Players are sorted alphabetically by name within each table below. A player appe
 | OomToDoom           | 0        | —              | 1         | 12.04           | 1     |
 | Roossy/Keatala      | 1        | 18.03          | 2         | 25.03, 12.04    | 3     |
 | Tonsen              | 1        | 11.03          | 0         | —               | 1     |
+| Thordrel            | 1        | 29.04          | 0         | —               | 1     |
 | Verysadge           | 0        | —              | 1         | 15.04           | 1     |
 | Yxanb               | 1        | 29.04          | 1         | 22.03           | 2     |
 

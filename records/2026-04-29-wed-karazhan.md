@@ -1,10 +1,10 @@
 # Karazhan — Wednesday 29.04.2026
 
-## Signups (from Discord) — 25 (+1)
+## Signups (from Discord) — 26 (+1)
 
 **Tanks (4):** CptKavior, Marino-Varthier, Ostbirger, Gigakox
 **Warriors (2):** Verysadge, Dankyn
-**Druids (4):** Beaverfist, Jar, Yxanb, Gresac
+**Druids (5):** Beaverfist, Jar, Yxanb, Gresac, Shapicka/Chkemi
 **Paladins (3):** Leontes, Thordrel, Heligeman/Fugleman
 **Hunters (2):** Vaelruna, Tonsen
 **Priests (2):** Kres/Dissi, Lightweit
@@ -14,7 +14,7 @@
 
 **Tentative (1):** Roossy/Keatala
 
-**Header stats:** Tanks 4, Melee 7, Ranged 9, Healers 5
+**Header stats:** Tanks 4, Melee 8, Ranged 9, Healers 5
 
 ## Actual Raid Rosters
 
@@ -24,11 +24,11 @@
 |---------------------|--------|----------------------|
 | Ostbirger           | MT     | Paladin (Prot)       |
 | Gigakox             | OT     | Warrior (Prot)       |
-| Beaverfist          | DPS    | Druid (Balance)      |
 | Ebonybolt           | DPS    | Shaman (Enhancement) |
 | Jar                 | DPS    | Druid (Balance)      |
 | Leontes             | DPS    | Paladin (Ret)        |
 | OomToDoom           | DPS    | Mage                 |
+| Shapicka/Chkemi     | DPS    | Druid (Feral)        |
 | Tonsen              | DPS    | Hunter               |
 | Heligeman/Fugleman  | Healer | Paladin (Holy)       |
 | Lightweit           | Healer | Priest (Holy)        |
@@ -45,12 +45,18 @@
 | Lynelen             | DPS    | Shaman (Enhancement) |
 | Vaelruna            | DPS    | Hunter               |
 | Verysadge           | DPS    | Warrior (Fury)       |
+| Beaverfist          | Healer | Druid (Resto)        |
 | Pergatori           | Healer | Shaman (Resto)       |
-| Thordrel            | Healer | Paladin (Holy)       |
 
 **Composition check:** Target per team: 2T / 2H / 6 DPS = 10. Total across 2 teams (under-cap 2-team formation per `rules/01-raid-compositions.md` → "Under-cap team count", 25-26 ambiguous case): 20. Actual: 2 × 10 = 20. Status: ✅.
 
-## Bench (5)
+## Dual-spec flex applied
+
+| Player     | Asked to switch from → to      | Tier | Accepted? | Notes                                                                 |
+|------------|--------------------------------|------|-----------|-----------------------------------------------------------------------|
+| Beaverfist | DPS (Balance) → Healer (Resto) | 0    | Yes       | First line offspec — standing consent; fills Bakery slot Thordrel vacated |
+
+## Bench (6)
 
 | Player             | Priority | Bench count (cumulative, after this raid) | Reason        |
 |--------------------|----------|-------------------------------------------|---------------|
@@ -58,32 +64,34 @@
 | Dankyn             | 2        | 1                                         | fair rotation |
 | Greg               | 1        | 1                                         | leader choice |
 | Gresac             | 2        | 2                                         | leader choice |
+| Thordrel           | 2        | 1                                         | leader choice |
 | Yxanb              | 2        | 1                                         | fair rotation |
 
 ## Notes
 
-- **25 signups → 2 teams + 5 benched**, user chose option (a) of the 25–26 ambiguous case (`rules/01-raid-compositions.md` → "Under-cap team count").
+- **26 signups → 2 teams + 6 benched**, user chose option (a) of the 25–26 ambiguous case (`rules/01-raid-compositions.md` → "Under-cap team count"). Shapicka/Chkemi was a post-build signup; full-roster recalculation triggered.
+- **Shapicka/Chkemi first appearance** — Druid, mainspec DPS (Feral), offspec Tank (Feral), priority 2. Added to `rules/04-players.md` this session.
 - **Greg (priority 1) leader-choice bench** per user instruction, permitted under `rules/02-bench-rotation.md` → "Raid leader's discretionary bench picks".
 - **Gresac leader-choice bench** per user instruction, consistent with his `rules/04-players.md` note.
+- **Thordrel leader-choice bench** per user instruction.
+- **Beaverfist Tier 0 first-line-offspec flex** Balance DPS → Resto Healer (`rules/01-raid-compositions.md` → "Handling role shortages → Asking order → Tier 0") to fill the Bakery healer slot vacated by Thordrel; Beaverfist moved Restaurant → Bakery.
 - **Yxanb fair-rotation bench** chosen over Vaelruna by Karazhan Tier 1 (de-stacks Druids on Restaurant from 3→2) and Tier 2 (§8 Druid Feral=2 vs. Hunter=5). The first sub-agent verdict ran against the original Vaelruna pick before the user resolved the borderline tiebreaker; see Sanity check post-check changes.
 - **Bergamotka fair-rotation bench** chosen by composition target — Bergamotka playing alongside Lynelen + Ebonybolt would force 3 Enhancement Shamans across 2 teams.
 - **Dankyn fair-rotation bench** chosen by Tier 2 (§8 Fury Warrior=2 < Warlock=6, so Jabbadhutt kept).
 - **Yxanb's Notes column updated** in `rules/04-players.md` this session: "Feral tanks only as last resort". 4-tank header count comes from Gigakox signing Prot (listed in screenshot's Warrior column due to class-based grouping).
 - **Pergatori added to Light's Justice Needlist** this session (`rules/03-player-constraints.md`); Siljes not in raid, so single in-raid competitor and no entry in Loot conflicts.
-- **HFD (Beaverfist + Gigakox on Restaurant) and Ring of a Thousand Marks (Gigakox + Leontes on Restaurant)** — pigeonhole-forced 2-1 clusters from 3 in-raid competitors / 2 teams.
+- **HFD (Beaverfist + Kres/Dissi on Bakery) and Ring of a Thousand Marks (Gigakox + Leontes on Restaurant)** — pigeonhole-forced 2-1 clusters from 3 in-raid competitors / 2 teams.
 
 ## Loot conflicts
 
 | Item                          | Competitors                                         | Status                                |
 |-------------------------------|-----------------------------------------------------|---------------------------------------|
 | Fiery Warhorse's Reins        | Jar (R), Marino-Varthier (Bak)                      | ✓ split (BestPractice not in raid)    |
-| Gloves of the Fallen Champion | Leontes (R), Thordrel (Bak)                         | ✓ split                               |
-| Helm of the Fallen Defender   | Beaverfist (R), Gigakox (R), Kres/Dissi (Bak)       | ⚠️ Beaverfist + Gigakox (R)           |
-| Nathrezim Mindblade           | Beaverfist (R), Pergatori (Bak)                     | ✓ split                               |
+| Helm of the Fallen Defender   | Beaverfist (Bak), Gigakox (R), Kres/Dissi (Bak)     | ⚠️ Beaverfist + Kres/Dissi (Bak)      |
 | Ring of a Thousand Marks      | Gigakox (R), Leontes (R), Verysadge (Bak)           | ⚠️ Gigakox + Leontes (R)              |
 | Skulker's Greaves             | Gigakox (R), Vaelruna (Bak)                         | ✓ split                               |
 
-**4/6 fully split.** HFD and Ring of a Thousand Marks are pigeonhole-forced (3 in-raid competitors / 2 teams), unavoidable.
+**2/4 fully split.** HFD and Ring of a Thousand Marks are pigeonhole-forced (3 in-raid competitors / 2 teams), unavoidable. Gloves of the Fallen Champion (Leontes + Thordrel) dropped — Thordrel benched, single in-raid competitor.
 
 ## Sanity check
 
@@ -101,3 +109,4 @@
 - **Leontes moved Bakery → Restaurant** to maintain Gloves of the Fallen Champion split with Thordrel after the healer swap.
 - **Ring of a Thousand Marks cluster moved Bak → R** as a consequence of Leontes moving R; still 2-1 pigeonhole.
 - **Skulker's Greaves added to Loot conflicts** (Vaelruna in raid, Yxanb benched leaves Gigakox + Vaelruna as in-raid competitors); ✓ split.
+- **Rework (full-roster recalculation, Option B minimal-change):** Shapicka/Chkemi added as new signup, placed Restaurant DPS (Feral) replacing Beaverfist's vacated R DPS slot. Thordrel benched (leader choice). Beaverfist Tier 0 flex Balance DPS → Resto Healer, moved Restaurant → Bakery to fill Thordrel's vacated healer slot. HFD cluster moved R → Bakery (Beaverfist + Kres/Dissi on Bakery instead of Beaverfist + Gigakox on Restaurant); still 2-1 pigeonhole. Gloves of the Fallen Champion conflict resolved (Thordrel benched, Leontes single in-raid). User's "split balance druids and feral druids" instruction is moot in this raid — only 1 of each spec plays as DPS (Jar Balance, Shapicka Feral).

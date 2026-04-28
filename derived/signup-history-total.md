@@ -107,6 +107,7 @@ A player's sub-table here is determined solely by their top-level grouping in `r
 | 34 | Spot/Yorekbarn      | 2       |
 | 35 | Grundiger           | 1       |
 | 36 | Lenno/Mellymel      | 1       |
+| 37 | Shapicka/Chkemi     | 1       |
 
 ### Former members
 
