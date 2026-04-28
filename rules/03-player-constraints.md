@@ -39,7 +39,6 @@ The **Needlist** lists high-value loot drops players want to roll "need" on, pai
 
 | Item                                | Players competing                                                  | Notes |
 |-------------------------------------|--------------------------------------------------------------------|-------|
-| Adornment of Stolen Souls           | Pergatori                                                          |       |
 | Bands of Indwelling                 | Lightweit                                                          |       |
 | Barbed Choker of Discipline         | Mcjudgin                                                           |       |
 | Battlescar Boots                    | Cptkavior                                                          |       |
@@ -48,6 +47,7 @@ The **Needlist** lists high-value loot drops players want to roll "need" on, pai
 | Cowl of Defiance                    | Yxanb                                                              |       |
 | Crimson Girdle of the Indomitable   | Cptkavior                                                          |       |
 | Fiery Warhorse's Reins              | Bestpractice, Jar, Varthier                                        |       |
+| Forestlord Striders                 | Pergatori                                                          |       |
 | Girdle of Treachery                 | Vaelruna, Yxanb                                                    |       |
 | Gloves of the Fallen Champion       | Leontes, Thordrel                                                  |       |
 | Gloves of the Fallen Defender       | Lightweit                                                          |       |
@@ -55,15 +55,15 @@ The **Needlist** lists high-value loot drops players want to roll "need" on, pai
 | Helm of the Fallen Defender         | Beaverfist, Gigakox, Keatala, Kresniik                             |       |
 | Iron Gauntlets of the Maiden        | Mcjudgin                                                           |       |
 | Ironstriders of Urgency             | Leontes                                                            |       |
+| Jade Ring of the Everliving         | Pergatori                                                          |       |
 | King's Defender                     | Cptkavior, Doughball                                               |       |
 | Light's Justice                     | Pergatori, Siljes                                                  |       |
-| Nathrezim Mindblade                 | Beaverfist, Pergatori                                              |       |
+| Nathrezim Mindblade                 | Beaverfist                                                         |       |
 | Nethershard Girdle                  | Ucannotpass                                                        |       |
 | Pendant of the Violet Eye           | Thordrel                                                           |       |
 | Ribbon of Sacrifice                 | Thordrel                                                           |       |
 | Ring of a Thousand Marks            | Gigakox, Leontes, Verysadge, Yorekbarn                             |       |
-| Ring of Recurrence                  | Bestpractice, Pergatori, Ucannotpass                               |       |
-| Ring of Unrelenting Storms          | Pergatori                                                          |       |
+| Ring of Recurrence                  | Bestpractice, Ucannotpass                                          |       |
 | Ruby Drape of the Mysticant         | Bestpractice                                                       |       |
 | Shining Chain of the Afterworld     | Lightweit                                                          |       |
 | Skulker's Greaves                   | Bergamotka, Dankyn, Gigakox, Vaelruna                              |       |
