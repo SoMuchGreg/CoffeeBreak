@@ -96,7 +96,7 @@ or "Druid (Resto)" etc. when it's not obvious from the role section.
 |--------|-------|
 | ...    | ...   |
 
-**Composition check:** Target 3/6/16 for Gruul+Mag (per `rules/01-raid-compositions.md`). Actual: {T}/{H}/{DPS} = {total}. Status: ✅ / ⚠️ {explanation if not on target, e.g. "1 healer short — flex declined" or "1 over on DPS, ran 26 by user override"}.
+**Composition check:** Target 3/6/16 for Gruul+Mag (per `rules/01-raid-compositions.md`). Actual: {T}/{H}/{DPS} = {total}. Status: ✅ / ⚠️ {explanation if not on target, e.g. "1 healer short — no flex accepted" or "1 over on DPS, ran 26 by user override"}.
 
 ## Dual-spec flex applied                              <!-- delete this whole section if no flex was used -->
 

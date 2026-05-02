@@ -12,11 +12,11 @@ If signups don't include enough players for a required role at a raid's composit
 
 **Who qualifies.** Dual-spec players are any player in `rules/04-players.md` whose `Offspec (role)` column lists a specific spec (not "—", not "?", not blank). Their second spec is what they may switch to. A "?" in `Offspec` means we don't yet know whether the player has a second spec — those players are **not** eligible for flex by default; the user can clarify on a case-by-case basis.
 
-**Consent.** The decision is the player's. They may decline. Never unilaterally reassign a player's spec — always ask first. If the player declines, the raid runs short on that role rather than forcing the swap. Move on and ask the next eligible dual-spec player; if no one accepts, the raid runs under-target.
+**Consent.** The decision is the player's. Never unilaterally reassign a player's spec — always ask first. **A decline carries no bench penalty** — the declining player is treated as their mainspec for this roster, exactly like any signup not asked to flex. Move on and ask the next eligible dual-spec player; if no one accepts, the raid runs under-target on that role.
 
 **Asking order (four tiers).** Notes in `rules/04-players.md` reveal each player's flex disposition. Ask in this order, exhausting each tier before moving to the next:
 
-0. **First line offspec (pre-committed) — asked first.** A player whose `Notes` column in `rules/04-players.md` contains the literal phrase "first line offspec" (case-insensitive) has pre-committed to switching to their offspec when both (a) their mainspec role is over-represented *and* (b) their offspec covers an under-represented role. The note is standing consent — no per-raid prompt; the player may still decline. Tier 0 fires only when both (a) and (b) hold; otherwise fall through to Tiers 1–3. Applies symmetrically in `Handling role surpluses` below. A Tier 0 decline that results in the player being benched is recorded as `declined flex` per `rules/02-bench-rotation.md` (not `fair rotation`/`leader choice`) — the decline is the proximate cause.
+0. **First line offspec (pre-committed) — asked first.** A player whose `Notes` column in `rules/04-players.md` contains the literal phrase "first line offspec" (case-insensitive) has pre-committed to switching to their offspec when both (a) their mainspec role is over-represented *and* (b) their offspec covers an under-represented role. The note is standing consent — no per-raid prompt; the player may still decline. Tier 0 fires only when both (a) and (b) hold; otherwise fall through to Tiers 1–3. Applies symmetrically in `Handling role surpluses` below.
 1. **Most flexible first** — players explicitly noted as flexible across roles (e.g., "Switches role by raid format", "flexes between tank and DPS"). They actively flex specs across raids and are the easiest first ask.
 2. **No-preference second** — players with confirmed dual specs but no note recording a strong preference one way or the other. Neutral.
 3. **Last resort last** — players with reluctance notes (e.g., "Strong Resto preference", "extremely reluctant Balance", "Balance spec only as absolute last resort"). Ask only if tiers 0, 1, and 2 didn't fill the role. Respect the spirit of "absolute last resort" notes — these players genuinely don't want to play their off-spec.
@@ -45,7 +45,7 @@ The mirror of the dual-spec flex rule above: when **more tanks sign up than the 
 
 **If accepted**, the excess tank joins as a DPS/Healer and is treated as that role for every subsequent step (raid-spot priority, fair bench rotation, composition targets). Recompute the roster against the new role distribution.
 
-**If declined, or if the excess tank has no usable offspec**, they fall through to the standard bench-rotation rules in Rule 02 like any other signup that doesn't fit.
+**If declined, or if the excess tank has no usable offspec**, they fall through to the standard bench-rotation rules in Rule 02 like any other signup that doesn't fit. The bench is caused by their tank slot being surplus, not by the decline — reason label `fair rotation` or `leader choice`, never decline-specific. The flex was an alternative to the structural bench, not a way of avoiding a punishment.
 
 This rule applies to every raid format and every role-with-a-cap (tank is the common case today, but the same logic applies to any future format that caps healers or a specific DPS spec at a target count).
 
@@ -60,8 +60,7 @@ This applies only among soft rules themselves. Hard rules always win over soft r
 When signups fall below the format's optimal capacity, fair-rotation, priority-3, and capacity-based benching are suspended — everyone who signed up gets a spot. The only benches that still occur are:
 
 - **Structural** — format team-count math (currently applies to Karazhan only; see `Karazhan → Under-cap team count` below)
-- **Self-imposed** — player signed up as bench/tentative (`+Y` in the Discord screenshot header)
-- **Declined dual-spec flex** — refused a spec swap when the raid was short on a role (see `Handling role shortages (dual-spec flex)` above)
+- **Composition cap** — a hard cap fires when its trigger condition is met (e.g., the 25-man Resto Druid cap when more than 6 healers sign up); see `rules/02-bench-rotation.md` → "Bench reason vocabulary" → `composition cap`
 
 Format-specific under-cap mechanics live with each format — see `Karazhan → Under-cap team count` and `25-man raids → Under-cap behavior (any 25-man)`.
 
