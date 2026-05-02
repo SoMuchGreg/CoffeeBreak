@@ -72,7 +72,7 @@ Currently empty. Kept so a Regular player promoted to priority `1` has a place t
 |----|--------------------|-----------------------|---------|-------------------|-----------------|----------|------------------------------------------------------------------------------------------------------|
 | 1  | Beaverfist         | Beaverfist, Bävernäve | Druid   | DPS (Balance)     | Healer          | 2        | First line offspec                                                                                   |
 | 2  | Gresac             | Gresac, Grounddog     | Druid   | Healer            | DPS (Balance)   | 2        | Reluctant offspec. He is fine with being benched on Karazhan even if fair rotation says he should go |
-| 3  | Roossy/Keatala     | Roossy, Keatala       | Druid   | Healer            | —               | 2        |                                                                                                      |
+| 3  | Roossy/Keatala     | Roossy, Keatala       | Druid   | Healer            | —               | 2        | Has Hunter alt (BM DPS); character-class mapping not yet specified                                   |
 | 4  | Shapicka/Chkemi    | Shapicka, Chkemi      | Druid   | DPS (Feral)       | Tank (Feral)    | 2        | Eager offspec                                                                                        |
 | 5  | Yxanb              | Yxanb                 | Druid   | DPS (Feral)       | Tank (Feral)    | 2        | Tanks only as last resort                                                                            |
 | 6  | Dwarfytron         | Dwarfytron            | Hunter  | DPS               | —               | 2        |                                                                                                      |
@@ -85,20 +85,22 @@ Currently empty. Kept so a Regular player promoted to priority `1` has a place t
 | 13 | Leontes            | Leontes               | Paladin | DPS               | —               | 2        |                                                                                                      |
 | 14 | McJudgin           | McJudgin              | Paladin | DPS               | Tank            | 2        | First line offspec                                                                                   |
 | 15 | Thordrel           | Thordrel              | Paladin | Healer            | —               | 2        |                                                                                                      |
-| 16 | Lightweit          | Lightweit             | Priest  | Healer            | ?               | 2        |                                                                                                      |
-| 17 | Siljes/Ejlis       | Ejlis, Siljes         | Priest  | Healer            | DPS             | 2        | First line offspec                                                                                   |
-| 18 | Bergamotka/Tymoti  | Bergamotka, Tymoti    | Shaman  | DPS (Enhancement) | DPS (Elemental) | 2        | Offspecs willingly if needed                                                                         |
-| 19 | Ebonybolt          | Ebonybolt             | Shaman  | DPS (Enhancement) | Healer          | 2        |                                                                                                      |
-| 20 | Lynelen            | Lynelen, Kalyl        | Shaman  | DPS (Enhancement) | DPS (Elemental) | 2        | Offspecs willingly if needed                                                                         |
-| 21 | Pergatori          | Pergatori             | Shaman  | Healer            | DPS (Elemental) | 2        | First line offspec                                                                                   |
-| 22 | BestPractice       | BestPractice          | Warlock | DPS               | —               | 2        |                                                                                                      |
-| 23 | Jabbadhutt         | Jabbadhutt            | Warlock | DPS               | —               | 2        |                                                                                                      |
-| 24 | McHughes           | McHughes              | Warlock | DPS               | —               | 2        |                                                                                                      |
-| 25 | CptKavior          | CptKavior             | Warrior | DPS (Fury)        | Tank            | 2        | First line offspec                                                                                   |
-| 26 | Dankyn             | Dankyn                | Warrior | DPS (Fury)        | Tank            | 2        |                                                                                                      |
-| 27 | Doughball          | Doughball             | Warrior | DPS (Fury)        | Tank            | 2        |                                                                                                      |
-| 28 | Spot/Yorekbarn     | Spot, Yorekbarn       | Warrior | DPS (Fury)        | —               | 2        |                                                                                                      |
-| 29 | Verysadge          | Verysadge             | Warrior | DPS (Fury)        | —               | 2        |                                                                                                      |
+| 16 | Boriest            | Boriest               | Priest  | Healer            | ?               | 2        |                                                                                                      |
+| 17 | Lightweit          | Lightweit             | Priest  | Healer            | ?               | 2        |                                                                                                      |
+| 18 | Siljes/Ejlis       | Ejlis, Siljes         | Priest  | Healer            | DPS             | 2        | First line offspec                                                                                   |
+| 19 | Bergamotka/Tymoti  | Bergamotka, Tymoti    | Shaman  | DPS (Enhancement) | DPS (Elemental) | 2        | Offspecs willingly if needed                                                                         |
+| 20 | Ebonybolt          | Ebonybolt             | Shaman  | DPS (Enhancement) | Healer          | 2        |                                                                                                      |
+| 21 | Lynelen            | Lynelen, Kalyl        | Shaman  | DPS (Enhancement) | DPS (Elemental) | 2        | Offspecs willingly if needed                                                                         |
+| 22 | Pergatori          | Pergatori             | Shaman  | Healer            | DPS (Elemental) | 2        | First line offspec                                                                                   |
+| 23 | BestPractice       | BestPractice          | Warlock | DPS               | —               | 2        |                                                                                                      |
+| 24 | Jabbadhutt         | Jabbadhutt            | Warlock | DPS               | —               | 2        |                                                                                                      |
+| 25 | McHughes           | McHughes              | Warlock | DPS               | —               | 2        |                                                                                                      |
+| 26 | CptKavior          | CptKavior             | Warrior | DPS (Fury)        | Tank            | 2        | First line offspec                                                                                   |
+| 27 | Dankyn             | Dankyn                | Warrior | DPS (Fury)        | Tank            | 2        |                                                                                                      |
+| 28 | Doughball          | Doughball             | Warrior | DPS (Fury)        | Tank            | 2        |                                                                                                      |
+| 29 | Nemajumarad        | Nemajumarad           | Warrior | DPS (Arms)        | Tank            | 2        |                                                                                                      |
+| 30 | Spot/Yorekbarn     | Spot, Yorekbarn       | Warrior | DPS (Fury)        | —               | 2        |                                                                                                      |
+| 31 | Verysadge          | Verysadge             | Warrior | DPS (Fury)        | —               | 2        |                                                                                                      |
 
 #### Priority 3
 

@@ -56,6 +56,8 @@ Positioning and kill-order instructions for the Maulgar encounter. Invariant acr
 
 Run this for each role in the Maulgar table (in table order), then for each Magtheridon cube location (in the order **S → SE → SW → NE → NW**). A single player holds at most one role assignment per encounter — not both Maulgar Tank and Mage Tank, and not two slots of the same multi-slot role (e.g., both Maulgar Healer slots). The same player may hold one Maulgar role **and** one Magtheridon cube in the same raid; the encounters run at different times.
 
+**Hunter MD exception.** Hunter MD slots (`Maulgar Tank MD`, `Blindeye Tank MD`) are **pre-pull-only** — a single cast at the pull to transfer initial threat, after which the Hunter is freed for the rest of the fight. A Hunter assigned to one MD slot may also hold one other Maulgar role (e.g., Kiggler Tank co-tank). The two MD slots themselves cannot stack on the same Hunter — both casts overlap at the pull.
+
 1. **Filter by hard constraint.** Drop roster members who don't meet the role's eligibility requirement per the Encounter roles table (e.g., Mage for Krosh Mage Tank, Warlock for Felhunter Subjugate, core tank for Maulgar Tank, Hunter for the MD slots). For roles with no requirement listed, all non-already-assigned roster members are eligible.
 2. **Apply continuity preference.** Among the remaining candidates, find those who have held this exact role in prior raids (see *Continuity data sources* below). If one or more is in the roster, pick the **most recent** holder. Tiebreak by total number of prior holds (more = preferred), then alphabetical by canonical player name per `rules/04-players.md`.
 3. **Apply explicit strong preferences** when step 2 produces no candidate:
@@ -114,6 +116,8 @@ Two Hunter-only MD slots in the Maulgar council: **Maulgar Tank MD** and **Blind
 - **2 or more Hunters in roster** → both slots filled. For each slot, run the general five-step algorithm filtered to Hunters; exclude any Hunter already assigned to the first slot from candidates for the second. Continuity per slot. The cap is 2 — extra Hunters in the roster don't get an MD slot.
 
 **Slot order**: Maulgar Tank MD is assigned before Blindeye Tank MD (per Encounter roles table order).
+
+**MD-slot-stacking with other Maulgar roles.** See `## Assignment algorithm` → "Hunter MD exception" (opening paragraph).
 
 **Pre-rule record continuity.** Records pre-dating this rule track MDs as `<Hunter> MD` annotations in the Notes column of tank rows. For continuity purposes, count these annotations the same as the corresponding new-schema MD rows: a `<Hunter> MD` annotation in the Maulgar Tank row counts as a Maulgar Tank MD hold for that Hunter; same for Blindeye Tank. MD annotations on tanks not covered by this rule (Mage Tank Krosh, Kiggler Tank, Olm Tank) are ignored — they have no successor slot.
 
