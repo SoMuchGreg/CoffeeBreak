@@ -73,7 +73,7 @@ For renames: update the `Player` cell in-place; re-sort only if the alphabetical
 | 24 | Kres/Dissi          | 2026-02-22   | 17      | 77.3%       | 0                         |
 | 25 | Leontes             | 2026-04-08   | 6       | 75.0%       | 4                         |
 | 26 | Tonsen              | 2026-03-15   | 11      | 73.3%       | 4                         |
-| 27 | McHughes            | 2026-02-22   | 16      | 72.7%       | 0                         |
+| 27 | McHughes            | 2026-02-22   | 15      | 68.2%       | 14                        |
 | 28 | Heligeman/Fugleman  | 2026-04-05   | 6       | 66.7%       | 0                         |
 | 29 | Siljes/Ejlis        | 2026-03-25   | 8       | 66.7%       | 0                         |
 | 30 | McJudgin            | 2026-03-29   | 7       | 63.6%       | 0                         |

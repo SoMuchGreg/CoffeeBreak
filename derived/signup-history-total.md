@@ -76,11 +76,11 @@ A player's sub-table here is determined solely by their top-level grouping in `r
 | 3  | Verysadge           | 23      |
 | 4  | Thordrel            | 22      |
 | 5  | OomToDoom           | 20      |
-| 6  | McHughes            | 17      |
-| 7  | Roossy/Keatala      | 17      |
-| 8  | Yxanb               | 17      |
-| 9  | Dankyn              | 16      |
-| 10 | Lynelen             | 16      |
+| 6  | Roossy/Keatala      | 17      |
+| 7  | Yxanb               | 17      |
+| 8  | Dankyn              | 16      |
+| 9  | Lynelen             | 16      |
+| 10 | McHughes            | 16      |
 | 11 | Beaverfist          | 15      |
 | 12 | Bergamotka/Tymoti   | 15      |
 | 13 | Ebonybolt           | 13      |

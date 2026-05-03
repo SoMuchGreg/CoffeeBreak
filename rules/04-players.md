@@ -61,7 +61,7 @@ Currently empty. Kept so a Regular player promoted to priority `1` has a place t
 
 | #  | Player             | Character(s)    | Class   | Mainspec (role)   | Offspec (role)  | Priority | Notes                                                              |
 |----|--------------------|-----------------|---------|-------------------|-----------------|----------|--------------------------------------------------------------------|
-| 1  | Beaverfist         | Beaverfist      | Druid   | DPS (Balance)     | Healer          | 2        | Ok to offspec                                                      |
+| 1  | Beaverfist         | Beaverfist      | Druid   | Healer            | DPS (Balance)   | 2        | Ok to offspec                                                      |
 | 2  | Gresac             | Gresac          | Druid   | Healer            | DPS (Balance)   | 2        | Reluctant offspec. Fine with being always benched on Karazhan      |
 | 3  | Shapkica/Chkemi    | Shapkica        | Druid   | DPS (Feral)       | Tank (Feral)    | 2        | Ok to offspec                                                      |
 | 4  | Yxanb              | Yxanb           | Druid   | DPS (Feral)       | Tank (Feral)    | 2        | Reluctant offspec                                                  |
