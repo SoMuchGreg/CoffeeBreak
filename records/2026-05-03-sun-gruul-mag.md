@@ -6,7 +6,7 @@
 
 **Tanks (3):** CptKavior, Ostbirger, Marino-Varthier
 **Warriors (4):** Verysadge, Gigakox, Dankyn, Nemajumarad
-**Druids (4):** Beaverfist, Gresac, Yxanb, Shapicka/Chkemi
+**Druids (4):** Beaverfist, Gresac, Yxanb, Shapkica/Chkemi
 **Paladins (3):** Heligeman/Fugleman, Thordrel, McJudgin
 **Hunters (2):** Vaelruna, Roossy/Keatala
 **Priests (3):** Kres/Dissi, Siljes/Ejlis, Boriest
@@ -48,7 +48,7 @@
 | Dankyn             | Warrior (Fury)       |
 | Nemajumarad        | Warrior (Arms)       |
 | Yxanb              | Druid (Feral)        |
-| Shapicka/Chkemi    | Druid (Feral)        |
+| Shapkica/Chkemi    | Druid (Feral)        |
 | McJudgin           | Paladin (Ret)        |
 | Vaelruna           | Hunter (BM)          |
 | Roossy/Keatala     | Hunter (BM)          |

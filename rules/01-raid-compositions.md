@@ -13,7 +13,7 @@ Each player's role for a raid is their `Mainspec (role)` column in `rules/04-pla
 **Order of placement.** When building a roster from a signup pool:
 
 1. **Core tanks signed up** are placed into tank slots first (per "Core tanks" below — list membership is standing consent to tank, regardless of which icon they selected).
-2. **All other signups** are placed in their mainspec role per `rules/04-players.md`.
+2. **All other signups** are placed in their mainspec role per `rules/04-players.md`. **Exception:** players with alts (those with entries in that file's "Alt characters" sub-table) are resolved here per "Alts" below.
 3. **Compare the resulting role distribution to composition targets:**
    - Role(s) under target → **comp flex** (Tier 0 → Tier 3, voluntary; "Handling role shortages" below)
    - Role(s) over target → **comp flex** (voluntary; "Handling role surpluses" below)
@@ -37,7 +37,7 @@ If signups don't include enough players for a required role at a raid's composit
 
 0. **First line offspec (pre-committed) — asked first.** A player whose `Notes` column in `rules/04-players.md` contains the literal phrase "first line offspec" (case-insensitive) has pre-committed to switching to their offspec when both (a) their mainspec role is over-represented *and* (b) their offspec covers an under-represented role. The note is standing consent — no per-raid prompt; the player may still decline. Tier 0 fires only when both (a) and (b) hold; otherwise fall through to Tiers 1–3. Applies symmetrically in `Handling role surpluses` below.
 1. **Most flexible first** — players explicitly noted as flexible across roles (e.g., "flexes between tank and DPS"). They're willing to flex when asked, making them the easiest first ask.
-2. **No-preference second** — players with confirmed dual specs but no note recording a strong preference one way or the other. Neutral.
+2. **No-preference second** — players with confirmed dual specs but no note recording a strong preference one way or the other (e.g., "Ok to offspec"). Neutral.
 3. **Last resort last** — players with reluctance notes (e.g., "Strong Resto preference", "extremely reluctant Balance", "Balance spec only as absolute last resort"). Ask only if tiers 0, 1, and 2 didn't fill the role. Respect the spirit of "absolute last resort" notes — these players genuinely don't want to play their off-spec.
 
 **Timing.** This flex is composition-time, before the final bench cut. Once a flex swap is accepted, recompute the priority + bench rotation against the new role distribution.
@@ -57,6 +57,17 @@ The surplus trigger: when a role is over-target — more signups than the compos
 #### Tank-specific: identifying the excess
 
 When the format calls for more tanks than the core list provides (e.g., Karazhan's 6 tank slots across 3 teams vs. 3 core tanks), the extra slots are filled per-raid from other tank signups. Any tank-column signup beyond the core set plus the raid's chosen extra tanks is **excess** — they are not needed as a tank for this raid, and the surplus comp flex above applies to them. Core tanks are excluded — they always tank (per `Core tanks` below).
+
+### Alts
+
+Some players have alts; their alternative profiles are recorded in `rules/04-players.md` → "Alt characters" sub-table. Mechanics of which profile to roster per raid.
+**At most one profile per raid.** A player with alts has a main and one or more alts; only one profile is rostered for any given raid.
+**Fit.** A profile **fits** when adding the player keeps the role at or below its composition target and respects all active composition caps. For Karazhan, the composition target is the aggregate across all teams being formed; per-team distribution is downstream.
+**Picking rule.** If both profiles fit, the main is rostered. If only one fits, that one is rostered. If neither fits, the player is not rostered (subject to standard bench rotation per `rules/02-bench-rotation.md`).
+**Processing order.** Alts are processed last within step 2 of "Order of placement" above — after all non-alt mainspec placements, then alphabetically by canonical name among themselves — so each evaluates fit against the near-complete composition.
+**Signup character.** The signup character is informational only — main-vs-alt selection is governed by this rule, not by which character appeared on the signup screen (per "Role placement: mainspec is authoritative" above).
+**Consent.** Listing a player's alt in `rules/04-players.md` → "Alt characters" sub-table is standing consent — no per-raid prompt — distinct from **comp flex**.
+**Visibility.** When an alt is rostered rather than the main, the roster proposal and the record file's `## Notes` section must call out the swap.
 
 ### Soft rule conflicts
 

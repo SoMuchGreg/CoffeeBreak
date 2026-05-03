@@ -4,7 +4,7 @@
 
 **Tanks (4):** CptKavior, Marino-Varthier, Ostbirger, Gigakox
 **Warriors (2):** Verysadge, Dankyn
-**Druids (5):** Beaverfist, Jar, Yxanb, Gresac, Shapicka/Chkemi
+**Druids (5):** Beaverfist, Jar, Yxanb, Gresac, Shapkica/Chkemi
 **Paladins (3):** Leontes, Thordrel, Heligeman/Fugleman
 **Hunters (2):** Vaelruna, Tonsen
 **Priests (2):** Kres/Dissi, Lightweit
@@ -28,7 +28,7 @@
 | Jar                 | DPS    | Druid (Balance)      |
 | Leontes             | DPS    | Paladin (Ret)        |
 | OomToDoom           | DPS    | Mage                 |
-| Shapicka/Chkemi     | DPS    | Druid (Feral)        |
+| Shapkica/Chkemi     | DPS    | Druid (Feral)        |
 | Tonsen              | DPS    | Hunter               |
 | Heligeman/Fugleman  | Healer | Paladin (Holy)       |
 | Lightweit           | Healer | Priest (Holy)        |
@@ -69,8 +69,8 @@
 
 ## Notes
 
-- **26 signups → 2 teams + 6 benched**, user chose option (a) of the 25–26 ambiguous case (`rules/01-raid-compositions.md` → "Under-cap team count"). Shapicka/Chkemi was a post-build signup; full-roster recalculation triggered.
-- **Shapicka/Chkemi first appearance** — Druid, mainspec DPS (Feral), offspec Tank (Feral), priority 2. Added to `rules/04-players.md` this session.
+- **26 signups → 2 teams + 6 benched**, user chose option (a) of the 25–26 ambiguous case (`rules/01-raid-compositions.md` → "Under-cap team count"). Shapkica/Chkemi was a post-build signup; full-roster recalculation triggered.
+- **Shapkica/Chkemi first appearance** — Druid, mainspec DPS (Feral), offspec Tank (Feral), priority 2. Added to `rules/04-players.md` this session.
 - **Greg (priority 1) leader-choice bench** per user instruction, permitted under `rules/02-bench-rotation.md` → "Raid leader's discretionary bench picks".
 - **Gresac leader-choice bench** per user instruction, consistent with his `rules/04-players.md` note.
 - **Thordrel leader-choice bench** per user instruction.
@@ -109,4 +109,4 @@
 - **Leontes moved Bakery → Restaurant** to maintain Gloves of the Fallen Champion split with Thordrel after the healer swap.
 - **Ring of a Thousand Marks cluster moved Bak → R** as a consequence of Leontes moving R; still 2-1 pigeonhole.
 - **Skulker's Greaves added to Loot conflicts** (Vaelruna in raid, Yxanb benched leaves Gigakox + Vaelruna as in-raid competitors); ✓ split.
-- **Rework (full-roster recalculation, Option B minimal-change):** Shapicka/Chkemi added as new signup, placed Restaurant DPS (Feral) replacing Beaverfist's vacated R DPS slot. Thordrel benched (leader choice). Beaverfist Tier 0 flex Balance DPS → Resto Healer, moved Restaurant → Bakery to fill Thordrel's vacated healer slot. HFD cluster moved R → Bakery (Beaverfist + Kres/Dissi on Bakery instead of Beaverfist + Gigakox on Restaurant); still 2-1 pigeonhole. Gloves of the Fallen Champion conflict resolved (Thordrel benched, Leontes single in-raid). User's "split balance druids and feral druids" instruction is moot in this raid — only 1 of each spec plays as DPS (Jar Balance, Shapicka Feral).
+- **Rework (full-roster recalculation, Option B minimal-change):** Shapkica/Chkemi added as new signup, placed Restaurant DPS (Feral) replacing Beaverfist's vacated R DPS slot. Thordrel benched (leader choice). Beaverfist Tier 0 flex Balance DPS → Resto Healer, moved Restaurant → Bakery to fill Thordrel's vacated healer slot. HFD cluster moved R → Bakery (Beaverfist + Kres/Dissi on Bakery instead of Beaverfist + Gigakox on Restaurant); still 2-1 pigeonhole. Gloves of the Fallen Champion conflict resolved (Thordrel benched, Leontes single in-raid). User's "split balance druids and feral druids" instruction is moot in this raid — only 1 of each spec plays as DPS (Jar Balance, Shapkica Feral).

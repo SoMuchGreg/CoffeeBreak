@@ -4,6 +4,7 @@
 
 - Some players can play **two specializations** (e.g., tank + DPS, healer + DPS). They may be assigned to either role as needed.
 - Some players have **only one specialization**. They must always be assigned their one role.
+- **Some players have alts.** Their main character occupies the row in the priority sub-tables below; alts live in the **Alt characters** sub-table at the bottom of this file. Mechanics (picking rule, processing order, consent, visibility): `rules/01-raid-compositions.md` → "Alts".
 - **Never assume** a player's class, specialization, or available roles. If unknown, ask the user.
 - **Melee vs. Ranged DPS matters for Shamans and Druids.** Enhancement Shamans and Feral Druids are **melee DPS**. Elemental Shamans and Balance (Boomkin) Druids are **ranged/caster DPS**. Each player's `Mainspec (role)` column below indicates which they play.
 - **Hybrid classes** — Druids, Paladins, Shamans, and Priests can each play tank, healer, or DPS specs. For canonical rule on which spec a hybrid plays for a raid, see `rules/01-raid-compositions.md` → "Role placement: mainspec is authoritative".
@@ -31,11 +32,11 @@ Priority is a property of the player, not of a specific raid. It changes only wh
 
 ### Officers
 
-| #  | Player              | Character(s)             | Class   | Mainspec (role) | Offspec (role) | Priority | Notes              |
-|----|---------------------|--------------------------|---------|-----------------|----------------|----------|--------------------|
-| 1  | Jar                 | Jar, Jardepli            | Druid   | DPS (Balance)   | Healer         | 1        | First line offspec |
-| 2  | Greg                | Ucannotpass              | Mage    | DPS             | —              | 1        |                    |
-| 3  | Kres/Dissi          | Kresniik, Dissi, Griever | Priest  | DPS             | Healer         | 1        |                    |
+| #  | Player              | Character(s)                   | Class   | Mainspec (role) | Offspec (role) | Priority | Notes              |
+|----|---------------------|--------------------------------|---------|-----------------|----------------|----------|--------------------|
+| 1  | Jar                 | Jardepli                       | Druid   | DPS (Balance)   | Healer         | 1        | First line offspec |
+| 2  | Greg                | Ucannotpass                    | Mage    | DPS             | —              | 1        |                    |
+| 3  | Kres/Dissi          | Kresniik, Dissidencer, Griever | Priest  | DPS             | Healer         | 1        |                    |
 
 ### Core tanks
 
@@ -53,44 +54,44 @@ Tanks the raid leader relies on to fill tank duties at any raid format. Concept 
 
 Currently empty. Kept so a Regular player promoted to priority `1` has a place to live.
 
-| #  | Player             | Character(s)          | Class   | Mainspec (role)     | Offspec (role)  | Priority | Notes                                                                                             |
-|----|--------------------|-----------------------|---------|---------------------|-----------------|----------|---------------------------------------------------------------------------------------------------|
+| #  | Player         | Character(s)      | Class   | Mainspec (role)     | Offspec (role)  | Priority | Notes                                                                     |
+|----|----------------|-------------------|---------|---------------------|-----------------|----------|---------------------------------------------------------------------------|
 
 #### Priority 2
 
-| #  | Player             | Character(s)          | Class   | Mainspec (role)   | Offspec (role)  | Priority | Notes                                                                                                |
-|----|--------------------|-----------------------|---------|-------------------|-----------------|----------|------------------------------------------------------------------------------------------------------|
-| 1  | Beaverfist         | Beaverfist, Bävernäve | Druid   | DPS (Balance)     | Healer          | 2        | First line offspec                                                                                   |
-| 2  | Gresac             | Gresac, Grounddog     | Druid   | Healer            | DPS (Balance)   | 2        | Reluctant offspec. He is fine with being benched on Karazhan even if fair rotation says he should go |
-| 3  | Roossy/Keatala     | Roossy, Keatala       | Druid   | Healer            | —               | 2        | Has Hunter alt (BM DPS); character-class mapping not yet specified                                   |
-| 4  | Shapicka/Chkemi    | Shapicka, Chkemi      | Druid   | DPS (Feral)       | Tank (Feral)    | 2        | Eager offspec                                                                                        |
-| 5  | Yxanb              | Yxanb                 | Druid   | DPS (Feral)       | Tank (Feral)    | 2        | Tanks only as last resort                                                                            |
-| 6  | Dwarfytron         | Dwarfytron            | Hunter  | DPS               | —               | 2        |                                                                                                      |
-| 7  | Grundiger          | Grundiger             | Hunter  | DPS               | —               | 2        |                                                                                                      |
-| 8  | Tonsen             | Tonsen                | Hunter  | DPS               | —               | 2        |                                                                                                      |
-| 9  | Vaelruna           | Vaelruna              | Hunter  | DPS               | —               | 2        |                                                                                                      |
-| 10 | Lenno/Mellymel     | Lenno, Mellymel       | Mage    | DPS (Arcane)      | —               | 2        |                                                                                                      |
-| 11 | OomToDoom          | OomToDoom             | Mage    | DPS (Arcane)      | DPS (Fire)      | 2        |                                                                                                      |
-| 12 | Heligeman/Fugleman | Heligeman, Fugleman   | Paladin | Healer            | —               | 2        |                                                                                                      |
-| 13 | Leontes            | Leontes               | Paladin | DPS               | —               | 2        |                                                                                                      |
-| 14 | McJudgin           | McJudgin              | Paladin | DPS               | Tank            | 2        | First line offspec                                                                                   |
-| 15 | Thordrel           | Thordrel              | Paladin | Healer            | —               | 2        |                                                                                                      |
-| 16 | Boriest            | Boriest               | Priest  | Healer            | ?               | 2        |                                                                                                      |
-| 17 | Lightweit          | Lightweit             | Priest  | Healer            | ?               | 2        |                                                                                                      |
-| 18 | Siljes/Ejlis       | Ejlis, Siljes         | Priest  | Healer            | DPS             | 2        | First line offspec                                                                                   |
-| 19 | Bergamotka/Tymoti  | Bergamotka, Tymoti    | Shaman  | DPS (Enhancement) | DPS (Elemental) | 2        | Offspecs willingly if needed                                                                         |
-| 20 | Ebonybolt          | Ebonybolt             | Shaman  | DPS (Enhancement) | Healer          | 2        |                                                                                                      |
-| 21 | Lynelen            | Lynelen, Kalyl        | Shaman  | DPS (Enhancement) | DPS (Elemental) | 2        | Offspecs willingly if needed                                                                         |
-| 22 | Pergatori          | Pergatori             | Shaman  | Healer            | DPS (Elemental) | 2        | First line offspec                                                                                   |
-| 23 | BestPractice       | BestPractice          | Warlock | DPS               | —               | 2        |                                                                                                      |
-| 24 | Jabbadhutt         | Jabbadhutt            | Warlock | DPS               | —               | 2        |                                                                                                      |
-| 25 | McHughes           | McHughes              | Warlock | DPS               | —               | 2        |                                                                                                      |
-| 26 | CptKavior          | CptKavior             | Warrior | DPS (Fury)        | Tank            | 2        | First line offspec                                                                                   |
-| 27 | Dankyn             | Dankyn                | Warrior | DPS (Fury)        | Tank            | 2        |                                                                                                      |
-| 28 | Doughball          | Doughball             | Warrior | DPS (Fury)        | Tank            | 2        |                                                                                                      |
-| 29 | Nemajumarad        | Nemajumarad           | Warrior | DPS (Arms)        | Tank            | 2        |                                                                                                      |
-| 30 | Spot/Yorekbarn     | Spot, Yorekbarn       | Warrior | DPS (Fury)        | —               | 2        |                                                                                                      |
-| 31 | Verysadge          | Verysadge             | Warrior | DPS (Fury)        | —               | 2        |                                                                                                      |
+| #  | Player             | Character(s)    | Class   | Mainspec (role)   | Offspec (role)  | Priority | Notes                                                              |
+|----|--------------------|-----------------|---------|-------------------|-----------------|----------|--------------------------------------------------------------------|
+| 1  | Beaverfist         | Beaverfist      | Druid   | DPS (Balance)     | Healer          | 2        | Ok to offspec                                                      |
+| 2  | Gresac             | Gresac          | Druid   | Healer            | DPS (Balance)   | 2        | Reluctant offspec. Fine with being always benched on Karazhan      |
+| 3  | Shapkica/Chkemi    | Shapkica        | Druid   | DPS (Feral)       | Tank (Feral)    | 2        | Ok to offspec                                                      |
+| 4  | Yxanb              | Yxanb           | Druid   | DPS (Feral)       | Tank (Feral)    | 2        | Reluctant offspec                                                  |
+| 5  | Dwarfytron         | Dwarfytron      | Hunter  | DPS               | —               | 2        |                                                                    |
+| 6  | Grundiger          | Grundiger       | Hunter  | DPS               | —               | 2        |                                                                    |
+| 7  | Roossy/Keatala     | Roossy, Keatala | Hunter  | DPS               | —               | 2        | Druid alt (Keatala) — see Alt characters sub-table below           |
+| 8  | Tonsen             | Tonsen          | Hunter  | DPS               | —               | 2        |                                                                    |
+| 9  | Vaelruna           | Vaelruna        | Hunter  | DPS               | —               | 2        |                                                                    |
+| 10 | Lenno/Mellymel     | Mellymel        | Mage    | DPS (Arcane)      | —               | 2        |                                                                    |
+| 11 | OomToDoom          | OomToDoom       | Mage    | DPS (Arcane)      | DPS (Fire)      | 2        |                                                                    |
+| 12 | Heligeman/Fugleman | Heligeman       | Paladin | Healer            | —               | 2        |                                                                    |
+| 13 | Leontes            | Leontes         | Paladin | DPS               | —               | 2        |                                                                    |
+| 14 | McJudgin           | McJudgin        | Paladin | DPS               | Tank            | 2        | First line offspec                                                 |
+| 15 | Thordrel           | Thordrel        | Paladin | Healer            | —               | 2        |                                                                    |
+| 16 | Boriest            | Boriest         | Priest  | Healer            | ?               | 2        |                                                                    |
+| 17 | Lightweit          | Lightweit       | Priest  | Healer            | ?               | 2        |                                                                    |
+| 18 | Siljes/Ejlis       | Siljes          | Priest  | Healer            | DPS             | 2        | First line offspec                                                 |
+| 19 | Bergamotka/Tymoti  | Bergamotka      | Shaman  | DPS (Enhancement) | DPS (Elemental) | 2        | Ok to offspec                                                      |
+| 20 | Ebonybolt          | Ebonybolt       | Shaman  | DPS (Enhancement) | Healer          | 2        | Ok to offspec                                                      |
+| 21 | Lynelen            | Lynelen, Kalyl  | Shaman  | DPS (Enhancement) | DPS (Elemental) | 2        | Ok to offspec                                                      |
+| 22 | Pergatori          | Pergatori       | Shaman  | Healer            | DPS (Elemental) | 2        | First line offspec                                                 |
+| 23 | BestPractice       | BestPractice    | Warlock | DPS               | —               | 2        |                                                                    |
+| 24 | Jabbadhutt         | Jabbadhutt      | Warlock | DPS               | —               | 2        |                                                                    |
+| 25 | McHughes           | McHughes        | Warlock | DPS               | —               | 2        |                                                                    |
+| 26 | CptKavior          | CptKavior       | Warrior | DPS (Fury)        | Tank            | 2        | First line offspec                                                 |
+| 27 | Dankyn             | Dankyn          | Warrior | DPS (Fury)        | Tank            | 2        |                                                                    |
+| 28 | Doughball          | Doughball       | Warrior | DPS (Fury)        | Tank            | 2        |                                                                    |
+| 29 | Nemajumarad        | Nemajumarad     | Warrior | DPS (Arms)        | Tank            | 2        |                                                                    |
+| 30 | Spot/Yorekbarn     | Yorekbarn       | Warrior | DPS (Fury)        | —               | 2        |                                                                    |
+| 31 | Verysadge          | Verysadge       | Warrior | DPS (Fury)        | —               | 2        |                                                                    |
 
 #### Priority 3
 
@@ -105,6 +106,14 @@ Currently empty. Kept so a Regular player promoted to priority `1` has a place t
 | 7  | CodeHunt/Rainbound | CodeHunt, Rainbound   | Shaman  | Healer           | —              | 3        |                    |
 | 8  | Ōtsu               | Ōtsu                  | Warlock | DPS (Affliction) | —              | 3        |                    |
 | 9  | Varva              | Varva                 | Warrior | DPS              | —              | 3        |                    |
+
+### Alt characters
+
+Additional role profiles for players with alts, per `rules/01-raid-compositions.md` → "Alts". Each entry is an alternative composition candidate for the named player. **This table is not a player list; headcount comes from the priority sub-tables above.** No `#` column on purpose.
+
+| Player          | Character | Class | Mainspec (role) | Offspec (role) | Notes |
+|-----------------|-----------|-------|-----------------|----------------|-------|
+| Roossy/Keatala  | Keatala   | Druid | Healer          | —              |       |
 
 ### Former players
 

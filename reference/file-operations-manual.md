@@ -109,6 +109,7 @@ The `## Notes` section is for **per-raid facts that aren't derivable from the ru
 - **New player first appearance** — name, class, spec, priority. Always paired with a `rules/04-players.md` update; the note is a one-line pointer to that update, not a duplicate of it.
 - **New per-player information learned this raid** — a previously-unknown offspec revealed by a signup column, an alt revealed, a constraint inferred. Always paired with an update to the relevant `rules/` file.
 - **Spec overrides** — when a player's actual spec for the raid differs from what the rules would have placed them in (per `rules/01-raid-compositions.md` → "Role placement: mainspec is authoritative"). Record `expected → actual`. Group multiple overrides under one bullet with sub-bullets.
+- **Alt swaps** — when a player's alt character was rostered instead of their main (per `rules/01-raid-compositions.md` → "Alts"). Record `main → alt` and the reason (e.g., main pool at target).
 - **Bench picks whose outcome required information not visible in the bench table** — alphabetical-fallback tiebreakers, raid-leader overrides on top of the algorithm, leader-choice surplus calls. Name the player, name the cap or rule that triggered the bench, name the resolution mechanism. **Do not** restate the rule mechanics or the cap numbers — point at the rule.
 - **Post-build roster changes** — withdrawals, late additions, swaps, or on-the-go / post-raid corrections after the initial roster was built. Record the change and any composition consequence (e.g. *"Warlock count fell to 2, below Section 8 lower bound of 3 — unfillable"*). Applies whether the change came via `Event: Full-roster recalculation` (pre-raid recalc) or `Event: Quick (ad-hoc) roster update` (post-raid or trivial edit).
 - **Raid-leader overrides** — any case where the algorithm's output was overridden by a human decision. Name the player, name what the algorithm would have done, name what was done instead.
@@ -275,7 +276,7 @@ Run the post-edit consistency grep per `CLAUDE.md` → "Post-edit consistency gr
 
 | File | What to update |
 |------|----------------|
-| `rules/04-players.md` | Update player's class, spec, priority, or notes. When a Regular player's priority changes among `1`, `2`, and `3`, move the row to the matching **Priority N** sub-table and renumber both affected sub-tables. |
+| `rules/04-players.md` | Update player's class, spec, priority, or notes. When a Regular player's priority changes among `1`, `2`, and `3`, move the row to the matching **Priority N** sub-table and renumber both affected sub-tables. **If the user reveals an alt, add an entry to the Alt characters sub-table — see `rules/01-raid-compositions.md` → "Alts" for the mechanics.** |
 | `rules/03-player-constraints.md` | Update if it's a must-together/must-not-together/availability constraint |
 
 ---
@@ -288,7 +289,7 @@ Run the post-edit consistency grep per `CLAUDE.md` → "Post-edit consistency gr
 
 | File | What to update |
 |------|----------------|
-| `rules/04-players.md` | Update the `Player` column to the new canonical name. Update the `Character(s)` column to match. If the old name should remain discoverable for cross-referencing older Discord screenshots, add a brief *"Previously known as X"* note in the `Notes` column. |
+| `rules/04-players.md` | Update the `Player` column to the new canonical name. Update the `Character(s)` column to match. If the old name should remain discoverable for cross-referencing older Discord screenshots, add a brief *"Previously known as X"* note in the `Notes` column. **If the renamed character or its canonical name appears in the Alt characters sub-table, update the matching `Player` and/or `Character` cells too.** |
 | `rules/03-player-constraints.md` | Rename every reference to the player across the Availability, Must-be-together, Must-not-be-together, Needlist, and Enchanters sub-sections. These cells reference canonical names — normalize them, don't preserve the old label. |
 | `derived/bench-history-tbc.md` | Update every row that references the old player name to the new canonical name. This is derived data, not a historical record — normalize it, don't preserve the old label. |
 | `derived/signup-history-total.md` | Same as `bench-history-tbc.md` — rename the `Player` column value to the new canonical name. Derived data, normalize it. |
@@ -306,7 +307,7 @@ Run the post-edit consistency grep per `CLAUDE.md` → "Post-edit consistency gr
 
 | File | What to update |
 |------|----------------|
-| `rules/04-players.md` | **Joins:** add a new player row to the appropriate Regular players priority sub-table (default priority `2` per the file's "Default priority for new players" rule). **Leaves:** move the row to the Former players sub-table. Do **not** strike through — placement already conveys departed status. |
+| `rules/04-players.md` | **Joins:** add a new player row to the appropriate Regular players priority sub-table (default priority `2` per the file's "Default priority for new players" rule). **Leaves:** move the row to the Former players sub-table. Do **not** strike through — placement already conveys departed status. **If the departing player has an entry in the Alt characters sub-table, remove it.** |
 | `derived/bench-history-tbc.md` | **Joins:** no action (rows are added on first bench). **Leaves:** move the row to the Former guild members table. Do **not** strike through — placement already conveys departed status. |
 | `derived/signup-history-total.md` | Move the row from Officers, Core tanks, or Current members to Former members; re-sort and renumber both sub-tables. Do **not** strike through (sub-table placement conveys departed status, matching `rules/04-players.md`). |
 | `derived/signup-stats-tbc.md` | Remove the departed player's row and renumber. Flat table (Officers + Core tanks + Regular players combined), so officer promotion/demotion and core-tank status changes need no action here. Row only exists if the player has in-scope signups; if absent, no action. |

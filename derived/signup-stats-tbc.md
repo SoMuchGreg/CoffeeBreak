@@ -57,7 +57,7 @@ For renames: update the `Player` cell in-place; re-sort only if the alphabetical
 | 8  | Nemajumarad         | 2026-05-03   | 1       | 100.0%      | 0                         |
 | 9  | Pergatori           | 2026-03-22   | 13      | 100.0%      | 0                         |
 | 10 | Roossy/Keatala      | 2026-03-15   | 15      | 100.0%      | 0                         |
-| 11 | Shapicka/Chkemi     | 2026-04-29   | 2       | 100.0%      | 0                         |
+| 11 | Shapkica/Chkemi     | 2026-04-29   | 2       | 100.0%      | 0                         |
 | 12 | Greg                | 2026-02-22   | 21      | 95.5%       | 0                         |
 | 13 | Vaelruna            | 2026-02-22   | 21      | 95.5%       | 0                         |
 | 14 | Yxanb               | 2026-03-04   | 17      | 94.4%       | 0                         |

@@ -105,7 +105,7 @@ A player's sub-table here is determined solely by their top-level grouping in `r
 | 32 | Medianos            | 3       |
 | 33 | Spot/Yorekbarn      | 3       |
 | 34 | Drillbabe           | 2       |
-| 35 | Shapicka/Chkemi     | 2       |
+| 35 | Shapkica/Chkemi     | 2       |
 | 36 | Boriest             | 1       |
 | 37 | Grundiger           | 1       |
 | 38 | Lenno/Mellymel      | 1       |
