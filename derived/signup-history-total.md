@@ -57,15 +57,16 @@ A player's sub-table here is determined solely by their top-level grouping in `r
 |----|---------------------|---------|
 | 1  | Greg                | 27      |
 | 2  | Kres/Dissi          | 23      |
-| 3  | Jar                 | 16      |
+| 3  | Roossy/Keatala      | 17      |
+| 4  | Jar                 | 16      |
+| 5  | Ostbirger           | 12      |
 
 ### Core tanks
 
 | #  | Player              | Signups |
 |----|---------------------|---------|
 | 1  | Marino-Varthier     | 27      |
-| 2  | Ostbirger           | 12      |
-| 3  | Gigakox             | 11      |
+| 2  | Gigakox             | 11      |
 
 ### Current members
 
@@ -76,40 +77,39 @@ A player's sub-table here is determined solely by their top-level grouping in `r
 | 3  | Verysadge           | 23      |
 | 4  | Thordrel            | 22      |
 | 5  | OomToDoom           | 20      |
-| 6  | Roossy/Keatala      | 17      |
-| 7  | Yxanb               | 17      |
-| 8  | Dankyn              | 16      |
-| 9  | Lynelen             | 16      |
-| 10 | McHughes            | 16      |
-| 11 | Beaverfist          | 15      |
-| 12 | Bergamotka/Tymoti   | 15      |
-| 13 | Ebonybolt           | 13      |
-| 14 | Jabbadhutt          | 13      |
-| 15 | Pergatori           | 13      |
-| 16 | BestPractice        | 11      |
-| 17 | Tonsen              | 11      |
-| 18 | Heligeman/Fugleman  | 10      |
-| 19 | Lightweit           | 8       |
-| 20 | Siljes/Ejlis        | 8       |
-| 21 | CptKavior           | 7       |
-| 22 | Dwarfytron          | 7       |
-| 23 | McJudgin            | 7       |
-| 24 | Doughball           | 6       |
-| 25 | Leontes             | 6       |
-| 26 | Ōtsu                | 5       |
-| 27 | Blacksi             | 4       |
-| 28 | Sjwammie            | 4       |
-| 29 | CodeHunt/Rainbound  | 3       |
-| 30 | Eselman             | 3       |
-| 31 | Lightstarr          | 3       |
-| 32 | Medianos            | 3       |
-| 33 | Spot/Yorekbarn      | 3       |
-| 34 | Drillbabe           | 2       |
-| 35 | Shapkica/Chkemi     | 2       |
-| 36 | Boriest             | 1       |
-| 37 | Grundiger           | 1       |
-| 38 | Lenno/Mellymel      | 1       |
-| 39 | Nemajumarad         | 1       |
+| 6  | Yxanb               | 17      |
+| 7  | Dankyn              | 16      |
+| 8  | Lynelen             | 16      |
+| 9  | McHughes            | 16      |
+| 10 | Beaverfist          | 15      |
+| 11 | Bergamotka/Tymoti   | 15      |
+| 12 | Ebonybolt           | 13      |
+| 13 | Jabbadhutt          | 13      |
+| 14 | Pergatori           | 13      |
+| 15 | BestPractice        | 11      |
+| 16 | Tonsen              | 11      |
+| 17 | Heligeman/Fugleman  | 10      |
+| 18 | Lightweit           | 8       |
+| 19 | Siljes/Ejlis        | 8       |
+| 20 | CptKavior           | 7       |
+| 21 | Dwarfytron          | 7       |
+| 22 | McJudgin            | 7       |
+| 23 | Doughball           | 6       |
+| 24 | Leontes             | 6       |
+| 25 | Ōtsu                | 5       |
+| 26 | Blacksi             | 4       |
+| 27 | Sjwammie            | 4       |
+| 28 | CodeHunt/Rainbound  | 3       |
+| 29 | Eselman             | 3       |
+| 30 | Lightstarr          | 3       |
+| 31 | Medianos            | 3       |
+| 32 | Spot/Yorekbarn      | 3       |
+| 33 | Drillbabe           | 2       |
+| 34 | Shapkica/Chkemi     | 2       |
+| 35 | Boriest             | 1       |
+| 36 | Grundiger           | 1       |
+| 37 | Lenno/Mellymel      | 1       |
+| 38 | Nemajumarad         | 1       |
 
 ### Former members
 

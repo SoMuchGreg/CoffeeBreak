@@ -315,6 +315,37 @@ Run the post-edit consistency grep per `CLAUDE.md` → "Post-edit consistency gr
 
 ---
 
+## Event: User promotes or demotes an officer
+
+Triggered by phrases like *"X is now an officer"*, *"promote X"*, *"new officers: X, Y"*, *"X stepped down"*, *"X is no longer an officer"*, or similar. Handles guild-rank changes between the **Officers** sub-table and a non-Officer placement (Core tanks or Regular players) in `rules/04-players.md`. Distinct from `Event: A player joins or leaves the guild` (active ↔ former). Core-tank-status changes that don't involve an officer change fall under `Event: User provides player-specific information` instead.
+
+### Promotion (Regular player or Core tank → Officer)
+
+| File | What to update |
+|------|----------------|
+| `rules/04-players.md` | Move the row to the **Officers** sub-table at its alphabetical-by-class slot. Set Priority to `1` unless the user specifies otherwise. **If the player is also a core tank** — either because the source sub-table was Core tanks, or because the user has simultaneously designated them — add `Core tank` to the destination Notes column (canonical-membership rule: `rules/01-raid-compositions.md` → "Core tanks → Canonical membership"). Preserve any existing Notes content; comma-separate tokens (e.g. `Core tank, Primary offtank`). Renumber both source and destination sub-tables. |
+| `derived/signup-history-total.md` | Move the row to the **Officers** sub-table; re-sort by `Signups` desc (alphabetical case-insensitive tiebreak) and renumber both source and destination. |
+| `derived/signup-stats-tbc.md` | No action — flat table; sub-table placement is irrelevant. |
+| `derived/bench-history-tbc.md` | No action — no sub-tables. The "priority 1 normally never benches" header applies prospectively only; prior bench rows from a lower priority remain valid. |
+| `rules/03-player-constraints.md` | No action — constraints reference players by name. |
+
+### Demotion (Officer → Regular player or Core tank)
+
+| File | What to update |
+|------|----------------|
+| `rules/04-players.md` | Move the row out of **Officers**. **If the Officers Notes contained the `Core tank` flag**, move them to the **Core tanks** sub-table and drop the `Core tank` token (redundant inside Core tanks); preserve other Notes content. **Otherwise**, move them to **Regular players → Priority N**; ask the user for the priority (default `2` if unspecified). Renumber both source and destination sub-tables. |
+| `derived/signup-history-total.md` | Move the row to **Core tanks** (if the `rules/04-players.md` row is now in Core tanks) or **Current members** (if now in Regular players); re-sort and renumber both source and destination. |
+| `derived/signup-stats-tbc.md` | No action. |
+| `derived/bench-history-tbc.md` | No action. |
+| `rules/03-player-constraints.md` | No action. |
+
+### Afterwards
+
+- **Cap check.** For any promotion that adds a `Core tank` flag, verify the combined-set cap in `rules/01-raid-compositions.md` → "Core tanks → Cap: at most 3 core tanks" still holds (Core tanks sub-table rows + `Core tank`-flagged Officers rows ≤ 3).
+- **Verify single placement.** Run `Grep "<player>"` to confirm exactly one active row exists across Officers / Core tanks / Regular players in `rules/04-players.md`, and that the `derived/signup-history-total.md` placement matches.
+
+---
+
 ## Event: User asks me to form raid groups
 
 This is the core deliverable. Follow the full "New signup screenshot received" flow above, plus:
@@ -375,6 +406,7 @@ After any interaction, check:
 - [ ] Spec changed from previous? → `04-players.md`
 - [ ] Rule added/changed? → `rules/*.md`
 - [ ] Player left/joined? → `04-players.md` + `03-player-constraints.md` + `bench-history-tbc.md`
+- [ ] Officer promoted/demoted? → `04-players.md` + `signup-history-total.md`. See `Event: User promotes or demotes an officer`.
 - [ ] New record file created? → `records/YYYY-MM-DD-day-raid.md` (Gruul+Mag uses `reference/templates/gruul-mag-record.md`; other 25-mans use `25man-record.md`)
 - [ ] New Gruul+Mag record? → fill in `## Encounter assignments` per `rules/05-encounter-assignments.md`
 - [ ] Constraint added? → `03-player-constraints.md`

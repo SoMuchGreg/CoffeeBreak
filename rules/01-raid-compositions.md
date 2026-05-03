@@ -96,15 +96,15 @@ Core tanks are the named tanks the raid leader relies on to fill tank duties at 
 
 ### Canonical membership
 
-Core tanks are listed in the **Core tanks** sub-table of `rules/04-players.md`. Membership changes only on explicit user instruction.
+Core tanks are listed in the **Core tanks** sub-table of `rules/04-players.md`, plus any **Officers** row whose `Notes` column contains the token `Core tank` (case-insensitive). The Officers entry covers officers-who-are-also-core-tanks: the Officers sub-table takes precedence for placement (per `rules/04-players.md` → Table ordering), and the `Core tank` Notes flag preserves their core-tank status for every rule below. Membership changes only on explicit user instruction.
 
 ### Cap: at most 3 core tanks
 
-The sub-table never contains more than 3 entries. This matches Gruul+Mag's 3-tank target and prevents core-tank surplus situations (a fourth core tank could create a tank pool the existing rules can't always resolve via flex).
+The combined set (Core tanks sub-table + Officers rows flagged `Core tank`) never contains more than 3 entries. This matches Gruul+Mag's 3-tank target and prevents core-tank surplus situations (a fourth core tank could create a tank pool the existing rules can't always resolve via flex).
 
 ### Tank assignment overrides signup spec
 
-A core tank who signs up takes a tank slot regardless of which spec/role they selected on the signup screen. Core-tank membership in `rules/04-players.md` constitutes standing consent to tank when needed; no per-raid prompt is required. To withdraw this consent, the user removes the player from the Core tanks sub-table.
+A core tank who signs up takes a tank slot regardless of which spec/role they selected on the signup screen. Core-tank membership in `rules/04-players.md` constitutes standing consent to tank when needed; no per-raid prompt is required. To withdraw this consent, the user removes the player from the Core tanks sub-table or removes the `Core tank` flag from their Officers row.
 
 ### Core tanks are never the "excess"
 
@@ -116,7 +116,7 @@ A core tank whose `Notes` column in `rules/04-players.md` contains "first line o
 
 ### Substitutes are not core tanks
 
-A tank filling a core slot in a specific raid because a named core tank is absent (e.g., CptKavior covering for Marino-Varthier when Marino isn't signed up) is **not** a core tank for any rule that references core-tank status. Core-tank membership is tied to the **Core tanks** sub-table in `rules/04-players.md`, not to who happens to be filling tank duties this raid.
+A tank filling a core slot in a specific raid because a named core tank is absent (e.g., CptKavior covering for Marino-Varthier when Marino isn't signed up) is **not** a core tank for any rule that references core-tank status. Core-tank membership is defined in *Canonical membership* above (Core tanks sub-table plus `Core tank`-flagged Officers rows), not by who happens to be filling tank duties this raid.
 
 ## Karazhan (10-man)
 
