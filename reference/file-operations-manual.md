@@ -20,7 +20,7 @@ For cadence (when to re-read the applicable tier within a session), see `CLAUDE.
 | File | Why |
 |------|-----|
 | `config/project.md` | Raid schedule, terminology, active settings |
-| `rules/01-raid-compositions.md` | Composition targets, dual-spec flex rule, under-cap behavior, Resto Druid cap |
+| `rules/01-raid-compositions.md` | Composition targets, comp flex rule, under-cap behavior, Resto Druid cap |
 | `rules/02-bench-rotation.md` | Selection algorithm, raid spot priority, fair rotation, tiebreakers |
 | `rules/03-player-constraints.md` | Must-together / must-not-together / availability / Needlist / enchanter constraints |
 | `rules/04-players.md` | Existing players' classes, specs, raid spot priority, notes |
@@ -64,7 +64,7 @@ Read both **Tier 1** and **Tier 2** of the **Reading list** at the top of this f
 2. **Compare X against the raid cap** (25 for Gruul+Mag, 30 for Karazhan). If X exceeds the cap, additional players beyond Y must also be benched to bring the roster down to the cap.
 3. **Screenshots are point-in-time snapshots.** People can sign up, withdraw, change status, or be benched at any time before the raid. A screenshot received today may differ from one received tomorrow. Always treat the latest screenshot as the current state.
 4. Identify all signups by name, cross-referencing `04-players.md` for class.
-5. **Check the spec icon for every player** — it shows their spec for THIS raid and overrides any previously recorded spec/role.
+5. **Note each player's signup icon.** Roster placement is governed by `rules/01-raid-compositions.md` → "Role placement: mainspec is authoritative". Use the icon to flag potential long-term mainspec changes (consistent offspec signups across multiple raids); ignore one-off offspec icons.
 6. For unknown players: use icon/color to determine class+spec. If unsure, ask the user.
 7. Note late signups. (Discord "Absent" reactions are ignored — see item 1 above.)
 
@@ -108,7 +108,7 @@ The `## Notes` section is for **per-raid facts that aren't derivable from the ru
 
 - **New player first appearance** — name, class, spec, priority. Always paired with a `rules/04-players.md` update; the note is a one-line pointer to that update, not a duplicate of it.
 - **New per-player information learned this raid** — a previously-unknown offspec revealed by a signup column, an alt revealed, a constraint inferred. Always paired with an update to the relevant `rules/` file.
-- **Spec overrides** — when the spec icon in the signup screenshot doesn't match what the player actually ran, and the raid leader confirmed the override before the roster build. Record `icon → actual`. Group multiple overrides under one bullet with sub-bullets.
+- **Spec overrides** — when a player's actual spec for the raid differs from what the rules would have placed them in (per `rules/01-raid-compositions.md` → "Role placement: mainspec is authoritative"). Record `expected → actual`. Group multiple overrides under one bullet with sub-bullets.
 - **Bench picks whose outcome required information not visible in the bench table** — alphabetical-fallback tiebreakers, raid-leader overrides on top of the algorithm, leader-choice surplus calls. Name the player, name the cap or rule that triggered the bench, name the resolution mechanism. **Do not** restate the rule mechanics or the cap numbers — point at the rule.
 - **Post-build roster changes** — withdrawals, late additions, swaps, or on-the-go / post-raid corrections after the initial roster was built. Record the change and any composition consequence (e.g. *"Warlock count fell to 2, below Section 8 lower bound of 3 — unfillable"*). Applies whether the change came via `Event: Full-roster recalculation` (pre-raid recalc) or `Event: Quick (ad-hoc) roster update` (post-raid or trivial edit).
 - **Raid-leader overrides** — any case where the algorithm's output was overridden by a human decision. Name the player, name what the algorithm would have done, name what was done instead.
@@ -197,7 +197,7 @@ Triggered **pre-raid** when Claude should re-run the roster-build logic against 
 
 ### Procedure
 
-Re-run **Step 3 — Build the roster** from `Event: New signup screenshot received` against the current post-change signup pool, **including the sub-agent sanity check (step 3.6)** — every recalculation ends with a fresh sanity-check verdict (YES / GOOD ENOUGH / NO). Skip only the user presentation (step 3.7); that's folded into `### Presenting improvements` below. The re-run inherently covers bench rotation (`rules/02-bench-rotation.md`), composition targets (`rules/01-raid-compositions.md`), loot-conflict placement (`rules/03-player-constraints.md` → Needlist), player constraints (`rules/03-player-constraints.md`), and dual-spec flex (`rules/01-raid-compositions.md`). Any difference between the re-run output and the current roster is a candidate improvement.
+Re-run **Step 3 — Build the roster** from `Event: New signup screenshot received` against the current post-change signup pool, **including the sub-agent sanity check (step 3.6)** — every recalculation ends with a fresh sanity-check verdict (YES / GOOD ENOUGH / NO). Skip only the user presentation (step 3.7); that's folded into `### Presenting improvements` below. The re-run inherently covers bench rotation (`rules/02-bench-rotation.md`), composition targets (`rules/01-raid-compositions.md`), loot-conflict placement (`rules/03-player-constraints.md` → Needlist), player constraints (`rules/03-player-constraints.md`), and comp flex (`rules/01-raid-compositions.md`). Any difference between the re-run output and the current roster is a candidate improvement.
 
 Handle multiple simultaneous changes in a single recalculation pass — do not iterate per-change.
 

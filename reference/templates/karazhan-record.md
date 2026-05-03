@@ -69,10 +69,12 @@ Team order MUST be: Restaurant, Bakery, BestPrepared (matches rules/01-raid-comp
 → "Team names"). No team is anchored to a specific player. Enchanter distribution across
 teams follows rules/03-player-constraints.md → "Enchanters".
 
-The Class column should record what the player ACTUALLY played that night (per the spec
-icon in the signup screenshot), not their default spec from rules/04-players.md.
-For hybrid-class spec calls, write "Druid (Balance)" or "Druid (Resto)" etc. when it's
-not obvious from the role column.
+The Class column should record the spec each player ACTUALLY played that night.
+Assignment is per rules/01-raid-compositions.md → "Role placement: mainspec is
+authoritative"; document any deviation in ## Notes per
+reference/file-operations-manual.md. For hybrid-class spec calls, write
+"Druid (Balance)" or "Druid (Resto)" etc. when it's not obvious from the role
+column.
 -->
 
 ### Team Restaurant
@@ -122,12 +124,12 @@ not obvious from the role column.
 
 **Composition check:** Target per team: 2T / 2H / 6 DPS = 10. Total target across 3 teams: 30. Actual: {3 teams × actual counts} = {actual total}. Status: ✅ / ⚠️ {explanation if not on target}.
 
-## Dual-spec flex applied                              <!-- delete this whole section if no flex was used -->
+## Comp flex applied                                   <!-- delete this whole section if no flex was used -->
 
 <!--
 Record any cases where a player was asked to switch to their secondary spec
 because the raid was short on a role. The Tier value comes from
-rules/01-raid-compositions.md → "Handling role shortages (dual-spec flex)
+rules/01-raid-compositions.md → "Handling role shortages
 → Asking order" — see that section for the canonical tier definitions.
 -->
 

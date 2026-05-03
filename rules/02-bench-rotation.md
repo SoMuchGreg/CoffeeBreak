@@ -132,7 +132,7 @@ The raid leader (the user) may at any time designate a specific player to sit on
 
 - The user tells the planner directly ("bench X for this raid").
 - The user marks a player as "likely to be benched" in the signup screenshot or a note.
-- A player is the surplus in a role that exceeds the composition target (e.g., the tank-surplus flex case in `rules/01-raid-compositions.md` → "Handling role surpluses"), and the user picks which surplus player sits rather than offering a flex.
+- A player is the surplus in a role that exceeds the composition target (e.g., the comp flex case in `rules/01-raid-compositions.md` → "Handling role surpluses"), and the user picks which surplus player sits rather than offering a flex.
 
 **Discretionary benches still count toward fair bench rotation.** A player placed on the bench by raid leader choice has their cumulative bench count for that raid location **incremented by 1**, exactly as if fair rotation had chosen them. Record them in `derived/bench-history-tbc.md` and in the record file's bench table the same way as a fair-rotation bench — only the **reason label** differs (`leader choice` instead of `fair rotation`). This mirrors the general principle that every bench counts toward fair rotation regardless of *why* the player ended up on the bench — see "Bench reason vocabulary" below for the full list of reason labels.
 
@@ -154,5 +154,5 @@ Every row in a record file's bench table must use exactly one of the reason labe
 |--------|---------|
 | `priority 3` | Player is raid spot priority 3 (last resort) and was benched because every priority-1 and priority-2 signup filled the available spots. See *Raid spot priority (selection order)* above. |
 | `fair rotation` | Priority-2 or priority-3 overflow benched algorithmically per *Raid spot priority* and *Fairness requirement* above — the player with the **lowest** cumulative bench count for the raid location is the one selected to bench (so cumulative counts equalize over time within the priority pool); tiebreakers apply when counts are tied. See the *Direction* sub-section above for the canonical statement and the concrete example. Applies within a single priority level when signups exceed spots. |
-| `leader choice` | Raid leader discretionarily picked this player — direct instruction, "likely benched" annotation on the signup screenshot, or a role-surplus pick such as the tank-surplus flex in `rules/01-raid-compositions.md` → "Handling role surpluses". See *Raid leader's discretionary bench picks* above for the full rule. |
+| `leader choice` | Raid leader discretionarily picked this player — direct instruction, "likely benched" annotation on the signup screenshot, or a role-surplus pick such as comp flex in `rules/01-raid-compositions.md` → "Handling role surpluses". See *Raid leader's discretionary bench picks* above for the full rule. |
 | `composition cap` | Benched by a hard composition cap in `rules/01-raid-compositions.md` (e.g., the 25-man Resto Druid cap). Within the capped spec, fair rotation still decides which player sits — see *Composition caps override pure fairness* above. |

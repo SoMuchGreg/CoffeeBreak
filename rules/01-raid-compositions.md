@@ -4,56 +4,65 @@
 
 ### Composition tables are targets, not absolute caps
 
-The composition tables in this file (per-team for Karazhan, per-raid for 25-mans) state the **target** count for each role: tanks, healers, DPS. They are what the raid leader aims for. They are not absolute hard limits — see the dual-spec flex rule below for what to do when signups don't allow the target.
+The composition tables in this file (per-team for Karazhan, per-raid for 25-mans) state the **target** count for each role: tanks, healers, DPS. They are what the raid leader aims for. They are not absolute hard limits — see the comp flex rule below for what to do when signups don't allow the target.
 
-### Handling role shortages (dual-spec flex)
+### Role placement: mainspec is authoritative
+
+Each player's role for a raid is their `Mainspec (role)` column in `rules/04-players.md`, **not** the spec icon they selected on the signup screen. The player table is the curated single source of truth; signup icons are informational only and do not override it. The player table is stable and validated; signup icons are easy to misclick or use for off-night experimentation, and aren't reliable for composition planning.
+
+**Order of placement.** When building a roster from a signup pool:
+
+1. **Core tanks signed up** are placed into tank slots first (per "Core tanks" below — list membership is standing consent to tank, regardless of which icon they selected).
+2. **All other signups** are placed in their mainspec role per `rules/04-players.md`.
+3. **Compare the resulting role distribution to composition targets:**
+   - Role(s) under target → **comp flex** (Tier 0 → Tier 3, voluntary; "Handling role shortages" below)
+   - Role(s) over target → **comp flex** (voluntary; "Handling role surpluses" below)
+4. **Apply remaining rules**: composition caps and selection priority/bench rotation (`rules/02-bench-rotation.md`), player constraints (`rules/03-player-constraints.md`), and (Gruul+Mag only) encounter assignments (`rules/05-encounter-assignments.md`).
+
+The only path from mainspec to offspec for a given raid is **comp flex** (voluntary). The signup icon does NOT trigger offspec play.
+
+### Comp flex consent
+
+The decision is the player's. Never unilaterally reassign a player's spec from mainspec to offspec — always ask first. **A decline carries no bench penalty** — the decline itself never causes a bench. Move on and ask the next eligible dual-spec player.
+
+If no one accepts: for shortage trigger, the raid runs under-target on that role; for surplus trigger, see "Handling role surpluses" below.
+
+### Handling role shortages
 
 If signups don't include enough players for a required role at a raid's composition target (tanks, healers, or DPS), the raid leader should ask **dual-spec players** whether they'd be willing to switch to their secondary spec for this raid.
 
 **Who qualifies.** Dual-spec players are any player in `rules/04-players.md` whose `Offspec (role)` column lists a specific spec (not "—", not "?", not blank). Their second spec is what they may switch to. A "?" in `Offspec` means we don't yet know whether the player has a second spec — those players are **not** eligible for flex by default; the user can clarify on a case-by-case basis.
 
-**Consent.** The decision is the player's. Never unilaterally reassign a player's spec — always ask first. **A decline carries no bench penalty** — the declining player is treated as their mainspec for this roster, exactly like any signup not asked to flex. Move on and ask the next eligible dual-spec player; if no one accepts, the raid runs under-target on that role.
-
 **Asking order (four tiers).** Notes in `rules/04-players.md` reveal each player's flex disposition. Ask in this order, exhausting each tier before moving to the next:
 
 0. **First line offspec (pre-committed) — asked first.** A player whose `Notes` column in `rules/04-players.md` contains the literal phrase "first line offspec" (case-insensitive) has pre-committed to switching to their offspec when both (a) their mainspec role is over-represented *and* (b) their offspec covers an under-represented role. The note is standing consent — no per-raid prompt; the player may still decline. Tier 0 fires only when both (a) and (b) hold; otherwise fall through to Tiers 1–3. Applies symmetrically in `Handling role surpluses` below.
-1. **Most flexible first** — players explicitly noted as flexible across roles (e.g., "Switches role by raid format", "flexes between tank and DPS"). They actively flex specs across raids and are the easiest first ask.
+1. **Most flexible first** — players explicitly noted as flexible across roles (e.g., "flexes between tank and DPS"). They're willing to flex when asked, making them the easiest first ask.
 2. **No-preference second** — players with confirmed dual specs but no note recording a strong preference one way or the other. Neutral.
 3. **Last resort last** — players with reluctance notes (e.g., "Strong Resto preference", "extremely reluctant Balance", "Balance spec only as absolute last resort"). Ask only if tiers 0, 1, and 2 didn't fill the role. Respect the spirit of "absolute last resort" notes — these players genuinely don't want to play their off-spec.
 
 **Timing.** This flex is composition-time, before the final bench cut. Once a flex swap is accepted, recompute the priority + bench rotation against the new role distribution.
 
-### Core tanks
+### Handling role surpluses
 
-Core tanks are the named tanks the raid leader relies on to fill tank duties at any raid format we run. The set is **format-independent** — a signed-up core tank takes a tank slot at whatever format the raid is (Gruul+Mag's 3 slots, each Karazhan team's 2, future raid locations). The set is currently stable but may evolve as signups and player availability shift.
+The surplus trigger: when a role is over-target — more signups than the composition target calls for — players whose mainspec is in the over-target role can flex to their offspec via comp flex rather than being auto-benched for the surplus. The principle is the same as the shortage trigger above — prefer to use a player's offspec over sitting them on the bench, as long as the composition actually needs what their offspec provides.
 
-**Canonical membership.** Core tanks are listed in the **Core tanks** sub-table of `rules/04-players.md`. Membership changes only on explicit user instruction.
+**Offer the offspec switch first.** Before benching the surplus player, check their `Offspec (role)` in `rules/04-players.md`. If they have a usable offspec that the raid has room for, ask whether they'd play that offspec instead.
 
-**Selection precedence over surplus flex.** When more tanks sign up than the format has slots for, `Handling role surpluses` (below) applies only to tank signups *beyond* the core set. Core tanks are never the "excess" in tank-surplus flex.
+**Asking order.** When multiple surplus players qualify for the offspec switch, follow the asking order from `Handling role shortages → Asking order` above (Tier 0 → Tier 3).
 
-**Substitutes are not core tanks.** A tank filling a core slot in a specific raid because a named core tank is absent (e.g., CptKavior covering for Marino-Varthier when Marino isn't signed up) is **not** a core tank for any rule that references core-tank status. Core-tank membership is tied to the **Core tanks** sub-table in `rules/04-players.md`, not to who happens to be filling tank duties this raid.
+**If accepted**, the player joins as the offspec role and is treated as that role for every subsequent step (raid-spot priority, fair bench rotation, composition targets). Recompute the roster against the new role distribution.
 
-### Handling role surpluses (tank-surplus flex)
+**If declined, or if the player has no usable offspec**, they fall through to the standard bench-rotation rules in Rule 02 like any other signup that doesn't fit. The bench is caused by the role being surplus, not by the decline — reason label `fair rotation` or `leader choice`, never decline-specific. The flex was an alternative to the structural bench, not a way of avoiding a punishment.
 
-The mirror of the dual-spec flex rule above: when **more tanks sign up than the raid's composition target calls for**, dual-spec tank players can flex to their offspec rather than being auto-benched for the surplus. The principle is the same — prefer to use a player's offspec over sitting them on the bench, as long as the composition actually needs what their offspec provides.
+#### Tank-specific: identifying the excess
 
-**Identify the excess tank(s).** When the format calls for more tanks than the core list provides (e.g., Karazhan's 6 tank slots across 3 teams vs. 3 core tanks), the extra slots are filled per-raid from other tank signups. Any tank-column signup beyond the core set plus the raid's chosen extra tanks is **excess** — they are not needed as a tank for this raid.
-
-**Offer the offspec switch first.** Before benching the excess tank, check their `Offspec (role)` in `rules/04-players.md`. If they have a usable DPS or Healer offspec that the raid has room for, ask whether they'd play that offspec instead. This is a voluntary swap — never unilaterally reassign.
-
-**Asking order.** When multiple excess players qualify for the offspec switch, follow the asking order from `Handling role shortages → Asking order` above (Tier 0 → Tier 3).
-
-**If accepted**, the excess tank joins as a DPS/Healer and is treated as that role for every subsequent step (raid-spot priority, fair bench rotation, composition targets). Recompute the roster against the new role distribution.
-
-**If declined, or if the excess tank has no usable offspec**, they fall through to the standard bench-rotation rules in Rule 02 like any other signup that doesn't fit. The bench is caused by their tank slot being surplus, not by the decline — reason label `fair rotation` or `leader choice`, never decline-specific. The flex was an alternative to the structural bench, not a way of avoiding a punishment.
-
-This rule applies to every raid format and every role-with-a-cap (tank is the common case today, but the same logic applies to any future format that caps healers or a specific DPS spec at a target count).
+When the format calls for more tanks than the core list provides (e.g., Karazhan's 6 tank slots across 3 teams vs. 3 core tanks), the extra slots are filled per-raid from other tank signups. Any tank-column signup beyond the core set plus the raid's chosen extra tanks is **excess** — they are not needed as a tank for this raid, and the surplus comp flex above applies to them. Core tanks are excluded — they always tank (per `Core tanks` below).
 
 ### Soft rule conflicts
 
 When two or more **soft rules** can't all be satisfied for a given team or roster — for example, when satisfying *"1 Priest per team"* would force a violation of *"1 Enhancement Shaman per team"* on the same team — the planner may pick **arbitrarily** which soft rule(s) to satisfy. Soft rules have **no fixed priority order** among themselves. Use judgment, make a reasonable choice based on what the signups actually support, and move on. **There is no need to ask the user when soft rules conflict.**
 
-This applies only among soft rules themselves. Hard rules always win over soft rules — the soft-rule conflict resolution above never lets a soft rule override a hard rule (for example, the 25-man Resto Druid cap, the dual-spec flex player-consent requirement, or the Karazhan tank duty constraints).
+This applies only among soft rules themselves. Hard rules always win over soft rules — the soft-rule conflict resolution above never lets a soft rule override a hard rule (for example, the 25-man Resto Druid cap, the comp flex player-consent requirement, or the Karazhan tank duty constraints).
 
 ### Under-cap behavior (when signups are below the format's optimal cap)
 
@@ -69,6 +78,34 @@ Format-specific under-cap mechanics live with each format — see `Karazhan → 
 Roster formation produces **raid team** compositions only — never **party-group** (5-man sub-group) breakdowns. Inside `reference/raid-composition-guide.md`, sections **§3 (Optimal Party Group Templates)**, **§4 (Karazhan Group Composition)**, and **§9 (Practical Group Assignment Framework)** are out-of-scope reference material that must not be applied during roster formation.
 
 This scope will change when the user formalizes party-group rules (see `config/project.md` → "What's next"). Until then, do not produce 5-man sub-group breakdowns in any record file, and do not apply §3/§4/§9 when building a roster.
+
+## Core tanks
+
+Core tanks are the named tanks the raid leader relies on to fill tank duties at any raid format we run. The set is **format-independent** — a signed-up core tank takes a tank slot at whatever format the raid is (Gruul+Mag's 3 slots, each Karazhan team's 2, future raid locations). The set is currently stable but may evolve as signups and player availability shift.
+
+### Canonical membership
+
+Core tanks are listed in the **Core tanks** sub-table of `rules/04-players.md`. Membership changes only on explicit user instruction.
+
+### Cap: at most 3 core tanks
+
+The sub-table never contains more than 3 entries. This matches Gruul+Mag's 3-tank target and prevents core-tank surplus situations (a fourth core tank could create a tank pool the existing rules can't always resolve via flex).
+
+### Tank assignment overrides signup spec
+
+A core tank who signs up takes a tank slot regardless of which spec/role they selected on the signup screen. Core-tank membership in `rules/04-players.md` constitutes standing consent to tank when needed; no per-raid prompt is required. To withdraw this consent, the user removes the player from the Core tanks sub-table.
+
+### Core tanks are never the "excess"
+
+When more tanks sign up than the format has slots for, comp flex (surplus trigger) applies only to tank signups *beyond* the core set; core tanks always tank.
+
+### Exception: first-line-offspec core tanks are subject to Tier 0
+
+A core tank whose `Notes` column in `rules/04-players.md` contains "first line offspec" is subject to Tier 0 (per `Handling role shortages → Asking order → Tier 0`) like any non-core player — even though they're a core tank. Tier 0 precedes Tiers 1–3, so first-line-offspec core tanks get flexed before non-core tanks.
+
+### Substitutes are not core tanks
+
+A tank filling a core slot in a specific raid because a named core tank is absent (e.g., CptKavior covering for Marino-Varthier when Marino isn't signed up) is **not** a core tank for any rule that references core-tank status. Core-tank membership is tied to the **Core tanks** sub-table in `rules/04-players.md`, not to who happens to be filling tank duties this raid.
 
 ## Karazhan (10-man)
 
@@ -144,7 +181,7 @@ When outside recruitment is triggered (the 27–29 case above, or the 25–26 ca
 
 If the guild can't supply enough tanks to meet the hard requirements in "Tank composition" above for every team, **drop to 2 teams**. This override applies even at 27+ signups: outside-of-guild recruitment never covers tank slots.
 
-The dual-spec flex rule from "General principles → Handling role shortages" must be exhausted **before** falling back: ask DPS-spec or Healer-spec players whose secondary spec is a tank spec (e.g., players whose `Offspec (role)` in `rules/04-players.md` lists a tank role) whether they would tank for this raid. Only if that doesn't yield enough tanks does the team count drop.
+The comp flex rule from "General principles → Handling role shortages" must be exhausted **before** falling back: ask DPS-spec or Healer-spec players whose secondary spec is a tank spec (e.g., players whose `Offspec (role)` in `rules/04-players.md` lists a tank role) whether they would tank for this raid. Only if that doesn't yield enough tanks does the team count drop.
 
 ## 25-man raids
 
@@ -158,7 +195,7 @@ These general rules apply to **every** 25-man raid we run, current and future (G
 
 #### Under-cap behavior (any 25-man)
 
-A 25-man raid **always runs**, regardless of how few players sign up. There is no minimum threshold to cancel or downgrade the format. Composition targets become aspirational at low signup counts; the dual-spec flex rule (General principles → "Handling role shortages") is the primary tool for filling role gaps. Hard caps like the 25-man Resto Druid cap still apply when their trigger conditions are met (e.g., more than 6 healers signing up), but those triggers are unlikely under-cap.
+A 25-man raid **always runs**, regardless of how few players sign up. There is no minimum threshold to cancel or downgrade the format. Composition targets become aspirational at low signup counts; the comp flex rule (General principles → "Handling role shortages") is the primary tool for filling role gaps. Hard caps like the 25-man Resto Druid cap still apply when their trigger conditions are met (e.g., more than 6 healers signing up), but those triggers are unlikely under-cap.
 
 #### Resto Druid cap (hard rule)
 

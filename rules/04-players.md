@@ -5,21 +5,13 @@
 - Some players can play **two specializations** (e.g., tank + DPS, healer + DPS). They may be assigned to either role as needed.
 - Some players have **only one specialization**. They must always be assigned their one role.
 - **Never assume** a player's class, specialization, or available roles. If unknown, ask the user.
-- **Melee vs. Ranged DPS matters for Shamans and Druids.** Enhancement Shamans and Feral Druids are **melee DPS**. Elemental Shamans and Balance (Boomkin)
-  Druids are **ranged/caster DPS**. This distinction affects raid composition and group assignments. Always check the spec icon in the signup screenshot to
-  determine which DPS spec a Shaman or Druid is playing for that raid.
-- **⚠️ Spec checks need extra care for hybrid classes.** Druids, Paladins, Shamans, and Priests can all flex across roles (tank/healer/DPS), and many of our
-  players regularly switch spec from raid to raid. The spec icon in the signup screenshot is the **only authoritative source** for what spec a player is running
-  on a given night.
-    - **Druids** — flex across Feral tank, Feral DPS (melee), Balance (ranged DPS), Resto (healer). Past record files have been miscorded (e.g., 2026-04-08 Karazhan:
-      Beaverfist and Jar were both initially recorded as Resto healers but actually ran Balance DPS).
-    - **Paladins** — flex across Protection (tank), Holy (healer), Retribution (DPS). McJudgin in particular swaps role by raid format (tank in Karazhan, healer
-      in 25-mans). Other paladins may swap between Holy and Ret.
-    - **Shamans** — flex across Enhancement (melee DPS), Elemental (ranged DPS), Restoration (healer). The melee/ranged distinction also affects party group
-      assignment.
-    - **Priests** — flex across Shadow (DPS), Holy/Discipline (healer). A "Priest" entry tells you almost nothing about role on its own.
-    - **Always inspect the spec icon for every hybrid-class signup, every raid.** Never carry forward a previous raid's spec assumption. When in doubt, ask the
-      user before placing the player in a role.
+- **Melee vs. Ranged DPS matters for Shamans and Druids.** Enhancement Shamans and Feral Druids are **melee DPS**. Elemental Shamans and Balance (Boomkin) Druids are **ranged/caster DPS**. Each player's `Mainspec (role)` column below indicates which they play.
+- **Hybrid classes** — Druids, Paladins, Shamans, and Priests can each play tank, healer, or DPS specs. For canonical rule on which spec a hybrid plays for a raid, see `rules/01-raid-compositions.md` → "Role placement: mainspec is authoritative".
+    - **Druids** — Feral tank, Feral DPS (melee), Balance (ranged DPS), Resto (healer)
+    - **Paladins** — Protection (tank), Holy (healer), Retribution (DPS)
+    - **Shamans** — Enhancement (melee DPS), Elemental (ranged DPS), Restoration (healer). The melee/ranged distinction also affects party group assignment.
+    - **Priests** — Shadow (DPS), Holy/Discipline (healer)
+    - To change a player's spec long-term, update their row's `Mainspec (role)` / `Offspec (role)` columns. Per-raid spec changes are governed by `rules/01-raid-compositions.md`.
 
 ## Raid spot priority
 
@@ -29,9 +21,7 @@ priority (selection order)" — the single source of truth for the system's beha
 
 Priority is a property of the player, not of a specific raid. It changes only when the user explicitly updates it.
 
-**Default priority for new players: `2`.** When a player who isn't already in the roster table appears in a Discord signup screenshot and the user provides
-their class, add them to the **Regular players → Priority 2** sub-table unless the user explicitly says otherwise. Do not guess priority `1` (always plays) or
-priority `3` (last resort) without explicit user instruction.
+**Default priority for new players: `2`.** When a player who isn't already in the roster table appears in a Discord signup screenshot, ask the user for their class and mainspec, then add them to the **Regular players → Priority 2** sub-table unless the user explicitly says otherwise. Mainspec must come from the user — do not infer it from the signup icon (per `rules/01-raid-compositions.md` → "Role placement: mainspec is authoritative"). Do not guess priority `1` (always plays) or priority `3` (last resort) without explicit user instruction.
 
 ## Known player roster
 
