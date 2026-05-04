@@ -102,6 +102,10 @@ Core tanks are listed in the **Core tanks** sub-table of `rules/04-players.md`, 
 
 The combined set (Core tanks sub-table + Officers rows flagged `Core tank`) never contains more than 3 entries. This matches Gruul+Mag's 3-tank target and prevents core-tank surplus situations (a fourth core tank could create a tank pool the existing rules can't always resolve via flex).
 
+### Tank priority
+
+When multiple core tanks are present in the same raid and a rule needs to pick *which* of them holds a specific tank role (e.g., Magtheridon MT, Maulgar Tank), the order is **main tank > primary offtank > 3rd tank**. The label for each core tank lives in the `Notes` column of `rules/04-players.md` (Officers and Core tanks sub-tables) — look for the tokens `Main tank`, `Primary offtank`, `3rd tank`. A core tank without one of these three tokens has no priority position; the user must add a label before priority-based tank rules can resolve cleanly.
+
 ### Tank assignment overrides signup spec
 
 A core tank who signs up takes a tank slot regardless of which spec/role they selected on the signup screen. Core-tank membership in `rules/04-players.md` constitutes standing consent to tank when needed; no per-raid prompt is required. To withdraw this consent, the user removes the player from the Core tanks sub-table or removes the `Core tank` flag from their Officers row.

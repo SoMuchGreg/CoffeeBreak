@@ -187,9 +187,9 @@ Do not restate them here.
 Replace the table with `*(None — no roster member outside the primary cube clickers has prior cube experience.)*` if the list is empty.
 -->
 
-| Player | Role | Total cube holds | Prior cubes by direction | Most recent |
-|--------|------|------------------|--------------------------|-------------|
-| ...    | ...  | ...              | ...                      | ...         |
+| Player | Role | Class | Total cube holds | Prior cubes by direction | Most recent |
+|--------|------|-------|------------------|--------------------------|-------------|
+| ...    | ...  | ...   | ...              | ...                      | ...         |
 
 ## Bench ({N})
 
