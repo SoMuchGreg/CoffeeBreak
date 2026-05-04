@@ -152,9 +152,9 @@ the record file.
 Delete the table and replace with `*(None — all 30 spots filled)*` if no one was benched.
 -->
 
-| Player             | Priority | Bench count (cumulative, after this raid) | Reason        |
-|--------------------|----------|-------------------------------------------|---------------|
-| ...                | 2        | ...                                       | fair rotation |
+| Player             | Priority | Bench count (cumulative, after this raid) | Reason          |
+|--------------------|----------|-------------------------------------------|-----------------|
+| ...                | 2        | ...                                       | fair rotation   |
 
 ## Notes
 

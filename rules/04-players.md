@@ -44,7 +44,7 @@ Priority is a property of the player, not of a specific raid. It changes only wh
 
 ### Core tanks
 
-Tanks the raid leader relies on to fill tank duties at any raid format. Concept and selection rules: `rules/01-raid-compositions.md` → "Core tanks".
+Tanks the user relies on to fill tank duties at any raid format. Concept and selection rules: `rules/01-raid-compositions.md` → "Core tanks".
 
 | #  | Player             | Character(s)          | Class   | Mainspec (role)     | Offspec (role)  | Priority | Notes                        |
 |----|--------------------|-----------------------|---------|---------------------|-----------------|----------|------------------------------|

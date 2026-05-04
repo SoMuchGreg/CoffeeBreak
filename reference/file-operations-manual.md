@@ -56,8 +56,8 @@ Read both **Tier 1** and **Tier 2** of the **Reading list** at the top of this f
 
 1. **Read the signup count header.** The format is `X (+Y)` where **X** = players who want to raid. **Y** is a conjoined aggregate of Discord's *maybe* bucket — it sums three distinct per-person states: **bench** (player is already confirmed to sit this raid), **tentative** (player isn't sure they'll come), and **late** (player will arrive after raid start). The aggregate number alone tells you nothing actionable; always disambiguate each name inside `+Y` using the visual indicator next to their row, or ask the user if the state isn't readable from the screenshot. Never treat `+Y` as a homogeneous category.
 
-   - **Bench** — player is already confirmed to sit this raid, no further confirmation needed. They go directly into the record file's `## Bench` table with reason `leader choice` (per `rules/02-bench-rotation.md` → "Raid leader's discretionary bench picks") and count toward fair rotation.
-   - **Tentative (TBC)** — unresolved. Record in a separate `**Tentative ({N}):**` Signups sub-line for the record, and exclude from roster decisions until the raid leader clarifies their state. Tentatives never appear in the `## Bench` table and never touch `derived/bench-history-tbc.md`.
+   - **Bench** — player is already confirmed to sit this raid, no further confirmation needed. They go directly into the record file's `## Bench` table with reason `manual override` (per `rules/02-bench-rotation.md` → "User's discretionary bench picks") and count toward fair rotation.
+   - **Tentative (TBC)** — unresolved. Record in a separate `**Tentative ({N}):**` Signups sub-line for the record, and exclude from roster decisions until the user clarifies their state. Tentatives never appear in the `## Bench` table and never touch `derived/bench-history-tbc.md`.
    - **Late** — coming to the raid but arriving after start. Treat as part of X for roster purposes; record in the `**Late ({N}):**` Signups sub-line.
 
    There may also be an Absence section in the screenshot for players who reacted with the Discord "Absent" emoji. **Ignore that section entirely** — do not extract those players, do not count them as signups, do not record them in the record file or any derived file. Discord Absent is signal-less for this project. For user-notified withdrawals, follow `Event: Player withdraws signup` — that event is the canonical home for trigger phrases and file-update handling.
@@ -80,7 +80,7 @@ Read both **Tier 1** and **Tier 2** of the **Reading list** at the top of this f
    - Walk through the proposed roster and check it against each rule.
    - Return a clear verdict answering exactly one question: **"Does this roster adhere to all rules specified in this project? YES / GOOD ENOUGH / NO"** — followed by a short list of any violations found (or "none" if YES). The three verdicts mean:
      - **YES** — no violations; full rule compliance.
-     - **GOOD ENOUGH** — violations exist but each is acceptable: mathematically unavoidable (pigeonhole-forced loot clusters, HFD clusters across too few teams), a leader-accepted override (priority-1 bench via leader choice, explicit user tradeoff), or an arbitrary resolution of a soft-rule conflict. The sub-agent must explain per-violation why it is acceptable.
+     - **GOOD ENOUGH** — violations exist but each is acceptable: mathematically unavoidable (pigeonhole-forced loot clusters, HFD clusters across too few teams), a user-accepted override (priority-1 bench via `manual override`, explicit user tradeoff), or an arbitrary resolution of a soft-rule conflict. The sub-agent must explain per-violation why it is acceptable.
      - **NO** — at least one violation is fixable by a different roster arrangement. The sub-agent must name the fixable violations.
    - Make **no** changes to the roster, the record file, or any other project file. It is read-only.
 
@@ -110,9 +110,9 @@ The `## Notes` section is for **per-raid facts that aren't derivable from the ru
 - **New per-player information learned this raid** — a previously-unknown offspec revealed by a signup column, an alt revealed, a constraint inferred. Always paired with an update to the relevant `rules/` file.
 - **Spec overrides** — when a player's actual spec for the raid differs from what the rules would have placed them in (per `rules/01-raid-compositions.md` → "Role placement: mainspec is authoritative"). Record `expected → actual`. Group multiple overrides under one bullet with sub-bullets.
 - **Alt swaps** — when a player's alt character was rostered instead of their main (per `rules/01-raid-compositions.md` → "Alts"). Record `main → alt` and the reason (e.g., main pool at target).
-- **Bench picks whose outcome required information not visible in the bench table** — alphabetical-fallback tiebreakers, raid-leader overrides on top of the algorithm, leader-choice surplus calls. Name the player, name the cap or rule that triggered the bench, name the resolution mechanism. **Do not** restate the rule mechanics or the cap numbers — point at the rule.
+- **Bench picks whose outcome required information not visible in the bench table** — alphabetical-fallback tiebreakers, user overrides on top of the algorithm, `manual override` surplus calls. Name the player, name the cap or rule that triggered the bench, name the resolution mechanism. **Do not** restate the rule mechanics or the cap numbers — point at the rule.
 - **Post-build roster changes** — withdrawals, late additions, swaps, or on-the-go / post-raid corrections after the initial roster was built. Record the change and any composition consequence (e.g. *"Warlock count fell to 2, below Section 8 lower bound of 3 — unfillable"*). Applies whether the change came via `Event: Full-roster recalculation` (pre-raid recalc) or `Event: Quick (ad-hoc) roster update` (post-raid or trivial edit).
-- **Raid-leader overrides** — any case where the algorithm's output was overridden by a human decision. Name the player, name what the algorithm would have done, name what was done instead.
+- **User overrides** — any case where the algorithm's output was overridden by a human decision. Name the player, name what the algorithm would have done, name what was done instead.
 
 #### What does NOT belong in Notes
 
@@ -216,7 +216,7 @@ Apply confirmed changes via the `## Roster update files` procedure below — tha
 
 Fires when a change needs to be applied to the record **without running the full roster-build logic**. Typical cases:
 
-- **On-the-go / post-raid:** the raid leader made a decision during or after the raid without Claude's involvement (e.g., replaced a no-show with a PUG mid-pull, swapped players between teams), and is now reporting it for the record.
+- **On-the-go / post-raid:** a decision was made during or after the raid without Claude's involvement (e.g., replaced a no-show with a PUG mid-pull, swapped players between teams), and the user is now reporting it for the record.
 - **Pre-raid trivial edits:** a spec-label correction, a small user-directed change, or any edit that doesn't warrant re-running the roster-build logic.
 
 Edit the existing record file in place — do **not** create a new one.

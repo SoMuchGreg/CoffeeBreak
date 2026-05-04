@@ -113,8 +113,8 @@ Per `rules/03-player-constraints.md` — items where 2+ competing players are in
 - **Soft rule deviation:** Enhancement Shaman distribution 2/1/0 across R/BG/Bak — forced by must-together (Ostbirger + Ebonybolt) and loot constraints.
 
 **Post-check changes** (not re-verified by sub-agent):
-- Bench changed from Bombzor (algorithm pick) → Heligeman/Fugleman (leader choice).
-- Teams reshuffled by raid leader from sub-agent-verified version. Net effects:
+- Bench changed from Bombzor (algorithm pick) → Heligeman/Fugleman (manual override).
+- Teams reshuffled by user from sub-agent-verified version. Net effects:
   - Paladin tank shortage exemption now applies to Team Restaurant (2 Warrior tanks) instead of Team Bakery.
   - Enhancement Shaman distribution changed from 2/1/0 to 1/1/1 across R/Bak/BG, resolving the prior soft-rule deviation.
 - Last-minute drop-outs after the roster was finalised: Kres/Dissi (Restaurant DPS) → PUG DPS; Bombzor (BaeGlaives Healer) → Heligeman/Fugleman (pulled off bench). Net effects:

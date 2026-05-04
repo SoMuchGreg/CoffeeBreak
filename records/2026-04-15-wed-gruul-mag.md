@@ -98,18 +98,18 @@
 
 ## Bench (2)
 
-| Player     | Priority | Bench count (cumulative, after this raid) | Reason        |
-|------------|----------|-------------------------------------------|---------------|
-| CptKavior  | 2        | 1                                         | leader choice |
-| Lynelen    | 2        | 1                                         | fair rotation |
+| Player     | Priority | Bench count (cumulative, after this raid) | Reason          |
+|------------|----------|-------------------------------------------|-----------------|
+| CptKavior  | 2        | 1                                         | manual override |
+| Lynelen    | 2        | 1                                         | fair rotation   |
 
 ## Notes
 
 - **New player:** Ōtsu — Affliction Warlock, priority 2. Recorded in `rules/04-players.md`.
-- **CptKavior** signed up as Tank for the first time → Prot offspec recorded as Spec 2 in `rules/04-players.md`. Surplus to the 3 core tanks; raid leader chose to bench → `leader choice` per `rules/01-raid-compositions.md` (tank-surplus flex).
-- **Spec overrides confirmed by raid leader** (icon ≠ actual spec):
+- **CptKavior** signed up as Tank for the first time → Prot offspec recorded as Spec 2 in `rules/04-players.md`. Surplus to the 3 core tanks; user chose to bench → `manual override` per `rules/01-raid-compositions.md` (tank-surplus flex).
+- **Spec overrides confirmed by user** (icon ≠ actual spec):
   - Beaverfist: signup Resto → ran Balance.
   - Kres/Dissi: signup Holy → ran Shadow.
   This is why the header reads 7 healers but the roster has 6.
-- **Lynelen benched** — Enh over Section 8 cap. Algorithm picked Bergamotka/Tymoti; raid leader overrode → Lynelen.
+- **Lynelen benched** — Enh over Section 8 cap. Algorithm picked Bergamotka/Tymoti; user overrode → Lynelen.
 - **Ōtsu and Jabbadhutt withdrew pre-raid.** Pergatori promoted off bench for Ōtsu; Verysadge promoted off bench for Jabbadhutt (Fury cap no longer binding with only 1 Warlock DPS to fit). Warlock count fell to 1, below Section 8's Destro+Affli lower bound of 3 — unfillable (no other Warlocks signed up).

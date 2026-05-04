@@ -15,7 +15,7 @@ Every player has a **raid spot priority** — an integer 1, 2, or 3. Priority is
 
 | Priority | Behavior when forming the roster |
 |----------|----------------------------------|
-| **1** | If signed up and available, always plays. Benched only via the raid leader's discretionary pick — never by fair rotation. |
+| **1** | If signed up and available, always plays. Benched only via the user's discretionary pick — never by fair rotation. |
 | **2** | Standard. Gets a spot when there is room. Subject to fair bench rotation among priority-2 signups when there is overflow. |
 | **3** | Last resort only. Invited only if open spots remain after every priority-1 and priority-2 signup has been placed. When multiple priority-3 players are signed up but only some are needed, fair bench rotation also applies among them. |
 
@@ -126,19 +126,19 @@ Within the affected spec, fair rotation still applies — and the direction is t
 
 Composition caps cannot displace a priority-1 player. If a cap and priority-1 ever conflict (which does not currently happen with any active rule), flag it to the user before proceeding.
 
-## Raid leader's discretionary bench picks
+## User's discretionary bench picks
 
-The raid leader (the user) may at any time designate a specific player to sit on the bench for a given raid, bypassing the selection algorithm above. This commonly happens when:
+The user may at any time designate a specific player to sit on the bench for a given raid, bypassing the selection algorithm above. This commonly happens when:
 
 - The user tells the planner directly ("bench X for this raid").
 - The user marks a player as "likely to be benched" in the signup screenshot or a note.
 - A player is the surplus in a role that exceeds the composition target (e.g., the comp flex case in `rules/01-raid-compositions.md` → "Handling role surpluses"), and the user picks which surplus player sits rather than offering a flex.
 
-**Discretionary benches still count toward fair bench rotation.** A player placed on the bench by raid leader choice has their cumulative bench count for that raid location **incremented by 1**, exactly as if fair rotation had chosen them. Record them in `derived/bench-history-tbc.md` and in the record file's bench table the same way as a fair-rotation bench — only the **reason label** differs (`leader choice` instead of `fair rotation`). This mirrors the general principle that every bench counts toward fair rotation regardless of *why* the player ended up on the bench — see "Bench reason vocabulary" below for the full list of reason labels.
+**Discretionary benches still count toward fair bench rotation.** A player placed on the bench by user choice has their cumulative bench count for that raid location **incremented by 1**, exactly as if fair rotation had chosen them. Record them in `derived/bench-history-tbc.md` and in the record file's bench table the same way as a fair-rotation bench — only the **reason label** differs (`manual override` instead of `fair rotation`). This mirrors the general principle that every bench counts toward fair rotation regardless of *why* the player ended up on the bench — see "Bench reason vocabulary" below for the full list of reason labels.
 
 **Explicit user exemption (rare).** If the user explicitly instructs the planner that a specific bench should **not** count toward fair rotation (phrasings like "don't count this one", "this bench is free", "no fairness impact"), leave the player's cumulative bench count unchanged AND record the exemption as a line in the record file's **Notes** section explaining which bench and the user's reason. The `Reason` column in the bench table stays whatever label describes how the player ended up benched; the exemption is a prose override, not a reason label in its own right. The default is always that every bench counts — the user must opt out explicitly, per-bench.
 
-Rationale: over time a raid leader's discretionary picks are just another mechanism by which a player ends up sitting out. Excluding them from fair rotation would let the same player be repeatedly chosen by the leader without ever catching up in the rotation, which is the exact fairness failure mode this rule system exists to prevent.
+Rationale: over time the user's discretionary picks are just another mechanism by which a player ends up sitting out. Excluding them from fair rotation would let the same player be repeatedly chosen by the user without ever catching up in the rotation, which is the exact fairness failure mode this rule system exists to prevent.
 
 ## Bench tracking
 
@@ -148,11 +148,11 @@ Each generated record file must record who was benched, so that subsequent recor
 
 Every row in a record file's bench table must use exactly one of the reason labels below in its `Reason` column. This section is the **single source of truth** for what each label means. Record-file templates must not restate these semantics — they link here. Do not invent new reason labels: if a benching scenario doesn't fit any of these, flag it to the user before writing the record file.
 
-**All reasons count toward fair rotation by default** — the cumulative bench count for the raid location is incremented by 1 for every entry, regardless of the label. The only exception is the rare explicit user exemption described in *Raid leader's discretionary bench picks* above, which is a Notes-section prose override and not a reason label.
+**All reasons count toward fair rotation by default** — the cumulative bench count for the raid location is incremented by 1 for every entry, regardless of the label. The only exception is the rare explicit user exemption described in *User's discretionary bench picks* above, which is a Notes-section prose override and not a reason label.
 
 | Reason | Meaning |
 |--------|---------|
 | `priority 3` | Player is raid spot priority 3 (last resort) and was benched because every priority-1 and priority-2 signup filled the available spots. See *Raid spot priority (selection order)* above. |
 | `fair rotation` | Priority-2 or priority-3 overflow benched algorithmically per *Raid spot priority* and *Fairness requirement* above — the player with the **lowest** cumulative bench count for the raid location is the one selected to bench (so cumulative counts equalize over time within the priority pool); tiebreakers apply when counts are tied. See the *Direction* sub-section above for the canonical statement and the concrete example. Applies within a single priority level when signups exceed spots. |
-| `leader choice` | Raid leader discretionarily picked this player — direct instruction, "likely benched" annotation on the signup screenshot, or a role-surplus pick such as comp flex in `rules/01-raid-compositions.md` → "Handling role surpluses". See *Raid leader's discretionary bench picks* above for the full rule. |
+| `manual override` | A discretionary bench pick that overrides the fair-rotation algorithm — direct instruction, "likely benched" annotation on the signup screenshot, or a role-surplus pick such as comp flex in `rules/01-raid-compositions.md` → "Handling role surpluses". See *User's discretionary bench picks* above for the full rule. |
 | `composition cap` | Benched by a hard composition cap in `rules/01-raid-compositions.md` (e.g., the 25-man Resto Druid cap). Within the capped spec, fair rotation still decides which player sits — see *Composition caps override pure fairness* above. |

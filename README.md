@@ -1,6 +1,6 @@
 # Roster Machine
 
-Raid composition planner for **World of Warcraft: The Burning Crusade 20th Anniversary Edition**, powered by Claude Code.
+Raid composition planning tool for **World of Warcraft: The Burning Crusade 20th Anniversary Edition**, powered by Claude Code.
 
 ## Purpose
 

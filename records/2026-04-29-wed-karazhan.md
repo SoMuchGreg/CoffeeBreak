@@ -58,22 +58,22 @@
 
 ## Bench (6)
 
-| Player             | Priority | Bench count (cumulative, after this raid) | Reason        |
-|--------------------|----------|-------------------------------------------|---------------|
-| Bergamotka/Tymoti  | 2        | 1                                         | fair rotation |
-| Dankyn             | 2        | 1                                         | fair rotation |
-| Greg               | 1        | 1                                         | leader choice |
-| Gresac             | 2        | 2                                         | leader choice |
-| Thordrel           | 2        | 1                                         | leader choice |
-| Yxanb              | 2        | 1                                         | fair rotation |
+| Player             | Priority | Bench count (cumulative, after this raid) | Reason          |
+|--------------------|----------|-------------------------------------------|-----------------|
+| Bergamotka/Tymoti  | 2        | 1                                         | fair rotation   |
+| Dankyn             | 2        | 1                                         | fair rotation   |
+| Greg               | 1        | 1                                         | manual override |
+| Gresac             | 2        | 2                                         | manual override |
+| Thordrel           | 2        | 1                                         | manual override |
+| Yxanb              | 2        | 1                                         | fair rotation   |
 
 ## Notes
 
 - **26 signups → 2 teams + 6 benched**, user chose option (a) of the 25–26 ambiguous case (`rules/01-raid-compositions.md` → "Under-cap team count"). Shapkica/Chkemi was a post-build signup; full-roster recalculation triggered.
 - **Shapkica/Chkemi first appearance** — Druid, mainspec DPS (Feral), offspec Tank (Feral), priority 2. Added to `rules/04-players.md` this session.
-- **Greg (priority 1) leader-choice bench** per user instruction, permitted under `rules/02-bench-rotation.md` → "Raid leader's discretionary bench picks".
-- **Gresac leader-choice bench** per user instruction, consistent with his `rules/04-players.md` note.
-- **Thordrel leader-choice bench** per user instruction.
+- **Greg (priority 1) manual-override bench** per user instruction, permitted under `rules/02-bench-rotation.md` → "User's discretionary bench picks".
+- **Gresac manual-override bench** per user instruction, consistent with his `rules/04-players.md` note.
+- **Thordrel manual-override bench** per user instruction.
 - **Beaverfist Tier 0 first-line-offspec flex** Balance DPS → Resto Healer (`rules/01-raid-compositions.md` → "Handling role shortages → Asking order → Tier 0") to fill the Bakery healer slot vacated by Thordrel; Beaverfist moved Restaurant → Bakery.
 - **Yxanb fair-rotation bench** chosen over Vaelruna by Karazhan Tier 1 (de-stacks Druids on Restaurant from 3→2) and Tier 2 (§8 Druid Feral=2 vs. Hunter=5). The first sub-agent verdict ran against the original Vaelruna pick before the user resolved the borderline tiebreaker; see Sanity check post-check changes.
 - **Bergamotka fair-rotation bench** chosen by composition target — Bergamotka playing alongside Lynelen + Ebonybolt would force 3 Enhancement Shamans across 2 teams.
@@ -99,7 +99,7 @@
 
 - HFD intra-team cluster (Beaverfist + Gigakox, R) — pigeonhole 3/2.
 - Ring of a Thousand Marks intra-team cluster (Gigakox + Leontes, R) — pigeonhole 3/2.
-- Greg priority-1 bench — leader choice, permitted under `rules/02-bench-rotation.md` → "Raid leader's discretionary bench picks".
+- Greg priority-1 bench — manual override, permitted under `rules/02-bench-rotation.md` → "User's discretionary bench picks".
 - Soft rule "1 Priest healer per team": Bakery has no Priest healer (only Lightweit signed up as Priest healer). Unfulfillable; Kres/Dissi as Shadow Priest covers Bakery's Power Word: Fortitude.
 - Soft rules "Hunter / Fury Warrior / Warlock distribution": single-instance roles after benches force 1-1 (Hunter, Mage, Enh) and solo placements (Fury Warrior, Warlock) — driven by signups, not by avoidable choices.
 
@@ -109,4 +109,4 @@
 - **Leontes moved Bakery → Restaurant** to maintain Gloves of the Fallen Champion split with Thordrel after the healer swap.
 - **Ring of a Thousand Marks cluster moved Bak → R** as a consequence of Leontes moving R; still 2-1 pigeonhole.
 - **Skulker's Greaves added to Loot conflicts** (Vaelruna in raid, Yxanb benched leaves Gigakox + Vaelruna as in-raid competitors); ✓ split.
-- **Rework (full-roster recalculation, Option B minimal-change):** Shapkica/Chkemi added as new signup, placed Restaurant DPS (Feral) replacing Beaverfist's vacated R DPS slot. Thordrel benched (leader choice). Beaverfist Tier 0 flex Balance DPS → Resto Healer, moved Restaurant → Bakery to fill Thordrel's vacated healer slot. HFD cluster moved R → Bakery (Beaverfist + Kres/Dissi on Bakery instead of Beaverfist + Gigakox on Restaurant); still 2-1 pigeonhole. Gloves of the Fallen Champion conflict resolved (Thordrel benched, Leontes single in-raid). User's "split balance druids and feral druids" instruction is moot in this raid — only 1 of each spec plays as DPS (Jar Balance, Shapkica Feral).
+- **Rework (full-roster recalculation, Option B minimal-change):** Shapkica/Chkemi added as new signup, placed Restaurant DPS (Feral) replacing Beaverfist's vacated R DPS slot. Thordrel benched (manual override). Beaverfist Tier 0 flex Balance DPS → Resto Healer, moved Restaurant → Bakery to fill Thordrel's vacated healer slot. HFD cluster moved R → Bakery (Beaverfist + Kres/Dissi on Bakery instead of Beaverfist + Gigakox on Restaurant); still 2-1 pigeonhole. Gloves of the Fallen Champion conflict resolved (Thordrel benched, Leontes single in-raid). User's "split balance druids and feral druids" instruction is moot in this raid — only 1 of each spec plays as DPS (Jar Balance, Shapkica Feral).

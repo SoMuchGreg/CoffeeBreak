@@ -4,7 +4,7 @@
 
 ### Composition tables are targets, not absolute caps
 
-The composition tables in this file (per-team for Karazhan, per-raid for 25-mans) state the **target** count for each role: tanks, healers, DPS. They are what the raid leader aims for. They are not absolute hard limits — see the comp flex rule below for what to do when signups don't allow the target.
+The composition tables in this file (per-team for Karazhan, per-raid for 25-mans) state the **target** count for each role: tanks, healers, DPS. They are what the user aims for. They are not absolute hard limits — see the comp flex rule below for what to do when signups don't allow the target.
 
 ### Role placement: mainspec is authoritative
 
@@ -29,7 +29,7 @@ If no one accepts: for shortage trigger, the raid runs under-target on that role
 
 ### Handling role shortages
 
-If signups don't include enough players for a required role at a raid's composition target (tanks, healers, or DPS), the raid leader should ask **dual-spec players** whether they'd be willing to switch to their secondary spec for this raid.
+If signups don't include enough players for a required role at a raid's composition target (tanks, healers, or DPS), the user should ask **dual-spec players** whether they'd be willing to switch to their secondary spec for this raid.
 
 **Who qualifies.** Dual-spec players are any player in `rules/04-players.md` whose `Offspec (role)` column lists a specific spec (not "—", not "?", not blank). Their second spec is what they may switch to. A "?" in `Offspec` means we don't yet know whether the player has a second spec — those players are **not** eligible for flex by default; the user can clarify on a case-by-case basis.
 
@@ -52,7 +52,7 @@ The surplus trigger: when a role is over-target — more signups than the compos
 
 **If accepted**, the player joins as the offspec role and is treated as that role for every subsequent step (raid-spot priority, fair bench rotation, composition targets). Recompute the roster against the new role distribution.
 
-**If declined, or if the player has no usable offspec**, they fall through to the standard bench-rotation rules in Rule 02 like any other signup that doesn't fit. The bench is caused by the role being surplus, not by the decline — reason label `fair rotation` or `leader choice`, never decline-specific. The flex was an alternative to the structural bench, not a way of avoiding a punishment.
+**If declined, or if the player has no usable offspec**, they fall through to the standard bench-rotation rules in Rule 02 like any other signup that doesn't fit. The bench is caused by the role being surplus, not by the decline — reason label `fair rotation` or `manual override`, never decline-specific. The flex was an alternative to the structural bench, not a way of avoiding a punishment.
 
 #### Tank-specific: identifying the excess
 
@@ -92,7 +92,7 @@ This scope will change when the user formalizes party-group rules (see `config/p
 
 ## Core tanks
 
-Core tanks are the named tanks the raid leader relies on to fill tank duties at any raid format we run. The set is **format-independent** — a signed-up core tank takes a tank slot at whatever format the raid is (Gruul+Mag's 3 slots, each Karazhan team's 2, future raid locations). The set is currently stable but may evolve as signups and player availability shift.
+Core tanks are the named tanks the user relies on to fill tank duties at any raid format we run. The set is **format-independent** — a signed-up core tank takes a tank slot at whatever format the raid is (Gruul+Mag's 3 slots, each Karazhan team's 2, future raid locations). The set is currently stable but may evolve as signups and player availability shift.
 
 ### Canonical membership
 
@@ -154,7 +154,7 @@ Each Karazhan team needs **2 tanks** that can collectively cover **3 duties**:
 
 This means every team **must have at least 1 Paladin tank** (for AoE) AND **at least 1 non-mana tank** (Warrior or Feral Druid) — two Paladin tanks on the same team is not feasible. A Feral Druid can off-tank if the main tank is a Paladin (who covers AoE duty).
 
-**Paladin tank shortage exemption:** When fewer Paladin tanks sign up than teams being formed, the AoE tanking requirement is automatically waived for teams that cannot be assigned a Paladin. Distribute available Paladin tanks across as many teams as possible (1 per team); any remaining team runs with 2 non-Paladin tanks and no AoE coverage. This is not a raid-leader override — it fires whenever the Paladin count falls short. The non-mana tank requirement is unaffected: every team must still have at least 1 Warrior or Feral Druid.
+**Paladin tank shortage exemption:** When fewer Paladin tanks sign up than teams being formed, the AoE tanking requirement is automatically waived for teams that cannot be assigned a Paladin. Distribute available Paladin tanks across as many teams as possible (1 per team); any remaining team runs with 2 non-Paladin tanks and no AoE coverage. This is not a user override — it fires whenever the Paladin count falls short. The non-mana tank requirement is unaffected: every team must still have at least 1 Warrior or Feral Druid.
 
 ### Healer composition
 
@@ -189,8 +189,8 @@ When outside recruitment is triggered (the 27–29 case above, or the 25–26 ca
 - **Do not add PUGs to `rules/04-players.md`.** The player roster tracks guild members only. PUGs never appear in `rules/04-players.md`.
 - **Do not count PUGs in `derived/bench-history-tbc.md`.** Fair bench rotation applies to guild members only. PUGs never appear in `derived/bench-history-tbc.md`.
 - **No cross-raid identity.** Even if the same real person returns as a PUG for multiple raids, record them as a fresh anonymous `PUG Heal` / `PUG DPS` entry each time. This project has no cross-raid knowledge of PUG identity and does not attempt to build one.
-- **Team placement — PUGs concentrated on a single team.** Of the three Karazhan teams, **two must be fully staffed with guild members** (10 guild members each). The **remaining team** (whichever one the raid leader designates) contains the leftover guild members plus the PUGs. Do not spread PUGs across multiple teams — concentrate them on one team so the other two stay fully internal.
-- **Finding the PUGs is the raid leader's job**, not Claude's. Claude's role is to (a) detect when this case applies, (b) propose the "2 all-guild teams + 1 mixed team" composition, (c) flag to the user the exact number of PUG DPS and PUG Heal slots that need to be filled, and (d) record the PUGs in the record file under the generic `PUG ...` names after the raid leader confirms the raid will proceed.
+- **Team placement — PUGs concentrated on a single team.** Of the three Karazhan teams, **two must be fully staffed with guild members** (10 guild members each). The **remaining team** (whichever one the user designates) contains the leftover guild members plus the PUGs. Do not spread PUGs across multiple teams — concentrate them on one team so the other two stay fully internal.
+- **Finding the PUGs is the user's job**, not Claude's. Claude's role is to (a) detect when this case applies, (b) propose the "2 all-guild teams + 1 mixed team" composition, (c) flag to the user the exact number of PUG DPS and PUG Heal slots that need to be filled, and (d) record the PUGs in the record file under the generic `PUG ...` names after the user confirms the raid will proceed.
 
 #### Insufficient-tanks override
 

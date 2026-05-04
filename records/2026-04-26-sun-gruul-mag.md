@@ -114,9 +114,9 @@
 
 ## Bench (1)
 
-| Player     | Priority | Bench count (cumulative, after this raid) | Reason         |
-|------------|----------|-------------------------------------------|----------------|
-| Beaverfist | 2        | 1                                         | leader choice  |
+| Player     | Priority | Bench count (cumulative, after this raid) | Reason          |
+|------------|----------|-------------------------------------------|-----------------|
+| Beaverfist | 2        | 1                                         | manual override |
 
 ## Notes
 
@@ -125,23 +125,23 @@
 - **Mirohl left the guild 2026-04-24** — withdrawn from this raid's signups; first recalc on 2026-04-25.
 - **Tank composition:** Ostbirger is the only core tank present (Varthier absent) and is reserved as Magtheridon MT. CptKavior (Prot offspec) and Gigakox (Prot offspec, Tier-2 flex from Fury) fill the non-core tank slots per `rules/01-raid-compositions.md` → "Handling role surpluses".
 - **Dual-spec flexes:**
-  - **Pergatori (Ele → Resto, Tier 1, accepted)** — covers a healer slot per `rules/01-raid-compositions.md` → "Handling role shortages". Leader explicitly confirmed at finalization.
+  - **Pergatori (Ele → Resto, Tier 1, accepted)** — covers a healer slot per `rules/01-raid-compositions.md` → "Handling role shortages". User explicitly confirmed at finalization.
   - **Gigakox (Fury → Prot, Tier 2, accepted)** — covers the 3rd-tank slot after Mirohl's departure. No Tier-1 tank-flex candidate was in signups (Eselman, Doughball, McJudgin absent).
-- **Late signups (Beaverfist, Bergamotka/Tymoti)** — both signed up after the Mirohl-driven recalc was finalized; second recalc on 2026-04-25 to integrate them into Signups, then leader's final picks recorded here.
+- **Late signups (Beaverfist, Bergamotka/Tymoti)** — both signed up after the Mirohl-driven recalc was finalized; second recalc on 2026-04-25 to integrate them into Signups, then user's final picks recorded here.
 - **Heligeman/Fugleman tentative** — Holy Paladin; did not convert to confirmed signup. Excluded from roster decisions per `reference/file-operations-manual.md` → Step 2.
-- **Beaverfist on bench (leader choice).** Signed up after the roster was made; raid leader chose to bench her rather than reshuffle. Algorithmic fair-rotation pick with the new signups would have been Bergamotka/Tymoti, after composition target → cross-location bench total → alphabetical fallback among the five 0-cross-location-bench priority-2 over-rep DPS candidates (Bergamotka/Tymoti, Dankyn, Ebonybolt, Lenno/Mellymel, Spot/Yorekbarn).
-- **Encounter assignments — leader's final picks** (deviations from algorithmic continuity):
-  - **Cube clickers reshuffled** — leader picks: S Jar, SE Jabbadhutt, SW Kres/Dissi, NE CptKavior, NW Gigakox. Strict algorithm with Ostbirger reserved as Mag MT (only core tank in roster) and Pergatori excluded as a Healer this raid (per `rules/05-encounter-assignments.md` → "Healers excluded from cube clicking") would have been: S Kres/Dissi (continuity 04-15), SE Greg (continuity 04-15, 04-12), SW Jabbadhutt (continuity 04-12), NE Vaelruna (cube-experience fallback, 1 prior at SW 03-08), NW any eligible (Step 4 — no continuity, no remaining cube-experience candidates). Greg's strong SE continuity yields to leader judgment.
+- **Beaverfist on bench (manual override).** Signed up after the roster was made; user chose to bench her rather than reshuffle. Algorithmic fair-rotation pick with the new signups would have been Bergamotka/Tymoti, after composition target → cross-location bench total → alphabetical fallback among the five 0-cross-location-bench priority-2 over-rep DPS candidates (Bergamotka/Tymoti, Dankyn, Ebonybolt, Lenno/Mellymel, Spot/Yorekbarn).
+- **Encounter assignments — user's final picks** (deviations from algorithmic continuity):
+  - **Cube clickers reshuffled** — user picks: S Jar, SE Jabbadhutt, SW Kres/Dissi, NE CptKavior, NW Gigakox. Strict algorithm with Ostbirger reserved as Mag MT (only core tank in roster) and Pergatori excluded as a Healer this raid (per `rules/05-encounter-assignments.md` → "Healers excluded from cube clicking") would have been: S Kres/Dissi (continuity 04-15), SE Greg (continuity 04-15, 04-12), SW Jabbadhutt (continuity 04-12), NE Vaelruna (cube-experience fallback, 1 prior at SW 03-08), NW any eligible (Step 4 — no continuity, no remaining cube-experience candidates). Greg's strong SE continuity yields to user judgment.
   - **Kiggler Tank → Jar.** Beaverfist (continuity holder for Kiggler Tank: 04-15, 04-05) is benched, so her continuity claim doesn't apply this raid. Jar is the only Balance druid in the roster — single-player Kiggler Tank per `rules/05-encounter-assignments.md` → "Kiggler Tank assignment".
-  - **Olm Tank Healer → Pergatori.** Leader confirmed.
-- **Jar on Sunday** — signed up despite the usual Sunday availability note in `rules/03-player-constraints.md`; raid-leader-accepted exception (matches 2026-04-12 precedent).
+  - **Olm Tank Healer → Pergatori.** User confirmed.
+- **Jar on Sunday** — signed up despite the usual Sunday availability note in `rules/03-player-constraints.md`; user-accepted exception (matches 2026-04-12 precedent).
 
 ## Sanity check
 
-**Verdict: GOOD ENOUGH** (finalized 2026-04-25) — composition on target (3/6/16); leader-accepted overrides on the bench pick and four of five cube placements.
+**Verdict: GOOD ENOUGH** (finalized 2026-04-25) — composition on target (3/6/16); user-accepted overrides on the bench pick and four of five cube placements.
 
-- **Bench pick: Beaverfist (leader choice)** — algorithmic fair-rotation per the Direction rule in `rules/02-bench-rotation.md` would have benched Bergamotka/Tymoti via alphabetical fallback after composition target + cross-location tiebreaker. Leader rationale: late signup.
-- **Cube placements: 4 of 5 differ from strict algorithm.** Leader judgment overrode cube-continuity (S, SE, SW) and cube-experience-fallback (NW); only NE matches a leader-override pattern preserved from the prior recalc (CptKavior, who has no cube history).
+- **Bench pick: Beaverfist (manual override)** — algorithmic fair-rotation per the Direction rule in `rules/02-bench-rotation.md` would have benched Bergamotka/Tymoti via alphabetical fallback after composition target + cross-location tiebreaker. User rationale: late signup.
+- **Cube placements: 4 of 5 differ from strict algorithm.** User judgment overrode cube-continuity (S, SE, SW) and cube-experience-fallback (NW); only NE matches a user-override pattern preserved from the prior recalc (CptKavior, who has no cube history).
 
 **Previous verdicts:**
 - **Original build: YES** — all rules satisfied; superseded.

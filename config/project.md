@@ -17,12 +17,12 @@ This file holds Roster Machine's **configuration data** — the canonical facts 
 | **Raid format** | The structural size of a raid: **10-man** or **25-man**. A format is a size bucket, distinct from the specific raid location — Karazhan is today's only 10-man location; Gruul+Mag is today's only 25-man location. Future content (SSC, TK, Hyjal, BT and future 10-mans) will be additional locations under these same two formats. Format determines format-wide rules like the 25-man Resto Druid cap. |
 | **Hybrid class** | Druid, Paladin, Shaman, Priest — classes whose players can play tank, healer, or DPS specs. Canonical rule for which spec a hybrid plays for a raid: `rules/01-raid-compositions.md` → "Role placement: mainspec is authoritative". |
 | **Hard rule** | A rule that must be satisfied; violation triggers benching, outside recruitment (PUGs), or dropping to fewer teams. Always wins over soft rules in conflict. Canonical examples: the 25-man Resto Druid cap, the Karazhan tank-composition requirements, the comp flex player-consent requirement — see `rules/01-raid-compositions.md`. |
-| **Soft rule** | An aspirational composition preference that may be broken if signups force it. Multiple soft rules in conflict may be resolved arbitrarily by the planner — see `rules/01-raid-compositions.md` → "Soft rule conflicts". Examples: "1 Priest per team", "1 Enhancement Shaman per team", Karazhan's 1-Resto-Druid-per-team preference. |
-| **Composition target** | The per-role or per-spec count the raid leader aims for. Canonical per-location totals live in `rules/01-raid-compositions.md` (Karazhan: 2T/2H/6D; Gruul+Mag: 3T/6H/16D), with 25-man-format defaults for future 25-man locations; per-spec ranges for 25-mans live in `reference/raid-composition-guide.md` §8. Aspirational, not a hard limit. |
+| **Soft rule** | An aspirational composition preference that may be broken if signups force it. Multiple soft rules in conflict may be resolved arbitrarily by the **Planner** — see `rules/01-raid-compositions.md` → "Soft rule conflicts". Examples: "1 Priest per team", "1 Enhancement Shaman per team", Karazhan's 1-Resto-Druid-per-team preference. |
+| **Composition target** | The per-role or per-spec count the user aims for. Canonical per-location totals live in `rules/01-raid-compositions.md` (Karazhan: 2T/2H/6D; Gruul+Mag: 3T/6H/16D), with 25-man-format defaults for future 25-man locations; per-spec ranges for 25-mans live in `reference/raid-composition-guide.md` §8. Aspirational, not a hard limit. |
 | **Composition cap** | A hard upper limit on a role or spec count (e.g., the 25-man Resto Druid cap — max 2 Resto Druids when more than 6 healers sign up). Exceeding a cap forces benching with reason `composition cap`. Canonical caps live in `rules/01-raid-compositions.md`. |
 | **Under-cap** | Signup total below a raid location's optimal capacity (fewer than 30 for Karazhan, fewer than 25 for Gruul+Mag). Triggers location-specific behavior — see `rules/01-raid-compositions.md` → "Under-cap behavior". |
 | **Over-cap** | Signup total above a raid location's optimal capacity. Handled by the normal bench-rotation rules in `rules/02-bench-rotation.md`. |
-| **Core tank** | A named tank the raid leader relies on to fill tank duties at any raid format. Format-independent — a core tank takes a tank slot at whatever format the raid is. Canonical rule and membership pointer: `rules/01-raid-compositions.md` → "Core tanks". |
+| **Core tank** | A named tank the user relies on to fill tank duties at any raid format. Format-independent — a core tank takes a tank slot at whatever format the raid is. Canonical rule and membership pointer: `rules/01-raid-compositions.md` → "Core tanks". |
 | **Excess tank** | A tank-column signup beyond the core set for that raid. Canonical rule: `rules/01-raid-compositions.md` → "Handling role surpluses". |
 | **Comp flex** | A mid-step main → offspec move during roster construction. Canonical rules: `rules/01-raid-compositions.md` → "Comp flex consent", "Handling role shortages", and "Handling role surpluses". Distinct from **Offspec signup** (signup-time choice, see below). |
 | **First line offspec** | A pre-committed comp flex disposition: the literal phrase "first line offspec" in a player's `rules/04-players.md` Notes column. Canonical rule: `rules/01-raid-compositions.md` → "Handling role shortages → Asking order → Tier 0" (also applies in "Handling role surpluses"). |
@@ -32,6 +32,9 @@ This file holds Roster Machine's **configuration data** — the canonical facts 
 | **Record file** | A file in `records/`. Each wraps a single raid night: signups, any withdrawals, the roster (`## Actual Roster` / `## Actual Raid Rosters`), bench, notes, sanity check. Historical artifact — edited only via the events in `reference/file-operations-manual.md`. Formerly called a "set"; stale references to `sets/` or "set file" are drift, update them on sight. |
 | **Roster** | The composition — who plays which role on which team for a specific raid. Lives inside a record file's `## Actual Roster` (25-man) or `## Actual Raid Rosters` (Karazhan) section. Bare "roster" means the composition; the file that *contains* a roster is a **Record file**, never "roster file". Selection algorithm: `rules/02-bench-rotation.md` → "Raid spot priority (selection order)". |
 | **Player roster** | The canonical directory of known players in `rules/04-players.md`, organized into Officers, Core tanks, Regular players (split into Priority 1 / 2 / 3 sub-tables), and Former players. Distinct from the composition-sense **Roster** above; always qualified with "player" to keep the senses separate. |
+| **User** | The human operating Roster Machine. Provides signup screenshots, makes discretionary calls (e.g., `rules/02-bench-rotation.md` → "User's discretionary bench picks"), and instructs Claude what to do. Distinct from the **Planner** (entry below — Claude as the rule-executing process) and from the in-game **Raid leader** (entry below). |
+| **Planner** | The roster-building process inside Roster Machine — Claude executing the project's rules to turn signups into a roster. Used in rule prose to name the active agent making autonomous decisions, often in explicit contrast with the user (e.g., `rules/01-raid-compositions.md` → "Soft rule conflicts" — Claude resolves soft-rule conflicts without asking the user). One of several processes Claude runs on Roster Machine; others (recording, sanity-checking, Q&A) are not called "the planner". |
+| **Raid leader** | The in-game player who calls pulls, assigns targets, and makes live raid decisions for a given raid day. Mapping by day of week: "Raid leadership" below. Distinct from the **User** and **Planner** (entries above). |
 
 ### Deprecated terms
 
@@ -48,6 +51,17 @@ Do not use the terms below in any project file, chat, or record file — they ar
 |-------|--------------------|-----------------------|------------|
 | 1     | Karazhan           | 10-man raid           | 3          |
 | 2     | Gruul + Magtheridon| 25-man raid           | 1          |
+
+## Raid leadership
+
+The in-game raid leader for each raid day (definition: Terminology → "Raid leader" above). Mapping is by day of week, not by raid content. Membership changes only on explicit user instruction.
+
+| Day       | Raid leader |
+|-----------|-------------|
+| Sunday    | Kres/Dissi  |
+| Wednesday | Jar         |
+
+Encounter-role implication: the raid leader is excluded from all encounter-role assignments on their day — see `rules/05-encounter-assignments.md` → "Raid leader exclusion".
 
 ## Old World raids
 
