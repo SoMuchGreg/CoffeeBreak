@@ -199,8 +199,12 @@ Event: Full-roster recalculation.
 Template layout for this section:
   1. **Verdict: {YES / GOOD ENOUGH / NO}** — {one-line summary}.
   2. Bullet list of any violations the sub-agent flagged.
-  3. If the roster changed after the latest sanity check without triggering a
-     new one, add a "Post-check changes" subsection listing what changed.
+  3. Post-check changes: if Event: Quick (ad-hoc) roster update applied a
+     slot-touching change after the verdict was issued, list each change in a
+     "Post-check changes" subsection. Changes only — no new sub-agent verdict
+     (Quick does not run one). Full recalcs use multi-verdict history above
+     (new Verdict at top, original demoted to historical below), not this
+     subsection.
 
 Multi-verdict history: the Verdict line reflects the MOST RECENT check; earlier
 verdicts, if any, are appended chronologically for audit.
@@ -213,5 +217,5 @@ roster data recorded without a roster-building step).
 
 - ...
 
-**Post-check changes** (not re-verified by sub-agent):         <!-- delete if no changes after check -->
+**Post-check changes**:         <!-- delete if no changes after check -->
 - ...

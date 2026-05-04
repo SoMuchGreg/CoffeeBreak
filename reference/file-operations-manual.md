@@ -131,11 +131,9 @@ The `## Notes` section is for **per-raid facts that aren't derivable from the ru
 
 ---
 
-## Event: User provides historical roster data
+## Event: User asks me to form raid groups
 
-Same as above, but:
-- The roster is already decided — just record it.
-- Still update `bench-history-tbc.md` and `04-players.md` with any new information.
+The core build trigger — fires when the user explicitly asks for a roster (e.g., *"make me a roster"*, *"form the raid groups"*, *"build the comp"*). Maps to **Steps 3 and 4** of `Event: New signup screenshot received` — follow that flow. Typically combined with a signup screenshot in the same turn (Steps 1–2 then also run); when parsing has already happened in a prior turn, this trigger re-enters at Step 3.
 
 ---
 
@@ -166,7 +164,7 @@ Discord "Absent" reactions are handled by Step 2 of "New signup screenshot recei
 
 | File | When it needs updating | What to update |
 |------|------------------------|----------------|
-| `records/YYYY-MM-DD-day-raid.md` | Always — withdrawal touches the record file. | (a) Remove the player from every sub-line of `## Signups (from Discord)` — class lists (Tanks / Warriors / Druids / Paladins / Rogues / Hunters / Priests / Mages / Warlocks / Shamans), `Tentative`, `Late`. Decrement the sub-line's `({N})` count. Decrement the main header's `X (+Y)` — `X` if they were in a class list or `Late`, `Y` if they were in `Tentative` or `## Bench`. (b) Add the player to `## Withdrawn signups` (structure defined in the record-file templates under `reference/templates/`), incrementing its `({N})` header count. Canonical name per `rules/04-players.md`. (c) If the player appeared in `## Actual Raid Rosters`, remove them there too; see "Two sub-cases" below for the roster-side procedure (invoke `Event: Full-roster recalculation` pre-raid; `Event: Quick (ad-hoc) roster update` post-raid). (d) If the player appeared in `## Bench`, remove them from `## Bench` (a withdrawal is not a bench). (e) Add a `## Notes` bullet recording the withdrawal and any roster consequence, consistent with the Notes guidance in "Writing the `## Notes` section of a record file" above. |
+| `records/YYYY-MM-DD-day-raid.md` | Always — withdrawal touches the record file. | (a) Remove the player from every sub-line of `## Signups (from Discord)` — class lists (Tanks / Warriors / Druids / Paladins / Rogues / Hunters / Priests / Mages / Warlocks / Shamans), `Tentative`, `Late`. Decrement the sub-line's `({N})` count. Decrement the main header's `X (+Y)` — `X` if they were in a class list or `Late`, `Y` if they were in `Tentative` or `## Bench`. (b) Add the player to `## Withdrawn signups` (structure defined in the record-file templates under `reference/templates/`), incrementing its `({N})` header count. Canonical name per `rules/04-players.md`. (c) If the player appeared in `## Actual Raid Rosters`, remove them there too; see "Two sub-cases" below for the roster-side procedure. (d) If the player appeared in `## Bench`, remove them from `## Bench` (a withdrawal is not a bench). (e) Add a `## Notes` bullet recording the withdrawal and any roster consequence, consistent with the Notes guidance in "Writing the `## Notes` section of a record file" above. |
 | `derived/signup-history-total.md` | Only if the player's signup count was previously incremented for this record file — i.e., the record file was already written before the withdrawal. For a pre-build withdrawal (see "Two sub-cases" below), skip — the increment never happened. | Decrement the player's `Signups` count by 1 in the appropriate sub-table (Officers / Core tanks / Current members / Former members). Re-sort (by `Signups` desc, alphabetical case-insensitive tiebreak) and renumber `#` from `1`. If `Signups` reaches 0, remove the row. |
 | `derived/signup-stats-tbc.md` | Only if the record file is in-scope (TBC-era, per that file's Scope section) **and** the increment was previously applied (post-build withdrawal). | Decrement the player's `Signups` by 1. If `Signups` hits 0, remove the row. Otherwise, if this record file was the player's `First signup`, recompute `First signup` to the next-earliest in-scope record file containing them and recompute `Raids-in-window` + `Signup rate` for their row; if not their first, `Raids-in-window` is unchanged and only `Signup rate` recomputes. Additionally, if this record file was the player's most recent in-scope signup file, recompute `Last signed up X days ago` from the next-most-recent in-scope record file containing them in `## Signups`. Re-sort by `Signup rate` desc (alphabetical tiebreak), renumber `#`, refresh the `Computed as of` header. |
 | `derived/bench-history-tbc.md` | Only if the withdrawn player was previously in the record file's `## Bench` table (i.e., the withdrawal converts an already-recorded bench). | Decrement the player's count for this raid-location column, remove this record file's date from the `{location} dates` cell, recompute `Total`. If all counts reach 0, drop the row (for priority-1 players) or rely on the "All other priority-2 and priority-3 players: 0 benches at every location" footer (for priority-2 or priority-3 players). |
@@ -178,9 +176,42 @@ Discord "Absent" reactions are handled by Step 2 of "New signup screenshot recei
 
 **(2) Post-build withdrawal** — user signals the withdrawal *after* the record file has been written and derived files have been incremented. Apply the decrement logic in the table above. Then:
 
-- **Pre-raid withdrawal, player was in `## Actual Raid Rosters`:** invoke `Event: Full-roster recalculation` — it identifies improvements, runs a fresh sanity check, and applies approved changes (or a straight bench-fill patch when no improvements surface) via `## Roster update files`.
+- **Pre-raid withdrawal, player was in `## Actual Raid Rosters`:**
+  - **If the user specified the replacement** (e.g., "X dropped, bring Y in"), invoke `Event: Quick (ad-hoc) roster update` — Quick's fundamental hard-rule checks run before applying the directive. The user's directive is authoritative; no rebuild needed.
+  - **If the user only reported the drop without specifying the replacement,** invoke `Event: Full-roster recalculation` — Claude derives the replacement (and any ripple consequences) via clean-slate rebuild and sub-agent.
 - **Post-raid withdrawal (raid already happened), player was in `## Actual Raid Rosters`:** no recalculation — the raid already ran whatever composition actually played. Apply any remaining record-file and derived-file updates via `Event: Quick (ad-hoc) roster update`, which in turn goes through `## Roster update files`.
 - **Player was only in `## Bench`:** the table-above decrements complete the update; no further action.
+
+---
+
+## Event: Post-build signup arrives
+
+Fires when a player signs up **after** the record file has been built — the original signup pool was processed, the roster was approved, and now a new player wants in. Distinct from the initial parse, which is governed by `Event: New signup screenshot received`.
+
+### Trigger phrases
+
+- "X signed up"
+- "X just added themselves"
+- "X is in"
+
+If the user delivers a fresh signup screenshot rather than reporting verbally, follow `Event: New signup screenshot received` instead — that event's Step 2 specifies the latest screenshot is the current state and supersedes prior parses.
+
+### Update these files
+
+| File | When | What to update |
+|------|------|----------------|
+| `records/YYYY-MM-DD-day-raid.md` | Always. | Add the player to the appropriate `## Signups` sub-line (class list / `Tentative` / `Late` based on the user's report). Increment that sub-line's `({N})` count and the main header's `X (+Y)`. Canonical name per `rules/04-players.md`. Add a `## Notes` bullet recording the post-build signup per the Notes section guidance. |
+| `derived/signup-history-total.md` | Always. | Increment by 1 per the canonical mechanics in `Event: New signup screenshot received` → Step 4 row for this file. |
+| `derived/signup-stats-tbc.md` | If the record file is in-scope (TBC-era — see that file's Scope section). | Increment by 1 per the canonical mechanics in `Event: New signup screenshot received` → Step 4 row for this file. |
+| `derived/bench-history-tbc.md` | No update from the signup itself. The roster-placement step below may add or remove a bench entry — that update goes through `## Roster update files`. | — |
+| `rules/04-players.md` | If the player is previously unknown. | Per `Event: A player joins or leaves the guild` → Joins. |
+
+### Roster-side routing
+
+After the file updates above, route the roster-side decision:
+
+- **If the user specified placement** (e.g., "X signed up; bench Y, put X in" or "X signed up, slot at Restaurant DPS"): invoke `Event: Quick (ad-hoc) roster update` to apply the directive.
+- **If the user did not specify placement** (just reported the signup): invoke `Event: Full-roster recalculation` — Claude derives whether/where the new signup fits.
 
 ---
 
@@ -190,15 +221,23 @@ Triggered **pre-raid** when Claude should re-run the roster-build logic against 
 
 ### When to invoke
 
-- **Post-build withdrawal** — invoked by `Event: Player withdraws signup` → case (2), pre-raid sub-case.
-- **New post-build signup** — a player signed up after the initial roster was formed.
-- **Rule change mid-week** — a rule edit that may invalidate the current roster.
-- **User request** — the user explicitly asks for a recalculation ("please recalc", "rework the roster", etc.).
-- **Any other pre-raid change** affecting signup pool, composition, or constraints.
+Full recalc fires when Claude must **derive** the right roster from a changed input state — distinct from `Event: Quick (ad-hoc) roster update`, which fires for user-directed changes that Claude executes with hard-rule guardrails.
+
+- **Post-build withdrawal without replacement** — invoked by `Event: Player withdraws signup` → case (2), pre-raid sub-case, when the user did not specify the replacement. If the user said "X dropped, bring Y in", Quick handles it instead — the directive supplies the replacement.
+- **New post-build signup without placement** — a player signed up after the initial roster was formed and the user did not specify where they go. If the user specified placement, Quick handles it instead.
+- **Rule change mid-week** — a rule edit that may invalidate existing rosters.
+- **User request** — the user explicitly asks for a recalculation ("please recalc", "rework the roster", "rebuild it", etc.).
+- **Any other pre-raid input change** affecting signup pool, composition, or constraints, where Claude must derive the right answer rather than execute a user directive.
 
 ### Procedure
 
-Re-run **Step 3 — Build the roster** from `Event: New signup screenshot received` against the current post-change signup pool, **including the sub-agent sanity check (step 3.6)** — every recalculation ends with a fresh sanity-check verdict (YES / GOOD ENOUGH / NO). Skip only the user presentation (step 3.7); that's folded into `### Presenting improvements` below. The re-run inherently covers bench rotation (`rules/02-bench-rotation.md`), composition targets (`rules/01-raid-compositions.md`), loot-conflict placement (`rules/03-player-constraints.md` → Needlist), player constraints (`rules/03-player-constraints.md`), and comp flex (`rules/01-raid-compositions.md`). Any difference between the re-run output and the current roster is a candidate improvement.
+Re-run **Step 3 — Build the roster** from `Event: New signup screenshot received` against the current post-change signup pool, **including the sub-agent sanity check (step 3.6)** — every recalculation ends with a fresh sanity-check verdict (YES / GOOD ENOUGH / NO). Skip only the user presentation (step 3.7); that's folded into `### Presenting improvements` below. The re-run inherently covers bench rotation (`rules/02-bench-rotation.md`), composition targets (`rules/01-raid-compositions.md`), loot-conflict placement (`rules/03-player-constraints.md` → Needlist), player constraints (`rules/03-player-constraints.md`), and comp flex (`rules/01-raid-compositions.md`).
+
+**Clean-slate rule (non-negotiable).** Compute the rebuild as if no `## Actual Raid Rosters` (Karazhan), `## Actual Roster` (25-man), `## Bench`, or `## Encounter assignments` section existed in the current record file. Build from the signup pool + rules + derived files + prior records, exactly as you would for a brand-new record file. **Do not** anchor on the existing composition, use it as a starting point, or treat it as a constraint — even if you have already read the record file this session. Compare against the existing roster only **after** the rebuild and the sub-agent verdict are done; the comparison is one-directional (rebuild is the answer; existing roster is just what was there before). Any slot-disagreement is a candidate improvement, never a candidate to revert the rebuild back toward the original. This blocks the failure mode where the recalculation degenerates into a minimal-diff patch of the existing composition.
+
+**Reading list for the rebuild (cache-busting).** Re-read **Tier 2** of the Reading list *fresh* before computing the rebuild, even if it was loaded earlier this session and the cadence rule in `CLAUDE.md` → "Before any file edit" would otherwise allow trusting cached content. Recalculations override the standard cadence because intervening edits this session may have updated derived files or other `records/*.md`. The load-bearing freshness is `derived/bench-history-tbc.md` (drives fair rotation) and prior `records/*.md` (predecessor context); `derived/signup-history-total.md` and `derived/signup-stats-tbc.md` don't gate roster decisions but must be fresh for the post-rebuild update walk to compute correct deltas. Tier 1 still follows the standard cadence.
+
+**Bench-history rollback for the current raid.** When recalculating an existing record file, the current raid's bench picks have already been incremented into `derived/bench-history-tbc.md` for this raid's date. Fair rotation must be evaluated against bench history *before* this raid. Procedure: for each row in the original record's `## Bench` table, locate the current-raid date in the corresponding `{location} dates` cell of `derived/bench-history-tbc.md` and treat that occurrence as absent for the rebuild's fair-rotation input (decrement count by 1, ignore the date). Then compute the rebuild. After user approval, apply the rebuild's new bench picks (which may differ from the original) via the standard delta logic in `## Roster update files`. Decrements already applied by `Event: Player withdraws signup` stand — that withdrawal removed an entry the rebuild won't re-add, so the rollback applies only to the remaining current-raid bench entries.
 
 Handle multiple simultaneous changes in a single recalculation pass — do not iterate per-change.
 
@@ -214,16 +253,50 @@ Apply confirmed changes via the `## Roster update files` procedure below — tha
 
 ## Event: Quick (ad-hoc) roster update
 
-Fires when a change needs to be applied to the record **without running the full roster-build logic**. Typical cases:
+Fires for **user-directed** changes — the user has already decided what to do; Claude executes with lightweight hard-rule guardrails (no sub-agent). Distinct from `Event: Full-roster recalculation`, which fires when the user wants Claude to figure out the right answer (recalc, rework, undirected withdrawal/signup, rule-change re-evaluation).
 
-- **On-the-go / post-raid:** a decision was made during or after the raid without Claude's involvement (e.g., replaced a no-show with a PUG mid-pull, swapped players between teams), and the user is now reporting it for the record.
-- **Pre-raid trivial edits:** a spec-label correction, a small user-directed change, or any edit that doesn't warrant re-running the roster-build logic.
+Quick covers two kinds of edits:
+
+1. **Slot-touching change** (pre-raid or post-raid) — swap, bench, PUG-in, role/spec change that alters what the player will play (or did play), `## Encounter assignments` swap, Karazhan team move. The user has named the action and the players. The "Fundamental hard-rule checks" sub-section below runs before applying.
+2. **Non-slot-touching edit** — typo, formatting, `## Notes` addition, header fix, or a label normalization that fixes the *recorded label* without changing what the player actually played (e.g., the player played Holy but the record says Resto — corrects the record to match reality without affecting composition). No checks; just edit.
 
 Edit the existing record file in place — do **not** create a new one.
 
-**Distinct from `Event: Full-roster recalculation`**, which fires *pre-raid* when Claude should re-run the roster-build logic to find improvements. If a pre-raid change may affect roster validity (withdrawal, composition-affecting spec change, constraint violation), prefer recalculation over a direct Quick update.
+### When to use Quick vs. Full
 
-Apply the change via the canonical `## Roster update files` procedure below.
+Quick is the default for user-directed changes. Full recalc is reserved for cases where Claude must derive the right answer from a changed input state.
+
+| Trigger phrasing | Event |
+|------------------|-------|
+| "Swap A for B" / "bench C, bring D in" / "PUG D in for the no-show" / "move E to Bakery" | Quick |
+| "Fix Bob's spec to Holy in the record" / typo / formatting | Quick |
+| "Recalc" / "rework" / "rebuild the roster" | Full |
+| "X dropped" (no replacement specified) | Full (via `Event: Player withdraws signup` → case 2, pre-raid sub-case) |
+| "X signed up post-build" (no placement specified) | Full |
+| "Rule changed; check existing rosters" | Full (via `Event: User reports a new rule or rule change`) |
+
+If the user combines a report with a directive (e.g., "X dropped, bring Y in" or "X signed up, bench Y"), the originating event's sub-cases hold the canonical routing — see `Event: Player withdraws signup` → "Two sub-cases" or `Event: Post-build signup arrives` → "Roster-side routing".
+
+### Fundamental hard-rule checks (run inline before applying slot-touching changes)
+
+Quick changes are not blindly applied. Before applying any slot-touching change, verify the resulting state against these hard rules. If a check fails, surface to the user before applying — they may **override** (recorded in `## Notes` as a "User overrides" bullet per the Notes section guidance) or **revise** the directive. Do not silently apply over a hard-rule failure.
+
+1. **Player existence and signup state.** Target player exists in `rules/04-players.md` (Officers, Core tanks, Regular players, or Former players sub-table) — or is a PUG (`PUG DPS` / `PUG Heal` per `rules/01-raid-compositions.md` → "Recording outside recruits (PUGs)"). For pre-raid changes, target player is in the record file's `## Signups` section; skip this signup check for post-raid records (the raid already played them).
+2. **No double-booking.** Target player isn't already in `## Actual Raid Rosters` (Karazhan) / `## Actual Roster` (25-man).
+3. **Hard composition rules and role coherence.** Post-change roster doesn't violate any hard rule from `rules/01-raid-compositions.md` — caps (e.g., "Resto Druid cap (hard rule)"), minimums (e.g., Karazhan "Tank composition" 2T per team; Gruul+Mag 3T/6H totals), or role coherence (a player can't fill a role their class can't perform; hybrid mainspec resolution per `rules/01-raid-compositions.md` → "Role placement: mainspec is authoritative").
+4. **Hard player constraints.** Post-change roster respects `rules/03-player-constraints.md` → "Availability constraints", "Must-be-together", "Must-not-be-together". For Karazhan team moves and swaps, also re-check "Needlist" same-team conflicts (block any new same-team competitor pairing unless competitor count strictly exceeds team count, in which case record as known-unavoidable in `## Notes`) and "Enchanters — spread across Karazhan raid teams" (no two enchanters on the same Karazhan team).
+5. **Encounter-role coverage and eligibility** (Gruul+Mag only). If the change orphans a role in `## Encounter assignments`, or violates an eligibility requirement (e.g., Maulgar Tank must be a core tank, Mage Tank must be a Mage), re-run the assignment algorithm in `rules/05-encounter-assignments.md` **only for the affected role(s)** — do not re-derive every encounter role.
+
+**Out of scope for Quick** (use `Event: Full-roster recalculation` if any of these are the goal): fair-rotation re-derivation (`rules/02-bench-rotation.md`), comp flex resolution (`rules/01-raid-compositions.md` → "Handling role shortages" / "Handling role surpluses"), soft-rule optimization (`rules/01-raid-compositions.md` → "Soft rule conflicts"), composition-target nudges (`reference/raid-composition-guide.md` § 8 ranges, `rules/02-bench-rotation.md` → "Tiebreaker: composition target"), sub-agent verdict.
+
+### Recording the change
+
+Apply the change via the canonical `## Roster update files` procedure below. After applying:
+
+- Add a `## Notes` bullet recording what changed (per "Writing the `## Notes` section" → "Post-build roster changes"). If the user overrode a hard-rule check, record the override under "User overrides".
+- For `## Sanity check`: see the per-event handling in the `records/YYYY-MM-DD-day-raid.md` row of `## Roster update files` below.
+
+Derived file updates (`derived/bench-history-tbc.md`, `derived/signup-history-total.md`, `derived/signup-stats-tbc.md`) follow the standard `## Roster update files` table.
 
 ---
 
@@ -240,7 +313,7 @@ Canonical procedure for applying a roster-related change to the record file and 
 
 | File | When it needs updating | What to update |
 |------|------------------------|----------------|
-| `records/YYYY-MM-DD-day-raid.md` | Always. | Roster tables (swap players, PUGs use `PUG DPS` / `PUG Heal` per `rules/01-raid-compositions.md` → "Recording outside recruits (PUGs)"); bench table (replace with `*(None — all 30 spots filled)*` if empty); composition check; loot conflicts (removed players drop out of competitor lists, added players may introduce new conflicts — cross-check `rules/03-player-constraints.md`); Notes (add a "Post-build roster changes" bullet per the Notes section guidance above); Post-check changes subsection under Sanity check (**extend** — do not rewrite the original sub-agent verdict). |
+| `records/YYYY-MM-DD-day-raid.md` | Always. | Roster tables (swap players, PUGs use `PUG DPS` / `PUG Heal` per `rules/01-raid-compositions.md` → "Recording outside recruits (PUGs)"); bench table (replace with `*(None — all 30 spots filled)*` if empty); composition check; loot conflicts (removed players drop out of competitor lists, added players may introduce new conflicts — cross-check `rules/03-player-constraints.md`); Notes (add a "Post-build roster changes" bullet per the Notes section guidance above); Sanity check section per event — for `Event: Full-roster recalculation`, place the rebuild's fresh verdict at the top of `## Sanity check` and demote the previous Verdict line to a historical bullet below per the template's multi-verdict history convention; for `Event: Quick (ad-hoc) roster update`, do **not** rewrite the original Verdict (Quick runs no sub-agent) and list slot-touching changes in a `### Post-check changes` subsection (changes only, no verdict line). |
 | `derived/bench-history-tbc.md` | If someone was added to or removed from the bench. Pulling a benched player off the bench to fill a dropout → decrement their count at this location, remove the date, recompute Total. Newly benching someone post-check → increment count, append date, recompute Total. | Count + dates + Total columns. |
 | `derived/signup-history-total.md` | **Only if the `## Signups` section of the record file changed.** Roster-only changes (swaps, PUG inserts, bench reshuffles) do **not** touch Signups. PUGs never appear in Signups. **Withdrawals do touch Signups** (they remove the player and move them to `## Withdrawn signups`) — when a withdrawal is the trigger, follow `Event: Player withdraws signup` for this file's update logic instead of this row. If the Signups section changed for any other reason (e.g., a player moved between class-list / Tentative / Late sub-lines), apply the net delta here. | Increment/decrement Signups; re-sort + renumber affected sub-tables. |
 | `derived/signup-stats-tbc.md` | Same trigger as `signup-history-total.md`, scoped to in-scope record files (see that file's Scope section). If only the roster changed but Signups didn't, no update. | Same delta mechanics plus Raids-in-window / Signup rate / Last signed up X days ago recompute + "Computed as of" header. |
@@ -278,26 +351,6 @@ Run the post-edit consistency grep per `CLAUDE.md` → "Post-edit consistency gr
 |------|----------------|
 | `rules/04-players.md` | Update player's class, spec, priority, or notes. When a Regular player's priority changes among `1`, `2`, and `3`, move the row to the matching **Priority N** sub-table and renumber both affected sub-tables. **If the user reveals an alt, add an entry to the Alt characters sub-table — see `rules/01-raid-compositions.md` → "Alts" for the mechanics.** |
 | `rules/03-player-constraints.md` | Update if it's a must-together/must-not-together/availability constraint |
-
----
-
-## Event: User renames a player
-
-(e.g., "rename Abc to Xyz" or "Iop now goes by Iop/Jkl")
-
-### Update:
-
-| File | What to update |
-|------|----------------|
-| `rules/04-players.md` | Update the `Player` column to the new canonical name. Update the `Character(s)` column to match. If the old name should remain discoverable for cross-referencing older Discord screenshots, add a brief *"Previously known as X"* note in the `Notes` column. **If the renamed character or its canonical name appears in the Alt characters sub-table, update the matching `Player` and/or `Character` cells too.** |
-| `rules/03-player-constraints.md` | Rename every reference to the player across the Availability, Must-be-together, Must-not-be-together, Needlist, and Enchanters sub-sections. These cells reference canonical names — normalize them, don't preserve the old label. |
-| `derived/bench-history-tbc.md` | Update every row that references the old player name to the new canonical name. This is derived data, not a historical record — normalize it, don't preserve the old label. |
-| `derived/signup-history-total.md` | Same as `bench-history-tbc.md` — rename the `Player` column value to the new canonical name. Derived data, normalize it. |
-| `derived/signup-stats-tbc.md` | Rename the `Player` cell. Derived data, normalize it. Row only exists if the player has in-scope signups; if absent, no action. Re-sort only if the alphabetical tiebreak position changes. |
-| `records/*.md` | Update every historical record file that references the old name, wherever it appears (signup lists, roster tables, bench tables, Notes sections). A pure name normalization doesn't violate the record-files-are-immutable principle — it updates the label without changing any factual content. |
-
-### Afterwards:
-- **Verify completeness** by running `Grep <old_name>` across the whole project. The only legitimate remaining hit should be the optional alias note in `rules/04-players.md` (if you added one). Any other hit is a missed reference that needs fixing.
 
 ---
 
@@ -346,15 +399,31 @@ Triggered by phrases like *"X is now an officer"*, *"promote X"*, *"new officers
 
 ---
 
-## Event: User asks me to form raid groups
+## Event: User renames a player
 
-This is the core deliverable. Follow the full "New signup screenshot received" flow above, plus:
+(e.g., "rename Abc to Xyz" or "Iop now goes by Iop/Jkl")
 
-1. Read **every** file in `records/` to understand predecessor context.
-2. Present the proposed roster clearly (tables with player, role, class).
-3. Explicitly list who is benched and why (bench count).
-4. Flag any rule conflicts or impossible constraints.
-5. Wait for user confirmation before saving.
+### Update:
+
+| File | What to update |
+|------|----------------|
+| `rules/04-players.md` | Update the `Player` column to the new canonical name. Update the `Character(s)` column to match. If the old name should remain discoverable for cross-referencing older Discord screenshots, add a brief *"Previously known as X"* note in the `Notes` column. **If the renamed character or its canonical name appears in the Alt characters sub-table, update the matching `Player` and/or `Character` cells too.** |
+| `rules/03-player-constraints.md` | Rename every reference to the player across the Availability, Must-be-together, Must-not-be-together, Needlist, and Enchanters sub-sections. These cells reference canonical names — normalize them, don't preserve the old label. |
+| `derived/bench-history-tbc.md` | Update every row that references the old player name to the new canonical name. This is derived data, not a historical record — normalize it, don't preserve the old label. |
+| `derived/signup-history-total.md` | Same as `bench-history-tbc.md` — rename the `Player` column value to the new canonical name. Derived data, normalize it. |
+| `derived/signup-stats-tbc.md` | Rename the `Player` cell. Derived data, normalize it. Row only exists if the player has in-scope signups; if absent, no action. Re-sort only if the alphabetical tiebreak position changes. |
+| `records/*.md` | Update every historical record file that references the old name, wherever it appears (signup lists, roster tables, bench tables, Notes sections). A pure name normalization doesn't violate the record-files-are-immutable principle — it updates the label without changing any factual content. |
+
+### Afterwards:
+- **Verify completeness** by running `Grep <old_name>` across the whole project. The only legitimate remaining hit should be the optional alias note in `rules/04-players.md` (if you added one). Any other hit is a missed reference that needs fixing.
+
+---
+
+## Event: User provides historical roster data
+
+Same as `Event: New signup screenshot received`, but:
+- The roster is already decided — just record it.
+- Still update `bench-history-tbc.md` and `04-players.md` with any new information.
 
 ---
 
