@@ -85,15 +85,16 @@ Currently empty. Kept so a Regular player promoted to priority `1` has a place t
 | 19 | Ebonybolt          | Ebonybolt       | Shaman  | DPS (Enhancement) | Healer          | 2       | Ok to offspec                                                 |
 | 20 | Lynelen            | Lynelen, Kalyl  | Shaman  | DPS (Enhancement) | DPS (Elemental) | 2       | Ok to offspec                                                 |
 | 21 | Pergatori          | Pergatori       | Shaman  | Healer            | DPS (Elemental) | 2       | First line offspec                                            |
-| 22 | BestPractice       | BestPractice    | Warlock | DPS               | —               | 2       |                                                               |
-| 23 | Jabbadhutt         | Jabbadhutt      | Warlock | DPS               | —               | 2       |                                                               |
-| 24 | McHughes           | McHughes        | Warlock | DPS               | —               | 2       |                                                               |
-| 25 | CptKavior          | CptKavior       | Warrior | DPS (Fury)        | Tank            | 2       | First line offspec                                            |
-| 26 | Dankyn             | Dankyn          | Warrior | DPS (Fury)        | Tank            | 2       | Reluctant offspec                                             |
-| 27 | Doughball          | Doughball       | Warrior | DPS (Fury)        | Tank            | 2       | Eager offspec                                                 |
-| 28 | Nemajumarad        | Nemajumarad     | Warrior | DPS (Arms)        | Tank            | 2       | Eager offspec                                                 |
-| 29 | Spot/Yorekbarn     | Yorekbarn       | Warrior | DPS (Fury)        | —               | 2       |                                                               |
-| 30 | Verysadge          | Verysadge       | Warrior | DPS (Fury)        | —               | 2       |                                                               |
+| 22 | Benglock           | Benglock        | Warlock | DPS (Demonology)  | ?               | 2       |                                                               |
+| 23 | BestPractice       | BestPractice    | Warlock | DPS               | —               | 2       |                                                               |
+| 24 | Jabbadhutt         | Jabbadhutt      | Warlock | DPS               | —               | 2       |                                                               |
+| 25 | McHughes           | McHughes        | Warlock | DPS               | —               | 2       |                                                               |
+| 26 | CptKavior          | CptKavior       | Warrior | DPS (Fury)        | Tank            | 2       | First line offspec                                            |
+| 27 | Dankyn             | Dankyn          | Warrior | DPS (Fury)        | Tank            | 2       | Reluctant offspec                                             |
+| 28 | Doughball          | Doughball       | Warrior | DPS (Fury)        | Tank            | 2       | Eager offspec                                                 |
+| 29 | Nemajumarad        | Nemajumarad     | Warrior | DPS (Arms)        | Tank            | 2       | Eager offspec                                                 |
+| 30 | Spot/Yorekbarn     | Yorekbarn       | Warrior | DPS (Fury)        | —               | 2       |                                                               |
+| 31 | Verysadge          | Verysadge       | Warrior | DPS (Fury)        | —               | 2       |                                                               |
 
 #### Priority 3
 

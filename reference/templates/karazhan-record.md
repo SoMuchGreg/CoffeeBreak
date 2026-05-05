@@ -65,7 +65,7 @@ Sort alphabetically case-insensitive by canonical player name (rules/04-players.
 
 <!--
 Three teams, each exactly 10 players: 1 MT, 1 OT, 6 DPS, 2 Healers (target).
-Team order MUST be: Restaurant, Bakery, BestPrepared (matches rules/01-raid-compositions.md
+Team order MUST be: Restaurant, Bakery, WellPrepared (matches rules/01-raid-compositions.md
 → "Team names"). No team is anchored to a specific player. Enchanter distribution across
 teams follows rules/03-player-constraints.md → "Enchanters".
 
@@ -107,7 +107,7 @@ column.
 | ...                 | Healer | ...                  |
 | ...                 | Healer | ...                  |
 
-### Team BestPrepared
+### Team WellPrepared
 
 | Player              | Role   | Class                |
 |---------------------|--------|----------------------|

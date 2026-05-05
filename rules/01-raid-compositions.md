@@ -147,7 +147,7 @@ The three Karazhan teams are:
 
 - Team Restaurant
 - Team Bakery
-- Team BestPrepared
+- Team WellPrepared
 
 No team is anchored to a specific player. Enchanter distribution across teams is handled by `rules/03-player-constraints.md` → "Enchanters".
 
@@ -174,6 +174,10 @@ This means every team **must have at least 1 Paladin tank** (for AoE) AND **at l
 - **Elemental Shamans** go on the team with the most casters
 - **Feral Druids playing DPS** (not tanking) go on the team with the most physical/melee DPS
 - **Balance Druids** go on the most balanced team
+
+### Officer composition
+
+- **At least 1 officer per team** (soft rule — depends on signups). Officers per `rules/04-players.md` → "Officers" sub-table. When fewer officers sign up than teams, distribute across as many teams as possible.
 
 ### Under-cap team count
 
