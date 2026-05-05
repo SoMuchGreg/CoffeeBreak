@@ -25,7 +25,7 @@
 | Lynelen             | DPS    | Shaman (Enhancement) |
 | Roossy/Keatala      | DPS    | Hunter               |
 | Yxanb               | DPS    | Druid (Feral)        |
-| Tonsen              | DPS    | Hunter               |
+| Shapkica/Chkemi     | DPS    | Druid (Feral)        |
 | Lenno/Mellymel      | DPS    | Mage (Arcane)        |
 | Benglock            | DPS    | Warlock (Demonology) |
 | Siljes/Ejlis        | Healer | Priest (Holy)        |
@@ -42,7 +42,7 @@
 | Dankyn              | DPS    | Warrior (Fury)       |
 | Kres/Dissi          | DPS    | Priest (Shadow)      |
 | Jabbadhutt          | DPS    | Warlock              |
-| Shapkica/Chkemi     | DPS    | Druid (Feral)        |
+| Tonsen              | DPS    | Hunter               |
 | Pergatori           | Healer | Shaman (Resto)       |
 | Heligeman/Fugleman  | Healer | Paladin (Holy)       |
 
@@ -89,6 +89,8 @@
 - **HFD cluster moved Bakery → Restaurant** (Gigakox + Roossy/Keatala on R; still pigeonhole-forced 4/3).
 - **Soft-rule shifts from swaps**: Hunter 1-1-0 → 2-0-0 (R now stacked); Warlock 1-0-1 → 1-1-0 (WellPrepared has none). Mage / Enh Sham / Priest healer / Resto Druid / Fury Warrior distributions unchanged.
 - **Kres/Dissi ↔ Lenno/Mellymel verified split** (Bak vs R) per user request.
+- **Further post-build swap (user instruction)**: Tonsen (Hunter, Restaurant) ↔ OomToDoom (Mage Arcane, WellPrepared) — de-stacks Hunters on Restaurant. Hunter distribution 2-0-0 → 1-0-1 (R, WellPrepared); Mage distribution 1-0-1 → 2-0-0 (Restaurant stacked) as the destacking tradeoff. WellPrepared gains a Hunter where it previously had none.
+- **Final 3-way swap (user instruction)**: OomToDoom (R) → WellPrepared, Shapkica/Chkemi (Bakery) → Restaurant, Tonsen (WellPrepared) → Bakery. User accepts 2-Feral stack on Restaurant (Yxanb + Shapkica) as the tradeoff for breaking the Mage stack. Final per-team distributions — Hunter 1-1-0 (R, Bak); Mage 1-0-1 (R, WP); Druid Feral 2-0-0 (R, accepted); Warlock 1-1-0 (R, Bak); Enh Sham 1-1-1. All loot-conflict splits preserved (HFD pigeonhole cluster Gigakox + Roossy/Keatala on R unchanged).
 
 ## Loot conflicts
 
@@ -120,3 +122,5 @@
 - Jar (Bakery DPS) ↔ Jabbadhutt (WellPrepared DPS) per user instruction — Jar leads WellPrepared per "Jar/Ost/Kres should lead WellPrepared".
 - Officer-per-team rule (newly added to `rules/01-raid-compositions.md` → "Officer composition") satisfied: Restaurant = Roossy/Keatala; Bakery = Ostbirger + Kres/Dissi; WellPrepared = Jar.
 - HFD cluster moved Bak → R (Gigakox + Roossy/Keatala on R; pigeonhole-forced 4/3).
+- Tonsen (Restaurant DPS) ↔ OomToDoom (WellPrepared DPS) per user instruction — de-stacks Hunters on R (now 1: Roossy); Hunter distribution 2-0-0 → 1-0-1; Mage 1-0-1 → 2-0-0 (R stacked).
+- Final 3-way swap (user instruction): OomToDoom (R) → WP, Shapkica/Chkemi (Bak) → R, Tonsen (WP) → Bak. User accepts 2-Feral stack on R as tradeoff. Mage stack on R resolved; Hunter back to 1-1-0; Druid Feral 2-0-0 (R).

@@ -281,7 +281,7 @@ If the user combines a report with a directive (e.g., "X dropped, bring Y in" or
 
 Quick changes are not blindly applied. Before applying any slot-touching change, verify the resulting state against these hard rules. If a check fails, surface to the user before applying — they may **override** (recorded in `## Notes` as a "User overrides" bullet per the Notes section guidance) or **revise** the directive. Do not silently apply over a hard-rule failure.
 
-1. **Player existence and signup state.** Target player exists in `rules/04-players.md` (Officers, Core tanks, Regular players, or Former players sub-table) — or is a PUG (`PUG DPS` / `PUG Heal` per `rules/01-raid-compositions.md` → "Recording outside recruits (PUGs)"). For pre-raid changes, target player is in the record file's `## Signups` section; skip this signup check for post-raid records (the raid already played them).
+1. **Player existence and signup state.** Target player exists in `rules/04-players.md` (Officers, Core tanks, Regular players, or Former players sub-table) — or is a PUG (`PUG DPS` / `PUG Heal` per `rules/01-raid-compositions.md` → "Recording outside recruits (PUGs)"). For guild players, target is in the record file's `## Signups` section; if not, they are a post-build signup — invoke `Event: Post-build signup arrives` first to add them to Signups and increment derived files, then continue with the Quick directive. PUGs have no Signups requirement. Applies pre-raid and post-raid alike (a post-raid walk-in still requires Signups + derived propagation; that is exactly the failure mode the invariant in `## Roster update files` blocks).
 2. **No double-booking.** Target player isn't already in `## Actual Raid Rosters` (Karazhan) / `## Actual Roster` (25-man).
 3. **Hard composition rules and role coherence.** Post-change roster doesn't violate any hard rule from `rules/01-raid-compositions.md` — caps (e.g., "Resto Druid cap (hard rule)"), minimums (e.g., Karazhan "Tank composition" 2T per team; Gruul+Mag 3T/6H totals), or role coherence (a player can't fill a role their class can't perform; hybrid mainspec resolution per `rules/01-raid-compositions.md` → "Role placement: mainspec is authoritative").
 4. **Hard player constraints.** Post-change roster respects `rules/03-player-constraints.md` → "Availability constraints", "Must-be-together", "Must-not-be-together". For Karazhan team moves and swaps, also re-check "Needlist" same-team conflicts (block any new same-team competitor pairing unless competitor count strictly exceeds team count, in which case record as known-unavoidable in `## Notes`) and "Enchanters — spread across Karazhan raid teams" (no two enchanters on the same Karazhan team).
@@ -308,6 +308,8 @@ Canonical procedure for applying a roster-related change to the record file and 
 - `Event: Quick (ad-hoc) roster update` (direct application for user-initiated on-the-go, post-raid, or trivial-edit changes).
 
 > **Always walk the full update table below, even if only one file seems affected.** The common failure mode is updating the obvious derived file (usually `bench-history-tbc.md`) and forgetting to verify the others. Every roster change must be followed by an explicit pass over *every* derived file — including the ones that turn out to need no update. Stating "no update needed for X" is part of completing the task.
+
+> **Invariant: roster ↔ Signups consistency.** Every player in the record file's `## Actual Raid Rosters` / `## Actual Roster` / `## Bench` must also appear in `## Signups (from Discord)` (any sub-line: class lists, Tentative, Late) or in `## Withdrawn signups`. PUGs (`PUG DPS` / `PUG Heal`) are the only exception. After any roster change, verify: if a player is in roster or bench but absent from Signups and Withdrawn, they are a post-build signup whose Signups + derived-file updates have not been propagated — invoke `Event: Post-build signup arrives` and run its update mechanics before completing the change. Applies pre-raid and post-raid alike. The invariant is the single point that catches walk-ins, late adds, and any other path that bypasses the Post-build event.
 
 ### Update these files:
 
@@ -472,6 +474,7 @@ After any interaction, check:
 - [ ] New player seen? → `04-players.md`
 - [ ] Someone benched? → `bench-history-tbc.md`
 - [ ] Player withdrew a signup? → record file's `## Withdrawn signups` + decrement `signup-history-total.md` (and `signup-stats-tbc.md` if in-scope). See `Event: Player withdraws signup`.
+- [ ] Post-build signup (walk-in / late add who wasn't in original `## Signups`)? → Add to record file's `## Signups` sub-line + increment `signup-history-total.md` (and `signup-stats-tbc.md` if in-scope). See `Event: Post-build signup arrives`. Applies pre-raid and post-raid alike.
 - [ ] New record file written or edited? → `signup-history-total.md` (increment for every player in `## Signups`); also `signup-stats-tbc.md` if the record file is in scope (TBC-era)
 - [ ] Spec changed from previous? → `04-players.md`
 - [ ] Rule added/changed? → `rules/*.md`

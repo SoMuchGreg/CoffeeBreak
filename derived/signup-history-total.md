@@ -106,11 +106,11 @@ A player's sub-table here is determined solely by their top-level grouping in `r
 | 32 | Shapkica/Chkemi     | 3       |
 | 33 | Spot/Yorekbarn      | 3       |
 | 34 | Drillbabe           | 2       |
-| 35 | Lenno/Mellymel      | 2       |
-| 36 | Nemajumarad         | 2       |
-| 37 | Benglock            | 1       |
-| 38 | Boriest             | 1       |
-| 39 | Grundiger           | 1       |
+| 35 | Grundiger           | 2       |
+| 36 | Lenno/Mellymel      | 2       |
+| 37 | Nemajumarad         | 2       |
+| 38 | Benglock            | 1       |
+| 39 | Boriest             | 1       |
 
 ### Former members
 

@@ -81,11 +81,11 @@ For renames: update the `Player` cell in-place; re-sort only if the alphabetical
 | 32 | Jar                 | 2026-02-25   | 13      | 61.9%       | 0                         |
 | 33 | Boriest             | 2026-05-03   | 1       | 50.0%       | 3                         |
 | 34 | Dwarfytron          | 2026-03-22   | 7       | 50.0%       | 24                        |
-| 35 | Spot/Yorekbarn      | 2026-04-19   | 3       | 50.0%       | 3                         |
-| 36 | BestPractice        | 2026-02-22   | 11      | 47.8%       | 17                        |
-| 37 | Doughball           | 2026-03-11   | 6       | 35.3%       | 17                        |
-| 38 | Ōtsu                | 2026-03-04   | 5       | 26.3%       | 45                        |
-| 39 | Grundiger           | 2026-04-26   | 1       | 25.0%       | 10                        |
+| 35 | Grundiger           | 2026-04-26   | 2       | 50.0%       | 3                         |
+| 36 | Spot/Yorekbarn      | 2026-04-19   | 3       | 50.0%       | 3                         |
+| 37 | BestPractice        | 2026-02-22   | 11      | 47.8%       | 17                        |
+| 38 | Doughball           | 2026-03-11   | 6       | 35.3%       | 17                        |
+| 39 | Ōtsu                | 2026-03-04   | 5       | 26.3%       | 45                        |
 | 40 | Sjwammie            | 2026-03-11   | 4       | 23.5%       | 35                        |
 | 41 | CodeHunt/Rainbound  | 2026-03-25   | 3       | 23.1%       | 28                        |
 | 42 | Eselman             | 2026-03-22   | 3       | 21.4%       | 38                        |

@@ -2,13 +2,13 @@
 
 > A penultimate visit to Gruul/Mag while they're current content.
 
-## Signups (from Discord) — 26 (+2)
+## Signups (from Discord) — 27 (+2)
 
 **Tanks (3):** CptKavior, Ostbirger, Marino-Varthier
 **Warriors (4):** Verysadge, Gigakox, Dankyn, Nemajumarad
 **Druids (4):** Beaverfist, Gresac, Yxanb, Shapkica/Chkemi
 **Paladins (3):** Heligeman/Fugleman, Thordrel, McJudgin
-**Hunters (2):** Vaelruna, Roossy/Keatala
+**Hunters (3):** Vaelruna, Roossy/Keatala, Grundiger
 **Priests (3):** Kres/Dissi, Siljes/Ejlis, Boriest
 **Mages (2):** Greg (Ucannotpass), OomToDoom
 **Warlocks (1):** Jabbadhutt
