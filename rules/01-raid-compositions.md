@@ -19,13 +19,19 @@ Each player's role for a raid is their `Mainspec (role)` column in `rules/04-pla
    - Role(s) over target → **comp flex** (voluntary; "Handling role surpluses" below)
 4. **Apply remaining rules**: composition caps and selection priority/bench rotation (`rules/02-bench-rotation.md`), player constraints (`rules/03-player-constraints.md`), and (Gruul+Mag only) encounter assignments (`rules/05-encounter-assignments.md`).
 
-The only path from mainspec to offspec for a given raid is **comp flex** (voluntary). The signup icon does NOT trigger offspec play.
+The standard path from mainspec to offspec for a given raid is **comp flex** (voluntary; see below). The signup icon does NOT trigger offspec play. (For the rare user-designated exception, see *Rare contingency: explicit offspec signup* below.)
+
+**Rare contingency: explicit offspec signup.** The user may, in unusual cases, designate a specific signup as a deliberate **offspec signup** (e.g., "let X play their offspec for this raid"). When this happens, the player is placed in their offspec role for the raid; rotation treatment then follows `rules/02-bench-rotation.md` → "Mainspec priority within a pool (Mainspec-first rule)". Distinct from comp flex (see "Handling role shortages" / "Handling role surpluses" below). The default above applies otherwise — signup icons alone do not trigger this contingency; only explicit user designation does.
 
 ### Comp flex consent
 
 The decision is the player's. Never unilaterally reassign a player's spec from mainspec to offspec — always ask first. **A decline carries no bench penalty** — the decline itself never causes a bench. Move on and ask the next eligible dual-spec player.
 
 If no one accepts: for shortage trigger, the raid runs under-target on that role; for surplus trigger, see "Handling role surpluses" below.
+
+### Comp flex scope
+
+Comp flex addresses **real composition needs only**: a role under its target (shortage trigger) or over its target (surplus trigger), as defined in "Handling role shortages" and "Handling role surpluses" below. It is never triggered by bench-rotation considerations — a flex must not be used to vacate a roster slot so the previous occupant can be sent to the bench, nor to manufacture a bench in a different role group. (Bench-rotation scope: `rules/02-bench-rotation.md` → "Rotation scope: only oversubscribed role groups fire".)
 
 ### Handling role shortages
 

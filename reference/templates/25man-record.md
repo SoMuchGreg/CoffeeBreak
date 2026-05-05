@@ -118,10 +118,11 @@ rules/01-raid-compositions.md → "Handling role shortages
 ## Bench ({N})
 
 <!--
-Bench count = cumulative count for this player at this raid location, INCLUDING this raid. Per rules/02-bench-rotation.md, bench counts
-for Karazhan and each 25-man raid location are tracked independently.
+Bench count = the player's cumulative count for this location after this raid (per
+rules/02-bench-rotation.md → "Bench groups" and "Fairness requirement" for what's
+counted and how).
 
-Reason column — pick one of the valid labels from `rules/02-bench-rotation.md` →
+Reason column — pick one of the valid labels from rules/02-bench-rotation.md →
 "Bench reason vocabulary" (single source of truth). Do not invent new labels. If
 a benching case doesn't fit any defined label, flag it to the user before writing
 the record file.
