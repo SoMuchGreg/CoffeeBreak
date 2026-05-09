@@ -50,7 +50,8 @@ to bring the active roster down to 25.
 <!--
 Do NOT add an `**Absent ({N}):**` sub-line here — Discord "Absent" is ignored
 entirely, see reference/file-operations-manual.md → Step 2 of "New signup
-screenshot received". User-notified withdrawals go in ## Withdrawn signups below.
+screenshot received". Withdrawals go in ## Withdrawn signups; no-shows go
+in ## No-shows.
 -->
 
 **Header stats:** Melee {N}, Ranged {N}, Healers {N}    <!-- copy from screenshot header -->
@@ -58,9 +59,24 @@ screenshot received". User-notified withdrawals go in ## Withdrawn signups below
 ## Withdrawn signups ({N})                             <!-- delete whole section if no withdrawals -->
 
 <!--
-Players whose signup was rescinded for this raid. Canonical rule, trigger
-phrases, and update procedure: reference/file-operations-manual.md → "Event:
-Player withdraws signup".
+Players whose signup was rescinded for this raid (pre-raid notified
+cancellation). Canonical rule, trigger phrases, and update procedure:
+reference/file-operations-manual.md → "Event: Player withdraws signup".
+
+Sort alphabetically case-insensitive by canonical player name (rules/04-players.md).
+-->
+
+| Player |
+|--------|
+| ...    |
+
+## No-shows ({N})                                      <!-- delete whole section if no no-shows -->
+
+<!--
+Players who signed up but didn't attend the raid without notifying a
+cancellation beforehand. Canonical rule, trigger phrases, and update
+procedure: reference/file-operations-manual.md → "Event: Player is a
+no-show".
 
 Sort alphabetically case-insensitive by canonical player name (rules/04-players.md).
 -->

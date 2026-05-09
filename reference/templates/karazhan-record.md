@@ -42,7 +42,8 @@ algorithm.
 <!--
 Do NOT add an `**Absent ({N}):**` sub-line here — Discord "Absent" is ignored
 entirely, see reference/file-operations-manual.md → Step 2 of "New signup
-screenshot received". User-notified withdrawals go in ## Withdrawn signups below.
+screenshot received". Withdrawals go in ## Withdrawn signups; no-shows go
+in ## No-shows.
 -->
 
 **Header stats:** Melee {N}, Ranged {N}, Healers {N}    <!-- copy from screenshot header -->
@@ -50,9 +51,24 @@ screenshot received". User-notified withdrawals go in ## Withdrawn signups below
 ## Withdrawn signups ({N})                             <!-- delete whole section if no withdrawals -->
 
 <!--
-Players whose signup was rescinded for this raid. Canonical rule, trigger
-phrases, and update procedure: reference/file-operations-manual.md → "Event:
-Player withdraws signup".
+Players whose signup was rescinded for this raid (pre-raid notified
+cancellation). Canonical rule, trigger phrases, and update procedure:
+reference/file-operations-manual.md → "Event: Player withdraws signup".
+
+Sort alphabetically case-insensitive by canonical player name (rules/04-players.md).
+-->
+
+| Player |
+|--------|
+| ...    |
+
+## No-shows ({N})                                      <!-- delete whole section if no no-shows -->
+
+<!--
+Players who signed up but didn't attend the raid without notifying a
+cancellation beforehand. Canonical rule, trigger phrases, and update
+procedure: reference/file-operations-manual.md → "Event: Player is a
+no-show".
 
 Sort alphabetically case-insensitive by canonical player name (rules/04-players.md).
 -->
@@ -173,7 +189,8 @@ Per `rules/03-player-constraints.md` — list every item where 2+ competing play
 are in this raid (playing or benched). Skip items where fewer than 2 competitors
 signed up.
 
-Competitors column: player name + team abbreviation (R / Bak / BP) or (bench).
+Competitors column: player name + team abbreviation (R / Bak / WP) or (bench).
+Canonical abbreviations: Restaurant=R, Bakery=Bak, WellPrepared=WP (per `rules/01-raid-compositions.md` → "Team names"). Older record files may use `(BP)` for WellPrepared (drift from a prior team name); normalize on touch.
 Status: "✓ split" if all competitors are on different teams (or benched).
 "⚠️ X + Y" naming the pair(s) that share a team — these are loot-split violations.
 
@@ -186,7 +203,7 @@ this raid.
 
 | Item                        | Competitors                  | Status                       |
 |-----------------------------|------------------------------|------------------------------|
-| ...                         | ... (R), ... (BP)            | ✓ split / ⚠️ ... + ...       |
+| ...                         | ... (R), ... (WP)            | ✓ split / ⚠️ ... + ...       |
 
 ## Sanity check
 

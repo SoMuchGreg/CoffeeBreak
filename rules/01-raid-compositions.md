@@ -195,7 +195,7 @@ The number of Karazhan teams depends on the signup count. The default raid forma
 
 When outside recruitment is triggered (the 27–29 case above, or the 25–26 case if the user chooses option b), follow these conventions:
 
-- **Name in the roster table:** literally `PUG Heal` or `PUG DPS` — whichever role they fill. Do not use a real character name. PUGs have **no persistent identity** in this project.
+- **Name in the roster table:** literally `PUG Heal` or `PUG DPS` — whichever role they fill. Do not use a real character name. PUGs have **no persistent identity** in this project. The label `PUG Tank` is reserved for the rare case where the user explicitly overrides `Insufficient-tanks override` below; under standard rules, tanks are never PUGs.
 - **Do not add PUGs to `rules/04-players.md`.** The player roster tracks guild members only. PUGs never appear in `rules/04-players.md`.
 - **Do not count PUGs in `derived/bench-history-tbc.md`.** Fair bench rotation applies to guild members only. PUGs never appear in `derived/bench-history-tbc.md`.
 - **No cross-raid identity.** Even if the same real person returns as a PUG for multiple raids, record them as a fresh anonymous `PUG Heal` / `PUG DPS` entry each time. This project has no cross-raid knowledge of PUG identity and does not attempt to build one.
@@ -207,6 +207,8 @@ When outside recruitment is triggered (the 27–29 case above, or the 25–26 ca
 If the guild can't supply enough tanks to meet the hard requirements in "Tank composition" above for every team, **drop to 2 teams**. This override applies even at 27+ signups: outside-of-guild recruitment never covers tank slots.
 
 The comp flex rule from "General principles → Handling role shortages" must be exhausted **before** falling back: ask DPS-spec or Healer-spec players whose secondary spec is a tank spec (e.g., players whose `Offspec (role)` in `rules/04-players.md` lists a tank role) whether they would tank for this raid. Only if that doesn't yield enough tanks does the team count drop.
+
+**User override.** The user may explicitly choose to keep 3 teams with an outside recruit filling a tank slot rather than dropping to 2 teams. When this happens, record the recruit in the roster table as `PUG Tank` (matching the `PUG Heal` / `PUG DPS` naming convention from "Recording outside recruits (PUGs)" above) and document the override in the record file's `## Notes` under "User overrides" per the Notes guidance. The default behaviour above remains the rule; this override is per-raid and does not modify it.
 
 ## 25-man raids
 

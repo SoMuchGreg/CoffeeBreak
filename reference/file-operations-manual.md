@@ -139,7 +139,7 @@ The core build trigger — fires when the user explicitly asks for a roster (e.g
 
 ## Event: Player withdraws signup
 
-This event fires when a player rescinds a prior signup for a specific raid — see `config/project.md` → "Terminology" (Withdrawal) for the definition. The subsections below cover trigger phrases, the distinction from Discord "Absent", the per-file update table, and pre-build vs. post-build handling.
+This event fires when a player rescinds a prior signup for a specific raid **before raid time** — see `config/project.md` → "Terminology" (Withdrawal) for the definition. The subsections below cover trigger phrases, the distinction from Discord "Absent" and No-show, the per-file update table, and pre-build vs. post-build handling.
 
 ### Trigger phrases
 
@@ -147,18 +147,21 @@ The user signals a withdrawal with phrasings such as:
 
 - *"X dropped out"*
 - *"X withdrew"*
+- *"X canceled"* / *"X cancelled their signup"*
 - *"X can't make it"*
-- *"X will be absent"*
-- *"X didn't show up"*
-- *"X isn't coming"*
+- *"X won't be coming"* / *"X isn't coming"*
 - *"X pulled out"*
-- or any similar phrasing stating that a signed-up player will not attend the raid.
+- *"X told me they're out"*
+- or any similar phrasing stating that the player notified the cancellation in advance.
 
 Any user message matching these patterns is a withdrawal. If the target raid is ambiguous (no active record file being discussed, no date given), ask the user which raid before updating files.
 
-### Not the same as Discord "Absent"
+**Disambiguation from no-show.** Phrasings like *"X didn't show up"*, *"X never came"*, or *"X was absent"* are normally no-shows — see `Event: Player is a no-show` below. If the phrasing is ambiguous (e.g., "X is absent" used pre-raid), ask whether the player notified the cancellation. Notified = withdrawal; not notified = no-show.
 
-Discord "Absent" reactions are handled by Step 2 of "New signup screenshot received" — see that step for the canonical rule. The two share the "does not count as a signup" semantic, but only **Withdrawal leaves a trace** (recorded in `## Withdrawn signups` and decremented from derived signup stats if the increment already happened); Discord Absent leaves no record.
+### Not the same as No-show or Discord "Absent"
+
+- **No-show** — see `Event: Player is a no-show` (mechanically identical to withdrawal; the substantive difference between the two events lives in the terminology entries, not here).
+- **Discord "Absent" reaction** — ignored entirely (Step 2 of `New signup screenshot received`); leaves no record.
 
 ### Update these files:
 
@@ -181,6 +184,32 @@ Discord "Absent" reactions are handled by Step 2 of "New signup screenshot recei
   - **If the user only reported the drop without specifying the replacement,** invoke `Event: Full-roster recalculation` — Claude derives the replacement (and any ripple consequences) via clean-slate rebuild and sub-agent.
 - **Post-raid withdrawal (raid already happened), player was in `## Actual Raid Rosters`:** no recalculation — the raid already ran whatever composition actually played. Apply any remaining record-file and derived-file updates via `Event: Quick (ad-hoc) roster update`, which in turn goes through `## Roster update files`.
 - **Player was only in `## Bench`:** the table-above decrements complete the update; no further action.
+
+---
+
+## Event: Player is a no-show
+
+A player who signed up failed to attend the raid **without rescinding the signup beforehand** — see `config/project.md` → "Terminology" (No-show) for the definition. Distinct from Discord "Absent" (ignored entirely).
+
+### Trigger phrases
+
+- *"X is a no-show"* / *"X was a no-show"*
+- *"X didn't show up"* / *"X never showed"*
+- *"X never came"* / *"X never arrived"*
+- *"X ghosted"* / *"X ghosted us"*
+- *"X failed to attend"*
+- or any similar phrasing stating that a signed-up player was absent at raid time without prior notice.
+
+If the phrasing is ambiguous between withdrawal and no-show (e.g., *"X is absent"* used pre-raid), ask whether the player notified the cancellation. Notified = withdrawal; not notified = no-show.
+
+### Mechanics — defer to withdrawal
+
+A no-show is mechanically identical to a withdrawal in every respect: file updates, pre-/post-build sub-cases, and replacement-routing. Apply `Event: Player withdraws signup` → "Update these files" and "Two sub-cases" verbatim, with these substitutions:
+
+- The trace section is `## No-shows` (not `## Withdrawn signups`); its `({N})` header counts no-shows separately.
+- The `## Notes` bullet describes a no-show, not a withdrawal.
+
+There are no other differences. The substantive distinction between withdrawal and no-show is human-visible only (notified vs. unnotified absence) and lives in `config/project.md` → "Terminology"; this file does not restate it.
 
 ---
 
@@ -474,6 +503,7 @@ After any interaction, check:
 - [ ] New player seen? → `04-players.md`
 - [ ] Someone benched? → `bench-history-tbc.md`
 - [ ] Player withdrew a signup? → record file's `## Withdrawn signups` + decrement `signup-history-total.md` (and `signup-stats-tbc.md` if in-scope). See `Event: Player withdraws signup`.
+- [ ] Player no-showed (signed up, didn't cancel, didn't attend)? → same mechanics as withdrawal but trace in `## No-shows`. See `Event: Player is a no-show`.
 - [ ] Post-build signup (walk-in / late add who wasn't in original `## Signups`)? → Add to record file's `## Signups` sub-line + increment `signup-history-total.md` (and `signup-stats-tbc.md` if in-scope). See `Event: Post-build signup arrives`. Applies pre-raid and post-raid alike.
 - [ ] New record file written or edited? → `signup-history-total.md` (increment for every player in `## Signups`); also `signup-stats-tbc.md` if the record file is in scope (TBC-era)
 - [ ] Spec changed from previous? → `04-players.md`

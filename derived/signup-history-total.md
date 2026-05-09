@@ -65,15 +65,15 @@ A player's sub-table here is determined solely by their top-level grouping in `r
 
 | #  | Player              | Signups |
 |----|---------------------|---------|
-| 1  | Marino-Varthier     | 28      |
+| 1  | Marino-Varthier     | 27      |
 | 2  | Gigakox             | 12      |
 
 ### Current members
 
 | #  | Player              | Signups |
 |----|---------------------|---------|
-| 1  | Vaelruna            | 25      |
-| 2  | Gresac              | 24      |
+| 1  | Gresac              | 25      |
+| 2  | Vaelruna            | 25      |
 | 3  | Verysadge           | 24      |
 | 4  | Thordrel            | 23      |
 | 5  | OomToDoom           | 21      |
@@ -86,9 +86,9 @@ A player's sub-table here is determined solely by their top-level grouping in `r
 | 12 | Ebonybolt           | 14      |
 | 13 | Jabbadhutt          | 14      |
 | 14 | Pergatori           | 14      |
-| 15 | Tonsen              | 12      |
-| 16 | BestPractice        | 11      |
-| 17 | Heligeman/Fugleman  | 11      |
+| 15 | BestPractice        | 11      |
+| 16 | Heligeman/Fugleman  | 11      |
+| 17 | Tonsen              | 11      |
 | 18 | Lightweit           | 9       |
 | 19 | Siljes/Ejlis        | 9       |
 | 20 | CptKavior           | 8       |
@@ -108,9 +108,11 @@ A player's sub-table here is determined solely by their top-level grouping in `r
 | 34 | Drillbabe           | 2       |
 | 35 | Grundiger           | 2       |
 | 36 | Lenno/Mellymel      | 2       |
-| 37 | Nemajumarad         | 2       |
-| 38 | Benglock            | 1       |
-| 39 | Boriest             | 1       |
+| 37 | Benglock            | 1       |
+| 38 | Boriest             | 1       |
+| 39 | Gyrodorei           | 1       |
+| 40 | Nemajumarad         | 1       |
+| 41 | Tiinar              | 1       |
 
 ### Former members
 
