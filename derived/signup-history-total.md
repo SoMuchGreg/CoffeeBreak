@@ -55,64 +55,64 @@ A player's sub-table here is determined solely by their top-level grouping in `r
 
 | #  | Player              | Signups |
 |----|---------------------|---------|
-| 1  | Greg                | 27      |
-| 2  | Kres/Dissi          | 24      |
-| 3  | Roossy/Keatala      | 18      |
-| 4  | Jar                 | 17      |
-| 5  | Ostbirger           | 13      |
+| 1  | Greg                | 28      |
+| 2  | Kres/Dissi          | 25      |
+| 3  | Roossy/Keatala      | 19      |
+| 4  | Jar                 | 18      |
+| 5  | Ostbirger           | 14      |
 
 ### Core tanks
 
 | #  | Player              | Signups |
 |----|---------------------|---------|
-| 1  | Marino-Varthier     | 27      |
-| 2  | Gigakox             | 12      |
+| 1  | Marino-Varthier     | 28      |
+| 2  | Gigakox             | 13      |
 
 ### Current members
 
 | #  | Player              | Signups |
 |----|---------------------|---------|
-| 1  | Gresac              | 25      |
-| 2  | Vaelruna            | 25      |
-| 3  | Verysadge           | 24      |
-| 4  | Thordrel            | 23      |
+| 1  | Gresac              | 26      |
+| 2  | Vaelruna            | 26      |
+| 3  | Verysadge           | 25      |
+| 4  | Thordrel            | 24      |
 | 5  | OomToDoom           | 21      |
-| 6  | Yxanb               | 18      |
-| 7  | Dankyn              | 17      |
-| 8  | Lynelen             | 17      |
-| 9  | Beaverfist          | 16      |
-| 10 | Bergamotka/Tymoti   | 16      |
+| 6  | Yxanb               | 19      |
+| 7  | Dankyn              | 18      |
+| 8  | Lynelen             | 18      |
+| 9  | Beaverfist          | 17      |
+| 10 | Bergamotka/Tymoti   | 17      |
 | 11 | McHughes            | 16      |
-| 12 | Ebonybolt           | 14      |
-| 13 | Jabbadhutt          | 14      |
-| 14 | Pergatori           | 14      |
+| 12 | Ebonybolt           | 15      |
+| 13 | Jabbadhutt          | 15      |
+| 14 | Pergatori           | 15      |
 | 15 | BestPractice        | 11      |
 | 16 | Heligeman/Fugleman  | 11      |
 | 17 | Tonsen              | 11      |
-| 18 | Lightweit           | 9       |
-| 19 | Siljes/Ejlis        | 9       |
-| 20 | CptKavior           | 8       |
-| 21 | McJudgin            | 8       |
-| 22 | Dwarfytron          | 7       |
-| 23 | Leontes             | 7       |
+| 18 | Lightweit           | 10      |
+| 19 | Siljes/Ejlis        | 10      |
+| 20 | CptKavior           | 9       |
+| 21 | Leontes             | 8       |
+| 22 | McJudgin            | 8       |
+| 23 | Dwarfytron          | 7       |
 | 24 | Doughball           | 6       |
 | 25 | Ōtsu                | 5       |
 | 26 | Blacksi             | 4       |
-| 27 | Sjwammie            | 4       |
-| 28 | CodeHunt/Rainbound  | 3       |
-| 29 | Eselman             | 3       |
-| 30 | Lightstarr          | 3       |
-| 31 | Medianos            | 3       |
-| 32 | Shapkica/Chkemi     | 3       |
-| 33 | Spot/Yorekbarn      | 3       |
-| 34 | Drillbabe           | 2       |
-| 35 | Grundiger           | 2       |
-| 36 | Lenno/Mellymel      | 2       |
-| 37 | Benglock            | 1       |
-| 38 | Boriest             | 1       |
-| 39 | Gyrodorei           | 1       |
-| 40 | Nemajumarad         | 1       |
-| 41 | Tiinar              | 1       |
+| 27 | Shapkica/Chkemi     | 4       |
+| 28 | Sjwammie            | 4       |
+| 29 | CodeHunt/Rainbound  | 3       |
+| 30 | Eselman             | 3       |
+| 31 | Grundiger           | 3       |
+| 32 | Lightstarr          | 3       |
+| 33 | Medianos            | 3       |
+| 34 | Spot/Yorekbarn      | 3       |
+| 35 | Benglock            | 2       |
+| 36 | Boriest             | 2       |
+| 37 | Drillbabe           | 2       |
+| 38 | Lenno/Mellymel      | 2       |
+| 39 | Nemajumarad         | 2       |
+| 40 | Tiinar              | 2       |
+| 41 | Gyrodorei           | 1       |
 
 ### Former members
 

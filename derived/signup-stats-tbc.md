@@ -16,7 +16,7 @@ The rate is fully cumulative over the player's in-scope tenure — a miss from m
 
 ## Scope
 
-**In-scope:** TBC-era record files in `records/` — currently the 22 files from `2026-02-22-sun-karazhan.md` onward (Karazhan, Gruul's Lair, Magtheridon's Lair). If future TBC content (SSC, TK, MH, BT, Sunwell) gets raided, its record files fall in-scope automatically.
+**In-scope:** TBC-era record files in `records/` — currently the 24 files from `2026-02-22-sun-karazhan.md` onward (Karazhan, Gruul's Lair, Magtheridon's Lair). If future TBC content (SSC, TK, MH, BT, Sunwell) gets raided, its record files fall in-scope automatically.
 
 **Excluded:** the 7 old-world record files (`2026-01-*` and `2026-02-01-*`, ZG/AQ20/Ony) and any record file created for content outside TBC.
 
@@ -41,56 +41,56 @@ For renames: update the `Player` cell in-place; re-sort only if the alphabetical
 
 ## Computed as of
 
-**2026-05-06**
+**2026-05-10**
 
 ## Players — signup stats (TBC in-scope record files)
 
 | #  | Player              | First signup | Signups | Signup rate | Last signed up X days ago |
 |----|---------------------|--------------|---------|-------------|---------------------------|
-| 1  | Beaverfist          | 2026-03-15   | 16      | 100.0%      | 0                         |
-| 2  | Benglock            | 2026-05-06   | 1       | 100.0%      | 0                         |
-| 3  | Bergamotka/Tymoti   | 2026-03-15   | 16      | 100.0%      | 0                         |
-| 4  | Ebonybolt           | 2026-03-22   | 14      | 100.0%      | 0                         |
-| 5  | Gresac              | 2026-02-22   | 23      | 100.0%      | 0                         |
-| 6  | Gyrodorei           | 2026-05-06   | 1       | 100.0%      | 0                         |
-| 7  | Lightweit           | 2026-04-08   | 9       | 100.0%      | 0                         |
-| 8  | Lynelen             | 2026-03-11   | 17      | 100.0%      | 0                         |
-| 9  | Pergatori           | 2026-03-22   | 14      | 100.0%      | 0                         |
-| 10 | Roossy/Keatala      | 2026-03-15   | 16      | 100.0%      | 0                         |
-| 11 | Shapkica/Chkemi     | 2026-04-29   | 3       | 100.0%      | 0                         |
-| 12 | Tiinar              | 2026-05-06   | 1       | 100.0%      | 0                         |
-| 13 | Yxanb               | 2026-03-04   | 18      | 94.7%       | 0                         |
-| 14 | Ostbirger           | 2026-03-22   | 13      | 92.9%       | 0                         |
-| 15 | Gigakox             | 2026-03-25   | 12      | 92.3%       | 0                         |
-| 16 | Greg                | 2026-02-22   | 21      | 91.3%       | 3                         |
-| 17 | OomToDoom           | 2026-02-22   | 21      | 91.3%       | 0                         |
-| 18 | Thordrel            | 2026-02-22   | 21      | 91.3%       | 0                         |
-| 19 | Vaelruna            | 2026-02-22   | 21      | 91.3%       | 3                         |
-| 20 | Verysadge           | 2026-02-22   | 21      | 91.3%       | 0                         |
-| 21 | Dankyn              | 2026-03-04   | 17      | 89.5%       | 0                         |
-| 22 | CptKavior           | 2026-04-08   | 8       | 88.9%       | 0                         |
-| 23 | Jabbadhutt          | 2026-03-15   | 14      | 87.5%       | 0                         |
-| 24 | Marino-Varthier     | 2026-02-22   | 20      | 87.0%       | 3                         |
-| 25 | Kres/Dissi          | 2026-02-22   | 18      | 78.3%       | 0                         |
-| 26 | Leontes             | 2026-04-08   | 7       | 77.8%       | 0                         |
-| 27 | Heligeman/Fugleman  | 2026-04-05   | 7       | 70.0%       | 0                         |
-| 28 | Siljes/Ejlis        | 2026-03-25   | 9       | 69.2%       | 0                         |
-| 29 | Tonsen              | 2026-03-15   | 11      | 68.8%       | 7                         |
-| 30 | Lenno/Mellymel      | 2026-04-29   | 2       | 66.7%       | 0                         |
-| 31 | McJudgin            | 2026-03-29   | 8       | 66.7%       | 0                         |
-| 32 | McHughes            | 2026-02-22   | 15      | 65.2%       | 17                        |
-| 33 | Jar                 | 2026-02-25   | 13      | 61.9%       | 0                         |
-| 34 | Boriest             | 2026-05-03   | 1       | 50.0%       | 3                         |
-| 35 | Dwarfytron          | 2026-03-22   | 7       | 50.0%       | 24                        |
-| 36 | Grundiger           | 2026-04-26   | 2       | 50.0%       | 3                         |
-| 37 | Nemajumarad         | 2026-05-03   | 1       | 50.0%       | 3                         |
-| 38 | Spot/Yorekbarn      | 2026-04-19   | 3       | 50.0%       | 3                         |
-| 39 | BestPractice        | 2026-02-22   | 11      | 47.8%       | 17                        |
-| 40 | Doughball           | 2026-03-11   | 6       | 35.3%       | 17                        |
-| 41 | Ōtsu                | 2026-03-04   | 5       | 26.3%       | 45                        |
-| 42 | Sjwammie            | 2026-03-11   | 4       | 23.5%       | 35                        |
-| 43 | CodeHunt/Rainbound  | 2026-03-25   | 3       | 23.1%       | 28                        |
-| 44 | Eselman             | 2026-03-22   | 3       | 21.4%       | 38                        |
-| 45 | Lightstarr          | 2026-03-18   | 3       | 20.0%       | 28                        |
-| 46 | Drillbabe           | 2026-03-04   | 2       | 10.5%       | 38                        |
-| 47 | Blacksi             | 2026-02-22   | 1       | 4.3%        | 73                        |
+| 1  | Beaverfist          | 2026-03-15   | 17      | 100.0%      | 0                         |
+| 2  | Benglock            | 2026-05-06   | 2       | 100.0%      | 0                         |
+| 3  | Bergamotka/Tymoti   | 2026-03-15   | 17      | 100.0%      | 0                         |
+| 4  | Ebonybolt           | 2026-03-22   | 15      | 100.0%      | 0                         |
+| 5  | Gresac              | 2026-02-22   | 24      | 100.0%      | 0                         |
+| 6  | Lightweit           | 2026-04-08   | 10      | 100.0%      | 0                         |
+| 7  | Lynelen             | 2026-03-11   | 18      | 100.0%      | 0                         |
+| 8  | Pergatori           | 2026-03-22   | 15      | 100.0%      | 0                         |
+| 9  | Roossy/Keatala      | 2026-03-15   | 17      | 100.0%      | 0                         |
+| 10 | Shapkica/Chkemi     | 2026-04-29   | 4       | 100.0%      | 0                         |
+| 11 | Tiinar              | 2026-05-06   | 2       | 100.0%      | 0                         |
+| 12 | Yxanb               | 2026-03-04   | 19      | 95.0%       | 0                         |
+| 13 | Ostbirger           | 2026-03-22   | 14      | 93.3%       | 0                         |
+| 14 | Gigakox             | 2026-03-25   | 13      | 92.9%       | 0                         |
+| 15 | Greg                | 2026-02-22   | 22      | 91.7%       | 0                         |
+| 16 | Thordrel            | 2026-02-22   | 22      | 91.7%       | 0                         |
+| 17 | Vaelruna            | 2026-02-22   | 22      | 91.7%       | 0                         |
+| 18 | Verysadge           | 2026-02-22   | 22      | 91.7%       | 0                         |
+| 19 | CptKavior           | 2026-04-08   | 9       | 90.0%       | 0                         |
+| 20 | Dankyn              | 2026-03-04   | 18      | 90.0%       | 0                         |
+| 21 | Jabbadhutt          | 2026-03-15   | 15      | 88.2%       | 0                         |
+| 22 | Marino-Varthier     | 2026-02-22   | 21      | 87.5%       | 0                         |
+| 23 | OomToDoom           | 2026-02-22   | 21      | 87.5%       | 4                         |
+| 24 | Leontes             | 2026-04-08   | 8       | 80.0%       | 0                         |
+| 25 | Kres/Dissi          | 2026-02-22   | 19      | 79.2%       | 0                         |
+| 26 | Siljes/Ejlis        | 2026-03-25   | 10      | 71.4%       | 0                         |
+| 27 | Boriest             | 2026-05-03   | 2       | 66.7%       | 0                         |
+| 28 | Nemajumarad         | 2026-05-03   | 2       | 66.7%       | 0                         |
+| 29 | Tonsen              | 2026-03-15   | 11      | 64.7%       | 11                        |
+| 30 | Heligeman/Fugleman  | 2026-04-05   | 7       | 63.6%       | 4                         |
+| 31 | Jar                 | 2026-02-25   | 14      | 63.6%       | 0                         |
+| 32 | McHughes            | 2026-02-22   | 15      | 62.5%       | 21                        |
+| 33 | McJudgin            | 2026-03-29   | 8       | 61.5%       | 4                         |
+| 34 | Grundiger           | 2026-04-26   | 3       | 60.0%       | 0                         |
+| 35 | Gyrodorei           | 2026-05-06   | 1       | 50.0%       | 4                         |
+| 36 | Lenno/Mellymel      | 2026-04-29   | 2       | 50.0%       | 4                         |
+| 37 | Dwarfytron          | 2026-03-22   | 7       | 46.7%       | 28                        |
+| 38 | BestPractice        | 2026-02-22   | 11      | 45.8%       | 21                        |
+| 39 | Spot/Yorekbarn      | 2026-04-19   | 3       | 42.9%       | 7                         |
+| 40 | Doughball           | 2026-03-11   | 6       | 33.3%       | 21                        |
+| 41 | Ōtsu                | 2026-03-04   | 5       | 25.0%       | 49                        |
+| 42 | Sjwammie            | 2026-03-11   | 4       | 22.2%       | 39                        |
+| 43 | CodeHunt/Rainbound  | 2026-03-25   | 3       | 21.4%       | 32                        |
+| 44 | Eselman             | 2026-03-22   | 3       | 20.0%       | 42                        |
+| 45 | Lightstarr          | 2026-03-18   | 3       | 18.8%       | 32                        |
+| 46 | Drillbabe           | 2026-03-04   | 2       | 10.0%       | 42                        |
+| 47 | Blacksi             | 2026-02-22   | 1       | 4.2%        | 77                        |

@@ -19,6 +19,7 @@ Bench-group structure, comparison rules, respec/priority-change row moves, and m
 | Player              | Karazhan | Karazhan dates | Gruul+Mag | Gruul+Mag dates | Total |
 |---------------------|----------|----------------|-----------|-----------------|-------|
 | Greg                | 1        | 29.04          | 1         | 03.05           | 2     |
+| Kres/Dissi          | 0        | —              | 1         | 10.05           | 1     |
 | Roossy/Keatala      | 1        | 18.03          | 2         | 25.03, 12.04    | 3     |
 
 All other priority-1 DPS/tank-main players: 0 benches at every location.
@@ -39,11 +40,14 @@ All priority-1 healer-main players: 0 benches at every location. *(No priority-1
 | Dankyn              | 1        | 29.04          | 0         | —               | 1     |
 | Dwarfytron          | 1        | 01.04          | 0         | —               | 1     |
 | Ebonybolt           | 0        | —              | 1         | 03.05           | 1     |
+| Gresac              | 2        | 22.04, 29.04   | 1         | 25.03           | 3     |
 | Leontes             | 1        | 08.04          | 0         | —               | 1     |
 | Lynelen             | 0        | —              | 1         | 15.04           | 1     |
 | McHughes            | 1        | 18.03          | 0         | —               | 1     |
 | McJudgin            | 1        | 08.04          | 0         | —               | 1     |
+| Nemajumarad         | 0        | —              | 1         | 10.05           | 1     |
 | OomToDoom           | 0        | —              | 1         | 12.04           | 1     |
+| Shapkica/Chkemi     | 0        | —              | 1         | 10.05           | 1     |
 | Spot/Yorekbarn      | 0        | —              | 1         | 03.05           | 1     |
 | Tonsen              | 1        | 11.03          | 0         | —               | 1     |
 | Verysadge           | 0        | —              | 1         | 15.04           | 1     |
@@ -56,7 +60,6 @@ All other priority-2 DPS/tank-main players: 0 benches at every location.
 | Player              | Karazhan | Karazhan dates | Gruul+Mag | Gruul+Mag dates | Total |
 |---------------------|----------|----------------|-----------|-----------------|-------|
 | Beaverfist          | 1        | 18.03          | 1         | 26.04           | 2     |
-| Gresac              | 2        | 22.04, 29.04   | 1         | 25.03           | 3     |
 | Heligeman/Fugleman  | 0        | —              | 1         | 12.04           | 1     |
 | Thordrel            | 1        | 29.04          | 0         | —               | 1     |
 
