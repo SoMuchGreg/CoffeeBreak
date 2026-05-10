@@ -4,7 +4,7 @@
 
 **Tanks (2):** CptKavior, Ostbirger
 **Warriors (4):** Verysadge, Dankyn, Gigakox, Spot/Yorekbarn
-**Druids (5):** Gresac, Roossy/Keatala, Yxanb, Jar, Beaverfist
+**Druids (5):** Gresac/Younea, Roossy/Keatala, Yxanb, Jar, Beaverfist
 **Paladins (2):** Leontes, Thordrel
 **Hunters (3):** Vaelruna, Tonsen, Grundiger
 **Priests (3):** Kres/Dissi, Siljes/Ejlis, Lightweit
@@ -37,7 +37,7 @@
 
 | Player         | Class          |
 |----------------|----------------|
-| Gresac         | Druid (Resto)  |
+| Gresac/Younea  | Druid (Resto)  |
 | Roossy/Keatala | Druid (Resto)  |
 | Thordrel       | Paladin (Holy) |
 | Siljes/Ejlis   | Priest (Holy)  |
@@ -92,7 +92,7 @@
 | Olm Tank Healer      | Pergatori              |                                    |
 | Blindeye Tank        | Gigakox                |                                    |
 | Blindeye Tank MD     | Vaelruna               |                                    |
-| Blindeye Tank Healer | Gresac                 |                                    |
+| Blindeye Tank Healer | Gresac/Younea          |                                    |
 
 ### Magtheridon — Cube Clickers
 

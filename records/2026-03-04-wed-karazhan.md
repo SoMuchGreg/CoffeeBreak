@@ -6,7 +6,7 @@
 
 **Tanks (4):** Mirohl, Dankyn, Marino-Varthier, blep
 **Warriors (1):** Verysadge
-**Druids (3):** Gresac, Yxanb, Jar
+**Druids (3):** Gresac/Younea, Yxanb, Jar
 **Paladins (1):** Thordrel
 **Rogues (2):** Glaivemaster Baebay, Drillbabe
 **Hunters (2):** Vaelruna, Rhoator

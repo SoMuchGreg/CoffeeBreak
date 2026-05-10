@@ -51,7 +51,7 @@ For renames: update the `Player` cell in-place; re-sort only if the alphabetical
 | 2  | Benglock            | 2026-05-06   | 2       | 100.0%      | 0                         |
 | 3  | Bergamotka/Tymoti   | 2026-03-15   | 17      | 100.0%      | 0                         |
 | 4  | Ebonybolt           | 2026-03-22   | 15      | 100.0%      | 0                         |
-| 5  | Gresac              | 2026-02-22   | 24      | 100.0%      | 0                         |
+| 5  | Gresac/Younea       | 2026-02-22   | 24      | 100.0%      | 0                         |
 | 6  | Lightweit           | 2026-04-08   | 10      | 100.0%      | 0                         |
 | 7  | Lynelen             | 2026-03-11   | 18      | 100.0%      | 0                         |
 | 8  | Pergatori           | 2026-03-22   | 15      | 100.0%      | 0                         |

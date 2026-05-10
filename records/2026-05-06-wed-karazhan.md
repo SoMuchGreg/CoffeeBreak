@@ -11,9 +11,9 @@
 **Priests (3):** Kres/Dissi, Siljes/Ejlis, Lightweit
 **Mages (2):** Lenno/Mellymel, OomToDoom
 **Warlocks (2):** Benglock, Jabbadhutt
-**Shamans (5):** Lynelen, Bergamotka/Tymoti, Ebonybolt, Pergatori, Gresac
+**Shamans (5):** Lynelen, Bergamotka/Tymoti, Ebonybolt, Pergatori, Gresac/Younea
 
-**Header stats:** Tanks 5, Melee 9, Ranged 8, Healers 6   <!-- from original screenshot; 3 post-build signups (Gyrodorei, Tiinar, Gresac via Younea alt), 2 withdrawals (Tonsen, Marino-Varthier), and 1 no-show (Nemajumarad) not reflected -->
+**Header stats:** Tanks 5, Melee 9, Ranged 8, Healers 6   <!-- from original screenshot; 3 post-build signups (Gyrodorei, Tiinar, Gresac/Younea via Younea alt), 2 withdrawals (Tonsen, Marino-Varthier), and 1 no-show (Nemajumarad) not reflected -->
 
 ## Withdrawn signups (2)
 
@@ -56,7 +56,7 @@
 | Dankyn              | DPS    | Warrior (Fury)       |
 | Kres/Dissi          | DPS    | Priest (Shadow)      |
 | Jabbadhutt          | DPS    | Warlock              |
-| Gresac              | DPS    | Shaman (Elemental)   |
+| Gresac/Younea       | DPS    | Shaman (Elemental)   |
 | Pergatori           | Healer | Shaman (Resto)       |
 | Heligeman/Fugleman  | Healer | Paladin (Holy)       |
 
@@ -106,14 +106,14 @@
 - **Further post-build swap (user instruction)**: Tonsen (Hunter, Restaurant) ↔ OomToDoom (Mage Arcane, WellPrepared) — de-stacks Hunters on Restaurant. Hunter distribution 2-0-0 → 1-0-1 (R, WellPrepared); Mage distribution 1-0-1 → 2-0-0 (Restaurant stacked) as the destacking tradeoff. WellPrepared gains a Hunter where it previously had none.
 - **Final 3-way swap (user instruction)**: OomToDoom (R) → WellPrepared, Shapkica/Chkemi (Bakery) → Restaurant, Tonsen (WellPrepared) → Bakery. User accepts 2-Feral stack on Restaurant (Yxanb + Shapkica) as the tradeoff for breaking the Mage stack. Final per-team distributions — Hunter 1-1-0 (R, Bak); Mage 1-0-1 (R, WP); Druid Feral 2-0-0 (R, accepted); Warlock 1-1-0 (R, Bak); Enh Sham 1-1-1. All loot-conflict splits preserved (HFD pigeonhole cluster Gigakox + Roossy/Keatala on R unchanged).
 - **Two post-build withdrawals** (per `Event: Player withdraws signup`):
-  - **Tonsen** — Bakery DPS slot taken by Gresac (post-build signup via Younea Shaman alt — see below).
+  - **Tonsen** — Bakery DPS slot taken by Gresac/Younea (post-build signup via Younea Shaman alt — see below).
   - **Marino-Varthier** — Restaurant tank pair reorganized per `rules/01-raid-compositions.md` → "Tank composition": Shapkica/Chkemi flexed DPS → Tank (OT), Gigakox shifted OT → MT. Restaurant runs without a Paladin tank — `rules/01-raid-compositions.md` → "Paladin tank shortage exemption" applies. Nemajumarad's earlier Tier 1 flex row removed from `## Comp flex applied` after his no-show.
 - **One no-show** (per `Event: Player is a no-show`):
   - **Nemajumarad (WellPrepared OT)** — slot taken by `PUG Tank`. **User override** of `rules/01-raid-compositions.md` → "Insufficient-tanks override" — user accepted running 3 teams with a PUG tank rather than dropping to 2.
 - **Three post-build signups** (`Event: Post-build signup arrives`):
   - **Gyrodorei first appearance** — Druid, mainspec DPS (Feral), priority 2. Added to `rules/04-players.md`. Slotted Restaurant DPS.
   - **Tiinar first appearance** — Rogue, mainspec DPS (Combat), priority 2. Added to `rules/04-players.md`. Slotted Restaurant DPS.
-  - **Gresac played as alt Younea** (Shaman Elemental DPS) per `rules/01-raid-compositions.md` → "Alts" — main pool (Druid Healer) is over-target with 6 healers already; alt Younea fits as DPS. Slotted Bakery DPS replacing Tonsen's vacated slot. Younea added to `rules/04-players.md` → Alt characters sub-table.
+  - **Gresac/Younea played as alt Younea** (Shaman Elemental DPS) per `rules/01-raid-compositions.md` → "Alts" — main pool (Druid Healer) is over-target with 6 healers already; alt Younea fits as DPS. Slotted Bakery DPS replacing Tonsen's vacated slot. Younea added to `rules/04-players.md` → Alt characters sub-table.
 - **Yxanb moved Restaurant → WellPrepared**, filling one of the original 2 PUG DPS slots; the other PUG DPS remains.
 - **Loot conflicts**: Fiery Warhorse's Reins now has only Jar in raid (Marino-Varthier withdrew, BestPractice not signed up) — removed from `## Loot conflicts` per the 2+ competitor rule.
 
@@ -152,6 +152,6 @@
   - Tonsen withdrew (`Event: Player withdraws signup`) — vacated Bakery DPS.
   - Marino-Varthier withdrew (`Event: Player withdraws signup`) — vacated Restaurant MT; replaced via Shapkica/Chkemi flexed to OT (Tier 1 Eager), Gigakox promoted OT → MT (Feral can only off-tank). Restaurant now has no Paladin tank — Paladin tank shortage exemption applies.
   - Nemajumarad no-show (`Event: Player is a no-show`) — vacated WellPrepared OT; replaced by `PUG Tank`. **User override** of `rules/01-raid-compositions.md` → "Insufficient-tanks override".
-  - Three post-build signups (`Event: Post-build signup arrives`): Gyrodorei (new Druid Feral, Restaurant DPS), Tiinar (new Rogue, Restaurant DPS), Gresac via Younea Shaman alt (Bakery DPS, replacing Tonsen).
+  - Three post-build signups (`Event: Post-build signup arrives`): Gyrodorei (new Druid Feral, Restaurant DPS), Tiinar (new Rogue, Restaurant DPS), Gresac/Younea via Younea Shaman alt (Bakery DPS, replacing Tonsen).
   - Yxanb moved Restaurant → WellPrepared, filling one of the original PUG DPS slots; the other PUG DPS remains.
   - Comp flex: Nemajumarad's row removed (flex didn't materialize after no-show); Shapkica/Chkemi added (Tier 1 Eager, Tank Feral covering Varthier).

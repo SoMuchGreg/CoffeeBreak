@@ -72,7 +72,7 @@ A player's sub-table here is determined solely by their top-level grouping in `r
 
 | #  | Player              | Signups |
 |----|---------------------|---------|
-| 1  | Gresac              | 26      |
+| 1  | Gresac/Younea       | 26      |
 | 2  | Vaelruna            | 26      |
 | 3  | Verysadge           | 25      |
 | 4  | Thordrel            | 24      |

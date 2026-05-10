@@ -19,7 +19,7 @@ A 5-mini-boss council fight. Every mini-boss needs a dedicated tank/handler plus
 | Maulgar Tank         | **Must be a core tank**                            | 1     | See *Maulgar Tank assignment* below.                                                                  |
 | Maulgar Tank MD      | **Must be a Hunter**                               | 1     | Initial-threat Misdirect at pull. See *Hunter Misdirect (MD) assignment* below for fill conditions.                                              |
 | Maulgar Healer       | Any healer                                         | 2     | Always 2 healers. See *Maulgar Healer assignment* below.                                              |
-| Mage Tank (Krosh)    | **Must be a Mage** (Spellsteals Krosh's Spell Shield) | 1     | Very strong preference: **OomToDoom**.                                                                |
+| Mage Tank (Krosh)    | **Must be a Mage** (Spellsteals Krosh's Spell Shield) | 1     | Very strong preference: **Greg**.                                                                     |
 | Mage Tank Healer     | Any healer                                         | 1     |                                                                                                       |
 | Kiggler Tank         | **Balance Druid** (preferred); **else 2 Ranged DPS** | 1 or 2 | Class-based strong preference — not a named player. See *Kiggler Tank assignment* below for the 1-or-2 decision tree. |
 | Kiggler Tank Healer  | Any healer                                         | 1     | One healer covers the Kiggler tank(s) regardless of whether it's a solo Balance druid or a 2-ranged-DPS pair. |
@@ -63,13 +63,13 @@ Run this for each role in the Maulgar table (in table order), then for each Magt
 1. **Filter by hard constraint.** Drop roster members who don't meet the role's eligibility requirement per the Encounter roles table (e.g., Mage for Krosh Mage Tank, Warlock for Felhunter Subjugate, core tank for Maulgar Tank, Hunter for the MD slots). For roles with no requirement listed, all non-already-assigned roster members are eligible.
 2. **Apply continuity preference.** Among the remaining candidates, find those who have held this exact role in prior raids (see *Continuity data sources* below). If one or more is in the roster, pick the **most recent** holder. Tiebreak by total number of prior holds (more = preferred), then alphabetical by canonical player name per `rules/04-players.md`.
 3. **Apply explicit strong preferences** when step 2 produces no candidate:
-   - **Mage Tank** → OomToDoom if in the roster. (Named-player preference.)
+   - **Mage Tank** → Greg if in the roster. (Named-player preference.)
    - **Kiggler Tank** → handled separately by *Kiggler Tank assignment* below — class-based, not named.
 4. **Otherwise pick any eligible roster member.** No further heuristic — the user may override when the roster is presented.
 5. **Flag to the user** when any of the following applies:
    - A hard constraint cannot be satisfied (e.g., no Mage in the roster for Krosh; no Warlock for Subjugate; fewer than 2 Healers for Maulgar Healer).
    - The continuity candidate is withdrawn or benched but a weaker-continuity candidate is available.
-   - The named-player preference (OomToDoom for Mage Tank) is in the roster but a stronger continuity claim from another player pre-empted them — the user may want to reconsider.
+   - The named-player preference (Greg for Mage Tank) is in the roster but a stronger continuity claim from another player pre-empted them — the user may want to reconsider.
    - Kiggler Tank fell back to 2 Ranged DPS because no Balance Druid is in the roster, **and** a Balance druid is signed up but benched — the user may want to swap them in for Kiggler.
 
 ### Maulgar Tank assignment
@@ -177,7 +177,7 @@ If the user later wants to track any of the above, add the role to the canonical
 ## Interactions with other rules
 
 - **Encounter assignment never changes `## Actual Roster`.** A Healer assigned to "Mage Tank Healer" is still a Healer on the roster sheet; a Warlock assigned to "Felhunter Subjugate" is still a DPS. The assignment records what they do *during* the fight, not *what they are* in the roster.
-- **Hard constraints always win over continuity.** Class/spec requirements (e.g., Krosh Mage Tank requires a Mage; Felhunter Subjugate requires a Warlock; the MD slots require Hunters; the South cube requires a Warlock or Hunter), the Maulgar Tank core-tank requirement, the cube reservation that keeps one core tank free for Magtheridon MT, the leftover-core-tanks-to-NE/NW restriction, and the raid leader exclusion all filter the candidate pool at step 1 — continuity applies only within the surviving pool. Example: if OomToDoom doesn't sign up, Mage Tank goes to another Mage in the roster, never to a non-Mage continuity holder.
+- **Hard constraints always win over continuity.** Class/spec requirements (e.g., Krosh Mage Tank requires a Mage; Felhunter Subjugate requires a Warlock; the MD slots require Hunters; the South cube requires a Warlock or Hunter), the Maulgar Tank core-tank requirement, the cube reservation that keeps one core tank free for Magtheridon MT, the leftover-core-tanks-to-NE/NW restriction, and the raid leader exclusion all filter the candidate pool at step 1 — continuity applies only within the surviving pool. Example: if Greg doesn't sign up, Mage Tank goes to another Mage in the roster, never to a non-Mage continuity holder.
 - **Bench rotation takes precedence.** If a past role-holder is benched, withdrawn, or absent, continuity for that role is unsatisfiable this raid — fall through to the next algorithm step. Never un-bench a player to preserve continuity; `rules/02-bench-rotation.md` always wins.
 - **Former-guild players** (`rules/04-players.md` → Former players table) contribute to the historical continuity record but are filtered out at step 1 of every assignment — they are not eligible for any current roster.
 - **Record-file update procedure** — where and how encounter assignments are written into the record file lives in `reference/file-operations-manual.md` → Step 3 and Step 4 of "Event: New signup screenshot received", and the structural template at `reference/templates/gruul-mag-record.md`.

@@ -6,7 +6,7 @@
 
 **Tanks (4):** Mirohl, Doughball, Marino-Varthier, Lightstarr
 **Warriors (3):** Verysadge, Dankyn, Ayujinzhu
-**Druids (5):** Yxanb, Gresac, Jar, Beaverfist, Roossy/Keatala
+**Druids (5):** Yxanb, Gresac/Younea, Jar, Beaverfist, Roossy/Keatala
 **Paladins (2):** Thordrel, Sjwammie
 **Hunters (2):** Rhoator, Vaelruna
 **Mages (1):** Greg/Ucannotpass

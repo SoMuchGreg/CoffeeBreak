@@ -4,7 +4,7 @@
 
 **Tanks (6):** Mirohl, Gigakox, CptKavior, Doughball, Ostbirger, Marino-Varthier
 **Warriors (3):** Verysadge, Yorekbarn, Dankyn
-**Druids (4):** Gresac, Roossy/Keatala, Beaverfist, Yxanb
+**Druids (4):** Gresac/Younea, Roossy/Keatala, Beaverfist, Yxanb
 **Paladins (3):** Leontes, Heligeman/Fugleman, Thordrel
 **Rogues (1):** Glaivemaster Baebay
 **Hunters (2):** Tonsen, Vaelruna
@@ -37,7 +37,7 @@
 | BestPractice        | DPS    | Warlock              |
 | Pergatori           | DPS    | Shaman (Elemental)   |
 | Lightweit           | Healer | Priest (Holy)        |
-| Gresac              | Healer | Druid (Resto)        |
+| Gresac/Younea       | Healer | Druid (Resto)        |
 
 ### Team Bakery
 
@@ -93,7 +93,7 @@ Per `rules/03-player-constraints.md` — items where 2+ competing players are in
 | Helm of the Fallen Champion | Bergamotka (R), Leontes (BG), Lynelen (BG)                   | ⚠️ Leontes + Lynelen         |
 | Helm of the Fallen Defender | Mirohl (R), Beaverfist (Bak), Gigakox (BG)                   | ✓ split                      |
 | King's Defender             | CptKavior (R), Doughball (Bak)                               | ✓ split                      |
-| Light's Justice             | Gresac (R), Siljes/Ejlis (Bak), Thordrel (BG)                | ✓ split                      |
+| Light's Justice             | Gresac/Younea (R), Siljes/Ejlis (Bak), Thordrel (BG)                | ✓ split                      |
 | Nathrezim Mindblade         | Pergatori (R), Beaverfist (Bak)                              | ✓ split                      |
 | Ring of a Thousand Marks    | Verysadge (R), Yorekbarn (Bak), Leontes (BG)                 | ✓ split                      |
 | Skulker's Greaves           | Yxanb (R), Dankyn (Bak), Gigakox (BG), Vaelruna (BG)         | ⚠️ Gigakox + Vaelruna        |

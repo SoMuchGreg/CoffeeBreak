@@ -6,7 +6,7 @@
 
 **Tanks (4):** Mirohl, Buns/Sourbuns, Venguard, Ryro
 **Warriors (2):** Verysadge, Fredfull
-**Druids (3):** Kryxs, Gresac, Zemp
+**Druids (3):** Kryxs, Gresac/Younea, Zemp
 **Paladins (2):** Thordrel, Calendril
 **Hunters (3):** Vaelruna, Lixly, Rhoator
 **Priests (4):** Kres/Dissi, Aserrah, Bhandage, Sickdeer
@@ -27,7 +27,7 @@
 | Maulgar Healer       | Thordrel, Calendril |                 |
 | Mage Tank (Krosh)    | OomToDoom           |                 |
 | Mage Tank Healer     | Bhandage            |                 |
-| Kiggler Tank         | Gresac              | Rhoator MD      |
+| Kiggler Tank         | Gresac/Younea       | Rhoator MD      |
 | Kiggler Tank Healer  | Aserrah             |                 |
 | Olm Tank             | Ryro                | until felhunter |
 | Felhunter Subjugate  | Mairen/Zorÿa        |                 |
@@ -41,7 +41,7 @@
 |-------------|----------|---------------|
 | South       | Star     | Buns/Sourbuns |
 | South East  | Triangle | Mairen/Zorÿa  |
-| South West  | Circle   | Gresac        |
+| South West  | Circle   | Gresac/Younea |
 | North East  | Square   | Greg          |
 | North West  | Diamond  | Ryro          |
 

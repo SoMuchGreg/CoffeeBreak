@@ -6,7 +6,7 @@
 
 **Tanks (3):** Mirohl, Marino-Varthier, Ostbirger
 **Warriors (2):** Verysadge, Dankyn
-**Druids (5):** Eselman, Gresac, Roossy/Keatala, Beaverfist, Yxanb
+**Druids (5):** Eselman, Gresac/Younea, Roossy/Keatala, Beaverfist, Yxanb
 **Paladins (1):** Rasputin
 **Hunters (3):** Rhoator, Tonsen, Dwarfytron
 **Priests (2):** Kres/Dissi, Bombzor
@@ -29,7 +29,7 @@
 | Mage Tank (Krosh)    | OomToDoom            |                                           |
 | Mage Tank Healer     | Kres/Dissi           |                                           |
 | Kiggler Tank         | Tonsen, Greg         | 2 ranged DPS (no Balance druid available) |
-| Kiggler Tank Healer  | Gresac               |                                           |
+| Kiggler Tank Healer  | Gresac/Younea        |                                           |
 | Olm Tank             | Eselman              | until felhunter                           |
 | Felhunter Subjugate  | Ōtsu, McHughes       |                                           |
 | Olm Tank Healer      | Bombzor              |                                           |

@@ -6,7 +6,7 @@
 
 **Tanks (3):** Mirohl, Marino-Varthier, Zemp
 **Warriors (1):** Mairen/Zorÿa
-**Druids (2):** Jar, Gresac
+**Druids (2):** Jar, Gresac/Younea
 **Paladins (2):** Stonebelly, Heligeman/Fugleman
 **Rogues (1):** Glaivemaster Baebay
 **Hunters (2):** Rhoator, Aenra

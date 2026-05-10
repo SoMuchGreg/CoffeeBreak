@@ -6,7 +6,7 @@
 
 **Tanks (4):** Mirohl, Ryro, Marino-Varthier, Venguard
 **Warriors (2):** Fredfull, Verysadge
-**Druids (3):** Gresac, Zemp, Kryxs
+**Druids (3):** Gresac/Younea, Zemp, Kryxs
 **Paladins (1):** Thordrel
 **Rogues (1):** Glaivemaster Baebay
 **Hunters (1):** Vaelruna

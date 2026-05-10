@@ -4,7 +4,7 @@
 
 **Tanks (3):** Mirohl, Ostbirger, Marino-Varthier
 **Warrior (1):** Dankyn
-**Druids (4):** Yxanb, Gresac, Roossy/Keatala, Beaverfist
+**Druids (4):** Yxanb, Gresac/Younea, Roossy/Keatala, Beaverfist
 **Paladins (2):** Heligeman/Fugleman, Thordrel
 **Rogue (1):** GlaivemasterBaeba
 **Hunters (3):** Vaelruna, Tonsen, Dwarfytron
@@ -38,7 +38,7 @@ Raid ran with 24 instead of 25 because Jar couldn't make it.
 | 15 | Pergatori           | DPS    | Shaman  |
 | 16 | McHughes            | DPS    | Warlock |
 | 17 | Jabbadhutt          | DPS    | Warlock |
-| 18 | Gresac              | Healer | Druid   |
+| 18 | Gresac/Younea       | Healer | Druid   |
 | 19 | Roossy/Keatala      | Healer | Druid   |
 | 20 | Beaverfist          | Healer | Druid   |
 | 21 | Heligeman/Fugleman  | Healer | Paladin |
@@ -66,7 +66,7 @@ Raid ran with 24 instead of 25 because Jar couldn't make it.
 | Felhunter Subjugate  | BestPractice, McHughes |                                                          |
 | Olm Tank Healer      | Heligeman/Fugleman     |                                                          |
 | Blindeye Tank        | Marino-Varthier        | Vaelruna MD                                              |
-| Blindeye Tank Healer | Gresac                 |                                                          |
+| Blindeye Tank Healer | Gresac/Younea          |                                                          |
 
 ### Magtheridon — Cube Clickers
 

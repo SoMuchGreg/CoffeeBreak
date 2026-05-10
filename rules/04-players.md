@@ -84,7 +84,7 @@ Currently empty. Kept so a Regular player promoted to priority `1` has a place t
 | 18 | Tiinar             | Tiinar          | Rogue   | DPS (Combat)      | ?               | 2       |                                                                                      |
 | 19 | Bergamotka/Tymoti  | Bergamotka      | Shaman  | DPS (Enhancement) | DPS (Elemental) | 2       | Ok to offspec                                                                        |
 | 20 | Ebonybolt          | Ebonybolt       | Shaman  | DPS (Enhancement) | Healer          | 2       | Ok to offspec                                                                        |
-| 21 | Gresac             | Younea, Gresac  | Shaman  | DPS (Elemental)   | Healer          | 2       | Druid alt (Gresac) — see Alt characters sub-table; fine being always benched on Karazhan |
+| 21 | Gresac/Younea      | Younea, Gresac  | Shaman  | DPS (Elemental)   | Healer          | 2       | Druid alt (Gresac) — see Alt characters sub-table; fine being always benched on Karazhan |
 | 22 | Lynelen            | Lynelen, Kalyl  | Shaman  | DPS (Enhancement) | DPS (Elemental) | 2       | Ok to offspec                                                                        |
 | 23 | Pergatori          | Pergatori       | Shaman  | Healer            | DPS (Elemental) | 2       | First line offspec                                                                   |
 | 24 | Benglock           | Benglock        | Warlock | DPS (Demonology)  | ?               | 2       |                                                                                      |
@@ -118,7 +118,7 @@ Additional role profiles for players with alts, per `rules/01-raid-compositions.
 
 | Player          | Character | Class  | Mainspec (role) | Offspec (role) | Notes |
 |-----------------|-----------|--------|-----------------|----------------|-------|
-| Gresac          | Gresac    | Druid  | Healer          | DPS (Balance)  |       |
+| Gresac/Younea   | Gresac    | Druid  | Healer          | DPS (Balance)  |       |
 | Roossy/Keatala  | Keatala   | Druid  | Healer          | —              |       |
 
 ### Former players

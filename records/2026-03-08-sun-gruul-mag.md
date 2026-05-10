@@ -6,7 +6,7 @@
 
 **Tanks (2):** Mirohl, Marino-Varthier
 **Warriors (2):** Verysadge, Dankyn
-**Druids (2):** Yxanb, Gresac
+**Druids (2):** Yxanb, Gresac/Younea
 **Paladins (1):** Thordrel
 **Rogues (1):** Glaivemaster Baebay
 **Hunters (1):** Vaelruna
@@ -29,7 +29,7 @@
 | Mage Tank (Krosh)    | OomToDoom          |                                           |
 | Mage Tank Healer     | Kres/Dissi         |                                           |
 | Kiggler Tank         | Vaelruna, Greg     | 2 ranged DPS (no Balance druid available) |
-| Kiggler Tank Healer  | Gresac             |                                           |
+| Kiggler Tank Healer  | Gresac/Younea      |                                           |
 | Olm Tank             | Dankyn             | until felhunter                           |
 | Felhunter Subjugate  | Ōtsu               |                                           |
 | Olm Tank Healer      | —                  |                                           |

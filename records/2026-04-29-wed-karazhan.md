@@ -4,7 +4,7 @@
 
 **Tanks (4):** CptKavior, Marino-Varthier, Ostbirger, Gigakox
 **Warriors (2):** Verysadge, Dankyn
-**Druids (5):** Beaverfist, Jar, Yxanb, Gresac, Shapkica/Chkemi
+**Druids (5):** Beaverfist, Jar, Yxanb, Gresac/Younea, Shapkica/Chkemi
 **Paladins (3):** Leontes, Thordrel, Heligeman/Fugleman
 **Hunters (2):** Vaelruna, Tonsen
 **Priests (2):** Kres/Dissi, Lightweit
@@ -63,7 +63,7 @@
 | Bergamotka/Tymoti  | 2        | 1                                         | fair rotation   |
 | Dankyn             | 2        | 1                                         | fair rotation   |
 | Greg               | 1        | 1                                         | manual override |
-| Gresac             | 2        | 2                                         | manual override |
+| Gresac/Younea      | 2        | 2                                         | manual override |
 | Thordrel           | 2        | 1                                         | manual override |
 | Yxanb              | 2        | 1                                         | fair rotation   |
 
@@ -72,7 +72,7 @@
 - **26 signups → 2 teams + 6 benched**, user chose option (a) of the 25–26 ambiguous case (`rules/01-raid-compositions.md` → "Under-cap team count"). Shapkica/Chkemi was a post-build signup; full-roster recalculation triggered.
 - **Shapkica/Chkemi first appearance** — Druid, mainspec DPS (Feral), offspec Tank (Feral), priority 2. Added to `rules/04-players.md` this session.
 - **Greg (priority 1) manual-override bench** per user instruction, permitted under `rules/02-bench-rotation.md` → "User's discretionary bench picks".
-- **Gresac manual-override bench** per user instruction, consistent with his `rules/04-players.md` note.
+- **Gresac/Younea manual-override bench** per user instruction, consistent with his `rules/04-players.md` note.
 - **Thordrel manual-override bench** per user instruction.
 - **Beaverfist Tier 0 first-line-offspec flex** Balance DPS → Resto Healer (`rules/01-raid-compositions.md` → "Handling role shortages → Asking order → Tier 0") to fill the Bakery healer slot vacated by Thordrel; Beaverfist moved Restaurant → Bakery.
 - **Yxanb fair-rotation bench** chosen over Vaelruna by Karazhan Tier 1 (de-stacks Druids on Restaurant from 3→2) and Tier 2 (§8 Druid Feral=2 vs. Hunter=5). The first sub-agent verdict ran against the original Vaelruna pick before the user resolved the borderline tiebreaker; see Sanity check post-check changes.

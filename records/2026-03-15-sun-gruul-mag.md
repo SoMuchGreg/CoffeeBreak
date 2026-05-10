@@ -6,7 +6,7 @@
 
 **Tanks (2):** Mirohl, Marino-Varthier
 **Warriors (2):** Verysadge, Dankyn
-**Druids (4):** Yxanb, Gresac, Roossy/Keatala, Beaverfist
+**Druids (4):** Yxanb, Gresac/Younea, Roossy/Keatala, Beaverfist
 **Paladins (1):** Thordrel
 **Hunters (3):** Vaelruna, Tonsen, Rhoator
 **Priests (1):** Kres/Dissi

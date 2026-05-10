@@ -4,7 +4,7 @@
 
 **Tanks (7):** Mirohl, Gigakox, Doughball, CptKavior, Marino-Varthier, McJudgin, Ostbirger
 **Warriors (2):** Dankyn, Verysadge
-**Druids (5):** Gresac, Beaverfist, Roossy/Keatala, Yxanb, Jar
+**Druids (5):** Gresac/Younea, Beaverfist, Roossy/Keatala, Yxanb, Jar
 **Paladins (3):** Lightstarr, Thordrel, Leontes
 **Hunters (3):** Vaelruna, Dwarfytron, Tonsen
 **Mages (2):** OomToDoom, Greg/Ucannotpass
@@ -41,7 +41,7 @@
 | Doughball        | OT     | Warrior |
 | Tonsen           | DPS    | Hunter  |
 | Lynelen          | DPS    | Shaman  |
-| Gresac           | Healer | Druid   |
+| Gresac/Younea    | Healer | Druid   |
 | Greg/Ucannotpass | DPS    | Mage    |
 | Jabbadhutt       | DPS    | Warlock |
 | Pergatori        | DPS    | Shaman  |
@@ -77,7 +77,7 @@
 ## Notes
 
 - Rainbound (CodeHunt's shaman) appears in roster under shaman name this time.
-- **Spec correction (recorded retroactively):** Beaverfist and Jar both ran **Balance (DPS)** for this raid, not Resto. Team Bakery healers were Gresac + Bombzor (2). Team BaeGlaives healers were Roossy/Keatala + Lightweit (2). Total raid healers: 6 across 3 teams (normal). Earlier draft of this record file incorrectly listed both as Healer.
+- **Spec correction (recorded retroactively):** Beaverfist and Jar both ran **Balance (DPS)** for this raid, not Resto. Team Bakery healers were Gresac/Younea + Bombzor (2). Team BaeGlaives healers were Roossy/Keatala + Lightweit (2). Total raid healers: 6 across 3 teams (normal). Earlier draft of this record file incorrectly listed both as Healer.
 - Lightweit is a new Priest player — played Holy (healer) in Team BaeGlaives.
 - Leontes is a Paladin — benched.
 - Thalynora left the guild.

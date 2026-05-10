@@ -6,7 +6,7 @@
 
 **Tanks (6):** Mirohl, Doughball, Gigakox, McJudgin, Marino-Varthier, Ostbirger
 **Warriors (2):** Verysadge, Dankyn
-**Druids (5):** Yxanb, Jar, Gresac, Beaverfist, Roossy/Keatala
+**Druids (5):** Yxanb, Jar, Gresac/Younea, Beaverfist, Roossy/Keatala
 **Paladins (3):** Thordrel, Sjwammie, Lightstarr
 **Hunters (3):** Tonsen, Vaelruna, Dwarfytron
 **Mages (2):** Greg/Ucannotpass, OomToDoom
@@ -29,7 +29,7 @@
 | Lightstarr       | DPS    | Paladin |
 | Verysadge        | DPS    | Warrior |
 | Bergamotka/Tymoti| DPS    | Shaman  |
-| Gresac           | Healer | Druid   |
+| Gresac/Younea    | Healer | Druid   |
 | Greg/Ucannotpass | DPS    | Mage    |
 | BestPractice     | DPS    | Warlock |
 | Vaelruna         | DPS    | Hunter  |

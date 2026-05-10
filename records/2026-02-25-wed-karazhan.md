@@ -6,7 +6,7 @@
 
 **Tanks (5):** Mirohl, Buns/Sourbuns, Venguard, Marino-Varthier, Ryro
 **Warriors (3):** Fredfull, Verysadge, Flippkisi
-**Druids (5):** Erushi, Kryxs, Gresac, Zemp, Jar
+**Druids (5):** Erushi, Kryxs, Gresac/Younea, Zemp, Jar
 **Paladins (1):** Thordrel
 **Hunters (2):** Vaelruna, overaggro
 **Priests (2):** Bhandage, Aserrah

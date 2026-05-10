@@ -4,7 +4,7 @@
 
 **Tanks (3):** Mirohl, Ostbirger, Marino-Varthier
 **Warriors (2):** Verysadge, Gigakox
-**Druids (5):** Gresac, Roossy/Keatala, Eselman, Yxanb, Beaverfist
+**Druids (5):** Gresac/Younea, Roossy/Keatala, Eselman, Yxanb, Beaverfist
 **Paladin (1):** Thordrel
 **Rogues (2):** GlaivemasterBaeb, Drillbabe
 **Hunters (4):** Tonsen, Dwarfytron, Vaelruna, Rhoator
@@ -26,7 +26,7 @@
 | Gigakox      | OT     | Warrior |
 | Drillbabe    | DPS    | Rogue   |
 | Vaelruna     | DPS    | Hunter  |
-| Gresac       | Healer | Druid   |
+| Gresac/Younea| Healer | Druid   |
 | UcannotPass  | DPS    | Mage    |
 | Kresniik     | DPS    | Priest  |
 | Jabbadhutt   | DPS    | Warlock |

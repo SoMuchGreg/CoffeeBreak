@@ -12,7 +12,7 @@
 **Priests (4):** Kres/Dissi, Siljes/Ejlis, Lightweit, Boriest
 **Mages (1):** Greg (Ucannotpass)
 **Warlocks (2):** Benglock, Jabbadhutt
-**Shamans (5):** Pergatori, Lynelen, Bergamotka/Tymoti, Ebonybolt, Gresac
+**Shamans (5):** Pergatori, Lynelen, Bergamotka/Tymoti, Ebonybolt, Gresac/Younea
 
 **Tentative (1):** Tiinar
 
@@ -64,7 +64,7 @@
 | Lynelen           | Shaman (Enhancement) |
 | Bergamotka/Tymoti | Shaman (Enhancement) |
 | Ebonybolt         | Shaman (Enhancement) |
-| Gresac            | Shaman (Elemental)   |
+| Gresac/Younea     | Shaman (Elemental)   |
 
 **Composition check:** Target 3/6/16 for Gruul+Mag (per `rules/01-raid-compositions.md`). Actual: 3/6/16 = 25. Status: ✅ on target.
 
@@ -94,7 +94,7 @@
 |-------------|----------|------------|
 | South       | Star     | Jabbadhutt |
 | South East  | Triangle | Greg       |
-| South West  | Circle   | Gresac     |
+| South West  | Circle   | Gresac/Younea     |
 | North East  | Square   | Ostbirger  |
 | North West  | Diamond  | Gigakox    |
 
@@ -117,14 +117,14 @@
 
 ## Notes
 
-- **Gresac mainspec change** — Younea (Shaman, Elemental DPS / offspec Healer) is now main; the Druid character demotes to alt. Played Shaman Elemental this raid. `rules/04-players.md` row moved Druid P2 → Shaman P2; alt-table swapped (Druid Healer/Balance now alt). Bench history row moved Healer P2 → DPS+tank P2 in `derived/bench-history-tbc.md`; counts carry forward per `rules/02-bench-rotation.md` → "Respec policy".
+- **Gresac/Younea mainspec change** — Younea (Shaman, Elemental DPS / offspec Healer) is now main; the Druid character demotes to alt. Played Shaman Elemental this raid. `rules/04-players.md` row moved Druid P2 → Shaman P2; alt-table swapped (Druid Healer/Balance now alt). Bench history row moved Healer P2 → DPS+tank P2 in `derived/bench-history-tbc.md`; counts carry forward per `rules/02-bench-rotation.md` → "Respec policy".
 - **Tiinar tentative** — excluded from roster pool per `reference/file-operations-manual.md` → Step 2.
 - **Bench picks:**
   - **Dankyn (fair rotation)** — Fury Warrior over §8 max 2; Dankyn lowest G+M among Fury candidates.
   - **Shapkica/Chkemi (fair rotation)** — 3rd-pick tiebreaker per `rules/02-bench-rotation.md` → "Tiebreaker: composition target" (preserves the 2-Warlock pool); Feral DPS still in §8 range 1-2 after the cut, while the algorithmic-strict alphabetical fallback (Benglock) would have taken combined Warlock count further below §8's combined Destro+Affli range of 3-6.
 - **User overrides:**
   - **Nemajumarad bench (manual override)** — algorithmic pick was Bergamotka/Tymoti (Enh Sham over §8 max 2). User swapped Bergamotka in. Tradeoffs: Enh Sham stays at 3 (over §8 max 2), Arms Warrior drops to 0 (under §8 range 1; Blood Frenzy debuff missing as no Combat Rogue in raid). Cross-location bench burden equalized between the two players (both end at 1 total).
-- **Magtheridon SW cube** = Gresac per `rules/05-encounter-assignments.md` continuity (he held SW on 2026-03-01 and is in the roster as DPS-Elemental this raid). CptKavior (sub-agent's initial cube-experience-fallback would-be pick) moves to alternative cube clickers.
+- **Magtheridon SW cube** = Gresac/Younea per `rules/05-encounter-assignments.md` continuity (he held SW on 2026-03-01 and is in the roster as DPS-Elemental this raid). CptKavior (sub-agent's initial cube-experience-fallback would-be pick) moves to alternative cube clickers.
 - **Post-build swap (manual override)** — Kres/Dissi ↔ Dankyn bench swap. Kres (P1) benched per user discretionary pick (`rules/02-bench-rotation.md` → "User's discretionary bench picks"); Dankyn unbenched. Composition shifts: Shadow Priest 1→0 (under §8 range 1), Fury Warrior 2→3 (over §8 max 2). Kres remains Sunday raid leader (`config/project.md`); leads from bench.
 - **Post-build raid-day changes** (per `Event: Player withdraws signup` + `Event: Post-build signup arrives`):
   - **OomToDoom withdrew** pre-raid — recorded in `## Withdrawn signups`. Arcane Mage 2→1.
@@ -137,7 +137,7 @@
 **Verdict: GOOD ENOUGH** — sub-agent's original NO verdict resolved by user-accepted overrides on both flagged items.
 
 - **Bench pick #3 violation** (sub-agent flagged Benglock as wrong; recommended Shapkica/Chkemi) — accepted; Shapkica benched, Benglock plays. Then user further overrode bench pick #1: Nemajumarad benched in place of Bergamotka/Tymoti (manual override; see ## Notes "User overrides").
-- **Magtheridon SW cube violation** (sub-agent: should be Gresac per continuity, not CptKavior) — accepted; SW = Gresac, CptKavior moved to alternative cube clickers.
+- **Magtheridon SW cube violation** (sub-agent: should be Gresac/Younea per continuity, not CptKavior) — accepted; SW = Gresac/Younea, CptKavior moved to alternative cube clickers.
 - **Soft-rule misses (acceptable):**
   - Arms Warrior 0 (under §8 range 1) — user-override tradeoff.
   - Enhancement Shaman 3 (over §8 max 2) — user-override tradeoff (kept Bergamotka).

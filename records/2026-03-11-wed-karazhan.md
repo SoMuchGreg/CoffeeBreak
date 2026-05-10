@@ -6,7 +6,7 @@
 
 **Tanks (3):** Mirohl, Doughball, Marino-Varthier
 **Warriors (3):** Verysadge, Dankyn, Ayujinzhu
-**Druids (3):** Gresac, Jar, Yxanb
+**Druids (3):** Gresac/Younea, Jar, Yxanb
 **Paladins (2):** Thordrel, Sjwammie
 **Rogues (1):** Glaivemaster Baebay
 **Hunters (2):** Vaelruna, Rhoator

@@ -6,7 +6,7 @@
 
 **Tanks (3):** Marino-Varthier, Mirohl, Doughball
 **Warriors (3):** Verysadge, Dankyn, Gigakox
-**Druids (6):** Yxanb, Gresac, Roossy/Keatala, Beaverfist, Jar, Eselman
+**Druids (6):** Yxanb, Gresac/Younea, Roossy/Keatala, Beaverfist, Jar, Eselman
 **Paladins (2):** Sjwammie, Thordrel
 **Rogue (1):** GlaivemasterBaeba
 **Hunters (3):** CodeHunt, Dwarfytron, Vaelruna
@@ -15,7 +15,7 @@
 **Warlocks (2):** McHughes, Jabbadhutt
 **Shamans (4):** Bergamotka/Tymoti, Ebonybolt, Lynelen, Pergatori
 
-**Bench (2):** Gresac, Roossy/Keatala
+**Bench (2):** Gresac/Younea, Roossy/Keatala
 
 **Header stats:** Melee 7, Ranged 9, Healers 7
 
@@ -23,7 +23,7 @@
 
 | Player         | Bench count (cumulative) |
 |----------------|--------------------------|
-| Gresac         | 1                        |
+| Gresac/Younea  | 1                        |
 | Roossy/Keatala | 1                        |
 
 ## Actual Roster (25-man)
@@ -108,4 +108,4 @@
 - Eselman confirmed feral DPS here (not tanking or healing).
 - CodeHunt still on hunter at this date; later switched to healer shaman Rainbound.
 - CodeHunt sometimes signs up under his old hunter name even when playing Rainbound — watch for this in future screenshots.
-- First recorded bench: Gresac and Roossy/Keatala.
+- First recorded bench: Gresac/Younea and Roossy/Keatala.

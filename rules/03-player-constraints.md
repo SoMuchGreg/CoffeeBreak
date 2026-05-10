@@ -20,7 +20,7 @@ Players listed here **must not be placed in the same raid team** on any given ni
 
 | Player A | Player B | Applies to | Notes |
 |----------|----------|------------|-------|
-| OomToDoom | Gresac | Karazhan only | |
+| OomToDoom | Gresac/Younea | Karazhan only | |
 
 ## Needlist
 

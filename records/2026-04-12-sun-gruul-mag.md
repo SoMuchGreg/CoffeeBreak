@@ -4,7 +4,7 @@
 
 **Tanks (3):** Mirohl, Ostbirger, Marino-Varthier
 **Warriors (3):** Gigakox, Verysadge, Dankyn
-**Druids (3):** Gresac, Beaverfist, Jar
+**Druids (3):** Gresac/Younea, Beaverfist, Jar
 **Paladins (3):** McJudgin, Thordrel, Leontes
 **Rogue (1):** GlaivemasterBaeba
 **Hunters (3):** Tonsen, Vaelruna, Dwarfytron
@@ -45,7 +45,7 @@ Ran with 25 as expected.
 | Thordrel            | Paladin |
 | Siljes/Ejlis        | Priest  |
 | Lightweit           | Priest  |
-| Gresac              | Druid   |
+| Gresac/Younea       | Druid   |
 | Beaverfist          | Druid   |
 
 ### DPS (17)
@@ -89,7 +89,7 @@ Ran with 25 as expected.
 | Felhunter Subjugate  | Jabbadhutt             |                                              |
 | Olm Tank Healer      | McJudgin               |                                              |
 | Blindeye Tank        | Marino-Varthier        | Vaelruna MD                                  |
-| Blindeye Tank Healer | Gresac                 |                                              |
+| Blindeye Tank Healer | Gresac/Younea          |                                              |
 
 ### Magtheridon — Cube Clickers
 

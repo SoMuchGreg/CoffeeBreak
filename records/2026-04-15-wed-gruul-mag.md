@@ -4,7 +4,7 @@
 
 **Tanks (4):** Mirohl, CptKavior, Marino-Varthier, Ostbirger
 **Warriors (3):** Dankyn, Gigakox, Verysadge
-**Druids (4):** Gresac, Beaverfist, Roossy/Keatala, Yxanb
+**Druids (4):** Gresac/Younea, Beaverfist, Roossy/Keatala, Yxanb
 **Paladins (3):** Thordrel, McJudgin, Leontes
 **Rogues (1):** Glaivemaster Baebay
 **Hunters (2):** Vaelruna, Tonsen
@@ -36,7 +36,7 @@
 
 | Player         | Class          |
 |----------------|----------------|
-| Gresac         | Druid (Resto)  |
+| Gresac/Younea  | Druid (Resto)  |
 | Roossy/Keatala | Druid (Resto)  |
 | Thordrel       | Paladin (Holy) |
 | McJudgin       | Paladin (Holy) |
@@ -84,7 +84,7 @@
 | Felhunter Subjugate  | Jabbadhutt, McHughes | Jabbadhutt withdrew pre-raid (see ## Notes); McHughes solo-subjugated |
 | Olm Tank Healer      | McJudgin             |                                                                       |
 | Blindeye Tank        | Ostbirger            | Vaelruna MD                                                           |
-| Blindeye Tank Healer | Gresac               |                                                                       |
+| Blindeye Tank Healer | Gresac/Younea        |                                                                       |
 
 ### Magtheridon — Cube Clickers
 
