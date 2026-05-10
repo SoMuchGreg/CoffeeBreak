@@ -110,7 +110,9 @@ The combined set (Core tanks sub-table + Officers rows flagged `Core tank`) neve
 
 ### Tank priority
 
-When multiple core tanks are present in the same raid and a rule needs to pick *which* of them holds a specific tank role (e.g., Magtheridon MT, Maulgar Tank), the order is **main tank > primary offtank > 3rd tank**. The label for each core tank lives in the `Notes` column of `rules/04-players.md` (Officers and Core tanks sub-tables) — look for the tokens `Main tank`, `Primary offtank`, `3rd tank`. A core tank without one of these three tokens has no priority position; the user must add a label before priority-based tank rules can resolve cleanly.
+When multiple core tanks are present in the same raid and a rule needs to pick *which* of them holds a specific tank role (e.g., Magtheridon MT, Maulgar Tank), the order is **main tank > 3rd tank**. The label for each core tank lives in the `Notes` column of `rules/04-players.md` (Officers and Core tanks sub-tables) — look for the tokens `Main tank` and `3rd tank`. A core tank without one of these tokens has no priority position; the user must add a label before priority-based tank rules can resolve cleanly.
+
+**Tiebreaker within a tier** (e.g., two main tanks both in roster): **rotate** — pick the tied core tank who held the specific role **least recently** (per `rules/05-encounter-assignments.md` → "Continuity data sources"). This intentionally inverts standard continuity so the role alternates across equal-tier tanks rather than sticking to one. If neither has ever held the role, tiebreak alphabetically by canonical name.
 
 ### Tank assignment overrides signup spec
 

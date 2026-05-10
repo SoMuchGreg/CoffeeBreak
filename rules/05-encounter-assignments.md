@@ -78,7 +78,7 @@ Maulgar Tank's eligibility pool depends on how many core tanks (per `rules/01-ra
 
 - **0 core tanks in roster** → hard constraint fails; flag to the user (per step 5).
 - **1 core tank in roster** → that core tank is assigned Maulgar Tank. Continuity is moot — only one candidate.
-- **2 or more core tanks in roster** → the highest-priority core tank present holds Maulgar Tank, per `rules/01-raid-compositions.md` → "Tank priority" (main tank > primary offtank > 3rd tank). Tank priority overrides continuity for this role.
+- **2 or more core tanks in roster** → the highest-priority core tank present holds Maulgar Tank, per `rules/01-raid-compositions.md` → "Tank priority" (main tank > 3rd tank). Tank priority overrides continuity between tiers; within-tier ties (e.g., two main tanks both in roster) are resolved by the rotation tiebreaker in that rule (least-recent holder wins, so the role alternates rather than sticks).
 
 ### Maulgar Healer assignment
 

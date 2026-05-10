@@ -39,7 +39,7 @@ Priority is a property of the player, not of a specific raid. It changes only wh
 | 1  | Jar             | Jardepli                       | Druid   | DPS (Balance)   | Healer         | 1        | First line offspec                                       |
 | 2  | Roossy/Keatala  | Roossy, Keatala                | Hunter  | DPS             | —              | 1        | Druid alt (Keatala) — see Alt characters sub-table below |
 | 3  | Greg            | Ucannotpass                    | Mage    | DPS             | —              | 1        |                                                          |
-| 4  | Ostbirger       | Ostbirger                      | Paladin | Tank            | DPS            | 1        | Core tank, Primary offtank                               |
+| 4  | Ostbirger       | Ostbirger                      | Paladin | Tank            | DPS            | 1        | Core tank, Main tank                                     |
 | 5  | Kres/Dissi      | Kresniik, Dissidencer, Griever | Priest  | DPS             | Healer         | 1        | First line offspec                                       |
 
 ### Core tanks
