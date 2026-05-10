@@ -20,13 +20,15 @@ The **Priority** column in the roster tables below stores each player's raid spo
 for **per-player priority assignments**; what each value *means* and how it drives roster selection is defined in `rules/02-bench-rotation.md` → "Raid spot
 priority (selection order)" — the single source of truth for the system's behavior. Do not duplicate the priority-level meanings here.
 
+Sub-table headers below (Officers, Core tanks, Raiders, Members) are user-facing rank names; the Priority column stores the 1/2/3 ordinal used by the algorithm. Canonical: `config/project.md` → Terminology → "Rank".
+
 Priority is a property of the player, not of a specific raid. It changes only when the user explicitly updates it.
 
-**Default priority for new players: `2`.** When a player who isn't already in the roster table appears in a Discord signup screenshot, ask the user for their class and mainspec, then add them to the **Regular players → Priority 2** sub-table unless the user explicitly says otherwise. Mainspec must come from the user — do not infer it from the signup icon (per `rules/01-raid-compositions.md` → "Role placement: mainspec is authoritative"). Do not guess priority `1` (always plays) or priority `3` (last resort) without explicit user instruction.
+**Default priority for new players: `2`.** When a player who isn't already in the roster table appears in a Discord signup screenshot, ask the user for their class and mainspec, then add them to the **Raiders** sub-table unless the user explicitly says otherwise. Mainspec must come from the user — do not infer it from the signup icon (per `rules/01-raid-compositions.md` → "Role placement: mainspec is authoritative"). Do not guess priority `1` (always plays) or priority `3` (last resort) without explicit user instruction.
 
 ## Known player roster
 
-**Table ordering.** Rows in every roster sub-table below (Officers, Core tanks, Regular players → Priority 1, Regular players → Priority 2, Regular players → Priority 3, Former players) are sorted first by **class alphabetically**, then by **player name alphabetically** within each class. When adding or renaming a player, place the row in its correct sorted position rather than appending to the end. When a Regular player's priority changes among `1`, `2`, and `3`, move their row to the matching priority sub-table. **For officer promotions and demotions** (which move a row between Officers and Core tanks/Regular players), follow `reference/file-operations-manual.md` → "Event: User promotes or demotes an officer". When a player leaves the guild, move their row out of Officers, Core tanks, or Regular players into the Former players sub-table — do not leave a tombstoned row behind in the active tables.
+**Table ordering.** Rows in every roster sub-table below — Officers, Core tanks, Regular players (Priority 1, Raiders, Members), Former players — are sorted first by **class alphabetically**, then by **player name alphabetically** within each class. When adding or renaming a player, place the row in its correct sorted position rather than appending to the end. When a Regular player's priority changes among `1`, `2`, and `3`, move their row to the matching priority sub-table. **For officer promotions and demotions** (which move a row between Officers and Core tanks/Regular players), follow `reference/file-operations-manual.md` → "Event: User promotes or demotes an officer". When a player leaves the guild, move their row out of Officers, Core tanks, or Regular players into the Former players sub-table — do not leave a tombstoned row behind in the active tables.
 
 **Row index (`#` column).** Each sub-table below has its own `#` column that starts at `1`. It is derived from sort order, not a stable ID — whenever the order changes, or a row is added, removed, or moved between sub-tables, renumber every affected sub-table from `1` so the sequence stays gap-free and monotonic within each sub-table.
 
@@ -60,7 +62,7 @@ Currently empty. Kept so a Regular player promoted to priority `1` has a place t
 | #  | Player         | Character(s)      | Class   | Mainspec (role)     | Offspec (role)  | Priority | Notes                                                        |
 |----|----------------|-------------------|---------|---------------------|-----------------|----------|--------------------------------------------------------------|
 
-#### Priority 2
+#### Raiders
 
 | #  | Player             | Character(s)    | Class   | Mainspec (role)   | Offspec (role)  | Priority | Notes                                                                                |
 |----|--------------------|-----------------|---------|-------------------|-----------------|---------|--------------------------------------------------------------------------------------|
@@ -98,7 +100,7 @@ Currently empty. Kept so a Regular player promoted to priority `1` has a place t
 | 32 | Spot/Yorekbarn     | Yorekbarn       | Warrior | DPS (Fury)        | —               | 2       |                                                                                      |
 | 33 | Verysadge          | Verysadge       | Warrior | DPS (Fury)        | —               | 2       |                                                                                      |
 
-#### Priority 3
+#### Members
 
 | #  | Player             | Character(s)          | Class   | Mainspec (role)  | Offspec (role) | Priority | Notes              |
 |----|--------------------|-----------------------|---------|------------------|----------------|----------|--------------------|

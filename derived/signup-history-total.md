@@ -19,10 +19,10 @@ Total number of times each player has appeared in the `## Signups (from Discord)
 
 - **Officers** — mirrors the Officers sub-table in `rules/04-players.md`.
 - **Core tanks** — mirrors the Core tanks sub-table in `rules/04-players.md`.
-- **Current members** — mirrors the Regular players section (Priority 1 / 2 / 3 sub-tables combined) in `rules/04-players.md`.
+- **Current members** — mirrors the Regular players section (Priority 1, Raiders, and Members sub-tables combined) in `rules/04-players.md`.
 - **Former members** — mirrors the Former players sub-table in `rules/04-players.md`.
 
-A player's sub-table here is determined solely by their top-level grouping in `rules/04-players.md` (Officers, Core tanks, Regular players, Former players). Do not split Current members by priority — Regular-player Priority 1 / 2 / 3 sub-tables all collapse into Current members here. When a player's top-level grouping changes (new hire, officer promoted/demoted, departure), move their row here in the same edit.
+A player's sub-table here is determined solely by their top-level grouping in `rules/04-players.md` (Officers, Core tanks, Regular players, Former players). Do not split Current members by priority — Regular-player Priority 1, Raiders, and Members sub-tables all collapse into Current members here. When a player's top-level grouping changes (new hire, officer promoted/demoted, departure), move their row here in the same edit.
 
 **Sort order.** Each sub-table is sorted by `Signups` **descending**. Ties are broken by Player name, **alphabetical case-insensitive**, ascending. The `#` column is derived from this sort order — renumber from `1` whenever the order changes, so the sequence stays gap-free and monotonic within each sub-table.
 

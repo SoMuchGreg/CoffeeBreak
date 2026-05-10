@@ -392,7 +392,7 @@ Run the post-edit consistency grep per `CLAUDE.md` → "Post-edit consistency gr
 
 | File | What to update |
 |------|----------------|
-| `rules/04-players.md` | **Joins:** add a new player row to the appropriate Regular players priority sub-table (default priority `2` per the file's "Default priority for new players" rule). **Leaves:** move the row to the Former players sub-table. Do **not** strike through — placement already conveys departed status. **If the departing player has an entry in the Alt characters sub-table, remove it.** |
+| `rules/04-players.md` | **Joins:** add a new player row to the appropriate Regular players sub-table — typically **Raiders** (priority `2`) per the file's "Default priority for new players" rule. **Leaves:** move the row to the Former players sub-table. Do **not** strike through — placement already conveys departed status. **If the departing player has an entry in the Alt characters sub-table, remove it.** |
 | `derived/bench-history-tbc.md` | **Joins:** no action (rows are added on first bench, into the player's bench group's table per `rules/02-bench-rotation.md` → "Bench groups"). **Leaves:** if the player has a bench row in any of the six bench-group tables, move it to the Former guild members table at the bottom. Do **not** strike through — placement already conveys departed status. |
 | `derived/signup-history-total.md` | Move the row from Officers, Core tanks, or Current members to Former members; re-sort and renumber both sub-tables. Do **not** strike through (sub-table placement conveys departed status, matching `rules/04-players.md`). |
 | `derived/signup-stats-tbc.md` | Remove the departed player's row and renumber. Flat table (Officers + Core tanks + Regular players combined), so officer promotion/demotion and core-tank status changes need no action here. Row only exists if the player has in-scope signups; if absent, no action. |
@@ -418,7 +418,7 @@ Triggered by phrases like *"X is now an officer"*, *"promote X"*, *"new officers
 
 | File | What to update |
 |------|----------------|
-| `rules/04-players.md` | Move the row out of **Officers**. **If the Officers Notes contained the `Core tank` flag**, move them to the **Core tanks** sub-table and drop the `Core tank` token (redundant inside Core tanks); preserve other Notes content. **Otherwise**, move them to **Regular players → Priority N**; ask the user for the priority (default `2` if unspecified). Renumber both source and destination sub-tables. |
+| `rules/04-players.md` | Move the row out of **Officers**. **If the Officers Notes contained the `Core tank` flag**, move them to the **Core tanks** sub-table and drop the `Core tank` token (redundant inside Core tanks); preserve other Notes content. **Otherwise**, move them to the appropriate Regular players sub-table — **Priority 1**, **Raiders**, or **Members**; ask the user for the priority (default `2` if unspecified). Renumber both source and destination sub-tables. |
 | `derived/signup-history-total.md` | Move the row to **Core tanks** (if the `rules/04-players.md` row is now in Core tanks) or **Current members** (if now in Regular players); re-sort and renumber both source and destination. |
 | `derived/signup-stats-tbc.md` | No action. |
 | `derived/bench-history-tbc.md` | If the player has a bench row, move it from their old bench group's table to their new group's table (priority changed) per `rules/02-bench-rotation.md` → "Respec policy (and priority changes)". Counts and dates carry forward unchanged. If they have no row, no action. |
