@@ -17,7 +17,7 @@ Every player has a **raid spot priority** — an integer 1, 2, or 3. Priority is
 |----------|----------------------------------|
 | **1** | If signed up and available, always plays. Benched only via the user's discretionary pick — never by fair rotation. |
 | **2** | Standard. Gets a spot when there is room. Subject to fair bench rotation among priority-2 signups when there is overflow. |
-| **3** | Last resort only. Invited only if open spots remain after every priority-1 and priority-2 signup has been placed. When multiple priority-3 players are signed up but only some are needed, fair bench rotation also applies among them. |
+| **3** | Last resort. Invited if open spots remain after every priority-1 and priority-2 signup has been placed — **or**, even when no spots remain, when their `Mainspec (role)` matches an under-target role and the *Mainspec over offspec* rule's filling case brings them in (see "Mainspec over offspec (Mainspec-first rule)" below). When multiple priority-3 players are signed up but only some are needed, fair bench rotation also applies among them. |
 
 ### Selection algorithm
 
@@ -27,8 +27,11 @@ When forming a roster from signups:
 2. **Place priority-2 signups.** If priority-1 + priority-2 signups exceed the spot count, bench the overflow via **fair bench rotation among priority-2 players**. The direction — who plays vs. who sits — is canonical to the *Fairness requirement* section below; do not paraphrase it here.
 3. **If spots remain after step 2**, fill them with priority-3 signups, again using fair bench rotation among priority-3 players to decide who plays when only some are needed.
 4. **All unplaced signups go to bench.** When recording the bench in the record file, note each player's priority alongside their bench count.
+5. **Composition override.** After steps 1–4, reconcile the role distribution against composition targets — under-target roles per `rules/01-raid-compositions.md` → "Handling role shortages" (Resort 1: the *Mainspec over offspec* fill — see "Mainspec over offspec (Mainspec-first rule)" below; then Resort 2: comp flex), over-target roles per `rules/01-raid-compositions.md` → "Handling role surpluses". **Iterate:** after every swap or accepted flex, re-check the distribution; an accepted comp flex also shifts who is benched, so recompute from step 1 and re-apply this step — keep going until the distribution is stable.
 
-A priority-1 player is **never** displaced by a priority-2 or priority-3 player, regardless of bench history. Conversely, a priority-3 player is **never** placed ahead of an available priority-2 signup, regardless of bench history.
+A priority-1 player is **never** displaced by a priority-2 or priority-3 player, regardless of bench history. Conversely, a priority-3 player is **never** placed ahead of an available priority-2 signup, regardless of bench history — **with one exception**: the *Mainspec over offspec* rule's filling case ("Mainspec over offspec (Mainspec-first rule)" below) can place a lower-rank mainspec player ahead of a higher-rank one (never a priority-1).
+
+**Headcount cut vs. composition reconciliation.** Steps 1–4 are the *headcount cut*'s rank-by-rank pass — bench down to the spot count (the cut's full definition, including composition caps, is at `rules/01-raid-compositions.md` → "Order of placement", step 3). Step 5 then reconciles the *role distribution* — and the *Mainspec over offspec* exception just above lets it override a step-1–4 pick (a player steps 1–4 benched can be swapped in; one they kept can be benched in exchange). So step 2's "fair rotation among priority-2 if priority-1 + priority-2 exceed the spot count" is the trigger only for step 2's P2 fair rotation; fair rotation also fires at step 5 (the over-target bench) and in tiebreakers. *Rotation scope* (below) governs all of it — fair rotation stays within oversubscribed role groups wherever it fires.
 
 ## Bench groups
 
@@ -49,30 +52,28 @@ Every bench a player receives accumulates against **their** bench group's count 
 
 A bench is a count against the player, not the spec — a tank-main flexed to DPS and then benched (or a healer-main flexed to DPS and benched) increments their own group's count.
 
-### Mainspec priority within a pool (Mainspec-first rule)
+### Respec policy (and priority changes)
 
-**Contingency rule.** This subsection fires only when an offspec signer appears in an oversubscribed pool — a **rare** condition under the default placement rule (`rules/01-raid-compositions.md` → "Role placement: mainspec is authoritative"). See rule 01's *Rare contingency: explicit offspec signup* callout for the trigger that creates an offspec signer. The rule is documented here so that, when it does fire, the bench picks are unambiguous.
+When a player's bench group changes — either because their mainspec changes (`Mainspec (role)` in `rules/04-players.md`) such that their role group flips between DPS+tank and Healer, or because their priority changes (e.g., officer promotion or demotion, or any other priority adjustment) — **move their entire bench history row to the new group's table** in `derived/bench-history-tbc.md`. Per-location counts and date lists carry forward unchanged; only the table the row lives in changes. Do not reset counts to zero, and do not interpolate to the new table's median. The change moves the player; the history follows.
 
-When triggered: within an oversubscribed role pool, **mainspec signers play before offspec signers**. Bench from the offspec-signer subset until either every offspec signer in the pool has been benched or the pool reaches its target — whichever comes first. If the pool is still over after every offspec signer has been benched, continue benching from the mainspec-signer subset.
+## Mainspec over offspec (Mainspec-first rule)
 
-Definitions:
+**Principle.** A player playing their **mainspec** is always preferred over a player playing an **offspec** — however the offspec play arose (a comp flex, or a user-designated explicit offspec signup; see *Offspec signer* in `config/project.md`'s glossary). This applies in two situations: when **filling** an under-target role (composition reconciliation), and when **cutting** an over-target pool (bench rotation).
 
-- **Mainspec signer** — a player whose role this raid matches their `Mainspec (role)` in `rules/04-players.md`. Under the default placement rule, this is everyone.
-- **Offspec signer** — a player playing their `Offspec (role)` this raid via the contingency in `rules/01-raid-compositions.md` → "Role placement: mainspec is authoritative" (e.g., McJudgin playing tank when his mainspec is DPS).
-- **Comp-flexed players are treated as mainspec signers under this rule.** Comp flex (`rules/01-raid-compositions.md` → "Handling role shortages" / "Handling role surpluses") is NOT an offspec signup. The two mechanisms must not be conflated — collapsing them would misapply this rule (treating flexers as bench-first) and discourage hybrid offspec play.
+**Filling an under-target role — this is "Resort 1" of the role-shortage workflow.** When the placed roster is *under target* on a role and the headcount cut (`rules/01-raid-compositions.md` → "Order of placement", step 3) has benched a signup whose `Mainspec (role)` is that role — *not* a player the user discretionarily benched, whose bench stands — bring that signup into the role and bench a player from an *over-target* role in exchange. The benched-out player is chosen from that role by raid-spot priority, then fair rotation, and is **never priority-1** (the priority-1 guarantee in *Raid spot priority* above is not weakened). Because the benched-out player can *outrank* the one brought in — the canonical case is a priority-3 (Member) mainspec coming in while a priority-2 (Raider) sits — this is **the one place "priority-3 never placed ahead of priority-2" bends** (*Raid spot priority* above); it is allowed because the only alternative is comp-flexing that higher-priority player. If the over-target role holds *only* priority-1 players, this does not fire — comp flex applies instead, and the cut-benched mainspec signup stays benched. If more than one cut-benched mainspec signup fits the role and only some are needed, choose among them by the standard selection ladder (raid-spot priority first, then fair rotation among ties). Workflow context: `rules/01-raid-compositions.md` → "Handling role shortages" — this fill is **Resort 1**, comp flex is **Resort 2** (the fallback); the fill loops with the headcount cut per *Raid spot priority (selection order)*, step 5.
 
-Bookkeeping: offspec play does not move the player to a different bench group for the raid. They remain in their mainspec bench group; bench counts continue to accumulate against that group's table per *One bench count per player per location* above. The mainspec/offspec-signer distinction is **per-raid** metadata, not a property of bench-group membership.
+**Cutting an over-target pool.** Within an oversubscribed role pool, bench from the offspec-signer subset until either every offspec signer in the pool has been benched or the pool reaches its target — whichever comes first. If the pool is still over after every offspec signer has been benched, continue benching from the mainspec-signer subset. This is **rare**: a pool that received a comp flex is normally exactly at target (comp flex fills the gap precisely — `rules/01-raid-compositions.md` → "Handling role shortages"), and user-designated explicit offspec signups are themselves rare.
 
-Tiebreaker cascades within each subset are identical:
+(*Mainspec signer* and *Offspec signer* are defined in `config/project.md`'s glossary.)
+
+Bookkeeping: offspec play does not move the player to a different bench group for the raid. They remain in their mainspec bench group; bench counts continue to accumulate against that group's table per *One bench count per player per location* above (under *Bench groups*). Whether a player is a *mainspec signer* or an *offspec signer* is **per-raid** metadata, not a property of bench-group membership.
+
+Tiebreaker cascades (for the *cutting* case, when choosing whom to bench within a subset) are identical for both subsets:
 
 - **Among multiple offspec signers** in an oversubscribed pool: apply the standard cascade (*Direction* and the *Tiebreaker* subsections below). Counts come from each player's own bench group's table; counts are unified across mainspec and offspec play, so the cascade compares them apples-to-apples even when candidates span multiple bench-group tables.
 - **Among mainspec signers** (used only when all offspec signers in the pool have been benched and the pool is still over): the same cascade.
 
-This rule pairs with *Rotation scope: only oversubscribed role groups fire* (below). The two address independent failure modes: this rule handles the case where an offspec-signed player sits in the same oversubscribed pool as a pure mainspec player; the *Rotation scope* rule handles the case where flex-displacement would manufacture a bench in an at-par role group. Neither rule subsumes the other — both are needed.
-
-### Respec policy (and priority changes)
-
-When a player's bench group changes — either because their mainspec changes (`Mainspec (role)` in `rules/04-players.md`) such that their role group flips between DPS+tank and Healer, or because their priority changes (e.g., officer promotion or demotion, or any other priority adjustment) — **move their entire bench history row to the new group's table** in `derived/bench-history-tbc.md`. Per-location counts and date lists carry forward unchanged; only the table the row lives in changes. Do not reset counts to zero, and do not interpolate to the new table's median. The change moves the player; the history follows.
+This rule pairs with *Rotation scope: only oversubscribed role groups fire* (below). The two address independent failure modes: the *cutting* case here handles an offspec signer sitting in the same oversubscribed pool as a pure mainspec player; the *Rotation scope* rule handles flex-displacement manufacturing a bench in an at-par role group. Neither subsumes the other — both are needed.
 
 ## Fairness requirement (within a bench group)
 
@@ -82,11 +83,11 @@ When a player's bench group changes — either because their mainspec changes (`
 
 When fair rotation picks who sits, the player with the **lowest** cumulative bench count for the raid location and bench group is the one we **send to the bench**. The player with a **higher** count keeps their raid spot. The principle is to *catch up* the under-benched player so cumulative counts equalize over time — fair rotation never protects the under-benched, it draws from them.
 
-This Direction rule operates on the **candidate subset** determined by *Mainspec priority within a pool (Mainspec-first rule)* (above) and *Rotation scope: only oversubscribed role groups fire* (below). Re-read those if you're unsure which subset is in play.
+This Direction rule operates on the **candidate subset** determined by *Mainspec over offspec (Mainspec-first rule)* (above) and *Rotation scope: only oversubscribed role groups fire* (below). Re-read those if you're unsure which subset is in play.
 
 **Concrete.** Two players in the same bench group are competing for the last roster spot. Cumulative G+M bench counts going in: A = 0, B = 1. **A goes to the bench. B plays.** A's count moves 0 → 1, equalizing with B at 1. This holds regardless of either player's Karazhan bench count — Karazhan and G+M are tracked separately.
 
-The same direction applies in **every** "fair rotation" branch in this file: priority-3 selection (`Raid spot priority` step 3), composition-cap-affected specs (`Composition caps override pure fairness` below — pick the **highest-count** Resto Druid(s) to play, not the lowest), and the tiebreakers that fall under fair rotation.
+The same direction applies in **every** "fair rotation" branch in this file: priority-3 selection (`Raid spot priority` step 3), the over-target bench picked in the *Mainspec over offspec* filling case (above), composition-cap-affected specs (`Composition caps override pure fairness` below — pick the **highest-count** Resto Druid(s) to play, not the lowest), and the tiebreakers that fall under fair rotation.
 
 If you ever find yourself benching a higher-count player over a lower-count one, you have inverted the rule. Stop and re-read the Direction rule above before continuing.
 
@@ -97,7 +98,7 @@ Fair rotation fires for a role group **only when that role group is oversubscrib
 - **Healer role group oversubscribed** → healer signups exceed the location's healer target. Fair rotation fires within the Healer pool of the affected priority level(s).
 - **DPS+tank role group oversubscribed** → combined tank + DPS signups exceed the combined tank + DPS target. Fair rotation fires within the DPS+tank pool. Composition still constrains the picks: tanks and DPS have separate target counts, so the rotation must bench enough tanks to bring the tank count to target AND enough DPS to bring the DPS count to target. Within each role's bench picks, pick the lowest-count member of the relevant DPS+tank bench group.
 - **No role group oversubscribed** → no fair-rotation bench fires. Players in at-par or under-par role groups are not benched by rotation, regardless of their count relative to anyone in any other group. Composition caps and manual overrides may still bench specific players.
-- **Edge case: role-mismatch within an at-par group** → e.g., DPS+tank at par numerically (4 tanks + 15 DPS in a 3T+16D raid) but tanks over by 1 and DPS short by 1. Comp flex (`rules/01-raid-compositions.md` → "Handling role surpluses") is offered first; if it doesn't resolve, the surplus benches via *User's discretionary bench picks* below. Fair rotation does not fire (group at par numerically).
+- **Edge case: role-mismatch within an at-par group** → e.g., DPS+tank at par numerically (4 tanks + 15 DPS in a 3T+16D raid) but tanks over by 1 and DPS short by 1. The group is at par, so no one is benched and there is no benched mainspec-DPS signup to bring in via "Handling role shortages" → Resort 1 — comp flex (`rules/01-raid-compositions.md` → "Handling role surpluses") is the tool; if it doesn't resolve, the surplus benches via *User's discretionary bench picks* below. Fair rotation does not fire (group at par numerically).
 
 This scoping prevents a low-count player in an at-par role group from being benched to settle a global ledger that spans role groups. The failure mode it blocks: heal pool over by 1, DPS pool at par with a low-count pure DPS — under a global-ledger rule, that pure DPS could be picked to bench (lowest count) by flex-displacing a hybrid healer to take the vacated DPS slot. With per-role-group scope, the heal rotation fires within healers only; the pure DPS plays.
 
@@ -208,10 +209,10 @@ Every row in a record file's bench table must use exactly one of the reason labe
 
 **All reasons count toward fair rotation by default** — the cumulative bench count for the raid location is incremented by 1 for every entry, regardless of the label. The only exception is the rare explicit user exemption described in *User's discretionary bench picks* above, which is a Notes-section prose override and not a reason label.
 
-| Reason | Meaning |
-|--------|---------|
-| `priority 3` | Player is raid spot priority 3 (last resort) and was benched because every priority-1 and priority-2 signup filled the available spots. See *Raid spot priority (selection order)* above. |
-| `fair rotation` | Bench selected by the fair-rotation algorithm — see *Raid spot priority (selection order)*, *Mainspec priority within a pool (Mainspec-first rule)*, and *Fairness requirement* (incl. *Direction*, *Rotation scope*, *Rotation goal*, and the *Tiebreaker* subsections) above. Used for priority-2 / priority-3 overflow. |
+| Reason            | Meaning |
+|-------------------|---------|
+| `priority 3`      | Player is raid spot priority 3 (last resort) and was benched because every priority-1 and priority-2 signup filled the available spots. See *Raid spot priority (selection order)* above. |
+| `fair rotation`   | Bench selected by the fair-rotation algorithm — see *Raid spot priority (selection order)*, *Mainspec over offspec (Mainspec-first rule)*, and *Fairness requirement* (incl. *Direction*, *Rotation scope*, *Rotation goal*, and the *Tiebreaker* subsections) above. Used for priority-2 / priority-3 overflow. |
 | `manual override` | A discretionary bench pick that overrides the fair-rotation algorithm — see *User's discretionary bench picks* above for trigger cases and the full rule. |
 | `composition cap` | Benched by a hard composition cap in `rules/01-raid-compositions.md` (e.g., the 25-man Resto Druid cap). Within the capped spec, fair rotation still decides which player sits — see *Composition caps override pure fairness* above. |
 

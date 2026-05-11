@@ -14,14 +14,16 @@ Each player's role for a raid is their `Mainspec (role)` column in `rules/04-pla
 
 1. **Core tanks signed up** are placed into tank slots first (per "Core tanks" below — list membership is standing consent to tank, regardless of which icon they selected).
 2. **All other signups** are placed in their mainspec role per `rules/04-players.md`. **Exception:** players with alts (those with entries in that file's "Alt characters" sub-table) are resolved here per "Alts" below.
-3. **Compare the resulting role distribution to composition targets:**
-   - Role(s) under target → **comp flex** (Tier 0 → Tier 3, voluntary; "Handling role shortages" below)
-   - Role(s) over target → **comp flex** (voluntary; "Handling role surpluses" below)
-4. **Apply remaining rules**: composition caps and selection priority/bench rotation (`rules/02-bench-rotation.md`), player constraints (`rules/03-player-constraints.md`), and (Gruul+Mag only) encounter assignments (`rules/05-encounter-assignments.md`).
+3. **Headcount cut.** If more players are placed than the format has spots, bench the overflow — composition caps first (e.g., the 25-man Resto Druid cap), then raid-spot priority + fair rotation (`rules/02-bench-rotation.md` → "Raid spot priority (selection order)"). In later rules, "a benched signup" and "the headcount cut benched X" refer to a player benched by this step. (Under-cap — fewer signups than spots — see "Under-cap behavior" below for what benching, if any, still applies.)
+4. **Reconcile the role distribution against composition targets:**
+   - Role(s) under target → resolve per "Handling role shortages" below (Resort 1: a benched mainspec signup for the role, at any rank — the *Mainspec over offspec* fill; then Resort 2: comp flex).
+   - Role(s) over target → resolve per "Handling role surpluses" below.
+   This step and step 3 loop until the distribution is stable; the loop is specified in `rules/02-bench-rotation.md` → "Raid spot priority (selection order)", step 5.
+5. **Apply remaining rules**: player constraints (`rules/03-player-constraints.md`) and (Gruul+Mag only) encounter assignments (`rules/05-encounter-assignments.md`).
 
-The standard path from mainspec to offspec for a given raid is **comp flex** (voluntary; see below). The signup icon does NOT trigger offspec play. (For the rare user-designated exception, see *Rare contingency: explicit offspec signup* below.)
+The standard path from mainspec to offspec for a given raid is **comp flex** (voluntary; for a role shortage it is Resort 2 — see "Handling role shortages" below). The signup icon does NOT trigger offspec play. (For the rare user-designated exception, see *Rare contingency: explicit offspec signup* below.)
 
-**Rare contingency: explicit offspec signup.** The user may, in unusual cases, designate a specific signup as a deliberate **offspec signup** (e.g., "let X play their offspec for this raid"). When this happens, the player is placed in their offspec role for the raid; rotation treatment then follows `rules/02-bench-rotation.md` → "Mainspec priority within a pool (Mainspec-first rule)". Distinct from comp flex (see "Handling role shortages" / "Handling role surpluses" below). The default above applies otherwise — signup icons alone do not trigger this contingency; only explicit user designation does.
+**Rare contingency: explicit offspec signup.** The user may, in unusual cases, designate a specific signup as a deliberate **offspec signup** (e.g., "let X play their offspec for this raid"). When this happens, the player is placed in their offspec role for the raid; rotation treatment then follows `rules/02-bench-rotation.md` → "Mainspec over offspec (Mainspec-first rule)". Distinct from comp flex (see "Handling role shortages" / "Handling role surpluses" below). The default above applies otherwise — signup icons alone do not trigger this contingency; only explicit user designation does.
 
 ### Comp flex consent
 
@@ -31,11 +33,15 @@ If no one accepts: for shortage trigger, the raid runs under-target on that role
 
 ### Comp flex scope
 
-Comp flex addresses **real composition needs only**: a role under its target (shortage trigger) or over its target (surplus trigger), as defined in "Handling role shortages" and "Handling role surpluses" below. It is never triggered by bench-rotation considerations — a flex must not be used to vacate a roster slot so the previous occupant can be sent to the bench, nor to manufacture a bench in a different role group. (Bench-rotation scope: `rules/02-bench-rotation.md` → "Rotation scope: only oversubscribed role groups fire".)
+Comp flex addresses **real composition needs only**: a role under its target (shortage trigger) or over its target (surplus trigger), as defined in "Handling role shortages" and "Handling role surpluses" below. For a shortage it is **Resort 2** in "Handling role shortages" below — the fallback after Resort 1. It is never triggered by bench-rotation considerations — a flex must not be used to vacate a roster slot so the previous occupant can be sent to the bench, nor to manufacture a bench in a different role group. (Bench-rotation scope: `rules/02-bench-rotation.md` → "Rotation scope: only oversubscribed role groups fire".)
 
 ### Handling role shortages
 
-If signups don't include enough players for a required role at a raid's composition target (tanks, healers, or DPS), the user should ask **dual-spec players** whether they'd be willing to switch to their secondary spec for this raid.
+When the placed roster is **under target** on a required role (tanks, healers, or DPS), resolve it in two resorts, in order.
+
+**Resort 1 — a benched mainspec signup.** If the headcount cut benched a signup whose `Mainspec (role)` is the under-target role, that signup fills it — the *Mainspec over offspec* rule's filling case (`rules/02-bench-rotation.md` → "Mainspec over offspec (Mainspec-first rule)"), which can place a lower-rank mainspec player ahead of comp-flexing a higher-rank one. Mechanics — who's benched from the over-target role in exchange, the priority-1 limit, the all-priority-1 fallback, picking among multiple eligible signups — are in that rule.
+
+**Resort 2 — comp flex.** Used **only when no cut-benched mainspec signup is available** for the under-target role. Ask **dual-spec players** whether they'd be willing to switch to their secondary spec for this raid.
 
 **Who qualifies.** Dual-spec players are any player in `rules/04-players.md` whose `Offspec (role)` column lists a specific spec (not "—", not "?", not blank). Their second spec is what they may switch to. A "?" in `Offspec` means we don't yet know whether the player has a second spec — those players are **not** eligible for flex by default; the user can clarify on a case-by-case basis.
 
@@ -46,17 +52,17 @@ If signups don't include enough players for a required role at a raid's composit
 2. **No-preference second** — players with confirmed dual specs but no note recording a strong preference one way or the other (e.g., "Ok to offspec"). Neutral.
 3. **Last resort last** — players with reluctance notes (e.g., "Strong Resto preference", "extremely reluctant Balance", "Balance spec only as absolute last resort"). Ask only if tiers 0, 1, and 2 didn't fill the role. Respect the spirit of "absolute last resort" notes — these players genuinely don't want to play their off-spec.
 
-**Timing.** This flex is composition-time, before the final bench cut. Once a flex swap is accepted, recompute the priority + bench rotation against the new role distribution.
+**Timing.** Comp flex happens during step-4 reconciliation, after the headcount cut. An accepted flex triggers the step 3–4 loop — see `rules/02-bench-rotation.md` → "Raid spot priority (selection order)", step 5.
 
 ### Handling role surpluses
 
-The surplus trigger: when a role is over-target — more signups than the composition target calls for — players whose mainspec is in the over-target role can flex to their offspec via comp flex rather than being auto-benched for the surplus. The principle is the same as the shortage trigger above — prefer to use a player's offspec over sitting them on the bench, as long as the composition actually needs what their offspec provides.
+The surplus trigger: when a role is over-target — more signups than the composition target calls for — the excess player would otherwise be benched per Rule 02 — by fair rotation if the role's bench group is oversubscribed, or by a discretionary pick (see `rules/02-bench-rotation.md`). **Comp flex can intervene first**: if the surplus player's mainspec is the over-target role and their `Offspec (role)` covers a role the raid is *still* short on, they may flex to that offspec rather than sit — the same "prefer offspec over bench" principle as the shortage trigger. But this is the surplus mirror of Resort 1 in "Handling role shortages" above: the offspec switch is offered **only when the headcount cut benched no one whose mainspec is that short role** — if such a signup exists, Resort 1 fills the short role instead and the surplus player just benches.
 
-**Offer the offspec switch first.** Before benching the surplus player, check their `Offspec (role)` in `rules/04-players.md`. If they have a usable offspec that the raid has room for, ask whether they'd play that offspec instead.
+**Offer the offspec switch only after Resort 1 is exhausted.** Before offering a surplus player the offspec switch, confirm (a) their `Offspec (role)` in `rules/04-players.md` covers a role the raid is still short on, and (b) Resort 1 (in "Handling role shortages" above) would not fill that short role. If both hold, ask whether they'd play that offspec instead.
 
 **Asking order.** When multiple surplus players qualify for the offspec switch, follow the asking order from `Handling role shortages → Asking order` above (Tier 0 → Tier 3).
 
-**If accepted**, the player joins as the offspec role and is treated as that role for every subsequent step (raid-spot priority, fair bench rotation, composition targets). Recompute the roster against the new role distribution.
+**If accepted**, the player joins as the offspec role and is treated as that role for every subsequent step (raid-spot priority, fair bench rotation, composition targets) — for fair rotation they count as an *offspec signer* per `rules/02-bench-rotation.md` → "Mainspec over offspec (Mainspec-first rule)". Recompute the roster against the new role distribution.
 
 **If declined, or if the player has no usable offspec**, they fall through to the standard bench-rotation rules in Rule 02 like any other signup that doesn't fit. The bench is caused by the role being surplus, not by the decline — reason label `fair rotation` or `manual override`, never decline-specific. The flex was an alternative to the structural bench, not a way of avoiding a punishment.
 
@@ -208,7 +214,7 @@ When outside recruitment is triggered (the 27–29 case above, or the 25–26 ca
 
 If the guild can't supply enough tanks to meet the hard requirements in "Tank composition" above for every team, **drop to 2 teams**. This override applies even at 27+ signups: outside-of-guild recruitment never covers tank slots.
 
-The comp flex rule from "General principles → Handling role shortages" must be exhausted **before** falling back: ask DPS-spec or Healer-spec players whose secondary spec is a tank spec (e.g., players whose `Offspec (role)` in `rules/04-players.md` lists a tank role) whether they would tank for this raid. Only if that doesn't yield enough tanks does the team count drop.
+The role-shortage resolution in "General principles → Handling role shortages" must be exhausted **before** falling back: first bring in any benched mainspec tank signup (Resort 1 — there is none under-cap, since everyone plays; only over-cap Karazhan can have one), then ask DPS-spec or Healer-spec players whose secondary spec is a tank spec (Resort 2 — comp flex; e.g., players whose `Offspec (role)` in `rules/04-players.md` lists a tank role) whether they would tank for this raid. Only if that doesn't yield enough tanks does the team count drop.
 
 **User override.** The user may explicitly choose to keep 3 teams with an outside recruit filling a tank slot rather than dropping to 2 teams. When this happens, record the recruit in the roster table as `PUG Tank` (matching the `PUG Heal` / `PUG DPS` naming convention from "Recording outside recruits (PUGs)" above) and document the override in the record file's `## Notes` under "User overrides" per the Notes guidance. The default behaviour above remains the rule; this override is per-raid and does not modify it.
 
