@@ -86,9 +86,9 @@ When a player's bench group changes — either because their mainspec changes (`
 
 Bookkeeping: offspec play does not move the player to a different bench group for the raid. They remain in their mainspec bench group; bench counts continue to accumulate against that group's table per *One bench count per player per location* above (under *Bench groups*). Whether a player is a *mainspec signer* or an *offspec signer* is **per-raid** metadata, not a property of bench-group membership.
 
-Tiebreaker cascades (for the *cutting* case, when choosing whom to bench within a subset) are identical for both subsets:
+In the *cutting* case, bench selection is identical for both subsets:
 
-- **Among multiple offspec signers** in an oversubscribed pool: apply the standard cascade (*Direction* and the *Tiebreaker* subsections below). Counts come from each player's own bench group's table; counts are unified across mainspec and offspec play, so the cascade compares them apples-to-apples even when candidates span multiple bench-group tables.
+- **Among multiple offspec signers** in an oversubscribed pool: apply the standard cascade (*Direction* and the *Tiebreaker cascade* below). Counts come from each player's own bench group's table; counts are unified across mainspec and offspec play, so the cascade compares them apples-to-apples even when candidates span multiple bench-group tables.
 - **Among mainspec signers** (used only when all offspec signers in the pool have been benched and the pool is still over): the same cascade.
 
 This rule pairs with *Rotation scope: only oversubscribed role groups fire* (below). The two address independent failure modes: the *cutting* case here handles an offspec signer sitting in the same oversubscribed pool as a pure mainspec player; the *Rotation scope* rule handles flex-displacement manufacturing a bench in an at-par role group. Neither subsumes the other — both are needed.
@@ -133,67 +133,76 @@ When deciding who to bench, compare players' bench counts **for the specific rai
 
 Previous bench history (tracked in prior record files and summarized in `derived/bench-history-tbc.md`) must be consulted before deciding who sits.
 
-### Tiebreaker: composition target
+### Tiebreaker cascade
 
-When the fair-rotation rule leaves a tie — two or more candidates with the same cumulative bench count for the raid location and bench group, where not all of them can play — use the raid's **composition target** as the tiebreaker. The goal is to pick the subset of tied candidates whose inclusion brings the roster's spec distribution closest to the target.
+When the fair-rotation *Direction* rule leaves a tie — two or more candidates with the same cumulative bench count for the raid location and bench group, where not all of them can play — resolve it with the **tiebreaker cascade** below. This subsection is the single source of truth for the post-*Direction* ordering; the `####` subsections below detail each step's mechanics.
 
-This tiebreaker is strictly **within** fair rotation. It only fires when two or more candidates have the **same** cumulative bench count for the raid location and bench group — i.e., when the primary fair-rotation rule above leaves a tie. When one candidate's cumulative count is strictly lower than another's, fair rotation has already picked (the lower-count player benches per the *Direction* sub-section above); composition target does **not** revisit that decision. The tiebreaker also never crosses bench groups.
+The cascade is strictly **within** fair rotation and within a single bench group; it resolves only the tie *Direction* left, and never revisits *Direction*'s call. It never crosses bench groups or priority levels.
+
+**The cascade — highest precedence first; each step fires only on the tie its predecessor leaves:**
+
+1. **Composition target — boundary-crossing correction.** The bench/keep choices that move a spec *across* a composition-target boundary toward the target. 25-man: `#### 25-man raids` → *Pass 1* (the target spec ranges). Karazhan: `#### Karazhan` → *Tier 1* (per-team class diversity).
+2. **Cross-location bench total.** Bench the tied candidate with the lowest bench count summed across every raid location. `#### Cross-location bench total (any raid format)`.
+3. **Composition target — within-classification nudge.** The bench/keep choices that move a spec toward target *without* flipping its classification. 25-man: `#### 25-man raids` → *Pass 2*. Karazhan: `#### Karazhan` → *Tier 2* (25-man class desirability).
+4. **Final fallback — alphabetical by player name.** `#### Final fallback (any raid format)`.
+
+When the tie requires more than one bench, pick them **one at a time** and re-enter the cascade from step 1 after each bench — including after a step-2 (cross-location) bench, since reducing one spec's count can open a step-1 boundary-crossing fix that wasn't available before.
+
+Hard composition caps are applied *before* the cascade — `#### Interaction with composition caps`.
 
 #### 25-man raids
 
-The composition target for any 25-man raid is the **"Quick Reference: Number of Each Spec Typically Desired (25-Man Raid General Guidelines)"** table in `reference/raid-composition-guide.md` § 8. Refer to that table directly — do not duplicate it here (single source of truth).
+The composition target for any 25-man raid is the **target spec ranges** — the "Quick Reference: Number of Each Spec Typically Desired (25-Man Raid General Guidelines)" table in `reference/raid-composition-guide.md` § 8 (see `config/project.md`'s glossary). Refer to that table directly — do not duplicate it here (single source of truth).
 
-Section 8 lists each spec with a **range** (e.g., `Enhancement Shaman 1-2`, `Restoration Druid 1-2`, `BM Hunter 2-4`). A spec's current representation in the proposed roster is classified as:
+The target spec ranges set a **range** for each spec (e.g., `Enhancement Shaman 1-2`, `Restoration Druid 1-2`, `BM Hunter 2-4`). A spec's current representation in the proposed roster is classified as:
 
 - **Over-represented** — above the upper bound of the range
 - **In-range** — within the range (inclusive)
 - **Under-represented** — below the lower bound of the range
 
-Practical guidance when breaking a tie:
+This tiebreaker runs in **two passes**, split across the cascade above — **Pass 1 is cascade step 1**, **Pass 2 is cascade step 3**, with the cross-location bench total (cascade step 2) between them.
 
-1. **Prefer to bench a candidate whose spec is over-represented.** Benching them moves the roster closer to the target.
-2. **Prefer to keep a candidate whose spec is under-represented.** Keeping them moves the roster closer to the target.
-3. **Iterate:** after benching one over-represented candidate, recompute the spec counts and re-apply the tiebreaker to whatever ties remain. Don't bench all over-represented candidates at once — a single bench may change the picture for the next decision.
-4. **If all tied candidates are in-range**, or if the choice among them doesn't change any spec's over/under status, fall back to the final fallback below.
+- **Pass 1 — boundary-crossing corrections (cascade step 1).** The bench/keep choices that *flip* a spec's classification toward target: prefer to bench a candidate whose spec is over-represented when benching them brings that spec into range; and prefer **not** to bench a candidate when benching them would push their (currently in-range) spec below its lower bound. (Don't bench all over-represented candidates at once — a single bench may change the picture, and the cascade re-checks from step 1 after each.) Stop once neither of those boundary-crossing considerations distinguishes the remaining tied candidates; control passes to cascade step 2.
+- **Pass 2 — within-classification nudges (cascade step 3).** Among the candidates still tied after step 2: prefer to bench one whose spec is over-represented (benching them moves the roster toward target even though the spec stays over its upper bound; a bench that would bring the spec into range is a Pass-1 correction, handled there), and prefer to keep one whose spec is under-represented (benching them would deepen an already-short spec). If this still doesn't discriminate, control passes to the final fallback.
 
-#### Mapping imprecise roster specs to Section 8
+#### Mapping imprecise roster specs to the target spec ranges
 
-`rules/04-players.md` records DPS specs at lower fidelity than Section 8 in several cases — e.g., "DPS Warrior" without Arms vs Fury, "DPS Hunter" without BM vs Marksmanship vs Survival, "DPS Warlock" without Destruction vs Affliction vs Demonology. For tiebreaker purposes, when the roster spec is less specific than Section 8's rows:
+`rules/04-players.md` records DPS specs at lower fidelity than the target spec ranges in several cases — e.g., "DPS Warrior" without Arms vs Fury, "DPS Hunter" without BM vs Marksmanship vs Survival, "DPS Warlock" without Destruction vs Affliction vs Demonology. For tiebreaker purposes, when the roster spec is less specific than the rows of the target spec ranges:
 
-- **Combine the ranges of all Section 8 rows that match the roster spec.** For example, "DPS Warrior" spans Arms Warrior (1) + Fury Warrior (0-2) = combined range **1-3**. "DPS Hunter" spans BM (2-4) + Survival (0-1) = **2-5**. "DPS Warlock" spans Destruction (3-5) + Affliction (0-1) = **3-6**.
+- **Combine the ranges of all rows of the target spec ranges that match the roster spec.** For example, "DPS Warrior" spans Arms Warrior (1) + Fury Warrior (0-2) = combined range **1-3**. "DPS Hunter" spans BM (2-4) + Survival (0-1) = **2-5**. "DPS Warlock" spans Destruction (3-5) + Affliction (0-1) = **3-6**.
 - **If a player's exact spec is unknown (`?` in `04-players.md`)**, treat them as the combined-range case above. Do not guess a specific spec just to force a finer tiebreaker decision.
 
 This is a rough mapping and not always discriminating. That's acceptable — the tiebreaker is supposed to nudge the roster toward the target, not compute an exact optimum.
 
 #### Karazhan
 
-When fair rotation leaves a tie among Karazhan benching candidates, apply this **two-tier tiebreaker** before falling back to alphabetical:
+Karazhan's composition tiebreaker has two tiers, split across the *Tiebreaker cascade* above — **Tier 1 is cascade step 1**, **Tier 2 is cascade step 3**, with the cross-location bench total (cascade step 2) between them:
 
-**Tier 1 — Class diversity per team.** Prefer to bench the candidate whose class is most stacked within the team they would otherwise join. The goal is for each of the three Karazhan teams to contain a varied class mix rather than 3+ of the same class concentrated on one team. If the tentative team assignments already give every team a diverse class mix and the choice between tied candidates wouldn't change any team's diversity, Tier 1 doesn't discriminate — proceed to Tier 2.
+**Tier 1 — Class diversity per team (cascade step 1).** Prefer to bench the candidate whose class is most stacked within the team they would otherwise join. The goal is for each of the three Karazhan teams to contain a varied class mix rather than 3+ of the same class concentrated on one team. If the tentative team assignments already give every team a diverse class mix and the choice between tied candidates wouldn't change any team's diversity, Tier 1 doesn't discriminate — control passes to cascade step 2 (the cross-location bench total); Tier 2 (cascade step 3) runs only if that leaves the tie open too.
 
 Note that this tier may require an iterative pass: you may need to tentatively assign teams, identify the over-stacked picks, then re-check after each bench decision.
 
-**Tier 2 — 25-man class desirability.** When Tier 1 doesn't break the tie, prefer to **keep** the candidate whose class has the highest combined upper-bound count in `reference/raid-composition-guide.md` § 8 "Quick Reference: Number of Each Spec Typically Desired (25-Man Raid General Guidelines)". Compute each tied candidate's per-class score by **summing the upper bounds of every Section 8 row that belongs to the same class** (e.g., Warlock = Destruction's 5 + Affliction's 1 = 6; Mage = Fire/Arcane's 2 = 2). Rank the tied candidates by that score and keep the highest. The reasoning: classes with higher 25-man target counts are higher-impact in general, and Karazhan has no per-spec target table of its own, so 25-man Section 8 acts as a secondary desirability signal.
+**Tier 2 — 25-man class desirability (cascade step 3).** When neither Tier 1 nor the cross-location bench total (cascade step 2) breaks the tie, prefer to **keep** the candidate whose class has the highest combined upper bound in the **target spec ranges** (`reference/raid-composition-guide.md` § 8). Compute each tied candidate's per-class score by **summing the upper bounds of every row of the target spec ranges that belongs to the same class** (e.g., Warlock = Destruction's 5 + Affliction's 1 = 6; Mage = Fire/Arcane's 2 = 2). Rank the tied candidates by that score and keep the highest. The reasoning: classes with higher 25-man target counts are higher-impact in general, and Karazhan has no per-spec target table of its own, so the 25-man target spec ranges act as a secondary desirability signal — which is why this tier sits at cascade step 3, below the cross-location bench total, rather than at step 1 alongside Tier 1.
 
-If both Tier 1 and Tier 2 leave the tie unresolved (e.g., the tied candidates share the same class, or their classes have equal Section 8 sums), fall through to the final fallback below (alphabetical).
+If Tier 2 leaves the tie unresolved too (e.g., the tied candidates share the same class, or their classes have equal target-spec-range sums), fall through to the final fallback (cascade step 4, alphabetical).
 
 #### Cross-location bench total (any raid format)
 
-When the composition-target / Karazhan class tiebreakers above don't discriminate, apply this rule before falling through to alphabetical: **prefer to play the tied candidate with the highest cumulative bench count summed across every raid location the project currently tracks.** Equivalently, prefer to bench the tied candidate with the lowest cross-location total.
+This is **cascade step 2** (see the *Tiebreaker cascade* above) — it fires when cascade step 1 leaves a tie, and it ranks above cascade step 3 and the final fallback. The rule: **prefer to play the tied candidate with the highest cumulative bench count summed across every raid location the project currently tracks.** Equivalently, prefer to bench the tied candidate with the lowest cross-location total.
 
 "Every raid location" means every location for which bench counts are maintained in `derived/bench-history-tbc.md` at the time the roster is being formed — no location is excluded, and this rule automatically extends to any future raid location added to the project without needing to be reworded. Sum across the locations within the player's own bench group's row; do not cross bench-group boundaries when computing the total.
 
 The reasoning: per-location fair rotation (the primary rule) can leave a player who has been benched heavily on other locations still sitting at a tied per-location count here. Giving them the spot in this tie nudges their overall raid participation back toward parity with peers who have been benched less globally.
 
-This tiebreaker is still strictly **within** fair rotation and within a single bench group. It only fires when the higher tiebreakers above (composition target / Karazhan class diversity) leave a tie — i.e., two or more candidates with the same per-location bench count whose composition profile is also indistinguishable. When per-location counts differ, the lower-count player benches per the *Direction* sub-section above, regardless of cross-location totals; this tiebreaker does not revisit that. It never crosses priority levels or role groups.
+This step is still strictly **within** fair rotation and within a single bench group; it never crosses priority levels or role groups. And it never overrides *Direction* — a strictly-lower per-*location* bench count benches first, regardless of cross-location *totals*.
 
 #### Final fallback (any raid format)
 
-When none of the tiebreakers above discriminate — composition target, Karazhan class tiers, and cross-location bench total all leave the tie open — fall back to **alphabetical order by player name**. This is a deterministic last resort, not a preference; it exists so that identical inputs always produce identical rosters.
+**Cascade step 4.** When cascade steps 1–3 above all leave the tie open, fall back to **alphabetical order by player name**. This is a deterministic last resort, not a preference; it exists so that identical inputs always produce identical rosters.
 
 #### Interaction with composition caps
 
-Hard composition caps from `rules/01-raid-compositions.md` (e.g., the 25-man Resto Druid cap) are **applied before** this tiebreaker runs. The cap determines *which* candidates are even eligible; the tiebreaker then resolves fair-rotation ties among the eligible candidates. Section 8's ranges often align with cap bounds, but the cap is the hard rule and Section 8 is the soft tiebreaker — if they ever diverge for a future raid location, the cap wins.
+Hard composition caps from `rules/01-raid-compositions.md` (e.g., the 25-man Resto Druid cap) are **applied before** the tiebreaker cascade runs. The cap determines *which* candidates are even eligible; the cascade then resolves fair-rotation ties among the eligible candidates. The target spec ranges often align with cap bounds, but the cap is the hard rule and the target spec ranges are the soft tiebreaker — if they ever diverge for a future raid location, the cap wins.
 
 ## Composition caps override pure fairness (within a bench group)
 
@@ -230,7 +239,7 @@ Every row in a record file's bench table must use exactly one of the reason labe
 | Reason            | Meaning |
 |-------------------|---------|
 | `priority 3`      | Player is raid spot priority 3 (last resort) and was benched because more priority-3 players signed up than the spots open to them. See *Raid spot priority (selection order)* and *Member reservation* above. |
-| `fair rotation`   | Bench selected by the fair-rotation algorithm — see *Raid spot priority (selection order)*, *Member reservation*, *Mainspec over offspec (Mainspec-first rule)*, and *Fairness requirement* (incl. *Direction*, *Rotation scope*, *Rotation goal*, and the *Tiebreaker* subsections) above. Used for priority-2 / priority-3 overflow, including priority-2 displaced by the *Member reservation*. |
+| `fair rotation`   | Bench selected by the fair-rotation algorithm — see *Raid spot priority (selection order)*, *Member reservation*, *Mainspec over offspec (Mainspec-first rule)*, and *Fairness requirement* (incl. *Direction*, *Rotation scope*, *Rotation goal*, and the *Tiebreaker cascade*) above. Used for priority-2 / priority-3 overflow, including priority-2 displaced by the *Member reservation*. |
 | `manual override` | A discretionary bench pick that overrides the fair-rotation algorithm — see *User's discretionary bench picks* above for trigger cases and the full rule. |
 | `composition cap` | Benched by a hard composition cap in `rules/01-raid-compositions.md` (e.g., the 25-man Resto Druid cap). Within the capped spec, fair rotation still decides which player sits — see *Composition caps override pure fairness* above. |
 

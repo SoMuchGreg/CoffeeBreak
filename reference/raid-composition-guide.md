@@ -351,6 +351,8 @@ These debuffs affect the boss and benefit the entire raid, but require specific 
 
 ### 25-Man Raid (General Guidelines)
 
+Elsewhere in the project this table is the **target spec ranges** — see `config/project.md`'s glossary.
+
 | Spec | Typical Count | Reason |
 |------|--------------|--------|
 | Enhancement Shaman | 1-2 | Melee group totem twisting |

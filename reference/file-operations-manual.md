@@ -37,7 +37,7 @@ For cadence (when to re-read the applicable tier within a session), see `CLAUDE.
 | `reference/class-colors-and-spec-icons.md` | Class colors and spec icon reference for parsing screenshots |
 | `reference/icons/specs/*.jpg` | Spec icon reference images (compare side-by-side when unsure) |
 | `reference/icons/classes/*.png` | Class icon reference images (compare side-by-side when unsure) |
-| `reference/raid-composition-guide.md` | Comprehensive TBC raid composition reference: buff scope, Shaman totems, raid-wide debuffs, per-spec target counts (§8 — used by the 25-man fair-rotation tiebreaker in `rules/02-bench-rotation.md`). **§3, §4, §9 (party-group templates and assignment framework) are out of scope for roster formation — see `rules/01-raid-compositions.md` → "Party groups (out of scope)" for the rule.** |
+| `reference/raid-composition-guide.md` | Comprehensive TBC raid composition reference: buff scope, Shaman totems, raid-wide debuffs, the **target spec ranges** (§8 — used by the 25-man fair-rotation tiebreaker in `rules/02-bench-rotation.md`). **§3, §4, §9 (party-group templates and assignment framework) are out of scope for roster formation — see `rules/01-raid-compositions.md` → "Party groups (out of scope)" for the rule.** |
 | All files in `records/` | Predecessor context, especially recent bench history. Gruul+Mag records carry `## Encounter assignments` sections (retro-recorded for raids back to 2026-03-01) — consulted by `rules/05-encounter-assignments.md` → "Continuity data sources". |
 
 ---
@@ -111,7 +111,7 @@ The `## Notes` section is for **per-raid facts that aren't derivable from the ru
 - **Spec overrides** — when a player's actual spec for the raid differs from what the rules would have placed them in (per `rules/01-raid-compositions.md` → "Role placement: mainspec is authoritative"). Record `expected → actual`. Group multiple overrides under one bullet with sub-bullets.
 - **Alt swaps** — when a player's alt character was rostered instead of their main (per `rules/01-raid-compositions.md` → "Alts"). Record `main → alt` and the reason (e.g., main pool at target).
 - **Bench picks whose outcome required information not visible in the bench table** — alphabetical-fallback tiebreakers, user overrides on top of the algorithm, `manual override` surplus calls. Name the player, name the cap or rule that triggered the bench, name the resolution mechanism. **Do not** restate the rule mechanics or the cap numbers — point at the rule.
-- **Post-build roster changes** — withdrawals, late additions, swaps, or on-the-go / post-raid corrections after the initial roster was built. Record the change and any composition consequence (e.g. *"Warlock count fell to 2, below Section 8 lower bound of 3 — unfillable"*). Applies whether the change came via `Event: Full-roster recalculation` (pre-raid recalc) or `Event: Quick (ad-hoc) roster update` (post-raid or trivial edit).
+- **Post-build roster changes** — withdrawals, late additions, swaps, or on-the-go / post-raid corrections after the initial roster was built. Record the change and any composition consequence (e.g. *"Warlock count fell to 2, below the target-spec-range lower bound of 3 — unfillable"*). Applies whether the change came via `Event: Full-roster recalculation` (pre-raid recalc) or `Event: Quick (ad-hoc) roster update` (post-raid or trivial edit).
 - **User overrides** — any case where the algorithm's output was overridden by a human decision. Name the player, name what the algorithm would have done, name what was done instead.
 
 #### What does NOT belong in Notes
@@ -316,7 +316,7 @@ Quick changes are not blindly applied. Before applying any slot-touching change,
 4. **Hard player constraints.** Post-change roster respects `rules/03-player-constraints.md` → "Availability constraints", "Must-be-together", "Must-not-be-together". For Karazhan team moves and swaps, also re-check "Needlist" same-team conflicts (block any new same-team competitor pairing unless competitor count strictly exceeds team count, in which case record as known-unavoidable in `## Notes`) and "Enchanters — spread across Karazhan raid teams" (no two enchanters on the same Karazhan team).
 5. **Encounter-role coverage and eligibility** (Gruul+Mag only). If the change orphans a role in `## Encounter assignments`, or violates an eligibility requirement (e.g., Maulgar Tank must be a core tank, Mage Tank must be a Mage), re-run the assignment algorithm in `rules/05-encounter-assignments.md` **only for the affected role(s)** — do not re-derive every encounter role.
 
-**Out of scope for Quick** (use `Event: Full-roster recalculation` if any of these are the goal): fair-rotation re-derivation (`rules/02-bench-rotation.md`), comp flex resolution (`rules/01-raid-compositions.md` → "Handling role shortages" / "Handling role surpluses"), soft-rule optimization (`rules/01-raid-compositions.md` → "Soft rule conflicts"), composition-target nudges (`reference/raid-composition-guide.md` § 8 ranges, `rules/02-bench-rotation.md` → "Tiebreaker: composition target"), sub-agent verdict.
+**Out of scope for Quick** (use `Event: Full-roster recalculation` if any of these are the goal): fair-rotation re-derivation (`rules/02-bench-rotation.md`), comp flex resolution (`rules/01-raid-compositions.md` → "Handling role shortages" / "Handling role surpluses"), soft-rule optimization (`rules/01-raid-compositions.md` → "Soft rule conflicts"), composition-target nudges (the target spec ranges in `reference/raid-composition-guide.md` § 8; `rules/02-bench-rotation.md` → "Tiebreaker cascade"), sub-agent verdict.
 
 ### Recording the change
 
@@ -476,7 +476,7 @@ INPUTS for generating a record file:
 REFERENCE for parsing screenshots and raid composition decisions:
   ├── reference/class-colors-and-spec-icons.md          ← parsing screenshots (class colors, spec icons)
   ├── reference/icons/**/*                              ← parsing screenshots (icon image files)
-  └── reference/raid-composition-guide.md               ← TBC raid composition reference (§8 used by tiebreaker)
+  └── reference/raid-composition-guide.md               ← TBC raid composition reference (§8 = the target spec ranges, used by tiebreaker)
 
 OUTPUTS:
   ├── records/*.md                    ← actual record files, one per raid night (each record file is also INPUT for the next); Gruul+Mag records carry `## Encounter assignments` sections read by `rules/05-encounter-assignments.md`

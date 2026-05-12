@@ -121,7 +121,7 @@
 - **Tiinar tentative** — excluded from roster pool per `reference/file-operations-manual.md` → Step 2.
 - **Bench picks:**
   - **Dankyn (fair rotation)** — Fury Warrior over §8 max 2; Dankyn lowest G+M among Fury candidates.
-  - **Shapkica/Chkemi (fair rotation)** — 3rd-pick tiebreaker per `rules/02-bench-rotation.md` → "Tiebreaker: composition target" (preserves the 2-Warlock pool); Feral DPS still in §8 range 1-2 after the cut, while the algorithmic-strict alphabetical fallback (Benglock) would have taken combined Warlock count further below §8's combined Destro+Affli range of 3-6.
+  - **Shapkica/Chkemi (fair rotation)** — 3rd-pick tiebreaker per `rules/02-bench-rotation.md` → "Tiebreaker cascade" (preserves the 2-Warlock pool); Feral DPS still in §8 range 1-2 after the cut, while the algorithmic-strict alphabetical fallback (Benglock) would have taken combined Warlock count further below §8's combined Destro+Affli range of 3-6.
 - **User overrides:**
   - **Nemajumarad bench (manual override)** — algorithmic pick was Bergamotka/Tymoti (Enh Sham over §8 max 2). User swapped Bergamotka in. Tradeoffs: Enh Sham stays at 3 (over §8 max 2), Arms Warrior drops to 0 (under §8 range 1; Blood Frenzy debuff missing as no Combat Rogue in raid). Cross-location bench burden equalized between the two players (both end at 1 total).
 - **Magtheridon SW cube** = Gresac/Younea per `rules/05-encounter-assignments.md` continuity (he held SW on 2026-03-01 and is in the roster as DPS-Elemental this raid). CptKavior (sub-agent's initial cube-experience-fallback would-be pick) moves to alternative cube clickers.
