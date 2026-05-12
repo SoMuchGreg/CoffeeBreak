@@ -5,7 +5,7 @@ rename the copy to `YYYY-MM-DD-{day}-gruul-mag.md` (e.g.
 `records/2026-04-26-sun-gruul-mag.md`). Do not edit this template in place — only edit
 the copy under `records/`.
 
-For any other 25-man raid location (SSC, TK, Hyjal, BT when content unlocks), use
+For any other 25-man raid location (SSC, TK; plus Hyjal, BT when those unlock), use
 `reference/templates/25man-record.md` instead — that template omits the
 `## Encounter assignments` section defined below (which applies only to Gruul+Mag).
 
@@ -15,9 +15,10 @@ marked with an HTML comment like `delete line if none` if its condition applies.
 Keep the section order as-is — the file-operations-manual and rules assume
 this layout.
 
-Composition target for Gruul+Mag is 3/6/16 (per `rules/01-raid-compositions.md`).
-Always look up the target there before filling in the Composition check line below —
-never copy the target from a previous record file without re-verifying it.
+Composition target for Gruul+Mag is the default 25-man composition
+(`rules/01-raid-compositions.md` → "25-man raids → General → Default composition").
+Always look up the target in rule 01 before filling in the Composition check line
+below — never copy it from a previous record file without re-verifying it.
 -->
 
 # Gruul's Lair + Magtheridon — {Day} {DD.MM.YYYY}
@@ -114,7 +115,7 @@ role section.
 |--------|-------|
 | ...    | ...   |
 
-**Composition check:** Target 3/6/16 for Gruul+Mag (per `rules/01-raid-compositions.md`). Actual: {T}/{H}/{DPS} = {total}. Status: ✅ / ⚠️ {explanation if not on target, e.g. "1 healer short — no flex accepted" or "1 over on DPS, ran 26 by user override"}.
+**Composition check:** Target {target} for Gruul+Mag (per `rules/01-raid-compositions.md`). Actual: {T}/{H}/{DPS} = {total}. Status: ✅ / ⚠️ {explanation if outside target, e.g. "4 healers — 1 below the 5-healer floor, no flex accepted" or "7 healers, ran by user override"}.
 
 ## Comp flex applied                                   <!-- delete this whole section if no flex was used -->
 

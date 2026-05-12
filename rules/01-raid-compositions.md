@@ -104,7 +104,7 @@ This scope will change when the user formalizes party-group rules (see `config/p
 
 ## Core tanks
 
-Core tanks are the named tanks the user relies on to fill tank duties at any raid format we run. The set is **format-independent** — a signed-up core tank takes a tank slot at whatever format the raid is (Gruul+Mag's 3 slots, each Karazhan team's 2, future raid locations). The set is currently stable but may evolve as signups and player availability shift.
+Core tanks are the named tanks the user relies on to fill tank duties at any raid format we run. The set is **format-independent** — a signed-up core tank takes a tank slot at whatever format the raid is (the 3 tank slots at Gruul+Mag, SSC, or TK; each Karazhan team's 2; future raid locations). The set is currently stable but may evolve as signups and player availability shift.
 
 ### Canonical membership
 
@@ -112,7 +112,7 @@ Core tanks are listed in the **Core tanks** sub-table of `rules/04-players.md`, 
 
 ### Cap: at most 3 core tanks
 
-The combined set (Core tanks sub-table + Officers rows flagged `Core tank`) never contains more than 3 entries. This matches Gruul+Mag's 3-tank target and prevents core-tank surplus situations (a fourth core tank could create a tank pool the existing rules can't always resolve via flex).
+The combined set (Core tanks sub-table + Officers rows flagged `Core tank`) never contains more than 3 entries. This matches the 3-tank target of our 25-man raids (Gruul+Mag, SSC, TK) and prevents core-tank surplus situations (a fourth core tank could create a tank pool the existing rules can't always resolve via flex).
 
 ### Tank priority
 
@@ -222,11 +222,28 @@ The role-shortage resolution in "General principles → Handling role shortages"
 
 ### General (applies to every 25-man raid location)
 
-These general rules apply to **every** 25-man raid we run, current and future (Gruul+Mag today; SSC, TK, Hyjal, BT, etc. when content unlocks).
+These general rules apply to **every** 25-man raid we run, current and future (Gruul+Mag, SSC, and TK today; Hyjal, BT, etc. when content unlocks).
 
-**Default tank count for any 25-man raid is 2 tanks**, unless the specific raid location below overrides it. Healer and DPS counts are not specified at the general level — they depend on the raid location. See the per-raid-location sections below for canonical numbers.
+#### Default composition
 
-> ⚠️ **Do not conflate "25-man" with "Gruul+Mag".** Gruul+Mag is one specific 25-man raid location; it has its own composition (see below) which differs from the general rule of thumb. Future 25-man raid locations (SSC, TK, etc.) will each get their own section with their own composition.
+| Role    | Count |
+|---------|-------|
+| Tank    | 3     |
+| Healer  | 5-6   |
+| DPS     | 16-17 |
+| **Total** | **25** |
+
+This is the **default** for every 25-man raid location; a location may override it in its own section below (none currently do). Tanks are a fixed **3** (see `Core tanks` above). Healers are a **5-6 range**. DPS is whatever's left after tanks and healers — **16** with 6 healers, **17** with 5.
+
+**The healer count is the number of mainspec healers who signed up — counting all priorities** (a priority-3 healer-main counts toward the total exactly like a priority-1 or priority-2 one). **6 is the ideal**: run as many of them as signed up, up to **6** (the surplus benches when more than 6 signed up); if fewer than 5 signed up, comp flex tops the count up toward the **5** floor. **Whenever 6 or more mainspec healers signed up — any priority mix — the raid runs 6 healers; running 5 healers while a 6th mainspec healer-main sits benched is never correct** (see "Reaching 6 healers" below). By signup count:
+
+- **≤ 4 mainspec healers** — below the range. Comp flex is offered to raise the healer count to **5**, the floor: the under-target case of "Handling role shortages" above — Resort 1 (a mainspec-healer signup that the headcount cut benched, if any), then Resort 2 (a DPS- or tank-main whose `Offspec (role)` is Healer). Flex never raises the count past 5. If no flex is accepted, the raid runs with fewer than 5 healers ("Comp flex consent" above).
+- **5 or 6 mainspec healers** — at target; run them all (the 6th may be a priority-3 Member — see "Reaching 6 healers" below). The raid is 6 healers / 16 DPS when six signed up, 5 healers / 17 DPS when exactly five did. No flex (6 comes from mainspec-healer signups, never from flexing past 5), no healer bench.
+- **≥ 7 mainspec healers** — above the range. Bench the surplus down to **6**, the ceiling, per the over-target case of "Handling role surpluses" above; fair rotation (`rules/02-bench-rotation.md`) picks who sits, subject to the Resto Druid cap below. This is over-cap behavior; under-cap, "Under-cap behavior" below governs instead.
+
+**Reaching 6 healers, regardless of priority.** A priority-3 (Member) healer-main fills a healer slot like any other healer-main; the raid never runs fewer than 6 healers when 6 or more mainspec healers signed up. Two things enforce this: (1) when the Member reservation has more priority-3 signups than reserved spots, those spots are allocated by composition targets first, then fair rotation — so a priority-3 healer-main the roster needs for its 6th healer is seated ahead of a priority-3 signup in a role the roster doesn't need (`rules/02-bench-rotation.md` → "Member reservation" and "Raid spot priority (selection order)" step 3); (2) step-5 reconciliation (`rules/02-bench-rotation.md` → "Raid spot priority (selection order)", step 5) backstops it — a mainspec healer-main left benched while the roster is below its healer target is brought in via the *Mainspec over offspec* fill (Resort 1 above), which seats them, even a Member, over a higher-priority non-healer.
+
+> ⚠️ **Do not conflate "25-man" with any specific 25-man raid location.** The composition above is the **default** for every 25-man location; Gruul+Mag, SSC, and TK all use it unchanged, and a future location may override it in its own section. Rules elsewhere that say "25-man" apply to *all* 25-man locations, not just Gruul+Mag.
 
 #### Under-cap behavior (any 25-man)
 
@@ -235,19 +252,17 @@ A 25-man raid **always runs**, regardless of how few players sign up. There is n
 #### Resto Druid cap (hard rule)
 
 - If **more than 6 healers** sign up for any 25-man raid, **at most 2 Resto Druids** may participate. Any additional Resto Druids must be benched.
-- Resto Druids benched under this rule are still subject to the standard fair bench rotation in Rule 02. Per `rules/02-bench-rotation.md` → "Direction": pick the Resto Druid(s) with the **lowest** cumulative bench count for that raid location **to bench** (equivalently, keep the highest-count Resto Druid(s) on the roster) so the bench burden rotates evenly within the spec.
-- Note: we have a relatively large pool of Resto Druids, so they will statistically be benched more often than other roles. This is expected and not a fairness violation, because the cap is a composition constraint, not a rotation failure.
+- Resto Druids benched under this cap are still subject to fair bench rotation; how the cap interacts with rotation — which Resto Druid sits, why a capped player's cumulative bench count outpaces others over time without that being a fairness failure, and that the cap never displaces a priority-1 player — lives in `rules/02-bench-rotation.md` → "Composition caps override pure fairness". We have a relatively large Resto Druid pool, so this cap fires often.
 - This cap does **not** apply when 6 or fewer healers sign up — in that case, all signed-up Resto Druids may play (subject to the raid's healer slot count).
 
-### Gruul + Magtheridon (3-tank exception)
+### Gruul + Magtheridon
 
-Gruul + Magtheridon is the **exception to the 25-man 2-tank default**: it requires **3 tanks**.
+Uses the **default 25-man composition** (see "25-man raids → General → Default composition" above). Gruul+Mag additionally carries per-encounter role assignments — see `rules/05-encounter-assignments.md`.
 
-| Role    | Count |
-|---------|-------|
-| Tank    | 3     |
-| Healer  | 6     |
-| DPS     | 16    |
-| **Total** | **25** |
+### Serpentshrine Cavern (SSC)
 
-All rules in "25-man raids → General" above also apply (including the Resto Druid cap).
+Uses the **default 25-man composition** (see "25-man raids → General → Default composition" above).
+
+### Tempest Keep (TK)
+
+Uses the **default 25-man composition** (see "25-man raids → General → Default composition" above).

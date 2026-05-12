@@ -2,7 +2,7 @@
 
 ## Scope
 
-Applies **only to the Gruul+Mag raid location** (Gruul's Lair + Magtheridon's Lair). Other 25-man raid locations (SSC, TK, Hyjal, BT) will get their own encounter-assignment rules when content unlocks; do not apply this rule to them. For the raid format and raid location definitions, see `config/project.md` → "Terminology".
+Applies **only to the Gruul+Mag raid location** (Gruul's Lair + Magtheridon's Lair). The other 25-man raid locations (SSC, TK, Hyjal, BT) do not have encounter-assignment rules yet; do not apply this rule to them. For the raid format and raid location definitions, see `config/project.md` → "Terminology".
 
 ## When to run
 

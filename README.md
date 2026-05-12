@@ -10,13 +10,13 @@ Form raid groups from Discord signups, respecting strict composition rules, play
 
 | Directory    | Purpose                                                       |
 |------------- |---------------------------------------------------------------|
-| `config/`    | Raid schedule, terminology, settings (canonical configuration data) |
+| `config/`    | Raid locations, terminology, settings (canonical configuration data) |
 | `rules/`     | Composition rules, bench rotation, player constraints, player roster |
 | `records/`   | Generated raid records (one per raid night, chronologically chained) |
 | `derived/`   | Derived summaries computed from `records/` (bench history, signup history) |
 | `reference/` | TBC research, file-operations manual, record-file templates, icons |
 
-The raid schedule itself lives in `config/project.md`.
+The raid locations themselves are listed in `config/project.md`.
 
 ## How Claude Code uses this folder
 
@@ -25,7 +25,7 @@ Claude Code reads the rule files, parses Discord signup screenshots provided by 
 ## Key files
 
 - `CLAUDE.md` — Persistent instructions for Claude Code sessions (workflow, principles, communication conventions)
-- `config/project.md` — Raid schedule, terminology, settings
+- `config/project.md` — Raid locations, terminology, settings
 - `rules/01-raid-compositions.md` — Tank/healer/DPS targets per raid location, plus comp flex policy
 - `rules/02-bench-rotation.md` — Bench fairness, raid spot priority, selection algorithm, tiebreakers
 - `rules/03-player-constraints.md` — Must-be-together / must-not-be-together / availability / Needlist / enchanter constraints

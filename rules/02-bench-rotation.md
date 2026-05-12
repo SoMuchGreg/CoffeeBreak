@@ -6,6 +6,8 @@ If the number of signups exceeds the available raid spots for a given night, exc
 
 - **Karazhan night:** 30 spots (3 x 10). Signups beyond 30 are benched.
 - **Gruul + Magtheridon night:** 25 spots. Signups beyond 25 are benched.
+- **Serpentshrine Cavern (SSC) night:** 25 spots. Signups beyond 25 are benched.
+- **Tempest Keep (TK) night:** 25 spots. Signups beyond 25 are benched.
 
 ## Raid spot priority (selection order)
 
@@ -17,7 +19,7 @@ Every player has a **raid spot priority** — an integer 1, 2, or 3. Priority is
 |----------|----------------------------------|
 | **1** | If signed up and available, always plays. Benched only via the user's discretionary pick — never by fair rotation. |
 | **2** | Standard. Gets a spot when there is room. Subject to fair bench rotation among priority-2 signups when there is overflow. |
-| **3** | Last resort, but the *Member reservation* (below) reserves some spots per raid for priority-3 signups. Beyond that reservation, invited only if open spots remain after every priority-1 and priority-2 signup has been placed — **or**, even when no spots remain, when their `Mainspec (role)` matches an under-target role and the *Mainspec over offspec* rule's filling case brings them in (see "Mainspec over offspec (Mainspec-first rule)" below). When multiple priority-3 players are signed up but only some are needed, fair bench rotation also applies among them. |
+| **3** | Last resort, but the *Member reservation* (below) reserves some spots per raid for priority-3 signups. Beyond that reservation, invited only if open spots remain after every priority-1 and priority-2 signup has been placed — **or**, even when no spots remain, when their `Mainspec (role)` matches an under-target role and the *Mainspec over offspec* rule's filling case brings them in (see "Mainspec over offspec (Mainspec-first rule)" below). When multiple priority-3 players are signed up but only some are needed, composition targets and fair bench rotation decide who plays among them (see *Selection algorithm* step 3). |
 
 ### Selection algorithm
 
@@ -25,7 +27,7 @@ When forming a roster from signups:
 
 1. **Place all priority-1 signups first.** They always play, subject to availability constraints in `rules/03-player-constraints.md`.
 2. **Place priority-2 signups.** If priority-1 + priority-2 signups exceed the spot count (less any spots the *Member reservation* below holds back for priority-3 signups), bench the overflow via **fair bench rotation among priority-2 players**. The direction — who plays vs. who sits — is canonical to the *Fairness requirement* section below; do not paraphrase it here.
-3. **If spots remain after step 2**, fill them with priority-3 signups — the *Member reservation* (below) keeps some open for them — using fair bench rotation among priority-3 players to decide who plays when more priority-3 signed up than open spots.
+3. **If spots remain after step 2**, fill them with priority-3 signups — the *Member reservation* (below) keeps some open for them. When more priority-3 signed up than open spots, decide which play **by composition first** — favor a priority-3 signup whose mainspec role the roster is short on (below its composition target, `rules/01-raid-compositions.md`) — **then by fair bench rotation** among the remaining ties (within the relevant bench group, per *Fairness requirement* below). Step 5 reconciles afterward regardless.
 4. **All unplaced signups go to bench.** When recording the bench in the record file, note each player's priority alongside their bench count.
 5. **Composition override.** After steps 1–4, reconcile the role distribution against composition targets — under-target roles per `rules/01-raid-compositions.md` → "Handling role shortages" (Resort 1: the *Mainspec over offspec* fill — see "Mainspec over offspec (Mainspec-first rule)" below; then Resort 2: comp flex), over-target roles per `rules/01-raid-compositions.md` → "Handling role surpluses". **Iterate:** after every swap or accepted flex, re-check the distribution; an accepted comp flex also shifts who is benched, so recompute from step 1 and re-apply this step — keep going until the distribution is stable.
 
@@ -37,7 +39,7 @@ A priority-1 player is **never** displaced by a priority-2 or priority-3 player,
 
 To keep priority-3 (Member) signups from being shut out whenever priority-1 and priority-2 signups fill the raid on their own, **up to 2 spots per raid are reserved for priority-3 signups when at least one priority-3 player signs up**. This is one of the two exceptions to "priority-3 never placed ahead of priority-2" (the other is the *Mainspec over offspec* filling case below): it places priority-3 signups on the roster while priority-2 signups sit. It **never** displaces a priority-1 player, and a hard composition cap (e.g. the 25-man Resto Druid cap, `rules/01-raid-compositions.md`) can still bench a member regardless.
 
-**Scope.** "Per raid" means per signup pool — one reservation for the whole Karazhan night (all teams pooled), one for the Gruul+Mag night, one per future raid location. Not per team.
+**Scope.** "Per raid" means per signup pool — one reservation for the whole Karazhan night (all teams pooled), one for each 25-man night (Gruul+Mag, SSC, TK), one per future raid location. Not per team.
 
 **Mechanics.** Let `M` = the number of priority-3 signups for this raid; the reservation is `R = min(2, M)` — `0` when no members signed up, `1` when exactly one did, `2` when two or more did. Its only effect on the *Selection algorithm* above is at **step 2**: priority-2's effective spot count becomes `(spot count − priority-1 count − R)` instead of `(spot count − priority-1 count)`, so up to `R` more priority-2 signups bench and at least `R` spots stay open for step 3. When `M = 0` the reservation is zero — priority-2 keeps its full spot count, exactly as in the base algorithm (the "if there are no member signups, just take raiders into those spots" case).
 
@@ -101,7 +103,7 @@ When fair rotation picks who sits, the player with the **lowest** cumulative ben
 
 This Direction rule operates on the **candidate subset** determined by *Mainspec over offspec (Mainspec-first rule)* (above) and *Rotation scope: only oversubscribed role groups fire* (below). Re-read those if you're unsure which subset is in play.
 
-**Concrete.** Two players in the same bench group are competing for the last roster spot. Cumulative G+M bench counts going in: A = 0, B = 1. **A goes to the bench. B plays.** A's count moves 0 → 1, equalizing with B at 1. This holds regardless of either player's Karazhan bench count — Karazhan and G+M are tracked separately.
+**Concrete.** Two players in the same bench group are competing for the last roster spot. Cumulative G+M bench counts going in: A = 0, B = 1. **A goes to the bench. B plays.** A's count moves 0 → 1, equalizing with B at 1. This holds regardless of their bench counts at any other location — every raid location is tracked separately.
 
 The same direction applies in **every** "fair rotation" branch in this file: priority-3 selection (`Raid spot priority` step 3), the over-target bench picked in the *Mainspec over offspec* filling case (above), composition-cap-affected specs (`Composition caps override pure fairness` below — pick the **highest-count** Resto Druid(s) to play, not the lowest), and the tiebreakers that fall under fair rotation.
 
@@ -111,10 +113,10 @@ If you ever find yourself benching a higher-count player over a lower-count one,
 
 Fair rotation fires for a role group **only when that role group is oversubscribed** for the raid being planned. A role group is oversubscribed when its signup count exceeds its composition target:
 
-- **Healer role group oversubscribed** → healer signups exceed the location's healer target. Fair rotation fires within the Healer pool of the affected priority level(s).
-- **DPS+tank role group oversubscribed** → combined tank + DPS signups exceed the combined tank + DPS target. Fair rotation fires within the DPS+tank pool. Composition still constrains the picks: tanks and DPS have separate target counts, so the rotation must bench enough tanks to bring the tank count to target AND enough DPS to bring the DPS count to target. Within each role's bench picks, pick the lowest-count member of the relevant DPS+tank bench group.
+- **Healer role group oversubscribed** → healer signups exceed the location's healer target — for 25-mans, **more than 6** (the top of the 5-6 healer range; `rules/01-raid-compositions.md` → "25-man raids → General → Default composition"). Fair rotation fires within the Healer pool of the affected priority level(s).
+- **DPS+tank role group oversubscribed** → combined tank + DPS signups exceed the combined tank + DPS target. Fair rotation fires within the DPS+tank pool. Composition still constrains the picks: tanks and DPS have separate target counts, so the rotation must bench enough tanks to bring the tank count to target AND enough DPS to bring the DPS count to target. Within each role's bench picks, pick the lowest-count member of the relevant DPS+tank bench group. (For 25-mans the DPS target is the residual after 3 tanks and the healer count — 16 with 6 healers, 17 with 5; `rules/01-raid-compositions.md` → "25-man raids → General → Default composition".)
 - **No role group oversubscribed** → no fair-rotation bench fires. Players in at-par or under-par role groups are not benched by rotation, regardless of their count relative to anyone in any other group. Composition caps and manual overrides may still bench specific players.
-- **Edge case: role-mismatch within an at-par group** → e.g., DPS+tank at par numerically (4 tanks + 15 DPS in a 3T+16D raid) but tanks over by 1 and DPS short by 1. The group is at par, so no one is benched and there is no benched mainspec-DPS signup to bring in via "Handling role shortages" → Resort 1 — comp flex (`rules/01-raid-compositions.md` → "Handling role surpluses") is the tool; if it doesn't resolve, the surplus benches via *User's discretionary bench picks* below. Fair rotation does not fire (group at par numerically).
+- **Edge case: role-mismatch within an at-par group** → e.g., DPS+tank at par numerically (4 tanks + 15 DPS in a 3T+16D raid — i.e., with 6 healers) but tanks over by 1 and DPS short by 1. The group is at par, so no one is benched and there is no benched mainspec-DPS signup to bring in via "Handling role shortages" → Resort 1 — comp flex (`rules/01-raid-compositions.md` → "Handling role surpluses") is the tool; if it doesn't resolve, the surplus benches via *User's discretionary bench picks* below. Fair rotation does not fire (group at par numerically).
 
 This scoping prevents a low-count player in an at-par role group from being benched to settle a global ledger that spans role groups. The failure mode it blocks: heal pool over by 1, DPS pool at par with a low-count pure DPS — under a global-ledger rule, that pure DPS could be picked to bench (lowest count) by flex-displacing a hybrid healer to take the vacated DPS slot. With per-role-group scope, the heal rotation fires within healers only; the pure DPS plays.
 
@@ -122,7 +124,7 @@ Comp-flex scope (its interaction with this rotation scope): `rules/01-raid-compo
 
 ### Rotation goal
 
-Fair rotation distributes bench assignments so that **cumulative bench counts equalize within each bench group, per raid location**. The promise scopes to a single (role group × priority × location) bucket. Bench counts are tracked **separately** for Karazhan and for Gruul+Magtheridon — a player's Karazhan bench count and their Gruul+Mag bench count are independent.
+Fair rotation distributes bench assignments so that **cumulative bench counts equalize within each bench group, per raid location**. The promise scopes to a single (role group × priority × location) bucket. Bench counts are tracked **separately per raid location** (Karazhan, Gruul+Mag, SSC, TK) — a player's bench count at one location is independent of their count at any other.
 
 When deciding who to bench, compare players' bench counts **for the specific raid location being planned**, **within the same bench group**:
 

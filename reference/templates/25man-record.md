@@ -3,8 +3,8 @@ TEMPLATE for 25-man raid record files **other than Gruul+Mag**. For Gruul+Mag,
 use `reference/templates/gruul-mag-record.md` instead — it adds the
 `## Encounter assignments` section defined by `rules/05-encounter-assignments.md`.
 
-This template applies to every future 25-man raid location (SSC, TK, Hyjal, BT
-when those unlock). To create a new record file, copy this file from
+This template applies to every 25-man raid location other than Gruul+Mag — SSC
+and TK now, plus Hyjal, BT when those unlock. To create a new record file, copy this file from
 `reference/templates/25man-record.md` into `records/` and rename the copy to
 `YYYY-MM-DD-{day}-{raid-location}.md` (e.g. `records/2026-06-07-sun-ssc.md`).
 Use a short raid-location slug like `ssc`, `tk`, etc. Do not edit this template
@@ -16,10 +16,11 @@ marked with an HTML comment like `delete line if none` if its condition applies.
 Keep the section order as-is — the file-operations-manual and rules assume
 this layout.
 
-The composition target depends on the raid location — the canonical numbers live
-in `rules/01-raid-compositions.md`. Always look up the target there for the
-specific raid location before filling in the Composition check line below. Never
-copy the target from a previous record file without re-verifying it against rule 01.
+The composition target depends on the raid location, though for all current 25-man
+locations it's the default 25-man composition (`rules/01-raid-compositions.md` →
+"25-man raids → General → Default composition"). Always look up the target there
+before filling in the Composition check line below; never copy it from a previous
+record file without re-verifying it.
 -->
 
 # {Raid location} — {Day} {DD.MM.YYYY}
@@ -116,7 +117,7 @@ role section.
 |--------|-------|
 | ...    | ...   |
 
-**Composition check:** Target {T}/{H}/{DPS} for {raid location} (per `rules/01-raid-compositions.md`). Actual: {T}/{H}/{DPS} = {total}. Status: ✅ / ⚠️ {explanation if not on target, e.g. "1 healer short — no flex accepted" or "1 over on DPS, ran 26 by user override"}.
+**Composition check:** Target {target} for {raid location} (per `rules/01-raid-compositions.md`). Actual: {T}/{H}/{DPS} = {total}. Status: ✅ / ⚠️ {explanation if outside target, e.g. "4 healers — 1 below the 5-healer floor, no flex accepted" or "7 healers, ran by user override"}.
 
 ## Comp flex applied                                   <!-- delete this whole section if no flex was used -->
 

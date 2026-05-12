@@ -7,20 +7,20 @@ This file holds Roster Machine's **configuration data** — the canonical facts 
 | Term | Meaning |
 |------|---------|
 | **Raid team** | The full 10 or 25-man group forming the raid squad (e.g., "Team Restaurant") |
-| **Raid location** | The unit of raid planning — e.g., **Karazhan**, **Gruul+Mag**, **SSC**, **TK**, **Hyjal**, **BT**. A location may wrap one zone (Karazhan) or two paired as a single planning unit (Gruul+Mag = Gruul's Lair + Magtheridon's Lair). Location is one of the axes of bench-rotation tracking (`rules/02-bench-rotation.md` → "Fairness requirement"). |
+| **Raid location** | The unit of raid planning — e.g., **Karazhan**, **Gruul+Mag**, **SSC**, **TK**, **Hyjal**, **BT**, **Sunwell**. A location may wrap one zone (Karazhan) or two paired as a single planning unit (Gruul+Mag = Gruul's Lair + Magtheridon's Lair). Location is one of the axes of bench-rotation tracking (`rules/02-bench-rotation.md` → "Fairness requirement"). |
 | **Party group** (or "party", "single group") | The 5-man unit within a raid team. 10-man raids = 2 party groups, 25-man raids = 5 party groups |
 | **Canonical name** | The `Player` column value in `rules/04-players.md` — the identifier under which a player's signups, benches, and historical data are aggregated. May be a single name (e.g., `Yxanb`) or a **composite** joining two or more names commonly used to refer to the player — character names, nicknames, real names, in any combination (e.g., `Kres/Dissi`, `Roossy/Keatala`, `Marino-Varthier`). A name is added to the composite whenever it is commonly used to refer to that player; rarely-used names stay in `Character(s)` only. Signups under any component of the composite, any `Character(s)` entry, or a decorated form like `Greg (Ucannotpass)` all collapse to the canonical |
 | **Character** | A single in-game character. The `Character(s)` column in `rules/04-players.md` lists each player's in-game characters and may also include alternate names/nicknames the player is known by |
 | **Main** | A player's primary character — the one whose class/spec appears in the `Class` and `Mainspec (role)` columns of `rules/04-players.md` |
 | **Alt** | A secondary character of the same player of a different class from the main. Listed in `Character(s)`; the alt's structured composition data lives in the **Alt characters** sub-table of `rules/04-players.md`. Per-raid main-vs-alt resolution is governed by `rules/01-raid-compositions.md` → "Alts". |
 | **Role** | One of **Tank**, **Healer**, **DPS**. The three categories used in composition targets and in the bench-rotation selection algorithm. |
-| **Raid format** | The structural size of a raid: **10-man** or **25-man**. A format is a size bucket, distinct from the specific raid location — Karazhan is today's only 10-man location; Gruul+Mag is today's only 25-man location. Future content (SSC, TK, Hyjal, BT and future 10-mans) will be additional locations under these same two formats. Format determines format-wide rules like the 25-man Resto Druid cap. |
+| **Raid format** | The structural size of a raid: **10-man** or **25-man**. A format is a size bucket, distinct from the specific raid location — Karazhan is the only 10-man location; Gruul+Mag, SSC, and TK are the 25-man locations. Future content (Hyjal, BT, and future 10-mans) will be additional locations under these same two formats. Format determines format-wide rules like the 25-man Resto Druid cap. |
 | **Hybrid class** | Druid, Paladin, Shaman, Priest — classes whose players can play tank, healer, or DPS specs. Canonical rule for which spec a hybrid plays for a raid: `rules/01-raid-compositions.md` → "Role placement: mainspec is authoritative". |
 | **Hard rule** | A rule that must be satisfied; violation triggers benching, outside recruitment (PUGs), or dropping to fewer teams. Always wins over soft rules in conflict. Canonical examples: the 25-man Resto Druid cap, the Karazhan tank-composition requirements, the comp flex player-consent requirement — see `rules/01-raid-compositions.md`. |
 | **Soft rule** | An aspirational composition preference that may be broken if signups force it. Multiple soft rules in conflict may be resolved arbitrarily by the **Planner** — see `rules/01-raid-compositions.md` → "Soft rule conflicts". Examples: "1 Priest per team", "1 Enhancement Shaman per team", Karazhan's 1-Resto-Druid-per-team preference. |
-| **Composition target** | The per-role or per-spec count the user aims for. Canonical per-location totals live in `rules/01-raid-compositions.md` (Karazhan: 2T/2H/6D; Gruul+Mag: 3T/6H/16D), with 25-man-format defaults for future 25-man locations; per-spec ranges for 25-mans live in `reference/raid-composition-guide.md` §8. Aspirational, not a hard limit. |
+| **Composition target** | The per-role or per-spec count the user aims for. Canonical per-location totals live in `rules/01-raid-compositions.md` (Karazhan: 2T/2H/6D; all 25-mans: the default 3T/5-6H/16-17D); per-spec ranges for 25-mans live in `reference/raid-composition-guide.md` §8. Aspirational, not a hard limit. |
 | **Composition cap** | A hard upper limit on a role or spec count (e.g., the 25-man Resto Druid cap). Exceeding a cap forces benching with reason `composition cap`. Canonical caps live in `rules/01-raid-compositions.md`. |
-| **Under-cap** | Signup total below a raid location's optimal capacity (fewer than 30 for Karazhan, fewer than 25 for Gruul+Mag). Triggers location-specific behavior — see `rules/01-raid-compositions.md` → "Under-cap behavior". |
+| **Under-cap** | Signup total below a raid location's optimal capacity (fewer than 30 for Karazhan, fewer than 25 for any 25-man). Triggers location-specific behavior — see `rules/01-raid-compositions.md` → "Under-cap behavior". |
 | **Over-cap** | Signup total above a raid location's optimal capacity. Handled by the normal bench-rotation rules in `rules/02-bench-rotation.md`. |
 | **Headcount cut** | When over-cap, the step that benches signups down to the format's spot count. Canonical: `rules/01-raid-compositions.md` → "Order of placement", step 3 (placement context); `rules/02-bench-rotation.md` → "Raid spot priority (selection order)" (mechanics). |
 | **Core tank** | A named tank the user relies on to fill tank duties at any raid format. Format-independent — a core tank takes a tank slot at whatever format the raid is. Canonical rule and membership pointer: `rules/01-raid-compositions.md` → "Core tanks". |
@@ -52,12 +52,18 @@ Do not use the terms below in any project file, chat, or record file — they ar
 | **Raid type** | Conflates two distinct concepts: **raid format** (10-man / 25-man) and **raid location** (Karazhan, Gruul+Mag, SSC, etc.). Historical usages in this project mostly meant *location*, but neither sense is safe to assume. | **raid format** when you mean the size bucket; **raid location** when you mean a specific raid. |
 | **Set** | Was the project-artifact name for a record file before the rename to `records/`. Now ambiguous between the retired artifact-name and ordinary English uses (git "change set", a "core set of tanks"). | **Record file** for the project artifact. Ordinary English uses ("change set", "core set of tanks") are unaffected — leave them alone. |
 
-## Raid schedule
+## Raid locations
 
-| Night | Content            | Format                | Raid teams |
-|-------|--------------------|-----------------------|------------|
-| 1     | Karazhan           | 10-man raid           | 3          |
-| 2     | Gruul + Magtheridon| 25-man raid           | 1          |
+There is **no fixed schedule** — each signup screenshot identifies which raid that night is for. SSC and TK are the primary content; Karazhan and Gruul+Mag run occasionally.
+
+| Raid location              | Format      | Raid teams |
+|----------------------------|-------------|------------|
+| Karazhan                   | 10-man raid | 3          |
+| Gruul + Magtheridon        | 25-man raid | 1          |
+| Serpentshrine Cavern (SSC) | 25-man raid | 1          |
+| Tempest Keep (TK)          | 25-man raid | 1          |
+
+Karazhan's team count depends on signups (`rules/01-raid-compositions.md` → "Under-cap team count").
 
 ## Raid leadership
 

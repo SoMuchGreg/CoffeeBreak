@@ -15,7 +15,7 @@ Three terms in this project need care to distinguish — **Record file** (the hi
 - **Session behavior** — principles, rules, and procedures governing how Claude works during any turn, edit, or task. File: `CLAUDE.md`.
 - **Task workflows** — step-by-step procedures triggered by specific events (new signup, rule change, rename, etc.). File: `reference/file-operations-manual.md`.
 - **Domain rules** — authoritative, normative rules for roster selection. Files: `rules/*.md`.
-- **Project state** — operational settings and schedule. Files: `config/*.md`.
+- **Project state** — operational settings and raid locations. Files: `config/*.md`.
 - **Reference (non-normative)** — facts and structural templates consulted during tasks; not rules. Files: `reference/raid-composition-guide.md`, `reference/class-colors-and-spec-icons.md`, `reference/icons/`, `reference/templates/*.md`.
 - **Computed state** — derived from `records/*.md`; never a source of truth. Files: `derived/*.md`.
 - **Historical record** — immutable records or audit trails. File: `records/*.md` (immutable raid records).
@@ -46,7 +46,6 @@ Content that does NOT belong in each file:
 - **Demonstratives ("this", "here", "right here", etc.) usually mark a selection.** When the user uses a demonstrative, they're typically pointing at text they selected or at a file they have open — a marker the IDE normally attaches to the turn. If no such marker arrives and the referent isn't obvious from very recent conversation, **ask** the user whether they forgot to highlight — do not silently infer from file content. A missing marker usually means the user forgot to select text, not that the demonstrative is a loose pronoun; inferring risks editing the wrong file.
 - **Clarify deprecated terms.** If the user uses a term listed in `config/project.md` → "Terminology → Deprecated terms", ask which sense they mean rather than silently interpreting. The canonical list of deprecated terms lives in the glossary; do not restate the terms here.
 - **Default to he/him for player pronouns.** Don't infer gender from character names — they're not reliable signals. Use he/him in chat and record-file prose unless the player's `rules/04-players.md` Notes record confirmed pronouns; record them there when learned.
-- **DEEP CHECK.** When the user asks for a "deep check" or "deepcheck" (e.g., "do a deep check of the staged changes"), meticulously review the currently staged diff for: stale rules or references; general sanity issues; colliding or interfering rules or statements; Single-Source-of-Truth violations; and **clunky or imprecise phrasing — read every changed sentence as if explaining it cold and flag what makes you stumble. Watch specifically for: terms coined (italicized) that nothing else uses; actions attributed to labels or column names rather than agents (e.g., "their `Mainspec (role)` fills a role"); directional pointers using unusual punctuation, like a slash-separated "above / Section X" dual pointer where the slash reads as a nonsense disjunction; deictic emphasis ("*that* X") without a clear antecedent; "otherwise" or "absent X" clauses that gloss over real cases; sentences packing multiple unrelated points awkwardly. These slip past SSOT/sanity rubrics because they aren't rule logic — prose quality counts on its own.** Apply this both within the staged changes themselves and against pre-existing content in the repo. Report findings to the user before editing anything; the user decides what to fix.
 
 ## File and git workflow
 
@@ -115,6 +114,28 @@ The Grep is non-optional — "I already know it's not duplicated" does not subst
 ### Post-edit consistency grep
 
 After any edit that changes rule text (`rules/*.md`), config semantics (`config/*.md`), reference material (`reference/*.md`, excluding icons), or a derived-file schema (sub-table or column layout in `derived/*.md`), grep the project for the term(s) you changed. Stale cross-file references are the primary failure mode this catches — single-source-of-truth depends on the grep to keep pointers live.
+
+## Deep check
+
+A user-invoked review operation — triggered by "do a deep check" / "deepcheck" (e.g., "deepcheck the diff", "do a deep check of my changes").
+
+### What to review
+
+Review the **currently uncommitted diff** (everything not yet committed, staged or not), plus any **pre-existing content** the changes bear on or that the review otherwise turns up. Check for:
+
+- **Stale rules or references** — a superseded rule; a pointer to a renamed or moved section/file; a "currently …" claim that's no longer true.
+- **General sanity issues** — anything that doesn't add up.
+- **Colliding or interfering rules** — two rules that can't both hold, or that resolve the same situation differently.
+- **Single-Source-of-Truth violations** — the same rule, definition, algorithm, vocabulary entry, structural convention, or per-player datum *stated* (not just pointed-to) in more than one place ("Key principles" → single source of truth).
+- **Clunky or imprecise phrasing** — read every changed sentence as if explaining it cold; flag what makes you stumble. Watch specifically for: terms coined (italicized) that nothing else uses; actions attributed to labels or column names rather than agents (e.g., "their `Mainspec (role)` fills a role"); directional pointers using unusual punctuation, like a slash-separated "above / Section X" dual pointer where the slash reads as a nonsense disjunction; deictic emphasis ("*that* X") without a clear antecedent; "otherwise" or "absent X" clauses that gloss over real cases; sentences packing multiple unrelated points awkwardly. These slip past the SSOT/sanity rubrics because they aren't rule logic — prose quality counts on its own.
+
+### Act on what you find — don't just report
+
+- **Fix** every finding whose correct resolution needs no decision from the user: stale or broken cross-references; SSOT duplication (replace a restatement with a link to the canonical); typos; inconsistent notation; formatting glitches; clunky phrasing with an obvious clearer rewording; a value that plainly contradicts its canonical source. When the right fix isn't obvious, don't guess — flag it instead.
+- **Flag, and wait for a decision on, only the findings that need the user's judgment:** anything that would change what a rule means, pick between viable alternatives, resolve a real conflict between rules, delete or restructure content, or where the correct fix turns on the user's intent.
+- **Report both:** what you fixed (briefly — the diff has the detail) and what you're flagging.
+
+Cleaning up the mechanical findings a deep check surfaces — in the uncommitted diff or in pre-existing content — is in scope, not gold-plating; it overrides the "mention it instead of fixing it" default in "Communication conventions → Stay within the scope of the prompt", because the review was explicitly requested.
 
 ## Before generating a raid roster
 

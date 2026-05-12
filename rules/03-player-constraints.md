@@ -95,5 +95,5 @@ No two enchanters on the same Karazhan team. With only 2 enchanters currently in
 
 ## Notes
 
-- These constraints apply to both Karazhan (10-man) and Gruul+Mag (25-man) nights unless specified otherwise.
+- These constraints apply to every raid night (Karazhan, Gruul+Mag, SSC, TK) unless specified otherwise.
 - If a constraint makes a valid composition impossible, flag it to the user before proceeding.
