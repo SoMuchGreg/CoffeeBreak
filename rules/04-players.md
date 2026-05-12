@@ -72,47 +72,40 @@ Currently empty. Kept so a Regular player promoted to priority `1` has a place t
 | 4  | Yxanb              | Yxanb           | Druid   | DPS (Feral)       | Tank (Feral)    | 2       | Reluctant offspec                                                                    |
 | 5  | Dwarfytron         | Dwarfytron      | Hunter  | DPS               | —               | 2       |                                                                                      |
 | 6  | Grundiger          | Grundiger       | Hunter  | DPS               | —               | 2       |                                                                                      |
-| 7  | Tonsen             | Tonsen          | Hunter  | DPS               | —               | 2       |                                                                                      |
-| 8  | Vaelruna           | Vaelruna        | Hunter  | DPS               | —               | 2       |                                                                                      |
-| 9  | Lenno/Mellymel     | Mellymel        | Mage    | DPS (Arcane)      | —               | 2       |                                                                                      |
-| 10 | OomToDoom          | OomToDoom       | Mage    | DPS (Arcane)      | —               | 2       |                                                                                      |
-| 11 | Heligeman/Fugleman | Heligeman       | Paladin | Healer            | —               | 2       |                                                                                      |
-| 12 | Leontes            | Leontes         | Paladin | DPS               | —               | 2       |                                                                                      |
-| 13 | McJudgin           | McJudgin        | Paladin | DPS               | Tank            | 2       | First line offspec                                                                   |
-| 14 | Thordrel           | Thordrel        | Paladin | Healer            | —               | 2       |                                                                                      |
-| 15 | Boriest            | Boriest         | Priest  | Healer            | ?               | 2       |                                                                                      |
-| 16 | Lightweit          | Lightweit       | Priest  | Healer            | ?               | 2       |                                                                                      |
-| 17 | Siljes/Ejlis       | Siljes          | Priest  | Healer            | DPS             | 2       | Eager offspec                                                                        |
-| 18 | Tiinar             | Tiinar          | Rogue   | DPS (Combat)      | ?               | 2       |                                                                                      |
-| 19 | Bergamotka/Tymoti  | Bergamotka      | Shaman  | DPS (Enhancement) | DPS (Elemental) | 2       | Ok to offspec                                                                        |
-| 20 | Ebonybolt          | Ebonybolt       | Shaman  | DPS (Enhancement) | Healer          | 2       | Ok to offspec                                                                        |
-| 21 | Gresac/Younea      | Younea, Gresac  | Shaman  | DPS (Elemental)   | Healer          | 2       | Druid alt (Gresac) — see Alt characters sub-table; fine being always benched on Karazhan |
-| 22 | Lynelen            | Lynelen, Kalyl  | Shaman  | DPS (Enhancement) | DPS (Elemental) | 2       | Ok to offspec                                                                        |
-| 23 | Pergatori          | Pergatori       | Shaman  | Healer            | DPS (Elemental) | 2       | First line offspec                                                                   |
-| 24 | Benglock           | Benglock        | Warlock | DPS (Demonology)  | ?               | 2       |                                                                                      |
-| 25 | BestPractice       | BestPractice    | Warlock | DPS               | —               | 2       |                                                                                      |
-| 26 | Jabbadhutt         | Jabbadhutt      | Warlock | DPS               | —               | 2       |                                                                                      |
-| 27 | McHughes           | McHughes        | Warlock | DPS               | —               | 2       |                                                                                      |
-| 28 | CptKavior          | CptKavior       | Warrior | DPS (Fury)        | Tank            | 2       | First line offspec                                                                   |
-| 29 | Dankyn             | Dankyn          | Warrior | DPS (Fury)        | Tank            | 2       | Reluctant offspec                                                                    |
-| 30 | Doughball          | Doughball       | Warrior | DPS (Fury)        | Tank            | 2       | Eager offspec                                                                        |
-| 31 | Nemajumarad        | Nemajumarad     | Warrior | DPS (Arms)        | Tank            | 2       | Eager offspec                                                                        |
-| 32 | Spot/Yorekbarn     | Yorekbarn       | Warrior | DPS (Fury)        | —               | 2       |                                                                                      |
-| 33 | Verysadge          | Verysadge       | Warrior | DPS (Fury)        | —               | 2       |                                                                                      |
+| 7  | Vaelruna           | Vaelruna        | Hunter  | DPS               | —               | 2       |                                                                                      |
+| 8  | Lenno/Mellymel     | Mellymel        | Mage    | DPS (Arcane)      | —               | 2       |                                                                                      |
+| 9  | Heligeman/Fugleman | Heligeman       | Paladin | Healer            | —               | 2       |                                                                                      |
+| 10 | Leontes            | Leontes         | Paladin | DPS               | —               | 2       |                                                                                      |
+| 11 | McJudgin           | McJudgin        | Paladin | DPS               | Tank            | 2       | First line offspec                                                                   |
+| 12 | Thordrel           | Thordrel        | Paladin | Healer            | —               | 2       |                                                                                      |
+| 13 | Boriest            | Boriest         | Priest  | Healer            | ?               | 2       |                                                                                      |
+| 14 | Lightweit          | Lightweit       | Priest  | Healer            | ?               | 2       |                                                                                      |
+| 15 | Siljes/Ejlis       | Siljes          | Priest  | Healer            | DPS             | 2       | Eager offspec                                                                        |
+| 16 | Tiinar             | Tiinar          | Rogue   | DPS (Combat)      | ?               | 2       |                                                                                      |
+| 17 | Bergamotka/Tymoti  | Bergamotka      | Shaman  | DPS (Enhancement) | DPS (Elemental) | 2       | Ok to offspec                                                                        |
+| 18 | Ebonybolt          | Ebonybolt       | Shaman  | DPS (Enhancement) | Healer          | 2       | Ok to offspec                                                                        |
+| 19 | Gresac/Younea      | Younea, Gresac  | Shaman  | DPS (Elemental)   | Healer          | 2       | Druid alt (Gresac) — see Alt characters sub-table; fine being always benched on Karazhan |
+| 20 | Lynelen            | Lynelen, Kalyl  | Shaman  | DPS (Enhancement) | DPS (Elemental) | 2       | Ok to offspec                                                                        |
+| 21 | Pergatori          | Pergatori       | Shaman  | Healer            | DPS (Elemental) | 2       | First line offspec                                                                   |
+| 22 | Benglock           | Benglock        | Warlock | DPS (Demonology)  | ?               | 2       |                                                                                      |
+| 23 | Jabbadhutt         | Jabbadhutt      | Warlock | DPS               | —               | 2       |                                                                                      |
+| 24 | CptKavior          | CptKavior       | Warrior | DPS (Fury)        | Tank            | 2       | First line offspec                                                                   |
+| 25 | Dankyn             | Dankyn          | Warrior | DPS (Fury)        | Tank            | 2       | Reluctant offspec                                                                    |
+| 26 | Nemajumarad        | Nemajumarad     | Warrior | DPS (Arms)        | Tank            | 2       | Eager offspec                                                                        |
+| 27 | Spot/Yorekbarn     | Yorekbarn       | Warrior | DPS (Fury)        | —               | 2       |                                                                                      |
+| 28 | Verysadge          | Verysadge       | Warrior | DPS (Fury)        | —               | 2       |                                                                                      |
 
 #### Members
 
 | #  | Player             | Character(s)          | Class   | Mainspec (role)  | Offspec (role) | Priority | Notes              |
 |----|--------------------|-----------------------|---------|------------------|----------------|----------|--------------------|
-| 1  | Eselman            | Eselman               | Druid   | DPS (Feral)      | Tank (OT)      | 3        |                    |
-| 2  | Lightstarr         | Lightstarr            | Paladin | DPS              | Tank           | 3        |                    |
-| 3  | Sjwammie           | Sjwammie              | Paladin | Healer           | —              | 3        |                    |
-| 4  | Medianos           | Medianos              | Priest  | DPS              | ?              | 3        |                    |
-| 5  | Drillbabe          | Drillbabe             | Rogue   | DPS (Subtlety)   | —              | 3        | Unreliable signups |
-| 6  | Blacksi            | Blacksi               | Shaman  | DPS (Elemental)  | ?              | 3        |                    |
-| 7  | CodeHunt/Rainbound | CodeHunt, Rainbound   | Shaman  | Healer           | —              | 3        |                    |
-| 8  | Ōtsu               | Ōtsu                  | Warlock | DPS (Affliction) | —              | 3        |                    |
-| 9  | Varva              | Varva                 | Warrior | DPS              | —              | 3        |                    |
+| 1  | Tonsen             | Tonsen                | Hunter  | DPS              | —              | 3        |                    |
+| 2  | Sjwammie           | Sjwammie              | Paladin | Healer           | —              | 3        |                    |
+| 3  | Medianos           | Medianos              | Priest  | DPS              | ?              | 3        |                    |
+| 4  | BestPractice       | BestPractice          | Warlock | DPS              | —              | 3        |                    |
+| 5  | McHughes           | McHughes              | Warlock | DPS              | —              | 3        |                    |
+| 6  | Doughball          | Doughball             | Warrior | DPS (Fury)       | Tank           | 3        | Eager offspec      |
+| 7  | Varva              | Varva                 | Warrior | DPS              | —              | 3        |                    |
 
 ### Alt characters
 
@@ -130,42 +123,49 @@ Players who have left the guild. Kept here so that old signup screenshots and re
 | #  | Player              | Character(s)        | Class   | Mainspec (role)          | Offspec (role)          | Priority | Notes                                                   |
 |----|---------------------|---------------------|---------|--------------------------|-------------------------|----------|---------------------------------------------------------|
 | 1  | Erushi              |                     | Druid   |                          |                         | —        | Left the guild                                          |
-| 2  | Kryxs               |                     | Druid   |                          |                         | —        | Left the guild                                          |
-| 3  | Zemp                |                     | Druid   |                          |                         | —        | Left the guild                                          |
-| 4  | Aenra               |                     | Hunter  |                          |                         | —        | Left the guild                                          |
-| 5  | Lixly               |                     | Hunter  |                          |                         | —        | Left the guild                                          |
-| 6  | overaggro           |                     | Hunter  |                          |                         | —        | Left the guild                                          |
-| 7  | Rhoator             |                     | Hunter  |                          |                         | —        | Left the guild                                          |
-| 8  | Faroula             |                     | Mage    |                          |                         | —        | Left the guild                                          |
-| 9  | Jinothy             |                     | Mage    |                          |                         | —        | Left the guild                                          |
-| 10 | blep                |                     | Paladin |                          |                         | —        | Left the guild                                          |
-| 11 | Buns/Sourbuns       |                     | Paladin |                          |                         | —        | Left the guild. Has a Warlock alt                       |
-| 12 | Calendril           |                     | Paladin |                          |                         | —        | Left the guild                                          |
-| 13 | CoffeeBean          |                     | Paladin |                          |                         | —        | Left the guild. Had a Warrior alt                       |
-| 14 | Eebowai             |                     | Paladin |                          |                         | —        | Left the guild                                          |
-| 15 | ErAleX              |                     | Paladin |                          |                         | —        | Left the guild                                          |
-| 16 | Rasputin            |                     | Paladin |                          |                         | —        | Left the guild                                          |
-| 17 | Stonebelly          |                     | Paladin |                          |                         | —        | Left the guild                                          |
-| 18 | Venguard            |                     | Paladin |                          |                         | —        | Left the guild                                          |
-| 19 | Aserrah             |                     | Priest  |                          |                         | —        | Left the guild                                          |
-| 20 | Bhandage            |                     | Priest  |                          |                         | —        | Left the guild                                          |
-| 21 | Bombzor             |                     | Priest  |                          |                         | —        | Left the guild                                          |
-| 22 | Sickdeer            |                     | Priest  |                          |                         | —        | Left the guild                                          |
-| 23 | Thalynora           |                     | Priest  |                          |                         | —        | Left the guild                                          |
-| 24 | Glaivemaster Baebay |                     | Rogue   |                          |                         | —        | Left the guild                                          |
-| 25 | Molgrod             |                     | Rogue   |                          |                         | —        | Left the guild                                          |
-| 26 | Alaan               |                     | Shaman  |                          |                         | —        | Left the guild                                          |
-| 27 | David/Dejv          |                     | Shaman  |                          |                         | —        | Left the guild                                          |
-| 28 | Dikkins             |                     | Warlock |                          |                         | —        | Left the guild                                          |
-| 29 | Mairen/Zorÿa        |                     | Warlock |                          |                         | —        | Left the guild. Mairen = Warlock; Zorÿa = Warrior alt   |
-| 30 | Trisslott           |                     | Warlock |                          |                         | —        | Left the guild                                          |
-| 31 | Ayujinzhu           |                     | Warrior |                          |                         | —        | Left the guild                                          |
-| 32 | Flippkisi           |                     | Warrior |                          |                         | —        | Left the guild                                          |
-| 33 | Fredfull            |                     | Warrior |                          |                         | —        | Left the guild. Warrior main, Shaman alt                |
-| 34 | Lovepotion94        |                     | Warrior |                          |                         | —        | Left the guild                                          |
-| 35 | Mirohl              |                     | Warrior |                          |                         | —        | Left the guild                                          |
-| 36 | Ryro                |                     | Warrior |                          |                         | —        | Left the guild                                          |
-| 37 | Tøbb                |                     | Warrior |                          |                         | —        | Left the guild                                          |
+| 2  | Eselman             |                     | Druid   |                          |                         | —        | Left the guild                                          |
+| 3  | Kryxs               |                     | Druid   |                          |                         | —        | Left the guild                                          |
+| 4  | Zemp                |                     | Druid   |                          |                         | —        | Left the guild                                          |
+| 5  | Aenra               |                     | Hunter  |                          |                         | —        | Left the guild                                          |
+| 6  | Lixly               |                     | Hunter  |                          |                         | —        | Left the guild                                          |
+| 7  | overaggro           |                     | Hunter  |                          |                         | —        | Left the guild                                          |
+| 8  | Rhoator             |                     | Hunter  |                          |                         | —        | Left the guild                                          |
+| 9  | Faroula             |                     | Mage    |                          |                         | —        | Left the guild                                          |
+| 10 | Jinothy             |                     | Mage    |                          |                         | —        | Left the guild                                          |
+| 11 | OomToDoom           |                     | Mage    |                          |                         | —        | Left the guild                                          |
+| 12 | blep                |                     | Paladin |                          |                         | —        | Left the guild                                          |
+| 13 | Buns/Sourbuns       |                     | Paladin |                          |                         | —        | Left the guild. Has a Warlock alt                       |
+| 14 | Calendril           |                     | Paladin |                          |                         | —        | Left the guild                                          |
+| 15 | CoffeeBean          |                     | Paladin |                          |                         | —        | Left the guild. Had a Warrior alt                       |
+| 16 | Eebowai             |                     | Paladin |                          |                         | —        | Left the guild                                          |
+| 17 | ErAleX              |                     | Paladin |                          |                         | —        | Left the guild                                          |
+| 18 | Lightstarr          |                     | Paladin |                          |                         | —        | Left the guild                                          |
+| 19 | Rasputin            |                     | Paladin |                          |                         | —        | Left the guild                                          |
+| 20 | Stonebelly          |                     | Paladin |                          |                         | —        | Left the guild                                          |
+| 21 | Venguard            |                     | Paladin |                          |                         | —        | Left the guild                                          |
+| 22 | Aserrah             |                     | Priest  |                          |                         | —        | Left the guild                                          |
+| 23 | Bhandage            |                     | Priest  |                          |                         | —        | Left the guild                                          |
+| 24 | Bombzor             |                     | Priest  |                          |                         | —        | Left the guild                                          |
+| 25 | Sickdeer            |                     | Priest  |                          |                         | —        | Left the guild                                          |
+| 26 | Thalynora           |                     | Priest  |                          |                         | —        | Left the guild                                          |
+| 27 | Drillbabe           |                     | Rogue   |                          |                         | —        | Left the guild                                          |
+| 28 | Glaivemaster Baebay |                     | Rogue   |                          |                         | —        | Left the guild                                          |
+| 29 | Molgrod             |                     | Rogue   |                          |                         | —        | Left the guild                                          |
+| 30 | Alaan               |                     | Shaman  |                          |                         | —        | Left the guild                                          |
+| 31 | Blacksi             |                     | Shaman  |                          |                         | —        | Left the guild                                          |
+| 32 | CodeHunt/Rainbound  |                     | Shaman  |                          |                         | —        | Left the guild                                          |
+| 33 | David/Dejv          |                     | Shaman  |                          |                         | —        | Left the guild                                          |
+| 34 | Dikkins             |                     | Warlock |                          |                         | —        | Left the guild                                          |
+| 35 | Mairen/Zorÿa        |                     | Warlock |                          |                         | —        | Left the guild. Mairen = Warlock; Zorÿa = Warrior alt   |
+| 36 | Ōtsu                |                     | Warlock |                          |                         | —        | Left the guild                                          |
+| 37 | Trisslott           |                     | Warlock |                          |                         | —        | Left the guild                                          |
+| 38 | Ayujinzhu           |                     | Warrior |                          |                         | —        | Left the guild                                          |
+| 39 | Flippkisi           |                     | Warrior |                          |                         | —        | Left the guild                                          |
+| 40 | Fredfull            |                     | Warrior |                          |                         | —        | Left the guild. Warrior main, Shaman alt                |
+| 41 | Lovepotion94        |                     | Warrior |                          |                         | —        | Left the guild                                          |
+| 42 | Mirohl              |                     | Warrior |                          |                         | —        | Left the guild                                          |
+| 43 | Ryro                |                     | Warrior |                          |                         | —        | Left the guild                                          |
+| 44 | Tøbb                |                     | Warrior |                          |                         | —        | Left the guild                                          |
 
 *? = unknown, may have a second spec — needs confirmation*
 *— = confirmed single spec only (or, in the Priority column, not applicable)*

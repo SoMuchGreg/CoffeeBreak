@@ -20,7 +20,6 @@ Players listed here **must not be placed in the same raid team** on any given ni
 
 | Player A | Player B | Applies to | Notes |
 |----------|----------|------------|-------|
-| OomToDoom | Gresac/Younea | Karazhan only | |
 
 ## Needlist
 
@@ -56,7 +55,7 @@ The **Needlist** lists high-value loot drops players want to roll "need" on, pai
 | Iron Gauntlets of the Maiden        | Mcjudgin                                                           |       |
 | Ironstriders of Urgency             | Leontes                                                            |       |
 | Jade Ring of the Everliving         | Pergatori                                                          |       |
-| King's Defender                     | Cptkavior, Doughball                                               |       |
+| King's Defender                     | Cptkavior                                                          |       |
 | Light's Justice                     | Pergatori, Siljes                                                  |       |
 | Nathrezim Mindblade                 | Beaverfist                                                         |       |
 | Nethershard Girdle                  | Ucannotpass                                                        |       |
@@ -70,11 +69,10 @@ The **Needlist** lists high-value loot drops players want to roll "need" on, pai
 | Spiteblade                          | Dankyn, Gigakox                                                    |       |
 | Stonebough Jerkin                   | Keatala                                                            |       |
 | The Decapitator                     | Bergamotka, Lynelen, Yorekbarn                                     |       |
-| The Lightning Capacitor             | Oomtoodoom                                                         |       |
 | Tirisfal Wand of Ascendancy         | Kresniik                                                           |       |
 | Trial-Fire Trousers                 | Kresniik                                                           |       |
 | Vambraces of Courage                | Cptkavior                                                          |       |
-| Wrynn Dynasty Greaves               | Doughball, Ostbirger                                               |       |
+| Wrynn Dynasty Greaves               | Ostbirger                                                          |       |
 
 **Applies to:** Karazhan only.
 
