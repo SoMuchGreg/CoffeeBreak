@@ -1,14 +1,10 @@
 # How raid rosters work in Coffee Break
 Hey all,
+With Phase 2 on the horizon, we wanted to share how we go about forming rosters and managing the bench, so you understand what our thought process is and why we're making the decisions we make. What follows is a window into how we approach putting a raid together - so the next time you see a roster, you'll know what's behind it.
 
-With Phase 2 on the horizon, we wanted to share how we go about forming rosters and managing the bench, so you understand what our thought process is and why we're making the decisions we make.
-
-What follows is a window into how we approach putting a raid together - so the next time you see a roster, you'll know what's behind it.
-
-## A note on ranks
+## Ranks
 You may have noticed we have different guild ranks. So far this hasn't really mattered for raid signups - but with Phase 2 on the horizon, we'd like to start putting real meaning behind them. Many of you have been with us a long time and show up to raids week after week. That kind of dedication doesn't go unnoticed, and we want to recognise it properly. The **Raider** rank has come to be a quiet badge of merit - our way of saying "you've shown up for us, and we see it". So from now on, when there are more signups than raid spots, **Raiders will be given preference**. Members are absolutely still welcome - we'd love to have you. It's just that when we have to choose, we wouldn't feel right turning away someone who's put in so much effort over time. And to make sure Members are always part of the raids too, we've built in a small reservation that keeps a couple of spots open for them at every raid - more on this below.
 
-## A note on rank changes
 Ranks aren't set in stone - they can move both ways. They're based on your **signup rate**: how often you've signed up since you joined us. The window starts at *your* first signup, so newer members aren't measured against anyone else's longer history - it's about how present you've been in your own time with us. Sign up consistently and you'll move up over time; if you go quiet for a long stretch, the rate will reflect that. One thing worth knowing: it's *signups* we count, not raids played. If you sign up and end up on the bench, that still counts - what we're rewarding is showing up.
 
 ### How we decided the current ranks
@@ -19,14 +15,12 @@ For the current assignments, here's what we looked at:
 
 None of these were hard cutoffs - they're what shaped the calls.
 
-## A note on signup timing
-We start composing the roster roughly 48 hours before the raid. If your signup comes in later than that, it might not make it into this one - by then we're already piecing things together, and late additions can be tricky to fit in. The earlier you sign up, the easier it is to make a spot for you.
+## Keeping us posted
+A couple of things help us plan well. The first is timely signups: we start composing the roster roughly 48 hours before the raid, and signups that come in later than that might not make it into this one - by then we're already piecing things together, and late additions can be tricky to fit in. The earlier you sign up, the easier it is to make a spot for you.
 
-## A note on extended absences
-If you know you'll be away from the game for a while, please give us a heads-up. Without one, we're left guessing whether you'll be back - and that makes longer-term roster planning much harder. A quick message is all it takes.
+The second is letting us know about longer breaks. If you'll be away from the game for a while, please give us a heads-up. Without one, we're left guessing whether you'll be back - and that makes longer-term roster planning much harder. A quick message is all it takes.
 
-## A note on the bench
-
+## The bench
 We know sitting out a raid isn't fun. What you might not see is how much work goes on behind the scenes to keep things fair and to minimise how often each of you ends up on the bench. We're a casual guild - we don't require 100% attendance, and we'd rather you put life first than feel forced to show up. The flip side is that we like having a few more signups than raid spots, because life also means last-minute drops. Those fluctuations are yours to make freely - they're part of how we operate. The bench rotation that comes out of them is on us. The principle behind that rotation is simple: everyone shares the bench in roughly equal measure. We track it carefully and distribute the weight as evenly as we possibly can. If you sit out tonight, it isn't bad luck - it just means others need to catch up. Some amount of benching is just a normal part of raiding with us in Coffee Break - it's worth making peace with. What we promise as officers is that we'll always do our absolute best to keep it fair.
 
 ## Three core principles
