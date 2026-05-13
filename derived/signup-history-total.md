@@ -83,8 +83,8 @@ A player's sub-table here is determined solely by their top-level grouping in `r
 | 9  | Bergamotka/Tymoti   | 18      |
 | 10 | McHughes            | 17      |
 | 11 | Ebonybolt           | 16      |
-| 12 | Jabbadhutt          | 15      |
-| 13 | Pergatori           | 15      |
+| 12 | Pergatori           | 16      |
+| 13 | Jabbadhutt          | 15      |
 | 14 | Heligeman/Fugleman  | 12      |
 | 15 | BestPractice        | 11      |
 | 16 | Lightweit           | 11      |

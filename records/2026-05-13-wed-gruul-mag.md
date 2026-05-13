@@ -2,21 +2,18 @@
 
 > Quick Gruul/Mag run for loot. People can go to Karazhan afterwards if they wish.
 
-## Signups (from Discord) — 24 (+2)
+## Signups (from Discord) — 27
 
 **Tanks (2):** CptKavior, Ostbirger
 **Warriors (4):** Verysadge, Dankyn, Gigakox, Nemajumarad
 **Druids (4):** Shapkica/Chkemi, Yxanb, Beaverfist, Jar
-**Paladins (1):** Thordrel
+**Paladins (2):** Thordrel, Heligeman/Fugleman
 **Rogues (1):** Tiinar
 **Hunters (3):** Grundiger, Vaelruna, Roossy/Keatala
 **Priests (3):** Lightweit, Boriest, Kres/Dissi
 **Mages (1):** Greg
-**Warlocks (1):** McHughes
-**Shamans (4):** Bergamotka/Tymoti, Lynelen, Ebonybolt, Gresac/Younea
-
-**Tentative (1):** Heligeman/Fugleman
-**Late (1):** Benglock
+**Warlocks (2):** McHughes, Benglock
+**Shamans (5):** Bergamotka/Tymoti, Lynelen, Ebonybolt, Gresac/Younea, Pergatori
 
 **Header stats:** Melee 9, Ranged 8, Healers 4
 
@@ -30,17 +27,18 @@
 | Gigakox   | Warrior (Prot) |
 | CptKavior | Warrior (Prot) |
 
-### Healers (5)
+### Healers (6)
 
-| Player         | Class          |
-|----------------|----------------|
-| Thordrel       | Paladin (Holy) |
-| Beaverfist     | Druid (Resto)  |
-| Roossy/Keatala | Druid (Resto)  |
-| Lightweit      | Priest (Holy)  |
-| Boriest        | Priest (Holy)  |
+| Player             | Class          |
+|--------------------|----------------|
+| Thordrel           | Paladin (Holy) |
+| Heligeman/Fugleman | Paladin (Holy) |
+| Beaverfist         | Druid (Resto)  |
+| Roossy/Keatala     | Druid (Resto)  |
+| Lightweit          | Priest (Holy)  |
+| Boriest            | Priest (Holy)  |
 
-### DPS (17)
+### DPS (16)
 
 | Player            | Class                |
 |-------------------|----------------------|
@@ -53,7 +51,6 @@
 | Tiinar            | Rogue (Combat)       |
 | Grundiger         | Hunter (BM)          |
 | Vaelruna          | Hunter (BM)          |
-| Kres/Dissi        | Priest (Shadow)      |
 | Greg              | Mage (Arcane)        |
 | McHughes          | Warlock              |
 | Benglock          | Warlock (Demonology) |
@@ -62,7 +59,7 @@
 | Ebonybolt         | Shaman (Enhancement) |
 | Gresac/Younea     | Shaman (Elemental)   |
 
-**Composition check:** Target 3/5/17 for Gruul+Mag (5-healer floor — only 4 mainspec healers signed up; per `rules/01-raid-compositions.md` → "25-man raids → General → Default composition"). Actual: 3/5/17 = 25. Status: ✅ on target.
+**Composition check:** Target 3/5-6/16-17 for Gruul+Mag (default 25-man comp; per `rules/01-raid-compositions.md` → "25-man raids → General → Default composition"). Actual: 3/6/16 = 25. Status: ✅ on target.
 
 ## Comp flex applied
 
@@ -108,15 +105,24 @@
 | Kres/Dissi | DPS  | Priest (Shadow) | 2                | S×1, SW×1                | 2026-04-26 SW |
 | Vaelruna   | DPS  | Hunter (BM)     | 1                | SW×1                     | 2026-03-08 SW |
 
-## Bench (0)
+## Bench (2)
 
-*(None — all 25 spots filled)*
+| Player     | Priority | Bench count (cumulative, after this raid) | Reason          |
+|------------|----------|-------------------------------------------|-----------------|
+| Kres/Dissi | 1        | 2                                         | manual override |
+| Pergatori  | 2        | 1                                         | manual override |
 
 ## Notes
 
 - **Roossy/Keatala rostered on his Keatala alt (Druid Resto), not his Hunter main** — the DPS pool was at its 17 ceiling when alts resolved at step 2 (CptKavior's Tier-0 tank flex already absorbed), so his Hunter-DPS profile didn't fit; only the Druid-Resto alt fit and was rostered per `rules/01-raid-compositions.md` → "Alts" (standing consent, distinct from comp flex). Gresac/Younea (processed alphabetically first) kept his Shaman Elemental main because DPS still fit at 17 at his evaluation point.
-- **Heligeman/Fugleman tentative** — Holy Paladin; excluded from roster decisions per `reference/file-operations-manual.md` → Step 2.
 - **Kiggler Tank fell back to 2 ranged DPS** — only Balance druid in the roster (Jar) is the Wednesday raid leader and excluded from all encounter roles per `rules/05-encounter-assignments.md` → "Raid leader exclusion". Step-5 flag.
+- **Post-build roster changes** — applied via `Event: Quick (ad-hoc) roster update` (`reference/file-operations-manual.md`):
+    - Pergatori signed up post-build (Shaman, Healer mainspec) and was discretionarily benched.
+    - Heligeman/Fugleman resolved from Tentative to playing (Holy Paladin); seated as a Healer.
+    - Benglock resolved from Late to on-time; already in DPS roster, no slot change.
+    - Kres/Dissi (Priest DPS) moved from DPS roster to Bench.
+    - Net comp shift: 3/5/17 → 3/6/16 (still within the default 25-man target ranges).
+- **User overrides — Kres/Dissi benched while back-to-back protected.** He was benched on 2026-05-10 (Gruul+Mag), so both chronological and same-location protections were active for this raid per `rules/02-bench-rotation.md` → "Back-to-back bench protection". A discretionary bench may override protection (per "Composition caps and user discretion override protection"); applied at user direction.
 
 ## Sanity check
 
@@ -127,3 +133,9 @@
 - **Holy Priest 2** (§8: 1) — forced: Lightweit and Boriest both healer-mains; roster is at the healer floor, neither benchable.
 - **Restoration Shaman 0** (§8: 1-3) — pigeonhole: only Resto-Sham main is Pergatori, who didn't sign up.
 - **Combined Destruction + Affliction Warlock ≤ 1** (§8: combined 3) — pigeonhole: only 2 Warlocks signed up and Benglock is Demonology.
+
+**Post-check changes**:
+- Pergatori added as post-build signup (Shaman, Healer mainspec); discretionarily benched.
+- Heligeman/Fugleman resolved from Tentative to playing; added to Healers.
+- Kres/Dissi moved from DPS roster to Bench (manual override; protection conflict per Notes).
+- Benglock resolved from Late to on-time class-list signup; no roster slot change.

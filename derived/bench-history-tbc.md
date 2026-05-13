@@ -20,7 +20,7 @@ Bench-group structure, comparison rules, respec/priority-change row moves, and m
 | Player              | Karazhan | Karazhan dates | Gruul+Mag | Gruul+Mag dates | SSC | SSC dates | TK | TK dates | Total |
 |---------------------|----------|----------------|-----------|-----------------|-----|-----------|----|----------|-------|
 | Greg                | 1        | 29.04          | 1         | 03.05           | 0   | —         | 0  | —        | 2     |
-| Kres/Dissi          | 0        | —              | 1         | 10.05           | 0   | —         | 0  | —        | 1     |
+| Kres/Dissi          | 0        | —              | 2         | 10.05, 13.05    | 0   | —         | 0  | —        | 2     |
 | Roossy/Keatala      | 1        | 18.03          | 2         | 25.03, 12.04    | 0   | —         | 0  | —        | 3     |
 
 All other priority-1 DPS/tank-main players: 0 benches at every location.
@@ -60,6 +60,7 @@ All other priority-2 DPS/tank-main players: 0 benches at every location.
 |---------------------|----------|----------------|-----------|-----------------|-----|-----------|----|----------|-------|
 | Beaverfist          | 1        | 18.03          | 1         | 26.04           | 0   | —         | 0  | —        | 2     |
 | Heligeman/Fugleman  | 0        | —              | 1         | 12.04           | 0   | —         | 0  | —        | 1     |
+| Pergatori           | 0        | —              | 1         | 13.05           | 0   | —         | 0  | —        | 1     |
 | Thordrel            | 1        | 29.04          | 0         | —               | 0   | —         | 0  | —        | 1     |
 
 All other priority-2 healer-main players: 0 benches at every location.
