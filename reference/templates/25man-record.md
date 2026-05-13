@@ -27,13 +27,15 @@ record file without re-verifying it.
 
 > {Optional one-line schedule note}    <!-- delete blockquote line if not applicable -->
 
-## Signups (from Discord) — {X} (+{Y})
+## Signups (from Discord) — {X}
 
 <!--
-X = number of players who want to raid (the first number in the Discord header)
-Y = number of players signed up as bench/tentative (the parenthesised number)
-Total signups = X + Y. If X > 25, additional players from X must be benched
-to bring the active roster down to 25.
+X = the count of on-time signups (the first number in the Discord header).
+`**Late ({N}):**` is tracked separately and is NOT included in X — see
+reference/file-operations-manual.md → Step 1, "Late" bullet.
+Discord's parenthesised `(+Y)` aggregate is ignored entirely (same Step 1).
+Bench/tentative/late players are identified per-row, not from `+Y`.
+If X > 25, additional players from X must be benched to bring X down to 25.
 -->
 
 **Tanks ({N}):** ...

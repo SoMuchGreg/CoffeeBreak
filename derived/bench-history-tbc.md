@@ -48,6 +48,7 @@ All priority-1 healer-main players: 0 benches at every location. *(No priority-1
 | Nemajumarad         | 0        | —              | 1         | 10.05           | 0   | —         | 0  | —        | 1     |
 | Shapkica/Chkemi     | 0        | —              | 1         | 10.05           | 0   | —         | 0  | —        | 1     |
 | Spot/Yorekbarn      | 0        | —              | 1         | 03.05           | 0   | —         | 0  | —        | 1     |
+| Tonsen              | 1        | 11.03          | 0         | —               | 0   | —         | 0  | —        | 1     |
 | Verysadge           | 0        | —              | 1         | 15.04           | 0   | —         | 0  | —        | 1     |
 | Yxanb               | 1        | 29.04          | 1         | 22.03           | 0   | —         | 0  | —        | 2     |
 
@@ -68,7 +69,6 @@ All other priority-2 healer-main players: 0 benches at every location.
 | Player              | Karazhan | Karazhan dates | Gruul+Mag | Gruul+Mag dates | SSC | SSC dates | TK | TK dates | Total |
 |---------------------|----------|----------------|-----------|-----------------|-----|-----------|----|----------|-------|
 | McHughes            | 1        | 18.03          | 0         | —               | 0   | —         | 0  | —        | 1     |
-| Tonsen              | 1        | 11.03          | 0         | —               | 0   | —         | 0  | —        | 1     |
 
 All other priority-3 DPS/tank-main players: 0 benches at every location.
 
