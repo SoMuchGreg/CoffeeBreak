@@ -95,13 +95,38 @@ This rule pairs with *Rotation scope: only oversubscribed role groups fire* (bel
 
 ## Fairness requirement (within a bench group)
 
+### Back-to-back bench protection
+
+A player benched in a raid is **protected from being benched again** in the next raid where they sign up, on two independent axes:
+
+- **Chronological** — the next raid by calendar date (any location).
+- **Same-location** — the next raid at the same location.
+
+Example: a Wednesday SSC bench protects against benching at the following Sunday Gruul+Mag (chronological) *and* the following Wednesday SSC (same-location).
+
+This subsection applies before *Direction* below: protection filters fair rotation's candidate pool — protected players are excluded; *Direction* then picks who sits from the unprotected remainder. A protected player is never benched ahead of an unprotected player in the same bench group, regardless of cumulative counts.
+
+**Protection state, per player.** One **chronological** slot, set/re-armed by the most recent bench at any location; and one **same-location** slot per raid location, set/re-armed by the most recent bench at that location. Slots are independent — a player can simultaneously hold an active SSC same-location protection *and* an active Karazhan same-location protection.
+
+**Which benches trigger protection.** Every reason in *Bench reason vocabulary* below triggers protection on both axes **except `composition cap`** — a cap-driven bench is structural, not a fairness pick. The rare explicit user exemption (per *User's discretionary bench picks* below → "Explicit user exemption") also opts out: a bench that doesn't count toward fair rotation doesn't count here either.
+
+**Carry-over.** A protection persists until **consumed** by the player playing. Chronological is consumed when they play any raid (their next signup, any location); same-location is consumed when they play a raid at the protected location (their next signup at that location). If they don't sign up for the next raid on an axis, that axis's protection carries forward to the next raid where they do sign up.
+
+**Never crosses priority.** Protection does not elevate priority-3 over priority-2 or displace priority-1 — priority sets the candidate pool, protection operates inside it. Protection is not a new exception to the priority hierarchy in *Raid spot priority (selection order)* above.
+
+**Composition caps and user discretion override protection.** A `composition cap` bench can still fall on a protected player (per *Composition caps override pure fairness* below). The protection isn't consumed by such a bench (since `composition cap` doesn't trigger re-arm either), so it remains active for the next raid. A discretionary bench (per *User's discretionary bench picks* below) can also bench a protected player; flag the conflict to the user before applying so they can confirm or revise. If applied, the new bench re-arms protection from there.
+
+**Fallback when over-subscribed.** When excluding protected players would leave the candidate pool too small to fill the required bench count, the shortfall is benched from the protected subset using *Direction* and the *Tiebreaker cascade* below. Protection is the strongest preference within a bench group's fair-rotation candidates but yields to physical capacity — every required seat must still be filled. Record the bench under its normal reason label.
+
+**Bookkeeping.** Protection state isn't stored separately; it's recoverable from the predecessor `records/*.md`. A player has **chronological** protection when `records/*.md` contains a triggering-reason `## Bench` row for them with no later record file's roster containing them. **Same-location** protection is the same check, restricted to record files at that location.
+
 ### Direction
 
 ⚠️ **Read this every time you build a roster with overflow.** Inverting this rule is a recurring error — do not rely on memory for the direction, re-read this section.
 
-When fair rotation picks who sits, the player with the **lowest** cumulative bench count for the raid location and bench group is the one we **send to the bench**. The player with a **higher** count keeps their raid spot. The principle is to *catch up* the under-benched player so cumulative counts equalize over time — fair rotation never protects the under-benched, it draws from them.
+When fair rotation picks who sits, the player with the **lowest** cumulative bench count for the raid location and bench group is the one we **send to the bench**. The player with a **higher** count keeps their raid spot. The principle is to *catch up* the under-benched player so cumulative counts equalize over time — Direction never protects the under-benched, it draws from them.
 
-This Direction rule operates on the **candidate subset** determined by *Mainspec over offspec (Mainspec-first rule)* (above) and *Rotation scope: only oversubscribed role groups fire* (below). Re-read those if you're unsure which subset is in play.
+This Direction rule operates on the **candidate subset** determined by *Mainspec over offspec (Mainspec-first rule)* (above), *Back-to-back bench protection* (above), and *Rotation scope: only oversubscribed role groups fire* (below). Re-read those if you're unsure which subset is in play.
 
 **Concrete.** Two players in the same bench group are competing for the last roster spot. Cumulative G+M bench counts going in: A = 0, B = 1. **A goes to the bench. B plays.** A's count moves 0 → 1, equalizing with B at 1. This holds regardless of their bench counts at any other location — every raid location is tracked separately.
 

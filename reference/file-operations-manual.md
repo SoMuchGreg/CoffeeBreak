@@ -72,7 +72,7 @@ Read both **Tier 1** and **Tier 2** of the **Reading list** at the top of this f
 
 1. Apply all rules from `rules/`.
 2. Apply **raid spot priority** and the selection algorithm — see `rules/02-bench-rotation.md` (single source of truth for the algorithm). Per-player priority assignments are in `rules/04-players.md`.
-3. Apply fair bench rotation per `rules/02-bench-rotation.md` (full mechanism: "Bench groups", "Fairness requirement", "Mainspec over offspec (Mainspec-first rule)") using counts from `derived/bench-history-tbc.md`. Contingency triggers (rare): `rules/01-raid-compositions.md` → "Role placement: mainspec is authoritative".
+3. Apply fair bench rotation per `rules/02-bench-rotation.md` (full mechanism: "Bench groups", "Mainspec over offspec (Mainspec-first rule)", "Fairness requirement") using counts from `derived/bench-history-tbc.md`. Contingency triggers (rare): `rules/01-raid-compositions.md` → "Role placement: mainspec is authoritative".
 4. Respect player constraints from `rules/03-player-constraints.md`.
 5. Respect composition caps from `rules/01-raid-compositions.md`.
 6. **Sanity-check the roster with a sub-agent before presenting it.** Once the roster is finalized and you believe it's ready to show the user, spawn a fresh sub-agent (via the `Agent` tool) and have it independently verify rule compliance. The sub-agent must:
