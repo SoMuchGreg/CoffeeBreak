@@ -18,7 +18,7 @@ This file holds Roster Machine's **configuration data** — the canonical facts 
 | **Hybrid class** | Druid, Paladin, Shaman, Priest — classes whose players can play tank, healer, or DPS specs. Canonical rule for which spec a hybrid plays for a raid: `rules/01-raid-compositions.md` → "Role placement: mainspec is authoritative". |
 | **Hard rule** | A rule that must be satisfied; violation triggers benching, outside recruitment (PUGs), or dropping to fewer teams. Always wins over soft rules in conflict. Canonical examples: the 25-man Resto Druid cap, the Karazhan tank-composition requirements, the comp flex player-consent requirement — see `rules/01-raid-compositions.md`. |
 | **Soft rule** | An aspirational composition preference that may be broken if signups force it. Multiple soft rules in conflict may be resolved arbitrarily by the **Planner** — see `rules/01-raid-compositions.md` → "Soft rule conflicts". Examples: "1 Priest per team", "1 Enhancement Shaman per team", Karazhan's 1-Resto-Druid-per-team preference. |
-| **Composition target** | The per-role or per-spec count the user aims for. Canonical per-location totals live in `rules/01-raid-compositions.md` (Karazhan: 2T/2H/6D; all 25-mans: the default 3T/5-6H/16-17D); the per-spec form for 25-mans is the **target spec ranges** (below). Aspirational, not a hard limit. |
+| **Composition target** | The per-role or per-spec count the user aims for. Canonical per-location totals live in `rules/01-raid-compositions.md` — see each location's section, and "25-man raids → General → Default composition" for the shared 25-man baseline. The per-spec form for 25-mans is the **target spec ranges** (below). Aspirational, not a hard limit. |
 | **Target spec ranges** | The §8 "Quick Reference: Number of Each Spec Typically Desired" table in `reference/raid-composition-guide.md` — the per-spec headcount ranges aimed for in any 25-man raid (e.g. Restoration Druid 1-2, BM Hunter 2-4). The per-spec form of the **composition target** (above); aspirational, not a hard cap. Used by the bench-rotation tiebreaker cascade (`rules/02-bench-rotation.md` → "Tiebreaker cascade"), which classifies a roster's count of each spec as over-/in-/under-range against it. |
 | **Composition cap** | A hard upper limit on a role or spec count (e.g., the 25-man Resto Druid cap). Exceeding a cap forces benching with reason `composition cap`. Canonical caps live in `rules/01-raid-compositions.md`. |
 | **Under-cap** | Signup total below a raid location's optimal capacity (fewer than 30 for Karazhan, fewer than 25 for any 25-man). Triggers location-specific behavior — see `rules/01-raid-compositions.md` → "Under-cap behavior". |
@@ -75,7 +75,7 @@ The in-game raid leader for each raid day (definition: Terminology → "Raid lea
 | Sunday    | Kres/Dissi  |
 | Wednesday | Jar         |
 
-Encounter-role implication: the raid leader is excluded from all encounter-role assignments on their day — see `rules/05-encounter-assignments.md` → "Raid leader exclusion".
+Encounter-role implication: the raid leader is excluded from all encounter-role assignments on their day — see `rules/05-encounter-assignments.md` → "Common framework → Raid leader exclusion".
 
 ## Old World raids
 

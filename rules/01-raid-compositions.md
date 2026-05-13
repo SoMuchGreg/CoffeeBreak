@@ -19,7 +19,7 @@ Each player's role for a raid is their `Mainspec (role)` column in `rules/04-pla
    - Role(s) under target → resolve per "Handling role shortages" below (Resort 1: a benched mainspec signup for the role, at any rank — the *Mainspec over offspec* fill; then Resort 2: comp flex).
    - Role(s) over target → resolve per "Handling role surpluses" below.
    This step and step 3 loop until the distribution is stable; the loop is specified in `rules/02-bench-rotation.md` → "Raid spot priority (selection order)", step 5.
-5. **Apply remaining rules**: player constraints (`rules/03-player-constraints.md`) and (Gruul+Mag only) encounter assignments (`rules/05-encounter-assignments.md`).
+5. **Apply remaining rules**: player constraints (`rules/03-player-constraints.md`) and (Gruul+Mag and SSC) encounter assignments (`rules/05-encounter-assignments.md`).
 
 The standard path from mainspec to offspec for a given raid is **comp flex** (voluntary; for a role shortage it is Resort 2 — see "Handling role shortages" below). The signup icon does NOT trigger offspec play. (For the rare user-designated exception, see *Rare contingency: explicit offspec signup* below.)
 
@@ -104,7 +104,7 @@ This scope will change when the user formalizes party-group rules (see `config/p
 
 ## Core tanks
 
-Core tanks are the named tanks the user relies on to fill tank duties at any raid format we run. The set is **format-independent** — a signed-up core tank takes a tank slot at whatever format the raid is (the 3 tank slots at Gruul+Mag, SSC, or TK; each Karazhan team's 2; future raid locations). The set is currently stable but may evolve as signups and player availability shift.
+Core tanks are the named tanks the user relies on to fill tank duties at any raid format we run. The set is **format-independent** — a signed-up core tank takes a tank slot at whatever format the raid is (the 3 tank slots at Gruul+Mag and TK; SSC has its own tank rule per "Serpentshrine Cavern (SSC)" below; each Karazhan team's 2; future raid locations). The set is currently stable but may evolve as signups and player availability shift.
 
 ### Canonical membership
 
@@ -112,13 +112,13 @@ Core tanks are listed in the **Core tanks** sub-table of `rules/04-players.md`, 
 
 ### Cap: at most 3 core tanks
 
-The combined set (Core tanks sub-table + Officers rows flagged `Core tank`) never contains more than 3 entries. This matches the 3-tank target of our 25-man raids (Gruul+Mag, SSC, TK) and prevents core-tank surplus situations (a fourth core tank could create a tank pool the existing rules can't always resolve via flex).
+The combined set (Core tanks sub-table + Officers rows flagged `Core tank`) never contains more than 3 entries. This matches the 3-tank target of Gruul+Mag and TK and prevents core-tank surplus situations (a fourth core tank could create a tank pool the existing rules can't always resolve via flex). The cap holds for SSC too, even though SSC's tank target exceeds 3 — see "Serpentshrine Cavern (SSC)" below for how the extra slot is filled without expanding the core set.
 
 ### Tank priority
 
 When multiple core tanks are present in the same raid and a rule needs to pick *which* of them holds a specific tank role (e.g., Magtheridon MT, Maulgar Tank), the order is **main tank > 3rd tank**. The label for each core tank lives in the `Notes` column of `rules/04-players.md` (Officers and Core tanks sub-tables) — look for the tokens `Main tank` and `3rd tank`. A core tank without one of these tokens has no priority position; the user must add a label before priority-based tank rules can resolve cleanly.
 
-**Tiebreaker within a tier** (e.g., two main tanks both in roster): **rotate** — pick the tied core tank who held the specific role **least recently** (per `rules/05-encounter-assignments.md` → "Continuity data sources"). This intentionally inverts standard continuity so the role alternates across equal-tier tanks rather than sticking to one. If neither has ever held the role, tiebreak alphabetically by canonical name.
+**Tiebreaker within a tier** (e.g., two main tanks both in roster): **rotate** — pick the tied core tank who held the specific role **least recently** (per `rules/05-encounter-assignments.md` → "Common framework → Continuity data sources"). This intentionally inverts standard continuity so the role alternates across equal-tier tanks rather than sticking to one. If neither has ever held the role, tiebreak alphabetically by canonical name.
 
 ### Tank assignment overrides signup spec
 
@@ -233,7 +233,7 @@ These general rules apply to **every** 25-man raid we run, current and future (G
 | DPS     | 16-17 |
 | **Total** | **25** |
 
-This is the **default** for every 25-man raid location; a location may override it in its own section below (none currently do). Tanks are a fixed **3** (see `Core tanks` above). Healers are a **5-6 range**. DPS is whatever's left after tanks and healers — **16** with 6 healers, **17** with 5.
+This is the **default** for every 25-man raid location; a location may override it in its own section below (SSC currently does — see "Serpentshrine Cavern (SSC)" below). For the default: Tanks are a fixed **3** (see `Core tanks` above). Healers are a **5-6 range**. DPS is whatever's left after tanks and healers — **16** with 6 healers, **17** with 5.
 
 **The healer count is the number of mainspec healers who signed up — counting all priorities** (a priority-3 healer-main counts toward the total exactly like a priority-1 or priority-2 one). **6 is the ideal**: run as many of them as signed up, up to **6** (the surplus benches when more than 6 signed up); if fewer than 5 signed up, comp flex tops the count up toward the **5** floor. **Whenever 6 or more mainspec healers signed up — any priority mix — the raid runs 6 healers; running 5 healers while a 6th mainspec healer-main sits benched is never correct** (see "Reaching 6 healers" below). By signup count:
 
@@ -243,7 +243,7 @@ This is the **default** for every 25-man raid location; a location may override 
 
 **Reaching 6 healers, regardless of priority.** A priority-3 (Member) healer-main fills a healer slot like any other healer-main; the raid never runs fewer than 6 healers when 6 or more mainspec healers signed up. Two things enforce this: (1) when the Member reservation has more priority-3 signups than reserved spots, those spots are allocated by composition targets first, then fair rotation — so a priority-3 healer-main the roster needs for its 6th healer is seated ahead of a priority-3 signup in a role the roster doesn't need (`rules/02-bench-rotation.md` → "Member reservation" and "Raid spot priority (selection order)" step 3); (2) step-5 reconciliation (`rules/02-bench-rotation.md` → "Raid spot priority (selection order)", step 5) backstops it — a mainspec healer-main left benched while the roster is below its healer target is brought in via the *Mainspec over offspec* fill (Resort 1 above), which seats them, even a Member, over a higher-priority non-healer.
 
-> ⚠️ **Do not conflate "25-man" with any specific 25-man raid location.** The composition above is the **default** for every 25-man location; Gruul+Mag, SSC, and TK all use it unchanged, and a future location may override it in its own section. Rules elsewhere that say "25-man" apply to *all* 25-man locations, not just Gruul+Mag.
+> ⚠️ **Do not conflate "25-man" with any specific 25-man raid location.** The composition above is the **default** for every 25-man location; Gruul+Mag and TK use it unchanged, SSC overrides it (see "Serpentshrine Cavern (SSC)" below), and a future location may override too. Rules elsewhere that say "25-man" apply to *all* 25-man locations, not just Gruul+Mag.
 
 #### Under-cap behavior (any 25-man)
 
@@ -261,7 +261,20 @@ Uses the **default 25-man composition** (see "25-man raids → General → Defau
 
 ### Serpentshrine Cavern (SSC)
 
-Uses the **default 25-man composition** (see "25-man raids → General → Default composition" above).
+SSC overrides the default composition's tank count: **4 tanks instead of 3**. DPS shifts to **15 with 6 healers, 16 with 5** (down from the default 16/17). Healers (5-6) and the Resto Druid cap are unchanged from the default.
+
+| Role    | Count |
+|---------|-------|
+| Tank    | 4     |
+| Healer  | 5-6   |
+| DPS     | 15-16 |
+| **Total** | **25** |
+
+The 4th tank covers Fathom Lord Karathress's fourth mini-boss tank role — see `rules/05-encounter-assignments.md` → "SSC → Fathom Lord Karathress" for the per-mini-boss breakdown.
+
+**The 4th tank is never a core tank** — the Core tanks cap is 3 (`Core tanks → Cap: at most 3 core tanks` above). It is sourced via the standard role-shortage flow (`Handling role shortages → Resort 2 (comp flex)`): a DPS-with-tank-offspec player (Paladin, Druid, or Warrior with Tank offspec) flexes into the 4th tank slot.
+
+SSC additionally carries per-encounter role assignments — see `rules/05-encounter-assignments.md` → "SSC".
 
 ### Tempest Keep (TK)
 
