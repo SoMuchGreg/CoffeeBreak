@@ -36,9 +36,9 @@ All priority-1 healer-main players: 0 benches at every location. *(No priority-1
 
 | Player              | Karazhan | Karazhan dates | Gruul+Mag | Gruul+Mag dates | SSC | SSC dates | TK | TK dates | Total |
 |---------------------|----------|----------------|-----------|-----------------|-----|-----------|----|----------|-------|
-| Bergamotka/Tymoti   | 1        | 29.04          | 0         | —               | 0   | —         | 0  | —        | 1     |
+| Bergamotka/Tymoti   | 1        | 29.04          | 0         | —               | 1   | 17.05     | 0  | —        | 2     |
 | CptKavior           | 1        | 08.04          | 1         | 15.04           | 0   | —         | 0  | —        | 2     |
-| Dankyn              | 1        | 29.04          | 0         | —               | 0   | —         | 0  | —        | 1     |
+| Dankyn              | 1        | 29.04          | 0         | —               | 1   | 17.05     | 0  | —        | 2     |
 | Dwarfytron          | 1        | 01.04          | 0         | —               | 0   | —         | 0  | —        | 1     |
 | Ebonybolt           | 0        | —              | 1         | 03.05           | 0   | —         | 0  | —        | 1     |
 | Gresac/Younea       | 2        | 22.04, 29.04   | 1         | 25.03           | 0   | —         | 0  | —        | 3     |
@@ -59,6 +59,7 @@ All other priority-2 DPS/tank-main players: 0 benches at every location.
 | Player              | Karazhan | Karazhan dates | Gruul+Mag | Gruul+Mag dates | SSC | SSC dates | TK | TK dates | Total |
 |---------------------|----------|----------------|-----------|-----------------|-----|-----------|----|----------|-------|
 | Beaverfist          | 1        | 18.03          | 1         | 26.04           | 0   | —         | 0  | —        | 2     |
+| Boriest             | 0        | —              | 0         | —               | 1   | 17.05     | 0  | —        | 1     |
 | Heligeman/Fugleman  | 0        | —              | 1         | 12.04           | 0   | —         | 0  | —        | 1     |
 | Pergatori           | 0        | —              | 1         | 13.05           | 0   | —         | 0  | —        | 1     |
 | Thordrel            | 1        | 29.04          | 0         | —               | 0   | —         | 0  | —        | 1     |

@@ -55,55 +55,55 @@ A player's sub-table here is determined solely by their top-level grouping in `r
 
 | #  | Player              | Signups |
 |----|---------------------|---------|
-| 1  | Greg                | 29      |
-| 2  | Kres/Dissi          | 26      |
-| 3  | Roossy/Keatala      | 20      |
-| 4  | Jar                 | 19      |
-| 5  | Ostbirger           | 15      |
+| 1  | Greg                | 30      |
+| 2  | Kres/Dissi          | 27      |
+| 3  | Roossy/Keatala      | 21      |
+| 4  | Jar                 | 20      |
+| 5  | Ostbirger           | 16      |
 
 ### Core tanks
 
 | #  | Player              | Signups |
 |----|---------------------|---------|
-| 1  | Marino-Varthier     | 28      |
-| 2  | Gigakox             | 14      |
+| 1  | Marino-Varthier     | 29      |
+| 2  | Gigakox             | 15      |
 
 ### Current members
 
 | #  | Player              | Signups |
 |----|---------------------|---------|
-| 1  | Gresac/Younea       | 27      |
-| 2  | Vaelruna            | 27      |
-| 3  | Verysadge           | 26      |
-| 4  | Thordrel            | 25      |
-| 5  | Yxanb               | 20      |
-| 6  | Dankyn              | 19      |
-| 7  | Lynelen             | 19      |
-| 8  | Beaverfist          | 18      |
-| 9  | Bergamotka/Tymoti   | 18      |
-| 10 | McHughes            | 17      |
-| 11 | Ebonybolt           | 16      |
-| 12 | Pergatori           | 16      |
-| 13 | Jabbadhutt          | 15      |
-| 14 | Heligeman/Fugleman  | 12      |
-| 15 | BestPractice        | 11      |
-| 16 | Lightweit           | 11      |
-| 17 | Tonsen              | 11      |
-| 18 | CptKavior           | 10      |
-| 19 | Siljes/Ejlis        | 10      |
-| 20 | Leontes             | 8       |
-| 21 | McJudgin            | 8       |
+| 1  | Gresac/Younea       | 28      |
+| 2  | Vaelruna            | 28      |
+| 3  | Verysadge           | 27      |
+| 4  | Thordrel            | 26      |
+| 5  | Yxanb               | 21      |
+| 6  | Dankyn              | 20      |
+| 7  | Lynelen             | 20      |
+| 8  | Beaverfist          | 19      |
+| 9  | Bergamotka/Tymoti   | 19      |
+| 10 | Ebonybolt           | 17      |
+| 11 | McHughes            | 17      |
+| 12 | Pergatori           | 17      |
+| 13 | Jabbadhutt          | 16      |
+| 14 | Heligeman/Fugleman  | 13      |
+| 15 | Lightweit           | 12      |
+| 16 | BestPractice        | 11      |
+| 17 | CptKavior           | 11      |
+| 18 | Siljes/Ejlis        | 11      |
+| 19 | Tonsen              | 11      |
+| 20 | McJudgin            | 9       |
+| 21 | Leontes             | 8       |
 | 22 | Dwarfytron          | 7       |
 | 23 | Doughball           | 6       |
-| 24 | Shapkica/Chkemi     | 5       |
-| 25 | Grundiger           | 4       |
-| 26 | Sjwammie            | 4       |
-| 27 | Benglock            | 3       |
-| 28 | Boriest             | 3       |
-| 29 | Medianos            | 3       |
-| 30 | Nemajumarad         | 3       |
-| 31 | Spot/Yorekbarn      | 3       |
-| 32 | Tiinar              | 3       |
+| 24 | Shapkica/Chkemi     | 6       |
+| 25 | Boriest             | 4       |
+| 26 | Grundiger           | 4       |
+| 27 | Sjwammie            | 4       |
+| 28 | Spot/Yorekbarn      | 4       |
+| 29 | Tiinar              | 4       |
+| 30 | Benglock            | 3       |
+| 31 | Medianos            | 3       |
+| 32 | Nemajumarad         | 3       |
 | 33 | Lenno/Mellymel      | 2       |
 | 34 | Gyrodorei           | 1       |
 
