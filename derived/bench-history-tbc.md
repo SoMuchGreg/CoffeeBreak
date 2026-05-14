@@ -39,7 +39,6 @@ All priority-1 healer-main players: 0 benches at every location. *(No priority-1
 | Bergamotka/Tymoti   | 1        | 29.04          | 0         | —               | 1   | 17.05     | 0  | —        | 2     |
 | CptKavior           | 1        | 08.04          | 1         | 15.04           | 0   | —         | 0  | —        | 2     |
 | Dankyn              | 1        | 29.04          | 0         | —               | 0   | —         | 0  | —        | 1     |
-| Dwarfytron          | 1        | 01.04          | 0         | —               | 0   | —         | 0  | —        | 1     |
 | Ebonybolt           | 0        | —              | 1         | 03.05           | 0   | —         | 0  | —        | 1     |
 | Gresac/Younea       | 2        | 22.04, 29.04   | 1         | 25.03           | 0   | —         | 0  | —        | 3     |
 | Leontes             | 1        | 08.04          | 0         | —               | 0   | —         | 0  | —        | 1     |
@@ -70,6 +69,7 @@ All other priority-2 healer-main players: 0 benches at every location.
 
 | Player              | Karazhan | Karazhan dates | Gruul+Mag | Gruul+Mag dates | SSC | SSC dates | TK | TK dates | Total |
 |---------------------|----------|----------------|-----------|-----------------|-----|-----------|----|----------|-------|
+| Dwarfytron          | 1        | 01.04          | 0         | —               | 0   | —         | 0  | —        | 1     |
 | McHughes            | 1        | 18.03          | 0         | —               | 0   | —         | 0  | —        | 1     |
 
 All other priority-3 DPS/tank-main players: 0 benches at every location.
