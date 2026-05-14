@@ -14,7 +14,9 @@ Concepts shared by every location below. Per-location specifics (encounter roles
 
 ### Raid leader exclusion
 
-The raid leader for the raid's day of week (per `config/project.md` → "Raid leadership") is excluded from every encounter-role assignment at every location. They direct the raid in real time and cannot also carry encounter-role load. Enforced at step 1 of every assignment: drop the raid leader from the eligibility pool. The exclusion does not affect roster placement (`rules/01-raid-compositions.md`, `rules/02-bench-rotation.md`) — the raid leader still plays their normal Tank/Healer/DPS slot in `## Actual Roster`. If the exclusion forces a fallback or leaves a role unfilled, flag per step 5.
+The raid leader for the raid (per `config/project.md` → "Raid leadership") is excluded from every encounter-role assignment at every location. They direct the raid in real time and cannot also carry encounter-role load. Enforced at step 1 of every assignment: drop the raid leader from the eligibility pool. The exclusion does not affect roster placement (`rules/01-raid-compositions.md`, `rules/02-bench-rotation.md`) — the raid leader still plays their normal Tank/Healer/DPS slot in `## Actual Roster`. If the exclusion forces a fallback or leaves a role unfilled, flag per step 5.
+
+**Exception — Jar at Kiggler Tank.** When Jar is the raid leader (per `config/project.md` → "Raid leadership") and the raid is Gruul+Mag, Jar remains eligible for the **Kiggler Tank** role at Maulgar — and only that role. Rationale: Jar is currently the only Balance Druid main, so without this carve-out the Kiggler assignment (see `Gruul+Mag → Kiggler Tank assignment` below) hits its 2-ranged-DPS fallback every time Jar leads. Jar is still excluded from every other Gruul+Mag encounter role (Maulgar tank/healer roles besides Kiggler, Magtheridon cube clickers) and from every SSC encounter role.
 
 ### Assignment algorithm
 
@@ -142,6 +144,8 @@ The preference is **class/role-based, not named-player**: the rule does not hard
 Two ranged DPS co-tank is explicitly the fallback; do **not** mix a Balance druid with a ranged DPS as co-tanks. When at least one Balance druid is in the roster, the role is always solo.
 
 **Flag condition.** When Kiggler Tank falls back to 2 Ranged DPS *and* a Balance druid signed up but is benched, flag this to the user — they may want to swap the Balance druid in for Kiggler.
+
+**Raid-leader exception (Jar).** This role is carved out of the raid-leader exclusion — see `Common framework → Raid leader exclusion`.
 
 #### Felhunter Subjugate assignment
 

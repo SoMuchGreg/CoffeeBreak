@@ -78,7 +78,7 @@
 | Maulgar Healer       | Thordrel, Beaverfist  |                                                                             |
 | Mage Tank (Krosh)    | Greg                  |                                                                             |
 | Mage Tank Healer     | Roossy/Keatala        |                                                                             |
-| Kiggler Tank         | Vaelruna, Gresac/Younea | 2 ranged DPS — Jar (only Balance druid) excluded as Wed raid leader; Vaelruna co-tanks after MDing Maulgar (Hunter-MD exception) |
+| Kiggler Tank         | Jar                   | Balance druid solo. Per the day-of-week raid-leader rule then in effect, Jar (Wed RL) would have been excluded; **user override** — Jar took the role anyway. |
 | Kiggler Tank Healer  | Boriest               |                                                                             |
 | Olm Tank             | Gigakox               | until felhunter                                                             |
 | Felhunter Subjugate  | Benglock, McHughes    | 2 Warlocks in roster → 2 slots                                              |
@@ -99,11 +99,10 @@
 
 ### Magtheridon — Alternative Experienced Cube Clickers
 
-| Player     | Role | Class           | Total cube holds | Prior cubes by direction | Most recent   |
-|------------|------|-----------------|------------------|--------------------------|---------------|
-| Ostbirger  | Tank | Paladin (Prot)  | 4                | NW×3, NE×1               | 2026-05-10 NE |
-| Kres/Dissi | DPS  | Priest (Shadow) | 2                | S×1, SW×1                | 2026-04-26 SW |
-| Vaelruna   | DPS  | Hunter (BM)     | 1                | SW×1                     | 2026-03-08 SW |
+| Player    | Role | Class          | Total cube holds | Prior cubes by direction | Most recent   |
+|-----------|------|----------------|------------------|--------------------------|---------------|
+| Ostbirger | Tank | Paladin (Prot) | 4                | NW×3, NE×1               | 2026-05-10 NE |
+| Vaelruna  | DPS  | Hunter (BM)    | 1                | SW×1                     | 2026-03-08 SW |
 
 ## Bench (2)
 
@@ -115,7 +114,7 @@
 ## Notes
 
 - **Roossy/Keatala rostered on his Keatala alt (Druid Resto), not his Hunter main** — the DPS pool was at its 17 ceiling when alts resolved at step 2 (CptKavior's Tier-0 tank flex already absorbed), so his Hunter-DPS profile didn't fit; only the Druid-Resto alt fit and was rostered per `rules/01-raid-compositions.md` → "Alts" (standing consent, distinct from comp flex). Gresac/Younea (processed alphabetically first) kept his Shaman Elemental main because DPS still fit at 17 at his evaluation point.
-- **Kiggler Tank fell back to 2 ranged DPS** — only Balance druid in the roster (Jar) is the Wednesday raid leader and excluded from all encounter roles per `rules/05-encounter-assignments.md` → "Raid leader exclusion". Step-5 flag.
+- **Kiggler Tank: Jar (user override of raid-leader exclusion).** Under the day-of-week raid-leader rule then in effect, Jar (Wed RL) was excluded from all encounter roles per `rules/05-encounter-assignments.md` → "Raid leader exclusion"; the rule's algorithmic output was the 2-ranged-DPS fallback (Vaelruna + Gresac/Younea). User overrode this on the night — Jar took Kiggler solo as the Balance druid.
 - **Post-build roster changes** — applied via `Event: Quick (ad-hoc) roster update` (`reference/file-operations-manual.md`):
     - Pergatori signed up post-build (Shaman, Healer mainspec) and was discretionarily benched.
     - Heligeman/Fugleman resolved from Tentative to playing (Holy Paladin); seated as a Healer.
@@ -139,3 +138,5 @@
 - Heligeman/Fugleman resolved from Tentative to playing; added to Healers.
 - Kres/Dissi moved from DPS roster to Bench (manual override; protection conflict per Notes).
 - Benglock resolved from Late to on-time class-list signup; no roster slot change.
+- Kiggler Tank reassigned `Vaelruna, Gresac/Younea` → `Jar` (user override of raid-leader exclusion; see Notes).
+- Kres/Dissi removed from Alternative Experienced Cube Clickers — post-build bench (per the swap above) makes him ineligible for that list per `rules/05-encounter-assignments.md` → "Alternative experienced cube clickers" criterion 1 (excludes `## Bench`).

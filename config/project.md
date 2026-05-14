@@ -42,7 +42,7 @@ This file holds Roster Machine's **configuration data** — the canonical facts 
 | **Rank** | Everyday names the user uses in chat for raid-spot priority tiers. The "rank" prefix is optional — "rank Raider", "Raider", "promote X to Member", and "X is now an officer" all resolve via the same mapping. Four rank names map 1:1 to `rules/04-players.md` sub-tables: **Officer** = Officers (priority 1); **Core tank** = Core tanks (priority 1; see Core tank entry above); **Raider** = Raiders (priority 2); **Member** = Members (priority 3). Distinct from generic uses ("guild member", "roster member") and from the cross-priority sub-table names "Current members" / "Former members" in `derived/`; when a bare form is genuinely ambiguous with one of those, ask. Canonical priority semantics: `rules/02-bench-rotation.md` → "Raid spot priority". |
 | **User** | The human operating Roster Machine. Provides signup screenshots, makes discretionary calls (e.g., `rules/02-bench-rotation.md` → "User's discretionary bench picks"), and instructs Claude what to do. Distinct from the **Planner** (entry below — Claude as the rule-executing process) and from the in-game **Raid leader** (entry below). |
 | **Planner** | The roster-building process inside Roster Machine — Claude executing the project's rules to turn signups into a roster. Used in rule prose to name the active agent making autonomous decisions, often in explicit contrast with the user (e.g., `rules/01-raid-compositions.md` → "Soft rule conflicts" — Claude resolves soft rule conflicts without asking the user). One of several processes Claude runs on Roster Machine; others (recording, sanity-checking, Q&A) are not called "the planner". |
-| **Raid leader** | The in-game player who calls pulls, assigns targets, and makes live raid decisions for a given raid day. Mapping by day of week: "Raid leadership" below. Distinct from the **User** and **Planner** (entries above). |
+| **Raid leader** | The in-game player who calls pulls, assigns targets, and makes live raid decisions for a given raid. Determined by playing-roster presence: "Raid leadership" below. Distinct from the **User** and **Planner** (entries above). |
 
 ### Deprecated terms
 
@@ -68,14 +68,15 @@ Karazhan's team count depends on signups (`rules/01-raid-compositions.md` → "U
 
 ## Raid leadership
 
-The in-game raid leader for each raid day (definition: Terminology → "Raid leader" above). Mapping is by day of week, not by raid content. Membership changes only on explicit user instruction.
+The in-game raid leader for a given raid (definition: Terminology → "Raid leader" above) is determined by **playing-roster presence**:
 
-| Day       | Raid leader |
-|-----------|-------------|
-| Sunday    | Kres/Dissi  |
-| Wednesday | Jar         |
+1. **Kres/Dissi** — if he is in `## Actual Roster` for this raid.
+2. **Jar** — if Kres/Dissi is not in `## Actual Roster` (absent, withdrawn, or benched) and Jar is.
+3. **Unassigned** — if neither is in `## Actual Roster`; no raid-leader exclusion fires.
 
-Encounter-role implication: the raid leader is excluded from all encounter-role assignments on their day — see `rules/05-encounter-assignments.md` → "Common framework → Raid leader exclusion".
+Bench does not count: a benched Kres/Dissi cedes raid-leader status to Jar. Membership of the eligible-RL set (currently Kres/Dissi, then Jar) changes only on explicit user instruction.
+
+Encounter-role implication: see `rules/05-encounter-assignments.md` → "Common framework → Raid leader exclusion".
 
 ## Old World raids
 
