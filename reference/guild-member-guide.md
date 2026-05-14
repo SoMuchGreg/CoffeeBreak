@@ -19,6 +19,9 @@ Managing a guild isn't the easiest thing in the world, so we'd ask that you do j
 
 The second is letting us know about longer breaks. If you'll be away from the game for a while, please give us a heads-up. Without one, we're left guessing whether you'll be back - and that makes longer-term roster planning much harder.
 
+## What a raid is shaped like
+Our 25-man raids (Gruul+Mag, SSC, Tempest Keep) mostly aim for **3 Tanks, 6 Healers, and 16 DPS**. Tank slots go to our designated **Core tanks**; healer and DPS slots fill from the signup pool.
+
 ## Three core principles
 Everything we do when forming a roster follows from three rules:
 1. **Fair rotation.** When more people sign up than there are spots, the bench is shared so that everyone takes their turn on the bench., to ensure that no-one is benched multiple raids in a row.
@@ -26,9 +29,6 @@ Everything we do when forming a roster follows from three rules:
 3. **Raid spot priority.** Officers and Core tanks have first call on spots, then Raiders, then Members - and a small carve-out makes sure Members always get a chance to play.
 
 The rest of this document expands each of these in turn.
-
-## What a raid is shaped like
-Our 25-man raids (Gruul+Mag, SSC, Tempest Keep) mostly aim for **3 Tanks, 6 Healers, and 16 DPS**. Tank slots go to our designated **Core tanks**; healer and DPS slots fill from the signup pool.
 
 ## Fair rotation
 We know sitting out a raid isn't fun. What you might not see is how much work goes on behind the scenes to keep things fair and to minimise how often each of you ends up on the bench. We're a casual guild - we don't require any attendance percentage, and we'd rather you put life first than feel forced to show up. The flip side is that we like having a few more signups than raid spots, because that gives us some contingency when unexpected things happen. The principle behind that rotation is simple: everyone shares the bench in roughly equal measure. We track it carefully and distribute the weight as evenly as we possibly can. If you sit out tonight, it isn't bad luck - it just means it's your turn, and it will be someone else's next time. Some amount of benching is just a normal part of raiding with us in Coffee Break - what we promise as officers is that we'll always do our absolute best to keep it fair.
