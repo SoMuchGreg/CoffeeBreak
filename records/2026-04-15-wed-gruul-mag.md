@@ -66,6 +66,13 @@
 
 **Composition check:** Target 3/6/16 for Gruul+Mag (per `rules/01-raid-compositions.md`). Actual: 3/6/16 = 25. Status: ⚠️ Warlock count dropped to 1 (below Section 8's combined Destro+Affli lower bound of 3) after Ōtsu and Jabbadhutt withdrew — unfillable since no other Warlocks signed up. Role targets (tank/healer/DPS) still on point.
 
+## Bench (2)
+
+| Player     | Priority | Bench count (cumulative, after this raid) | Reason          |
+|------------|----------|-------------------------------------------|-----------------|
+| CptKavior  | 2        | 1                                         | manual override |
+| Lynelen    | 2        | 1                                         | fair rotation   |
+
 ## Encounter assignments
 
 <!-- Retro-recorded from Discord assignments post dated 14.04.2026 19:13. -->
@@ -95,13 +102,6 @@
 | South West  | Circle   | McHughes        |
 | North East  | Square   | Marino-Varthier |
 | North West  | Diamond  | Ostbirger       |
-
-## Bench (2)
-
-| Player     | Priority | Bench count (cumulative, after this raid) | Reason          |
-|------------|----------|-------------------------------------------|-----------------|
-| CptKavior  | 2        | 1                                         | manual override |
-| Lynelen    | 2        | 1                                         | fair rotation   |
 
 ## Notes
 

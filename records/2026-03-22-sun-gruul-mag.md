@@ -16,6 +16,12 @@
 
 **Header stats:** Melee 4/5, Ranged 11, Healers 6
 
+## Bench (1)
+
+| Player             | Priority | Bench count (cumulative, after this raid) | Reason        |
+|--------------------|----------|-------------------------------------------|---------------|
+| Yxanb              | 2        | 1                                         | fair rotation |
+
 ## Encounter assignments
 
 <!-- Retro-recorded from Discord assignments post dated 22.03.2026 10:22. -->
@@ -45,12 +51,6 @@
 | South West  | Circle   | Rhoator  |
 | North East  | Square   | Mirohl   |
 | North West  | Diamond  | Ōtsu     |
-
-## Bench (1)
-
-| Player             | Priority | Bench count (cumulative, after this raid) | Reason        |
-|--------------------|----------|-------------------------------------------|---------------|
-| Yxanb              | 2        | 1                                         | fair rotation |
 
 ## Notes
 

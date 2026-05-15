@@ -17,14 +17,6 @@
 
 **Header stats:** Melee 9, Ranged 8, Healers 6
 
-## Bench (3)
-
-| Player         | Bench count (cumulative) |
-|----------------|--------------------------|
-| Roossy/Keatala | 2                        |
-| Heligeman      | 1                        |
-| OomToDoom      | 1                        |
-
 ## Actual Roster (25-man)
 
 Ran with 25 as expected.
@@ -70,6 +62,14 @@ Ran with 25 as expected.
 | Bergamotka        | Shaman  |
 
 **Composition:** 3 tanks, 6 healers, 16 DPS (25 total)
+
+## Bench (3)
+
+| Player         | Bench count (cumulative) |
+|----------------|--------------------------|
+| Roossy/Keatala | 2                        |
+| Heligeman      | 1                        |
+| OomToDoom      | 1                        |
 
 ## Encounter assignments
 

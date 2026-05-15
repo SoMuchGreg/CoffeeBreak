@@ -135,6 +135,25 @@ rules/01-raid-compositions.md → "Handling role shortages
 |--------|--------------------------------|------|-----------|-------|
 | ...    | DPS (Balance) → Healer (Resto) | 2    | Yes       |       |
 
+## Bench ({N})
+
+<!--
+Bench count = the player's cumulative count for this location after this raid (per
+rules/02-bench-rotation.md → "Bench groups" and "Fairness requirement" for what's
+counted and how).
+
+Reason column — pick one of the valid labels from rules/02-bench-rotation.md →
+"Bench reason vocabulary" (single source of truth). Do not invent new labels. If
+a benching case doesn't fit any defined label, flag it to the user before writing
+the record file.
+
+Delete the table and replace with `*(None — all 25 spots filled)*` if no one was benched.
+-->
+
+| Player | Priority | Bench count (cumulative, after this raid) | Reason          |
+|--------|----------|-------------------------------------------|-----------------|
+| ...    | 2        | ...                                       | fair rotation   |
+
 ## Encounter assignments
 
 <!--
@@ -209,25 +228,6 @@ Replace the table with `*(None — no roster member outside the primary cube cli
 | Player | Role | Class | Total cube holds | Prior cubes by direction | Most recent |
 |--------|------|-------|------------------|--------------------------|-------------|
 | ...    | ...  | ...   | ...              | ...                      | ...         |
-
-## Bench ({N})
-
-<!--
-Bench count = the player's cumulative count for this location after this raid (per
-rules/02-bench-rotation.md → "Bench groups" and "Fairness requirement" for what's
-counted and how).
-
-Reason column — pick one of the valid labels from rules/02-bench-rotation.md →
-"Bench reason vocabulary" (single source of truth). Do not invent new labels. If
-a benching case doesn't fit any defined label, flag it to the user before writing
-the record file.
-
-Delete the table and replace with `*(None — all 25 spots filled)*` if no one was benched.
--->
-
-| Player | Priority | Bench count (cumulative, after this raid) | Reason          |
-|--------|----------|-------------------------------------------|-----------------|
-| ...    | 2        | ...                                       | fair rotation   |
 
 ## Notes
 

@@ -48,6 +48,10 @@ Raid ran with 24 instead of 25 because Jar couldn't make it.
 
 **Composition:** 3 tanks, 14 DPS, 7 healers (24 total)
 
+## Bench
+
+*(Jar was benched on signup but couldn't attend, so effectively no bench)*
+
 ## Encounter assignments
 
 <!-- Retro-recorded from Discord assignments post dated 04.04.2026 10:35. -->
@@ -77,10 +81,6 @@ Raid ran with 24 instead of 25 because Jar couldn't make it.
 | South West  | Circle   | BestPractice    |
 | North East  | Square   | Marino-Varthier |
 | North West  | Diamond  | Ostbirger       |
-
-## Bench
-
-*(Jar was benched on signup but couldn't attend, so effectively no bench)*
 
 ## Not present (and not signed up)
 

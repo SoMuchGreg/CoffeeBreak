@@ -67,6 +67,13 @@
 |-----------|---------------------------|------|-----------|------------------------------------------------------|
 | CptKavior | DPS (Fury) → Tank (Prot)  | 0    | Yes       | First line offspec; standing consent; signed up Tank |
 
+## Bench (2)
+
+| Player     | Priority | Bench count (cumulative, after this raid) | Reason          |
+|------------|----------|-------------------------------------------|-----------------|
+| Kres/Dissi | 1        | 2                                         | manual override |
+| Pergatori  | 2        | 1                                         | manual override |
+
 ## Encounter assignments
 
 ### High King Maulgar
@@ -103,13 +110,6 @@
 |-----------|------|----------------|------------------|--------------------------|---------------|
 | Ostbirger | Tank | Paladin (Prot) | 4                | NW×3, NE×1               | 2026-05-10 NE |
 | Vaelruna  | DPS  | Hunter (BM)    | 1                | SW×1                     | 2026-03-08 SW |
-
-## Bench (2)
-
-| Player     | Priority | Bench count (cumulative, after this raid) | Reason          |
-|------------|----------|-------------------------------------------|-----------------|
-| Kres/Dissi | 1        | 2                                         | manual override |
-| Pergatori  | 2        | 1                                         | manual override |
 
 ## Notes
 

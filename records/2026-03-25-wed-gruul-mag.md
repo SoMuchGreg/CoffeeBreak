@@ -19,13 +19,6 @@
 
 **Header stats:** Melee 7, Ranged 9, Healers 7
 
-## Bench
-
-| Player         | Bench count (cumulative) |
-|----------------|--------------------------|
-| Gresac/Younea  | 1                        |
-| Roossy/Keatala | 1                        |
-
 ## Actual Roster (25-man)
 
 ### Tanks (2)
@@ -69,6 +62,13 @@
 | *(shamans — some DPS, possibly one healing)* | | |
 
 **Shamans (4):** Bergamotka, Ebonybolt, Lynelen, Pergatori — exact role split (DPS vs healer) uncertain.
+
+## Bench
+
+| Player         | Bench count (cumulative) |
+|----------------|--------------------------|
+| Gresac/Younea  | 1                        |
+| Roossy/Keatala | 1                        |
 
 ## Encounter assignments
 

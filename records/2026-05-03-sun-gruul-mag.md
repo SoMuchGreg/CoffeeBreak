@@ -68,6 +68,14 @@
 
 **Composition check:** Target 3/6/16 for Gruul+Mag (per `rules/01-raid-compositions.md`). Actual: 3/6/16 = 25. Status: ✅ on target.
 
+## Bench (3)
+
+| Player      | Priority | Bench count (cumulative, after this raid) | Reason          |
+|-------------|----------|-------------------------------------------|-----------------|
+| Ebonybolt   | 2        | 1                                         | fair rotation   |
+| Greg        | 1        | 1                                         | manual override |
+| Yorekbarn   | 2        | 1                                         | manual override |
+
 ## Encounter assignments
 
 ### High King Maulgar
@@ -105,14 +113,6 @@
 | Ostbirger | Tank | 3                | NW×3                     | 2026-04-15 NW |
 | Gigakox   | Tank | 1                | NW×1                     | 2026-04-26 NW |
 | Vaelruna  | DPS  | 1                | SW×1                     | 2026-03-08 SW |
-
-## Bench (3)
-
-| Player      | Priority | Bench count (cumulative, after this raid) | Reason          |
-|-------------|----------|-------------------------------------------|-----------------|
-| Ebonybolt   | 2        | 1                                         | fair rotation   |
-| Greg        | 1        | 1                                         | manual override |
-| Yorekbarn   | 2        | 1                                         | manual override |
 
 ## Notes
 

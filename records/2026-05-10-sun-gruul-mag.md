@@ -68,6 +68,14 @@
 
 **Composition check:** Target 3/6/16 for Gruul+Mag (per `rules/01-raid-compositions.md`). Actual: 3/6/16 = 25. Status: ✅ on target.
 
+## Bench (3)
+
+| Player       | Priority | Bench count (cumulative, after this raid) | Reason          |
+|--------------|----------|-------------------------------------------|-----------------|
+| Kres/Dissi   | 1        | 1                                         | manual override |
+| Nemajumarad  | 2        | 1                                         | manual override |
+| Shapkica     | 2        | 1                                         | fair rotation   |
+
 ## Encounter assignments
 
 ### High King Maulgar
@@ -106,14 +114,6 @@
 | CptKavior       | DPS  | Warrior (Fury)  | 1                | NE×1                     | 2026-05-03 NE |
 | Jar             | DPS  | Druid (Balance) | 1                | S×1                      | 2026-04-26 S  |
 | Vaelruna        | DPS  | Hunter (BM)     | 1                | SW×1                     | 2026-03-08 SW |
-
-## Bench (3)
-
-| Player       | Priority | Bench count (cumulative, after this raid) | Reason          |
-|--------------|----------|-------------------------------------------|-----------------|
-| Kres/Dissi   | 1        | 1                                         | manual override |
-| Nemajumarad  | 2        | 1                                         | manual override |
-| Shapkica     | 2        | 1                                         | fair rotation   |
 
 ## Notes
 

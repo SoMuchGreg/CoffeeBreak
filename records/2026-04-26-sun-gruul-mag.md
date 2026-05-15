@@ -74,6 +74,12 @@
 | Pergatori | DPS (Elemental) → Healer (Resto) | 1    | Yes       | Leader confirmed at finalization                     |
 | Gigakox   | DPS (Fury) → Tank (Prot)         | 2    | Yes       | Covers 3rd-tank slot after Mirohl's guild departure  |
 
+## Bench (1)
+
+| Player     | Priority | Bench count (cumulative, after this raid) | Reason          |
+|------------|----------|-------------------------------------------|-----------------|
+| Beaverfist | 2        | 1                                         | manual override |
+
 ## Encounter assignments
 
 ### High King Maulgar
@@ -111,12 +117,6 @@
 | Greg      | DPS  | 7                | S×4, SE×2, NE×1          | 2026-04-15 SE |
 | Ostbirger | Tank | 3                | NW×3                     | 2026-04-15 NW |
 | Vaelruna  | DPS  | 1                | SW×1                     | 2026-03-08 SW |
-
-## Bench (1)
-
-| Player     | Priority | Bench count (cumulative, after this raid) | Reason          |
-|------------|----------|-------------------------------------------|-----------------|
-| Beaverfist | 2        | 1                                         | manual override |
 
 ## Notes
 
