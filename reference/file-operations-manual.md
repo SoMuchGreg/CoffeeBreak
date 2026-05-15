@@ -24,7 +24,7 @@ For cadence (when to re-read the applicable tier within a session), see `CLAUDE.
 | `rules/02-bench-rotation.md` | Selection algorithm, raid spot priority, fair rotation, tiebreakers |
 | `rules/03-player-constraints.md` | Must-together / must-not-together / availability / Needlist / enchanter constraints |
 | `rules/04-players.md` | Existing players' classes, specs, raid spot priority, notes |
-| `rules/05-encounter-assignments.md` | Encounter role tables, eligibility/continuity algorithm, raid leader exclusion, general raid instructions — for Gruul+Mag and SSC |
+| `rules/05-encounter-assignments.md` | Encounter role tables, eligibility/continuity algorithm, raid leader exclusion, general raid instructions — for Gruul+Mag, SSC, and TK |
 | `reference/file-operations-manual.md` | This file — workflow procedures for every event type |
 
 ### Tier 2
@@ -38,7 +38,7 @@ For cadence (when to re-read the applicable tier within a session), see `CLAUDE.
 | `reference/icons/specs/*.jpg` | Spec icon reference images (compare side-by-side when unsure) |
 | `reference/icons/classes/*.png` | Class icon reference images (compare side-by-side when unsure) |
 | `reference/raid-composition-guide.md` | Comprehensive TBC raid composition reference: buff scope, Shaman totems, raid-wide debuffs, the **target spec ranges** (§8 — used by the 25-man fair-rotation tiebreaker in `rules/02-bench-rotation.md`). **§3, §4, §9 (party-group templates and assignment framework) are out of scope for roster formation — see `rules/01-raid-compositions.md` → "Party groups (out of scope)" for the rule.** |
-| All files in `records/` | Predecessor context, especially recent bench history. Gruul+Mag records carry `## Encounter assignments` sections (retro-recorded for raids back to 2026-03-01); SSC records will carry their own `## Encounter assignments` sections from the first SSC raid forward — both consulted by `rules/05-encounter-assignments.md` → "Common framework → Continuity data sources". |
+| All files in `records/` | Predecessor context, especially recent bench history. Gruul+Mag records carry `## Encounter assignments` sections (retro-recorded for raids back to 2026-03-01); SSC records carry their own `## Encounter assignments` sections from the first SSC raid forward; TK records will carry their own `## Encounter assignments` sections from the first TK raid forward — all consulted by `rules/05-encounter-assignments.md` → "Common framework → Continuity data sources". |
 
 ---
 
@@ -85,14 +85,14 @@ Read both **Tier 1** and **Tier 2** of the **Reading list** at the top of this f
    - Make **no** changes to the roster, the record file, or any other project file. It is read-only.
 
    After the sub-agent returns, **you must not modify the roster** based on its output, even if it reports violations. Present the roster exactly as it stood when you sent it to the sub-agent, paired with the sub-agent's verdict verbatim. The user decides what to do with any flagged violations.
-7. **For Gruul+Mag and SSC raids only:** assign encounter roles per `rules/05-encounter-assignments.md` — the per-location subsection (`Gruul+Mag` or `SSC`) holds the role tables; follow the algorithm and continuity sources defined in that rule's `Common framework`. Skip this step entirely for any other raid location. The sub-agent sanity check does **not** re-run for encounter assignments (they never change who plays).
-8. Present roster to user for approval, together with the sub-agent's verdict (YES / GOOD ENOUGH / NO), any violations it listed, and — for Gruul+Mag and SSC — the proposed encounter assignments.
+7. **For Gruul+Mag, SSC, and TK raids only:** assign encounter roles per `rules/05-encounter-assignments.md` — the per-location subsection (`Gruul+Mag`, `SSC`, or `TK`) holds the role tables; follow the algorithm and continuity sources defined in that rule's `Common framework`. Skip this step entirely for any other raid location. The sub-agent sanity check does **not** re-run for encounter assignments (they never change who plays).
+8. Present roster to user for approval, together with the sub-agent's verdict (YES / GOOD ENOUGH / NO), any violations it listed, and — for Gruul+Mag, SSC, and TK — the proposed encounter assignments.
 
 ### Step 4 — Write/Update (after user confirms)
 
 | File | What to update |
 |------|----------------|
-| `records/YYYY-MM-DD-day-raid.md` | **Create new file.** Start from the template that matches the raid location: `reference/templates/karazhan-record.md` for Karazhan nights, `reference/templates/gruul-mag-record.md` for Gruul+Mag (adds the `## Encounter assignments` section per `rules/05-encounter-assignments.md` → "Gruul+Mag"), `reference/templates/ssc-record.md` for SSC (adds the `## Encounter assignments` section per `rules/05-encounter-assignments.md` → "SSC"), or `reference/templates/25man-record.md` for any other 25-man raid location (TK; plus Hyjal, BT when those unlock). Copy the template into `records/` with the date-based filename, fill in every `{placeholder}`, delete every section/sub-line marked with an HTML comment like `delete line if none` if its condition applies, and follow the section order as-is. |
+| `records/YYYY-MM-DD-day-raid.md` | **Create new file.** Start from the template that matches the raid location: `reference/templates/karazhan-record.md` for Karazhan nights, `reference/templates/gruul-mag-record.md` for Gruul+Mag (adds the `## Encounter assignments` section per `rules/05-encounter-assignments.md` → "Gruul+Mag"), `reference/templates/ssc-record.md` for SSC (adds the `## Encounter assignments` section per `rules/05-encounter-assignments.md` → "SSC"), `reference/templates/tk-record.md` for TK (adds the `## Encounter assignments` section per `rules/05-encounter-assignments.md` → "TK"), or `reference/templates/25man-record.md` for any other 25-man raid location (Hyjal, BT when those unlock). Copy the template into `records/` with the date-based filename, fill in every `{placeholder}`, delete every section/sub-line marked with an HTML comment like `delete line if none` if its condition applies, and follow the section order as-is. |
 | `derived/bench-history-tbc.md` | **Update.** For each player benched this raid: find their row in the correct bench group's table per `rules/02-bench-rotation.md` → "Bench groups". Insert a new row in alphabetical position if absent. Increment the count cell for the relevant location column, append the new date, and recompute the **Total** cell (sum across location columns in the row). |
 | `derived/signup-history-total.md` | **Update.** For each distinct canonical player appearing anywhere in the new record file's `## Signups` section (any sub-line — class lists, Tentative, Late, Bench): find their row in the sub-table matching their `rules/04-players.md` classification (Officers / Core tanks / Current members / Former members), or add a new row in that sub-table if absent. Increment **Signups** by 1. Then re-sort each sub-table whose rows changed (by `Signups` desc, alphabetical case-insensitive tiebreak) and renumber `#` from `1`. Count each player once per record file regardless of how many sub-lines mention them. **Never** count Discord "Absent" reactions (ignored per Step 2) or players in `## Withdrawn signups` (see `Event: Player withdraws signup`). See that file's own "What counts as a signup" and "Maintenance" sections for the full rule. |
 | `derived/signup-stats-tbc.md` | **Update IF** the new/edited record file is in scope per that file's **Scope** section (currently TBC-era record files: Karazhan, Gruul's Lair, Magtheridon's Lair). See its **Maintenance** section for the full delta logic — in brief: apply per-player Signups deltas, record First signup for new rows, recompute Signup rate for every row whose Raids-in-window changed, recompute Last signed up X days ago for every row, refresh the "Computed as of" header, re-sort by Signup rate desc (alphabetical tiebreak), renumber. Former players are excluded. Skip entirely for out-of-scope record files (currently any old-world record file). |
@@ -102,7 +102,7 @@ Read both **Tier 1** and **Tier 2** of the **Reading list** at the top of this f
 
 ### Writing the `## Notes` section of a record file
 
-The `## Notes` section is for **per-raid facts that aren't derivable from the rules + the rest of the record file**. It is not free-form commentary, and it is not a place to log rule compliance. Every record-file template (`reference/templates/25man-record.md`, `reference/templates/gruul-mag-record.md`, `reference/templates/karazhan-record.md`) points at this subsection — do not duplicate this guidance into the templates themselves.
+The `## Notes` section is for **per-raid facts that aren't derivable from the rules + the rest of the record file**. It is not free-form commentary, and it is not a place to log rule compliance. Every record-file template (`reference/templates/25man-record.md`, `reference/templates/gruul-mag-record.md`, `reference/templates/ssc-record.md`, `reference/templates/tk-record.md`, `reference/templates/karazhan-record.md`) points at this subsection — do not duplicate this guidance into the templates themselves.
 
 #### What belongs in Notes
 
@@ -314,7 +314,7 @@ Quick changes are not blindly applied. Before applying any slot-touching change,
 2. **No double-booking.** Target player isn't already in `## Actual Raid Rosters` (Karazhan) / `## Actual Roster` (25-man).
 3. **Hard composition rules and role coherence.** Post-change roster doesn't violate any hard rule from `rules/01-raid-compositions.md` — caps (e.g., "Resto Druid cap (hard rule)"), minimums (e.g., Karazhan "Tank composition" 2T per team; the 25-man default composition — "25-man raids → General → Default composition"), or role coherence (a player can't fill a role their class can't perform; hybrid mainspec resolution per `rules/01-raid-compositions.md` → "Role placement: mainspec is authoritative").
 4. **Hard player constraints.** Post-change roster respects `rules/03-player-constraints.md` → "Availability constraints", "Must-be-together", "Must-not-be-together". For Karazhan team moves and swaps, also re-check "Needlist" same-team conflicts (block any new same-team competitor pairing unless competitor count strictly exceeds team count, in which case record as known-unavoidable in `## Notes`) and "Enchanters — spread across Karazhan raid teams" (no two enchanters on the same Karazhan team).
-5. **Encounter-role coverage and eligibility** (Gruul+Mag and SSC). If the change orphans a role in `## Encounter assignments`, or violates an eligibility requirement per the role's Eligibility column in `rules/05-encounter-assignments.md`, re-run the assignment algorithm in `rules/05-encounter-assignments.md` **only for the affected role(s)** — do not re-derive every encounter role.
+5. **Encounter-role coverage and eligibility** (Gruul+Mag, SSC, and TK). If the change orphans a role in `## Encounter assignments`, or violates an eligibility requirement per the role's Eligibility column in `rules/05-encounter-assignments.md`, re-run the assignment algorithm in `rules/05-encounter-assignments.md` **only for the affected role(s)** — do not re-derive every encounter role.
 
 **Out of scope for Quick** (use `Event: Full-roster recalculation` if any of these are the goal): fair-rotation re-derivation (`rules/02-bench-rotation.md`), comp flex resolution (`rules/01-raid-compositions.md` → "Handling role shortages" / "Handling role surpluses"), soft-rule optimization (`rules/01-raid-compositions.md` → "Soft rule conflicts"), composition-target nudges (the target spec ranges in `reference/raid-composition-guide.md` § 8; `rules/02-bench-rotation.md` → "Tiebreaker cascade"), sub-agent verdict.
 
@@ -468,7 +468,7 @@ INPUTS for generating a record file:
   ├── rules/02-bench-rotation.md
   ├── rules/03-player-constraints.md
   ├── rules/04-players.md
-  ├── rules/05-encounter-assignments.md   ← Encounter assignments for Gruul+Mag and SSC
+  ├── rules/05-encounter-assignments.md   ← Encounter assignments for Gruul+Mag, SSC, and TK
   ├── derived/bench-history-tbc.md     ← summary derived from records/, kept as a fast-lookup index
   ├── derived/signup-history-total.md    ← derived from records/ — statistic only, not used by any active rule
   └── derived/signup-stats-tbc.md  ← combined signup count, signup rate (percentage), and last-signup recency (days), TBC-era record files only (statistic only)
@@ -479,7 +479,7 @@ REFERENCE for parsing screenshots and raid composition decisions:
   └── reference/raid-composition-guide.md               ← TBC raid composition reference (§8 = the target spec ranges, used by tiebreaker)
 
 OUTPUTS:
-  ├── records/*.md                    ← actual record files, one per raid night (each record file is also INPUT for the next); Gruul+Mag and SSC records carry `## Encounter assignments` sections read by `rules/05-encounter-assignments.md`
+  ├── records/*.md                    ← actual record files, one per raid night (each record file is also INPUT for the next); Gruul+Mag, SSC, and TK records carry `## Encounter assignments` sections read by `rules/05-encounter-assignments.md`
   ├── derived/bench-history-tbc.md     ← updated whenever a new record file is created
   ├── derived/signup-history-total.md    ← updated whenever a new record file is created or edited
   └── derived/signup-stats-tbc.md  ← same, but only for TBC-era record files; also recomputes Signup rate and Last signed up X days ago
@@ -488,7 +488,8 @@ REFERENCE for writing new record files (canonical structure for record files):
   ├── reference/templates/karazhan-record.md   ← canonical structure for Karazhan record files
   ├── reference/templates/gruul-mag-record.md  ← canonical structure for Gruul+Mag record files (adds Encounter assignments)
   ├── reference/templates/ssc-record.md        ← canonical structure for SSC record files (adds Encounter assignments)
-  └── reference/templates/25man-record.md      ← canonical structure for any other 25-man record file (TK/Hyjal/BT)
+  ├── reference/templates/tk-record.md         ← canonical structure for TK record files (adds Encounter assignments)
+  └── reference/templates/25man-record.md      ← canonical structure for any other 25-man record file (Hyjal/BT)
 
 META (read every session):
   ├── CLAUDE.md
@@ -511,6 +512,6 @@ After any interaction, check:
 - [ ] Rule added/changed? → `rules/*.md`
 - [ ] Player left/joined? → `04-players.md` + `03-player-constraints.md` + `bench-history-tbc.md`
 - [ ] Officer promoted/demoted? → `04-players.md` + `signup-history-total.md` + `bench-history-tbc.md` (priority change moves the bench row). See `Event: User promotes or demotes an officer`.
-- [ ] New record file created? → `records/YYYY-MM-DD-day-raid.md` (Gruul+Mag uses `gruul-mag-record.md`; SSC uses `ssc-record.md`; other 25-mans use `25man-record.md`)
-- [ ] New Gruul+Mag or SSC record? → fill in `## Encounter assignments` per `rules/05-encounter-assignments.md`
+- [ ] New record file created? → `records/YYYY-MM-DD-day-raid.md` (Gruul+Mag uses `gruul-mag-record.md`; SSC uses `ssc-record.md`; TK uses `tk-record.md`; other 25-mans use `25man-record.md`)
+- [ ] New Gruul+Mag, SSC, or TK record? → fill in `## Encounter assignments` per `rules/05-encounter-assignments.md`
 - [ ] Constraint added? → `03-player-constraints.md`

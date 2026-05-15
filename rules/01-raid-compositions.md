@@ -19,7 +19,7 @@ Each player's role for a raid is their `Mainspec (role)` column in `rules/04-pla
    - Role(s) under target → resolve per "Handling role shortages" below (Resort 1: a benched mainspec signup for the role, at any rank — the *Mainspec over offspec* fill; then Resort 2: comp flex).
    - Role(s) over target → resolve per "Handling role surpluses" below.
    This step and step 3 loop until the distribution is stable; the loop is specified in `rules/02-bench-rotation.md` → "Raid spot priority (selection order)", step 5.
-5. **Apply remaining rules**: player constraints (`rules/03-player-constraints.md`) and (Gruul+Mag and SSC) encounter assignments (`rules/05-encounter-assignments.md`).
+5. **Apply remaining rules**: player constraints (`rules/03-player-constraints.md`) and (Gruul+Mag, SSC, and TK) encounter assignments (`rules/05-encounter-assignments.md`).
 
 The standard path from mainspec to offspec for a given raid is **comp flex** (voluntary; for a role shortage it is Resort 2 — see "Handling role shortages" below). The signup icon does NOT trigger offspec play. (For the rare user-designated exception, see *Rare contingency: explicit offspec signup* below.)
 

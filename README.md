@@ -30,5 +30,5 @@ Claude Code reads the rule files, parses Discord signup screenshots provided by 
 - `rules/02-bench-rotation.md` — Bench fairness, raid spot priority, selection algorithm, tiebreakers
 - `rules/03-player-constraints.md` — Must-be-together / must-not-be-together / availability / Needlist / enchanter constraints
 - `rules/04-players.md` — Player classes, specializations, and raid spot priority
-- `rules/05-encounter-assignments.md` — Encounter role assignments for Gruul+Mag and SSC
+- `rules/05-encounter-assignments.md` — Encounter role assignments for Gruul+Mag, SSC, and TK
 - `reference/file-operations-manual.md` — Step-by-step guide for every type of session interaction

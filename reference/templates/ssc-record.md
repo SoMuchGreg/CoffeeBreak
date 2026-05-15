@@ -5,10 +5,12 @@ copy to `YYYY-MM-DD-{day}-ssc.md` (e.g. `records/2026-06-07-sun-ssc.md`). Do not
 this template in place — only edit the copy under `records/`.
 
 For Gruul+Mag, use `reference/templates/gruul-mag-record.md` instead — it adds the
-Gruul+Mag-specific `## Encounter assignments` section. For any other 25-man raid
-location (TK; plus Hyjal, BT when those unlock), use `reference/templates/25man-record.md`,
-which omits the `## Encounter assignments` section entirely until those locations get
-their own encounter rules.
+Gruul+Mag-specific `## Encounter assignments` section. For TK, use
+`reference/templates/tk-record.md` — it adds the TK-specific `## Encounter
+assignments` section. For any other 25-man raid location (Hyjal, BT when those
+unlock), use `reference/templates/25man-record.md`, which omits the
+`## Encounter assignments` section entirely until those locations get their own
+encounter rules.
 
 Fill in every placeholder marked {like-this}. Delete every section or sub-line
 marked with an HTML comment like `delete line if none` if its condition applies.

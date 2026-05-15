@@ -2,15 +2,15 @@
 TEMPLATE for 25-man raid record files for locations **without** their own
 `## Encounter assignments` section. For Gruul+Mag use
 `reference/templates/gruul-mag-record.md`; for SSC use
-`reference/templates/ssc-record.md` — both add the `## Encounter assignments`
-section defined by `rules/05-encounter-assignments.md` for their location.
+`reference/templates/ssc-record.md`; for TK use `reference/templates/tk-record.md`
+— each adds the `## Encounter assignments` section defined by
+`rules/05-encounter-assignments.md` for its location.
 
 This template applies to every 25-man raid location whose encounter assignments
-are not yet rule-tracked — currently TK, plus Hyjal, BT when those unlock. To
-create a new record file, copy this file from
-`reference/templates/25man-record.md` into `records/` and rename the copy to
-`YYYY-MM-DD-{day}-{raid-location}.md` (e.g. `records/2026-06-07-sun-tk.md`).
-Use a short raid-location slug like `tk`, etc. Do not edit this template
+are not yet rule-tracked — currently Hyjal, BT when those unlock. To create a
+new record file, copy this file from `reference/templates/25man-record.md` into
+`records/` and rename the copy to `YYYY-MM-DD-{day}-{raid-location}.md`.
+Use a short raid-location slug for the location. Do not edit this template
 in place — only edit the copy under `records/`.
 
 Fill in every placeholder marked {like-this}. Delete every section or sub-line

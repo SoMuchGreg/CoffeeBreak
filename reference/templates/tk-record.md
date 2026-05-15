@@ -1,18 +1,15 @@
 <!--
-TEMPLATE for a Gruul's Lair + Magtheridon record file. To create a new Gruul+Mag record
-file, copy this file from `reference/templates/gruul-mag-record.md` into `records/` and
-rename the copy to `YYYY-MM-DD-{day}-gruul-mag.md` (e.g.
-`records/2026-04-26-sun-gruul-mag.md`). Do not edit this template in place — only edit
-the copy under `records/`.
+TEMPLATE for a Tempest Keep (TK) record file. To create a new TK record file,
+copy this file from `reference/templates/tk-record.md` into `records/` and rename
+the copy to `YYYY-MM-DD-{day}-tk.md` (e.g. `records/2026-06-07-sun-tk.md`). Do
+not edit this template in place — only edit the copy under `records/`.
 
-For SSC, use `reference/templates/ssc-record.md` — it has its own
-`## Encounter assignments` section per `rules/05-encounter-assignments.md` → "SSC".
-For TK, use `reference/templates/tk-record.md` — it has its own
-`## Encounter assignments` section per `rules/05-encounter-assignments.md` → "TK".
-For any other 25-man raid location (Hyjal, BT when those unlock), use
-`reference/templates/25man-record.md` instead — that template omits the
-`## Encounter assignments` section entirely (those locations are not yet covered
-by `rules/05-encounter-assignments.md`).
+For Gruul+Mag, use `reference/templates/gruul-mag-record.md`; for SSC, use
+`reference/templates/ssc-record.md` — both add their own `## Encounter
+assignments` section defined by `rules/05-encounter-assignments.md` for their
+location. For any other 25-man raid location (Hyjal, BT when those unlock),
+use `reference/templates/25man-record.md`, which omits the `## Encounter
+assignments` section entirely until those locations get their own encounter rules.
 
 Fill in every placeholder marked {like-this}. Delete every section or sub-line
 marked with an HTML comment like `delete line if none` if its condition applies.
@@ -20,13 +17,13 @@ marked with an HTML comment like `delete line if none` if its condition applies.
 Keep the section order as-is — the file-operations-manual and rules assume
 this layout.
 
-Composition target for Gruul+Mag is the default 25-man composition
+Composition target for TK is the default 25-man composition
 (`rules/01-raid-compositions.md` → "25-man raids → General → Default composition").
 Always look up the target in rule 01 before filling in the Composition check line
 below — never copy it from a previous record file without re-verifying it.
 -->
 
-# Gruul's Lair + Magtheridon — {Day} {DD.MM.YYYY}
+# Tempest Keep — {Day} {DD.MM.YYYY}
 
 > {Optional one-line schedule note}    <!-- delete blockquote line if not applicable -->
 
@@ -93,7 +90,7 @@ Sort alphabetically case-insensitive by canonical player name (rules/04-players.
 |--------|
 | ...    |
 
-## Actual Roster (Gruul + Magtheridon)
+## Actual Roster (Tempest Keep)
 
 <!--
 Role-grouped tables. The Class column should record the spec each player
@@ -122,7 +119,7 @@ role section.
 |--------|-------|
 | ...    | ...   |
 
-**Composition check:** Target {target} for Gruul+Mag (per `rules/01-raid-compositions.md`). Actual: {T}/{H}/{DPS} = {total}. Status: ✅ / ⚠️ {explanation if outside target, e.g. "4 healers — 1 below the 5-healer floor, no flex accepted" or "7 healers, ran by user override"}.
+**Composition check:** Target {target} for TK (per `rules/01-raid-compositions.md`). Actual: {T}/{H}/{DPS} = {total}. Status: ✅ / ⚠️ {explanation if outside target, e.g. "4 healers — 1 below the 5-healer floor, no flex accepted" or "7 healers, ran by user override"}.
 
 ## Comp flex applied                                   <!-- delete this whole section if no flex was used -->
 
@@ -159,77 +156,63 @@ Delete the table and replace with `*(None — all 25 spots filled)*` if no one w
 ## Encounter assignments
 
 <!--
-Per-raid role assignments for Gruul+Mag encounters. Canonical rules for what
-roles exist, eligibility requirements, continuity logic, and the assignment
-algorithm live in `rules/05-encounter-assignments.md` → "Gruul+Mag". Do not
-restate those rules here.
+Per-encounter role assignments for TK bosses. Canonical rules for what roles
+exist, eligibility requirements, continuity logic, and the assignment algorithm
+live in `rules/05-encounter-assignments.md` → "TK". Do not restate those rules
+here.
 
 Leave a Player cell as `—` when the role is not filled this raid (per the
 role's per-role assignment subsection in
-`rules/05-encounter-assignments.md` → "Gruul+Mag"). Never delete rows — the
-role list is invariant per
-`rules/05-encounter-assignments.md` → "Gruul+Mag → Encounter roles".
+`rules/05-encounter-assignments.md` → "TK"). Never delete rows — the role
+list is invariant per `rules/05-encounter-assignments.md` → "TK →
+Encounter roles".
 
-Multi-slot roles (single row, multiple names): list names comma-separated in
-the Player cell (e.g., `Thordrel, Bombzor`). If a slot is unfilled, write `—`
-for the missing slot (e.g., `Thordrel, —`). Per-role slot-count rules live in
-`rules/05-encounter-assignments.md` → "Gruul+Mag → Per-role assignment details".
+Multi-slot roles (single row, multiple names): list names comma-separated in the
+Player cell (e.g., `Vaelruna, Grundiger, Tonz/Tonsen`). If a slot within a
+multi-slot role is unfilled, write `—` for the missing slot (e.g.,
+`Vaelruna, Grundiger, —`).
 
-Canonical names per `rules/04-players.md`. The Notes column is free-form — use
-it for per-raid facts the user should be aware of.
-
-General raid instructions (positioning and kill order) are invariant and live
-in `rules/05-encounter-assignments.md` → "Gruul+Mag → General raid instructions"
-— do not duplicate them into this section.
+Canonical names per `rules/04-players.md`. The Notes column is free-form — use it
+for per-raid facts such as continuity overrides or hard-constraint flags the
+user should be aware of.
 -->
 
-### High King Maulgar
+### Al'ar
 
-| Role                 | Player | Notes           |
-|----------------------|--------|-----------------|
-| Maulgar Tank         | ...    |                 |
-| Maulgar Tank MD      | ...    |                 |
-| Maulgar Healer       | ...    |                 |
-| Mage Tank (Krosh)    | ...    |                 |
-| Mage Tank Healer     | ...    |                 |
-| Kiggler Tank         | ...    |                 |
-| Kiggler Tank Healer  | ...    |                 |
-| Olm Tank             | ...    | until felhunter |
-| Felhunter Subjugate  | ...    |                 |
-| Olm Tank Healer      | ...    |                 |
-| Blindeye Tank        | ...    |                 |
-| Blindeye Tank MD     | ...    |                 |
-| Blindeye Tank Healer | ...    |                 |
+| Role        | Player | Notes |
+|-------------|--------|-------|
+| Main Tank   | ...    |       |
+| Off Tank #1 | ...    |       |
+| Off Tank #2 | ...    |       |
 
-### Magtheridon — Cube Clickers
+### Void Reaver
 
-<!--
-Location ↔ Marker mapping is fixed per `rules/05-encounter-assignments.md` →
-"Gruul+Mag → Encounter roles → Magtheridon". Do not edit the Location or Marker cells; only
-fill in the Player column.
--->
+| Role        | Player | Notes                                                                       |
+|-------------|--------|-----------------------------------------------------------------------------|
+| Main Tank   | ...    |                                                                             |
+| Off Tank #1 | ...    |                                                                             |
+| Off Tank #2 | ...    |                                                                             |
+| Kiter       | ...    | List 3 names: Kiter #1, #2, #3 (e.g., `Grundiger, Vaelruna, Tonz/Tonsen`).  |
 
-| Location    | Marker   | Player |
-|-------------|----------|--------|
-| South       | Star     | ...    |
-| South East  | Triangle | ...    |
-| South West  | Circle   | ...    |
-| North East  | Square   | ...    |
-| North West  | Diamond  | ...    |
+### High Astromancer Solarian
 
-### Magtheridon — Alternative Experienced Cube Clickers
+| Role      | Player | Notes |
+|-----------|--------|-------|
+| Main Tank | ...    |       |
+| Off Tank  | ...    |       |
 
-<!--
-Inclusion criteria, sort order, and column definitions:
-`rules/05-encounter-assignments.md` → "Alternative experienced cube clickers".
-Do not restate them here.
+### Kael'Thas Sunstrider
 
-Replace the table with `*(None — no roster member outside the primary cube clickers has prior cube experience.)*` if the list is empty.
--->
-
-| Player | Role | Class | Total cube holds | Prior cubes by direction | Most recent |
-|--------|------|-------|------------------|--------------------------|-------------|
-| ...    | ...  | ...   | ...              | ...                      | ...         |
+| Role                   | Player | Notes |
+|------------------------|--------|-------|
+| Main Tank              | ...    |       |
+| Off Tank               | ...    |       |
+| Warlock Tank           | ...    |       |
+| Hunter Tank            | ...    |       |
+| Staff Carrier          | ...    |       |
+| Infinity Blade Carrier | ...    |       |
+| Mage Interrupt         | ...    |       |
+| DPS Shaman Interrupt   | ...    |       |
 
 ## Notes
 
