@@ -26,7 +26,7 @@ Every player has a **raid spot priority** — an integer 1, 2, or 3. Priority is
 When forming a roster from signups:
 
 1. **Place all priority-1 signups first.** They always play, subject to availability constraints in `rules/03-player-constraints.md`.
-2. **Place priority-2 signups.** If priority-1 + priority-2 signups exceed the spot count (less any spots the *Member reservation* below holds back for priority-3 signups), bench the overflow via **fair bench rotation among priority-2 players**. The direction — who plays vs. who sits — is canonical to the *Fairness requirement* section below; do not paraphrase it here.
+2. **Place priority-2 signups.** If priority-1 + priority-2 signups exceed the spot count (less any spots the *Member reservation* below holds back for priority-3 signups), bench the overflow via **fair bench rotation among priority-2 players**. Who plays vs. who sits is canonical to the *Fairness requirement* section below; do not paraphrase it here.
 3. **If spots remain after step 2**, fill them with priority-3 signups — the *Member reservation* (below) keeps some open for them. When more priority-3 signed up than open spots, decide which play **by composition first** — favor a priority-3 signup whose mainspec role the roster is short on (below its composition target, `rules/01-raid-compositions.md`) — **then by fair bench rotation** among the remaining ties (within the relevant bench group, per *Fairness requirement* below). Step 5 calibrates afterward regardless.
 4. **All unplaced signups go to bench.** When recording the bench in the record file, note each player's priority alongside their bench count.
 5. **Composition override.** After steps 1–4, calibrate the role distribution to composition targets — under-target roles per `rules/01-raid-compositions.md` → "Handling role shortages" (Resort 1: the *Mainspec over offspec* fill — see "Mainspec over offspec (Mainspec-first rule)" below; Resort 2: comp flex; Resort 3: alt swap), over-target roles per `rules/01-raid-compositions.md` → "Handling role surpluses". **Iterate:** after every swap or accepted flex, re-check the distribution; an accepted comp flex or alt swap also shifts who is benched, so recompute from step 1 and re-apply this step — keep going until the distribution is stable.
@@ -88,7 +88,7 @@ Bookkeeping: offspec play does not move the player to a different bench group fo
 
 In the *cutting* case, bench selection is identical for both subsets:
 
-- **Among multiple offspec signers** in an oversubscribed pool: apply the standard cascade (*Direction* and the *Tiebreaker cascade* below). Counts come from each player's own bench group's table; counts are unified across mainspec and offspec play, so the cascade compares them apples-to-apples even when candidates span multiple bench-group tables.
+- **Among multiple offspec signers** in an oversubscribed pool: apply the standard cascade (the *Bench Catch-up rule* and the *Tiebreaker cascade* below). Counts come from each player's own bench group's table; counts are unified across mainspec and offspec play, so the cascade compares them apples-to-apples even when candidates span multiple bench-group tables.
 - **Among mainspec signers** (used only when all offspec signers in the pool have been benched and the pool is still over): the same cascade.
 
 This rule pairs with *Rotation scope: only oversubscribed role groups fire* (below). The two address independent failure modes: the *cutting* case here handles an offspec signer sitting in the same oversubscribed pool as a pure mainspec player; the *Rotation scope* rule handles flex-displacement manufacturing a bench in an at-par role group. Neither subsumes the other — both are needed.
@@ -104,7 +104,7 @@ A player benched in a raid is **protected from being benched again** in the next
 
 Example: a Wednesday SSC bench protects against benching at the following Sunday Gruul+Mag (chronological) *and* the following Wednesday SSC (same-location).
 
-This subsection applies before *Direction* below: protection filters fair rotation's candidate pool — protected players are excluded; *Direction* then picks who sits from the unprotected remainder. A protected player is never benched ahead of an unprotected player in the same bench group, regardless of cumulative counts.
+This subsection applies before the *Bench Catch-up rule* below: protection filters fair rotation's candidate pool — protected players are excluded; the *Bench Catch-up rule* then picks who sits from the unprotected remainder. A protected player is never benched ahead of an unprotected player in the same bench group, regardless of cumulative counts.
 
 **Protection state, per player.** One **chronological** slot, set/re-armed by the most recent bench at any location; and one **same-location** slot per raid location, set/re-armed by the most recent bench at that location. Slots are independent — a player can simultaneously hold an active SSC same-location protection *and* an active Karazhan same-location protection.
 
@@ -116,30 +116,30 @@ This subsection applies before *Direction* below: protection filters fair rotati
 
 **Composition caps and user discretion override protection.** A `composition cap` bench can still fall on a protected player (per *Composition caps override pure fairness* below). The protection isn't consumed by such a bench (since `composition cap` doesn't trigger re-arm either), so it remains active for the next raid. A discretionary bench (per *User's discretionary bench picks* below) can also bench a protected player; flag the conflict to the user before applying so they can confirm or revise. If applied, the new bench re-arms protection from there.
 
-**Fallback when over-subscribed.** When excluding protected players would leave the candidate pool too small to fill the required bench count, the shortfall is benched from the protected subset using *Direction* and the *Tiebreaker cascade* below. Protection is the strongest preference within a bench group's fair-rotation candidates but yields to physical capacity — every required seat must still be filled. Record the bench under its normal reason label.
+**Fallback when over-subscribed.** When excluding protected players would leave the candidate pool too small to fill the required bench count, the shortfall is benched from the protected subset using the *Bench Catch-up rule* and the *Tiebreaker cascade* below. Protection is the strongest preference within a bench group's fair-rotation candidates but yields to physical capacity — every required seat must still be filled. Record the bench under its normal reason label.
 
 **Bookkeeping.** Protection state isn't stored separately; it's recoverable from the predecessor `records/*.md`. A player has **chronological** protection when `records/*.md` contains a triggering-reason `## Bench` row for them with no later record file's roster containing them. **Same-location** protection is the same check, restricted to record files at that location.
 
-### Direction
+### Bench Catch-up rule
 
-⚠️ **Read this every time you build a roster with overflow.** Inverting this rule is a recurring error — do not rely on memory for the direction, re-read this section.
+⚠️ **Read this every time you build a roster with overflow.** Inverting this rule is a recurring error — do not rely on memory for who catches up to whom, re-read this section.
 
-When fair rotation picks who sits, the player with the **lowest** cumulative bench count for the raid location and bench group is the one we **send to the bench**. The player with a **higher** count keeps their raid spot. The principle is to *catch up* the under-benched player so cumulative counts equalize over time — Direction never protects the under-benched, it draws from them.
+When fair rotation picks who sits, the player with the **lowest** cumulative bench count for the raid location and bench group is the one we **send to the bench**. The player with a **higher** count keeps their raid spot. The principle is for the under-benched player to *catch up to* the over-benched player so cumulative counts equalize over time — the Bench Catch-up rule never protects the under-benched from being benched, it draws from them.
 
-This Direction rule operates on the **candidate subset** determined by *Mainspec over offspec (Mainspec-first rule)* (above), *Back-to-back bench protection* (above), and *Rotation scope: only oversubscribed role groups fire* (below). Re-read those if you're unsure which subset is in play.
+This Bench Catch-up rule operates on the **candidate subset** determined by *Mainspec over offspec (Mainspec-first rule)* (above), *Back-to-back bench protection* (above), and *Rotation scope: only oversubscribed role groups fire* (below). Re-read those if you're unsure which subset is in play.
 
 **Concrete.** Two players in the same bench group are competing for the last roster spot. Cumulative G+M bench counts going in: A = 0, B = 1. **A goes to the bench. B plays.** A's count moves 0 → 1, equalizing with B at 1. This holds regardless of their bench counts at any other location — every raid location is tracked separately.
 
-The same direction applies in **every** "fair rotation" branch in this file: priority-3 selection (`Raid spot priority` step 3), the over-target bench picked in the *Mainspec over offspec* filling case (above), composition-cap-affected specs (`Composition caps override pure fairness` below — pick the **highest-count** Resto Druid(s) to play, not the lowest), and the tiebreakers that fall under fair rotation.
+The same rule applies in **every** "fair rotation" branch in this file: priority-3 selection (`Raid spot priority` step 3), the over-target bench picked in the *Mainspec over offspec* filling case (above), composition-cap-affected specs (`Composition caps override pure fairness` below — pick the **highest-count** Resto Druid(s) to play, not the lowest), and the tiebreakers that fall under fair rotation.
 
-If you ever find yourself benching a higher-count player over a lower-count one, you have inverted the rule. Stop and re-read the Direction rule above before continuing.
+If you ever find yourself benching a higher-count player over a lower-count one, you have inverted the rule. Stop and re-read the Bench Catch-up rule above before continuing.
 
 ### Rotation scope: only oversubscribed role groups fire
 
 Fair rotation fires for a role group **only when that role group is oversubscribed** for the raid being planned. A role group is oversubscribed when its signup count exceeds its composition target:
 
 - **Healer role group oversubscribed** → healer signups exceed the location's healer target — for 25-mans, **more than 6** (the top of the 5-6 healer range; `rules/01-raid-compositions.md` → "25-man raids → General → Default composition"). Fair rotation fires within the Healer pool of the affected priority level(s).
-- **DPS+tank role group oversubscribed** → combined tank + DPS signups exceed the combined tank + DPS target. Fair rotation fires within the DPS+tank pool. Composition still constrains the picks: tanks and DPS have separate target counts, so the rotation must bench enough tanks to bring the tank count to target AND enough DPS to bring the DPS count to target. Within each role's bench picks, pick the lowest-count member of the relevant DPS+tank bench group. (For 25-mans the DPS target is the residual after the location's tank target and healer count — see `rules/01-raid-compositions.md` → "25-man raids" for per-location values.)
+- **DPS+tank role group oversubscribed** → combined tank + DPS signups exceed the combined tank + DPS target. Fair rotation fires within the DPS+tank pool. Composition still constrains the picks: tanks and DPS have separate target counts, so the rotation must bench enough tanks to bring the tank count to target AND enough DPS to bring the DPS count to target. Each pick (tank or DPS) follows the *Bench Catch-up rule* within the relevant DPS+tank bench group. (For 25-mans the DPS target is the residual after the location's tank target and healer count — see `rules/01-raid-compositions.md` → "25-man raids" for per-location values.)
 - **No role group oversubscribed** → no fair-rotation bench fires. Players in at-par or under-par role groups are not benched by rotation, regardless of their count relative to anyone in any other group. Composition caps and manual overrides may still bench specific players.
 - **Edge case: role-mismatch within an at-par group** → e.g., DPS+tank at par numerically (combined count = combined target) but tanks over by 1 and DPS short by 1. The group is at par, so no one is benched and there is no benched mainspec-DPS signup to bring in via "Handling role shortages" → Resort 1 — comp flex (`rules/01-raid-compositions.md` → "Handling role surpluses") is the tool; if it doesn't resolve, the surplus benches via *User's discretionary bench picks* below. Fair rotation does not fire (group at par numerically).
 
@@ -160,9 +160,9 @@ Previous bench history (tracked in prior record files and summarized in `derived
 
 ### Tiebreaker cascade
 
-When the fair-rotation *Direction* rule leaves a tie — two or more candidates with the same cumulative bench count for the raid location and bench group, where not all of them can play — resolve it with the **tiebreaker cascade** below. This subsection is the single source of truth for the post-*Direction* ordering; the `####` subsections below detail each step's mechanics.
+When the fair-rotation *Bench Catch-up rule* leaves a tie — two or more candidates with the same cumulative bench count for the raid location and bench group, where not all of them can play — resolve it with the **tiebreaker cascade** below. This subsection is the single source of truth for resolving ties left by the *Bench Catch-up rule*; the `####` subsections below detail each step's mechanics.
 
-The cascade is strictly **within** fair rotation and within a single bench group; it resolves only the tie *Direction* left, and never revisits *Direction*'s call. It never crosses bench groups or priority levels.
+The cascade is strictly **within** fair rotation and within a single bench group; it resolves only the tie left by the *Bench Catch-up rule*, and never revisits the rule's call. It never crosses bench groups or priority levels.
 
 **The cascade — highest precedence first; each step fires only on the tie its predecessor leaves:**
 
@@ -219,7 +219,7 @@ This is **cascade step 2** (see the *Tiebreaker cascade* above) — it fires whe
 
 The reasoning: per-location fair rotation (the primary rule) can leave a player who has been benched heavily on other locations still sitting at a tied per-location count here. Giving them the spot in this tie nudges their overall raid participation back toward parity with peers who have been benched less globally.
 
-This step is still strictly **within** fair rotation and within a single bench group; it never crosses priority levels or role groups. And it never overrides *Direction* — a strictly-lower per-*location* bench count benches first, regardless of cross-location *totals*.
+This step is still strictly **within** fair rotation and within a single bench group; it never crosses priority levels or role groups. And it never overrides the *Bench Catch-up rule* — a strictly-lower per-*location* bench count benches first, regardless of cross-location *totals*.
 
 #### Final fallback (any raid format)
 
@@ -233,7 +233,7 @@ Hard composition caps from `rules/01-raid-compositions.md` (e.g., the 25-man Res
 
 Some composition rules in `01-raid-compositions.md` cap how many of a given spec may participate in a raid (e.g., the **25-man Resto Druid cap** — see rule 01 for trigger and limit). These caps take **priority over cross-spec bench fairness** — a player forced to sit by such a cap will have a higher bench count than non-capped players in the same bench group over time, and that is expected, not a fairness violation.
 
-Within the affected spec, fair rotation still applies — and the direction is the same as everywhere else (see the *Direction* sub-section above). When the cap forces a Resto Druid to bench, pick the Resto Druid(s) with the **lowest** cumulative bench count for that raid location (and same bench group) **to bench** — equivalently, keep the **highest-count** Resto Druid(s) on the roster — so the bench burden rotates evenly within the spec.
+Within the affected spec, fair rotation still applies — the *Bench Catch-up rule* (sub-section above) picks within the capped spec rather than the full bench group, so the bench burden rotates evenly within the spec.
 
 Composition caps cannot displace a priority-1 player. If a cap and priority-1 ever conflict (which does not currently happen with any active rule), flag it to the user before proceeding.
 
@@ -264,7 +264,7 @@ Every row in a record file's bench table must use exactly one of the reason labe
 | Reason            | Meaning |
 |-------------------|---------|
 | `priority 3`      | Player is raid spot priority 3 (last resort) and was benched because more priority-3 players signed up than the spots open to them. See *Raid spot priority (selection order)* and *Member reservation* above. |
-| `fair rotation`   | Bench selected by the fair-rotation algorithm — see *Raid spot priority (selection order)*, *Member reservation*, *Mainspec over offspec (Mainspec-first rule)*, and *Fairness requirement* (incl. *Direction*, *Rotation scope*, *Rotation goal*, and the *Tiebreaker cascade*) above. Used for priority-2 / priority-3 overflow, including priority-2 displaced by the *Member reservation*. |
+| `fair rotation`   | Bench selected by the fair-rotation algorithm — see *Raid spot priority (selection order)*, *Member reservation*, *Mainspec over offspec (Mainspec-first rule)*, and *Fairness requirement* (incl. the *Bench Catch-up rule*, *Rotation scope*, *Rotation goal*, and the *Tiebreaker cascade*) above. Used for priority-2 / priority-3 overflow, including priority-2 displaced by the *Member reservation*. |
 | `manual override` | A discretionary bench pick that overrides the fair-rotation algorithm — see *User's discretionary bench picks* above for trigger cases and the full rule. |
 | `composition cap` | Benched by a hard composition cap in `rules/01-raid-compositions.md` (e.g., the 25-man Resto Druid cap). Within the capped spec, fair rotation still decides which player sits — see *Composition caps override pure fairness* above. |
 

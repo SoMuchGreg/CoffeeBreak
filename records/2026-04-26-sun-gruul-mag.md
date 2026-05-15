@@ -140,7 +140,7 @@
 
 **Verdict: GOOD ENOUGH** (finalized 2026-04-25) — composition on target (3/6/16); user-accepted overrides on the bench pick and four of five cube placements.
 
-- **Bench pick: Beaverfist (manual override)** — algorithmic fair-rotation per the Direction rule in `rules/02-bench-rotation.md` would have benched Bergamotka via alphabetical fallback after composition target + cross-location tiebreaker. User rationale: late signup.
+- **Bench pick: Beaverfist (manual override)** — algorithmic fair-rotation per the Bench Catch-up rule in `rules/02-bench-rotation.md` would have benched Bergamotka via alphabetical fallback after composition target + cross-location tiebreaker. User rationale: late signup.
 - **Cube placements: 4 of 5 differ from strict algorithm.** User judgment overrode cube-continuity (S, SE, SW) and cube-experience-fallback (NW); only NE matches a user-override pattern preserved from the prior recalc (CptKavior, who has no cube history).
 
 **Previous verdicts:**
