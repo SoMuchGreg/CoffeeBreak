@@ -4,7 +4,7 @@
 
 - Some players can play **two specializations** (e.g., tank + DPS, healer + DPS). They may be assigned to either role as needed.
 - Some players have **only one specialization**. They must always be assigned their one role.
-- **Some players have alts.** Their main character occupies the row in the priority sub-tables below; alts live in the **Alt characters** sub-table at the bottom of this file. Mechanics (picking rule, processing order, consent, visibility): `rules/01-raid-compositions.md` → "Alts".
+- **Some players have alts.** Their main character occupies the row in the priority sub-tables below; alts live in the **Alt characters** sub-table at the bottom of this file. Mechanics: `rules/01-raid-compositions.md` → "Alts" (concept, picking rule, consent, visibility) and "Handling role shortages → Resort 3" (when an alt is rostered instead of the main; processing order among multiple alt-bearers).
 - **Never assume** a player's class, specialization, or available roles. If unknown, ask the user.
 - **Melee vs. Ranged DPS matters for Shamans and Druids.** Enhancement Shamans and Feral Druids are **melee DPS**. Elemental Shamans and Balance (Boomkin) Druids are **ranged/caster DPS**. Each player's `Mainspec (role)` column below indicates which they play.
 - **Hybrid classes** — Druids, Paladins, Shamans, and Priests can each play tank, healer, or DPS specs. For canonical rule on which spec a hybrid plays for a raid, see `rules/01-raid-compositions.md` → "Role placement: mainspec is authoritative".
@@ -69,7 +69,7 @@ Currently empty. Kept so a Regular player promoted to priority `1` has a place t
 | 1  | Beaverfist         | Beaverfist     | Druid   | Healer            | DPS (Balance)   | 2       | First line offspec                                                                       |
 | 2  | Shapkica           | Shapkica       | Druid   | DPS (Feral)       | Tank (Feral)    | 2       | Eager offspec                                                                            |
 | 3  | Yxanb              | Yxanb          | Druid   | DPS (Feral)       | Tank (Feral)    | 2       | Reluctant offspec                                                                        |
-| 4  | Grundiger          | Grundiger      | Hunter  | DPS               | —               | 2       | Discord name: grundi21                                                                           |
+| 4  | Grundiger          | Grundiger      | Hunter  | DPS               | —               | 2       | Discord name: grundi21                                                                   |
 | 5  | Tonz/Tonsen        | Tonsen         | Hunter  | DPS               | —               | 2       |                                                                                          |
 | 6  | Vaelruna           | Vaelruna       | Hunter  | DPS               | —               | 2       |                                                                                          |
 | 7  | Animustenax        | Animustenax    | Mage    | DPS (Arcane)      | ?               | 2       |                                                                                          |

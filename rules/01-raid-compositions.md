@@ -13,10 +13,10 @@ Each player's role for a raid is their `Mainspec (role)` column in `rules/04-pla
 **Order of placement.** When building a roster from a signup pool:
 
 1. **Core tanks signed up** are placed into tank slots first (per "Core tanks" below — list membership is standing consent to tank, regardless of which icon they selected).
-2. **All other signups** are placed in their mainspec role per `rules/04-players.md`. **Exception:** players with alts (those with entries in that file's "Alt characters" sub-table) are resolved here per "Alts" below.
+2. **All other signups** are placed in their mainspec role per `rules/04-players.md`. Players with alts (those with entries in that file's "Alt characters" sub-table) are placed on their **main** here too — alt swaps are deferred to role-shortage **Resort 3** (see "Handling role shortages → Resort 3" below).
 3. **Headcount cut.** If more players are placed than the format has spots, bench the overflow — composition caps first (e.g., the 25-man Resto Druid cap), then raid-spot priority + fair rotation (`rules/02-bench-rotation.md` → "Raid spot priority (selection order)"). In later rules, "a benched signup" and "the headcount cut benched X" refer to a player benched by this step. (Under-cap — fewer signups than spots — see "Under-cap behavior" below for what benching, if any, still applies.)
 4. **Reconcile the role distribution against composition targets:**
-   - Role(s) under target → resolve per "Handling role shortages" below (Resort 1: a benched mainspec signup for the role, at any rank — the *Mainspec over offspec* fill; then Resort 2: comp flex).
+   - Role(s) under target → resolve per "Handling role shortages" below (Resort 1: a benched mainspec signup for the role, at any rank — the *Mainspec over offspec* fill; Resort 2: comp flex; Resort 3: alt swap).
    - Role(s) over target → resolve per "Handling role surpluses" below.
    This step and step 3 loop until the distribution is stable; the loop is specified in `rules/02-bench-rotation.md` → "Raid spot priority (selection order)", step 5.
 5. **Apply remaining rules**: player constraints (`rules/03-player-constraints.md`) and (Gruul+Mag, SSC, and TK) encounter assignments (`rules/05-encounter-assignments.md`).
@@ -33,11 +33,11 @@ If no one accepts: for shortage trigger, the raid runs under-target on that role
 
 ### Comp flex scope
 
-Comp flex addresses **real composition needs only**: a role under its target (shortage trigger) or over its target (surplus trigger), as defined in "Handling role shortages" and "Handling role surpluses" below. For a shortage it is **Resort 2** in "Handling role shortages" below — the fallback after Resort 1. It is never triggered by bench-rotation considerations — a flex must not be used to vacate a roster slot so the previous occupant can be sent to the bench, nor to manufacture a bench in a different role group. (Bench-rotation scope: `rules/02-bench-rotation.md` → "Rotation scope: only oversubscribed role groups fire".)
+Comp flex addresses **real composition needs only**: a role under its target (shortage trigger) or over its target (surplus trigger), as defined in "Handling role shortages" and "Handling role surpluses" below. For a shortage it is **Resort 2** in "Handling role shortages" below — the fallback after Resort 1, and the predecessor to Resort 3 (alt swap, see "Alts" below). It is never triggered by bench-rotation considerations — a flex must not be used to vacate a roster slot so the previous occupant can be sent to the bench, nor to manufacture a bench in a different role group. (Bench-rotation scope: `rules/02-bench-rotation.md` → "Rotation scope: only oversubscribed role groups fire".)
 
 ### Handling role shortages
 
-When the placed roster is **under target** on a required role (tanks, healers, or DPS), resolve it in two resorts, in order.
+When the placed roster is **under target** on a required role (tanks, healers, or DPS), resolve it in three resorts, in order.
 
 **Resort 1 — a benched mainspec signup.** If the headcount cut benched a signup whose `Mainspec (role)` is the under-target role, that signup fills it — the *Mainspec over offspec* rule's filling case (`rules/02-bench-rotation.md` → "Mainspec over offspec (Mainspec-first rule)"), which can place a lower-rank mainspec player ahead of comp-flexing a higher-rank one. Mechanics — who's benched from the over-target role in exchange, the priority-1 limit, the all-priority-1 fallback, picking among multiple eligible signups — are in that rule.
 
@@ -52,7 +52,9 @@ When the placed roster is **under target** on a required role (tanks, healers, o
 2. **No-preference second** — players with confirmed dual specs but no note recording a strong preference one way or the other (e.g., "Ok to offspec"). Neutral.
 3. **Last resort last** — players with reluctance notes (e.g., "Strong Resto preference", "extremely reluctant Balance", "Balance spec only as absolute last resort"). Ask only if tiers 0, 1, and 2 didn't fill the role. Respect the spirit of "absolute last resort" notes — these players genuinely don't want to play their off-spec.
 
-**Timing.** Comp flex happens during step-4 reconciliation, after the headcount cut. An accepted flex triggers the step 3–4 loop — see `rules/02-bench-rotation.md` → "Raid spot priority (selection order)", step 5.
+**Resort 3 — alt swap.** Used **only when Resort 1 and Resort 2 are both exhausted** and a role is still under target. If any roster member has an alt (per "Alts" below) whose profile covers the under-target role, swap that player from their main to their alt — the alt plays this raid in their stead. Standing consent applies, no per-raid prompt ("Alts → Consent" below). Process eligible alt-bearers alphabetically by canonical name. After each accepted swap, recompute the role distribution and re-enter this workflow (a swap may resolve the shortage or shift it). Resort 3 is the **absolute last resort** before PUG recruitment or downsizing the raid (both Karazhan-specific): we exhaust every standard mechanism — including priority-3 placement, Resort 1 mainspec fill, all four tiers of Resort 2 comp flex — before taking an alt into raid.
+
+**Timing.** Comp flex happens during step-4 reconciliation, after the headcount cut. Alt swap (Resort 3) also fires during step-4 reconciliation. An accepted flex or alt swap triggers the step 3–4 loop — see `rules/02-bench-rotation.md` → "Raid spot priority (selection order)", step 5.
 
 ### Handling role surpluses
 
@@ -72,13 +74,18 @@ When the format calls for more tanks than the core list provides (e.g., Karazhan
 
 ### Alts
 
-Some players have alts; their alternative profiles are recorded in `rules/04-players.md` → "Alt characters" sub-table. Mechanics of which profile to roster per raid.
+Some players have alts; their alternative profiles are recorded in `rules/04-players.md` → "Alt characters" sub-table.
+
 **At most one profile per raid.** A player with alts has a main and one or more alts; only one profile is rostered for any given raid.
+
 **Fit.** A profile **fits** when adding the player keeps the role at or below its composition target and respects all active composition caps. For Karazhan, the composition target is the aggregate across all teams being formed; per-team distribution is downstream.
-**Picking rule.** If both profiles fit, the main is rostered. If only one fits, that one is rostered. If neither fits, the player is not rostered (subject to standard bench rotation per `rules/02-bench-rotation.md`).
-**Processing order.** Alts are processed last within step 2 of "Order of placement" above — after all non-alt mainspec placements, then alphabetically by canonical name among themselves — so each evaluates fit against the near-complete composition.
+
+**Picking rule.** Alt-bearers are placed on their main at step 2 of "Order of placement" above; the alt is rostered instead only when "Handling role shortages → Resort 3" above fires. That section is canonical for when and how the swap happens, including processing order among multiple eligible alt-bearers.
+
 **Signup character.** The signup character is informational only — main-vs-alt selection is governed by this rule, not by which character appeared on the signup screen (per "Role placement: mainspec is authoritative" above).
+
 **Consent.** Listing a player's alt in `rules/04-players.md` → "Alt characters" sub-table is standing consent — no per-raid prompt — distinct from **comp flex**.
+
 **Visibility.** When an alt is rostered rather than the main, the roster proposal and the record file's `## Notes` section must call out the swap.
 
 ### Soft rule conflicts
@@ -214,7 +221,7 @@ When outside recruitment is triggered (the 27–29 case above, or the 25–26 ca
 
 If the guild can't supply enough tanks to meet the hard requirements in "Tank composition" above for every team, **drop to 2 teams**. This override applies even at 27+ signups: outside-of-guild recruitment never covers tank slots.
 
-The role-shortage resolution in "General principles → Handling role shortages" must be exhausted **before** falling back: first bring in any benched mainspec tank signup (Resort 1 — there is none under-cap, since everyone plays; only over-cap Karazhan can have one), then ask DPS-spec or Healer-spec players whose secondary spec is a tank spec (Resort 2 — comp flex; e.g., players whose `Offspec (role)` in `rules/04-players.md` lists a tank role) whether they would tank for this raid. Only if that doesn't yield enough tanks does the team count drop.
+The role-shortage resolution in "General principles → Handling role shortages" must be exhausted **before** falling back: first bring in any benched mainspec tank signup (Resort 1 — there is none under-cap, since everyone plays; only over-cap Karazhan can have one), then ask DPS-spec or Healer-spec players whose secondary spec is a tank spec (Resort 2 — comp flex; e.g., players whose `Offspec (role)` in `rules/04-players.md` lists a tank role) whether they would tank for this raid, then swap any alt-bearer to an alt whose profile tanks (Resort 3 — alt swap; per "General principles → Alts" above). Only if all three resorts don't yield enough tanks does the team count drop.
 
 **User override.** The user may explicitly choose to keep 3 teams with an outside recruit filling a tank slot rather than dropping to 2 teams. When this happens, record the recruit in the roster table as `PUG Tank` (matching the `PUG Heal` / `PUG DPS` naming convention from "Recording outside recruits (PUGs)" above) and document the override in the record file's `## Notes` under "User overrides" per the Notes guidance. The default behaviour above remains the rule; this override is per-raid and does not modify it.
 
@@ -237,7 +244,7 @@ This is the **default** for every 25-man raid location; a location may override 
 
 **The healer count is the number of mainspec healers who signed up — counting all priorities** (a priority-3 healer-main counts toward the total exactly like a priority-1 or priority-2 one). **6 is the ideal**: run as many of them as signed up, up to **6** (the surplus benches when more than 6 signed up); if fewer than 5 signed up, comp flex tops the count up toward the **5** floor. **Whenever 6 or more mainspec healers signed up — any priority mix — the raid runs 6 healers; running 5 healers while a 6th mainspec healer-main sits benched is never correct** (see "Reaching 6 healers" below). By signup count:
 
-- **≤ 4 mainspec healers** — below the range. Comp flex is offered to raise the healer count to **5**, the floor: the under-target case of "Handling role shortages" above — Resort 1 (a mainspec-healer signup that the headcount cut benched, if any), then Resort 2 (a DPS- or tank-main whose `Offspec (role)` is Healer). Flex never raises the count past 5. If no flex is accepted, the raid runs with fewer than 5 healers ("Comp flex consent" above).
+- **≤ 4 mainspec healers** — below the range. Resort 1 → Resort 2 → Resort 3 from "Handling role shortages" above are offered in order to raise the healer count to **5**, the floor: Resort 1 (a mainspec-healer signup that the headcount cut benched, if any), then Resort 2 (a DPS- or tank-main whose `Offspec (role)` is Healer), then Resort 3 (an alt-bearer whose alt is a healer). The 5 floor is the ceiling for top-up — never raise the count past 5 via these resorts. If all three are exhausted without filling, the raid runs with fewer than 5 healers ("Comp flex consent" above).
 - **5 or 6 mainspec healers** — at target; run them all (the 6th may be a priority-3 Member — see "Reaching 6 healers" below). The raid is 6 healers / 16 DPS when six signed up, 5 healers / 17 DPS when exactly five did. No flex (6 comes from mainspec-healer signups, never from flexing past 5), no healer bench.
 - **≥ 7 mainspec healers** — above the range. Bench the surplus down to **6**, the ceiling, per the over-target case of "Handling role surpluses" above; fair rotation (`rules/02-bench-rotation.md`) picks who sits, subject to the Resto Druid cap below. This is over-cap behavior; under-cap, "Under-cap behavior" below governs instead.
 
@@ -272,7 +279,7 @@ SSC overrides the default composition's tank count: **4 tanks instead of 3**. DP
 
 The 4th tank covers Fathom Lord Karathress's fourth mini-boss tank role — see `rules/05-encounter-assignments.md` → "SSC → Fathom Lord Karathress" for the per-mini-boss breakdown.
 
-**The 4th tank is never a core tank** — the Core tanks cap is 3 (`Core tanks → Cap: at most 3 core tanks` above). It is sourced via the standard role-shortage flow (`Handling role shortages → Resort 2 (comp flex)`): a DPS-with-tank-offspec player (Paladin, Druid, or Warrior with Tank offspec) flexes into the 4th tank slot.
+**The 4th tank is never a core tank** — the Core tanks cap is 3 (`Core tanks → Cap: at most 3 core tanks` above). It is sourced via the standard role-shortage flow: Resort 2 (comp flex) — a DPS-with-tank-offspec player (Paladin, Druid, or Warrior with Tank offspec) flexes into the 4th tank slot — and, only if Resort 2 yields no tank flex, Resort 3 (alt swap) — an alt-bearer whose alt is a tank.
 
 SSC additionally carries per-encounter role assignments — see `rules/05-encounter-assignments.md` → "SSC".
 
