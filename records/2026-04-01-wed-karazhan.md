@@ -8,11 +8,11 @@
 **Warriors (2):** Verysadge, Dankyn
 **Druids (5):** Yxanb, Jar, Gresac/Younea, Beaverfist, Roossy/Keatala
 **Paladins (3):** Thordrel, Sjwammie, Lightstarr
-**Hunters (3):** Tonsen, Vaelruna, Dwarfytron
+**Hunters (3):** Tonz/Tonsen, Vaelruna, Dwarfytron
 **Mages (2):** Greg/Ucannotpass, OomToDoom
 **Warlocks (3):** Jabbadhutt, BestPractice, McHughes
 **Priests (3):** Kres/Dissi, Thalynora, *(third unclear)*
-**Shamans (5):** Pergatori, Bergamotka/Tymoti, Lynelen, Ebonybolt, CodeHunt
+**Shamans (5):** Pergatori, Bergamotka, Lynelen, Ebonybolt, CodeHunt
 
 **Late (1):** GlaivemasterBaebay
 
@@ -28,7 +28,7 @@
 | McJudgin         | OT     | Paladin |
 | Lightstarr       | DPS    | Paladin |
 | Verysadge        | DPS    | Warrior |
-| Bergamotka/Tymoti| DPS    | Shaman  |
+| Bergamotka       | DPS    | Shaman  |
 | Gresac/Younea    | Healer | Druid   |
 | Greg/Ucannotpass | DPS    | Mage    |
 | BestPractice     | DPS    | Warlock |
@@ -42,7 +42,7 @@
 | Doughball        | MT     | Warrior |
 | Marino-Varthier  | OT     | Paladin |
 | Dankyn           | DPS    | Warrior |
-| Tonsen           | DPS    | Hunter  |
+| Tonz/Tonsen      | DPS    | Hunter  |
 | Roossy/Keatala   | Healer | Druid   |
 | OomToDoom        | DPS    | Mage    |
 | Jabbadhutt       | DPS    | Warlock |

@@ -21,5 +21,5 @@
 
 | Player             | Priority | Bench count (cumulative, after this raid) | Reason        |
 |--------------------|----------|-------------------------------------------|---------------|
-| Tonsen             | 2        | 1                                         | fair rotation |
+| Tonz/Tonsen        | 2        | 1                                         | fair rotation |
 | Drillbabe          | 2        | 1                                         | fair rotation |

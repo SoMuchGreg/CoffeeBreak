@@ -6,13 +6,13 @@
 
 **Tanks (3):** CptKavior, Ostbirger, Marino-Varthier
 **Warriors (4):** Nemajumarad, Verysadge, Dankyn, Gigakox
-**Druids (4):** Shapkica/Chkemi, Yxanb, Beaverfist, Jar
+**Druids (4):** Shapkica, Yxanb, Beaverfist, Jar
 **Paladins (2):** Thordrel, Leontes
 **Hunters (3):** Roossy/Keatala, Grundiger, Vaelruna
-**Priests (4):** Kres/Dissi, Siljes/Ejlis, Lightweit, Boriest
+**Priests (4):** Kres/Dissi, Siljes, Lightweit, Boriest
 **Mages (1):** Greg (Ucannotpass)
 **Warlocks (2):** Benglock, Jabbadhutt
-**Shamans (5):** Pergatori, Lynelen, Bergamotka/Tymoti, Ebonybolt, Gresac/Younea
+**Shamans (5):** Pergatori, Lynelen, Bergamotka, Ebonybolt, Gresac/Younea
 
 **Tentative (1):** Tiinar
 
@@ -36,35 +36,35 @@
 
 ### Healers (6)
 
-| Player       | Class          |
-|--------------|----------------|
-| Beaverfist   | Druid (Resto)  |
-| Thordrel     | Paladin (Holy) |
-| Siljes/Ejlis | Priest (Holy)  |
-| Lightweit    | Priest (Holy)  |
-| Boriest      | Priest (Holy)  |
-| Pergatori    | Shaman (Resto) |
+| Player     | Class          |
+|------------|----------------|
+| Beaverfist | Druid (Resto)  |
+| Thordrel   | Paladin (Holy) |
+| Siljes     | Priest (Holy)  |
+| Lightweit  | Priest (Holy)  |
+| Boriest    | Priest (Holy)  |
+| Pergatori  | Shaman (Resto) |
 
 ### DPS (16)
 
-| Player            | Class                |
-|-------------------|----------------------|
-| Verysadge         | Warrior (Fury)       |
-| CptKavior         | Warrior (Fury)       |
-| Dankyn            | Warrior (Fury)       |
-| Yxanb             | Druid (Feral)        |
-| Jar               | Druid (Balance)      |
-| Leontes           | Paladin (Ret)        |
-| Roossy/Keatala    | Hunter (BM)          |
-| Grundiger         | Hunter (BM)          |
-| Vaelruna          | Hunter (BM)          |
-| Greg              | Mage (Arcane)        |
-| Benglock          | Warlock (Demonology) |
-| Jabbadhutt        | Warlock              |
-| Lynelen           | Shaman (Enhancement) |
-| Bergamotka/Tymoti | Shaman (Enhancement) |
-| Ebonybolt         | Shaman (Enhancement) |
-| Gresac/Younea     | Shaman (Elemental)   |
+| Player         | Class                |
+|----------------|----------------------|
+| Verysadge      | Warrior (Fury)       |
+| CptKavior      | Warrior (Fury)       |
+| Dankyn         | Warrior (Fury)       |
+| Yxanb          | Druid (Feral)        |
+| Jar            | Druid (Balance)      |
+| Leontes        | Paladin (Ret)        |
+| Roossy/Keatala | Hunter (BM)          |
+| Grundiger      | Hunter (BM)          |
+| Vaelruna       | Hunter (BM)          |
+| Greg           | Mage (Arcane)        |
+| Benglock       | Warlock (Demonology) |
+| Jabbadhutt     | Warlock              |
+| Lynelen        | Shaman (Enhancement) |
+| Bergamotka     | Shaman (Enhancement) |
+| Ebonybolt      | Shaman (Enhancement) |
+| Gresac/Younea  | Shaman (Elemental)   |
 
 **Composition check:** Target 3/6/16 for Gruul+Mag (per `rules/01-raid-compositions.md`). Actual: 3/6/16 = 25. Status: ✅ on target.
 
@@ -72,21 +72,21 @@
 
 ### High King Maulgar
 
-| Role                 | Player                | Notes                          |
-|----------------------|-----------------------|--------------------------------|
-| Maulgar Tank         | Marino-Varthier       |                                |
-| Maulgar Tank MD      | Roossy/Keatala        |                                |
-| Maulgar Healer       | Thordrel, Beaverfist  |                                |
-| Mage Tank (Krosh)    | Greg                  |                                |
-| Mage Tank Healer     | Siljes/Ejlis          |                                |
-| Kiggler Tank         | Jar                   | Balance druid solo             |
-| Kiggler Tank Healer  | Boriest               |                                |
-| Olm Tank             | Gigakox               | until felhunter                |
-| Felhunter Subjugate  | Jabbadhutt, Benglock  | 2 Warlocks in roster → 2 slots |
-| Olm Tank Healer      | Pergatori             |                                |
-| Blindeye Tank        | Ostbirger             |                                |
-| Blindeye Tank MD     | Grundiger             |                                |
-| Blindeye Tank Healer | Lightweit             |                                |
+| Role                 | Player               | Notes                          |
+|----------------------|----------------------|--------------------------------|
+| Maulgar Tank         | Marino-Varthier      |                                |
+| Maulgar Tank MD      | Roossy/Keatala       |                                |
+| Maulgar Healer       | Thordrel, Beaverfist |                                |
+| Mage Tank (Krosh)    | Greg                 |                                |
+| Mage Tank Healer     | Siljes               |                                |
+| Kiggler Tank         | Jar                  | Balance druid solo             |
+| Kiggler Tank Healer  | Boriest              |                                |
+| Olm Tank             | Gigakox              | until felhunter                |
+| Felhunter Subjugate  | Jabbadhutt, Benglock | 2 Warlocks in roster → 2 slots |
+| Olm Tank Healer      | Pergatori            |                                |
+| Blindeye Tank        | Ostbirger            |                                |
+| Blindeye Tank MD     | Grundiger            |                                |
+| Blindeye Tank Healer | Lightweit            |                                |
 
 ### Magtheridon — Cube Clickers
 
@@ -109,11 +109,11 @@
 
 ## Bench (3)
 
-| Player            | Priority | Bench count (cumulative, after this raid) | Reason          |
-|-------------------|----------|-------------------------------------------|-----------------|
-| Kres/Dissi        | 1        | 1                                         | manual override |
-| Nemajumarad       | 2        | 1                                         | manual override |
-| Shapkica/Chkemi   | 2        | 1                                         | fair rotation   |
+| Player       | Priority | Bench count (cumulative, after this raid) | Reason          |
+|--------------|----------|-------------------------------------------|-----------------|
+| Kres/Dissi   | 1        | 1                                         | manual override |
+| Nemajumarad  | 2        | 1                                         | manual override |
+| Shapkica     | 2        | 1                                         | fair rotation   |
 
 ## Notes
 
@@ -121,9 +121,9 @@
 - **Tiinar tentative** — excluded from roster pool per `reference/file-operations-manual.md` → Step 2.
 - **Bench picks:**
   - **Dankyn (fair rotation)** — Fury Warrior over §8 max 2; Dankyn lowest G+M among Fury candidates.
-  - **Shapkica/Chkemi (fair rotation)** — 3rd-pick tiebreaker per `rules/02-bench-rotation.md` → "Tiebreaker cascade" (preserves the 2-Warlock pool); Feral DPS still in §8 range 1-2 after the cut, while the algorithmic-strict alphabetical fallback (Benglock) would have taken combined Warlock count further below §8's combined Destro+Affli range of 3-6.
+  - **Shapkica (fair rotation)** — 3rd-pick tiebreaker per `rules/02-bench-rotation.md` → "Tiebreaker cascade" (preserves the 2-Warlock pool); Feral DPS still in §8 range 1-2 after the cut, while the algorithmic-strict alphabetical fallback (Benglock) would have taken combined Warlock count further below §8's combined Destro+Affli range of 3-6.
 - **User overrides:**
-  - **Nemajumarad bench (manual override)** — algorithmic pick was Bergamotka/Tymoti (Enh Sham over §8 max 2). User swapped Bergamotka in. Tradeoffs: Enh Sham stays at 3 (over §8 max 2), Arms Warrior drops to 0 (under §8 range 1; Blood Frenzy debuff missing as no Combat Rogue in raid). Cross-location bench burden equalized between the two players (both end at 1 total).
+  - **Nemajumarad bench (manual override)** — algorithmic pick was Bergamotka (Enh Sham over §8 max 2). User swapped Bergamotka in. Tradeoffs: Enh Sham stays at 3 (over §8 max 2), Arms Warrior drops to 0 (under §8 range 1; Blood Frenzy debuff missing as no Combat Rogue in raid). Cross-location bench burden equalized between the two players (both end at 1 total).
 - **Magtheridon SW cube** = Gresac/Younea per `rules/05-encounter-assignments.md` continuity (he held SW on 2026-03-01 and is in the roster as DPS-Elemental this raid). CptKavior (sub-agent's initial cube-experience-fallback would-be pick) moves to alternative cube clickers.
 - **Post-build swap (manual override)** — Kres/Dissi ↔ Dankyn bench swap. Kres (P1) benched per user discretionary pick (`rules/02-bench-rotation.md` → "User's discretionary bench picks"); Dankyn unbenched. Composition shifts: Shadow Priest 1→0 (under §8 range 1), Fury Warrior 2→3 (over §8 max 2). Kres remains Sunday raid leader (`config/project.md`); leads from bench.
 - **Post-build raid-day changes** (per `Event: Player withdraws signup` + `Event: Post-build signup arrives`):
@@ -136,7 +136,7 @@
 
 **Verdict: GOOD ENOUGH** — sub-agent's original NO verdict resolved by user-accepted overrides on both flagged items.
 
-- **Bench pick #3 violation** (sub-agent flagged Benglock as wrong; recommended Shapkica/Chkemi) — accepted; Shapkica benched, Benglock plays. Then user further overrode bench pick #1: Nemajumarad benched in place of Bergamotka/Tymoti (manual override; see ## Notes "User overrides").
+- **Bench pick #3 violation** (sub-agent flagged Benglock as wrong; recommended Shapkica) — accepted; Shapkica benched, Benglock plays. Then user further overrode bench pick #1: Nemajumarad benched in place of Bergamotka (manual override; see ## Notes "User overrides").
 - **Magtheridon SW cube violation** (sub-agent: should be Gresac/Younea per continuity, not CptKavior) — accepted; SW = Gresac/Younea, CptKavior moved to alternative cube clickers.
 - **Soft-rule misses (acceptable):**
   - Arms Warrior 0 (under §8 range 1) — user-override tradeoff.

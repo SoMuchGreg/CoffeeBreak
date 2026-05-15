@@ -11,7 +11,7 @@
 **Hunters (2):** Rhoator, Vaelruna
 **Mages (1):** Greg/Ucannotpass
 **Warlocks (3):** BestPractice, Jabbadhutt, McHughes
-**Shamans (2):** Lynelen, Bergamotka/Tymoti
+**Shamans (2):** Lynelen, Bergamotka
 
 **Header stats:** Melee 4/4, Ranged 8, Healers 6
 

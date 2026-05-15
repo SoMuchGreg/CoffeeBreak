@@ -8,10 +8,10 @@
 **Warriors (2):** Verysadge, Dankyn
 **Druids (4):** Yxanb, Gresac/Younea, Roossy/Keatala, Beaverfist
 **Paladins (1):** Thordrel
-**Hunters (3):** Vaelruna, Tonsen, Rhoator
+**Hunters (3):** Vaelruna, Tonz/Tonsen, Rhoator
 **Priests (1):** Kres/Dissi
 **Mages (2):** OomToDoom, Greg/Ucannotpass
 **Warlocks (3):** Ōtsu, Jabbadhutt, McHughes
-**Shamans (2):** Lynelen, Bergamotka/Tymoti
+**Shamans (2):** Lynelen, Bergamotka
 
 **Header stats:** Melee 2/4, Ranged 9, Healers 5

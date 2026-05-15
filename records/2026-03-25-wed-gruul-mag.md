@@ -10,10 +10,10 @@
 **Paladins (2):** Sjwammie, Thordrel
 **Rogue (1):** GlaivemasterBaeba
 **Hunters (3):** CodeHunt, Dwarfytron, Vaelruna
-**Priests (3):** Kres/Dissi, Bombzor, Siljes/Ejlis
+**Priests (3):** Kres/Dissi, Bombzor, Siljes
 **Mages (2):** Greg/Ucannotpass, OomToDoom
 **Warlocks (2):** McHughes, Jabbadhutt
-**Shamans (4):** Bergamotka/Tymoti, Ebonybolt, Lynelen, Pergatori
+**Shamans (4):** Bergamotka, Ebonybolt, Lynelen, Pergatori
 
 **Bench (2):** Gresac/Younea, Roossy/Keatala
 
@@ -37,15 +37,15 @@
 
 ### Healers (7)
 
-| Player              | Class   | Notes                   |
-|---------------------|---------|-------------------------|
-| Beaverfist          | Druid   |                         |
-| Jar                 | Druid   | Resto spec              |
-| Sjwammie            | Paladin |                         |
-| Thordrel            | Paladin |                         |
-| Bombzor             | Priest  |                         |
-| Siljes/Ejlis        | Priest  |                         |
-| *(7th healer TBD)*  |         | Header shows 7 healers  |
+| Player             | Class   | Notes                   |
+|--------------------|---------|-------------------------|
+| Beaverfist         | Druid   |                         |
+| Jar                | Druid   | Resto spec              |
+| Sjwammie           | Paladin |                         |
+| Thordrel           | Paladin |                         |
+| Bombzor            | Priest  |                         |
+| Siljes             | Priest  |                         |
+| *(7th healer TBD)* |         | Header shows 7 healers  |
 
 ### DPS (16)
 
@@ -68,7 +68,7 @@
 | Jabbadhutt          | Warlock |                                    |
 | *(shamans — some DPS, possibly one healing)* | | |
 
-**Shamans (4):** Bergamotka/Tymoti, Ebonybolt, Lynelen, Pergatori — exact role split (DPS vs healer) uncertain.
+**Shamans (4):** Bergamotka, Ebonybolt, Lynelen, Pergatori — exact role split (DPS vs healer) uncertain.
 
 ## Encounter assignments
 
@@ -86,7 +86,7 @@
 | Kiggler Tank Healer  | Sjwammie                 |                                                                                    |
 | Olm Tank             | Eselman                  | until felhunter                                                                    |
 | Felhunter Subjugate  | Jabbadhutt, McHughes     |                                                                                    |
-| Olm Tank Healer      | Siljes/Ejlis             |                                                                                    |
+| Olm Tank Healer      | Siljes                   |                                                                                    |
 | Blindeye Tank        | Doughball                |                                                                                    |
 | Blindeye Tank Healer | Jar                      |                                                                                    |
 

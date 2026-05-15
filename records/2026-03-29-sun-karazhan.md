@@ -7,11 +7,11 @@
 **Druids (5):** Gresac/Younea, Roossy/Keatala, Eselman, Yxanb, Beaverfist
 **Paladin (1):** Thordrel
 **Rogues (2):** GlaivemasterBaeb, Drillbabe
-**Hunters (4):** Tonsen, Dwarfytron, Vaelruna, Rhoator
-**Priests (3):** Bombzor, Kres/Dissi, Siljes/Ejlis
+**Hunters (4):** Tonz/Tonsen, Dwarfytron, Vaelruna, Rhoator
+**Priests (3):** Bombzor, Kres/Dissi, Siljes
 **Mages (2):** OomToDoom, Greg/Ucannotpass
 **Warlocks (3):** McHughes, BestPractice, Jabbadhutt
-**Shamans (4):** Lynelen, Bergamotka/Tymoti, Ebonybolt, Pergatori
+**Shamans (4):** Lynelen, Bergamotka, Ebonybolt, Pergatori
 **Late signup:** McJudgin
 
 ---
@@ -20,18 +20,18 @@
 
 ### Team Bakery
 
-| Player       | Role   | Class   |
-|------------- |--------|---------|
-| Varthier     | MT     |         |
-| Gigakox      | OT     | Warrior |
-| Drillbabe    | DPS    | Rogue   |
-| Vaelruna     | DPS    | Hunter  |
-| Gresac/Younea| Healer | Druid   |
-| UcannotPass  | DPS    | Mage    |
-| Kresniik     | DPS    | Priest  |
-| Jabbadhutt   | DPS    | Warlock |
-| Pergatori    | DPS    | Shaman  |
-| Siljes/Ejlis | Healer | Priest  |
+| Player        | Role   | Class   |
+|---------------|--------|---------|
+| Varthier      | MT     |         |
+| Gigakox       | OT     | Warrior |
+| Drillbabe     | DPS    | Rogue   |
+| Vaelruna      | DPS    | Hunter  |
+| Gresac/Younea | Healer | Druid   |
+| UcannotPass   | DPS    | Mage    |
+| Kresniik      | DPS    | Priest  |
+| Jabbadhutt    | DPS    | Warlock |
+| Pergatori     | DPS    | Shaman  |
+| Siljes        | Healer | Priest  |
 
 ### Team BaeGlaives
 
@@ -50,18 +50,18 @@
 
 ### Team Restaurant
 
-| Player       | Role   | Class   |
-|------------- |--------|---------|
-| Mirohl       | MT     |         |
-| McJudgin     | OT     |         |
-| Verysadge    | DPS    | Warrior |
-| Bergamotka/Tymoti| DPS    | Shaman  |
-| Beaverfist   | Healer | Druid   |
-| Tonsen       | DPS    | Hunter  |
-| McHughes     | DPS    | Warlock |
-| Yxanb        | DPS    | Druid   |
-| Rhoator      | DPS    |         |
-| Bombzor      | Healer | Priest  |
+| Player      | Role   | Class   |
+|-------------|--------|---------|
+| Mirohl      | MT     |         |
+| McJudgin    | OT     |         |
+| Verysadge   | DPS    | Warrior |
+| Bergamotka  | DPS    | Shaman  |
+| Beaverfist  | Healer | Druid   |
+| Tonz/Tonsen | DPS    | Hunter  |
+| McHughes    | DPS    | Warlock |
+| Yxanb       | DPS    | Druid   |
+| Rhoator     | DPS    |         |
+| Bombzor     | Healer | Priest  |
 
 ## Bench
 

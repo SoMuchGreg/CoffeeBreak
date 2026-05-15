@@ -6,14 +6,14 @@
 
 **Tanks (2):** CptKavior, Ostbirger
 **Warriors (4):** Verysadge, Dankyn, Gigakox, Nemajumarad
-**Druids (4):** Shapkica/Chkemi, Yxanb, Beaverfist, Jar
-**Paladins (2):** Thordrel, Heligeman/Fugleman
+**Druids (4):** Shapkica, Yxanb, Beaverfist, Jar
+**Paladins (2):** Thordrel, Heligeman
 **Rogues (1):** Tiinar
 **Hunters (3):** Grundiger, Vaelruna, Roossy/Keatala
 **Priests (3):** Lightweit, Boriest, Kres/Dissi
 **Mages (1):** Greg
 **Warlocks (2):** McHughes, Benglock
-**Shamans (5):** Bergamotka/Tymoti, Lynelen, Ebonybolt, Gresac/Younea, Pergatori
+**Shamans (5):** Bergamotka, Lynelen, Ebonybolt, Gresac/Younea, Pergatori
 
 **Header stats:** Melee 9, Ranged 8, Healers 4
 
@@ -29,35 +29,35 @@
 
 ### Healers (6)
 
-| Player             | Class          |
-|--------------------|----------------|
-| Thordrel           | Paladin (Holy) |
-| Heligeman/Fugleman | Paladin (Holy) |
-| Beaverfist         | Druid (Resto)  |
-| Roossy/Keatala     | Druid (Resto)  |
-| Lightweit          | Priest (Holy)  |
-| Boriest            | Priest (Holy)  |
+| Player         | Class          |
+|----------------|----------------|
+| Thordrel       | Paladin (Holy) |
+| Heligeman      | Paladin (Holy) |
+| Beaverfist     | Druid (Resto)  |
+| Roossy/Keatala | Druid (Resto)  |
+| Lightweit      | Priest (Holy)  |
+| Boriest        | Priest (Holy)  |
 
 ### DPS (16)
 
-| Player            | Class                |
-|-------------------|----------------------|
-| Verysadge         | Warrior (Fury)       |
-| Dankyn            | Warrior (Fury)       |
-| Nemajumarad       | Warrior (Arms)       |
-| Shapkica/Chkemi   | Druid (Feral)        |
-| Yxanb             | Druid (Feral)        |
-| Jar               | Druid (Balance)      |
-| Tiinar            | Rogue (Combat)       |
-| Grundiger         | Hunter (BM)          |
-| Vaelruna          | Hunter (BM)          |
-| Greg              | Mage (Arcane)        |
-| McHughes          | Warlock              |
-| Benglock          | Warlock (Demonology) |
-| Bergamotka/Tymoti | Shaman (Enhancement) |
-| Lynelen           | Shaman (Enhancement) |
-| Ebonybolt         | Shaman (Enhancement) |
-| Gresac/Younea     | Shaman (Elemental)   |
+| Player        | Class                |
+|---------------|----------------------|
+| Verysadge     | Warrior (Fury)       |
+| Dankyn        | Warrior (Fury)       |
+| Nemajumarad   | Warrior (Arms)       |
+| Shapkica      | Druid (Feral)        |
+| Yxanb         | Druid (Feral)        |
+| Jar           | Druid (Balance)      |
+| Tiinar        | Rogue (Combat)       |
+| Grundiger     | Hunter (BM)          |
+| Vaelruna      | Hunter (BM)          |
+| Greg          | Mage (Arcane)        |
+| McHughes      | Warlock              |
+| Benglock      | Warlock (Demonology) |
+| Bergamotka    | Shaman (Enhancement) |
+| Lynelen       | Shaman (Enhancement) |
+| Ebonybolt     | Shaman (Enhancement) |
+| Gresac/Younea | Shaman (Elemental)   |
 
 **Composition check:** Target 3/5-6/16-17 for Gruul+Mag (default 25-man comp; per `rules/01-raid-compositions.md` → "25-man raids → General → Default composition"). Actual: 3/6/16 = 25. Status: ✅ on target.
 
@@ -117,7 +117,7 @@
 - **Kiggler Tank: Jar (user override of raid-leader exclusion).** Under the day-of-week raid-leader rule then in effect, Jar (Wed RL) was excluded from all encounter roles per `rules/05-encounter-assignments.md` → "Raid leader exclusion"; the rule's algorithmic output was the 2-ranged-DPS fallback (Vaelruna + Gresac/Younea). User overrode this on the night — Jar took Kiggler solo as the Balance druid.
 - **Post-build roster changes** — applied via `Event: Quick (ad-hoc) roster update` (`reference/file-operations-manual.md`):
     - Pergatori signed up post-build (Shaman, Healer mainspec) and was discretionarily benched.
-    - Heligeman/Fugleman resolved from Tentative to playing (Holy Paladin); seated as a Healer.
+    - Heligeman resolved from Tentative to playing (Holy Paladin); seated as a Healer.
     - Benglock resolved from Late to on-time; already in DPS roster, no slot change.
     - Kres/Dissi (Priest DPS) moved from DPS roster to Bench.
     - Net comp shift: 3/5/17 → 3/6/16 (still within the default 25-man target ranges).
@@ -135,7 +135,7 @@
 
 **Post-check changes**:
 - Pergatori added as post-build signup (Shaman, Healer mainspec); discretionarily benched.
-- Heligeman/Fugleman resolved from Tentative to playing; added to Healers.
+- Heligeman resolved from Tentative to playing; added to Healers.
 - Kres/Dissi moved from DPS roster to Bench (manual override; protection conflict per Notes).
 - Benglock resolved from Late to on-time class-list signup; no roster slot change.
 - Kiggler Tank reassigned `Vaelruna, Gresac/Younea` → `Jar` (user override of raid-leader exclusion; see Notes).

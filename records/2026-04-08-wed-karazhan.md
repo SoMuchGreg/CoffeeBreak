@@ -6,11 +6,11 @@
 **Warriors (2):** Dankyn, Verysadge
 **Druids (5):** Gresac/Younea, Beaverfist, Roossy/Keatala, Yxanb, Jar
 **Paladins (3):** Lightstarr, Thordrel, Leontes
-**Hunters (3):** Vaelruna, Dwarfytron, Tonsen
+**Hunters (3):** Vaelruna, Dwarfytron, Tonz/Tonsen
 **Mages (2):** OomToDoom, Greg/Ucannotpass
 **Priests (4):** Kres/Dissi, Bombzor, Lightweit, Thalynora
 **Warlocks (3):** Jabbadhutt, BestPractice, McHughes
-**Shamans (5):** Rainbound, Pergatori, Lynelen, Bergamotka/Tymoti, Ebonybolt
+**Shamans (5):** Rainbound, Pergatori, Lynelen, Bergamotka, Ebonybolt
 
 **Late (1):** GlaivemasterBaebay
 
@@ -20,18 +20,18 @@
 
 ### Team Restaurant
 
-| Player           | Role   | Class   |
-|------------------|--------|---------|
-| Mirohl           | MT     | Warrior |
-| Lightstarr       | OT?    | Paladin |
-| Dankyn           | DPS    | Warrior |
-| Bergamotka/Tymoti| DPS    | Shaman  |
-| Vaelruna         | DPS    | Hunter  |
-| Yxanb            | DPS    | Druid   |
-| Kres/Dissi       | DPS    | Priest  |
-| BestPractice     | DPS    | Warlock |
-| Thordrel         | Healer | Paladin |
-| Rainbound        | Healer | Shaman  |
+| Player       | Role   | Class   |
+|--------------|--------|---------|
+| Mirohl       | MT     | Warrior |
+| Lightstarr   | OT?    | Paladin |
+| Dankyn       | DPS    | Warrior |
+| Bergamotka   | DPS    | Shaman  |
+| Vaelruna     | DPS    | Hunter  |
+| Yxanb        | DPS    | Druid   |
+| Kres/Dissi   | DPS    | Priest  |
+| BestPractice | DPS    | Warlock |
+| Thordrel     | Healer | Paladin |
+| Rainbound    | Healer | Shaman  |
 
 ### Team Bakery
 
@@ -39,7 +39,7 @@
 |------------------|--------|---------|
 | Marino-Varthier  | MT     | Paladin |
 | Doughball        | OT     | Warrior |
-| Tonsen           | DPS    | Hunter  |
+| Tonz/Tonsen      | DPS    | Hunter  |
 | Lynelen          | DPS    | Shaman  |
 | Gresac/Younea    | Healer | Druid   |
 | Greg/Ucannotpass | DPS    | Mage    |

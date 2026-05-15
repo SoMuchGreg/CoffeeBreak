@@ -8,11 +8,11 @@
 **Warriors (2):** Verysadge, Dankyn
 **Druids (5):** Eselman, Gresac/Younea, Roossy/Keatala, Beaverfist, Yxanb
 **Paladins (1):** Rasputin
-**Hunters (3):** Rhoator, Tonsen, Dwarfytron
+**Hunters (3):** Rhoator, Tonz/Tonsen, Dwarfytron
 **Priests (2):** Kres/Dissi, Bombzor
 **Mages (2):** Greg/Ucannotpass, OomToDoom
 **Warlocks (4):** McHughes, Ōtsu, Jabbadhutt, BestPractice
-**Shamans (4):** Lynelen, Pergatori, Bergamotka/Tymoti, Ebonybolt
+**Shamans (4):** Lynelen, Pergatori, Bergamotka, Ebonybolt
 
 **Header stats:** Melee 4/5, Ranged 11, Healers 6
 
@@ -28,7 +28,7 @@
 | Maulgar Healer       | Thordrel, Beaverfist | Thordrel absent from signups — see Notes  |
 | Mage Tank (Krosh)    | OomToDoom            |                                           |
 | Mage Tank Healer     | Kres/Dissi           |                                           |
-| Kiggler Tank         | Tonsen, Greg         | 2 ranged DPS (no Balance druid available) |
+| Kiggler Tank         | Tonz/Tonsen, Greg    | 2 ranged DPS (no Balance druid available) |
 | Kiggler Tank Healer  | Gresac/Younea        |                                           |
 | Olm Tank             | Eselman              | until felhunter                           |
 | Felhunter Subjugate  | Ōtsu, McHughes       |                                           |

@@ -7,7 +7,7 @@
 **Tanks (3):** Mirohl, Buns/Sourbuns, Marino-Varthier
 **Warriors (1):** Verysadge
 **Druids (1):** Jar
-**Paladins (1):** Heligeman/Fugleman
+**Paladins (1):** Heligeman
 **Rogues (2):** Glaivemaster Baebay, Molgrod
 **Hunters (2):** Lixly, Vaelruna
 **Priests (2):** Kres/Dissi, Medianos

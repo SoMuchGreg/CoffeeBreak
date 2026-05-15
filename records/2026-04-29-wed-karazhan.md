@@ -4,13 +4,13 @@
 
 **Tanks (4):** CptKavior, Marino-Varthier, Ostbirger, Gigakox
 **Warriors (2):** Verysadge, Dankyn
-**Druids (5):** Beaverfist, Jar, Yxanb, Gresac/Younea, Shapkica/Chkemi
-**Paladins (3):** Leontes, Thordrel, Heligeman/Fugleman
-**Hunters (2):** Vaelruna, Tonsen
+**Druids (5):** Beaverfist, Jar, Yxanb, Gresac/Younea, Shapkica
+**Paladins (3):** Leontes, Thordrel, Heligeman
+**Hunters (2):** Vaelruna, Tonz/Tonsen
 **Priests (2):** Kres/Dissi, Lightweit
 **Mages (3):** Greg, OomToDoom, Lenno/Mellymel
 **Warlocks (1):** Jabbadhutt
-**Shamans (4):** Lynelen, Bergamotka/Tymoti, Ebonybolt, Pergatori
+**Shamans (4):** Lynelen, Bergamotka, Ebonybolt, Pergatori
 
 **Tentative (1):** Roossy/Keatala
 
@@ -20,18 +20,18 @@
 
 ### Team Restaurant
 
-| Player              | Role   | Class                |
-|---------------------|--------|----------------------|
-| Ostbirger           | MT     | Paladin (Prot)       |
-| Gigakox             | OT     | Warrior (Prot)       |
-| Ebonybolt           | DPS    | Shaman (Enhancement) |
-| Jar                 | DPS    | Druid (Balance)      |
-| Leontes             | DPS    | Paladin (Ret)        |
-| OomToDoom           | DPS    | Mage                 |
-| Shapkica/Chkemi     | DPS    | Druid (Feral)        |
-| Tonsen              | DPS    | Hunter               |
-| Heligeman/Fugleman  | Healer | Paladin (Holy)       |
-| Lightweit           | Healer | Priest (Holy)        |
+| Player         | Role   | Class                |
+|----------------|--------|----------------------|
+| Ostbirger      | MT     | Paladin (Prot)       |
+| Gigakox        | OT     | Warrior (Prot)       |
+| Ebonybolt      | DPS    | Shaman (Enhancement) |
+| Jar            | DPS    | Druid (Balance)      |
+| Leontes        | DPS    | Paladin (Ret)        |
+| OomToDoom      | DPS    | Mage                 |
+| Shapkica       | DPS    | Druid (Feral)        |
+| Tonz/Tonsen    | DPS    | Hunter               |
+| Heligeman      | Healer | Paladin (Holy)       |
+| Lightweit      | Healer | Priest (Holy)        |
 
 ### Team Bakery
 
@@ -58,19 +58,19 @@
 
 ## Bench (6)
 
-| Player             | Priority | Bench count (cumulative, after this raid) | Reason          |
-|--------------------|----------|-------------------------------------------|-----------------|
-| Bergamotka/Tymoti  | 2        | 1                                         | fair rotation   |
-| Dankyn             | 2        | 1                                         | fair rotation   |
-| Greg               | 1        | 1                                         | manual override |
-| Gresac/Younea      | 2        | 2                                         | manual override |
-| Thordrel           | 2        | 1                                         | manual override |
-| Yxanb              | 2        | 1                                         | fair rotation   |
+| Player        | Priority | Bench count (cumulative, after this raid) | Reason          |
+|---------------|----------|-------------------------------------------|-----------------|
+| Bergamotka    | 2        | 1                                         | fair rotation   |
+| Dankyn        | 2        | 1                                         | fair rotation   |
+| Greg          | 1        | 1                                         | manual override |
+| Gresac/Younea | 2        | 2                                         | manual override |
+| Thordrel      | 2        | 1                                         | manual override |
+| Yxanb         | 2        | 1                                         | fair rotation   |
 
 ## Notes
 
-- **26 signups → 2 teams + 6 benched**, user chose option (a) of the 25–26 ambiguous case (`rules/01-raid-compositions.md` → "Under-cap team count"). Shapkica/Chkemi was a post-build signup; full-roster recalculation triggered.
-- **Shapkica/Chkemi first appearance** — Druid, mainspec DPS (Feral), offspec Tank (Feral), priority 2. Added to `rules/04-players.md` this session.
+- **26 signups → 2 teams + 6 benched**, user chose option (a) of the 25–26 ambiguous case (`rules/01-raid-compositions.md` → "Under-cap team count"). Shapkica was a post-build signup; full-roster recalculation triggered.
+- **Shapkica first appearance** — Druid, mainspec DPS (Feral), offspec Tank (Feral), priority 2. Added to `rules/04-players.md` this session.
 - **Greg (priority 1) manual-override bench** per user instruction, permitted under `rules/02-bench-rotation.md` → "User's discretionary bench picks".
 - **Gresac/Younea manual-override bench** per user instruction, consistent with his `rules/04-players.md` note.
 - **Thordrel manual-override bench** per user instruction.
@@ -105,8 +105,8 @@
 
 **Post-check changes** (not re-verified by sub-agent):
 - **Bench swap:** Vaelruna → Yxanb (per user instruction; better aligns with Tier 1 Druid de-stacking and Tier 2 §8 Hunter > Druid Feral).
-- **Healer swap:** Heligeman/Fugleman moved Bakery → Restaurant; Thordrel moved Restaurant → Bakery (per user instruction).
+- **Healer swap:** Heligeman moved Bakery → Restaurant; Thordrel moved Restaurant → Bakery (per user instruction).
 - **Leontes moved Bakery → Restaurant** to maintain Gloves of the Fallen Champion split with Thordrel after the healer swap.
 - **Ring of a Thousand Marks cluster moved Bak → R** as a consequence of Leontes moving R; still 2-1 pigeonhole.
 - **Skulker's Greaves added to Loot conflicts** (Vaelruna in raid, Yxanb benched leaves Gigakox + Vaelruna as in-raid competitors); ✓ split.
-- **Rework (full-roster recalculation, Option B minimal-change):** Shapkica/Chkemi added as new signup, placed Restaurant DPS (Feral) replacing Beaverfist's vacated R DPS slot. Thordrel benched (manual override). Beaverfist Tier 0 flex Balance DPS → Resto Healer, moved Restaurant → Bakery to fill Thordrel's vacated healer slot. HFD cluster moved R → Bakery (Beaverfist + Kres/Dissi on Bakery instead of Beaverfist + Gigakox on Restaurant); still 2-1 pigeonhole. Gloves of the Fallen Champion conflict resolved (Thordrel benched, Leontes single in-raid). User's "split balance druids and feral druids" instruction is moot in this raid — only 1 of each spec plays as DPS (Jar Balance, Shapkica Feral).
+- **Rework (full-roster recalculation, Option B minimal-change):** Shapkica added as new signup, placed Restaurant DPS (Feral) replacing Beaverfist's vacated R DPS slot. Thordrel benched (manual override). Beaverfist Tier 0 flex Balance DPS → Resto Healer, moved Restaurant → Bakery to fill Thordrel's vacated healer slot. HFD cluster moved R → Bakery (Beaverfist + Kres/Dissi on Bakery instead of Beaverfist + Gigakox on Restaurant); still 2-1 pigeonhole. Gloves of the Fallen Champion conflict resolved (Thordrel benched, Leontes single in-raid). User's "split balance druids and feral druids" instruction is moot in this raid — only 1 of each spec plays as DPS (Jar Balance, Shapkica Feral).

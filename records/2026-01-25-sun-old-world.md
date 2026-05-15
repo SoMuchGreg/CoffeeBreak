@@ -6,7 +6,7 @@
 
 **Tanks (3):** Mirohl, Buns/Sourbuns, Marino-Varthier
 **Druids (1):** Zemp
-**Paladins (1):** Heligeman/Fugleman
+**Paladins (1):** Heligeman
 **Rogues (2):** Glaivemaster Baebay, Molgrod
 **Hunters (2):** Rhoator, Aenra
 **Priests (2):** Kres/Dissi, Medianos

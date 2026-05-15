@@ -70,42 +70,42 @@ A player's sub-table here is determined solely by their top-level grouping in `r
 
 ### Current members
 
-| #  | Player              | Signups |
-|----|---------------------|---------|
-| 1  | Gresac/Younea       | 28      |
-| 2  | Vaelruna            | 28      |
-| 3  | Verysadge           | 27      |
-| 4  | Thordrel            | 26      |
-| 5  | Yxanb               | 21      |
-| 6  | Dankyn              | 20      |
-| 7  | Lynelen             | 20      |
-| 8  | Beaverfist          | 19      |
-| 9  | Bergamotka/Tymoti   | 19      |
-| 10 | Ebonybolt           | 17      |
-| 11 | McHughes            | 17      |
-| 12 | Pergatori           | 17      |
-| 13 | Jabbadhutt          | 16      |
-| 14 | Heligeman/Fugleman  | 13      |
-| 15 | Lightweit           | 12      |
-| 16 | BestPractice        | 11      |
-| 17 | CptKavior           | 11      |
-| 18 | Siljes/Ejlis        | 11      |
-| 19 | Tonsen              | 11      |
-| 20 | McJudgin            | 9       |
-| 21 | Leontes             | 8       |
-| 22 | Dwarfytron          | 7       |
-| 23 | Doughball           | 6       |
-| 24 | Shapkica/Chkemi     | 6       |
-| 25 | Boriest             | 4       |
-| 26 | Grundiger           | 4       |
-| 27 | Sjwammie            | 4       |
-| 28 | Spot/Yorekbarn      | 4       |
-| 29 | Tiinar              | 4       |
-| 30 | Benglock            | 3       |
-| 31 | Medianos            | 3       |
-| 32 | Nemajumarad         | 3       |
-| 33 | Lenno/Mellymel      | 2       |
-| 34 | Gyrodorei           | 1       |
+| #  | Player         | Signups |
+|----|----------------|---------|
+| 1  | Gresac/Younea  | 28      |
+| 2  | Vaelruna       | 28      |
+| 3  | Verysadge      | 27      |
+| 4  | Thordrel       | 26      |
+| 5  | Yxanb          | 21      |
+| 6  | Dankyn         | 20      |
+| 7  | Lynelen        | 20      |
+| 8  | Beaverfist     | 19      |
+| 9  | Bergamotka     | 19      |
+| 10 | Ebonybolt      | 17      |
+| 11 | McHughes       | 17      |
+| 12 | Pergatori      | 17      |
+| 13 | Jabbadhutt     | 16      |
+| 14 | Heligeman      | 13      |
+| 15 | Lightweit      | 12      |
+| 16 | BestPractice   | 11      |
+| 17 | CptKavior      | 11      |
+| 18 | Siljes         | 11      |
+| 19 | Tonz/Tonsen    | 11      |
+| 20 | McJudgin       | 9       |
+| 21 | Leontes        | 8       |
+| 22 | Dwarfytron     | 7       |
+| 23 | Doughball      | 6       |
+| 24 | Shapkica       | 6       |
+| 25 | Boriest        | 4       |
+| 26 | Grundiger      | 4       |
+| 27 | Sjwammie       | 4       |
+| 28 | Yorekbarn      | 4       |
+| 29 | Tiinar         | 4       |
+| 30 | Benglock       | 3       |
+| 31 | Medianos       | 3       |
+| 32 | Nemajumarad    | 3       |
+| 33 | Lenno/Mellymel | 2       |
+| 34 | Gyrodorei      | 1       |
 
 ### Former members
 
