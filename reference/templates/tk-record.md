@@ -25,7 +25,7 @@ below — never copy it from a previous record file without re-verifying it.
 
 # Tempest Keep — {Day} {DD.MM.YYYY}
 
-> {Optional one-line schedule note}    <!-- delete blockquote line if not applicable -->
+> {Small announcement, e.g. "Our second T5 raid — make sure you're attuned and bring consumables ;)"}    <!-- Canonical rules — required, consumables reminder, Discord mirror: reference/file-operations-manual.md → "Writing the small announcement". -->
 
 ## Signups (from Discord) — {X}
 
@@ -231,6 +231,9 @@ Format:
 - Title: H2 (`## Tempest Keep — Monday DD.MM`) so Discord renders it
   large. Weekday is the full word (Monday/Wednesday/Sunday/etc.), not
   abbreviated.
+- Small announcement: blockquote line immediately after the title.
+  Same text as the top-of-file blockquote. Canonical rules:
+  reference/file-operations-manual.md → "Writing the small announcement".
 - Class and spec names: use the full form — no abbreviations. Examples:
   "Protection Warrior", "Restoration Druid", "Enhancement Shaman",
   "Beast Mastery Hunter", "Holy Priest", "Arcane Mage", "Demonology
@@ -247,6 +250,8 @@ Format:
 -->
 
 ## Tempest Keep — {Day-full} {DD.MM}
+
+> {Small announcement — same text as the top-of-file blockquote.}
 
 **Tanks ({N})**
 - {Player} ({Spec Class})

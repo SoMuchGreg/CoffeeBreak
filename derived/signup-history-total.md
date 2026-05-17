@@ -100,11 +100,11 @@ A player's sub-table here is determined solely by their top-level grouping in `r
 | 26 | Tiinar         | 5       |
 | 27 | Benglock       | 4       |
 | 28 | Boriest        | 4       |
-| 29 | Nemajumarad    | 4       |
-| 30 | Sjwammie       | 4       |
-| 31 | Yorekbarn      | 4       |
-| 32 | Medianos       | 3       |
-| 33 | Lenno/Mellymel | 2       |
+| 29 | Lenno/Mellymel | 4       |
+| 30 | Nemajumarad    | 4       |
+| 31 | Sjwammie       | 4       |
+| 32 | Yorekbarn      | 4       |
+| 33 | Medianos       | 3       |
 | 34 | Animustenax    | 1       |
 | 35 | Gyrodorei      | 1       |
 

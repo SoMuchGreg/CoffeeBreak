@@ -100,6 +100,16 @@ Read both **Tier 1** and **Tier 2** of the **Reading list** at the top of this f
 
 > **Record file format is templated.** Do not invent your own structure. If something genuinely doesn't fit either template, raise it to the user before deviating — the templates are the canonical structure for record files, and consistency across record files is what makes bench history and predecessor reads reliable.
 
+### Writing the small announcement
+
+The blockquote line at the top of every record file is the **small announcement** — a one-line context note for the raid, captured from the user's Discord signup post. Typical contents: schedule changes ("Switched to Wednesday this week"), location/progression context ("Our first steps into T5"), attunement reminders, or just the consumables reminder when nothing else applies.
+
+**Consumables reminder.** Every small announcement must end with a consumables reminder. If the captured text already mentions bringing consumables, leave it alone. Otherwise append `Bring your consumables ;)`. If no text was captured, the small announcement is simply `Bring your consumables ;)`.
+
+**Mirror in the Discord announcement section.** Repeat the small announcement — same text, blockquote form — immediately after the `## {Raid location} — {Day-full} {DD.MM}` headline inside the `## Discord announcement` section. Edits to one must propagate to the other; they always carry identical text.
+
+The small announcement and its Discord mirror are the only places this text lives in the record file. Do not restate in `## Notes` or anywhere else.
+
 ### Writing the `## Notes` section of a record file
 
 The `## Notes` section is for **per-raid facts that aren't derivable from the rules + the rest of the record file**. It is not free-form commentary, and it is not a place to log rule compliance. Every record-file template (`reference/templates/25man-record.md`, `reference/templates/gruul-mag-record.md`, `reference/templates/ssc-record.md`, `reference/templates/tk-record.md`, `reference/templates/karazhan-record.md`) points at this subsection — do not duplicate this guidance into the templates themselves.

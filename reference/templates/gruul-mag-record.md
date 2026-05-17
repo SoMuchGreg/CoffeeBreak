@@ -28,7 +28,7 @@ below — never copy it from a previous record file without re-verifying it.
 
 # Gruul's Lair + Magtheridon — {Day} {DD.MM.YYYY}
 
-> {Optional one-line schedule note}    <!-- delete blockquote line if not applicable -->
+> {Small announcement, e.g. "Our weekly G+M. Bring your consumables ;)"}    <!-- Canonical rules — required, consumables reminder, Discord mirror: reference/file-operations-manual.md → "Writing the small announcement". -->
 
 ## Signups (from Discord) — {X}
 
@@ -250,6 +250,9 @@ planner-only — do NOT mirror it here.
 Format:
 - Title: H2 (`## Gruul + Magtheridon — Sunday DD.MM`) so Discord renders
   it large. Weekday is the full word, not abbreviated.
+- Small announcement: blockquote line immediately after the title.
+  Same text as the top-of-file blockquote. Canonical rules:
+  reference/file-operations-manual.md → "Writing the small announcement".
 - Class and spec names: use the full form — no abbreviations. Examples:
   "Protection Warrior", "Restoration Druid", "Enhancement Shaman",
   "Beast Mastery Hunter", "Holy Priest", "Arcane Mage", "Demonology
@@ -264,6 +267,8 @@ Format:
 -->
 
 ## Gruul + Magtheridon — {Day-full} {DD.MM}
+
+> {Small announcement — same text as the top-of-file blockquote.}
 
 **Tanks ({N})**
 - {Player} ({Spec Class})

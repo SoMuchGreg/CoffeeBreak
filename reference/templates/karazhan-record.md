@@ -13,7 +13,7 @@ this layout.
 
 # Karazhan — {Day} {DD.MM.YYYY}
 
-> {Optional one-line schedule note, e.g. "Switched from the usual day to Wednesday this week."}    <!-- delete blockquote line if not applicable -->
+> {Small announcement, e.g. "Switched to Wednesday this week. Bring your consumables ;)"}    <!-- Canonical rules — required, consumables reminder, Discord mirror: reference/file-operations-manual.md → "Writing the small announcement". -->
 
 ## Signups (from Discord) — {X}
 
@@ -195,6 +195,9 @@ Format:
 - Title: H2 (`## Karazhan — Wednesday DD.MM`) so Discord renders it
   large. Weekday is the full word (Monday/Wednesday/Sunday/etc.), not
   abbreviated.
+- Small announcement: blockquote line immediately after the title.
+  Same text as the top-of-file blockquote. Canonical rules:
+  reference/file-operations-manual.md → "Writing the small announcement".
 - Class and spec names: use the full form — no abbreviations. Examples:
   "Protection Warrior", "Restoration Druid", "Enhancement Shaman",
   "Beast Mastery Hunter", "Holy Priest", "Arcane Mage", "Demonology
@@ -209,6 +212,8 @@ Format:
 -->
 
 ## Karazhan — {Day-full} {DD.MM}
+
+> {Small announcement — same text as the top-of-file blockquote.}
 
 **Team Restaurant (10)**
 - MT: {Player} ({Spec Class})

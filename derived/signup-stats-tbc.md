@@ -80,11 +80,11 @@ For renames: update the `Player` cell in-place; re-sort only if the alphabetical
 | 31 | McJudgin        | 2026-03-29   | 10      | 62.5%       | 0                         |
 | 32 | Leontes         | 2026-04-08   | 8       | 61.5%       | 8                         |
 | 33 | McHughes        | 2026-02-22   | 16      | 59.3%       | 5                         |
-| 34 | Tonz/Tonsen     | 2026-03-15   | 11      | 55.0%       | 19                        |
-| 35 | BestPractice    | 2026-02-22   | 11      | 40.7%       | 29                        |
-| 36 | Yorekbarn       | 2026-04-19   | 4       | 40.0%       | 1                         |
-| 37 | Dwarfytron      | 2026-03-22   | 7       | 38.9%       | 36                        |
-| 38 | Doughball       | 2026-03-11   | 6       | 28.6%       | 29                        |
-| 39 | Lenno/Mellymel  | 2026-04-29   | 2       | 28.6%       | 12                        |
+| 34 | Lenno/Mellymel  | 2026-04-29   | 4       | 57.1%       | 0                         |
+| 35 | Tonz/Tonsen     | 2026-03-15   | 11      | 55.0%       | 19                        |
+| 36 | BestPractice    | 2026-02-22   | 11      | 40.7%       | 29                        |
+| 37 | Yorekbarn       | 2026-04-19   | 4       | 40.0%       | 1                         |
+| 38 | Dwarfytron      | 2026-03-22   | 7       | 38.9%       | 36                        |
+| 39 | Doughball       | 2026-03-11   | 6       | 28.6%       | 29                        |
 | 40 | Gyrodorei       | 2026-05-06   | 1       | 20.0%       | 12                        |
 | 41 | Sjwammie        | 2026-03-11   | 4       | 19.0%       | 47                        |

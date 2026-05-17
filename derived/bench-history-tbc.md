@@ -70,6 +70,7 @@ All other priority-2 healer-main players: 0 benches at every location.
 | Player              | Karazhan | Karazhan dates | Gruul+Mag | Gruul+Mag dates | SSC | SSC dates | TK | TK dates | Total |
 |---------------------|----------|----------------|-----------|-----------------|-----|-----------|----|----------|-------|
 | Dwarfytron          | 1        | 01.04          | 0         | —               | 0   | —         | 0  | —        | 1     |
+| Lenno/Mellymel      | 0        | —              | 0         | —               | 1   | 17.05     | 1  | 18.05    | 2     |
 | McHughes            | 1        | 18.03          | 0         | —               | 0   | —         | 0  | —        | 1     |
 
 All other priority-3 DPS/tank-main players: 0 benches at every location.

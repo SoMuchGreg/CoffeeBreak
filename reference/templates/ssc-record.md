@@ -26,7 +26,7 @@ below — never copy it from a previous record file without re-verifying it.
 
 # Serpentshrine Cavern — {Day} {DD.MM.YYYY}
 
-> {Optional one-line schedule note}    <!-- delete blockquote line if not applicable -->
+> {Small announcement, e.g. "Our first steps into T5! Bring your consumables ;)"}    <!-- Canonical rules — required, consumables reminder, Discord mirror: reference/file-operations-manual.md → "Writing the small announcement". -->
 
 ## Signups (from Discord) — {X}
 
@@ -254,6 +254,9 @@ roster, encounter assignments, or bench changes — see
 Format:
 - Title: H2 (`## Serpentshrine Cavern — Sunday DD.MM`) so Discord renders
   it large. Weekday is the full word, not abbreviated.
+- Small announcement: blockquote line immediately after the title.
+  Same text as the top-of-file blockquote. Canonical rules:
+  reference/file-operations-manual.md → "Writing the small announcement".
 - Class and spec names: use the full form — no abbreviations. Examples:
   "Protection Warrior", "Restoration Druid", "Enhancement Shaman",
   "Beast Mastery Hunter", "Holy Priest", "Arcane Mage", "Demonology
@@ -270,6 +273,8 @@ Format:
 -->
 
 ## Serpentshrine Cavern — {Day-full} {DD.MM}
+
+> {Small announcement — same text as the top-of-file blockquote.}
 
 **Tanks ({N})**
 - {Player} ({Spec Class})

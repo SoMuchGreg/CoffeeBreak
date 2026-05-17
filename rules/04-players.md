@@ -74,12 +74,12 @@ Currently empty. Kept so a Regular player promoted to priority `1` has a place t
 | 4  | Grundiger          | Grundiger      | Hunter  | DPS               | —               | 2       | Discord name: grundi21                                                                   |
 | 5  | Tonz/Tonsen        | Tonsen         | Hunter  | DPS               | —               | 2       |                                                                                          |
 | 6  | Vaelruna           | Vaelruna       | Hunter  | DPS               | —               | 2       |                                                                                          |
-| 7  | Animustenax        | Animustenax    | Mage    | DPS (Arcane)      | ?               | 2       | Decide whether to downgrade to member by 2026-06-22                                      |
+| 7  | Animustenax        | Animustenax    | Mage    | DPS (Arcane)      | —               | 2       | Decide whether to downgrade to member by 2026-06-22                                      |
 | 8  | Heligeman          | Heligeman      | Paladin | Healer            | —               | 2       | Often addressed as Helige                                                                |
 | 9  | Leontes            | Leontes        | Paladin | DPS               | —               | 2       |                                                                                          |
 | 10 | McJudgin           | McJudgin       | Paladin | DPS               | Tank            | 2       | First line offspec                                                                       |
 | 11 | Thordrel           | Thordrel       | Paladin | Healer            | —               | 2       |                                                                                          |
-| 12 | Boriest            | Boriest        | Priest  | Healer            | ?               | 2       | Decide whether to downgrade to member by 2026-06-07                                      |
+| 12 | Boriest            | Boriest        | Priest  | Healer            | DPS             | 2       | Eager offspec. Decide whether to downgrade to member by 2026-06-07                       |
 | 13 | Lightweit          | Lightweit      | Priest  | Healer            | ?               | 2       |                                                                                          |
 | 14 | Siljes             | Siljes         | Priest  | Healer            | DPS             | 2       | Eager offspec                                                                            |
 | 15 | Tiinar             | Tiinar         | Rogue   | DPS (Combat)      | —               | 2       |                                                                                          |
