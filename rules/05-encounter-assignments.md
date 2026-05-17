@@ -81,15 +81,15 @@ Tiers may be single classes (e.g., "Mage") or multi-class pools (e.g., "any rang
 
 Distinct from *Tier-by-tier class chain* above: class-first batching applies across multiple slots of a single multi-slot role; tier-by-tier class chains apply to single-slot roles.
 
-#### Paired single-class role pattern
+#### Priority single-class role pattern
 
-Some encounters define two single-slot roles that share the same class filter — e.g., Maulgar's two Hunter Misdirect slots, Morogrim's two Hunter Trap slots. Slot-count behavior across the pair:
+Some encounters define N priority-ordered single-slot roles that share the same class filter — e.g., Maulgar's two Hunter Misdirect slots (N=2), Morogrim's two Hunter Trap slots (N=2), Karathress's three Hunter MD slots (N=3). Slot-count behavior across the priority chain:
 
-- **0 [class] in roster** → both roles leave `—`; flag per step 5.
-- **1 [class] in roster** → fill the priority-first role with that [class]; leave the priority-second role as `—`. Continuity is not consulted — priority-first always wins with only one candidate. The empty priority-second slot is expected behavior, not a flagged hard-constraint failure.
-- **2 or more [class] in roster** → fill both roles. Run the general five-step algorithm per role. Continuity per role. The cap is 2 — extras in the roster don't get a slot.
+- **0 [class] in roster** → all N roles leave `—`; flag per step 5.
+- **K [class] in roster, 1 ≤ K < N** → fill the K highest-priority roles in priority order; leave the remaining N−K lower-priority roles as `—`. Run the general five-step algorithm per filled role (with K=1, continuity is moot — only one candidate). The empty lower-priority slots are expected behavior, not flagged hard-constraint failures.
+- **K ≥ N [class] in roster** → fill all N roles in priority order. Run the general five-step algorithm per role. Continuity per role. The cap is N — extras in the roster don't get a slot.
 
-Per-role-pair subsections specify the class, the two role names, the priority order, and any role-specific context.
+Per-role subsections specify the class, the N role names, the priority order, and any role-specific context.
 
 ### Continuity data sources
 
@@ -193,7 +193,7 @@ Felhunter Subjugate's slot count depends on how many Warlocks are in the roster:
 
 #### Hunter Misdirect (MD) assignment
 
-Two Hunter-only MD slots in the Maulgar council: **Maulgar Tank MD** (priority-first) and **Blindeye Tank MD** (priority-second). Slot-count behavior per *Common framework → Paired single-class role pattern*.
+Two Hunter-only MD slots in the Maulgar council: **Maulgar Tank MD** (priority-first) and **Blindeye Tank MD** (priority-second). Slot-count behavior per *Common framework → Priority single-class role pattern*.
 
 **MD mechanic.** Each Hunter casts Misdirection on their named tank seconds before the pull, so the tank's first abilities land with bonus threat.
 
@@ -255,66 +255,70 @@ If the user later wants to track any of the above, add the role to the canonical
 
 #### Hydross the Unstable
 
-| Role             | Eligibility requirement                       | Count | Notes                                                                                       |
-|------------------|-----------------------------------------------|-------|---------------------------------------------------------------------------------------------|
-| Frost Tank       | **Marino-Varthier only** (named-player hard)  | 1     | See *Hydross named tank assignments* below.                                                 |
-| Nature Tank      | **Ostbirger only** (named-player hard)        | 1     | See *Hydross named tank assignments* below.                                                 |
-| Adds Tank        | **Gigakox only** (named-player hard)          | 1     | See *Hydross named tank assignments* below.                                                 |
-| Tank Healer      | Any healer; Druid/Paladin preferred           | 2     | Covering the Frost/Nature tank swap pair.                                                   |
+| Role             | Eligibility requirement                       | Count | Notes                                                                                                                               |
+|------------------|-----------------------------------------------|-------|-------------------------------------------------------------------------------------------------------------------------------------|
+| Frost Tank       | **Marino-Varthier only** (named-player hard)  | 1     | See *Hydross named tank assignments* below.                                                                                         |
+| Nature Tank      | **Ostbirger only** (named-player hard)        | 1     | See *Hydross named tank assignments* below.                                                                                         |
+| Adds Tank        | **Gigakox only** (named-player hard)          | 1     | See *Hydross named tank assignments* below.                                                                                         |
+| Tank Healer      | Any healer; Druid/Paladin preferred           | 2     | Covering the Frost/Nature tank swap pair.                                                                                           |
 | Adds Tank Healer | Any healer; Druid/Paladin preferred           | 2     | Covering the Adds Tank. Distinct from Tank Healer slots per the no-double-booking rule (*Common framework → Assignment algorithm*). |
 
 #### The Lurker Below
 
-| Role         | Eligibility requirement                                            | Count | Notes                                                            |
-|--------------|--------------------------------------------------------------------|-------|------------------------------------------------------------------|
-| Main Tank    | Core main tank rotation (see *Common framework → Core main tank rotation*)                   | 1     |                                                                  |
-| Off Tank     | Core main tank rotation (see *Common framework → Core main tank rotation*)                   | 1     |                                                                  |
-| Platform CC  | Class-first batching (see *Lurker Platform CC assignment* below)   | 3     | One CC per platform (P1 → P2 → P3).                                             |
+| Role         | Eligibility requirement                                                      | Count   | Notes                                                                    |
+|--------------|------------------------------------------------------------------------------|---------|--------------------------------------------------------------------------|
+| Main Tank    | Core main tank rotation (see *Common framework → Core main tank rotation*)   | 1       |                                                                          |
+| Off Tank     | Core main tank rotation (see *Common framework → Core main tank rotation*)   | 1       |                                                                          |
+| Platform CC  | Class-first batching (see *Lurker Platform CC assignment* below)             | 4       | 2 CCs on Platform 1, 2 on Platform 2; the third platform requires no CC. |
 
 #### Leotheras the Blind
 
-| Role         | Eligibility requirement                                | Count | Notes                                              |
-|--------------|--------------------------------------------------------|-------|----------------------------------------------------|
-| Main Tank    | Core main tank rotation (see *Common framework → Core main tank rotation*)       | 1     |                                                    |
-| Warlock Tank | **Must be a Warlock**                                  | 1     | Inner-demon tank during the demon phase. See *Leotheras Warlock Tank assignment* below for the strong-preference player and absent-Warlock behavior. |
+| Role         | Eligibility requirement                                                           | Count | Notes                                              |
+|--------------|-----------------------------------------------------------------------------------|-------|----------------------------------------------------|
+| Main Tank    | Core main tank rotation (see *Common framework → Core main tank rotation*)        | 1     |                                                    |
+| Warlock Tank | **Must be a Warlock**                                                             | 1     | Inner-demon tank during the demon phase. See *Leotheras Warlock Tank assignment* below for the strong-preference player and absent-Warlock behavior. |
 
 #### Fathom Lord Karathress
 
 A 4-mini-boss council fight (Karathress and 3 lieutenants — see table below). Each mini-boss needs a tank and at least one healer; Karathress hits hardest and carries the heaviest healing focus.
 
-| Role                    | Eligibility requirement                                                  | Count | Notes                                                                     |
-|-------------------------|--------------------------------------------------------------------------|-------|---------------------------------------------------------------------------|
-| Karathress Tank         | Core main tank rotation (see *Common framework → Core main tank rotation*)                         | 1     |                                                                           |
-| Karathress Tank Healer  | Any healer; Paladin/Druid preferred                                      | 2     | Heaviest healing focus on the boss tank.                                  |
-| Sharkkis Tank           | Core main tank rotation (see *Common framework → Core main tank rotation*)                         | 1     |                                                                           |
-| Sharkkis Tank Healer    | Any healer                                                               | 1     |                                                                           |
-| Tidalvess Tank          | Any tank                                                                 | 1     |                                                                           |
-| Tidalvess Tank Healer   | Any healer                                                               | 1     |                                                                           |
-| Caribdis Tank           | **Must be a Warrior**                                                    | 1     | See *Caribdis Tank assignment* below.                                                       |
-| Caribdis #2 Interrupt   | Tier-by-tier class chain (see *Caribdis #2 Interrupt assignment* below) | 1     | Secondary interrupter.                                                    |
-| Caribdis Tank Healer    | Any healer                                                               | 1     |                                                                           |
+| Role                    | Eligibility requirement                                                      | Count | Notes                                                                       |
+|-------------------------|------------------------------------------------------------------------------|-------|-----------------------------------------------------------------------------|
+| Karathress Tank         | Core main tank rotation (see *Common framework → Core main tank rotation*)   | 1     |                                                                             |
+| Karathress Tank Healer  | Any healer; Paladin/Druid preferred                                          | 2     | Heaviest healing focus on the boss tank.                                    |
+| Sharkkis Tank           | Core main tank rotation (see *Common framework → Core main tank rotation*)   | 1     |                                                                             |
+| Sharkkis Tank MD        | **Must be a Hunter**                                                         | 1     | Priority-third of 3 MD slots. See *Karathress Hunter MD assignment* below.  |
+| Sharkkis Tank Healer    | Any healer                                                                   | 1     |                                                                             |
+| Tidalvess Tank          | Any tank                                                                     | 1     |                                                                             |
+| Tidalvess Tank MD       | **Must be a Hunter**                                                         | 1     | Priority-second of 3 MD slots. See *Karathress Hunter MD assignment* below. |
+| Tidalvess Tank Healer   | Any healer                                                                   | 1     |                                                                             |
+| Caribdis Tank           | **Must be a Warrior**                                                        | 1     | See *Caribdis Tank assignment* below.                                       |
+| Caribdis Tank MD        | **Must be a Hunter**                                                         | 1     | Priority-first of 3 MD slots. See *Karathress Hunter MD assignment* below.  |
+| Caribdis Interrupt      | Tier-by-tier class chain (see *Caribdis Interrupt assignment* below)         | 1     |                                                                             |
+| Caribdis Casting Slow   | Tier-by-tier class chain (see *Caribdis Casting Slow assignment* below)      | 1     | Soft preference; leaves `—` if no eligible class.                           |
+| Caribdis Tank Healer    | Any healer                                                                   | 1     |                                                                             |
 
 #### Morogrim Tidewalker
 
-| Role                | Eligibility requirement                              | Count | Notes                                                              |
-|---------------------|------------------------------------------------------|-------|--------------------------------------------------------------------|
-| Main Tank           | Core main tank rotation (see *Common framework → Core main tank rotation*)     | 1     |                                                                    |
-| Off Tank            | Core main tank rotation (see *Common framework → Core main tank rotation*)     | 1     |                                                                    |
-| Main Tank Healer    | Any healer                                           | 2     |                                                                    |
-| Off Tank Healer     | Any healer                                           | 2     |                                                                    |
-| Watery Grave Healer | Any healer; Druid preferred                          | 1     | Heals/dispels players caught in Watery Graves.                     |
-| Hunter Left Trap    | **Must be a Hunter**                                 | 1     | Frost-traps Murloc adds. See *Morogrim Hunter Trap assignment* below. |
-| Hunter Right Trap   | **Must be a Hunter**                                 | 1     | Frost-traps Murloc adds. See *Morogrim Hunter Trap assignment* below. |
+| Role                | Eligibility requirement                                                     | Count | Notes                                                                 |
+|---------------------|-----------------------------------------------------------------------------|-------|-----------------------------------------------------------------------|
+| Main Tank           | Core main tank rotation (see *Common framework → Core main tank rotation*)  | 1     |                                                                       |
+| Off Tank            | Core main tank rotation (see *Common framework → Core main tank rotation*)  | 1     |                                                                       |
+| Main Tank Healer    | Any healer                                                                  | 2     |                                                                       |
+| Off Tank Healer     | Any healer                                                                  | 2     |                                                                       |
+| Watery Grave Healer | Any healer; Druid preferred                                                 | 1     | Heals/dispels players caught in Watery Graves.                        |
+| Hunter Left Trap    | **Must be a Hunter**                                                        | 1     | Frost-traps Murloc adds. See *Morogrim Hunter Trap assignment* below. |
+| Hunter Right Trap   | **Must be a Hunter**                                                        | 1     | Frost-traps Murloc adds. See *Morogrim Hunter Trap assignment* below. |
 
 #### Lady Vashj
 
-| Role             | Eligibility requirement                                                            | Count | Notes                                                  |
-|------------------|------------------------------------------------------------------------------------|-------|--------------------------------------------------------|
-| Main Tank        | Core main tank rotation (see *Common framework → Core main tank rotation*)                                   | 1     |                                                        |
-| Off Tank #1      | Core main tank rotation (see *Common framework → Core main tank rotation*)                                   | 1     |                                                        |
-| Off Tank #2      | Any other tank in the roster                                                       | 1     | Typically Gigakox (3rd core tank), or the SSC 4th-tank comp-flex if Gigakox is absent. The leftover of {Gigakox, 4th-tank flex} floats during Vashj. |
-| Main Tank Healer | Any healer; Paladin/Druid preferred                                                | 2     | Focused on the boss tank.                              |
-| Strider Kiter    | Tier-by-tier class chain (see *Lady Vashj Strider Kiter assignment* below)    | 1     |                                                               |
+| Role             | Eligibility requirement                                                         | Count | Notes                      |
+|------------------|---------------------------------------------------------------------------------|-------|----------------------------|
+| Main Tank        | Core main tank rotation (see *Common framework → Core main tank rotation*)      | 1     |                            |
+| Off Tank #1      | Core main tank rotation (see *Common framework → Core main tank rotation*)      | 1     |                            |
+| Off Tank #2      | Any other tank in the roster; 3rd core tank preferred                           | 1     |                            |
+| Main Tank Healer | Any healer; Paladin/Druid preferred                                             | 2     | Focused on the boss tank.  |
+| Strider Kiter    | Tier-by-tier class chain (see *Lady Vashj Strider Kiter assignment* below)      | 1     |                            |
 
 ### Per-role assignment details
 
@@ -324,7 +328,7 @@ Frost Tank, Nature Tank, and Adds Tank are **named-player hard requirements** (t
 
 #### Lurker Below Platform CC assignment
 
-3 single-player CC slots (Platform 1, Platform 2, Platform 3). **Class-first batching** (mechanic per *Common framework → Class-first batching (multi-slot)*) over three tiers: **Tier 1: Mage**, **Tier 2: Warlock**, **Tier 3: Hunter**.
+4 single-player CC slots distributed across two platforms: **Platform 1 CC #1** and **Platform 1 CC #2** on Platform 1; **Platform 2 CC #1** and **Platform 2 CC #2** on Platform 2. The third platform requires no CC. **Class-first batching** (mechanic per *Common framework → Class-first batching (multi-slot)*) over three tiers: **Tier 1: Mage**, **Tier 2: Warlock**, **Tier 3: Hunter**. Batching exhausts each tier across all 4 slots in order Platform 1 CC #1 → Platform 1 CC #2 → Platform 2 CC #1 → Platform 2 CC #2.
 
 #### Leotheras Warlock Tank assignment
 
@@ -340,18 +344,36 @@ If no Warrior is in the roster at all, the hard constraint fails — same step-5
 
 In practice the natural pick is Gigakox (3rd-tank core tank) when he's in the roster as a Tank.
 
-#### Caribdis #2 Interrupt assignment
+#### Caribdis Interrupt assignment
 
-Single-player role for the secondary interrupter on Caribdis. **Tier-by-tier class chain** (mechanic per *Common framework → Tier-by-tier class chain*):
+Single-player role for the Caribdis interrupter. **Tier-by-tier class chain** (mechanic per *Common framework → Tier-by-tier class chain*):
 
-- **Tier 1: Rogue.** Filter to roster Rogues.
-- **Tier 2: Warrior.** Filter to roster Warriors.
+- **Tier 1: Elemental Shaman.** Filter to roster members whose `Class` column in `## Actual Roster` begins with `Shaman (Elemental)` and who are in the `### DPS` sub-table.
+- **Tier 2: Rogue.** Filter to roster Rogues.
+- **Tier 3: Warrior.** Filter to roster Warriors.
 
 The no-double-booking rule (per *Common framework → Assignment algorithm*) keeps this slot distinct from Caribdis Tank and from any other Karathress role the same Warrior might already hold.
 
+**Historical continuity bridge.** Records pre-dating this rule change tracked this role as `Caribdis #2 Interrupt`. For continuity purposes, count prior holds under that label the same as new-schema `Caribdis Interrupt` holds.
+
+#### Caribdis Casting Slow assignment
+
+Single-player role; soft preference. **Tier-by-tier class chain** (mechanic per *Common framework → Tier-by-tier class chain*):
+
+- **Tier 1: Warlock.** Filter to roster Warlocks (Curse of Tongues).
+- **Tier 2: Rogue.** Filter to roster Rogues (Mind-Numbing Poison).
+
+**Soft fallback.** If both tiers exhaust with no candidate, leave the Player cell as `—` and do **not** flag — the raid runs without the slow. The role is not a fight requirement.
+
+#### Karathress Hunter MD assignment
+
+Three Hunter-only MD slots in the Karathress council: **Caribdis Tank MD** (priority-first), **Tidalvess Tank MD** (priority-second), and **Sharkkis Tank MD** (priority-third). Slot-count behavior per *Common framework → Priority single-class role pattern*.
+
+**MD mechanic.** Each Hunter casts Misdirection on the named lieutenant's tank seconds before the pull, so the tank's first abilities land with bonus threat. All 3 MDs cast pre-pull; the general no-double-booking rule (per *Common framework → Assignment algorithm*) keeps the three slots on three distinct Hunters when 3+ Hunters are in the roster.
+
 #### Morogrim Hunter Trap assignment
 
-Two Hunter-only trap slots: **Hunter Left Trap** (priority-first) and **Hunter Right Trap** (priority-second). Slot-count behavior per *Common framework → Paired single-class role pattern*.
+Two Hunter-only trap slots: **Hunter Left Trap** (priority-first) and **Hunter Right Trap** (priority-second). Slot-count behavior per *Common framework → Priority single-class role pattern*.
 
 #### Lady Vashj Strider Kiter assignment
 
@@ -380,40 +402,40 @@ If the user later wants to track any of the above, add the role to the canonical
 
 #### Al'ar
 
-| Role        | Eligibility requirement                          | Count | Notes |
-|-------------|--------------------------------------------------|-------|-------|
-| Main Tank   | Core main tank rotation (see *Common framework → Core main tank rotation*) | 1     |       |
-| Off Tank #1 | Any tank                                         | 1     |       |
-| Off Tank #2 | Any tank                                         | 1     |       |
+| Role        | Eligibility requirement                                                     | Count | Notes |
+|-------------|-----------------------------------------------------------------------------|-------|-------|
+| Main Tank   | Core main tank rotation (see *Common framework → Core main tank rotation*)  | 1     |       |
+| Off Tank #1 | Any tank                                                                    | 1     |       |
+| Off Tank #2 | Any tank                                                                    | 1     |       |
 
 #### Void Reaver
 
-| Role        | Eligibility requirement                                         | Count | Notes                  |
-|-------------|-----------------------------------------------------------------|-------|------------------------|
-| Main Tank   | Core main tank rotation (see *Common framework → Core main tank rotation*)                | 1     |                        |
-| Off Tank #1 | Any tank                                                        | 1     |                        |
-| Off Tank #2 | Any tank                                                        | 1     |                        |
-| Kiter       | Class-first batching (see *Void Reaver Kiter assignment* below) | 3     | Three orb-kiter slots. |
+| Role        | Eligibility requirement                                                         | Count | Notes                  |
+|-------------|---------------------------------------------------------------------------------|-------|------------------------|
+| Main Tank   | Core main tank rotation (see *Common framework → Core main tank rotation*)      | 1     |                        |
+| Off Tank #1 | Any tank                                                                        | 1     |                        |
+| Off Tank #2 | Any tank                                                                        | 1     |                        |
+| Kiter       | Class-first batching (see *Void Reaver Kiter assignment* below)                 | 3     | Three orb-kiter slots. |
 
 #### High Astromancer Solarian
 
-| Role      | Eligibility requirement                          | Count | Notes |
-|-----------|--------------------------------------------------|-------|-------|
-| Main Tank | Core main tank rotation (see *Common framework → Core main tank rotation*) | 1     |       |
-| Off Tank  | Core main tank rotation (see *Common framework → Core main tank rotation*) | 1     |       |
+| Role      | Eligibility requirement                                                      | Count | Notes |
+|-----------|------------------------------------------------------------------------------|-------|-------|
+| Main Tank | Core main tank rotation (see *Common framework → Core main tank rotation*)   | 1     |       |
+| Off Tank  | Core main tank rotation (see *Common framework → Core main tank rotation*)   | 1     |       |
 
 #### Kael'Thas Sunstrider
 
-| Role                   | Eligibility requirement                                                                              | Count | Notes                                                                                       |
-|------------------------|------------------------------------------------------------------------------------------------------|-------|---------------------------------------------------------------------------------------------|
-| Main Tank              | Core main tank rotation, **excluding Feral Druids** (see *Kael'Thas Main Tank assignment* below)     | 1     | Tanks Sanguinar in P1 & P3, weapons in P2, Kael himself in P4 & P5.                         |
-| Off Tank               | Any tank                                                                                             | 1     | Tanks Telonicus in P1 & P3, axe in P2, phoenix in P4 & P5.                                  |
-| Warlock Tank           | **Must be a Warlock**                                                                                | 1     | Tanks Capernian in P1 & P3.                                                                 |
-| Hunter Tank            | **Must be a Hunter**                                                                                 | 1     | Tanks the bow in P2.                                                                        |
-| Staff Carrier          | **Must be a Feral DPS Druid** (see *Kael'Thas Staff Carrier assignment* below)                       | 1     | Uses the staff weapon drop on melee. Soft preference.                                       |
-| Infinity Blade Carrier | Tier-by-tier class chain (see *Kael'Thas Infinity Blade Carrier assignment* below)              | 1     | Wields the Infinity Blade weapon drop. Soft preference.                                     |
-| Mage Interrupt         | **Must be a Mage** (see *Kael'Thas Mage Interrupt assignment* below)                                 | 1     | Soft preference.                                                                            |
-| DPS Shaman Interrupt   | **Must be a DPS Shaman** (see *Kael'Thas DPS Shaman Interrupt assignment* below)                     | 1     | Soft preference.                                                                            |
+| Role                   | Eligibility requirement                                                                          | Count | Notes                                                                                       |
+|------------------------|--------------------------------------------------------------------------------------------------|-------|---------------------------------------------------------------------------------------------|
+| Main Tank              | Core main tank rotation, **excluding Feral Druids** (see *Kael'Thas Main Tank assignment* below) | 1     | Tanks Sanguinar in P1 & P3, weapons in P2, Kael himself in P4 & P5.                         |
+| Off Tank               | Any tank                                                                                         | 1     | Tanks Telonicus in P1 & P3, axe in P2, phoenix in P4 & P5.                                  |
+| Warlock Tank           | **Must be a Warlock**                                                                            | 1     | Tanks Capernian in P1 & P3.                                                                 |
+| Hunter Tank            | **Must be a Hunter**                                                                             | 1     | Tanks the bow in P2.                                                                        |
+| Staff Carrier          | **Must be a Feral DPS Druid** (see *Kael'Thas Staff Carrier assignment* below)                   | 1     | Uses the staff weapon drop on melee. Soft preference.                                       |
+| Infinity Blade Carrier | Tier-by-tier class chain (see *Kael'Thas Infinity Blade Carrier assignment* below)               | 1     | Wields the Infinity Blade weapon drop. Soft preference.                                     |
+| Mage Interrupt         | **Must be a Mage** (see *Kael'Thas Mage Interrupt assignment* below)                             | 1     | Soft preference.                                                                            |
+| DPS Shaman Interrupt   | **Must be a DPS Shaman** (see *Kael'Thas DPS Shaman Interrupt assignment* below)                 | 1     | Soft preference.                                                                            |
 
 ### Per-role assignment details
 

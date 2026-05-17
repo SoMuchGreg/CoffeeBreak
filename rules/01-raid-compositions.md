@@ -286,3 +286,5 @@ SSC additionally carries per-encounter role assignments — see `rules/05-encoun
 ### Tempest Keep (TK)
 
 Uses the **default 25-man composition** (see "25-man raids → General → Default composition" above).
+
+**2 Mages** (if possible — soft rule, depends on signups). Within the project-wide Fire/Arcane Mage 1-2 range (`reference/raid-composition-guide.md` § 8), TK targets the upper end. **Enforcement:** when 2 or more Mages sign up, prefer to bench a non-Mage DPS over a Mage — overrides the **Tier 2 — 25-man class desirability** tiebreaker (`rules/02-bench-rotation.md`) for TK only.

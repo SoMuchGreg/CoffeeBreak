@@ -197,7 +197,7 @@ user should be aware of.
 |-------------|--------|-------|
 | Main Tank   | ...    |       |
 | Off Tank    | ...    |       |
-| Platform CC | ...    | List 3 names: P1, P2, P3 (e.g., `Greg, Jabbadhutt, Vaelruna`). |
+| Platform CC | ...    | List 4 names in order: Platform 1 CC #1, Platform 1 CC #2, Platform 2 CC #1, Platform 2 CC #2 (e.g., `Greg, Jabbadhutt, Vaelruna, Roossy/Keatala`). The third platform takes no CC. |
 
 ### Leotheras the Blind
 
@@ -213,11 +213,15 @@ user should be aware of.
 | Karathress Tank        | ...    |       |
 | Karathress Tank Healer | ...    |       |
 | Sharkkis Tank          | ...    |       |
+| Sharkkis Tank MD       | ...    |       |
 | Sharkkis Tank Healer   | ...    |       |
 | Tidalvess Tank         | ...    |       |
+| Tidalvess Tank MD      | ...    |       |
 | Tidalvess Tank Healer  | ...    |       |
 | Caribdis Tank          | ...    |       |
-| Caribdis #2 Interrupt  | ...    |       |
+| Caribdis Tank MD       | ...    |       |
+| Caribdis Interrupt     | ...    |       |
+| Caribdis Casting Slow  | ...    |       |
 | Caribdis Tank Healer   | ...    |       |
 
 ### Morogrim Tidewalker
@@ -263,8 +267,9 @@ Format:
   Warlock", "Subtlety Rogue".
 - Encounter assignments section heading is H3 (`### Encounter assignments`);
   individual encounter names stay bold (e.g., `**Hydross the Unstable**`).
-- Multi-name encounter rows (e.g., Platform CC) → one bullet, names
-  comma-separated.
+- Multi-name encounter rows → one bullet, names comma-separated. Exception:
+  Platform CC splits into one bullet per platform (Platform 1 CC, Platform 2
+  CC) so players can tell which platform they're on.
 - Bench: the closing line at the very end of the section is the bench's
   only Discord representation; the planner `## Bench` table is the source
   of truth for full bench detail. Phrasing: "X." for 1 player, "X and Y."
@@ -297,7 +302,8 @@ Format:
 **The Lurker Below**
 - Main Tank: {Player}
 - Off Tank: {Player}
-- Platform CC: {Player}, {Player}, {Player}
+- Platform 1 CC: {Player}, {Player}
+- Platform 2 CC: {Player}, {Player}
 
 **Leotheras the Blind**
 - Main Tank: {Player}
@@ -307,11 +313,15 @@ Format:
 - Karathress Tank: {Player}
 - Karathress Tank Healer: {Player}
 - Sharkkis Tank: {Player}
+- Sharkkis Tank MD: {Player}
 - Sharkkis Tank Healer: {Player}
 - Tidalvess Tank: {Player}
+- Tidalvess Tank MD: {Player}
 - Tidalvess Tank Healer: {Player}
 - Caribdis Tank: {Player}
-- Caribdis #2 Interrupt: {Player}
+- Caribdis Tank MD: {Player}
+- Caribdis Interrupt: {Player}
+- Caribdis Casting Slow: {Player}
 - Caribdis Tank Healer: {Player}
 
 **Morogrim Tidewalker**
