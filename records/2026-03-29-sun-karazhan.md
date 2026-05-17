@@ -22,50 +22,90 @@
 
 | Player        | Role   | Class   |
 |---------------|--------|---------|
-| Varthier      | MT     |         |
+| Varthier      | MT     | Paladin |
 | Gigakox       | OT     | Warrior |
-| Drillbabe     | DPS    | Rogue   |
-| Vaelruna      | DPS    | Hunter  |
 | Gresac/Younea | Healer | Druid   |
+| Siljes        | Healer | Priest  |
+| Vaelruna      | DPS    | Hunter  |
 | UcannotPass   | DPS    | Mage    |
 | Kresniik      | DPS    | Priest  |
-| Jabbadhutt    | DPS    | Warlock |
+| Drillbabe     | DPS    | Rogue   |
 | Pergatori     | DPS    | Shaman  |
-| Siljes        | Healer | Priest  |
+| Jabbadhutt    | DPS    | Warlock |
 
 ### Team BaeGlaives
 
-| Player       | Role   | Class   |
-|------------- |--------|---------|
-| OstBirger    | MT     |         |
-| Eselman      | OT     | Druid   |
-| BaeBay       | DPS    | Rogue   |
-| Lynelen      | DPS    | Shaman  |
-| Roossy/Keatala| Healer | Druid |
-| OomToDoom    | DPS    | Mage    |
-| Dwarfytron   | DPS    | Hunter  |
-| Ebonybolt    | DPS    | Shaman  |
-| BestPractice | DPS    | Warlock |
-| Thordrel     | Healer | Paladin |
+| Player         | Role   | Class   |
+|----------------|--------|---------|
+| OstBirger      | MT     | Paladin |
+| Eselman        | OT     | Druid   |
+| Roossy/Keatala | Healer | Druid   |
+| Thordrel       | Healer | Paladin |
+| Dwarfytron     | DPS    | Hunter  |
+| OomToDoom      | DPS    | Mage    |
+| BaeBay         | DPS    | Rogue   |
+| Ebonybolt      | DPS    | Shaman  |
+| Lynelen        | DPS    | Shaman  |
+| BestPractice   | DPS    | Warlock |
 
 ### Team Restaurant
 
 | Player      | Role   | Class   |
 |-------------|--------|---------|
-| Mirohl      | MT     |         |
-| McJudgin    | OT     |         |
-| Verysadge   | DPS    | Warrior |
-| Bergamotka  | DPS    | Shaman  |
+| Mirohl      | MT     | Warrior |
+| McJudgin    | OT     | Paladin |
 | Beaverfist  | Healer | Druid   |
-| Tonz/Tonsen | DPS    | Hunter  |
-| McHughes    | DPS    | Warlock |
-| Yxanb       | DPS    | Druid   |
-| Rhoator     | DPS    |         |
 | Bombzor     | Healer | Priest  |
+| Yxanb       | DPS    | Druid   |
+| Rhoator     | DPS    | Hunter  |
+| Tonz/Tonsen | DPS    | Hunter  |
+| Bergamotka  | DPS    | Shaman  |
+| McHughes    | DPS    | Warlock |
+| Verysadge   | DPS    | Warrior |
 
 ## Bench
 
 *(None — all 30 spots filled)*
+
+## Discord announcement
+
+## Karazhan — Sunday 29.03
+
+**Team Bakery (10)**
+- MT: Varthier (Paladin)
+- OT: Gigakox (Warrior)
+- Healer: Gresac/Younea (Druid)
+- Healer: Siljes (Priest)
+- DPS: Vaelruna (Hunter)
+- DPS: UcannotPass (Mage)
+- DPS: Kresniik (Priest)
+- DPS: Drillbabe (Rogue)
+- DPS: Pergatori (Shaman)
+- DPS: Jabbadhutt (Warlock)
+
+**Team BaeGlaives (10)**
+- MT: OstBirger (Paladin)
+- OT: Eselman (Druid)
+- Healer: Roossy/Keatala (Druid)
+- Healer: Thordrel (Paladin)
+- DPS: Dwarfytron (Hunter)
+- DPS: OomToDoom (Mage)
+- DPS: BaeBay (Rogue)
+- DPS: Ebonybolt (Shaman)
+- DPS: Lynelen (Shaman)
+- DPS: BestPractice (Warlock)
+
+**Team Restaurant (10)**
+- MT: Mirohl (Warrior)
+- OT: McJudgin (Paladin)
+- Healer: Beaverfist (Druid)
+- Healer: Bombzor (Priest)
+- DPS: Yxanb (Druid)
+- DPS: Rhoator (Hunter)
+- DPS: Tonz/Tonsen (Hunter)
+- DPS: Bergamotka (Shaman)
+- DPS: McHughes (Warlock)
+- DPS: Verysadge (Warrior)
 
 ## Notes
 

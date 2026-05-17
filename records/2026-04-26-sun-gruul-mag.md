@@ -29,9 +29,9 @@
 
 | Player    | Class          |
 |-----------|----------------|
+| Ostbirger | Paladin (Prot) |
 | CptKavior | Warrior (Prot) |
 | Gigakox   | Warrior (Prot) |
-| Ostbirger | Paladin (Prot) |
 
 ### Healers (6)
 
@@ -40,34 +40,34 @@
 | Gresac/Younea  | Druid (Resto)  |
 | Roossy/Keatala | Druid (Resto)  |
 | Thordrel       | Paladin (Holy) |
-| Siljes         | Priest (Holy)  |
 | Lightweit      | Priest (Holy)  |
+| Siljes         | Priest (Holy)  |
 | Pergatori      | Shaman (Resto) |
 
 ### DPS (16)
 
 | Player             | Class                |
 |--------------------|----------------------|
-| Verysadge          | Warrior (Fury)       |
-| Dankyn             | Warrior (Fury)       |
-| Yorekbarn          | Warrior (Fury)       |
-| Yxanb              | Druid (Feral)        |
 | Jar                | Druid (Balance)      |
+| Yxanb              | Druid (Feral)        |
+| Grundiger          | Hunter               |
+| Tonz/Tonsen        | Hunter               |
+| Vaelruna           | Hunter               |
+| Greg (Ucannotpass) | Mage (Arcane)        |
+| OomToDoom          | Mage (Arcane)        |
 | Leontes            | Paladin (Ret)        |
 | Kres/Dissi         | Priest (Shadow)      |
-| Vaelruna           | Hunter               |
-| Tonz/Tonsen        | Hunter               |
-| Grundiger          | Hunter               |
-| OomToDoom          | Mage (Arcane)        |
-| Greg (Ucannotpass) | Mage (Arcane)        |
-| Jabbadhutt         | Warlock              |
-| Lynelen            | Shaman (Enhancement) |
-| Ebonybolt          | Shaman (Enhancement) |
 | Bergamotka         | Shaman (Enhancement) |
+| Ebonybolt          | Shaman (Enhancement) |
+| Lynelen            | Shaman (Enhancement) |
+| Jabbadhutt         | Warlock              |
+| Dankyn             | Warrior (Fury)       |
+| Verysadge          | Warrior (Fury)       |
+| Yorekbarn          | Warrior (Fury)       |
 
 **Composition check:** Target 3/6/16 for Gruul+Mag (per `rules/01-raid-compositions.md`). Actual: 3/6/16 = 25. Status: ✅ on target.
 
-## Dual-spec flex applied
+## Comp flex applied
 
 | Player    | Asked to switch from → to        | Tier | Accepted? | Notes                                                |
 |-----------|----------------------------------|------|-----------|------------------------------------------------------|
@@ -117,6 +117,67 @@
 | Greg      | DPS  | 7                | S×4, SE×2, NE×1          | 2026-04-15 SE |
 | Ostbirger | Tank | 3                | NW×3                     | 2026-04-15 NW |
 | Vaelruna  | DPS  | 1                | SW×1                     | 2026-03-08 SW |
+
+## Discord announcement
+
+## Gruul + Magtheridon — Sunday 26.04
+
+**Tanks (3)**
+- Ostbirger (Protection Paladin)
+- CptKavior (Protection Warrior)
+- Gigakox (Protection Warrior)
+
+**Healers (6)**
+- Gresac/Younea (Restoration Druid)
+- Roossy/Keatala (Restoration Druid)
+- Thordrel (Holy Paladin)
+- Lightweit (Holy Priest)
+- Siljes (Holy Priest)
+- Pergatori (Restoration Shaman)
+
+**DPS (16)**
+- Jar (Balance Druid)
+- Yxanb (Feral Druid)
+- Grundiger (Hunter)
+- Tonz/Tonsen (Hunter)
+- Vaelruna (Hunter)
+- Greg (Ucannotpass) (Arcane Mage)
+- OomToDoom (Arcane Mage)
+- Leontes (Retribution Paladin)
+- Kres/Dissi (Shadow Priest)
+- Bergamotka (Enhancement Shaman)
+- Ebonybolt (Enhancement Shaman)
+- Lynelen (Enhancement Shaman)
+- Jabbadhutt (Warlock)
+- Dankyn (Fury Warrior)
+- Verysadge (Fury Warrior)
+- Yorekbarn (Fury Warrior)
+
+### Encounter assignments
+
+**High King Maulgar**
+- Maulgar Tank: Ostbirger
+- Maulgar Tank MD: Tonz/Tonsen
+- Maulgar Healer: Thordrel, Siljes
+- Mage Tank (Krosh): OomToDoom
+- Mage Tank Healer: Roossy/Keatala
+- Kiggler Tank: Jar
+- Kiggler Tank Healer: Lightweit
+- Olm Tank: CptKavior
+- Felhunter Subjugate: Jabbadhutt
+- Olm Tank Healer: Pergatori
+- Blindeye Tank: Gigakox
+- Blindeye Tank MD: Vaelruna
+- Blindeye Tank Healer: Gresac/Younea
+
+**Magtheridon — Cube Clickers**
+- South (Star): Jar
+- South East (Triangle): Jabbadhutt
+- South West (Circle): Kres/Dissi
+- North East (Square): CptKavior
+- North West (Diamond): Gigakox
+
+On the bench: Beaverfist. But if you show up online around raid time, there's a decent chance a spot will free up because of last-minute changes.
 
 ## Notes
 

@@ -40,31 +40,31 @@
 |------------|----------------|
 | Beaverfist | Druid (Resto)  |
 | Thordrel   | Paladin (Holy) |
-| Siljes     | Priest (Holy)  |
-| Lightweit  | Priest (Holy)  |
 | Boriest    | Priest (Holy)  |
+| Lightweit  | Priest (Holy)  |
+| Siljes     | Priest (Holy)  |
 | Pergatori  | Shaman (Resto) |
 
 ### DPS (16)
 
 | Player         | Class                |
 |----------------|----------------------|
-| Verysadge      | Warrior (Fury)       |
-| CptKavior      | Warrior (Fury)       |
-| Dankyn         | Warrior (Fury)       |
-| Yxanb          | Druid (Feral)        |
 | Jar            | Druid (Balance)      |
-| Leontes        | Paladin (Ret)        |
-| Roossy/Keatala | Hunter (BM)          |
+| Yxanb          | Druid (Feral)        |
 | Grundiger      | Hunter (BM)          |
+| Roossy/Keatala | Hunter (BM)          |
 | Vaelruna       | Hunter (BM)          |
 | Greg           | Mage (Arcane)        |
-| Benglock       | Warlock (Demonology) |
-| Jabbadhutt     | Warlock              |
-| Lynelen        | Shaman (Enhancement) |
+| Leontes        | Paladin (Ret)        |
+| Gresac/Younea  | Shaman (Elemental)   |
 | Bergamotka     | Shaman (Enhancement) |
 | Ebonybolt      | Shaman (Enhancement) |
-| Gresac/Younea  | Shaman (Elemental)   |
+| Lynelen        | Shaman (Enhancement) |
+| Jabbadhutt     | Warlock              |
+| Benglock       | Warlock (Demonology) |
+| CptKavior      | Warrior (Fury)       |
+| Dankyn         | Warrior (Fury)       |
+| Verysadge      | Warrior (Fury)       |
 
 **Composition check:** Target 3/6/16 for Gruul+Mag (per `rules/01-raid-compositions.md`). Actual: 3/6/16 = 25. Status: ✅ on target.
 
@@ -114,6 +114,67 @@
 | CptKavior       | DPS  | Warrior (Fury)  | 1                | NE×1                     | 2026-05-03 NE |
 | Jar             | DPS  | Druid (Balance) | 1                | S×1                      | 2026-04-26 S  |
 | Vaelruna        | DPS  | Hunter (BM)     | 1                | SW×1                     | 2026-03-08 SW |
+
+## Discord announcement
+
+## Gruul + Magtheridon — Sunday 10.05
+
+**Tanks (3)**
+- Marino-Varthier (Protection Paladin)
+- Ostbirger (Protection Paladin)
+- Gigakox (Protection Warrior)
+
+**Healers (6)**
+- Beaverfist (Restoration Druid)
+- Thordrel (Holy Paladin)
+- Boriest (Holy Priest)
+- Lightweit (Holy Priest)
+- Siljes (Holy Priest)
+- Pergatori (Restoration Shaman)
+
+**DPS (16)**
+- Jar (Balance Druid)
+- Yxanb (Feral Druid)
+- Grundiger (Beast Mastery Hunter)
+- Roossy/Keatala (Beast Mastery Hunter)
+- Vaelruna (Beast Mastery Hunter)
+- Greg (Arcane Mage)
+- Leontes (Retribution Paladin)
+- Gresac/Younea (Elemental Shaman)
+- Bergamotka (Enhancement Shaman)
+- Ebonybolt (Enhancement Shaman)
+- Lynelen (Enhancement Shaman)
+- Jabbadhutt (Warlock)
+- Benglock (Demonology Warlock)
+- CptKavior (Fury Warrior)
+- Dankyn (Fury Warrior)
+- Verysadge (Fury Warrior)
+
+### Encounter assignments
+
+**High King Maulgar**
+- Maulgar Tank: Marino-Varthier
+- Maulgar Tank MD: Roossy/Keatala
+- Maulgar Healer: Thordrel, Beaverfist
+- Mage Tank (Krosh): Greg
+- Mage Tank Healer: Siljes
+- Kiggler Tank: Jar
+- Kiggler Tank Healer: Boriest
+- Olm Tank: Gigakox
+- Felhunter Subjugate: Jabbadhutt, Benglock
+- Olm Tank Healer: Pergatori
+- Blindeye Tank: Ostbirger
+- Blindeye Tank MD: Grundiger
+- Blindeye Tank Healer: Lightweit
+
+**Magtheridon — Cube Clickers**
+- South (Star): Jabbadhutt
+- South East (Triangle): Greg
+- South West (Circle): Gresac/Younea
+- North East (Square): Ostbirger
+- North West (Diamond): Gigakox
+
+On the bench: Kres/Dissi, Nemajumarad and Shapkica. But if you show up online around raid time, there's a decent chance a spot will free up because of last-minute changes.
 
 ## Notes
 

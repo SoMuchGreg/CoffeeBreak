@@ -100,6 +100,10 @@ ACTUALLY played that night. Assignment is per rules/01-raid-compositions.md
 ## Notes per reference/file-operations-manual.md. For hybrid-class spec calls,
 write "Druid (Balance)" or "Druid (Resto)" etc. when it's not obvious from the
 role section.
+
+Row order within each sub-table (Tanks / Healers / DPS): sort by Class
+(alphabetical) → Spec (alphabetical) → canonical Player name (alphabetical).
+PUG entries sort last in their sub-table.
 -->
 
 ### Tanks ({N})
@@ -237,6 +241,91 @@ user should be aware of.
 | Off Tank #2      | ...    |       |
 | Main Tank Healer | ...    |       |
 | Strider Kiter    | ...    |       |
+
+## Discord announcement
+
+<!--
+Discord-friendly mirror of `## Actual Roster` + `## Encounter assignments`
+(and the bench when non-empty). Members read this — no Notes column, no
+planner content. Update alongside the planner-facing tables above whenever
+roster, encounter assignments, or bench changes — see
+`reference/file-operations-manual.md` → `## Roster update files`.
+
+Format:
+- Title: H2 (`## Serpentshrine Cavern — Sunday DD.MM`) so Discord renders
+  it large. Weekday is the full word, not abbreviated.
+- Class and spec names: use the full form — no abbreviations. Examples:
+  "Protection Warrior", "Restoration Druid", "Enhancement Shaman",
+  "Beast Mastery Hunter", "Holy Priest", "Arcane Mage", "Demonology
+  Warlock", "Subtlety Rogue".
+- Encounter assignments section heading is H3 (`### Encounter assignments`);
+  individual encounter names stay bold (e.g., `**Hydross the Unstable**`).
+- Multi-name encounter rows (e.g., Platform CC) → one bullet, names
+  comma-separated.
+- Bench: the closing line at the very end of the section is the bench's
+  only Discord representation; the planner `## Bench` table is the source
+  of truth for full bench detail. Phrasing: "X." for 1 player, "X and Y."
+  for 2, "X, Y and Z." for 3+ (no Oxford comma). Delete the closing line
+  entirely for 0 bench.
+-->
+
+## Serpentshrine Cavern — {Day-full} {DD.MM}
+
+**Tanks ({N})**
+- {Player} ({Spec Class})
+
+**Healers ({N})**
+- {Player} ({Spec Class})
+
+**DPS ({N})**
+- {Player} ({Spec Class})
+
+### Encounter assignments
+
+**Hydross the Unstable**
+- Frost Tank: {Player}
+- Nature Tank: {Player}
+- Adds Tank: {Player}
+- Tank Healer: {Player}
+- Adds Tank Healer: {Player}
+
+**The Lurker Below**
+- Main Tank: {Player}
+- Off Tank: {Player}
+- Platform CC: {Player}, {Player}, {Player}
+
+**Leotheras the Blind**
+- Main Tank: {Player}
+- Warlock Tank: {Player}
+
+**Fathom Lord Karathress**
+- Karathress Tank: {Player}
+- Karathress Tank Healer: {Player}
+- Sharkkis Tank: {Player}
+- Sharkkis Tank Healer: {Player}
+- Tidalvess Tank: {Player}
+- Tidalvess Tank Healer: {Player}
+- Caribdis Tank: {Player}
+- Caribdis #2 Interrupt: {Player}
+- Caribdis Tank Healer: {Player}
+
+**Morogrim Tidewalker**
+- Main Tank: {Player}
+- Off Tank: {Player}
+- Main Tank Healer: {Player}
+- Off Tank Healer: {Player}
+- Watery Grave Healer: {Player}
+- Hunter Left Trap: {Player}
+- Hunter Right Trap: {Player}
+
+**Lady Vashj**
+- Main Tank: {Player}
+- Off Tank #1: {Player}
+- Off Tank #2: {Player}
+- Main Tank Healer: {Player}
+- Strider Kiter: {Player}
+
+On the bench: {Player}, {Player} and {Player}. But if you show up online around raid time, there's a decent chance a spot will free up because of last-minute changes.   <!-- delete this whole line if no one was benched -->
 
 ## Notes
 

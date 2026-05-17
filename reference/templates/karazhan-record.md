@@ -82,7 +82,7 @@ Sort alphabetically case-insensitive by canonical player name (rules/04-players.
 ## Actual Raid Rosters
 
 <!--
-Three teams, each exactly 10 players: 1 MT, 1 OT, 6 DPS, 2 Healers (target).
+Three teams, each exactly 10 players: 1 MT, 1 OT, 2 Healers, 6 DPS (target).
 Team order MUST be: Restaurant, Bakery, WellPrepared (matches rules/01-raid-compositions.md
 → "Team names"). No team is anchored to a specific player. Enchanter distribution across
 teams follows rules/03-player-constraints.md → "Enchanters".
@@ -93,6 +93,11 @@ authoritative"; document any deviation in ## Notes per
 reference/file-operations-manual.md. For hybrid-class spec calls, write
 "Druid (Balance)" or "Druid (Resto)" etc. when it's not obvious from the role
 column.
+
+Row order within each team: group by Role in this fixed order — MT → OT →
+Healer → DPS. Within each role group, sort by Class (alphabetical) → Spec
+(alphabetical) → canonical Player name (alphabetical). PUG entries sort last
+within their role group.
 -->
 
 ### Team Restaurant
@@ -101,14 +106,14 @@ column.
 |---------------------|--------|----------------------|
 | ...                 | MT     | ...                  |
 | ...                 | OT     | ...                  |
-| ...                 | DPS    | ...                  |
-| ...                 | DPS    | ...                  |
-| ...                 | DPS    | ...                  |
-| ...                 | DPS    | ...                  |
-| ...                 | DPS    | ...                  |
-| ...                 | DPS    | ...                  |
 | ...                 | Healer | ...                  |
 | ...                 | Healer | ...                  |
+| ...                 | DPS    | ...                  |
+| ...                 | DPS    | ...                  |
+| ...                 | DPS    | ...                  |
+| ...                 | DPS    | ...                  |
+| ...                 | DPS    | ...                  |
+| ...                 | DPS    | ...                  |
 
 ### Team Bakery
 
@@ -116,14 +121,14 @@ column.
 |---------------------|--------|----------------------|
 | ...                 | MT     | ...                  |
 | ...                 | OT     | ...                  |
-| ...                 | DPS    | ...                  |
-| ...                 | DPS    | ...                  |
-| ...                 | DPS    | ...                  |
-| ...                 | DPS    | ...                  |
-| ...                 | DPS    | ...                  |
-| ...                 | DPS    | ...                  |
 | ...                 | Healer | ...                  |
 | ...                 | Healer | ...                  |
+| ...                 | DPS    | ...                  |
+| ...                 | DPS    | ...                  |
+| ...                 | DPS    | ...                  |
+| ...                 | DPS    | ...                  |
+| ...                 | DPS    | ...                  |
+| ...                 | DPS    | ...                  |
 
 ### Team WellPrepared
 
@@ -131,14 +136,14 @@ column.
 |---------------------|--------|----------------------|
 | ...                 | MT     | ...                  |
 | ...                 | OT     | ...                  |
-| ...                 | DPS    | ...                  |
-| ...                 | DPS    | ...                  |
-| ...                 | DPS    | ...                  |
-| ...                 | DPS    | ...                  |
-| ...                 | DPS    | ...                  |
-| ...                 | DPS    | ...                  |
 | ...                 | Healer | ...                  |
 | ...                 | Healer | ...                  |
+| ...                 | DPS    | ...                  |
+| ...                 | DPS    | ...                  |
+| ...                 | DPS    | ...                  |
+| ...                 | DPS    | ...                  |
+| ...                 | DPS    | ...                  |
+| ...                 | DPS    | ...                  |
 
 **Composition check:** Target per team: 2T / 2H / 6 DPS = 10. Total target across 3 teams: 30. Actual: {3 teams × actual counts} = {actual total}. Status: ✅ / ⚠️ {explanation if not on target}.
 
@@ -173,6 +178,75 @@ Delete the table and replace with `*(None — all 30 spots filled)*` if no one w
 | Player             | Priority | Bench count (cumulative, after this raid) | Reason          |
 |--------------------|----------|-------------------------------------------|-----------------|
 | ...                | 2        | ...                                       | fair rotation   |
+
+## Discord announcement
+
+<!--
+Discord-friendly mirror of `## Actual Raid Rosters` (and the bench when
+non-empty). Members read this — no Notes column, no planner content.
+Update alongside the planner-facing tables above whenever any team roster
+or the bench changes — see `reference/file-operations-manual.md` →
+`## Roster update files`.
+
+Canonical team order: Restaurant, Bakery, WellPrepared (per
+`rules/01-raid-compositions.md` → "Team names").
+
+Format:
+- Title: H2 (`## Karazhan — Wednesday DD.MM`) so Discord renders it
+  large. Weekday is the full word (Monday/Wednesday/Sunday/etc.), not
+  abbreviated.
+- Class and spec names: use the full form — no abbreviations. Examples:
+  "Protection Warrior", "Restoration Druid", "Enhancement Shaman",
+  "Beast Mastery Hunter", "Holy Priest", "Arcane Mage", "Demonology
+  Warlock", "Subtlety Rogue".
+- Within each team, list MT first, OT second, healers next, then DPS —
+  matches the planner table's row order so audits are easy.
+- Bench: the closing line at the very end of the section is the bench's
+  only Discord representation; the planner `## Bench` table is the source
+  of truth for full bench detail. Phrasing: "X." for 1 player, "X and Y."
+  for 2, "X, Y and Z." for 3+ (no Oxford comma). Delete the closing line
+  entirely for 0 bench.
+-->
+
+## Karazhan — {Day-full} {DD.MM}
+
+**Team Restaurant (10)**
+- MT: {Player} ({Spec Class})
+- OT: {Player} ({Spec Class})
+- Healer: {Player} ({Spec Class})
+- Healer: {Player} ({Spec Class})
+- DPS: {Player} ({Spec Class})
+- DPS: {Player} ({Spec Class})
+- DPS: {Player} ({Spec Class})
+- DPS: {Player} ({Spec Class})
+- DPS: {Player} ({Spec Class})
+- DPS: {Player} ({Spec Class})
+
+**Team Bakery (10)**
+- MT: {Player} ({Spec Class})
+- OT: {Player} ({Spec Class})
+- Healer: {Player} ({Spec Class})
+- Healer: {Player} ({Spec Class})
+- DPS: {Player} ({Spec Class})
+- DPS: {Player} ({Spec Class})
+- DPS: {Player} ({Spec Class})
+- DPS: {Player} ({Spec Class})
+- DPS: {Player} ({Spec Class})
+- DPS: {Player} ({Spec Class})
+
+**Team WellPrepared (10)**
+- MT: {Player} ({Spec Class})
+- OT: {Player} ({Spec Class})
+- Healer: {Player} ({Spec Class})
+- Healer: {Player} ({Spec Class})
+- DPS: {Player} ({Spec Class})
+- DPS: {Player} ({Spec Class})
+- DPS: {Player} ({Spec Class})
+- DPS: {Player} ({Spec Class})
+- DPS: {Player} ({Spec Class})
+- DPS: {Player} ({Spec Class})
+
+On the bench: {Player}, {Player} and {Player}. But if you show up online around raid time, there's a decent chance a spot will free up because of last-minute changes.   <!-- delete this whole line if no one was benched -->
 
 ## Notes
 

@@ -24,14 +24,14 @@
 |--------------|--------|---------|
 | Mirohl       | MT     | Warrior |
 | Lightstarr   | OT?    | Paladin |
-| Dankyn       | DPS    | Warrior |
-| Bergamotka   | DPS    | Shaman  |
-| Vaelruna     | DPS    | Hunter  |
-| Yxanb        | DPS    | Druid   |
-| Kres/Dissi   | DPS    | Priest  |
-| BestPractice | DPS    | Warlock |
 | Thordrel     | Healer | Paladin |
 | Rainbound    | Healer | Shaman  |
+| Yxanb        | DPS    | Druid   |
+| Vaelruna     | DPS    | Hunter  |
+| Kres/Dissi   | DPS    | Priest  |
+| Bergamotka   | DPS    | Shaman  |
+| BestPractice | DPS    | Warlock |
+| Dankyn       | DPS    | Warrior |
 
 ### Team Bakery
 
@@ -39,14 +39,14 @@
 |------------------|--------|---------|
 | Marino-Varthier  | MT     | Paladin |
 | Doughball        | OT     | Warrior |
-| Tonz/Tonsen      | DPS    | Hunter  |
-| Lynelen          | DPS    | Shaman  |
 | Gresac/Younea    | Healer | Druid   |
-| Greg/Ucannotpass | DPS    | Mage    |
-| Jabbadhutt       | DPS    | Warlock |
-| Pergatori        | DPS    | Shaman  |
-| Beaverfist       | DPS (Balance) | Druid |
 | Bombzor          | Healer | Priest  |
+| Beaverfist       | DPS (Balance) | Druid |
+| Tonz/Tonsen      | DPS    | Hunter  |
+| Greg/Ucannotpass | DPS    | Mage    |
+| Lynelen          | DPS    | Shaman  |
+| Pergatori        | DPS    | Shaman  |
+| Jabbadhutt       | DPS    | Warlock |
 
 ### Team BaeGlaives
 
@@ -54,14 +54,14 @@
 |---------------------|--------|---------|
 | Ostbirger           | MT     | Paladin |
 | Gigakox             | OT     | Warrior |
-| Ebonybolt           | DPS    | Shaman  |
-| Verysadge           | DPS    | Warrior |
 | Roossy/Keatala      | Healer | Druid   |
+| Lightweit           | Healer | Priest  |
 | Jar                 | DPS (Balance) | Druid |
 | Dwarfytron          | DPS    | Hunter  |
-| McHughes            | DPS    | Warlock |
 | OomToDoom           | DPS    | Mage    |
-| Lightweit           | Healer | Priest  |
+| Ebonybolt           | DPS    | Shaman  |
+| McHughes            | DPS    | Warlock |
+| Verysadge           | DPS    | Warrior |
 
 
 *(GlaivemasterBaebay signed up late but did NOT attend this raid)*
@@ -73,6 +73,48 @@
 | McJudgin       | 1                        |
 | CptKavior      | 1                        |
 | Leontes        | 1                        |
+
+## Discord announcement
+
+## Karazhan — Wednesday 08.04
+
+**Team Restaurant (10)**
+- MT: Mirohl (Warrior)
+- OT: Lightstarr (Paladin)
+- Healer: Thordrel (Paladin)
+- Healer: Rainbound (Shaman)
+- DPS: Yxanb (Druid)
+- DPS: Vaelruna (Hunter)
+- DPS: Kres/Dissi (Priest)
+- DPS: Bergamotka (Shaman)
+- DPS: BestPractice (Warlock)
+- DPS: Dankyn (Warrior)
+
+**Team Bakery (10)**
+- MT: Marino-Varthier (Paladin)
+- OT: Doughball (Warrior)
+- Healer: Gresac/Younea (Druid)
+- Healer: Bombzor (Priest)
+- DPS: Beaverfist (Balance Druid)
+- DPS: Tonz/Tonsen (Hunter)
+- DPS: Greg/Ucannotpass (Mage)
+- DPS: Lynelen (Shaman)
+- DPS: Pergatori (Shaman)
+- DPS: Jabbadhutt (Warlock)
+
+**Team BaeGlaives (10)**
+- MT: Ostbirger (Paladin)
+- OT: Gigakox (Warrior)
+- Healer: Roossy/Keatala (Druid)
+- Healer: Lightweit (Priest)
+- DPS: Jar (Balance Druid)
+- DPS: Dwarfytron (Hunter)
+- DPS: OomToDoom (Mage)
+- DPS: Ebonybolt (Shaman)
+- DPS: McHughes (Warlock)
+- DPS: Verysadge (Warrior)
+
+On the bench: McJudgin, CptKavior and Leontes. But if you show up online around raid time, there's a decent chance a spot will free up because of last-minute changes.
 
 ## Notes
 

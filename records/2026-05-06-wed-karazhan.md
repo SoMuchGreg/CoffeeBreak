@@ -36,14 +36,14 @@
 |----------------|--------|----------------------|
 | Gigakox        | MT     | Warrior (Prot)       |
 | Shapkica       | OT     | Druid (Feral)        |
-| Lynelen        | DPS    | Shaman (Enhancement) |
-| Roossy/Keatala | DPS    | Hunter               |
-| Gyrodorei      | DPS    | Druid (Feral)        |
-| Tiinar         | DPS    | Rogue (Combat)       |
-| Lenno/Mellymel | DPS    | Mage (Arcane)        |
-| Benglock       | DPS    | Warlock (Demonology) |
-| Siljes         | Healer | Priest (Holy)        |
 | Thordrel       | Healer | Paladin (Holy)       |
+| Siljes         | Healer | Priest (Holy)        |
+| Gyrodorei      | DPS    | Druid (Feral)        |
+| Roossy/Keatala | DPS    | Hunter               |
+| Lenno/Mellymel | DPS    | Mage (Arcane)        |
+| Tiinar         | DPS    | Rogue (Combat)       |
+| Lynelen        | DPS    | Shaman (Enhancement) |
+| Benglock       | DPS    | Warlock (Demonology) |
 
 ### Team Bakery
 
@@ -51,14 +51,14 @@
 |---------------|--------|----------------------|
 | Ostbirger     | MT     | Paladin (Prot)       |
 | CptKavior     | OT     | Warrior (Prot)       |
-| Ebonybolt     | DPS    | Shaman (Enhancement) |
-| Leontes       | DPS    | Paladin (Ret)        |
-| Dankyn        | DPS    | Warrior (Fury)       |
-| Kres/Dissi    | DPS    | Priest (Shadow)      |
-| Jabbadhutt    | DPS    | Warlock              |
-| Gresac/Younea | DPS    | Shaman (Elemental)   |
-| Pergatori     | Healer | Shaman (Resto)       |
 | Heligeman     | Healer | Paladin (Holy)       |
+| Pergatori     | Healer | Shaman (Resto)       |
+| Leontes       | DPS    | Paladin (Ret)        |
+| Kres/Dissi    | DPS    | Priest (Shadow)      |
+| Gresac/Younea | DPS    | Shaman (Elemental)   |
+| Ebonybolt     | DPS    | Shaman (Enhancement) |
+| Jabbadhutt    | DPS    | Warlock              |
+| Dankyn        | DPS    | Warrior (Fury)       |
 
 ### Team WellPrepared
 
@@ -66,14 +66,14 @@
 |----------------|--------|----------------------|
 | McJudgin       | MT     | Paladin (Prot)       |
 | PUG Tank       | OT     | —                    |
-| Bergamotka     | DPS    | Shaman (Enhancement) |
-| Verysadge      | DPS    | Warrior (Fury)       |
-| Jar            | DPS    | Druid (Balance)      |
-| OomToDoom      | DPS    | Mage (Arcane)        |
-| Yxanb          | DPS    | Druid (Feral)        |
-| PUG DPS        | DPS    | —                    |
 | Beaverfist     | Healer | Druid (Resto)        |
 | Lightweit      | Healer | Priest (Holy)        |
+| Jar            | DPS    | Druid (Balance)      |
+| Yxanb          | DPS    | Druid (Feral)        |
+| OomToDoom      | DPS    | Mage (Arcane)        |
+| Bergamotka     | DPS    | Shaman (Enhancement) |
+| Verysadge      | DPS    | Warrior (Fury)       |
+| PUG DPS        | DPS    | —                    |
 
 **Composition check:** Target per team: 2T / 2H / 6 DPS = 10. Total across 3 teams: 30. Actual: 3 × 10 = 30. Status: ✅. PUG recruitment per `rules/01-raid-compositions.md` → "Recording outside recruits (PUGs)" — 1 PUG DPS on Team WellPrepared, plus 1 `PUG Tank` per user override of `rules/01-raid-compositions.md` → "Insufficient-tanks override" (see Notes).
 
@@ -88,6 +88,46 @@
 ## Bench (0)
 
 *(None — all 30 spots filled)*
+
+## Discord announcement
+
+## Karazhan — Wednesday 06.05
+
+**Team Restaurant (10)**
+- MT: Gigakox (Protection Warrior)
+- OT: Shapkica (Feral Druid)
+- Healer: Thordrel (Holy Paladin)
+- Healer: Siljes (Holy Priest)
+- DPS: Gyrodorei (Feral Druid)
+- DPS: Roossy/Keatala (Hunter)
+- DPS: Lenno/Mellymel (Arcane Mage)
+- DPS: Tiinar (Combat Rogue)
+- DPS: Lynelen (Enhancement Shaman)
+- DPS: Benglock (Demonology Warlock)
+
+**Team Bakery (10)**
+- MT: Ostbirger (Protection Paladin)
+- OT: CptKavior (Protection Warrior)
+- Healer: Heligeman (Holy Paladin)
+- Healer: Pergatori (Restoration Shaman)
+- DPS: Leontes (Retribution Paladin)
+- DPS: Kres/Dissi (Shadow Priest)
+- DPS: Gresac/Younea (Elemental Shaman)
+- DPS: Ebonybolt (Enhancement Shaman)
+- DPS: Jabbadhutt (Warlock)
+- DPS: Dankyn (Fury Warrior)
+
+**Team WellPrepared (10)**
+- MT: McJudgin (Protection Paladin)
+- OT: PUG Tank
+- Healer: Beaverfist (Restoration Druid)
+- Healer: Lightweit (Holy Priest)
+- DPS: Jar (Balance Druid)
+- DPS: Yxanb (Feral Druid)
+- DPS: OomToDoom (Arcane Mage)
+- DPS: Bergamotka (Enhancement Shaman)
+- DPS: Verysadge (Fury Warrior)
+- DPS: PUG DPS
 
 ## Notes
 

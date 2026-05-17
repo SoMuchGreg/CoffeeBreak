@@ -19,32 +19,44 @@
 
 Raid ran with 24 instead of 25 because Jar couldn't make it.
 
-| #  | Player            | Role   | Class   |
-|----|-------------------|--------|---------|
-| 1  | Mirohl            | Tank   | Warrior |
-| 2  | Ostbirger         | Tank   | Paladin |
-| 3  | Marino-Varthier   | Tank   | Paladin |
-| 4  | Dankyn            | DPS    | Warrior |
-| 5  | GlaivemasterBaeba | DPS    | Rogue   |
-| 6  | Vaelruna          | DPS    | Hunter  |
-| 7  | Tonz/Tonsen       | DPS    | Hunter  |
-| 8  | Dwarfytron        | DPS    | Hunter  |
-| 9  | Yxanb             | DPS    | Druid   |
-| 10 | OomToDoom         | DPS    | Mage    |
-| 11 | Greg/Ucannotpass  | DPS    | Mage    |
-| 12 | Lynelen           | DPS    | Shaman  |
-| 13 | Ebonybolt         | DPS    | Shaman  |
-| 14 | Bergamotka        | DPS    | Shaman  |
-| 15 | Pergatori         | DPS    | Shaman  |
-| 16 | McHughes          | DPS    | Warlock |
-| 17 | Jabbadhutt        | DPS    | Warlock |
-| 18 | Gresac/Younea     | Healer | Druid   |
-| 19 | Roossy/Keatala    | Healer | Druid   |
-| 20 | Beaverfist        | Healer | Druid   |
-| 21 | Heligeman         | Healer | Paladin |
-| 22 | Thordrel          | Healer | Paladin |
-| 23 | Siljes            | Healer | Priest  |
-| 24 | Bombzor           | Healer | Priest  |
+### Tanks (3)
+
+| Player          | Class   |
+|-----------------|---------|
+| Marino-Varthier | Paladin |
+| Ostbirger       | Paladin |
+| Mirohl          | Warrior |
+
+### Healers (7)
+
+| Player         | Class   |
+|----------------|---------|
+| Beaverfist     | Druid   |
+| Gresac/Younea  | Druid   |
+| Roossy/Keatala | Druid   |
+| Heligeman      | Paladin |
+| Thordrel       | Paladin |
+| Bombzor        | Priest  |
+| Siljes         | Priest  |
+
+### DPS (14)
+
+| Player            | Class   |
+|-------------------|---------|
+| Yxanb             | Druid   |
+| Dwarfytron        | Hunter  |
+| Tonz/Tonsen       | Hunter  |
+| Vaelruna          | Hunter  |
+| Greg/Ucannotpass  | Mage    |
+| OomToDoom         | Mage    |
+| GlaivemasterBaeba | Rogue   |
+| Bergamotka        | Shaman  |
+| Ebonybolt         | Shaman  |
+| Lynelen           | Shaman  |
+| Pergatori         | Shaman  |
+| Jabbadhutt        | Warlock |
+| McHughes          | Warlock |
+| Dankyn            | Warrior |
 
 **Composition:** 3 tanks, 14 DPS, 7 healers (24 total)
 
@@ -81,6 +93,62 @@ Raid ran with 24 instead of 25 because Jar couldn't make it.
 | South West  | Circle   | BestPractice    |
 | North East  | Square   | Marino-Varthier |
 | North West  | Diamond  | Ostbirger       |
+
+## Discord announcement
+
+## Gruul + Magtheridon — Sunday 05.04
+
+**Tanks (3)**
+- Marino-Varthier (Paladin)
+- Ostbirger (Paladin)
+- Mirohl (Warrior)
+
+**Healers (7)**
+- Beaverfist (Druid)
+- Gresac/Younea (Druid)
+- Roossy/Keatala (Druid)
+- Heligeman (Paladin)
+- Thordrel (Paladin)
+- Bombzor (Priest)
+- Siljes (Priest)
+
+**DPS (14)**
+- Yxanb (Druid)
+- Dwarfytron (Hunter)
+- Tonz/Tonsen (Hunter)
+- Vaelruna (Hunter)
+- Greg/Ucannotpass (Mage)
+- OomToDoom (Mage)
+- GlaivemasterBaeba (Rogue)
+- Bergamotka (Shaman)
+- Ebonybolt (Shaman)
+- Lynelen (Shaman)
+- Pergatori (Shaman)
+- Jabbadhutt (Warlock)
+- McHughes (Warlock)
+- Dankyn (Warrior)
+
+### Encounter assignments
+
+**High King Maulgar**
+- Maulgar Tank: Mirohl
+- Maulgar Healer: Thordrel, Siljes
+- Mage Tank (Krosh): OomToDoom
+- Mage Tank Healer: Roossy/Keatala
+- Kiggler Tank: Beaverfist
+- Kiggler Tank Healer: Bombzor
+- Olm Tank: Ostbirger
+- Felhunter Subjugate: BestPractice, McHughes
+- Olm Tank Healer: Heligeman
+- Blindeye Tank: Marino-Varthier
+- Blindeye Tank Healer: Gresac/Younea
+
+**Magtheridon — Cube Clickers**
+- South (Star): Greg
+- South East (Triangle): McHughes
+- South West (Circle): BestPractice
+- North East (Square): Marino-Varthier
+- North West (Diamond): Ostbirger
 
 ## Not present (and not signed up)
 

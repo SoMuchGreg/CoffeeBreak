@@ -24,40 +24,40 @@
 | Player    | Class          |
 |-----------|----------------|
 | Ostbirger | Paladin (Prot) |
-| Gigakox   | Warrior (Prot) |
 | CptKavior | Warrior (Prot) |
+| Gigakox   | Warrior (Prot) |
 
 ### Healers (6)
 
 | Player         | Class          |
 |----------------|----------------|
-| Thordrel       | Paladin (Holy) |
-| Heligeman      | Paladin (Holy) |
 | Beaverfist     | Druid (Resto)  |
 | Roossy/Keatala | Druid (Resto)  |
-| Lightweit      | Priest (Holy)  |
+| Heligeman      | Paladin (Holy) |
+| Thordrel       | Paladin (Holy) |
 | Boriest        | Priest (Holy)  |
+| Lightweit      | Priest (Holy)  |
 
 ### DPS (16)
 
 | Player        | Class                |
 |---------------|----------------------|
-| Verysadge     | Warrior (Fury)       |
-| Dankyn        | Warrior (Fury)       |
-| Nemajumarad   | Warrior (Arms)       |
+| Jar           | Druid (Balance)      |
 | Shapkica      | Druid (Feral)        |
 | Yxanb         | Druid (Feral)        |
-| Jar           | Druid (Balance)      |
-| Tiinar        | Rogue (Combat)       |
 | Grundiger     | Hunter (BM)          |
 | Vaelruna      | Hunter (BM)          |
 | Greg          | Mage (Arcane)        |
+| Tiinar        | Rogue (Combat)       |
+| Gresac/Younea | Shaman (Elemental)   |
+| Bergamotka    | Shaman (Enhancement) |
+| Ebonybolt     | Shaman (Enhancement) |
+| Lynelen       | Shaman (Enhancement) |
 | McHughes      | Warlock              |
 | Benglock      | Warlock (Demonology) |
-| Bergamotka    | Shaman (Enhancement) |
-| Lynelen       | Shaman (Enhancement) |
-| Ebonybolt     | Shaman (Enhancement) |
-| Gresac/Younea | Shaman (Elemental)   |
+| Nemajumarad   | Warrior (Arms)       |
+| Dankyn        | Warrior (Fury)       |
+| Verysadge     | Warrior (Fury)       |
 
 **Composition check:** Target 3/5-6/16-17 for Gruul+Mag (default 25-man comp; per `rules/01-raid-compositions.md` → "25-man raids → General → Default composition"). Actual: 3/6/16 = 25. Status: ✅ on target.
 
@@ -110,6 +110,67 @@
 |-----------|------|----------------|------------------|--------------------------|---------------|
 | Ostbirger | Tank | Paladin (Prot) | 4                | NW×3, NE×1               | 2026-05-10 NE |
 | Vaelruna  | DPS  | Hunter (BM)    | 1                | SW×1                     | 2026-03-08 SW |
+
+## Discord announcement
+
+## Gruul + Magtheridon — Wednesday 13.05
+
+**Tanks (3)**
+- Ostbirger (Protection Paladin)
+- CptKavior (Protection Warrior)
+- Gigakox (Protection Warrior)
+
+**Healers (6)**
+- Beaverfist (Restoration Druid)
+- Roossy/Keatala (Restoration Druid)
+- Heligeman (Holy Paladin)
+- Thordrel (Holy Paladin)
+- Boriest (Holy Priest)
+- Lightweit (Holy Priest)
+
+**DPS (16)**
+- Jar (Balance Druid)
+- Shapkica (Feral Druid)
+- Yxanb (Feral Druid)
+- Grundiger (Beast Mastery Hunter)
+- Vaelruna (Beast Mastery Hunter)
+- Greg (Arcane Mage)
+- Tiinar (Combat Rogue)
+- Gresac/Younea (Elemental Shaman)
+- Bergamotka (Enhancement Shaman)
+- Ebonybolt (Enhancement Shaman)
+- Lynelen (Enhancement Shaman)
+- McHughes (Warlock)
+- Benglock (Demonology Warlock)
+- Nemajumarad (Arms Warrior)
+- Dankyn (Fury Warrior)
+- Verysadge (Fury Warrior)
+
+### Encounter assignments
+
+**High King Maulgar**
+- Maulgar Tank: Ostbirger
+- Maulgar Tank MD: Vaelruna
+- Maulgar Healer: Thordrel, Beaverfist
+- Mage Tank (Krosh): Greg
+- Mage Tank Healer: Roossy/Keatala
+- Kiggler Tank: Jar
+- Kiggler Tank Healer: Boriest
+- Olm Tank: Gigakox
+- Felhunter Subjugate: Benglock, McHughes
+- Olm Tank Healer: —
+- Blindeye Tank: CptKavior
+- Blindeye Tank MD: Grundiger
+- Blindeye Tank Healer: Lightweit
+
+**Magtheridon — Cube Clickers**
+- South (Star): McHughes
+- South East (Triangle): Greg
+- South West (Circle): Gresac/Younea
+- North East (Square): CptKavior
+- North West (Diamond): Gigakox
+
+On the bench: Kres/Dissi and Pergatori. But if you show up online around raid time, there's a decent chance a spot will free up because of last-minute changes.
 
 ## Notes
 

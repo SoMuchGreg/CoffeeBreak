@@ -102,6 +102,10 @@ ACTUALLY played that night. Assignment is per rules/01-raid-compositions.md
 ## Notes per reference/file-operations-manual.md. For hybrid-class spec calls,
 write "Druid (Balance)" or "Druid (Resto)" etc. when it's not obvious from the
 role section.
+
+Row order within each sub-table (Tanks / Healers / DPS): sort by Class
+(alphabetical) → Spec (alphabetical) → canonical Player name (alphabetical).
+PUG entries sort last in their sub-table.
 -->
 
 ### Tanks ({N})
@@ -155,6 +159,43 @@ Delete the table and replace with `*(None — all 25 spots filled)*` if no one w
 | Player | Priority | Bench count (cumulative, after this raid) | Reason          |
 |--------|----------|-------------------------------------------|-----------------|
 | ...    | 2        | ...                                       | fair rotation   |
+
+## Discord announcement
+
+<!--
+Discord-friendly mirror of `## Actual Roster` (and the bench when
+non-empty). Members read this — no Notes column, no planner content.
+Update alongside the planner-facing tables above whenever the roster or
+bench changes — see `reference/file-operations-manual.md` → `## Roster
+update files`.
+
+Format:
+- Title: H2 (`## {Raid location} — Sunday DD.MM`) so Discord renders it
+  large. Weekday is the full word (Monday/Wednesday/Sunday/etc.), not
+  abbreviated.
+- Class and spec names: use the full form — no abbreviations. Examples:
+  "Protection Warrior", "Restoration Druid", "Enhancement Shaman",
+  "Beast Mastery Hunter", "Holy Priest", "Arcane Mage", "Demonology
+  Warlock", "Subtlety Rogue".
+- Bench: the closing line at the very end of the section is the bench's
+  only Discord representation; the planner `## Bench` table is the source
+  of truth for full bench detail. Phrasing: "X." for 1 player, "X and Y."
+  for 2, "X, Y and Z." for 3+ (no Oxford comma). Delete the closing line
+  entirely for 0 bench.
+-->
+
+## {Raid location} — {Day-full} {DD.MM}
+
+**Tanks ({N})**
+- {Player} ({Spec Class})
+
+**Healers ({N})**
+- {Player} ({Spec Class})
+
+**DPS ({N})**
+- {Player} ({Spec Class})
+
+On the bench: {Player}, {Player} and {Player}. But if you show up online around raid time, there's a decent chance a spot will free up because of last-minute changes.   <!-- delete this whole line if no one was benched -->
 
 ## Notes
 

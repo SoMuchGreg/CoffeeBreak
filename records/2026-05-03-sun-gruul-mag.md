@@ -49,22 +49,22 @@
 
 | Player         | Class                |
 |----------------|----------------------|
-| Verysadge      | Warrior (Fury)       |
-| CptKavior      | Warrior (Fury)       |
-| Dankyn         | Warrior (Fury)       |
-| Nemajumarad    | Warrior (Arms)       |
-| Yxanb          | Druid (Feral)        |
 | Shapkica       | Druid (Feral)        |
-| McJudgin       | Paladin (Ret)        |
-| Vaelruna       | Hunter (BM)          |
-| Roossy/Keatala | Hunter (BM)          |
+| Yxanb          | Druid (Feral)        |
 | Grundiger      | Hunter (BM)          |
+| Roossy/Keatala | Hunter (BM)          |
+| Vaelruna       | Hunter (BM)          |
+| OomToDoom      | Mage (Arcane)        |
+| McJudgin       | Paladin (Ret)        |
 | Kres/Dissi     | Priest (Shadow)      |
 | Siljes         | Priest (Shadow)      |
-| OomToDoom      | Mage (Arcane)        |
-| Jabbadhutt     | Warlock              |
-| Lynelen        | Shaman (Enhancement) |
 | Bergamotka     | Shaman (Enhancement) |
+| Lynelen        | Shaman (Enhancement) |
+| Jabbadhutt     | Warlock              |
+| Nemajumarad    | Warrior (Arms)       |
+| CptKavior      | Warrior (Fury)       |
+| Dankyn         | Warrior (Fury)       |
+| Verysadge      | Warrior (Fury)       |
 
 **Composition check:** Target 3/6/16 for Gruul+Mag (per `rules/01-raid-compositions.md`). Actual: 3/6/16 = 25. Status: ✅ on target.
 
@@ -113,6 +113,67 @@
 | Ostbirger | Tank | 3                | NW×3                     | 2026-04-15 NW |
 | Gigakox   | Tank | 1                | NW×1                     | 2026-04-26 NW |
 | Vaelruna  | DPS  | 1                | SW×1                     | 2026-03-08 SW |
+
+## Discord announcement
+
+## Gruul + Magtheridon — Sunday 03.05
+
+**Tanks (3)**
+- Marino-Varthier (Protection Paladin)
+- Ostbirger (Protection Paladin)
+- Gigakox (Protection Warrior)
+
+**Healers (6)**
+- Beaverfist (Restoration Druid)
+- Gresac/Younea (Restoration Druid)
+- Heligeman (Holy Paladin)
+- Thordrel (Holy Paladin)
+- Boriest (Holy Priest)
+- Pergatori (Restoration Shaman)
+
+**DPS (16)**
+- Shapkica (Feral Druid)
+- Yxanb (Feral Druid)
+- Grundiger (Beast Mastery Hunter)
+- Roossy/Keatala (Beast Mastery Hunter)
+- Vaelruna (Beast Mastery Hunter)
+- OomToDoom (Arcane Mage)
+- McJudgin (Retribution Paladin)
+- Kres/Dissi (Shadow Priest)
+- Siljes (Shadow Priest)
+- Bergamotka (Enhancement Shaman)
+- Lynelen (Enhancement Shaman)
+- Jabbadhutt (Warlock)
+- Nemajumarad (Arms Warrior)
+- CptKavior (Fury Warrior)
+- Dankyn (Fury Warrior)
+- Verysadge (Fury Warrior)
+
+### Encounter assignments
+
+**High King Maulgar**
+- Maulgar Tank: Ostbirger
+- Maulgar Tank MD: Roossy/Keatala
+- Maulgar Healer: Thordrel, Beaverfist
+- Mage Tank (Krosh): OomToDoom
+- Mage Tank Healer: Heligeman
+- Kiggler Tank: Beaverfist, Vaelruna
+- Kiggler Tank Healer: Boriest
+- Olm Tank: Gigakox
+- Felhunter Subjugate: Jabbadhutt
+- Olm Tank Healer: Pergatori
+- Blindeye Tank: Marino-Varthier
+- Blindeye Tank MD: Vaelruna
+- Blindeye Tank Healer: Gresac/Younea
+
+**Magtheridon — Cube Clickers**
+- South (Star): Jabbadhutt
+- South East (Triangle): Kres/Dissi
+- South West (Circle): Siljes
+- North East (Square): CptKavior
+- North West (Diamond): Marino-Varthier
+
+On the bench: Ebonybolt, Greg and Yorekbarn. But if you show up online around raid time, there's a decent chance a spot will free up because of last-minute changes.
 
 ## Notes
 

@@ -25,41 +25,41 @@ Ran with 25 as expected.
 
 | Player              | Class   |
 |---------------------|---------|
-| Mirohl              | Warrior |
-| Ostbirger           | Paladin |
 | Marino-Varthier     | Paladin |
+| Ostbirger           | Paladin |
+| Mirohl              | Warrior |
 
 ### Healers (6)
 
 | Player          | Class   |
 |-----------------|---------|
+| Beaverfist      | Druid   |
+| Gresac/Younea   | Druid   |
 | McJudgin        | Paladin |
 | Thordrel        | Paladin |
-| Siljes          | Priest  |
 | Lightweit       | Priest  |
-| Gresac/Younea   | Druid   |
-| Beaverfist      | Druid   |
+| Siljes          | Priest  |
 
 ### DPS (17)
 
 | Player            | Class   |
 |-------------------|---------|
-| Gigakox           | Warrior |
-| Verysadge         | Warrior |
-| Dankyn            | Warrior |
 | Jar               | Druid   |
-| GlaivemasterBaeba | Rogue   |
+| Dwarfytron        | Hunter  |
 | Tonz/Tonsen       | Hunter  |
 | Vaelruna          | Hunter  |
-| Dwarfytron        | Hunter  |
 | Greg/Ucannotpass  | Mage    |
-| Jabbadhutt        | Warlock |
-| BestPractice      | Warlock |
 | Leontes           | Paladin |
-| Pergatori         | Shaman  |
-| Lynelen           | Shaman  |
-| Ebonybolt         | Shaman  |
+| GlaivemasterBaeba | Rogue   |
 | Bergamotka        | Shaman  |
+| Ebonybolt         | Shaman  |
+| Lynelen           | Shaman  |
+| Pergatori         | Shaman  |
+| BestPractice      | Warlock |
+| Jabbadhutt        | Warlock |
+| Dankyn            | Warrior |
+| Gigakox           | Warrior |
+| Verysadge         | Warrior |
 
 **Composition:** 3 tanks, 6 healers, 16 DPS (25 total)
 
@@ -100,6 +100,65 @@ Ran with 25 as expected.
 | South West  | Circle   | Jabbadhutt      |
 | North East  | Square   | Marino-Varthier |
 | North West  | Diamond  | Ostbirger       |
+
+## Discord announcement
+
+## Gruul + Magtheridon — Sunday 12.04
+
+**Tanks (3)**
+- Marino-Varthier (Paladin)
+- Ostbirger (Paladin)
+- Mirohl (Warrior)
+
+**Healers (6)**
+- Beaverfist (Druid)
+- Gresac/Younea (Druid)
+- McJudgin (Paladin)
+- Thordrel (Paladin)
+- Lightweit (Priest)
+- Siljes (Priest)
+
+**DPS (16)**
+- Jar (Druid)
+- Dwarfytron (Hunter)
+- Tonz/Tonsen (Hunter)
+- Vaelruna (Hunter)
+- Greg/Ucannotpass (Mage)
+- Leontes (Paladin)
+- GlaivemasterBaeba (Rogue)
+- Bergamotka (Shaman)
+- Ebonybolt (Shaman)
+- Lynelen (Shaman)
+- Pergatori (Shaman)
+- BestPractice (Warlock)
+- Jabbadhutt (Warlock)
+- Dankyn (Warrior)
+- Gigakox (Warrior)
+- Verysadge (Warrior)
+
+### Encounter assignments
+
+**High King Maulgar**
+- Maulgar Tank: Mirohl
+- Maulgar Healer: Thordrel, Siljes
+- Mage Tank (Krosh): OomToDoom
+- Mage Tank Healer: Beaverfist
+- Kiggler Tank: Tonz/Tonsen, Greg
+- Kiggler Tank Healer: Lightweit
+- Olm Tank: Ostbirger
+- Felhunter Subjugate: Jabbadhutt
+- Olm Tank Healer: McJudgin
+- Blindeye Tank: Marino-Varthier
+- Blindeye Tank Healer: Gresac/Younea
+
+**Magtheridon — Cube Clickers**
+- South (Star): Pergatori
+- South East (Triangle): Greg
+- South West (Circle): Jabbadhutt
+- North East (Square): Marino-Varthier
+- North West (Diamond): Ostbirger
+
+On the bench: Roossy/Keatala, Heligeman and OomToDoom. But if you show up online around raid time, there's a decent chance a spot will free up because of last-minute changes.
 
 ## Notes
 

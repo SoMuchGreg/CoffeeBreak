@@ -30,14 +30,14 @@
 |---------------------|--------|----------------------|
 | Mirohl              | MT     | Warrior              |
 | CptKavior           | OT     | Warrior              |
-| Yxanb               | DPS    | Druid (Feral)        |
-| Verysadge           | DPS    | Warrior (Fury)       |
-| Bergamotka          | DPS    | Shaman (Enhancement) |
-| PUG DPS             | DPS    | —                    |
-| BestPractice        | DPS    | Warlock              |
-| Pergatori           | DPS    | Shaman (Elemental)   |
-| Lightweit           | Healer | Priest (Holy)        |
 | Gresac/Younea       | Healer | Druid (Resto)        |
+| Lightweit           | Healer | Priest (Holy)        |
+| Yxanb               | DPS    | Druid (Feral)        |
+| Pergatori           | DPS    | Shaman (Elemental)   |
+| Bergamotka          | DPS    | Shaman (Enhancement) |
+| BestPractice        | DPS    | Warlock              |
+| Verysadge           | DPS    | Warrior (Fury)       |
+| PUG DPS             | DPS    | —                    |
 
 ### Team Bakery
 
@@ -45,14 +45,14 @@
 |--------------------|--------|----------------------|
 | Ostbirger          | MT     | Paladin              |
 | Doughball          | OT     | Warrior              |
-| Yorekbarn          | DPS    | Warrior (Fury)       |
-| Dankyn             | DPS    | Warrior (Fury)       |
-| Ebonybolt          | DPS    | Shaman (Enhancement) |
-| Tonz/Tonsen        | DPS    | Hunter               |
-| Beaverfist         | DPS    | Druid (Balance)      |
-| Greg (Ucannotpass) | DPS    | Mage                 |
-| Siljes             | Healer | Priest               |
 | Roossy/Keatala     | Healer | Druid (Resto)        |
+| Siljes             | Healer | Priest               |
+| Beaverfist         | DPS    | Druid (Balance)      |
+| Tonz/Tonsen        | DPS    | Hunter               |
+| Greg (Ucannotpass) | DPS    | Mage                 |
+| Ebonybolt          | DPS    | Shaman (Enhancement) |
+| Dankyn             | DPS    | Warrior (Fury)       |
+| Yorekbarn          | DPS    | Warrior (Fury)       |
 
 ### Team BaeGlaives
 
@@ -60,20 +60,60 @@
 |---------------------|--------|----------------------|
 | Marino-Varthier     | MT     | Paladin              |
 | Gigakox             | OT     | Warrior              |
-| Glaivemaster Baebay | DPS    | Rogue (Combat)       |
-| Leontes             | DPS    | Paladin (Ret)        |
-| Lynelen             | DPS    | Shaman (Enhancement) |
-| Vaelruna            | DPS    | Hunter               |
-| McHughes            | DPS    | Warlock              |
-| OomToDoom           | DPS    | Mage                 |
+| Heligeman           | Healer | Paladin (Holy)       |
 | Thordrel            | Healer | Paladin (Holy)       |
-| Heligeman  | Healer | Paladin (Holy)       |
+| Vaelruna            | DPS    | Hunter               |
+| OomToDoom           | DPS    | Mage                 |
+| Leontes             | DPS    | Paladin (Ret)        |
+| Glaivemaster Baebay | DPS    | Rogue (Combat)       |
+| Lynelen             | DPS    | Shaman (Enhancement) |
+| McHughes            | DPS    | Warlock              |
 
 **Composition check:** Target per team: 2T / 2H / 6 DPS = 10. Total target across 3 teams: 30. Actual: 3 × 10 = 30. Status: ⚠️ Team Restaurant runs 2 Warrior tanks with no Paladin (Paladin shortage exemption — see Notes).
 
 ## Bench (0)
 
 *(None — all 30 spots filled)*
+
+## Discord announcement
+
+## Karazhan — Sunday 19.04
+
+**Team Restaurant (10)**
+- MT: Mirohl (Warrior)
+- OT: CptKavior (Warrior)
+- Healer: Gresac/Younea (Restoration Druid)
+- Healer: Lightweit (Holy Priest)
+- DPS: Yxanb (Feral Druid)
+- DPS: Pergatori (Elemental Shaman)
+- DPS: Bergamotka (Enhancement Shaman)
+- DPS: BestPractice (Warlock)
+- DPS: Verysadge (Fury Warrior)
+- DPS: PUG DPS
+
+**Team Bakery (10)**
+- MT: Ostbirger (Paladin)
+- OT: Doughball (Warrior)
+- Healer: Roossy/Keatala (Restoration Druid)
+- Healer: Siljes (Priest)
+- DPS: Beaverfist (Balance Druid)
+- DPS: Tonz/Tonsen (Hunter)
+- DPS: Greg (Ucannotpass) (Mage)
+- DPS: Ebonybolt (Enhancement Shaman)
+- DPS: Dankyn (Fury Warrior)
+- DPS: Yorekbarn (Fury Warrior)
+
+**Team BaeGlaives (10)**
+- MT: Marino-Varthier (Paladin)
+- OT: Gigakox (Warrior)
+- Healer: Heligeman (Holy Paladin)
+- Healer: Thordrel (Holy Paladin)
+- DPS: Vaelruna (Hunter)
+- DPS: OomToDoom (Mage)
+- DPS: Leontes (Retribution Paladin)
+- DPS: Glaivemaster Baebay (Combat Rogue)
+- DPS: Lynelen (Enhancement Shaman)
+- DPS: McHughes (Warlock)
 
 ## Notes
 

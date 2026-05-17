@@ -24,14 +24,14 @@
 |----------------|--------|----------------------|
 | Ostbirger      | MT     | Paladin (Prot)       |
 | Gigakox        | OT     | Warrior (Prot)       |
-| Ebonybolt      | DPS    | Shaman (Enhancement) |
-| Jar            | DPS    | Druid (Balance)      |
-| Leontes        | DPS    | Paladin (Ret)        |
-| OomToDoom      | DPS    | Mage                 |
-| Shapkica       | DPS    | Druid (Feral)        |
-| Tonz/Tonsen    | DPS    | Hunter               |
 | Heligeman      | Healer | Paladin (Holy)       |
 | Lightweit      | Healer | Priest (Holy)        |
+| Jar            | DPS    | Druid (Balance)      |
+| Shapkica       | DPS    | Druid (Feral)        |
+| Tonz/Tonsen    | DPS    | Hunter               |
+| OomToDoom      | DPS    | Mage                 |
+| Leontes        | DPS    | Paladin (Ret)        |
+| Ebonybolt      | DPS    | Shaman (Enhancement) |
 
 ### Team Bakery
 
@@ -39,18 +39,18 @@
 |---------------------|--------|----------------------|
 | Marino-Varthier     | MT     | Paladin (Prot)       |
 | CptKavior           | OT     | Warrior (Prot)       |
-| Jabbadhutt          | DPS    | Warlock              |
-| Kres/Dissi          | DPS    | Priest (Shadow)      |
-| Lenno/Mellymel      | DPS    | Mage (Arcane)        |
-| Lynelen             | DPS    | Shaman (Enhancement) |
-| Vaelruna            | DPS    | Hunter               |
-| Verysadge           | DPS    | Warrior (Fury)       |
 | Beaverfist          | Healer | Druid (Resto)        |
 | Pergatori           | Healer | Shaman (Resto)       |
+| Vaelruna            | DPS    | Hunter               |
+| Lenno/Mellymel      | DPS    | Mage (Arcane)        |
+| Kres/Dissi          | DPS    | Priest (Shadow)      |
+| Lynelen             | DPS    | Shaman (Enhancement) |
+| Jabbadhutt          | DPS    | Warlock              |
+| Verysadge           | DPS    | Warrior (Fury)       |
 
 **Composition check:** Target per team: 2T / 2H / 6 DPS = 10. Total across 2 teams (under-cap 2-team formation per `rules/01-raid-compositions.md` → "Under-cap team count", 25-26 ambiguous case): 20. Actual: 2 × 10 = 20. Status: ✅.
 
-## Dual-spec flex applied
+## Comp flex applied
 
 | Player     | Asked to switch from → to      | Tier | Accepted? | Notes                                                                 |
 |------------|--------------------------------|------|-----------|-----------------------------------------------------------------------|
@@ -66,6 +66,36 @@
 | Gresac/Younea | 2        | 2                                         | manual override |
 | Thordrel      | 2        | 1                                         | manual override |
 | Yxanb         | 2        | 1                                         | fair rotation   |
+
+## Discord announcement
+
+## Karazhan — Wednesday 29.04
+
+**Team Restaurant (10)**
+- MT: Ostbirger (Protection Paladin)
+- OT: Gigakox (Protection Warrior)
+- Healer: Heligeman (Holy Paladin)
+- Healer: Lightweit (Holy Priest)
+- DPS: Jar (Balance Druid)
+- DPS: Shapkica (Feral Druid)
+- DPS: Tonz/Tonsen (Hunter)
+- DPS: OomToDoom (Mage)
+- DPS: Leontes (Retribution Paladin)
+- DPS: Ebonybolt (Enhancement Shaman)
+
+**Team Bakery (10)**
+- MT: Marino-Varthier (Protection Paladin)
+- OT: CptKavior (Protection Warrior)
+- Healer: Beaverfist (Restoration Druid)
+- Healer: Pergatori (Restoration Shaman)
+- DPS: Vaelruna (Hunter)
+- DPS: Lenno/Mellymel (Arcane Mage)
+- DPS: Kres/Dissi (Shadow Priest)
+- DPS: Lynelen (Enhancement Shaman)
+- DPS: Jabbadhutt (Warlock)
+- DPS: Verysadge (Fury Warrior)
+
+On the bench: Bergamotka, Dankyn, Greg, Gresac/Younea, Thordrel and Yxanb. But if you show up online around raid time, there's a decent chance a spot will free up because of last-minute changes.
 
 ## Notes
 

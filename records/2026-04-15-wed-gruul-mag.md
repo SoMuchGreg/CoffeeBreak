@@ -28,9 +28,9 @@
 
 | Player          | Class   |
 |-----------------|---------|
-| Mirohl          | Warrior |
 | Marino-Varthier | Paladin |
 | Ostbirger       | Paladin |
+| Mirohl          | Warrior |
 
 ### Healers (6)
 
@@ -38,8 +38,8 @@
 |----------------|----------------|
 | Gresac/Younea  | Druid (Resto)  |
 | Roossy/Keatala | Druid (Resto)  |
-| Thordrel       | Paladin (Holy) |
 | McJudgin       | Paladin (Holy) |
+| Thordrel       | Paladin (Holy) |
 | Bombzor        | Priest (Holy)  |
 | Lightweit      | Priest (Holy)  |
 
@@ -47,22 +47,22 @@
 
 | Player              | Class              |
 |---------------------|--------------------|
-| Dankyn              | Warrior (Fury)     |
-| Gigakox             | Warrior (Fury)     |
-| Verysadge           | Warrior (Fury)     |
-| Yxanb               | Druid (Feral)      |
 | Beaverfist          | Druid (Balance)    |
-| Glaivemaster Baebay | Rogue (Combat)     |
+| Yxanb               | Druid (Feral)      |
+| Tonz/Tonsen         | Hunter             |
+| Vaelruna            | Hunter             |
+| Greg (Ucannotpass)  | Mage               |
+| OomToDoom           | Mage               |
 | Leontes             | Paladin (Ret)      |
 | Kres/Dissi          | Priest (Shadow)    |
-| OomToDoom           | Mage               |
-| Greg (Ucannotpass)  | Mage               |
-| McHughes            | Warlock            |
-| Vaelruna            | Hunter             |
-| Tonz/Tonsen         | Hunter             |
+| Glaivemaster Baebay | Rogue (Combat)     |
 | Pergatori           | Shaman (Elemental) |
 | Bergamotka          | Shaman (Enhancement) |
 | Ebonybolt           | Shaman (Enhancement) |
+| McHughes            | Warlock            |
+| Dankyn              | Warrior (Fury)     |
+| Gigakox             | Warrior (Fury)     |
+| Verysadge           | Warrior (Fury)     |
 
 **Composition check:** Target 3/6/16 for Gruul+Mag (per `rules/01-raid-compositions.md`). Actual: 3/6/16 = 25. Status: ⚠️ Warlock count dropped to 1 (below Section 8's combined Destro+Affli lower bound of 3) after Ōtsu and Jabbadhutt withdrew — unfillable since no other Warlocks signed up. Role targets (tank/healer/DPS) still on point.
 
@@ -102,6 +102,65 @@
 | South West  | Circle   | McHughes        |
 | North East  | Square   | Marino-Varthier |
 | North West  | Diamond  | Ostbirger       |
+
+## Discord announcement
+
+## Gruul + Magtheridon — Wednesday 15.04
+
+**Tanks (3)**
+- Marino-Varthier (Paladin)
+- Ostbirger (Paladin)
+- Mirohl (Warrior)
+
+**Healers (6)**
+- Gresac/Younea (Restoration Druid)
+- Roossy/Keatala (Restoration Druid)
+- McJudgin (Holy Paladin)
+- Thordrel (Holy Paladin)
+- Bombzor (Holy Priest)
+- Lightweit (Holy Priest)
+
+**DPS (16)**
+- Beaverfist (Balance Druid)
+- Yxanb (Feral Druid)
+- Tonz/Tonsen (Hunter)
+- Vaelruna (Hunter)
+- Greg (Ucannotpass) (Mage)
+- OomToDoom (Mage)
+- Leontes (Retribution Paladin)
+- Kres/Dissi (Shadow Priest)
+- Glaivemaster Baebay (Combat Rogue)
+- Pergatori (Elemental Shaman)
+- Bergamotka (Enhancement Shaman)
+- Ebonybolt (Enhancement Shaman)
+- McHughes (Warlock)
+- Dankyn (Fury Warrior)
+- Gigakox (Fury Warrior)
+- Verysadge (Fury Warrior)
+
+### Encounter assignments
+
+**High King Maulgar**
+- Maulgar Tank: Mirohl
+- Maulgar Healer: Thordrel, Bombzor
+- Mage Tank (Krosh): OomToDoom
+- Mage Tank Healer: Roossy/Keatala
+- Kiggler Tank: Beaverfist
+- Kiggler Tank Healer: Lightweit
+- Olm Tank: Marino-Varthier
+- Felhunter Subjugate: Jabbadhutt, McHughes
+- Olm Tank Healer: McJudgin
+- Blindeye Tank: Ostbirger
+- Blindeye Tank Healer: Gresac/Younea
+
+**Magtheridon — Cube Clickers**
+- South (Star): Kres/Dissi
+- South East (Triangle): Greg
+- South West (Circle): McHughes
+- North East (Square): Marino-Varthier
+- North West (Diamond): Ostbirger
+
+On the bench: CptKavior and Lynelen. But if you show up online around raid time, there's a decent chance a spot will free up because of last-minute changes.
 
 ## Notes
 

@@ -31,14 +31,14 @@
 |-----------------|--------|----------------------|
 | Ostbirger       | MT     | Paladin (Prot)       |
 | Gigakox         | OT     | Warrior (Prot)       |
-| Ebonybolt       | DPS    | Shaman (Enhancement) |
-| Jar             | DPS    | Druid (Balance)      |
-| Kres/Dissi      | DPS    | Priest (Shadow)      |
-| Lynelen         | DPS    | Shaman (Enhancement) |
-| Pergatori       | DPS    | Shaman (Elemental)   |
-| Yxanb           | DPS    | Druid (Feral)        |
 | Roossy/Keatala  | Healer | Druid (Resto)        |
 | Siljes          | Healer | Priest (Holy)        |
+| Jar             | DPS    | Druid (Balance)      |
+| Yxanb           | DPS    | Druid (Feral)        |
+| Kres/Dissi      | DPS    | Priest (Shadow)      |
+| Pergatori       | DPS    | Shaman (Elemental)   |
+| Ebonybolt       | DPS    | Shaman (Enhancement) |
+| Lynelen         | DPS    | Shaman (Enhancement) |
 
 ### Team Bakery
 
@@ -46,14 +46,14 @@
 |-------------------|--------|----------------------|
 | Marino-Varthier   | MT     | Paladin (Prot)       |
 | CptKavior         | OT     | Warrior (Protection) |
-| Bergamotka        | DPS    | Shaman (Enhancement) |
-| Greg(Ucannotpass) | DPS    | Mage                 |
-| Jabbadhutt        | DPS    | Warlock              |
-| McJudgin          | DPS    | Paladin (Ret)        |
-| PUG DPS           | DPS    | —                    |
-| Vaelruna          | DPS    | Hunter               |
 | Beaverfist        | Healer | Druid (Resto)        |
 | Lightweit         | Healer | Priest (Holy)        |
+| Vaelruna          | DPS    | Hunter               |
+| Greg(Ucannotpass) | DPS    | Mage                 |
+| McJudgin          | DPS    | Paladin (Ret)        |
+| Bergamotka        | DPS    | Shaman (Enhancement) |
+| Jabbadhutt        | DPS    | Warlock              |
+| PUG DPS           | DPS    | —                    |
 
 **Composition check:** Target per team: 2T / 2H / 6 DPS = 10. Total across 2 teams (under-cap 2-team formation per `rules/01-raid-compositions.md` → "Under-cap team count", 25-26 ambiguous case): 20. Actual: 2 × 10 = 20. Status: ✅.
 
@@ -63,9 +63,39 @@
 |--------------------|----------|-------------------------------------------|-----------------|
 | Gresac/Younea      | 2        | 1                                         | manual override |
 
-## Dual-spec flex
+## Comp flex applied
 
 - **Beaverfist:** DPS (Balance) → Healer (Resto) — covers Gresac/Younea's vacated Bakery healer slot after Gresac/Younea self-benched (Round 5). Consent derived from player's `rules/04-players.md` note ("asks for healing spot in the future") + user instruction.
+
+## Discord announcement
+
+## Karazhan — Wednesday 22.04
+
+**Team Restaurant (10)**
+- MT: Ostbirger (Protection Paladin)
+- OT: Gigakox (Protection Warrior)
+- Healer: Roossy/Keatala (Restoration Druid)
+- Healer: Siljes (Holy Priest)
+- DPS: Jar (Balance Druid)
+- DPS: Yxanb (Feral Druid)
+- DPS: Kres/Dissi (Shadow Priest)
+- DPS: Pergatori (Elemental Shaman)
+- DPS: Ebonybolt (Enhancement Shaman)
+- DPS: Lynelen (Enhancement Shaman)
+
+**Team Bakery (10)**
+- MT: Marino-Varthier (Protection Paladin)
+- OT: CptKavior (Protection Warrior)
+- Healer: Beaverfist (Restoration Druid)
+- Healer: Lightweit (Holy Priest)
+- DPS: Vaelruna (Hunter)
+- DPS: Greg(Ucannotpass) (Mage)
+- DPS: McJudgin (Retribution Paladin)
+- DPS: Bergamotka (Enhancement Shaman)
+- DPS: Jabbadhutt (Warlock)
+- DPS: PUG DPS
+
+On the bench: Gresac/Younea. But if you show up online around raid time, there's a decent chance a spot will free up because of last-minute changes.
 
 ## Notes
 
