@@ -116,7 +116,7 @@ A 5-mini-boss council fight. Every mini-boss needs a dedicated tank/handler plus
 | Maulgar Tank         | **Must be a core tank**                               | 1      | See *Maulgar Tank assignment* below.                                                                                       |
 | Maulgar Tank MD      | **Must be a Hunter**                                  | 1      | Initial-threat Misdirect at pull. See *Hunter Misdirect (MD) assignment* below for fill conditions.                        |
 | Maulgar Healer       | Any healer                                            | 2      | See *Maulgar Healer assignment* below.                                                                                     |
-| Mage Tank (Krosh)    | **Must be a Mage** (Spellsteals Krosh's Spell Shield) | 1      | Very strong preference: **Greg**.                                                                                          |
+| Mage Tank (Krosh)    | **Must be a Mage** (Spellsteals Krosh's Spell Shield) | 1      | Very strong preference: **Greg(Ucannotpass)**.                                                                                          |
 | Mage Tank Healer     | Any healer                                            | 1      |                                                                                                                            |
 | Kiggler Tank         | **Balance Druid** (preferred); **else 2 Ranged DPS**  | 1 or 2 | Class-based strong preference — not a named player. See *Kiggler Tank assignment* below for the 1-or-2 decision tree.      |
 | Kiggler Tank Healer  | Any healer                                            | 1      | One healer covers the Kiggler tank(s) regardless of whether it's a solo Balance druid or a 2-ranged-DPS pair.              |
@@ -255,13 +255,13 @@ If the user later wants to track any of the above, add the role to the canonical
 
 #### Hydross the Unstable
 
-| Role             | Eligibility requirement                       | Count | Notes                                                                                                                               |
-|------------------|-----------------------------------------------|-------|-------------------------------------------------------------------------------------------------------------------------------------|
-| Frost Tank       | **Marino-Varthier only** (named-player hard)  | 1     | See *Hydross named tank assignments* below.                                                                                         |
-| Nature Tank      | **Ostbirger only** (named-player hard)        | 1     | See *Hydross named tank assignments* below.                                                                                         |
-| Adds Tank        | **Gigakox only** (named-player hard)          | 1     | See *Hydross named tank assignments* below.                                                                                         |
-| Tank Healer      | Any healer; Druid/Paladin preferred           | 2     | Covering the Frost/Nature tank swap pair.                                                                                           |
-| Adds Tank Healer | Any healer; Druid/Paladin preferred           | 2     | Covering the Adds Tank. Distinct from Tank Healer slots per the no-double-booking rule (*Common framework → Assignment algorithm*). |
+| Role             | Eligibility requirement                        | Count | Notes                                                                                                                               |
+|------------------|------------------------------------------------|-------|-------------------------------------------------------------------------------------------------------------------------------------|
+| Frost Tank       | **Marino(Varthier) only** (named-player hard)  | 1     | See *Hydross named tank assignments* below.                                                                                         |
+| Nature Tank      | **Ostbirger only** (named-player hard)         | 1     | See *Hydross named tank assignments* below.                                                                                         |
+| Adds Tank        | **Gigakox only** (named-player hard)           | 1     | See *Hydross named tank assignments* below.                                                                                         |
+| Tank Healer      | Any healer; Druid/Paladin preferred            | 2     | Covering the Frost/Nature tank swap pair.                                                                                           |
+| Adds Tank Healer | Any healer; Druid/Paladin preferred            | 2     | Covering the Adds Tank. Distinct from Tank Healer slots per the no-double-booking rule (*Common framework → Assignment algorithm*). |
 
 #### The Lurker Below
 

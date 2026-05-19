@@ -4,7 +4,7 @@
 
 ## Signups (from Discord) — 13
 
-**Tanks (1):** Marino-Varthier
+**Tanks (1):** Marino(Varthier)
 **Warriors (3):** Mirohl, Verysadge, Lovepotion94
 **Druids (2):** Kres/Dissi, Jar
 **Paladins (1):** Thordrel

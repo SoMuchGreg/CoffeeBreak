@@ -4,13 +4,13 @@
 
 ## Signups (from Discord) — 23 (+2)
 
-**Tanks (5):** Mirohl, Buns/Sourbuns, Venguard, Marino-Varthier, Ryro
+**Tanks (5):** Mirohl, Buns/Sourbuns, Venguard, Marino(Varthier), Ryro
 **Warriors (3):** Fredfull, Verysadge, Flippkisi
 **Druids (5):** Erushi, Kryxs, Gresac/Younea, Zemp, Jar
 **Paladins (1):** Thordrel
 **Hunters (2):** Vaelruna, overaggro
 **Priests (2):** Bhandage, Aserrah
-**Mages (3):** Greg/Ucannotpass, OomToDoom, Jinothy
+**Mages (3):** Greg(Ucannotpass), OomToDoom, Jinothy
 **Warlocks (1):** Mairen/Zorÿa
 **Shamans (1):** David/Dejv
 

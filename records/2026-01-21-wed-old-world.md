@@ -4,14 +4,14 @@
 
 ## Signups (from Discord) — 15 (+2)
 
-**Tanks (3):** Mirohl, Buns/Sourbuns, Marino-Varthier
+**Tanks (3):** Mirohl, Buns/Sourbuns, Marino(Varthier)
 **Warriors (1):** Verysadge
 **Druids (1):** Jar
 **Paladins (1):** Heligeman
 **Rogues (2):** Glaivemaster Baebay, Molgrod
 **Hunters (2):** Lixly, Vaelruna
 **Priests (2):** Kres/Dissi, Medianos
-**Mages (2):** Faroula, Greg/Ucannotpass
+**Mages (2):** Faroula, Greg(Ucannotpass)
 **Warlocks (1):** Trisslott
 
 **Header stats:** Melee 3/3, Ranged 5, Healers 4

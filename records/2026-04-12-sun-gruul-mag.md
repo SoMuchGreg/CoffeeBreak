@@ -2,14 +2,14 @@
 
 ## Signups (from Discord) — 26 (+3 bench)
 
-**Tanks (3):** Mirohl, Ostbirger, Marino-Varthier
+**Tanks (3):** Mirohl, Ostbirger, Marino(Varthier)
 **Warriors (3):** Gigakox, Verysadge, Dankyn
 **Druids (3):** Gresac/Younea, Beaverfist, Jar
 **Paladins (3):** McJudgin, Thordrel, Leontes
-**Rogue (1):** GlaivemasterBaeba
+**Rogue (1):** Glaivemaster Baebay
 **Hunters (3):** Tonz/Tonsen, Vaelruna, Dwarfytron
 **Priests (2):** Siljes, Lightweit
-**Mage (1):** Greg/Ucannotpass
+**Mage (1):** Greg(Ucannotpass)
 **Warlocks (2):** Jabbadhutt, BestPractice
 **Shamans (4):** Pergatori, Lynelen, Ebonybolt, Bergamotka
 
@@ -23,43 +23,43 @@ Ran with 25 as expected.
 
 ### Tanks (3)
 
-| Player              | Class   |
-|---------------------|---------|
-| Marino-Varthier     | Paladin |
-| Ostbirger           | Paladin |
-| Mirohl              | Warrior |
+| Player           | Class   |
+|------------------|---------|
+| Marino(Varthier) | Paladin |
+| Ostbirger        | Paladin |
+| Mirohl           | Warrior |
 
 ### Healers (6)
 
-| Player          | Class   |
-|-----------------|---------|
-| Beaverfist      | Druid   |
-| Gresac/Younea   | Druid   |
-| McJudgin        | Paladin |
-| Thordrel        | Paladin |
-| Lightweit       | Priest  |
-| Siljes          | Priest  |
+| Player        | Class   |
+|---------------|---------|
+| Beaverfist    | Druid   |
+| Gresac/Younea | Druid   |
+| McJudgin      | Paladin |
+| Thordrel      | Paladin |
+| Lightweit     | Priest  |
+| Siljes        | Priest  |
 
 ### DPS (17)
 
-| Player            | Class   |
-|-------------------|---------|
-| Jar               | Druid   |
-| Dwarfytron        | Hunter  |
-| Tonz/Tonsen       | Hunter  |
-| Vaelruna          | Hunter  |
-| Greg/Ucannotpass  | Mage    |
-| Leontes           | Paladin |
-| GlaivemasterBaeba | Rogue   |
-| Bergamotka        | Shaman  |
-| Ebonybolt         | Shaman  |
-| Lynelen           | Shaman  |
-| Pergatori         | Shaman  |
-| BestPractice      | Warlock |
-| Jabbadhutt        | Warlock |
-| Dankyn            | Warrior |
-| Gigakox           | Warrior |
-| Verysadge         | Warrior |
+| Player              | Class   |
+|---------------------|---------|
+| Jar                 | Druid   |
+| Dwarfytron          | Hunter  |
+| Tonz/Tonsen         | Hunter  |
+| Vaelruna            | Hunter  |
+| Greg(Ucannotpass)   | Mage    |
+| Leontes             | Paladin |
+| Glaivemaster Baebay | Rogue   |
+| Bergamotka          | Shaman  |
+| Ebonybolt           | Shaman  |
+| Lynelen             | Shaman  |
+| Pergatori           | Shaman  |
+| BestPractice        | Warlock |
+| Jabbadhutt          | Warlock |
+| Dankyn              | Warrior |
+| Gigakox             | Warrior |
+| Verysadge           | Warrior |
 
 **Composition:** 3 tanks, 6 healers, 16 DPS (25 total)
 
@@ -77,36 +77,36 @@ Ran with 25 as expected.
 
 ### High King Maulgar
 
-| Role                 | Player             | Notes                                        |
-|----------------------|--------------------|----------------------------------------------|
-| Maulgar Tank         | Mirohl             | Dwarfytron MD                                |
-| Maulgar Healer       | Thordrel, Siljes   |                                              |
-| Mage Tank (Krosh)    | OomToDoom          | Benched per ## Signups — see Notes           |
-| Mage Tank Healer     | Beaverfist         |                                              |
-| Kiggler Tank         | Tonz/Tonsen, Greg  | 2 ranged DPS                                 |
-| Kiggler Tank Healer  | Lightweit          |                                              |
-| Olm Tank             | Ostbirger          | until felhunter                              |
-| Felhunter Subjugate  | Jabbadhutt         |                                              |
-| Olm Tank Healer      | McJudgin           |                                              |
-| Blindeye Tank        | Marino-Varthier    | Vaelruna MD                                  |
-| Blindeye Tank Healer | Gresac/Younea      |                                              |
+| Role                 | Player                         | Notes                              |
+|----------------------|--------------------------------|------------------------------------|
+| Maulgar Tank         | Mirohl                         | Dwarfytron MD                      |
+| Maulgar Healer       | Thordrel, Siljes               |                                    |
+| Mage Tank (Krosh)    | OomToDoom                      | Benched per ## Signups — see Notes |
+| Mage Tank Healer     | Beaverfist                     |                                    |
+| Kiggler Tank         | Tonz/Tonsen, Greg(Ucannotpass) | 2 ranged DPS                       |
+| Kiggler Tank Healer  | Lightweit                      |                                    |
+| Olm Tank             | Ostbirger                      | until felhunter                    |
+| Felhunter Subjugate  | Jabbadhutt                     |                                    |
+| Olm Tank Healer      | McJudgin                       |                                    |
+| Blindeye Tank        | Marino(Varthier)               | Vaelruna MD                        |
+| Blindeye Tank Healer | Gresac/Younea                  |                                    |
 
 ### Magtheridon — Cube Clickers
 
-| Location    | Marker   | Player          |
-|-------------|----------|-----------------|
-| South       | Star     | Pergatori       |
-| South East  | Triangle | Greg            |
-| South West  | Circle   | Jabbadhutt      |
-| North East  | Square   | Marino-Varthier |
-| North West  | Diamond  | Ostbirger       |
+| Location   | Marker   | Player            |
+|------------|----------|-------------------|
+| South      | Star     | Pergatori         |
+| South East | Triangle | Greg(Ucannotpass) |
+| South West | Circle   | Jabbadhutt        |
+| North East | Square   | Marino(Varthier)  |
+| North West | Diamond  | Ostbirger         |
 
 ## Discord announcement
 
 ## Gruul + Magtheridon — Sunday 12.04
 
 **Tanks (3)**
-- Marino-Varthier (Paladin)
+- Marino(Varthier) (Paladin)
 - Ostbirger (Paladin)
 - Mirohl (Warrior)
 
@@ -123,9 +123,9 @@ Ran with 25 as expected.
 - Dwarfytron (Hunter)
 - Tonz/Tonsen (Hunter)
 - Vaelruna (Hunter)
-- Greg/Ucannotpass (Mage)
+- Greg(Ucannotpass) (Mage)
 - Leontes (Paladin)
-- GlaivemasterBaeba (Rogue)
+- Glaivemaster Baebay (Rogue)
 - Bergamotka (Shaman)
 - Ebonybolt (Shaman)
 - Lynelen (Shaman)
@@ -143,19 +143,19 @@ Ran with 25 as expected.
 - Maulgar Healer: Thordrel, Siljes
 - Mage Tank (Krosh): OomToDoom
 - Mage Tank Healer: Beaverfist
-- Kiggler Tank: Tonz/Tonsen, Greg
+- Kiggler Tank: Tonz/Tonsen, Greg(Ucannotpass)
 - Kiggler Tank Healer: Lightweit
 - Olm Tank: Ostbirger
 - Felhunter Subjugate: Jabbadhutt
 - Olm Tank Healer: McJudgin
-- Blindeye Tank: Marino-Varthier
+- Blindeye Tank: Marino(Varthier)
 - Blindeye Tank Healer: Gresac/Younea
 
 **Magtheridon — Cube Clickers**
 - South (Star): Pergatori
-- South East (Triangle): Greg
+- South East (Triangle): Greg(Ucannotpass)
 - South West (Circle): Jabbadhutt
-- North East (Square): Marino-Varthier
+- North East (Square): Marino(Varthier)
 - North West (Diamond): Ostbirger
 
 On the bench: Roossy/Keatala, Heligeman and OomToDoom. But if you show up online around raid time, there's a decent chance a spot will free up because of last-minute changes.
@@ -168,4 +168,4 @@ On the bench: Roossy/Keatala, Heligeman and OomToDoom. But if you show up online
 - Yorekbarn was signed up but is not coming.
 - Leontes played DPS — Paladin, spec still unclear (Ret?).
 - Roossy/Keatala benched for 2nd time — should be prioritized for spots next time.
-- **OomToDoom assigned but benched.** The published Discord encounter assignments (10.04.2026 19:36) named OomToDoom as Mage Tank, but he signed up as bench (+3 bench) and did not play. Greg (the raid's only other Mage) likely covered Krosh's Spellsteal duty, or the assignment was updated pre-raid.
+- **OomToDoom assigned but benched.** The published Discord encounter assignments (10.04.2026 19:36) named OomToDoom as Mage Tank, but he signed up as bench (+3 bench) and did not play. Greg(Ucannotpass) (the raid's only other Mage) likely covered Krosh's Spellsteal duty, or the assignment was updated pre-raid.

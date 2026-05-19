@@ -141,7 +141,7 @@ A core tank whose `Notes` column in `rules/04-players.md` contains "first line o
 
 ### Substitutes are not core tanks
 
-A tank filling a core slot in a specific raid because a named core tank is absent (e.g., CptKavior covering for Marino-Varthier when Marino isn't signed up) is **not** a core tank for any rule that references core-tank status. Core-tank membership is defined in *Canonical membership* above (Core tanks sub-table plus `Core tank`-flagged Officers rows), not by who happens to be filling tank duties this raid.
+A tank filling a core slot in a specific raid because a named core tank is absent (e.g., CptKavior covering for Marino(Varthier) when Marino isn't signed up) is **not** a core tank for any rule that references core-tank status. Core-tank membership is defined in *Canonical membership* above (Core tanks sub-table plus `Core tank`-flagged Officers rows), not by who happens to be filling tank duties this raid.
 
 ## Karazhan (10-man)
 

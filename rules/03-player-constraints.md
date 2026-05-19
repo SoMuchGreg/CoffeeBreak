@@ -39,39 +39,39 @@ The **Needlist** lists high-value loot drops players want to roll "need" on, pai
 | Item                                | Players competing                                                  | Notes |
 |-------------------------------------|--------------------------------------------------------------------|-------|
 | Bands of Indwelling                 | Lightweit                                                          |       |
-| Barbed Choker of Discipline         | Mcjudgin                                                           |       |
-| Battlescar Boots                    | Cptkavior                                                          |       |
+| Barbed Choker of Discipline         | McJudgin                                                           |       |
+| Battlescar Boots                    | CptKavior                                                          |       |
 | Blade of the Unrequited             | Vaelruna                                                           |       |
-| Boots of Foretelling                | Jar, Ucannotpass                                                   |       |
+| Boots of Foretelling                | Greg(Ucannotpass), Jar                                             |       |
 | Cowl of Defiance                    | Yxanb                                                              |       |
-| Crimson Girdle of the Indomitable   | Cptkavior                                                          |       |
-| Fiery Warhorse's Reins              | Bestpractice, Jar, Varthier                                        |       |
+| Crimson Girdle of the Indomitable   | CptKavior                                                          |       |
+| Fiery Warhorse's Reins              | BestPractice, Jar, Marino(Varthier)                                |       |
 | Forestlord Striders                 | Pergatori                                                          |       |
 | Girdle of Treachery                 | Vaelruna, Yxanb                                                    |       |
 | Gloves of the Fallen Champion       | Leontes, Thordrel                                                  |       |
 | Gloves of the Fallen Defender       | Lightweit                                                          |       |
 | Grips of Deftness                   | Leontes                                                            |       |
-| Helm of the Fallen Defender         | Beaverfist, Gigakox, Keatala, Kresniik                             |       |
-| Iron Gauntlets of the Maiden        | Mcjudgin                                                           |       |
+| Helm of the Fallen Defender         | Beaverfist, Gigakox, Kres/Dissi, Roossy/Keatala                    |       |
+| Iron Gauntlets of the Maiden        | McJudgin                                                           |       |
 | Ironstriders of Urgency             | Leontes                                                            |       |
 | Jade Ring of the Everliving         | Pergatori                                                          |       |
-| King's Defender                     | Cptkavior                                                          |       |
+| King's Defender                     | CptKavior                                                          |       |
 | Light's Justice                     | Pergatori, Siljes                                                  |       |
 | Nathrezim Mindblade                 | Beaverfist                                                         |       |
-| Nethershard Girdle                  | Ucannotpass                                                        |       |
+| Nethershard Girdle                  | Greg(Ucannotpass)                                                  |       |
 | Pendant of the Violet Eye           | Thordrel                                                           |       |
 | Ribbon of Sacrifice                 | Thordrel                                                           |       |
 | Ring of a Thousand Marks            | Gigakox, Leontes, Verysadge, Yorekbarn                             |       |
-| Ring of Recurrence                  | Bestpractice, Ucannotpass                                          |       |
-| Ruby Drape of the Mysticant         | Bestpractice                                                       |       |
+| Ring of Recurrence                  | BestPractice, Greg(Ucannotpass)                                    |       |
+| Ruby Drape of the Mysticant         | BestPractice                                                       |       |
 | Shining Chain of the Afterworld     | Lightweit                                                          |       |
 | Skulker's Greaves                   | Bergamotka, Dankyn, Gigakox, Vaelruna                              |       |
 | Spiteblade                          | Dankyn, Gigakox                                                    |       |
-| Stonebough Jerkin                   | Keatala                                                            |       |
+| Stonebough Jerkin                   | Roossy/Keatala                                                     |       |
 | The Decapitator                     | Bergamotka, Lynelen, Yorekbarn                                     |       |
-| Tirisfal Wand of Ascendancy         | Kresniik                                                           |       |
-| Trial-Fire Trousers                 | Kresniik                                                           |       |
-| Vambraces of Courage                | Cptkavior                                                          |       |
+| Tirisfal Wand of Ascendancy         | Kres/Dissi                                                         |       |
+| Trial-Fire Trousers                 | Kres/Dissi                                                         |       |
+| Vambraces of Courage                | CptKavior                                                          |       |
 | Wrynn Dynasty Greaves               | Ostbirger                                                          |       |
 
 **Applies to:** Karazhan only.
@@ -84,10 +84,10 @@ Some player professions affect raid group assignments.
 
 No two enchanters on the same Karazhan team. With only 2 enchanters currently in the guild, one of the 3 Karazhan teams will go without a dedicated enchanter when 3 teams are formed.
 
-| Player     | Character     |
-|------------|---------------|
-| Kres/Dissi | Kresniik      |
-| Greg       | Ucannotpass   |
+| Player            | Character   |
+|-------------------|-------------|
+| Kres/Dissi        | Kresniik    |
+| Greg(Ucannotpass) | Ucannotpass |
 
 **Applies to:** Karazhan nights only.
 

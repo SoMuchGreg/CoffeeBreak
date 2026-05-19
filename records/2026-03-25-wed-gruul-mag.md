@@ -4,14 +4,14 @@
 
 ## Signups (from Discord) — 29 total
 
-**Tanks (3):** Marino-Varthier, Mirohl, Doughball
+**Tanks (3):** Marino(Varthier), Mirohl, Doughball
 **Warriors (3):** Verysadge, Dankyn, Gigakox
 **Druids (6):** Yxanb, Gresac/Younea, Roossy/Keatala, Beaverfist, Jar, Eselman
 **Paladins (2):** Sjwammie, Thordrel
-**Rogue (1):** GlaivemasterBaeba
+**Rogue (1):** Glaivemaster Baebay
 **Hunters (3):** CodeHunt, Dwarfytron, Vaelruna
 **Priests (3):** Kres/Dissi, Bombzor, Siljes
-**Mages (2):** Greg/Ucannotpass, OomToDoom
+**Mages (2):** Greg(Ucannotpass), OomToDoom
 **Warlocks (2):** McHughes, Jabbadhutt
 **Shamans (4):** Bergamotka, Ebonybolt, Lynelen, Pergatori
 
@@ -23,43 +23,43 @@
 
 ### Tanks (2)
 
-| Player              | Class   |
-|---------------------|---------|
-| Mirohl              | Warrior |
-| Marino-Varthier     | Paladin |
+| Player           | Class   |
+|------------------|---------|
+| Mirohl           | Warrior |
+| Marino(Varthier) | Paladin |
 
 ### Healers (7)
 
-| Player             | Class   | Notes                   |
-|--------------------|---------|-------------------------|
-| Beaverfist         | Druid   |                         |
-| Jar                | Druid   | Resto spec              |
-| Sjwammie           | Paladin |                         |
-| Thordrel           | Paladin |                         |
-| Bombzor            | Priest  |                         |
-| Siljes             | Priest  |                         |
-| *(7th healer TBD)* |         | Header shows 7 healers  |
+| Player             | Class   | Notes                  |
+|--------------------|---------|------------------------|
+| Beaverfist         | Druid   |                        |
+| Jar                | Druid   | Resto spec             |
+| Sjwammie           | Paladin |                        |
+| Thordrel           | Paladin |                        |
+| Bombzor            | Priest  |                        |
+| Siljes             | Priest  |                        |
+| *(7th healer TBD)* |         | Header shows 7 healers |
 
 ### DPS (16)
 
-| Player              | Class   | Notes                              |
-|---------------------|---------|------------------------------------|
-| Doughball           | ?       | Tanks in Kara, DPS in 25-mans      |
-| Verysadge           | Warrior |                                    |
-| Dankyn              | Warrior |                                    |
-| Gigakox             | Warrior | DPS this time, not tanking         |
-| GlaivemasterBaeba   | Rogue   |                                    |
-| Yxanb               | Druid   |                                    |
-| Eselman             | Druid   | Feral DPS (confirmed)              |
-| CodeHunt            | Hunter  | Still on hunter at this date       |
-| Dwarfytron          | Hunter  |                                    |
-| Vaelruna            | Hunter  |                                    |
-| Kres/Dissi          | Priest  | Shadow                             |
-| Greg/Ucannotpass    | Mage    |                                    |
-| OomToDoom           | Mage    |                                    |
-| McHughes            | Warlock |                                    |
-| Jabbadhutt          | Warlock |                                    |
-| *(shamans — some DPS, possibly one healing)* | | |
+| Player                                       | Class   | Notes                         |
+|----------------------------------------------|---------|-------------------------------|
+| Doughball                                    | ?       | Tanks in Kara, DPS in 25-mans |
+| Verysadge                                    | Warrior |                               |
+| Dankyn                                       | Warrior |                               |
+| Gigakox                                      | Warrior | DPS this time, not tanking    |
+| Glaivemaster Baebay                          | Rogue   |                               |
+| Yxanb                                        | Druid   |                               |
+| Eselman                                      | Druid   | Feral DPS (confirmed)         |
+| CodeHunt                                     | Hunter  | Still on hunter at this date  |
+| Dwarfytron                                   | Hunter  |                               |
+| Vaelruna                                     | Hunter  |                               |
+| Kres/Dissi                                   | Priest  | Shadow                        |
+| Greg(Ucannotpass)                            | Mage    |                               |
+| OomToDoom                                    | Mage    |                               |
+| McHughes                                     | Warlock |                               |
+| Jabbadhutt                                   | Warlock |                               |
+| *(shamans — some DPS, possibly one healing)* |         |                               |
 
 **Shamans (4):** Bergamotka, Ebonybolt, Lynelen, Pergatori — exact role split (DPS vs healer) uncertain.
 
@@ -76,29 +76,29 @@
 
 ### High King Maulgar
 
-| Role                 | Player                   | Notes                                                                              |
-|----------------------|--------------------------|------------------------------------------------------------------------------------|
-| Maulgar Tank         | Marino-Varthier          |                                                                                    |
-| Maulgar Healer       | Thordrel, Bombzor        |                                                                                    |
-| Mage Tank (Krosh)    | OomToDoom                |                                                                                    |
-| Mage Tank Healer     | Beaverfist               |                                                                                    |
-| Kiggler Tank         | CodeHunt/Rainbound, Greg | 2 ranged DPS (no Balance druid available); CodeHunt was hunter at this date       |
-| Kiggler Tank Healer  | Sjwammie                 |                                                                                    |
-| Olm Tank             | Eselman                  | until felhunter                                                                    |
-| Felhunter Subjugate  | Jabbadhutt, McHughes     |                                                                                    |
-| Olm Tank Healer      | Siljes                   |                                                                                    |
-| Blindeye Tank        | Doughball                |                                                                                    |
-| Blindeye Tank Healer | Jar                      |                                                                                    |
+| Role                 | Player                                | Notes                                                                       |
+|----------------------|---------------------------------------|-----------------------------------------------------------------------------|
+| Maulgar Tank         | Marino(Varthier)                      |                                                                             |
+| Maulgar Healer       | Thordrel, Bombzor                     |                                                                             |
+| Mage Tank (Krosh)    | OomToDoom                             |                                                                             |
+| Mage Tank Healer     | Beaverfist                            |                                                                             |
+| Kiggler Tank         | CodeHunt/Rainbound, Greg(Ucannotpass) | 2 ranged DPS (no Balance druid available); CodeHunt was hunter at this date |
+| Kiggler Tank Healer  | Sjwammie                              |                                                                             |
+| Olm Tank             | Eselman                               | until felhunter                                                             |
+| Felhunter Subjugate  | Jabbadhutt, McHughes                  |                                                                             |
+| Olm Tank Healer      | Siljes                                |                                                                             |
+| Blindeye Tank        | Doughball                             |                                                                             |
+| Blindeye Tank Healer | Jar                                   |                                                                             |
 
 ### Magtheridon — Cube Clickers
 
-| Location    | Marker   | Player    |
-|-------------|----------|-----------|
-| South       | Star     | Greg      |
-| South East  | Triangle | McHughes  |
-| South West  | Circle   | Pergatori |
-| North East  | Square   | Doughball |
-| North West  | Diamond  | Mirohl    |
+| Location   | Marker   | Player            |
+|------------|----------|-------------------|
+| South      | Star     | Greg(Ucannotpass) |
+| South East | Triangle | McHughes          |
+| South West | Circle   | Pergatori         |
+| North East | Square   | Doughball         |
+| North West | Diamond  | Mirohl            |
 
 ## Notes
 

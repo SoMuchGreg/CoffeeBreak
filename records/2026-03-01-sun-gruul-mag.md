@@ -10,7 +10,7 @@
 **Paladins (2):** Thordrel, Calendril
 **Hunters (3):** Vaelruna, Lixly, Rhoator
 **Priests (4):** Kres/Dissi, Aserrah, Bhandage, Sickdeer
-**Mages (3):** Greg/Ucannotpass, OomToDoom, Jinothy
+**Mages (3):** Greg(Ucannotpass), OomToDoom, Jinothy
 **Warlocks (3):** McHughes, BestPractice, Mairen/Zorÿa
 
 **Header stats:** Melee 3/4, Ranged 11, Healers 6
@@ -37,13 +37,13 @@
 
 ### Magtheridon — Cube Clickers
 
-| Location    | Marker   | Player        |
-|-------------|----------|---------------|
-| South       | Star     | Buns/Sourbuns |
-| South East  | Triangle | Mairen/Zorÿa  |
-| South West  | Circle   | Gresac/Younea |
-| North East  | Square   | Greg          |
-| North West  | Diamond  | Ryro          |
+| Location   | Marker   | Player            |
+|------------|----------|-------------------|
+| South      | Star     | Buns/Sourbuns     |
+| South East | Triangle | Mairen/Zorÿa      |
+| South West | Circle   | Gresac/Younea     |
+| North East | Square   | Greg(Ucannotpass) |
+| North West | Diamond  | Ryro              |
 
 ## Notes
 

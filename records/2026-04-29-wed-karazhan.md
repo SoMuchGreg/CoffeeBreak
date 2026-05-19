@@ -2,13 +2,13 @@
 
 ## Signups (from Discord) — 26 (+1)
 
-**Tanks (4):** CptKavior, Marino-Varthier, Ostbirger, Gigakox
+**Tanks (4):** CptKavior, Marino(Varthier), Ostbirger, Gigakox
 **Warriors (2):** Verysadge, Dankyn
 **Druids (5):** Beaverfist, Jar, Yxanb, Gresac/Younea, Shapkica
 **Paladins (3):** Leontes, Thordrel, Heligeman
 **Hunters (2):** Vaelruna, Tonz/Tonsen
 **Priests (2):** Kres/Dissi, Lightweit
-**Mages (3):** Greg, OomToDoom, Lenno/Mellymel
+**Mages (3):** Greg(Ucannotpass), OomToDoom, Lenno/Mellymel
 **Warlocks (1):** Jabbadhutt
 **Shamans (4):** Lynelen, Bergamotka, Ebonybolt, Pergatori
 
@@ -20,52 +20,52 @@
 
 ### Team Restaurant
 
-| Player         | Role   | Class                |
-|----------------|--------|----------------------|
-| Ostbirger      | MT     | Paladin (Prot)       |
-| Gigakox        | OT     | Warrior (Prot)       |
-| Heligeman      | Healer | Paladin (Holy)       |
-| Lightweit      | Healer | Priest (Holy)        |
-| Jar            | DPS    | Druid (Balance)      |
-| Shapkica       | DPS    | Druid (Feral)        |
-| Tonz/Tonsen    | DPS    | Hunter               |
-| OomToDoom      | DPS    | Mage                 |
-| Leontes        | DPS    | Paladin (Ret)        |
-| Ebonybolt      | DPS    | Shaman (Enhancement) |
+| Player      | Role   | Class                |
+|-------------|--------|----------------------|
+| Ostbirger   | MT     | Paladin (Prot)       |
+| Gigakox     | OT     | Warrior (Prot)       |
+| Heligeman   | Healer | Paladin (Holy)       |
+| Lightweit   | Healer | Priest (Holy)        |
+| Jar         | DPS    | Druid (Balance)      |
+| Shapkica    | DPS    | Druid (Feral)        |
+| Tonz/Tonsen | DPS    | Hunter               |
+| OomToDoom   | DPS    | Mage                 |
+| Leontes     | DPS    | Paladin (Ret)        |
+| Ebonybolt   | DPS    | Shaman (Enhancement) |
 
 ### Team Bakery
 
-| Player              | Role   | Class                |
-|---------------------|--------|----------------------|
-| Marino-Varthier     | MT     | Paladin (Prot)       |
-| CptKavior           | OT     | Warrior (Prot)       |
-| Beaverfist          | Healer | Druid (Resto)        |
-| Pergatori           | Healer | Shaman (Resto)       |
-| Vaelruna            | DPS    | Hunter               |
-| Lenno/Mellymel      | DPS    | Mage (Arcane)        |
-| Kres/Dissi          | DPS    | Priest (Shadow)      |
-| Lynelen             | DPS    | Shaman (Enhancement) |
-| Jabbadhutt          | DPS    | Warlock              |
-| Verysadge           | DPS    | Warrior (Fury)       |
+| Player           | Role   | Class                |
+|------------------|--------|----------------------|
+| Marino(Varthier) | MT     | Paladin (Prot)       |
+| CptKavior        | OT     | Warrior (Prot)       |
+| Beaverfist       | Healer | Druid (Resto)        |
+| Pergatori        | Healer | Shaman (Resto)       |
+| Vaelruna         | DPS    | Hunter               |
+| Lenno/Mellymel   | DPS    | Mage (Arcane)        |
+| Kres/Dissi       | DPS    | Priest (Shadow)      |
+| Lynelen          | DPS    | Shaman (Enhancement) |
+| Jabbadhutt       | DPS    | Warlock              |
+| Verysadge        | DPS    | Warrior (Fury)       |
 
 **Composition check:** Target per team: 2T / 2H / 6 DPS = 10. Total across 2 teams (under-cap 2-team formation per `rules/01-raid-compositions.md` → "Under-cap team count", 25-26 ambiguous case): 20. Actual: 2 × 10 = 20. Status: ✅.
 
 ## Comp flex applied
 
-| Player     | Asked to switch from → to      | Tier | Accepted? | Notes                                                                 |
-|------------|--------------------------------|------|-----------|-----------------------------------------------------------------------|
+| Player     | Asked to switch from → to      | Tier | Accepted? | Notes                                                                     |
+|------------|--------------------------------|------|-----------|---------------------------------------------------------------------------|
 | Beaverfist | DPS (Balance) → Healer (Resto) | 0    | Yes       | First line offspec — standing consent; fills Bakery slot Thordrel vacated |
 
 ## Bench (6)
 
-| Player        | Priority | Bench count (cumulative, after this raid) | Reason          |
-|---------------|----------|-------------------------------------------|-----------------|
-| Bergamotka    | 2        | 1                                         | fair rotation   |
-| Dankyn        | 2        | 1                                         | fair rotation   |
-| Greg          | 1        | 1                                         | manual override |
-| Gresac/Younea | 2        | 2                                         | manual override |
-| Thordrel      | 2        | 1                                         | manual override |
-| Yxanb         | 2        | 1                                         | fair rotation   |
+| Player            | Priority | Bench count (cumulative, after this raid) | Reason          |
+|-------------------|----------|-------------------------------------------|-----------------|
+| Bergamotka        | 2        | 1                                         | fair rotation   |
+| Dankyn            | 2        | 1                                         | fair rotation   |
+| Greg(Ucannotpass) | 1        | 1                                         | manual override |
+| Gresac/Younea     | 2        | 2                                         | manual override |
+| Thordrel          | 2        | 1                                         | manual override |
+| Yxanb             | 2        | 1                                         | fair rotation   |
 
 ## Discord announcement
 
@@ -84,7 +84,7 @@
 - DPS: Ebonybolt (Enhancement Shaman)
 
 **Team Bakery (10)**
-- MT: Marino-Varthier (Protection Paladin)
+- MT: Marino(Varthier) (Protection Paladin)
 - OT: CptKavior (Protection Warrior)
 - Healer: Beaverfist (Restoration Druid)
 - Healer: Pergatori (Restoration Shaman)
@@ -95,13 +95,13 @@
 - DPS: Jabbadhutt (Warlock)
 - DPS: Verysadge (Fury Warrior)
 
-On the bench: Bergamotka, Dankyn, Greg, Gresac/Younea, Thordrel and Yxanb. But if you show up online around raid time, there's a decent chance a spot will free up because of last-minute changes.
+On the bench: Bergamotka, Dankyn, Greg(Ucannotpass), Gresac/Younea, Thordrel and Yxanb. But if you show up online around raid time, there's a decent chance a spot will free up because of last-minute changes.
 
 ## Notes
 
 - **26 signups → 2 teams + 6 benched**, user chose option (a) of the 25–26 ambiguous case (`rules/01-raid-compositions.md` → "Under-cap team count"). Shapkica was a post-build signup; full-roster recalculation triggered.
 - **Shapkica first appearance** — Druid, mainspec DPS (Feral), offspec Tank (Feral), priority 2. Added to `rules/04-players.md` this session.
-- **Greg (priority 1) manual-override bench** per user instruction, permitted under `rules/02-bench-rotation.md` → "User's discretionary bench picks".
+- **Greg(Ucannotpass) (priority 1) manual-override bench** per user instruction, permitted under `rules/02-bench-rotation.md` → "User's discretionary bench picks".
 - **Gresac/Younea manual-override bench** per user instruction, consistent with his `rules/04-players.md` note.
 - **Thordrel manual-override bench** per user instruction.
 - **Beaverfist Tier 0 first-line-offspec flex** Balance DPS → Resto Healer (`rules/01-raid-compositions.md` → "Handling role shortages → Asking order → Tier 0") to fill the Bakery healer slot vacated by Thordrel; Beaverfist moved Restaurant → Bakery.
@@ -114,12 +114,12 @@ On the bench: Bergamotka, Dankyn, Greg, Gresac/Younea, Thordrel and Yxanb. But i
 
 ## Loot conflicts
 
-| Item                          | Competitors                                         | Status                                |
-|-------------------------------|-----------------------------------------------------|---------------------------------------|
-| Fiery Warhorse's Reins        | Jar (R), Marino-Varthier (Bak)                      | ✓ split (BestPractice not in raid)    |
-| Helm of the Fallen Defender   | Beaverfist (Bak), Gigakox (R), Kres/Dissi (Bak)     | ⚠️ Beaverfist + Kres/Dissi (Bak)      |
-| Ring of a Thousand Marks      | Gigakox (R), Leontes (R), Verysadge (Bak)           | ⚠️ Gigakox + Leontes (R)              |
-| Skulker's Greaves             | Gigakox (R), Vaelruna (Bak)                         | ✓ split                               |
+| Item                        | Competitors                                     | Status                             |
+|-----------------------------|-------------------------------------------------|------------------------------------|
+| Fiery Warhorse's Reins      | Jar (R), Marino(Varthier) (Bak)                 | ✓ split (BestPractice not in raid) |
+| Helm of the Fallen Defender | Beaverfist (Bak), Gigakox (R), Kres/Dissi (Bak) | ⚠️ Beaverfist + Kres/Dissi (Bak)   |
+| Ring of a Thousand Marks    | Gigakox (R), Leontes (R), Verysadge (Bak)       | ⚠️ Gigakox + Leontes (R)           |
+| Skulker's Greaves           | Gigakox (R), Vaelruna (Bak)                     | ✓ split                            |
 
 **2/4 fully split.** HFD and Ring of a Thousand Marks are pigeonhole-forced (3 in-raid competitors / 2 teams), unavoidable. Gloves of the Fallen Champion (Leontes + Thordrel) dropped — Thordrel benched, single in-raid competitor.
 
@@ -129,7 +129,7 @@ On the bench: Bergamotka, Dankyn, Greg, Gresac/Younea, Thordrel and Yxanb. But i
 
 - HFD intra-team cluster (Beaverfist + Gigakox, R) — pigeonhole 3/2.
 - Ring of a Thousand Marks intra-team cluster (Gigakox + Leontes, R) — pigeonhole 3/2.
-- Greg priority-1 bench — manual override, permitted under `rules/02-bench-rotation.md` → "User's discretionary bench picks".
+- Greg(Ucannotpass) priority-1 bench — manual override, permitted under `rules/02-bench-rotation.md` → "User's discretionary bench picks".
 - Soft rule "1 Priest healer per team": Bakery has no Priest healer (only Lightweit signed up as Priest healer). Unfulfillable; Kres/Dissi as Shadow Priest covers Bakery's Power Word: Fortitude.
 - Soft rules "Hunter / Fury Warrior / Warlock distribution": single-instance roles after benches force 1-1 (Hunter, Mage, Enh) and solo placements (Fury Warrior, Warlock) — driven by signups, not by avoidable choices.
 

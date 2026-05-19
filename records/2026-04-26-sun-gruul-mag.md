@@ -8,7 +8,7 @@
 **Paladins (2):** Leontes, Thordrel
 **Hunters (3):** Vaelruna, Tonz/Tonsen, Grundiger
 **Priests (3):** Kres/Dissi, Siljes, Lightweit
-**Mages (2):** OomToDoom, Greg (Ucannotpass)
+**Mages (2):** OomToDoom, Greg(Ucannotpass)
 **Warlocks (1):** Jabbadhutt
 **Shamans (4):** Pergatori, Lynelen, Ebonybolt, Bergamotka
 
@@ -46,33 +46,33 @@
 
 ### DPS (16)
 
-| Player             | Class                |
-|--------------------|----------------------|
-| Jar                | Druid (Balance)      |
-| Yxanb              | Druid (Feral)        |
-| Grundiger          | Hunter               |
-| Tonz/Tonsen        | Hunter               |
-| Vaelruna           | Hunter               |
-| Greg (Ucannotpass) | Mage (Arcane)        |
-| OomToDoom          | Mage (Arcane)        |
-| Leontes            | Paladin (Ret)        |
-| Kres/Dissi         | Priest (Shadow)      |
-| Bergamotka         | Shaman (Enhancement) |
-| Ebonybolt          | Shaman (Enhancement) |
-| Lynelen            | Shaman (Enhancement) |
-| Jabbadhutt         | Warlock              |
-| Dankyn             | Warrior (Fury)       |
-| Verysadge          | Warrior (Fury)       |
-| Yorekbarn          | Warrior (Fury)       |
+| Player            | Class                |
+|-------------------|----------------------|
+| Jar               | Druid (Balance)      |
+| Yxanb             | Druid (Feral)        |
+| Grundiger         | Hunter               |
+| Tonz/Tonsen       | Hunter               |
+| Vaelruna          | Hunter               |
+| Greg(Ucannotpass) | Mage (Arcane)        |
+| OomToDoom         | Mage (Arcane)        |
+| Leontes           | Paladin (Ret)        |
+| Kres/Dissi        | Priest (Shadow)      |
+| Bergamotka        | Shaman (Enhancement) |
+| Ebonybolt         | Shaman (Enhancement) |
+| Lynelen           | Shaman (Enhancement) |
+| Jabbadhutt        | Warlock              |
+| Dankyn            | Warrior (Fury)       |
+| Verysadge         | Warrior (Fury)       |
+| Yorekbarn         | Warrior (Fury)       |
 
 **Composition check:** Target 3/6/16 for Gruul+Mag (per `rules/01-raid-compositions.md`). Actual: 3/6/16 = 25. Status: ✅ on target.
 
 ## Comp flex applied
 
-| Player    | Asked to switch from → to        | Tier | Accepted? | Notes                                                |
-|-----------|----------------------------------|------|-----------|------------------------------------------------------|
-| Pergatori | DPS (Elemental) → Healer (Resto) | 1    | Yes       | Leader confirmed at finalization                     |
-| Gigakox   | DPS (Fury) → Tank (Prot)         | 2    | Yes       | Covers 3rd-tank slot after Mirohl's guild departure  |
+| Player    | Asked to switch from → to        | Tier | Accepted? | Notes                                               |
+|-----------|----------------------------------|------|-----------|-----------------------------------------------------|
+| Pergatori | DPS (Elemental) → Healer (Resto) | 1    | Yes       | Leader confirmed at finalization                    |
+| Gigakox   | DPS (Fury) → Tank (Prot)         | 2    | Yes       | Covers 3rd-tank slot after Mirohl's guild departure |
 
 ## Bench (1)
 
@@ -84,39 +84,39 @@
 
 ### High King Maulgar
 
-| Role                 | Player             | Notes                              |
-|----------------------|--------------------|------------------------------------|
-| Maulgar Tank         | Ostbirger          |                                    |
-| Maulgar Tank MD      | Tonz/Tonsen        |                                    |
-| Maulgar Healer       | Thordrel, Siljes   |                                    |
-| Mage Tank (Krosh)    | OomToDoom          |                                    |
-| Mage Tank Healer     | Roossy/Keatala     |                                    |
-| Kiggler Tank         | Jar                | Balance druid solo                 |
-| Kiggler Tank Healer  | Lightweit          |                                    |
-| Olm Tank             | CptKavior          | until felhunter                    |
-| Felhunter Subjugate  | Jabbadhutt         | 1 Warlock in roster → 1 slot       |
-| Olm Tank Healer      | Pergatori          |                                    |
-| Blindeye Tank        | Gigakox            |                                    |
-| Blindeye Tank MD     | Vaelruna           |                                    |
-| Blindeye Tank Healer | Gresac/Younea      |                                    |
+| Role                 | Player           | Notes                        |
+|----------------------|------------------|------------------------------|
+| Maulgar Tank         | Ostbirger        |                              |
+| Maulgar Tank MD      | Tonz/Tonsen      |                              |
+| Maulgar Healer       | Thordrel, Siljes |                              |
+| Mage Tank (Krosh)    | OomToDoom        |                              |
+| Mage Tank Healer     | Roossy/Keatala   |                              |
+| Kiggler Tank         | Jar              | Balance druid solo           |
+| Kiggler Tank Healer  | Lightweit        |                              |
+| Olm Tank             | CptKavior        | until felhunter              |
+| Felhunter Subjugate  | Jabbadhutt       | 1 Warlock in roster → 1 slot |
+| Olm Tank Healer      | Pergatori        |                              |
+| Blindeye Tank        | Gigakox          |                              |
+| Blindeye Tank MD     | Vaelruna         |                              |
+| Blindeye Tank Healer | Gresac/Younea    |                              |
 
 ### Magtheridon — Cube Clickers
 
-| Location    | Marker   | Player     |
-|-------------|----------|------------|
-| South       | Star     | Jar        |
-| South East  | Triangle | Jabbadhutt |
-| South West  | Circle   | Kres/Dissi |
-| North East  | Square   | CptKavior  |
-| North West  | Diamond  | Gigakox    |
+| Location   | Marker   | Player     |
+|------------|----------|------------|
+| South      | Star     | Jar        |
+| South East | Triangle | Jabbadhutt |
+| South West | Circle   | Kres/Dissi |
+| North East | Square   | CptKavior  |
+| North West | Diamond  | Gigakox    |
 
 ### Magtheridon — Alternative Experienced Cube Clickers
 
-| Player    | Role | Total cube holds | Prior cubes by direction | Most recent   |
-|-----------|------|------------------|--------------------------|---------------|
-| Greg      | DPS  | 7                | S×4, SE×2, NE×1          | 2026-04-15 SE |
-| Ostbirger | Tank | 3                | NW×3                     | 2026-04-15 NW |
-| Vaelruna  | DPS  | 1                | SW×1                     | 2026-03-08 SW |
+| Player            | Role | Total cube holds | Prior cubes by direction | Most recent   |
+|-------------------|------|------------------|--------------------------|---------------|
+| Greg(Ucannotpass) | DPS  | 7                | S×4, SE×2, NE×1          | 2026-04-15 SE |
+| Ostbirger         | Tank | 3                | NW×3                     | 2026-04-15 NW |
+| Vaelruna          | DPS  | 1                | SW×1                     | 2026-03-08 SW |
 
 ## Discord announcement
 
@@ -141,7 +141,7 @@
 - Grundiger (Hunter)
 - Tonz/Tonsen (Hunter)
 - Vaelruna (Hunter)
-- Greg (Ucannotpass) (Arcane Mage)
+- Greg(Ucannotpass) (Arcane Mage)
 - OomToDoom (Arcane Mage)
 - Leontes (Retribution Paladin)
 - Kres/Dissi (Shadow Priest)
@@ -192,7 +192,7 @@ On the bench: Beaverfist. But if you show up online around raid time, there's a 
 - **Heligeman tentative** — Holy Paladin; did not convert to confirmed signup. Excluded from roster decisions per `reference/file-operations-manual.md` → Step 2.
 - **Beaverfist on bench (manual override).** Signed up after the roster was made; user chose to bench her rather than reshuffle. Algorithmic fair-rotation pick with the new signups would have been Bergamotka, after composition target → cross-location bench total → alphabetical fallback among the five 0-cross-location-bench priority-2 over-rep DPS candidates (Bergamotka, Dankyn, Ebonybolt, Lenno/Mellymel, Yorekbarn).
 - **Encounter assignments — user's final picks** (deviations from algorithmic continuity):
-  - **Cube clickers reshuffled** — user picks: S Jar, SE Jabbadhutt, SW Kres/Dissi, NE CptKavior, NW Gigakox. Strict algorithm with Ostbirger reserved as Mag MT (only core tank in roster) and Pergatori excluded as a Healer this raid (per `rules/05-encounter-assignments.md` → "Healers excluded from cube clicking") would have been: S Kres/Dissi (continuity 04-15), SE Greg (continuity 04-15, 04-12), SW Jabbadhutt (continuity 04-12), NE Vaelruna (cube-experience fallback, 1 prior at SW 03-08), NW any eligible (Step 4 — no continuity, no remaining cube-experience candidates). Greg's strong SE continuity yields to user judgment.
+  - **Cube clickers reshuffled** — user picks: S Jar, SE Jabbadhutt, SW Kres/Dissi, NE CptKavior, NW Gigakox. Strict algorithm with Ostbirger reserved as Mag MT (only core tank in roster) and Pergatori excluded as a Healer this raid (per `rules/05-encounter-assignments.md` → "Healers excluded from cube clicking") would have been: S Kres/Dissi (continuity 04-15), SE Greg(Ucannotpass) (continuity 04-15, 04-12), SW Jabbadhutt (continuity 04-12), NE Vaelruna (cube-experience fallback, 1 prior at SW 03-08), NW any eligible (Step 4 — no continuity, no remaining cube-experience candidates). Greg(Ucannotpass)'s strong SE continuity yields to user judgment.
   - **Kiggler Tank → Jar.** Beaverfist (continuity holder for Kiggler Tank: 04-15, 04-05) is benched, so her continuity claim doesn't apply this raid. Jar is the only Balance druid in the roster — single-player Kiggler Tank per `rules/05-encounter-assignments.md` → "Kiggler Tank assignment".
   - **Olm Tank Healer → Pergatori.** User confirmed.
 - **Jar on Sunday** — signed up despite the usual Sunday availability note in `rules/03-player-constraints.md`; user-accepted exception (matches 2026-04-12 precedent).

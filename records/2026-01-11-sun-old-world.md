@@ -4,11 +4,11 @@
 
 ## Signups (from Discord) — 7 (+1)
 
-**Tanks (1):** Marino-Varthier
+**Tanks (1):** Marino(Varthier)
 **Warriors (1):** Mirohl
 **Druids (1):** Kres/Dissi
 **Paladins (1):** ErAleX
 **Hunters (1):** Vaelruna
-**Mages (2):** Faroula, Greg/Ucannotpass
+**Mages (2):** Faroula, Greg(Ucannotpass)
 
 **Header stats:** Melee 2/0, Ranged 3, Healers 2

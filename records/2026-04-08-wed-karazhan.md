@@ -2,17 +2,17 @@
 
 ## Signups (from Discord)
 
-**Tanks (7):** Mirohl, Gigakox, Doughball, CptKavior, Marino-Varthier, McJudgin, Ostbirger
+**Tanks (7):** Mirohl, Gigakox, Doughball, CptKavior, Marino(Varthier), McJudgin, Ostbirger
 **Warriors (2):** Dankyn, Verysadge
 **Druids (5):** Gresac/Younea, Beaverfist, Roossy/Keatala, Yxanb, Jar
 **Paladins (3):** Lightstarr, Thordrel, Leontes
 **Hunters (3):** Vaelruna, Dwarfytron, Tonz/Tonsen
-**Mages (2):** OomToDoom, Greg/Ucannotpass
+**Mages (2):** OomToDoom, Greg(Ucannotpass)
 **Priests (4):** Kres/Dissi, Bombzor, Lightweit, Thalynora
 **Warlocks (3):** Jabbadhutt, BestPractice, McHughes
 **Shamans (5):** Rainbound, Pergatori, Lynelen, Bergamotka, Ebonybolt
 
-**Late (1):** GlaivemasterBaebay
+**Late (1):** Glaivemaster Baebay
 
 **Header stats:** Melee 7, Ranged 11, Healers 8
 
@@ -35,44 +35,44 @@
 
 ### Team Bakery
 
-| Player           | Role   | Class   |
-|------------------|--------|---------|
-| Marino-Varthier  | MT     | Paladin |
-| Doughball        | OT     | Warrior |
-| Gresac/Younea    | Healer | Druid   |
-| Bombzor          | Healer | Priest  |
-| Beaverfist       | DPS (Balance) | Druid |
-| Tonz/Tonsen      | DPS    | Hunter  |
-| Greg/Ucannotpass | DPS    | Mage    |
-| Lynelen          | DPS    | Shaman  |
-| Pergatori        | DPS    | Shaman  |
-| Jabbadhutt       | DPS    | Warlock |
+| Player            | Role          | Class   |
+|-------------------|---------------|---------|
+| Marino(Varthier)  | MT            | Paladin |
+| Doughball         | OT            | Warrior |
+| Gresac/Younea     | Healer        | Druid   |
+| Bombzor           | Healer        | Priest  |
+| Beaverfist        | DPS (Balance) | Druid   |
+| Tonz/Tonsen       | DPS           | Hunter  |
+| Greg(Ucannotpass) | DPS           | Mage    |
+| Lynelen           | DPS           | Shaman  |
+| Pergatori         | DPS           | Shaman  |
+| Jabbadhutt        | DPS           | Warlock |
 
 ### Team BaeGlaives
 
-| Player              | Role   | Class   |
-|---------------------|--------|---------|
-| Ostbirger           | MT     | Paladin |
-| Gigakox             | OT     | Warrior |
-| Roossy/Keatala      | Healer | Druid   |
-| Lightweit           | Healer | Priest  |
-| Jar                 | DPS (Balance) | Druid |
-| Dwarfytron          | DPS    | Hunter  |
-| OomToDoom           | DPS    | Mage    |
-| Ebonybolt           | DPS    | Shaman  |
-| McHughes            | DPS    | Warlock |
-| Verysadge           | DPS    | Warrior |
+| Player         | Role          | Class   |
+|----------------|---------------|---------|
+| Ostbirger      | MT            | Paladin |
+| Gigakox        | OT            | Warrior |
+| Roossy/Keatala | Healer        | Druid   |
+| Lightweit      | Healer        | Priest  |
+| Jar            | DPS (Balance) | Druid   |
+| Dwarfytron     | DPS           | Hunter  |
+| OomToDoom      | DPS           | Mage    |
+| Ebonybolt      | DPS           | Shaman  |
+| McHughes       | DPS           | Warlock |
+| Verysadge      | DPS           | Warrior |
 
 
-*(GlaivemasterBaebay signed up late but did NOT attend this raid)*
+*(Glaivemaster Baebay signed up late but did NOT attend this raid)*
 
 ## Bench (3)
 
-| Player         | Bench count (cumulative) |
-|----------------|--------------------------|
-| McJudgin       | 1                        |
-| CptKavior      | 1                        |
-| Leontes        | 1                        |
+| Player    | Bench count (cumulative) |
+|-----------|--------------------------|
+| McJudgin  | 1                        |
+| CptKavior | 1                        |
+| Leontes   | 1                        |
 
 ## Discord announcement
 
@@ -91,13 +91,13 @@
 - DPS: Dankyn (Warrior)
 
 **Team Bakery (10)**
-- MT: Marino-Varthier (Paladin)
+- MT: Marino(Varthier) (Paladin)
 - OT: Doughball (Warrior)
 - Healer: Gresac/Younea (Druid)
 - Healer: Bombzor (Priest)
 - DPS: Beaverfist (Balance Druid)
 - DPS: Tonz/Tonsen (Hunter)
-- DPS: Greg/Ucannotpass (Mage)
+- DPS: Greg(Ucannotpass) (Mage)
 - DPS: Lynelen (Shaman)
 - DPS: Pergatori (Shaman)
 - DPS: Jabbadhutt (Warlock)

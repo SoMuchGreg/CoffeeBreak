@@ -6,21 +6,21 @@
 **Warriors (3):** Gigakox, Verysadge, Dankyn
 **Druids (5):** Jar, Beaverfist, Shapkica, Yxanb, Gyrodorei
 **Paladins (3):** Leontes, Thordrel, Heligeman
-**Rogues (1):** Tiinar
+**Rogues (1):** Tim(Tiinar)
 **Hunters (1):** Roossy/Keatala
 **Priests (3):** Kres/Dissi, Siljes, Lightweit
 **Mages (2):** Lenno/Mellymel, OomToDoom
 **Warlocks (2):** Benglock, Jabbadhutt
 **Shamans (5):** Lynelen, Bergamotka, Ebonybolt, Pergatori, Gresac/Younea
 
-**Header stats:** Tanks 5, Melee 9, Ranged 8, Healers 6   <!-- from original screenshot; 3 post-build signups (Gyrodorei, Tiinar, Gresac/Younea via Younea alt), 2 withdrawals (Tonz/Tonsen, Marino-Varthier), and 1 no-show (Nemajumarad) not reflected -->
+**Header stats:** Tanks 5, Melee 9, Ranged 8, Healers 6   <!-- from original screenshot; 3 post-build signups (Gyrodorei, Tim(Tiinar), Gresac/Younea via Younea alt), 2 withdrawals (Tonz/Tonsen, Marino(Varthier)), and 1 no-show (Nemajumarad) not reflected -->
 
 ## Withdrawn signups (2)
 
-| Player          |
-|-----------------|
-| Marino-Varthier |
-| Tonz/Tonsen     |
+| Player           |
+|------------------|
+| Marino(Varthier) |
+| Tonz/Tonsen      |
 
 ## No-shows (1)
 
@@ -41,7 +41,7 @@
 | Gyrodorei      | DPS    | Druid (Feral)        |
 | Roossy/Keatala | DPS    | Hunter               |
 | Lenno/Mellymel | DPS    | Mage (Arcane)        |
-| Tiinar         | DPS    | Rogue (Combat)       |
+| Tim(Tiinar)    | DPS    | Rogue (Combat)       |
 | Lynelen        | DPS    | Shaman (Enhancement) |
 | Benglock       | DPS    | Warlock (Demonology) |
 
@@ -62,28 +62,28 @@
 
 ### Team WellPrepared
 
-| Player         | Role   | Class                |
-|----------------|--------|----------------------|
-| McJudgin       | MT     | Paladin (Prot)       |
-| PUG Tank       | OT     | —                    |
-| Beaverfist     | Healer | Druid (Resto)        |
-| Lightweit      | Healer | Priest (Holy)        |
-| Jar            | DPS    | Druid (Balance)      |
-| Yxanb          | DPS    | Druid (Feral)        |
-| OomToDoom      | DPS    | Mage (Arcane)        |
-| Bergamotka     | DPS    | Shaman (Enhancement) |
-| Verysadge      | DPS    | Warrior (Fury)       |
-| PUG DPS        | DPS    | —                    |
+| Player     | Role   | Class                |
+|------------|--------|----------------------|
+| McJudgin   | MT     | Paladin (Prot)       |
+| PUG Tank   | OT     | —                    |
+| Beaverfist | Healer | Druid (Resto)        |
+| Lightweit  | Healer | Priest (Holy)        |
+| Jar        | DPS    | Druid (Balance)      |
+| Yxanb      | DPS    | Druid (Feral)        |
+| OomToDoom  | DPS    | Mage (Arcane)        |
+| Bergamotka | DPS    | Shaman (Enhancement) |
+| Verysadge  | DPS    | Warrior (Fury)       |
+| PUG DPS    | DPS    | —                    |
 
 **Composition check:** Target per team: 2T / 2H / 6 DPS = 10. Total across 3 teams: 30. Actual: 3 × 10 = 30. Status: ✅. PUG recruitment per `rules/01-raid-compositions.md` → "Recording outside recruits (PUGs)" — 1 PUG DPS on Team WellPrepared, plus 1 `PUG Tank` per user override of `rules/01-raid-compositions.md` → "Insufficient-tanks override" (see Notes).
 
 ## Comp flex applied
 
-| Player     | Asked to switch from → to    | Tier | Accepted? | Notes                                                                         |
-|------------|------------------------------|------|-----------|-------------------------------------------------------------------------------|
-| CptKavior  | DPS (Fury) → Tank (Prot)     | 0    | Yes       | First line offspec — standing consent; OT on Bakery                           |
-| McJudgin   | DPS (Ret) → Tank (Prot)      | 0    | Yes       | First line offspec — standing consent; MT on WellPrepared                     |
-| Shapkica   | DPS (Feral) → Tank (Feral)   | 1    | Yes       | Eager offspec; covering Marino-Varthier withdrawal; OT on Restaurant          |
+| Player    | Asked to switch from → to  | Tier | Accepted? | Notes                                                                 |
+|-----------|----------------------------|------|-----------|-----------------------------------------------------------------------|
+| CptKavior | DPS (Fury) → Tank (Prot)   | 0    | Yes       | First line offspec — standing consent; OT on Bakery                   |
+| McJudgin  | DPS (Ret) → Tank (Prot)    | 0    | Yes       | First line offspec — standing consent; MT on WellPrepared             |
+| Shapkica  | DPS (Feral) → Tank (Feral) | 1    | Yes       | Eager offspec; covering Marino(Varthier) withdrawal; OT on Restaurant |
 
 ## Bench (0)
 
@@ -101,7 +101,7 @@
 - DPS: Gyrodorei (Feral Druid)
 - DPS: Roossy/Keatala (Hunter)
 - DPS: Lenno/Mellymel (Arcane Mage)
-- DPS: Tiinar (Combat Rogue)
+- DPS: Tim(Tiinar) (Combat Rogue)
 - DPS: Lynelen (Enhancement Shaman)
 - DPS: Benglock (Demonology Warlock)
 
@@ -147,29 +147,29 @@
 - **Final 3-way swap (user instruction)**: OomToDoom (R) → WellPrepared, Shapkica (Bakery) → Restaurant, Tonz/Tonsen (WellPrepared) → Bakery. User accepts 2-Feral stack on Restaurant (Yxanb + Shapkica) as the tradeoff for breaking the Mage stack. Final per-team distributions — Hunter 1-1-0 (R, Bak); Mage 1-0-1 (R, WP); Druid Feral 2-0-0 (R, accepted); Warlock 1-1-0 (R, Bak); Enh Sham 1-1-1. All loot-conflict splits preserved (HFD pigeonhole cluster Gigakox + Roossy/Keatala on R unchanged).
 - **Two post-build withdrawals** (per `Event: Player withdraws signup`):
   - **Tonz/Tonsen** — Bakery DPS slot taken by Gresac/Younea (post-build signup via Younea Shaman alt — see below).
-  - **Marino-Varthier** — Restaurant tank pair reorganized per `rules/01-raid-compositions.md` → "Tank composition": Shapkica flexed DPS → Tank (OT), Gigakox shifted OT → MT. Restaurant runs without a Paladin tank — `rules/01-raid-compositions.md` → "Paladin tank shortage exemption" applies. Nemajumarad's earlier Tier 1 flex row removed from `## Comp flex applied` after his no-show.
+  - **Marino(Varthier)** — Restaurant tank pair reorganized per `rules/01-raid-compositions.md` → "Tank composition": Shapkica flexed DPS → Tank (OT), Gigakox shifted OT → MT. Restaurant runs without a Paladin tank — `rules/01-raid-compositions.md` → "Paladin tank shortage exemption" applies. Nemajumarad's earlier Tier 1 flex row removed from `## Comp flex applied` after his no-show.
 - **One no-show** (per `Event: Player is a no-show`):
   - **Nemajumarad (WellPrepared OT)** — slot taken by `PUG Tank`. **User override** of `rules/01-raid-compositions.md` → "Insufficient-tanks override" — user accepted running 3 teams with a PUG tank rather than dropping to 2.
 - **Three post-build signups** (`Event: Post-build signup arrives`):
   - **Gyrodorei first appearance** — Druid, mainspec DPS (Feral), priority 2. Added to `rules/04-players.md`. Slotted Restaurant DPS.
-  - **Tiinar first appearance** — Rogue, mainspec DPS (Combat), priority 2. Added to `rules/04-players.md`. Slotted Restaurant DPS.
+  - **Tim(Tiinar) first appearance** — Rogue, mainspec DPS (Combat), priority 2. Added to `rules/04-players.md`. Slotted Restaurant DPS.
   - **Gresac/Younea played as alt Younea** (Shaman Elemental DPS) per `rules/01-raid-compositions.md` → "Alts" — main pool (Druid Healer) is over-target with 6 healers already; alt Younea fits as DPS. Slotted Bakery DPS replacing Tonz/Tonsen's vacated slot. Younea added to `rules/04-players.md` → Alt characters sub-table.
 - **Yxanb moved Restaurant → WellPrepared**, filling one of the original 2 PUG DPS slots; the other PUG DPS remains.
-- **Loot conflicts**: Fiery Warhorse's Reins now has only Jar in raid (Marino-Varthier withdrew, BestPractice not signed up) — removed from `## Loot conflicts` per the 2+ competitor rule.
+- **Loot conflicts**: Fiery Warhorse's Reins now has only Jar in raid (Marino(Varthier) withdrew, BestPractice not signed up) — removed from `## Loot conflicts` per the 2+ competitor rule.
 
 ## Loot conflicts
 
-| Item                          | Competitors                                                        | Status                                          |
-|-------------------------------|--------------------------------------------------------------------|-------------------------------------------------|
-| Gloves of the Fallen Champion | Leontes (Bak), Thordrel (R)                                        | ✓ split                                         |
-| Helm of the Fallen Defender   | Beaverfist (WP), Gigakox (R), Roossy/Keatala (R), Kres/Dissi (Bak) | ⚠️ Gigakox + Roossy/Keatala (R)                 |
-| Light's Justice               | Pergatori (Bak), Siljes (R)                                        | ✓ split                                         |
-| Ring of a Thousand Marks      | Gigakox (R), Leontes (Bak), Verysadge (WP)                         | ✓ split                                         |
-| Skulker's Greaves             | Bergamotka (WP), Dankyn (Bak), Gigakox (R)                         | ✓ split                                         |
-| Spiteblade                    | Dankyn (Bak), Gigakox (R)                                          | ✓ split                                         |
-| The Decapitator               | Bergamotka (WP), Lynelen (R)                                       | ✓ split                                         |
+| Item                          | Competitors                                                        | Status                          |
+|-------------------------------|--------------------------------------------------------------------|---------------------------------|
+| Gloves of the Fallen Champion | Leontes (Bak), Thordrel (R)                                        | ✓ split                         |
+| Helm of the Fallen Defender   | Beaverfist (WP), Gigakox (R), Roossy/Keatala (R), Kres/Dissi (Bak) | ⚠️ Gigakox + Roossy/Keatala (R) |
+| Light's Justice               | Pergatori (Bak), Siljes (R)                                        | ✓ split                         |
+| Ring of a Thousand Marks      | Gigakox (R), Leontes (Bak), Verysadge (WP)                         | ✓ split                         |
+| Skulker's Greaves             | Bergamotka (WP), Dankyn (Bak), Gigakox (R)                         | ✓ split                         |
+| Spiteblade                    | Dankyn (Bak), Gigakox (R)                                          | ✓ split                         |
+| The Decapitator               | Bergamotka (WP), Lynelen (R)                                       | ✓ split                         |
 
-**6/7 fully split.** HFD cluster mathematically forced (4 in-raid competitors / 3 teams). Fiery Warhorse's Reins removed — only Jar remains as in-raid competitor after Marino-Varthier withdrawal.
+**6/7 fully split.** HFD cluster mathematically forced (4 in-raid competitors / 3 teams). Fiery Warhorse's Reins removed — only Jar remains as in-raid competitor after Marino(Varthier) withdrawal.
 
 ## Sanity check
 
@@ -190,8 +190,8 @@
 - Final 3-way swap (user instruction): OomToDoom (R) → WP, Shapkica (Bak) → R, Tonz/Tonsen (WP) → Bak. User accepts 2-Feral stack on R as tradeoff. Mage stack on R resolved; Hunter back to 1-1-0; Druid Feral 2-0-0 (R).
 - **At-raid-time updates** (withdrawals + no-show + post-build signups, user-directed):
   - Tonz/Tonsen withdrew (`Event: Player withdraws signup`) — vacated Bakery DPS.
-  - Marino-Varthier withdrew (`Event: Player withdraws signup`) — vacated Restaurant MT; replaced via Shapkica flexed to OT (Tier 1 Eager), Gigakox promoted OT → MT (Feral can only off-tank). Restaurant now has no Paladin tank — Paladin tank shortage exemption applies.
+  - Marino(Varthier) withdrew (`Event: Player withdraws signup`) — vacated Restaurant MT; replaced via Shapkica flexed to OT (Tier 1 Eager), Gigakox promoted OT → MT (Feral can only off-tank). Restaurant now has no Paladin tank — Paladin tank shortage exemption applies.
   - Nemajumarad no-show (`Event: Player is a no-show`) — vacated WellPrepared OT; replaced by `PUG Tank`. **User override** of `rules/01-raid-compositions.md` → "Insufficient-tanks override".
-  - Three post-build signups (`Event: Post-build signup arrives`): Gyrodorei (new Druid Feral, Restaurant DPS), Tiinar (new Rogue, Restaurant DPS), Gresac/Younea via Younea Shaman alt (Bakery DPS, replacing Tonz/Tonsen).
+  - Three post-build signups (`Event: Post-build signup arrives`): Gyrodorei (new Druid Feral, Restaurant DPS), Tim(Tiinar) (new Rogue, Restaurant DPS), Gresac/Younea via Younea Shaman alt (Bakery DPS, replacing Tonz/Tonsen).
   - Yxanb moved Restaurant → WellPrepared, filling one of the original PUG DPS slots; the other PUG DPS remains.
   - Comp flex: Nemajumarad's row removed (flex didn't materialize after no-show); Shapkica added (Tier 1 Eager, Tank Feral covering Varthier).

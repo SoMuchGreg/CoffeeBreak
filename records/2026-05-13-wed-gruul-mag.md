@@ -8,10 +8,10 @@
 **Warriors (4):** Verysadge, Dankyn, Gigakox, Nemajumarad
 **Druids (4):** Shapkica, Yxanb, Beaverfist, Jar
 **Paladins (2):** Thordrel, Heligeman
-**Rogues (1):** Tiinar
+**Rogues (1):** Tim(Tiinar)
 **Hunters (3):** Grundiger, Vaelruna, Roossy/Keatala
 **Priests (3):** Lightweit, Boriest, Kres/Dissi
-**Mages (1):** Greg
+**Mages (1):** Greg(Ucannotpass)
 **Warlocks (2):** McHughes, Benglock
 **Shamans (5):** Bergamotka, Lynelen, Ebonybolt, Gresac/Younea, Pergatori
 
@@ -40,24 +40,24 @@
 
 ### DPS (16)
 
-| Player        | Class                |
-|---------------|----------------------|
-| Jar           | Druid (Balance)      |
-| Shapkica      | Druid (Feral)        |
-| Yxanb         | Druid (Feral)        |
-| Grundiger     | Hunter (BM)          |
-| Vaelruna      | Hunter (BM)          |
-| Greg          | Mage (Arcane)        |
-| Tiinar        | Rogue (Combat)       |
-| Gresac/Younea | Shaman (Elemental)   |
-| Bergamotka    | Shaman (Enhancement) |
-| Ebonybolt     | Shaman (Enhancement) |
-| Lynelen       | Shaman (Enhancement) |
-| McHughes      | Warlock              |
-| Benglock      | Warlock (Demonology) |
-| Nemajumarad   | Warrior (Arms)       |
-| Dankyn        | Warrior (Fury)       |
-| Verysadge     | Warrior (Fury)       |
+| Player            | Class                |
+|-------------------|----------------------|
+| Jar               | Druid (Balance)      |
+| Shapkica          | Druid (Feral)        |
+| Yxanb             | Druid (Feral)        |
+| Grundiger         | Hunter (BM)          |
+| Vaelruna          | Hunter (BM)          |
+| Greg(Ucannotpass) | Mage (Arcane)        |
+| Tim(Tiinar)       | Rogue (Combat)       |
+| Gresac/Younea     | Shaman (Elemental)   |
+| Bergamotka        | Shaman (Enhancement) |
+| Ebonybolt         | Shaman (Enhancement) |
+| Lynelen           | Shaman (Enhancement) |
+| McHughes          | Warlock              |
+| Benglock          | Warlock (Demonology) |
+| Nemajumarad       | Warrior (Arms)       |
+| Dankyn            | Warrior (Fury)       |
+| Verysadge         | Warrior (Fury)       |
 
 **Composition check:** Target 3/5-6/16-17 for Gruul+Mag (default 25-man comp; per `rules/01-raid-compositions.md` → "25-man raids → General → Default composition"). Actual: 3/6/16 = 25. Status: ✅ on target.
 
@@ -78,31 +78,31 @@
 
 ### High King Maulgar
 
-| Role                 | Player                | Notes                                                                       |
-|----------------------|-----------------------|-----------------------------------------------------------------------------|
-| Maulgar Tank         | Ostbirger             |                                                                             |
-| Maulgar Tank MD      | Vaelruna              |                                                                             |
-| Maulgar Healer       | Thordrel, Beaverfist  |                                                                             |
-| Mage Tank (Krosh)    | Greg                  |                                                                             |
-| Mage Tank Healer     | Roossy/Keatala        |                                                                             |
-| Kiggler Tank         | Jar                   | Balance druid solo. Per the day-of-week raid-leader rule then in effect, Jar (Wed RL) would have been excluded; **user override** — Jar took the role anyway. |
-| Kiggler Tank Healer  | Boriest               |                                                                             |
-| Olm Tank             | Gigakox               | until felhunter                                                             |
-| Felhunter Subjugate  | Benglock, McHughes    | 2 Warlocks in roster → 2 slots                                              |
-| Olm Tank Healer      | —                     | only 5 healers in roster — optional slot dropped                            |
-| Blindeye Tank        | CptKavior             |                                                                             |
-| Blindeye Tank MD     | Grundiger             |                                                                             |
-| Blindeye Tank Healer | Lightweit             |                                                                             |
+| Role                 | Player               | Notes                                                                                                                                                         |
+|----------------------|----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Maulgar Tank         | Ostbirger            |                                                                                                                                                               |
+| Maulgar Tank MD      | Vaelruna             |                                                                                                                                                               |
+| Maulgar Healer       | Thordrel, Beaverfist |                                                                                                                                                               |
+| Mage Tank (Krosh)    | Greg(Ucannotpass)    |                                                                                                                                                               |
+| Mage Tank Healer     | Roossy/Keatala       |                                                                                                                                                               |
+| Kiggler Tank         | Jar                  | Balance druid solo. Per the day-of-week raid-leader rule then in effect, Jar (Wed RL) would have been excluded; **user override** — Jar took the role anyway. |
+| Kiggler Tank Healer  | Boriest              |                                                                                                                                                               |
+| Olm Tank             | Gigakox              | until felhunter                                                                                                                                               |
+| Felhunter Subjugate  | Benglock, McHughes   | 2 Warlocks in roster → 2 slots                                                                                                                                |
+| Olm Tank Healer      | —                    | only 5 healers in roster — optional slot dropped                                                                                                              |
+| Blindeye Tank        | CptKavior            |                                                                                                                                                               |
+| Blindeye Tank MD     | Grundiger            |                                                                                                                                                               |
+| Blindeye Tank Healer | Lightweit            |                                                                                                                                                               |
 
 ### Magtheridon — Cube Clickers
 
-| Location    | Marker   | Player        |
-|-------------|----------|---------------|
-| South       | Star     | McHughes      |
-| South East  | Triangle | Greg          |
-| South West  | Circle   | Gresac/Younea |
-| North East  | Square   | CptKavior     |
-| North West  | Diamond  | Gigakox       |
+| Location   | Marker   | Player            |
+|------------|----------|-------------------|
+| South      | Star     | McHughes          |
+| South East | Triangle | Greg(Ucannotpass) |
+| South West | Circle   | Gresac/Younea     |
+| North East | Square   | CptKavior         |
+| North West | Diamond  | Gigakox           |
 
 ### Magtheridon — Alternative Experienced Cube Clickers
 
@@ -134,8 +134,8 @@
 - Yxanb (Feral Druid)
 - Grundiger (Beast Mastery Hunter)
 - Vaelruna (Beast Mastery Hunter)
-- Greg (Arcane Mage)
-- Tiinar (Combat Rogue)
+- Greg(Ucannotpass) (Arcane Mage)
+- Tim(Tiinar) (Combat Rogue)
 - Gresac/Younea (Elemental Shaman)
 - Bergamotka (Enhancement Shaman)
 - Ebonybolt (Enhancement Shaman)
@@ -152,7 +152,7 @@
 - Maulgar Tank: Ostbirger
 - Maulgar Tank MD: Vaelruna
 - Maulgar Healer: Thordrel, Beaverfist
-- Mage Tank (Krosh): Greg
+- Mage Tank (Krosh): Greg(Ucannotpass)
 - Mage Tank Healer: Roossy/Keatala
 - Kiggler Tank: Jar
 - Kiggler Tank Healer: Boriest
@@ -165,7 +165,7 @@
 
 **Magtheridon — Cube Clickers**
 - South (Star): McHughes
-- South East (Triangle): Greg
+- South East (Triangle): Greg(Ucannotpass)
 - South West (Circle): Gresac/Younea
 - North East (Square): CptKavior
 - North West (Diamond): Gigakox

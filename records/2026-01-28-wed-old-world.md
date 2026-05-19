@@ -4,14 +4,14 @@
 
 ## Signups (from Discord) — 19
 
-**Tanks (3):** Mirohl, Marino-Varthier, Zemp
+**Tanks (3):** Mirohl, Marino(Varthier), Zemp
 **Warriors (1):** Mairen/Zorÿa
 **Druids (2):** Jar, Gresac/Younea
 **Paladins (2):** Stonebelly, Heligeman
 **Rogues (1):** Glaivemaster Baebay
 **Hunters (2):** Rhoator, Aenra
 **Priests (2):** Medianos, Kres/Dissi
-**Mages (2):** Greg/Ucannotpass, Faroula
+**Mages (2):** Greg(Ucannotpass), Faroula
 **Warlocks (2):** Trisslott, Buns/Sourbuns
 **Shamans (2):** Alaan, Blacksi
 

@@ -2,14 +2,14 @@
 
 ## Signups (from Discord) — 27 (+0)
 
-**Tanks (4):** Mirohl, CptKavior, Marino-Varthier, Ostbirger
+**Tanks (4):** Mirohl, CptKavior, Marino(Varthier), Ostbirger
 **Warriors (3):** Dankyn, Gigakox, Verysadge
 **Druids (4):** Gresac/Younea, Beaverfist, Roossy/Keatala, Yxanb
 **Paladins (3):** Thordrel, McJudgin, Leontes
 **Rogues (1):** Glaivemaster Baebay
 **Hunters (2):** Vaelruna, Tonz/Tonsen
 **Priests (3):** Kres/Dissi, Bombzor, Lightweit
-**Mages (2):** OomToDoom, Greg (Ucannotpass)
+**Mages (2):** OomToDoom, Greg(Ucannotpass)
 **Warlocks (1):** McHughes
 **Shamans (4):** Pergatori, Lynelen, Bergamotka, Ebonybolt
 
@@ -26,11 +26,11 @@
 
 ### Tanks (3)
 
-| Player          | Class   |
-|-----------------|---------|
-| Marino-Varthier | Paladin |
-| Ostbirger       | Paladin |
-| Mirohl          | Warrior |
+| Player           | Class   |
+|------------------|---------|
+| Marino(Varthier) | Paladin |
+| Ostbirger        | Paladin |
+| Mirohl           | Warrior |
 
 ### Healers (6)
 
@@ -45,33 +45,33 @@
 
 ### DPS (16)
 
-| Player              | Class              |
-|---------------------|--------------------|
-| Beaverfist          | Druid (Balance)    |
-| Yxanb               | Druid (Feral)      |
-| Tonz/Tonsen         | Hunter             |
-| Vaelruna            | Hunter             |
-| Greg (Ucannotpass)  | Mage               |
-| OomToDoom           | Mage               |
-| Leontes             | Paladin (Ret)      |
-| Kres/Dissi          | Priest (Shadow)    |
-| Glaivemaster Baebay | Rogue (Combat)     |
-| Pergatori           | Shaman (Elemental) |
+| Player              | Class                |
+|---------------------|----------------------|
+| Beaverfist          | Druid (Balance)      |
+| Yxanb               | Druid (Feral)        |
+| Tonz/Tonsen         | Hunter               |
+| Vaelruna            | Hunter               |
+| Greg(Ucannotpass)   | Mage                 |
+| OomToDoom           | Mage                 |
+| Leontes             | Paladin (Ret)        |
+| Kres/Dissi          | Priest (Shadow)      |
+| Glaivemaster Baebay | Rogue (Combat)       |
+| Pergatori           | Shaman (Elemental)   |
 | Bergamotka          | Shaman (Enhancement) |
 | Ebonybolt           | Shaman (Enhancement) |
-| McHughes            | Warlock            |
-| Dankyn              | Warrior (Fury)     |
-| Gigakox             | Warrior (Fury)     |
-| Verysadge           | Warrior (Fury)     |
+| McHughes            | Warlock              |
+| Dankyn              | Warrior (Fury)       |
+| Gigakox             | Warrior (Fury)       |
+| Verysadge           | Warrior (Fury)       |
 
 **Composition check:** Target 3/6/16 for Gruul+Mag (per `rules/01-raid-compositions.md`). Actual: 3/6/16 = 25. Status: ⚠️ Warlock count dropped to 1 (below Section 8's combined Destro+Affli lower bound of 3) after Ōtsu and Jabbadhutt withdrew — unfillable since no other Warlocks signed up. Role targets (tank/healer/DPS) still on point.
 
 ## Bench (2)
 
-| Player     | Priority | Bench count (cumulative, after this raid) | Reason          |
-|------------|----------|-------------------------------------------|-----------------|
-| CptKavior  | 2        | 1                                         | manual override |
-| Lynelen    | 2        | 1                                         | fair rotation   |
+| Player    | Priority | Bench count (cumulative, after this raid) | Reason          |
+|-----------|----------|-------------------------------------------|-----------------|
+| CptKavior | 2        | 1                                         | manual override |
+| Lynelen   | 2        | 1                                         | fair rotation   |
 
 ## Encounter assignments
 
@@ -87,7 +87,7 @@
 | Mage Tank Healer     | Roossy/Keatala       |                                                                       |
 | Kiggler Tank         | Beaverfist           | Balance druid solo                                                    |
 | Kiggler Tank Healer  | Lightweit            |                                                                       |
-| Olm Tank             | Marino-Varthier      | until felhunter                                                       |
+| Olm Tank             | Marino(Varthier)     | until felhunter                                                       |
 | Felhunter Subjugate  | Jabbadhutt, McHughes | Jabbadhutt withdrew pre-raid (see ## Notes); McHughes solo-subjugated |
 | Olm Tank Healer      | McJudgin             |                                                                       |
 | Blindeye Tank        | Ostbirger            | Vaelruna MD                                                           |
@@ -95,20 +95,20 @@
 
 ### Magtheridon — Cube Clickers
 
-| Location    | Marker   | Player          |
-|-------------|----------|-----------------|
-| South       | Star     | Kres/Dissi      |
-| South East  | Triangle | Greg            |
-| South West  | Circle   | McHughes        |
-| North East  | Square   | Marino-Varthier |
-| North West  | Diamond  | Ostbirger       |
+| Location   | Marker   | Player            |
+|------------|----------|-------------------|
+| South      | Star     | Kres/Dissi        |
+| South East | Triangle | Greg(Ucannotpass) |
+| South West | Circle   | McHughes          |
+| North East | Square   | Marino(Varthier)  |
+| North West | Diamond  | Ostbirger         |
 
 ## Discord announcement
 
 ## Gruul + Magtheridon — Wednesday 15.04
 
 **Tanks (3)**
-- Marino-Varthier (Paladin)
+- Marino(Varthier) (Paladin)
 - Ostbirger (Paladin)
 - Mirohl (Warrior)
 
@@ -125,7 +125,7 @@
 - Yxanb (Feral Druid)
 - Tonz/Tonsen (Hunter)
 - Vaelruna (Hunter)
-- Greg (Ucannotpass) (Mage)
+- Greg(Ucannotpass) (Mage)
 - OomToDoom (Mage)
 - Leontes (Retribution Paladin)
 - Kres/Dissi (Shadow Priest)
@@ -147,7 +147,7 @@
 - Mage Tank Healer: Roossy/Keatala
 - Kiggler Tank: Beaverfist
 - Kiggler Tank Healer: Lightweit
-- Olm Tank: Marino-Varthier
+- Olm Tank: Marino(Varthier)
 - Felhunter Subjugate: Jabbadhutt, McHughes
 - Olm Tank Healer: McJudgin
 - Blindeye Tank: Ostbirger
@@ -155,9 +155,9 @@
 
 **Magtheridon — Cube Clickers**
 - South (Star): Kres/Dissi
-- South East (Triangle): Greg
+- South East (Triangle): Greg(Ucannotpass)
 - South West (Circle): McHughes
-- North East (Square): Marino-Varthier
+- North East (Square): Marino(Varthier)
 - North West (Diamond): Ostbirger
 
 On the bench: CptKavior and Lynelen. But if you show up online around raid time, there's a decent chance a spot will free up because of last-minute changes.

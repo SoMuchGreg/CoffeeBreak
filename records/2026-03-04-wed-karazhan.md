@@ -4,14 +4,14 @@
 
 ## Signups (from Discord) — 20
 
-**Tanks (4):** Mirohl, Dankyn, Marino-Varthier, blep
+**Tanks (4):** Mirohl, Dankyn, Marino(Varthier), blep
 **Warriors (1):** Verysadge
 **Druids (3):** Gresac/Younea, Yxanb, Jar
 **Paladins (1):** Thordrel
 **Rogues (2):** Glaivemaster Baebay, Drillbabe
 **Hunters (2):** Vaelruna, Rhoator
 **Priests (1):** Kres/Dissi
-**Mages (3):** Greg/Ucannotpass, OomToDoom, Jinothy
+**Mages (3):** Greg(Ucannotpass), OomToDoom, Jinothy
 **Warlocks (3):** BestPractice, McHughes, Ōtsu
 
 **Header stats:** Melee 4/4, Ranged 9, Healers 3

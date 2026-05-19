@@ -4,17 +4,17 @@
 
 ## Signups (from Discord) — 31 (+1 late)
 
-**Tanks (6):** Mirohl, Doughball, Gigakox, McJudgin, Marino-Varthier, Ostbirger
+**Tanks (6):** Mirohl, Doughball, Gigakox, McJudgin, Marino(Varthier), Ostbirger
 **Warriors (2):** Verysadge, Dankyn
 **Druids (5):** Yxanb, Jar, Gresac/Younea, Beaverfist, Roossy/Keatala
 **Paladins (3):** Thordrel, Sjwammie, Lightstarr
 **Hunters (3):** Tonz/Tonsen, Vaelruna, Dwarfytron
-**Mages (2):** Greg/Ucannotpass, OomToDoom
+**Mages (2):** Greg(Ucannotpass), OomToDoom
 **Warlocks (3):** Jabbadhutt, BestPractice, McHughes
 **Priests (3):** Kres/Dissi, Thalynora, *(third unclear)*
 **Shamans (5):** Pergatori, Bergamotka, Lynelen, Ebonybolt, CodeHunt
 
-**Late (1):** GlaivemasterBaebay
+**Late (1):** Glaivemaster Baebay
 
 **Header stats:** Melee 7, Ranged 10, Healers 8
 
@@ -22,25 +22,25 @@
 
 ### Team Restaurant
 
-| Player           | Role   | Class   |
-|------------------|--------|---------|
-| Mirohl           | MT     | Warrior |
-| McJudgin         | OT     | Paladin |
-| Gresac/Younea    | Healer | Druid   |
-| CodeHunt         | Healer | Shaman  |
-| Vaelruna         | DPS    | Hunter  |
-| Greg/Ucannotpass | DPS    | Mage    |
-| Lightstarr       | DPS    | Paladin |
-| Bergamotka       | DPS    | Shaman  |
-| BestPractice     | DPS    | Warlock |
-| Verysadge        | DPS    | Warrior |
+| Player            | Role   | Class   |
+|-------------------|--------|---------|
+| Mirohl            | MT     | Warrior |
+| McJudgin          | OT     | Paladin |
+| Gresac/Younea     | Healer | Druid   |
+| CodeHunt          | Healer | Shaman  |
+| Vaelruna          | DPS    | Hunter  |
+| Greg(Ucannotpass) | DPS    | Mage    |
+| Lightstarr        | DPS    | Paladin |
+| Bergamotka        | DPS    | Shaman  |
+| BestPractice      | DPS    | Warlock |
+| Verysadge         | DPS    | Warrior |
 
 ### Team Bakery
 
 | Player           | Role   | Class   |
 |------------------|--------|---------|
 | Doughball        | MT     | Warrior |
-| Marino-Varthier  | OT     | Paladin |
+| Marino(Varthier) | OT     | Paladin |
 | Roossy/Keatala   | Healer | Druid   |
 | Sjwammie         | Healer | Paladin |
 | Tonz/Tonsen      | DPS    | Hunter  |
@@ -60,17 +60,17 @@
 | Thordrel            | Healer | Paladin |
 | Beaverfist          | DPS    | Druid   |
 | Yxanb               | DPS    | Druid   |
-| GlaivemasterBaebay  | DPS    | Rogue   |
+| Glaivemaster Baebay | DPS    | Rogue   |
 | Ebonybolt           | DPS    | Shaman  |
 | Lynelen             | DPS    | Shaman  |
 | McHughes            | DPS    | Warlock |
 
 ## Bench (2)
 
-| Player         | Bench count (cumulative) |
-|----------------|--------------------------|
-| Thalynora      | 1                        |
-| Dwarfytron     | 1                        |
+| Player     | Bench count (cumulative) |
+|------------|--------------------------|
+| Thalynora  | 1                        |
+| Dwarfytron | 1                        |
 
 ## Discord announcement
 
@@ -82,7 +82,7 @@
 - Healer: Gresac/Younea (Druid)
 - Healer: CodeHunt (Shaman)
 - DPS: Vaelruna (Hunter)
-- DPS: Greg/Ucannotpass (Mage)
+- DPS: Greg(Ucannotpass) (Mage)
 - DPS: Lightstarr (Paladin)
 - DPS: Bergamotka (Shaman)
 - DPS: BestPractice (Warlock)
@@ -90,7 +90,7 @@
 
 **Team Bakery (10)**
 - MT: Doughball (Warrior)
-- OT: Marino-Varthier (Paladin)
+- OT: Marino(Varthier) (Paladin)
 - Healer: Roossy/Keatala (Druid)
 - Healer: Sjwammie (Paladin)
 - DPS: Tonz/Tonsen (Hunter)
@@ -107,7 +107,7 @@
 - Healer: Thordrel (Paladin)
 - DPS: Beaverfist (Druid)
 - DPS: Yxanb (Druid)
-- DPS: GlaivemasterBaebay (Rogue)
+- DPS: Glaivemaster Baebay (Rogue)
 - DPS: Ebonybolt (Shaman)
 - DPS: Lynelen (Shaman)
 - DPS: McHughes (Warlock)

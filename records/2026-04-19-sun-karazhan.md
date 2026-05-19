@@ -2,14 +2,14 @@
 
 ## Signups (from Discord) — 29 (+0)
 
-**Tanks (6):** Mirohl, Gigakox, CptKavior, Doughball, Ostbirger, Marino-Varthier
+**Tanks (6):** Mirohl, Gigakox, CptKavior, Doughball, Ostbirger, Marino(Varthier)
 **Warriors (3):** Verysadge, Yorekbarn, Dankyn
 **Druids (4):** Gresac/Younea, Roossy/Keatala, Beaverfist, Yxanb
 **Paladins (3):** Leontes, Heligeman, Thordrel
 **Rogues (1):** Glaivemaster Baebay
 **Hunters (2):** Tonz/Tonsen, Vaelruna
 **Priests (2):** Siljes, Lightweit
-**Mages (2):** OomToDoom, Greg (Ucannotpass)
+**Mages (2):** OomToDoom, Greg(Ucannotpass)
 **Warlocks (2):** BestPractice, McHughes
 **Shamans (4):** Pergatori, Bergamotka, Lynelen, Ebonybolt
 
@@ -26,39 +26,39 @@
 
 ### Team Restaurant
 
-| Player              | Role   | Class                |
-|---------------------|--------|----------------------|
-| Mirohl              | MT     | Warrior              |
-| CptKavior           | OT     | Warrior              |
-| Gresac/Younea       | Healer | Druid (Resto)        |
-| Lightweit           | Healer | Priest (Holy)        |
-| Yxanb               | DPS    | Druid (Feral)        |
-| Pergatori           | DPS    | Shaman (Elemental)   |
-| Bergamotka          | DPS    | Shaman (Enhancement) |
-| BestPractice        | DPS    | Warlock              |
-| Verysadge           | DPS    | Warrior (Fury)       |
-| PUG DPS             | DPS    | —                    |
+| Player        | Role   | Class                |
+|---------------|--------|----------------------|
+| Mirohl        | MT     | Warrior              |
+| CptKavior     | OT     | Warrior              |
+| Gresac/Younea | Healer | Druid (Resto)        |
+| Lightweit     | Healer | Priest (Holy)        |
+| Yxanb         | DPS    | Druid (Feral)        |
+| Pergatori     | DPS    | Shaman (Elemental)   |
+| Bergamotka    | DPS    | Shaman (Enhancement) |
+| BestPractice  | DPS    | Warlock              |
+| Verysadge     | DPS    | Warrior (Fury)       |
+| PUG DPS       | DPS    | —                    |
 
 ### Team Bakery
 
-| Player             | Role   | Class                |
-|--------------------|--------|----------------------|
-| Ostbirger          | MT     | Paladin              |
-| Doughball          | OT     | Warrior              |
-| Roossy/Keatala     | Healer | Druid (Resto)        |
-| Siljes             | Healer | Priest               |
-| Beaverfist         | DPS    | Druid (Balance)      |
-| Tonz/Tonsen        | DPS    | Hunter               |
-| Greg (Ucannotpass) | DPS    | Mage                 |
-| Ebonybolt          | DPS    | Shaman (Enhancement) |
-| Dankyn             | DPS    | Warrior (Fury)       |
-| Yorekbarn          | DPS    | Warrior (Fury)       |
+| Player            | Role   | Class                |
+|-------------------|--------|----------------------|
+| Ostbirger         | MT     | Paladin              |
+| Doughball         | OT     | Warrior              |
+| Roossy/Keatala    | Healer | Druid (Resto)        |
+| Siljes            | Healer | Priest               |
+| Beaverfist        | DPS    | Druid (Balance)      |
+| Tonz/Tonsen       | DPS    | Hunter               |
+| Greg(Ucannotpass) | DPS    | Mage                 |
+| Ebonybolt         | DPS    | Shaman (Enhancement) |
+| Dankyn            | DPS    | Warrior (Fury)       |
+| Yorekbarn         | DPS    | Warrior (Fury)       |
 
 ### Team BaeGlaives
 
 | Player              | Role   | Class                |
 |---------------------|--------|----------------------|
-| Marino-Varthier     | MT     | Paladin              |
+| Marino(Varthier)    | MT     | Paladin              |
 | Gigakox             | OT     | Warrior              |
 | Heligeman           | Healer | Paladin (Holy)       |
 | Thordrel            | Healer | Paladin (Holy)       |
@@ -98,13 +98,13 @@
 - Healer: Siljes (Priest)
 - DPS: Beaverfist (Balance Druid)
 - DPS: Tonz/Tonsen (Hunter)
-- DPS: Greg (Ucannotpass) (Mage)
+- DPS: Greg(Ucannotpass) (Mage)
 - DPS: Ebonybolt (Enhancement Shaman)
 - DPS: Dankyn (Fury Warrior)
 - DPS: Yorekbarn (Fury Warrior)
 
 **Team BaeGlaives (10)**
-- MT: Marino-Varthier (Paladin)
+- MT: Marino(Varthier) (Paladin)
 - OT: Gigakox (Warrior)
 - Healer: Heligeman (Holy Paladin)
 - Healer: Thordrel (Holy Paladin)
@@ -127,20 +127,20 @@
 
 Per `rules/03-player-constraints.md` — items where 2+ competing players are in this raid.
 
-| Item                        | Competitors                                                  | Status                       |
-|-----------------------------|--------------------------------------------------------------|------------------------------|
-| Boots of the Incorrupt      | Lightweit (R), Siljes (Bak)                            | ✓ split                      |
-| Helm of the Fallen Champion | Bergamotka (R), Leontes (BG), Lynelen (BG)                   | ⚠️ Leontes + Lynelen         |
-| Helm of the Fallen Defender | Mirohl (R), Beaverfist (Bak), Gigakox (BG)                   | ✓ split                      |
-| King's Defender             | CptKavior (R), Doughball (Bak)                               | ✓ split                      |
-| Light's Justice             | Gresac/Younea (R), Siljes (Bak), Thordrel (BG)                | ✓ split                      |
-| Nathrezim Mindblade         | Pergatori (R), Beaverfist (Bak)                              | ✓ split                      |
-| Ring of a Thousand Marks    | Verysadge (R), Yorekbarn (Bak), Leontes (BG)                 | ✓ split                      |
-| Skulker's Greaves           | Yxanb (R), Dankyn (Bak), Gigakox (BG), Vaelruna (BG)         | ⚠️ Gigakox + Vaelruna        |
-| Spiteblade                  | Dankyn (Bak), Baebay (BG)                                    | ✓ split                      |
-| The Decapitator             | Bergamotka (R), Yorekbarn (Bak), Lynelen (BG)                | ✓ split                      |
-| The Lightning Capacitor     | Pergatori (R), OomToDoom (BG)                                | ✓ split                      |
-| Wrynn Dynasty Greaves       | Mirohl (R), Doughball (Bak)                                  | ✓ split                      |
+| Item                        | Competitors                                          | Status                |
+|-----------------------------|------------------------------------------------------|-----------------------|
+| Boots of the Incorrupt      | Lightweit (R), Siljes (Bak)                          | ✓ split               |
+| Helm of the Fallen Champion | Bergamotka (R), Leontes (BG), Lynelen (BG)           | ⚠️ Leontes + Lynelen  |
+| Helm of the Fallen Defender | Mirohl (R), Beaverfist (Bak), Gigakox (BG)           | ✓ split               |
+| King's Defender             | CptKavior (R), Doughball (Bak)                       | ✓ split               |
+| Light's Justice             | Gresac/Younea (R), Siljes (Bak), Thordrel (BG)       | ✓ split               |
+| Nathrezim Mindblade         | Pergatori (R), Beaverfist (Bak)                      | ✓ split               |
+| Ring of a Thousand Marks    | Verysadge (R), Yorekbarn (Bak), Leontes (BG)         | ✓ split               |
+| Skulker's Greaves           | Yxanb (R), Dankyn (Bak), Gigakox (BG), Vaelruna (BG) | ⚠️ Gigakox + Vaelruna |
+| Spiteblade                  | Dankyn (Bak), Glaivemaster Baebay (BG)               | ✓ split               |
+| The Decapitator             | Bergamotka (R), Yorekbarn (Bak), Lynelen (BG)        | ✓ split               |
+| The Lightning Capacitor     | Pergatori (R), OomToDoom (BG)                        | ✓ split               |
+| Wrynn Dynasty Greaves       | Mirohl (R), Doughball (Bak)                          | ✓ split               |
 
 **10/12 fully split.** 2 violations are unavoidable (competitor count exceeds team count or interlocking constraint triangles). Both violations land on Team BaeGlaives.
 

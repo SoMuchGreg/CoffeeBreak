@@ -4,14 +4,14 @@
 
 ## Signups (from Discord) — 22
 
-**Tanks (3):** Mirohl, Doughball, Marino-Varthier
+**Tanks (3):** Mirohl, Doughball, Marino(Varthier)
 **Warriors (3):** Verysadge, Dankyn, Ayujinzhu
 **Druids (3):** Gresac/Younea, Jar, Yxanb
 **Paladins (2):** Thordrel, Sjwammie
 **Rogues (1):** Glaivemaster Baebay
 **Hunters (2):** Vaelruna, Rhoator
 **Priests (1):** Kres/Dissi
-**Mages (3):** OomToDoom, Jinothy, Greg/Ucannotpass
+**Mages (3):** OomToDoom, Jinothy, Greg(Ucannotpass)
 **Warlocks (3):** Ōtsu, BestPractice, McHughes
 **Shamans (1):** Lynelen
 
@@ -19,7 +19,7 @@
 
 ## Bench (2)
 
-| Player             | Priority | Bench count (cumulative, after this raid) | Reason        |
-|--------------------|----------|-------------------------------------------|---------------|
-| Tonz/Tonsen        | 2        | 1                                         | fair rotation |
-| Drillbabe          | 2        | 1                                         | fair rotation |
+| Player      | Priority | Bench count (cumulative, after this raid) | Reason        |
+|-------------|----------|-------------------------------------------|---------------|
+| Tonz/Tonsen | 2        | 1                                         | fair rotation |
+| Drillbabe   | 2        | 1                                         | fair rotation |

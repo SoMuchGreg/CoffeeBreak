@@ -4,13 +4,13 @@
 
 ## Signups (from Discord) — 20 (+2)
 
-**Tanks (2):** Mirohl, Marino-Varthier
+**Tanks (2):** Mirohl, Marino(Varthier)
 **Warriors (2):** Verysadge, Dankyn
 **Druids (4):** Yxanb, Gresac/Younea, Roossy/Keatala, Beaverfist
 **Paladins (1):** Thordrel
 **Hunters (3):** Vaelruna, Tonz/Tonsen, Rhoator
 **Priests (1):** Kres/Dissi
-**Mages (2):** OomToDoom, Greg/Ucannotpass
+**Mages (2):** OomToDoom, Greg(Ucannotpass)
 **Warlocks (3):** Ōtsu, Jabbadhutt, McHughes
 **Shamans (2):** Lynelen, Bergamotka
 
