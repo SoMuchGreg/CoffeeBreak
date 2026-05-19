@@ -55,53 +55,53 @@ A player's sub-table here is determined solely by their top-level grouping in `r
 
 | #  | Player              | Signups |
 |----|---------------------|---------|
-| 1  | Greg                | 30      |
-| 2  | Kres/Dissi          | 28      |
-| 3  | Roossy/Keatala      | 22      |
-| 4  | Jar                 | 21      |
-| 5  | Ostbirger           | 17      |
+| 1  | Greg                | 31      |
+| 2  | Kres/Dissi          | 29      |
+| 3  | Roossy/Keatala      | 23      |
+| 4  | Jar                 | 22      |
+| 5  | Ostbirger           | 18      |
 
 ### Core tanks
 
 | #  | Player              | Signups |
 |----|---------------------|---------|
-| 1  | Marino-Varthier     | 30      |
-| 2  | Gigakox             | 15      |
+| 1  | Marino-Varthier     | 31      |
+| 2  | Gigakox             | 16      |
 
 ### Current members
 
 | #  | Player         | Signups |
 |----|----------------|---------|
-| 1  | Gresac/Younea  | 29      |
-| 2  | Vaelruna       | 29      |
-| 3  | Verysadge      | 28      |
-| 4  | Thordrel       | 26      |
-| 5  | Yxanb          | 22      |
-| 6  | Dankyn         | 21      |
-| 7  | Lynelen        | 21      |
-| 8  | Beaverfist     | 20      |
-| 9  | Bergamotka     | 20      |
-| 10 | Ebonybolt      | 18      |
-| 11 | Pergatori      | 18      |
-| 12 | Jabbadhutt     | 17      |
+| 1  | Gresac/Younea  | 30      |
+| 2  | Vaelruna       | 30      |
+| 3  | Verysadge      | 29      |
+| 4  | Thordrel       | 27      |
+| 5  | Yxanb          | 23      |
+| 6  | Dankyn         | 22      |
+| 7  | Lynelen        | 22      |
+| 8  | Beaverfist     | 21      |
+| 9  | Bergamotka     | 21      |
+| 10 | Ebonybolt      | 19      |
+| 11 | Pergatori      | 19      |
+| 12 | Jabbadhutt     | 18      |
 | 13 | McHughes       | 17      |
-| 14 | Heligeman      | 13      |
-| 15 | Lightweit      | 13      |
-| 16 | CptKavior      | 12      |
+| 14 | Heligeman      | 14      |
+| 15 | Lightweit      | 14      |
+| 16 | CptKavior      | 13      |
 | 17 | Siljes         | 12      |
 | 18 | BestPractice   | 11      |
 | 19 | Tonz/Tonsen    | 11      |
 | 20 | McJudgin       | 10      |
 | 21 | Leontes        | 8       |
 | 22 | Dwarfytron     | 7       |
-| 23 | Doughball      | 6       |
-| 24 | Shapkica       | 6       |
-| 25 | Grundiger      | 5       |
-| 26 | Tiinar         | 5       |
-| 27 | Benglock       | 4       |
-| 28 | Boriest        | 4       |
-| 29 | Lenno/Mellymel | 4       |
-| 30 | Nemajumarad    | 4       |
+| 23 | Shapkica       | 7       |
+| 24 | Doughball      | 6       |
+| 25 | Grundiger      | 6       |
+| 26 | Tiinar         | 6       |
+| 27 | Lenno/Mellymel | 5       |
+| 28 | Nemajumarad    | 5       |
+| 29 | Benglock       | 4       |
+| 30 | Boriest        | 4       |
 | 31 | Sjwammie       | 4       |
 | 32 | Yorekbarn      | 4       |
 | 33 | Medianos       | 3       |

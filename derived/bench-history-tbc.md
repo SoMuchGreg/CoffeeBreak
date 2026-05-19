@@ -39,16 +39,17 @@ All priority-1 healer-main players: 0 benches at every location. *(No priority-1
 | Bergamotka    | 1        | 29.04          | 0         | —               | 1   | 17.05     | 0  | —        | 2     |
 | CptKavior     | 1        | 08.04          | 1         | 15.04           | 0   | —         | 0  | —        | 2     |
 | Dankyn        | 1        | 29.04          | 0         | —               | 0   | —         | 0  | —        | 1     |
-| Ebonybolt     | 0        | —              | 1         | 03.05           | 0   | —         | 0  | —        | 1     |
+| Ebonybolt     | 0        | —              | 1         | 03.05           | 1   | 20.05     | 0  | —        | 2     |
 | Gresac/Younea | 2        | 22.04, 29.04   | 1         | 25.03           | 0   | —         | 0  | —        | 3     |
+| Grundiger     | 0        | —              | 0         | —               | 1   | 20.05     | 0  | —        | 1     |
 | Leontes       | 1        | 08.04          | 0         | —               | 0   | —         | 0  | —        | 1     |
 | Lynelen       | 0        | —              | 1         | 15.04           | 0   | —         | 0  | —        | 1     |
 | McJudgin      | 1        | 08.04          | 0         | —               | 0   | —         | 0  | —        | 1     |
 | Nemajumarad   | 0        | —              | 1         | 10.05           | 0   | —         | 0  | —        | 1     |
 | Shapkica      | 0        | —              | 1         | 10.05           | 0   | —         | 0  | —        | 1     |
-| Yorekbarn     | 0        | —              | 1         | 03.05           | 1   | 17.05     | 0  | —        | 2     |
 | Tonz/Tonsen   | 1        | 11.03          | 0         | —               | 0   | —         | 0  | —        | 1     |
 | Verysadge     | 0        | —              | 1         | 15.04           | 0   | —         | 0  | —        | 1     |
+| Yorekbarn     | 0        | —              | 1         | 03.05           | 1   | 17.05     | 0  | —        | 2     |
 | Yxanb         | 1        | 29.04          | 1         | 22.03           | 0   | —         | 0  | —        | 2     |
 
 All other priority-2 DPS/tank-main players: 0 benches at every location.
