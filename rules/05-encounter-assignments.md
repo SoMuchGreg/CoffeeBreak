@@ -402,11 +402,14 @@ If the user later wants to track any of the above, add the role to the canonical
 
 #### Al'ar
 
-| Role        | Eligibility requirement                                                     | Count | Notes |
-|-------------|-----------------------------------------------------------------------------|-------|-------|
-| Main Tank   | Core main tank rotation (see *Common framework → Core main tank rotation*)  | 1     |       |
-| Off Tank #1 | Any tank                                                                    | 1     |       |
-| Off Tank #2 | Any tank                                                                    | 1     |       |
+| Role          | Eligibility requirement                                                          | Count | Notes                                                   |
+|---------------|----------------------------------------------------------------------------------|-------|---------------------------------------------------------|
+| Tank 1        | Any tank (see *Al'ar tank assignment* below)                                     | 1     | Upper.                                                  |
+| Tank 2        | Warrior tank preferred when Tank 1 isn't one (see *Al'ar tank assignment* below) | 1     | Upper.                                                  |
+| Tank 3        | Tier-by-tier class chain (see *Al'ar tank assignment* below)                     | 1     | Lower — handles adds. Strong preference: **Ostbirger**. |
+| Tank 1 Healer | Any healer; Paladin/Druid preferred                                              | 2     | Covers Tank 1.                                          |
+| Tank 2 Healer | Any healer; Paladin/Druid preferred                                              | 2     | Covers Tank 2.                                          |
+| Tank 3 Healer | Any healer; Paladin/Druid preferred                                              | 1     | Covers Tank 3.                                          |
 
 #### Void Reaver
 
@@ -438,6 +441,19 @@ If the user later wants to track any of the above, add the role to the canonical
 | DPS Shaman Interrupt   | **Must be a DPS Shaman** (see *Kael'Thas DPS Shaman Interrupt assignment* below)                 | 1     | Soft preference.                                                                            |
 
 ### Per-role assignment details
+
+#### Al'ar tank assignment
+
+Process Al'ar's three tank slots in table order:
+
+1. **Tank 1** — any tank. Run the general five-step algorithm.
+2. **Tank 2** — Warrior preference, applied conditionally:
+   - **If Tank 1's pick has `Class` beginning with `Warrior`** → the preference is already met; Tank 2 = any tank, general five-step algorithm.
+   - **Otherwise** → step-1 filter to roster members whose `Class` column in `## Actual Roster` begins with `Warrior` and who are in the `### Tanks` sub-table (mainspec Tank or DPS-with-Tank-offspec flexed to Tank for this raid). Run the general five-step algorithm on this pool. If empty (no Warrior tank in roster), widen to any tank and **flag per step 5** ("Al'ar upper-pair Warrior preference unmet: no Warrior tank in roster").
+3. **Tank 3** — **tier-by-tier class chain** (mechanic per *Common framework → Tier-by-tier class chain*):
+   - **Tier 1: Ostbirger.** When in the roster, Ostbirger holds this slot.
+   - **Tier 2: another tanking Paladin** — roster members whose `Class` column in `## Actual Roster` begins with `Paladin` and who are in the `### Tanks` sub-table.
+   - **Tier 3: any tank.**
 
 #### Void Reaver Kiter assignment
 

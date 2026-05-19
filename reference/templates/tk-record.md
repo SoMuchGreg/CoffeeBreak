@@ -183,11 +183,14 @@ user should be aware of.
 
 ### Al'ar
 
-| Role        | Player | Notes |
-|-------------|--------|-------|
-| Main Tank   | ...    |       |
-| Off Tank #1 | ...    |       |
-| Off Tank #2 | ...    |       |
+| Role          | Player | Notes |
+|---------------|--------|-------|
+| Tank 1        | ...    |       |
+| Tank 2        | ...    |       |
+| Tank 3        | ...    |       |
+| Tank 1 Healer | ...    |       |
+| Tank 2 Healer | ...    |       |
+| Tank 3 Healer | ...    |       |
 
 ### Void Reaver
 
@@ -265,9 +268,12 @@ Format:
 ### Encounter assignments
 
 **Al'ar**
-- Main Tank: {Player}
-- Off Tank #1: {Player}
-- Off Tank #2: {Player}
+- Tank 1: {Player}
+- Tank 2: {Player}
+- Tank 3: {Player}
+- Tank 1 Healers: {Player}, {Player}
+- Tank 2 Healers: {Player}, {Player}
+- Tank 3 Healer: {Player}
 
 **Void Reaver**
 - Main Tank: {Player}
