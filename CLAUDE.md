@@ -119,21 +119,31 @@ After any edit that changes rule text (`rules/*.md`), config semantics (`config/
 
 A user-invoked review operation — triggered by "do a deep check" / "deepcheck" (e.g., "deepcheck the diff", "do a deep check of my changes").
 
-### What to review
+Deep check runs as two ordered steps, back-to-back. Step 1 first, step 2 immediately after — do not pause between them to report or to ask the user about flagged items. A single end-of-process report covers both steps.
 
-Review the **currently uncommitted diff** (everything not yet committed, staged or not), plus any **pre-existing content** the changes bear on or that the review otherwise turns up. Check for:
+### Step 1: Meticulous SSOT pass
+
+Scan the **currently uncommitted diff** (everything not yet committed, staged or not), plus any **pre-existing content** the changes bear on, looking *exclusively* for **Single-Source-of-Truth violations** — the same rule, definition, algorithm, vocabulary entry, structural convention, or per-player datum *stated* (not just pointed-to) in more than one place ("Key principles" → single source of truth).
+
+Be exhaustive. Lower the inclusion bar relative to step 2: marginal restatements count, and do not budget output length per category — there is no competing category in this step. Apply the shared fix-vs-flag policy below; carry any flagged items forward to the end-of-process report rather than surfacing them between steps.
+
+### Step 2: Standard deep check
+
+Immediately after step 1 completes, review the (now partially fixed) diff and surrounding content for:
 
 - **Stale rules or references** — a superseded rule; a pointer to a renamed or moved section/file; a "currently …" claim that's no longer true.
 - **General sanity issues** — anything that doesn't add up.
 - **Colliding or interfering rules** — two rules that can't both hold, or that resolve the same situation differently.
-- **Single-Source-of-Truth violations** — the same rule, definition, algorithm, vocabulary entry, structural convention, or per-player datum *stated* (not just pointed-to) in more than one place ("Key principles" → single source of truth).
+- **Single-Source-of-Truth violations** — same definition as step 1; here it serves as a backstop for anything step 1 missed and for new restatements introduced by step 1's own edits.
 - **Clunky or imprecise phrasing** — read every changed sentence as if explaining it cold; flag what makes you stumble. Watch specifically for: terms coined (italicized) that nothing else uses; actions attributed to labels or column names rather than agents (e.g., "their `Mainspec (role)` fills a role"); directional pointers using unusual punctuation, like a slash-separated "above / Section X" dual pointer where the slash reads as a nonsense disjunction; deictic emphasis ("*that* X") without a clear antecedent; "otherwise" or "absent X" clauses that gloss over real cases; sentences packing multiple unrelated points awkwardly. These slip past the SSOT/sanity rubrics because they aren't rule logic — prose quality counts on its own.
 
 ### Act on what you find — don't just report
 
+Applies to both steps:
+
 - **Fix** every finding whose correct resolution needs no decision from the user: stale or broken cross-references; SSOT duplication (replace a restatement with a link to the canonical); typos; inconsistent notation; formatting glitches; clunky phrasing with an obvious clearer rewording; a value that plainly contradicts its canonical source. When the right fix isn't obvious, don't guess — flag it instead.
 - **Flag, and wait for a decision on, only the findings that need the user's judgment:** anything that would change what a rule means, pick between viable alternatives, resolve a real conflict between rules, delete or restructure content, or where the correct fix turns on the user's intent.
-- **Report both:** what you fixed (briefly — the diff has the detail) and what you're flagging.
+- **Report once, at the end of step 2** — after both steps have run. Surface every item needing the user's decision (deduplicate any item step 2's SSOT backstop re-detects from step 1) and briefly summarize what was fixed; the diff has the detail. If nothing needs a decision, a one-line confirmation is enough.
 
 Cleaning up the mechanical findings a deep check surfaces — in the uncommitted diff or in pre-existing content — is in scope, not gold-plating; it overrides the "mention it instead of fixing it" default in "Communication conventions → Stay within the scope of the prompt", because the review was explicitly requested.
 
