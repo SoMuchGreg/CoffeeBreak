@@ -4,15 +4,15 @@
 
 ## Signups (from Discord) — 31 (+1 late)
 
-**Tanks (6):** Mirohl, Doughball, Gigakox, McJudgin, Marino(Varthier), Ostbirger
+**Tanks (6):** Mirohl, Doughball, Kamil(Gigakox), McJudgin, Marino(Varthier), Emil(Ostbirger)
 **Warriors (2):** Verysadge, Dankyn
-**Druids (5):** Yxanb, Jar, Gresac/Younea, Beaverfist, Roossy/Keatala
+**Druids (5):** Yxanb, Guðjón(Jarðepli), Steven(Gresac/Younea), Beaverfist, Mark(Roossy/Keatala)
 **Paladins (3):** Thordrel, Sjwammie, Lightstarr
-**Hunters (3):** Tonz/Tonsen, Vaelruna, Dwarfytron
+**Hunters (3):** Tonz/Tonsen, Mathias(Vaelruna), Dwarfytron
 **Mages (2):** Greg(Ucannotpass), OomToDoom
 **Warlocks (3):** Jabbadhutt, BestPractice, McHughes
-**Priests (3):** Kres/Dissi, Thalynora, *(third unclear)*
-**Shamans (5):** Pergatori, Bergamotka, Lynelen, Ebonybolt, CodeHunt
+**Priests (3):** Adam(Kres/Dissi), Thalynora, *(third unclear)*
+**Shamans (5):** Pergatori, Piotr(Bergamotka), Lynelen, Ebonybolt, CodeHunt
 
 **Late (1):** Glaivemaster Baebay
 
@@ -22,41 +22,41 @@
 
 ### Team Restaurant
 
-| Player            | Role   | Class   |
-|-------------------|--------|---------|
-| Mirohl            | MT     | Warrior |
-| McJudgin          | OT     | Paladin |
-| Gresac/Younea     | Healer | Druid   |
-| CodeHunt          | Healer | Shaman  |
-| Vaelruna          | DPS    | Hunter  |
-| Greg(Ucannotpass) | DPS    | Mage    |
-| Lightstarr        | DPS    | Paladin |
-| Bergamotka        | DPS    | Shaman  |
-| BestPractice      | DPS    | Warlock |
-| Verysadge         | DPS    | Warrior |
+| Player                | Role   | Class   |
+|-----------------------|--------|---------|
+| Mirohl                | MT     | Warrior |
+| McJudgin              | OT     | Paladin |
+| Steven(Gresac/Younea) | Healer | Druid   |
+| CodeHunt              | Healer | Shaman  |
+| Mathias(Vaelruna)     | DPS    | Hunter  |
+| Greg(Ucannotpass)     | DPS    | Mage    |
+| Lightstarr            | DPS    | Paladin |
+| Piotr(Bergamotka)     | DPS    | Shaman  |
+| BestPractice          | DPS    | Warlock |
+| Verysadge             | DPS    | Warrior |
 
 ### Team Bakery
 
-| Player           | Role   | Class   |
-|------------------|--------|---------|
-| Doughball        | MT     | Warrior |
-| Marino(Varthier) | OT     | Paladin |
-| Roossy/Keatala   | Healer | Druid   |
-| Sjwammie         | Healer | Paladin |
-| Tonz/Tonsen      | DPS    | Hunter  |
-| OomToDoom        | DPS    | Mage    |
-| Kres/Dissi       | DPS    | Priest  |
-| Pergatori        | DPS    | Shaman  |
-| Jabbadhutt       | DPS    | Warlock |
-| Dankyn           | DPS    | Warrior |
+| Player               | Role   | Class   |
+|----------------------|--------|---------|
+| Doughball            | MT     | Warrior |
+| Marino(Varthier)     | OT     | Paladin |
+| Mark(Roossy/Keatala) | Healer | Druid   |
+| Sjwammie             | Healer | Paladin |
+| Tonz/Tonsen          | DPS    | Hunter  |
+| OomToDoom            | DPS    | Mage    |
+| Adam(Kres/Dissi)     | DPS    | Priest  |
+| Pergatori            | DPS    | Shaman  |
+| Jabbadhutt           | DPS    | Warlock |
+| Dankyn               | DPS    | Warrior |
 
 ### Team BaeGlaives
 
 | Player              | Role   | Class   |
 |---------------------|--------|---------|
-| Gigakox             | MT     | Warrior |
-| Ostbirger           | OT     | Paladin |
-| Jar                 | Healer | Druid   |
+| Kamil(Gigakox)      | MT     | Warrior |
+| Emil(Ostbirger)     | OT     | Paladin |
+| Guðjón(Jarðepli)    | Healer | Druid   |
 | Thordrel            | Healer | Paladin |
 | Beaverfist          | DPS    | Druid   |
 | Yxanb               | DPS    | Druid   |
@@ -79,31 +79,31 @@
 **Team Restaurant (10)**
 - MT: Mirohl (Warrior)
 - OT: McJudgin (Paladin)
-- Healer: Gresac/Younea (Druid)
+- Healer: Steven(Gresac/Younea) (Druid)
 - Healer: CodeHunt (Shaman)
-- DPS: Vaelruna (Hunter)
+- DPS: Mathias(Vaelruna) (Hunter)
 - DPS: Greg(Ucannotpass) (Mage)
 - DPS: Lightstarr (Paladin)
-- DPS: Bergamotka (Shaman)
+- DPS: Piotr(Bergamotka) (Shaman)
 - DPS: BestPractice (Warlock)
 - DPS: Verysadge (Warrior)
 
 **Team Bakery (10)**
 - MT: Doughball (Warrior)
 - OT: Marino(Varthier) (Paladin)
-- Healer: Roossy/Keatala (Druid)
+- Healer: Mark(Roossy/Keatala) (Druid)
 - Healer: Sjwammie (Paladin)
 - DPS: Tonz/Tonsen (Hunter)
 - DPS: OomToDoom (Mage)
-- DPS: Kres/Dissi (Priest)
+- DPS: Adam(Kres/Dissi) (Priest)
 - DPS: Pergatori (Shaman)
 - DPS: Jabbadhutt (Warlock)
 - DPS: Dankyn (Warrior)
 
 **Team BaeGlaives (10)**
-- MT: Gigakox (Warrior)
-- OT: Ostbirger (Paladin)
-- Healer: Jar (Druid)
+- MT: Kamil(Gigakox) (Warrior)
+- OT: Emil(Ostbirger) (Paladin)
+- Healer: Guðjón(Jarðepli) (Druid)
 - Healer: Thordrel (Paladin)
 - DPS: Beaverfist (Druid)
 - DPS: Yxanb (Druid)
@@ -120,4 +120,4 @@ On the bench: Thalynora and Dwarfytron. But if you show up online around raid ti
 - CodeHunt signed up under old hunter name but is playing healer shaman (Rainbound).
 - Lightstarr — new Paladin, played DPS (Ret).
 - Thalynora — new Priest healer, benched this week.
-- Jar raided (Wednesday, not Sunday — consistent with constraint).
+- Guðjón(Jarðepli) raided (Wednesday, not Sunday — consistent with constraint).

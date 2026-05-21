@@ -2,16 +2,16 @@
 
 ## Signups (from Discord) — 27 (+0)
 
-**Tanks (4):** Mirohl, CptKavior, Marino(Varthier), Ostbirger
-**Warriors (3):** Dankyn, Gigakox, Verysadge
-**Druids (4):** Gresac/Younea, Beaverfist, Roossy/Keatala, Yxanb
+**Tanks (4):** Mirohl, CptKavior, Marino(Varthier), Emil(Ostbirger)
+**Warriors (3):** Dankyn, Kamil(Gigakox), Verysadge
+**Druids (4):** Steven(Gresac/Younea), Beaverfist, Mark(Roossy/Keatala), Yxanb
 **Paladins (3):** Thordrel, McJudgin, Leontes
 **Rogues (1):** Glaivemaster Baebay
-**Hunters (2):** Vaelruna, Tonz/Tonsen
-**Priests (3):** Kres/Dissi, Bombzor, Lightweit
+**Hunters (2):** Mathias(Vaelruna), Tonz/Tonsen
+**Priests (3):** Adam(Kres/Dissi), Bombzor, Lightweit
 **Mages (2):** OomToDoom, Greg(Ucannotpass)
 **Warlocks (1):** McHughes
-**Shamans (4):** Pergatori, Lynelen, Bergamotka, Ebonybolt
+**Shamans (4):** Pergatori, Lynelen, Piotr(Bergamotka), Ebonybolt
 
 **Header stats:** Melee 9, Ranged 9, Healers 7
 
@@ -29,19 +29,19 @@
 | Player           | Class   |
 |------------------|---------|
 | Marino(Varthier) | Paladin |
-| Ostbirger        | Paladin |
+| Emil(Ostbirger)  | Paladin |
 | Mirohl           | Warrior |
 
 ### Healers (6)
 
-| Player         | Class          |
-|----------------|----------------|
-| Gresac/Younea  | Druid (Resto)  |
-| Roossy/Keatala | Druid (Resto)  |
-| McJudgin       | Paladin (Holy) |
-| Thordrel       | Paladin (Holy) |
-| Bombzor        | Priest (Holy)  |
-| Lightweit      | Priest (Holy)  |
+| Player                | Class          |
+|-----------------------|----------------|
+| Steven(Gresac/Younea) | Druid (Resto)  |
+| Mark(Roossy/Keatala)  | Druid (Resto)  |
+| McJudgin              | Paladin (Holy) |
+| Thordrel              | Paladin (Holy) |
+| Bombzor               | Priest (Holy)  |
+| Lightweit             | Priest (Holy)  |
 
 ### DPS (16)
 
@@ -50,18 +50,18 @@
 | Beaverfist          | Druid (Balance)      |
 | Yxanb               | Druid (Feral)        |
 | Tonz/Tonsen         | Hunter               |
-| Vaelruna            | Hunter               |
+| Mathias(Vaelruna)   | Hunter               |
 | Greg(Ucannotpass)   | Mage                 |
 | OomToDoom           | Mage                 |
 | Leontes             | Paladin (Ret)        |
-| Kres/Dissi          | Priest (Shadow)      |
+| Adam(Kres/Dissi)    | Priest (Shadow)      |
 | Glaivemaster Baebay | Rogue (Combat)       |
 | Pergatori           | Shaman (Elemental)   |
-| Bergamotka          | Shaman (Enhancement) |
+| Piotr(Bergamotka)   | Shaman (Enhancement) |
 | Ebonybolt           | Shaman (Enhancement) |
 | McHughes            | Warlock              |
 | Dankyn              | Warrior (Fury)       |
-| Gigakox             | Warrior (Fury)       |
+| Kamil(Gigakox)      | Warrior (Fury)       |
 | Verysadge           | Warrior (Fury)       |
 
 **Composition check:** Target 3/6/16 for Gruul+Mag (per `rules/01-raid-compositions.md`). Actual: 3/6/16 = 25. Status: ⚠️ Warlock count dropped to 1 (below Section 8's combined Destro+Affli lower bound of 3) after Ōtsu and Jabbadhutt withdrew — unfillable since no other Warlocks signed up. Role targets (tank/healer/DPS) still on point.
@@ -79,29 +79,29 @@
 
 ### High King Maulgar
 
-| Role                 | Player               | Notes                                                                 |
-|----------------------|----------------------|-----------------------------------------------------------------------|
-| Maulgar Tank         | Mirohl               |                                                                       |
-| Maulgar Healer       | Thordrel, Bombzor    |                                                                       |
-| Mage Tank (Krosh)    | OomToDoom            |                                                                       |
-| Mage Tank Healer     | Roossy/Keatala       |                                                                       |
-| Kiggler Tank         | Beaverfist           | Balance druid solo                                                    |
-| Kiggler Tank Healer  | Lightweit            |                                                                       |
-| Olm Tank             | Marino(Varthier)     | until felhunter                                                       |
-| Felhunter Subjugate  | Jabbadhutt, McHughes | Jabbadhutt withdrew pre-raid (see ## Notes); McHughes solo-subjugated |
-| Olm Tank Healer      | McJudgin             |                                                                       |
-| Blindeye Tank        | Ostbirger            | Vaelruna MD                                                           |
-| Blindeye Tank Healer | Gresac/Younea        |                                                                       |
+| Role                 | Player                | Notes                                                                 |
+|----------------------|-----------------------|-----------------------------------------------------------------------|
+| Maulgar Tank         | Mirohl                |                                                                       |
+| Maulgar Healer       | Thordrel, Bombzor     |                                                                       |
+| Mage Tank (Krosh)    | OomToDoom             |                                                                       |
+| Mage Tank Healer     | Mark(Roossy/Keatala)  |                                                                       |
+| Kiggler Tank         | Beaverfist            | Balance druid solo                                                    |
+| Kiggler Tank Healer  | Lightweit             |                                                                       |
+| Olm Tank             | Marino(Varthier)      | until felhunter                                                       |
+| Felhunter Subjugate  | Jabbadhutt, McHughes  | Jabbadhutt withdrew pre-raid (see ## Notes); McHughes solo-subjugated |
+| Olm Tank Healer      | McJudgin              |                                                                       |
+| Blindeye Tank        | Emil(Ostbirger)       | Mathias(Vaelruna) MD                                                  |
+| Blindeye Tank Healer | Steven(Gresac/Younea) |                                                                       |
 
 ### Magtheridon — Cube Clickers
 
 | Location   | Marker   | Player            |
 |------------|----------|-------------------|
-| South      | Star     | Kres/Dissi        |
+| South      | Star     | Adam(Kres/Dissi)  |
 | South East | Triangle | Greg(Ucannotpass) |
 | South West | Circle   | McHughes          |
 | North East | Square   | Marino(Varthier)  |
-| North West | Diamond  | Ostbirger         |
+| North West | Diamond  | Emil(Ostbirger)   |
 
 ## Discord announcement
 
@@ -109,12 +109,12 @@
 
 **Tanks (3)**
 - Marino(Varthier) (Paladin)
-- Ostbirger (Paladin)
+- Emil(Ostbirger) (Paladin)
 - Mirohl (Warrior)
 
 **Healers (6)**
-- Gresac/Younea (Restoration Druid)
-- Roossy/Keatala (Restoration Druid)
+- Steven(Gresac/Younea) (Restoration Druid)
+- Mark(Roossy/Keatala) (Restoration Druid)
 - McJudgin (Holy Paladin)
 - Thordrel (Holy Paladin)
 - Bombzor (Holy Priest)
@@ -124,18 +124,18 @@
 - Beaverfist (Balance Druid)
 - Yxanb (Feral Druid)
 - Tonz/Tonsen (Hunter)
-- Vaelruna (Hunter)
+- Mathias(Vaelruna) (Hunter)
 - Greg(Ucannotpass) (Mage)
 - OomToDoom (Mage)
 - Leontes (Retribution Paladin)
-- Kres/Dissi (Shadow Priest)
+- Adam(Kres/Dissi) (Shadow Priest)
 - Glaivemaster Baebay (Combat Rogue)
 - Pergatori (Elemental Shaman)
-- Bergamotka (Enhancement Shaman)
+- Piotr(Bergamotka) (Enhancement Shaman)
 - Ebonybolt (Enhancement Shaman)
 - McHughes (Warlock)
 - Dankyn (Fury Warrior)
-- Gigakox (Fury Warrior)
+- Kamil(Gigakox) (Fury Warrior)
 - Verysadge (Fury Warrior)
 
 ### Encounter assignments
@@ -144,21 +144,21 @@
 - Maulgar Tank: Mirohl
 - Maulgar Healer: Thordrel, Bombzor
 - Mage Tank (Krosh): OomToDoom
-- Mage Tank Healer: Roossy/Keatala
+- Mage Tank Healer: Mark(Roossy/Keatala)
 - Kiggler Tank: Beaverfist
 - Kiggler Tank Healer: Lightweit
 - Olm Tank: Marino(Varthier)
 - Felhunter Subjugate: Jabbadhutt, McHughes
 - Olm Tank Healer: McJudgin
-- Blindeye Tank: Ostbirger
-- Blindeye Tank Healer: Gresac/Younea
+- Blindeye Tank: Emil(Ostbirger)
+- Blindeye Tank Healer: Steven(Gresac/Younea)
 
 **Magtheridon — Cube Clickers**
-- South (Star): Kres/Dissi
+- South (Star): Adam(Kres/Dissi)
 - South East (Triangle): Greg(Ucannotpass)
 - South West (Circle): McHughes
 - North East (Square): Marino(Varthier)
-- North West (Diamond): Ostbirger
+- North West (Diamond): Emil(Ostbirger)
 
 On the bench: CptKavior and Lynelen. But if you show up online around raid time, there's a decent chance a spot will free up because of last-minute changes.
 
@@ -168,7 +168,7 @@ On the bench: CptKavior and Lynelen. But if you show up online around raid time,
 - **CptKavior** signed up as Tank for the first time → Prot offspec recorded as Spec 2 in `rules/04-players.md`. Surplus to the 3 core tanks; user chose to bench → `manual override` per `rules/01-raid-compositions.md` (tank-surplus flex).
 - **Spec overrides confirmed by user** (icon ≠ actual spec):
   - Beaverfist: signup Resto → ran Balance.
-  - Kres/Dissi: signup Holy → ran Shadow.
+  - Adam(Kres/Dissi): signup Holy → ran Shadow.
   This is why the header reads 7 healers but the roster has 6.
-- **Lynelen benched** — Enh over Section 8 cap. Algorithm picked Bergamotka; user overrode → Lynelen.
+- **Lynelen benched** — Enh over Section 8 cap. Algorithm picked Piotr(Bergamotka); user overrode → Lynelen.
 - **Ōtsu and Jabbadhutt withdrew pre-raid.** Pergatori promoted off bench for Ōtsu; Verysadge promoted off bench for Jabbadhutt (Fury cap no longer binding with only 1 Warlock DPS to fit). Warlock count fell to 1, below Section 8's Destro+Affli lower bound of 3 — unfillable (no other Warlocks signed up).

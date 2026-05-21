@@ -53,106 +53,106 @@ A player's sub-table here is determined solely by their top-level grouping in `r
 
 ### Officers
 
-| #   | Player            | Signups |
-|-----|-------------------|---------|
-| 1   | Greg(Ucannotpass) | 31      |
-| 2   | Kres/Dissi        | 29      |
-| 3   | Roossy/Keatala    | 23      |
-| 4   | Jar               | 22      |
-| 5   | Ostbirger         | 18      |
+| # | Player               | Signups |
+|---|----------------------|---------|
+| 1 | Greg(Ucannotpass)    | 31      |
+| 2 | Adam(Kres/Dissi)     | 29      |
+| 3 | Mark(Roossy/Keatala) | 23      |
+| 4 | Guðjón(Jarðepli)     | 22      |
+| 5 | Emil(Ostbirger)      | 18      |
 
 ### Core tanks
 
-| #   | Player           | Signups |
-|-----|------------------|---------|
-| 1   | Marino(Varthier) | 31      |
-| 2   | Gigakox          | 16      |
+| # | Player           | Signups |
+|---|------------------|---------|
+| 1 | Marino(Varthier) | 31      |
+| 2 | Kamil(Gigakox)   | 16      |
 
 ### Current members
 
-| #   | Player         | Signups |
-|-----|----------------|---------|
-| 1   | Gresac/Younea  | 30      |
-| 2   | Vaelruna       | 30      |
-| 3   | Verysadge      | 29      |
-| 4   | Thordrel       | 27      |
-| 5   | Yxanb          | 23      |
-| 6   | Dankyn         | 22      |
-| 7   | Lynelen        | 22      |
-| 8   | Beaverfist     | 21      |
-| 9   | Bergamotka     | 21      |
-| 10  | Ebonybolt      | 19      |
-| 11  | Pergatori      | 19      |
-| 12  | Jabbadhutt     | 18      |
-| 13  | McHughes       | 17      |
-| 14  | Heligeman      | 14      |
-| 15  | Lightweit      | 14      |
-| 16  | CptKavior      | 13      |
-| 17  | Siljes         | 12      |
-| 18  | BestPractice   | 11      |
-| 19  | Tonz/Tonsen    | 11      |
-| 20  | McJudgin       | 10      |
-| 21  | Leontes        | 8       |
-| 22  | Dwarfytron     | 7       |
-| 23  | Shapkica       | 7       |
-| 24  | Doughball      | 6       |
-| 25  | Grundiger      | 6       |
-| 26  | Tim(Tiinar)    | 6       |
-| 27  | Lenno/Mellymel | 5       |
-| 28  | Nemajumarad    | 5       |
-| 29  | Benglock       | 4       |
-| 30  | Boriest        | 4       |
-| 31  | Sjwammie       | 4       |
-| 32  | Yorekbarn      | 4       |
-| 33  | Medianos       | 3       |
-| 34  | Animustenax    | 1       |
-| 35  | Gyrodorei      | 1       |
+| #  | Player                | Signups |
+|----|-----------------------|---------|
+| 1  | Mathias(Vaelruna)     | 30      |
+| 2  | Steven(Gresac/Younea) | 30      |
+| 3  | Verysadge             | 29      |
+| 4  | Thordrel              | 27      |
+| 5  | Yxanb                 | 23      |
+| 6  | Dankyn                | 22      |
+| 7  | Lynelen               | 22      |
+| 8  | Beaverfist            | 21      |
+| 9  | Piotr(Bergamotka)     | 21      |
+| 10 | Ebonybolt             | 19      |
+| 11 | Pergatori             | 19      |
+| 12 | Jabbadhutt            | 18      |
+| 13 | McHughes              | 17      |
+| 14 | Heligeman             | 14      |
+| 15 | Lightweit             | 14      |
+| 16 | CptKavior             | 13      |
+| 17 | Saskia(Siljes)        | 12      |
+| 18 | BestPractice          | 11      |
+| 19 | Tonz/Tonsen           | 11      |
+| 20 | McJudgin              | 10      |
+| 21 | Leontes               | 8       |
+| 22 | Dwarfytron            | 7       |
+| 23 | Shapkica              | 7       |
+| 24 | Doughball             | 6       |
+| 25 | Jordan(Grundiger)     | 6       |
+| 26 | Tim(Tiinar)           | 6       |
+| 27 | David(Nemajumarad)    | 5       |
+| 28 | Mark(Mellymel)        | 5       |
+| 29 | Benglock              | 4       |
+| 30 | Boriest               | 4       |
+| 31 | Sjwammie              | 4       |
+| 32 | Yorekbarn             | 4       |
+| 33 | Medianos              | 3       |
+| 34 | Animustenax           | 1       |
+| 35 | Gyrodorei             | 1       |
 
 ### Former members
 
-| #   | Player              | Signups |
-|-----|---------------------|---------|
-| 1   | Mirohl              | 25      |
-| 2   | OomToDoom           | 21      |
-| 3   | Glaivemaster Baebay | 18      |
-| 4   | Rhoator             | 13      |
-| 5   | Mairen/Zorÿa        | 10      |
-| 6   | Buns/Sourbuns       | 8       |
-| 7   | Faroula             | 7       |
-| 8   | Jinothy             | 7       |
-| 9   | Bombzor             | 6       |
-| 10  | Zemp                | 6       |
-| 11  | Fredfull            | 5       |
-| 12  | Ōtsu                | 5       |
-| 13  | Ryro                | 5       |
-| 14  | Blacksi             | 4       |
-| 15  | Kryxs               | 4       |
-| 16  | Lixly               | 4       |
-| 17  | Trisslott           | 4       |
-| 18  | Venguard            | 4       |
-| 19  | Alaan               | 3       |
-| 20  | Aserrah             | 3       |
-| 21  | Bhandage            | 3       |
-| 22  | CodeHunt/Rainbound  | 3       |
-| 23  | Eselman             | 3       |
-| 24  | Lightstarr          | 3       |
-| 25  | Aenra               | 2       |
-| 26  | Ayujinzhu           | 2       |
-| 27  | Drillbabe           | 2       |
-| 28  | Erushi              | 2       |
-| 29  | Molgrod             | 2       |
-| 30  | Stonebelly          | 2       |
-| 31  | Thalynora           | 2       |
-| 32  | blep                | 1       |
-| 33  | Calendril           | 1       |
-| 34  | CoffeeBean          | 1       |
-| 35  | David/Dejv          | 1       |
-| 36  | Dikkins             | 1       |
-| 37  | Eebowai             | 1       |
-| 38  | ErAleX              | 1       |
-| 39  | Flippkisi           | 1       |
-| 40  | Lovepotion94        | 1       |
-| 41  | overaggro           | 1       |
-| 42  | Rasputin            | 1       |
-| 43  | Sickdeer            | 1       |
-| 44  | Tøbb                | 1       |
+| #  | Player              | Signups |
+|----|---------------------|---------|
+| 1  | Mirohl              | 25      |
+| 2  | OomToDoom           | 21      |
+| 3  | Glaivemaster Baebay | 18      |
+| 4  | Rhoator             | 13      |
+| 5  | Mairen/Zorÿa        | 10      |
+| 6  | Buns/Sourbuns       | 8       |
+| 7  | Faroula             | 7       |
+| 8  | Jinothy             | 7       |
+| 9  | Bombzor             | 6       |
+| 10 | Zemp                | 6       |
+| 11 | Fredfull            | 5       |
+| 12 | Ōtsu                | 5       |
+| 13 | Ryro                | 5       |
+| 14 | Blacksi             | 4       |
+| 15 | Kryxs               | 4       |
+| 16 | Lixly               | 4       |
+| 17 | Trisslott           | 4       |
+| 18 | Venguard            | 4       |
+| 19 | Alaan               | 3       |
+| 20 | Aserrah             | 3       |
+| 21 | Bhandage            | 3       |
+| 22 | CodeHunt/Rainbound  | 3       |
+| 23 | Eselman             | 3       |
+| 24 | Lightstarr          | 3       |
+| 25 | Aenra               | 2       |
+| 26 | Ayujinzhu           | 2       |
+| 27 | Drillbabe           | 2       |
+| 28 | Erushi              | 2       |
+| 29 | Molgrod             | 2       |
+| 30 | Stonebelly          | 2       |
+| 31 | Thalynora           | 2       |
+| 32 | blep                | 1       |
+| 33 | Calendril           | 1       |
+| 34 | CoffeeBean          | 1       |
+| 35 | David/Dejv          | 1       |
+| 36 | Dikkins             | 1       |
+| 37 | Eebowai             | 1       |
+| 38 | ErAleX              | 1       |
+| 39 | Flippkisi           | 1       |
+| 40 | Lovepotion94        | 1       |
+| 41 | overaggro           | 1       |
+| 42 | Rasputin            | 1       |
+| 43 | Sickdeer            | 1       |
+| 44 | Tøbb                | 1       |

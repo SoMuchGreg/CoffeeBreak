@@ -4,15 +4,15 @@
 
 ## Signups (from Discord) — 26 (+1)
 
-**Tanks (3):** Mirohl, Marino(Varthier), Ostbirger
+**Tanks (3):** Mirohl, Marino(Varthier), Emil(Ostbirger)
 **Warriors (2):** Verysadge, Dankyn
-**Druids (5):** Eselman, Gresac/Younea, Roossy/Keatala, Beaverfist, Yxanb
+**Druids (5):** Eselman, Steven(Gresac/Younea), Mark(Roossy/Keatala), Beaverfist, Yxanb
 **Paladins (1):** Rasputin
 **Hunters (3):** Rhoator, Tonz/Tonsen, Dwarfytron
-**Priests (2):** Kres/Dissi, Bombzor
+**Priests (2):** Adam(Kres/Dissi), Bombzor
 **Mages (2):** Greg(Ucannotpass), OomToDoom
 **Warlocks (4):** McHughes, Ōtsu, Jabbadhutt, BestPractice
-**Shamans (4):** Lynelen, Pergatori, Bergamotka, Ebonybolt
+**Shamans (4):** Lynelen, Pergatori, Piotr(Bergamotka), Ebonybolt
 
 **Header stats:** Melee 4/5, Ranged 11, Healers 6
 
@@ -33,14 +33,14 @@
 | Maulgar Tank         | Mirohl                         |                                           |
 | Maulgar Healer       | Thordrel, Beaverfist           | Thordrel absent from signups — see Notes  |
 | Mage Tank (Krosh)    | OomToDoom                      |                                           |
-| Mage Tank Healer     | Kres/Dissi                     |                                           |
+| Mage Tank Healer     | Adam(Kres/Dissi)               |                                           |
 | Kiggler Tank         | Tonz/Tonsen, Greg(Ucannotpass) | 2 ranged DPS (no Balance druid available) |
-| Kiggler Tank Healer  | Gresac/Younea                  |                                           |
+| Kiggler Tank Healer  | Steven(Gresac/Younea)          |                                           |
 | Olm Tank             | Eselman                        | until felhunter                           |
 | Felhunter Subjugate  | Ōtsu, McHughes                 |                                           |
 | Olm Tank Healer      | Bombzor                        |                                           |
 | Blindeye Tank        | Marino(Varthier)               |                                           |
-| Blindeye Tank Healer | Roossy/Keatala                 |                                           |
+| Blindeye Tank Healer | Mark(Roossy/Keatala)           |                                           |
 
 ### Magtheridon — Cube Clickers
 

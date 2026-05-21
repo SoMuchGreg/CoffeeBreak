@@ -9,7 +9,7 @@ This file holds Roster Machine's **configuration data** — the canonical facts 
 | **Raid team** | The full 10 or 25-man group forming the raid squad (e.g., "Team Restaurant") |
 | **Raid location** | The unit of raid planning — e.g., **Karazhan**, **Gruul+Mag**, **SSC**, **TK**, **Hyjal**, **BT**, **Sunwell**. A location may wrap one zone (Karazhan) or two paired as a single planning unit (Gruul+Mag = Gruul's Lair + Magtheridon's Lair). Location is one of the axes of bench-rotation tracking (`rules/02-bench-rotation.md` → "Fairness requirement"). |
 | **Party group** (or "party", "single group") | The 5-man unit within a raid team. 10-man raids = 2 party groups, 25-man raids = 5 party groups |
-| **Canonical name** | The `Player` column value in `rules/04-players.md` — the identifier under which a player's signups, benches, and historical data are aggregated. May be a single name (e.g., `Yxanb`) or a **composite** joining two or more names commonly used to refer to the player. The separator encodes the join: **`A/B`** joins character-side names (character names, in-game nicknames, in-game aliases) — e.g., `Kres/Dissi`, `Roossy/Keatala`, `Lenno/Mellymel`, `Gresac/Younea`, `Tonz/Tonsen`. **`RealName(Character)`** wraps the character name in parentheses when the prefix is the player's real name or real-life nickname — e.g., `Marino(Varthier)`, `Greg(Ucannotpass)`, `Tim(Tiinar)`. A name is added to the composite whenever it is commonly used to refer to that player; rarely-used names stay in `Character(s)` only. Signups under any component of the composite, any `Character(s)` entry, or a Discord-rendered variant of the canonical (e.g., `Greg (Ucannotpass)` with internal whitespace) all collapse to the canonical |
+| **Canonical name** | The `Player` column value in `rules/04-players.md` — the identifier under which a player's signups, benches, and historical data are aggregated. May be a single name (e.g., `Yxanb`) or a **composite** joining two or more names commonly used to refer to the player. The separator encodes the join: **`A/B`** joins character-side names (character names, in-game nicknames, in-game aliases) — e.g., `Tonz/Tonsen`. **`RealName(Character)`** wraps the character name in parentheses when the prefix is the player's real name or real-life nickname — e.g., `Marino(Varthier)`, `Greg(Ucannotpass)`, `Tim(Tiinar)`; the parenthetical may itself be an `A/B`-joined composite — e.g., `Adam(Kres/Dissi)`, `Steven(Gresac/Younea)`. A name is added to the composite whenever it is commonly used to refer to that player; rarely-used names stay in `Character(s)` only. Signups under any component of the composite, any `Character(s)` entry, or a Discord-rendered variant of the canonical (e.g., `Greg (Ucannotpass)` with internal whitespace) all collapse to the canonical |
 | **Character** | A single in-game character. The `Character(s)` column in `rules/04-players.md` lists each player's in-game characters and may also include alternate names/nicknames the player is known by |
 | **Main** | A player's primary character — the one whose class/spec appears in the `Class` and `Mainspec (role)` columns of `rules/04-players.md` |
 | **Alt** | A secondary character of the same player of a different class from the main. Listed in `Character(s)`; the alt's structured composition data lives in the **Alt characters** sub-table of `rules/04-players.md`. Per-raid main-vs-alt resolution is governed by `rules/01-raid-compositions.md` → "Alts". |
@@ -70,11 +70,11 @@ Karazhan's team count depends on signups (`rules/01-raid-compositions.md` → "U
 
 The in-game raid leader for a given raid (definition: Terminology → "Raid leader" above) is determined by **playing-roster presence**:
 
-1. **Kres/Dissi** — if he is in `## Actual Roster` for this raid.
-2. **Jar** — if Kres/Dissi is not in `## Actual Roster` (absent, withdrawn, or benched) and Jar is.
+1. **Adam(Kres/Dissi)** — if he is in `## Actual Roster` for this raid.
+2. **Guðjón(Jarðepli)** — if Adam(Kres/Dissi) is not in `## Actual Roster` (absent, withdrawn, or benched) and Guðjón(Jarðepli) is.
 3. **Unassigned** — if neither is in `## Actual Roster`; no raid-leader exclusion fires.
 
-Bench does not count: a benched Kres/Dissi cedes raid-leader status to Jar. Membership of the eligible-RL set (currently Kres/Dissi, then Jar) changes only on explicit user instruction.
+Bench does not count: a benched Adam(Kres/Dissi) cedes raid-leader status to Guðjón(Jarðepli). Membership of the eligible-RL set (currently Adam(Kres/Dissi), then Guðjón(Jarðepli)) changes only on explicit user instruction.
 
 Encounter-role implication: see `rules/05-encounter-assignments.md` → "Common framework → Raid leader exclusion".
 
@@ -92,10 +92,10 @@ Raids in this category:
 
 ## Active settings
 
-| Setting              | Value                     | Notes                                         |
-|----------------------|---------------------------|-----------------------------------------------|
-| Domain               | WoW TBC 20th Anniversary  | Raid composition planning                     |
-| Input method         | Discord screenshots       | User provides signup screenshots              |
+| Setting      | Value                    | Notes                            |
+|--------------|--------------------------|----------------------------------|
+| Domain       | WoW TBC 20th Anniversary | Raid composition planning        |
+| Input method | Discord screenshots      | User provides signup screenshots |
 
 ## What's next
 

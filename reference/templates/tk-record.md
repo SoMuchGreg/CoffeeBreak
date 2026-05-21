@@ -153,9 +153,9 @@ the record file.
 Delete the table and replace with `*(None — all 25 spots filled)*` if no one was benched.
 -->
 
-| Player | Priority | Bench count (cumulative, after this raid) | Reason          |
-|--------|----------|-------------------------------------------|-----------------|
-| ...    | 2        | ...                                       | fair rotation   |
+| Player | Priority | Bench count (cumulative, after this raid) | Reason        |
+|--------|----------|-------------------------------------------|---------------|
+| ...    | 2        | ...                                       | fair rotation |
 
 ## Encounter assignments
 
@@ -172,9 +172,9 @@ list is invariant per `rules/05-encounter-assignments.md` → "TK →
 Encounter roles".
 
 Multi-slot roles (single row, multiple names): list names comma-separated in the
-Player cell (e.g., `Vaelruna, Grundiger, Tonz/Tonsen`). If a slot within a
+Player cell (e.g., `Mathias(Vaelruna), Jordan(Grundiger), Tonz/Tonsen`). If a slot within a
 multi-slot role is unfilled, write `—` for the missing slot (e.g.,
-`Vaelruna, Grundiger, —`).
+`Mathias(Vaelruna), Jordan(Grundiger), —`).
 
 Canonical names per `rules/04-players.md`. The Notes column is free-form — use it
 for per-raid facts such as continuity overrides or hard-constraint flags the
@@ -194,12 +194,12 @@ user should be aware of.
 
 ### Void Reaver
 
-| Role        | Player | Notes                                                                       |
-|-------------|--------|-----------------------------------------------------------------------------|
-| Main Tank   | ...    |                                                                             |
-| Off Tank #1 | ...    |                                                                             |
-| Off Tank #2 | ...    |                                                                             |
-| Kiter       | ...    | List 3 names: Kiter #1, #2, #3 (e.g., `Grundiger, Vaelruna, Tonz/Tonsen`).  |
+| Role        | Player | Notes                                                                                       |
+|-------------|--------|---------------------------------------------------------------------------------------------|
+| Main Tank   | ...    |                                                                                             |
+| Off Tank #1 | ...    |                                                                                             |
+| Off Tank #2 | ...    |                                                                                             |
+| Kiter       | ...    | List 3 names: Kiter #1, #2, #3 (e.g., `Jordan(Grundiger), Mathias(Vaelruna), Tonz/Tonsen`). |
 
 ### High Astromancer Solarian
 

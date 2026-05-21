@@ -6,11 +6,11 @@
 
 **Tanks (3):** Mirohl, Marino(Varthier), Zemp
 **Warriors (1):** Mairen/Zorÿa
-**Druids (2):** Jar, Gresac/Younea
+**Druids (2):** Guðjón(Jarðepli), Steven(Gresac/Younea)
 **Paladins (2):** Stonebelly, Heligeman
 **Rogues (1):** Glaivemaster Baebay
 **Hunters (2):** Rhoator, Aenra
-**Priests (2):** Medianos, Kres/Dissi
+**Priests (2):** Medianos, Adam(Kres/Dissi)
 **Mages (2):** Greg(Ucannotpass), Faroula
 **Warlocks (2):** Trisslott, Buns/Sourbuns
 **Shamans (2):** Alaan, Blacksi

@@ -6,9 +6,9 @@
 
 **Tanks (3):** Mirohl, Marino(Varthier), CoffeeBean
 **Warriors (2):** Ryro, Mairen/Zorÿa
-**Druids (1):** Gresac/Younea
+**Druids (1):** Steven(Gresac/Younea)
 **Paladins (1):** Stonebelly
-**Hunters (2):** Rhoator, Vaelruna
+**Hunters (2):** Rhoator, Mathias(Vaelruna)
 **Mages (2):** Greg(Ucannotpass), Faroula
 **Warlocks (2):** Trisslott, Buns/Sourbuns
 **Shamans (1):** Blacksi

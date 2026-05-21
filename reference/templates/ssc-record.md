@@ -154,9 +154,9 @@ the record file.
 Delete the table and replace with `*(None — all 25 spots filled)*` if no one was benched.
 -->
 
-| Player | Priority | Bench count (cumulative, after this raid) | Reason          |
-|--------|----------|-------------------------------------------|-----------------|
-| ...    | 2        | ...                                       | fair rotation   |
+| Player | Priority | Bench count (cumulative, after this raid) | Reason        |
+|--------|----------|-------------------------------------------|---------------|
+| ...    | 2        | ...                                       | fair rotation |
 
 ## Encounter assignments
 
@@ -197,7 +197,7 @@ user should be aware of.
 |-------------|--------|-------|
 | Main Tank   | ...    |       |
 | Off Tank    | ...    |       |
-| Platform CC | ...    | List 4 names in order: Platform 1 CC #1, Platform 1 CC #2, Platform 2 CC #1, Platform 2 CC #2 (e.g., `Greg(Ucannotpass), Jabbadhutt, Vaelruna, Roossy/Keatala`). The third platform takes no CC. |
+| Platform CC | ...    | List 4 names in order: Platform 1 CC #1, Platform 1 CC #2, Platform 2 CC #1, Platform 2 CC #2 (e.g., `Greg(Ucannotpass), Jabbadhutt, Mathias(Vaelruna), Mark(Roossy/Keatala)`). The third platform takes no CC. |
 
 ### Leotheras the Blind
 

@@ -6,11 +6,11 @@
 
 **Tanks (3):** Mirohl, Buns/Sourbuns, Marino(Varthier)
 **Warriors (1):** Verysadge
-**Druids (1):** Jar
+**Druids (1):** Guðjón(Jarðepli)
 **Paladins (1):** Heligeman
 **Rogues (2):** Glaivemaster Baebay, Molgrod
-**Hunters (2):** Lixly, Vaelruna
-**Priests (2):** Kres/Dissi, Medianos
+**Hunters (2):** Lixly, Mathias(Vaelruna)
+**Priests (2):** Adam(Kres/Dissi), Medianos
 **Mages (2):** Faroula, Greg(Ucannotpass)
 **Warlocks (1):** Trisslott
 

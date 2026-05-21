@@ -6,11 +6,11 @@
 
 **Tanks (4):** Mirohl, Dankyn, Marino(Varthier), blep
 **Warriors (1):** Verysadge
-**Druids (3):** Gresac/Younea, Yxanb, Jar
+**Druids (3):** Steven(Gresac/Younea), Yxanb, Guðjón(Jarðepli)
 **Paladins (1):** Thordrel
 **Rogues (2):** Glaivemaster Baebay, Drillbabe
-**Hunters (2):** Vaelruna, Rhoator
-**Priests (1):** Kres/Dissi
+**Hunters (2):** Mathias(Vaelruna), Rhoator
+**Priests (1):** Adam(Kres/Dissi)
 **Mages (3):** Greg(Ucannotpass), OomToDoom, Jinothy
 **Warlocks (3):** BestPractice, McHughes, Ōtsu
 

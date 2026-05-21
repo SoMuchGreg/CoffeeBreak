@@ -6,10 +6,10 @@
 
 **Tanks (1):** Marino(Varthier)
 **Warriors (3):** Mirohl, Verysadge, Lovepotion94
-**Druids (2):** Kres/Dissi, Jar
+**Druids (2):** Adam(Kres/Dissi), Guðjón(Jarðepli)
 **Paladins (1):** Thordrel
 **Rogues (1):** Glaivemaster Baebay
-**Hunters (3):** Vaelruna, Rhoator, Roossy/Keatala
+**Hunters (3):** Mathias(Vaelruna), Rhoator, Mark(Roossy/Keatala)
 **Mages (1):** Faroula
 **Warlocks (1):** Mairen
 

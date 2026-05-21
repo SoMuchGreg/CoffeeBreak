@@ -6,11 +6,11 @@
 
 **Tanks (3):** Mirohl, Doughball, Marino(Varthier)
 **Warriors (3):** Verysadge, Dankyn, Ayujinzhu
-**Druids (3):** Gresac/Younea, Jar, Yxanb
+**Druids (3):** Steven(Gresac/Younea), Guðjón(Jarðepli), Yxanb
 **Paladins (2):** Thordrel, Sjwammie
 **Rogues (1):** Glaivemaster Baebay
-**Hunters (2):** Vaelruna, Rhoator
-**Priests (1):** Kres/Dissi
+**Hunters (2):** Mathias(Vaelruna), Rhoator
+**Priests (1):** Adam(Kres/Dissi)
 **Mages (3):** OomToDoom, Jinothy, Greg(Ucannotpass)
 **Warlocks (3):** Ōtsu, BestPractice, McHughes
 **Shamans (1):** Lynelen

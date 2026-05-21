@@ -6,11 +6,11 @@
 
 **Tanks (2):** Mirohl, Marino(Varthier)
 **Warriors (2):** Verysadge, Dankyn
-**Druids (2):** Yxanb, Gresac/Younea
+**Druids (2):** Yxanb, Steven(Gresac/Younea)
 **Paladins (1):** Thordrel
 **Rogues (1):** Glaivemaster Baebay
-**Hunters (1):** Vaelruna
-**Priests (1):** Kres/Dissi
+**Hunters (1):** Mathias(Vaelruna)
+**Priests (1):** Adam(Kres/Dissi)
 **Mages (3):** Greg(Ucannotpass), OomToDoom, Jinothy
 **Warlocks (2):** Mairen/Zorÿa, Ōtsu
 
@@ -22,19 +22,19 @@
 
 ### High King Maulgar
 
-| Role                 | Player                      | Notes                                     |
-|----------------------|-----------------------------|-------------------------------------------|
-| Maulgar Tank         | Mirohl                      |                                           |
-| Maulgar Healer       | Thordrel, PUG Heal          |                                           |
-| Mage Tank (Krosh)    | OomToDoom                   |                                           |
-| Mage Tank Healer     | Kres/Dissi                  |                                           |
-| Kiggler Tank         | Vaelruna, Greg(Ucannotpass) | 2 ranged DPS (no Balance druid available) |
-| Kiggler Tank Healer  | Gresac/Younea               |                                           |
-| Olm Tank             | Dankyn                      | until felhunter                           |
-| Felhunter Subjugate  | Ōtsu                        |                                           |
-| Olm Tank Healer      | —                           |                                           |
-| Blindeye Tank        | Marino(Varthier)            |                                           |
-| Blindeye Tank Healer | —                           |                                           |
+| Role                 | Player                               | Notes                                     |
+|----------------------|--------------------------------------|-------------------------------------------|
+| Maulgar Tank         | Mirohl                               |                                           |
+| Maulgar Healer       | Thordrel, PUG Heal                   |                                           |
+| Mage Tank (Krosh)    | OomToDoom                            |                                           |
+| Mage Tank Healer     | Adam(Kres/Dissi)                     |                                           |
+| Kiggler Tank         | Mathias(Vaelruna), Greg(Ucannotpass) | 2 ranged DPS (no Balance druid available) |
+| Kiggler Tank Healer  | Steven(Gresac/Younea)                |                                           |
+| Olm Tank             | Dankyn                               | until felhunter                           |
+| Felhunter Subjugate  | Ōtsu                                 |                                           |
+| Olm Tank Healer      | —                                    |                                           |
+| Blindeye Tank        | Marino(Varthier)                     |                                           |
+| Blindeye Tank Healer | —                                    |                                           |
 
 ### Magtheridon — Cube Clickers
 
@@ -42,6 +42,6 @@
 |------------|----------|-------------------|
 | South      | Star     | Greg(Ucannotpass) |
 | South East | Triangle | Mairen/Zorÿa      |
-| South West | Circle   | Vaelruna          |
+| South West | Circle   | Mathias(Vaelruna) |
 | North East | Square   | Ōtsu              |
 | North West | Diamond  | Jinothy           |

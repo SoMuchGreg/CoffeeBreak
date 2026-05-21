@@ -6,19 +6,19 @@
 
 **Tanks (4):** Mirohl, Doughball, Marino(Varthier), Lightstarr
 **Warriors (3):** Verysadge, Dankyn, Ayujinzhu
-**Druids (5):** Yxanb, Gresac/Younea, Jar, Beaverfist, Roossy/Keatala
+**Druids (5):** Yxanb, Steven(Gresac/Younea), Guðjón(Jarðepli), Beaverfist, Mark(Roossy/Keatala)
 **Paladins (2):** Thordrel, Sjwammie
-**Hunters (2):** Rhoator, Vaelruna
+**Hunters (2):** Rhoator, Mathias(Vaelruna)
 **Mages (1):** Greg(Ucannotpass)
 **Warlocks (3):** BestPractice, Jabbadhutt, McHughes
-**Shamans (2):** Lynelen, Bergamotka
+**Shamans (2):** Lynelen, Piotr(Bergamotka)
 
 **Header stats:** Melee 4/4, Ranged 8, Healers 6
 
 ## Bench (3)
 
-| Player         | Priority | Bench count (cumulative, after this raid) | Reason        |
-|----------------|----------|-------------------------------------------|---------------|
-| Beaverfist     | 2        | 1                                         | fair rotation |
-| Roossy/Keatala | 2        | 1                                         | fair rotation |
-| McHughes       | 2        | 1                                         | fair rotation |
+| Player               | Priority | Bench count (cumulative, after this raid) | Reason        |
+|----------------------|----------|-------------------------------------------|---------------|
+| Beaverfist           | 2        | 1                                         | fair rotation |
+| Mark(Roossy/Keatala) | 2        | 1                                         | fair rotation |
+| McHughes             | 2        | 1                                         | fair rotation |

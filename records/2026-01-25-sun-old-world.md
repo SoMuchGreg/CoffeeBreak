@@ -9,7 +9,7 @@
 **Paladins (1):** Heligeman
 **Rogues (2):** Glaivemaster Baebay, Molgrod
 **Hunters (2):** Rhoator, Aenra
-**Priests (2):** Kres/Dissi, Medianos
+**Priests (2):** Adam(Kres/Dissi), Medianos
 **Mages (2):** Faroula, Greg(Ucannotpass)
 **Warlocks (2):** Trisslott, Mairen/Zorÿa
 **Shamans (2):** Alaan, Blacksi

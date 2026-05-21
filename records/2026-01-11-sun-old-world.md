@@ -6,9 +6,9 @@
 
 **Tanks (1):** Marino(Varthier)
 **Warriors (1):** Mirohl
-**Druids (1):** Kres/Dissi
+**Druids (1):** Adam(Kres/Dissi)
 **Paladins (1):** ErAleX
-**Hunters (1):** Vaelruna
+**Hunters (1):** Mathias(Vaelruna)
 **Mages (2):** Faroula, Greg(Ucannotpass)
 
 **Header stats:** Melee 2/0, Ranged 3, Healers 2

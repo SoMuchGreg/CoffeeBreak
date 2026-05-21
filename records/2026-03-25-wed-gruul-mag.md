@@ -5,17 +5,17 @@
 ## Signups (from Discord) — 29 total
 
 **Tanks (3):** Marino(Varthier), Mirohl, Doughball
-**Warriors (3):** Verysadge, Dankyn, Gigakox
-**Druids (6):** Yxanb, Gresac/Younea, Roossy/Keatala, Beaverfist, Jar, Eselman
+**Warriors (3):** Verysadge, Dankyn, Kamil(Gigakox)
+**Druids (6):** Yxanb, Steven(Gresac/Younea), Mark(Roossy/Keatala), Beaverfist, Guðjón(Jarðepli), Eselman
 **Paladins (2):** Sjwammie, Thordrel
 **Rogue (1):** Glaivemaster Baebay
-**Hunters (3):** CodeHunt, Dwarfytron, Vaelruna
-**Priests (3):** Kres/Dissi, Bombzor, Siljes
+**Hunters (3):** CodeHunt, Dwarfytron, Mathias(Vaelruna)
+**Priests (3):** Adam(Kres/Dissi), Bombzor, Saskia(Siljes)
 **Mages (2):** Greg(Ucannotpass), OomToDoom
 **Warlocks (2):** McHughes, Jabbadhutt
-**Shamans (4):** Bergamotka, Ebonybolt, Lynelen, Pergatori
+**Shamans (4):** Piotr(Bergamotka), Ebonybolt, Lynelen, Pergatori
 
-**Bench (2):** Gresac/Younea, Roossy/Keatala
+**Bench (2):** Steven(Gresac/Younea), Mark(Roossy/Keatala)
 
 **Header stats:** Melee 7, Ranged 9, Healers 7
 
@@ -33,11 +33,11 @@
 | Player             | Class   | Notes                  |
 |--------------------|---------|------------------------|
 | Beaverfist         | Druid   |                        |
-| Jar                | Druid   | Resto spec             |
+| Guðjón(Jarðepli)   | Druid   | Resto spec             |
 | Sjwammie           | Paladin |                        |
 | Thordrel           | Paladin |                        |
 | Bombzor            | Priest  |                        |
-| Siljes             | Priest  |                        |
+| Saskia(Siljes)     | Priest  |                        |
 | *(7th healer TBD)* |         | Header shows 7 healers |
 
 ### DPS (16)
@@ -47,28 +47,28 @@
 | Doughball                                    | ?       | Tanks in Kara, DPS in 25-mans |
 | Verysadge                                    | Warrior |                               |
 | Dankyn                                       | Warrior |                               |
-| Gigakox                                      | Warrior | DPS this time, not tanking    |
+| Kamil(Gigakox)                               | Warrior | DPS this time, not tanking    |
 | Glaivemaster Baebay                          | Rogue   |                               |
 | Yxanb                                        | Druid   |                               |
 | Eselman                                      | Druid   | Feral DPS (confirmed)         |
 | CodeHunt                                     | Hunter  | Still on hunter at this date  |
 | Dwarfytron                                   | Hunter  |                               |
-| Vaelruna                                     | Hunter  |                               |
-| Kres/Dissi                                   | Priest  | Shadow                        |
+| Mathias(Vaelruna)                            | Hunter  |                               |
+| Adam(Kres/Dissi)                             | Priest  | Shadow                        |
 | Greg(Ucannotpass)                            | Mage    |                               |
 | OomToDoom                                    | Mage    |                               |
 | McHughes                                     | Warlock |                               |
 | Jabbadhutt                                   | Warlock |                               |
 | *(shamans — some DPS, possibly one healing)* |         |                               |
 
-**Shamans (4):** Bergamotka, Ebonybolt, Lynelen, Pergatori — exact role split (DPS vs healer) uncertain.
+**Shamans (4):** Piotr(Bergamotka), Ebonybolt, Lynelen, Pergatori — exact role split (DPS vs healer) uncertain.
 
 ## Bench
 
-| Player         | Bench count (cumulative) |
-|----------------|--------------------------|
-| Gresac/Younea  | 1                        |
-| Roossy/Keatala | 1                        |
+| Player                | Bench count (cumulative) |
+|-----------------------|--------------------------|
+| Steven(Gresac/Younea) | 1                        |
+| Mark(Roossy/Keatala)  | 1                        |
 
 ## Encounter assignments
 
@@ -86,9 +86,9 @@
 | Kiggler Tank Healer  | Sjwammie                              |                                                                             |
 | Olm Tank             | Eselman                               | until felhunter                                                             |
 | Felhunter Subjugate  | Jabbadhutt, McHughes                  |                                                                             |
-| Olm Tank Healer      | Siljes                                |                                                                             |
+| Olm Tank Healer      | Saskia(Siljes)                        |                                                                             |
 | Blindeye Tank        | Doughball                             |                                                                             |
-| Blindeye Tank Healer | Jar                                   |                                                                             |
+| Blindeye Tank Healer | Guðjón(Jarðepli)                      |                                                                             |
 
 ### Magtheridon — Cube Clickers
 
@@ -103,9 +103,9 @@
 ## Notes
 
 - Ran on Wednesday instead of the usual raid day.
-- Jar attended (Wednesday, not Sunday — consistent with his constraint).
+- Guðjón(Jarðepli) attended (Wednesday, not Sunday — consistent with his constraint).
 - Doughball played DPS in this 25-man (tanks only in Kara).
 - Eselman confirmed feral DPS here (not tanking or healing).
 - CodeHunt still on hunter at this date; later switched to healer shaman Rainbound.
 - CodeHunt sometimes signs up under his old hunter name even when playing Rainbound — watch for this in future screenshots.
-- First recorded bench: Gresac/Younea and Roossy/Keatala.
+- First recorded bench: Steven(Gresac/Younea) and Mark(Roossy/Keatala).

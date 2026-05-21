@@ -2,16 +2,16 @@
 
 ## Signups (from Discord)
 
-**Tanks (3):** Mirohl, Ostbirger, Marino(Varthier)
-**Warriors (2):** Verysadge, Gigakox
-**Druids (5):** Gresac/Younea, Roossy/Keatala, Eselman, Yxanb, Beaverfist
+**Tanks (3):** Mirohl, Emil(Ostbirger), Marino(Varthier)
+**Warriors (2):** Verysadge, Kamil(Gigakox)
+**Druids (5):** Steven(Gresac/Younea), Mark(Roossy/Keatala), Eselman, Yxanb, Beaverfist
 **Paladin (1):** Thordrel
 **Rogues (2):** Glaivemaster Baebay, Drillbabe
-**Hunters (4):** Tonz/Tonsen, Dwarfytron, Vaelruna, Rhoator
-**Priests (3):** Bombzor, Kres/Dissi, Siljes
+**Hunters (4):** Tonz/Tonsen, Dwarfytron, Mathias(Vaelruna), Rhoator
+**Priests (3):** Bombzor, Adam(Kres/Dissi), Saskia(Siljes)
 **Mages (2):** OomToDoom, Greg(Ucannotpass)
 **Warlocks (3):** McHughes, BestPractice, Jabbadhutt
-**Shamans (4):** Lynelen, Bergamotka, Ebonybolt, Pergatori
+**Shamans (4):** Lynelen, Piotr(Bergamotka), Ebonybolt, Pergatori
 **Late signup:** McJudgin
 
 ---
@@ -20,48 +20,48 @@
 
 ### Team Bakery
 
-| Player            | Role   | Class   |
-|-------------------|--------|---------|
-| Marino(Varthier)  | MT     | Paladin |
-| Gigakox           | OT     | Warrior |
-| Gresac/Younea     | Healer | Druid   |
-| Siljes            | Healer | Priest  |
-| Vaelruna          | DPS    | Hunter  |
-| Greg(Ucannotpass) | DPS    | Mage    |
-| Kres/Dissi        | DPS    | Priest  |
-| Drillbabe         | DPS    | Rogue   |
-| Pergatori         | DPS    | Shaman  |
-| Jabbadhutt        | DPS    | Warlock |
+| Player                | Role   | Class   |
+|-----------------------|--------|---------|
+| Marino(Varthier)      | MT     | Paladin |
+| Kamil(Gigakox)        | OT     | Warrior |
+| Steven(Gresac/Younea) | Healer | Druid   |
+| Saskia(Siljes)        | Healer | Priest  |
+| Mathias(Vaelruna)     | DPS    | Hunter  |
+| Greg(Ucannotpass)     | DPS    | Mage    |
+| Adam(Kres/Dissi)      | DPS    | Priest  |
+| Drillbabe             | DPS    | Rogue   |
+| Pergatori             | DPS    | Shaman  |
+| Jabbadhutt            | DPS    | Warlock |
 
 ### Team BaeGlaives
 
-| Player              | Role   | Class   |
-|---------------------|--------|---------|
-| Ostbirger           | MT     | Paladin |
-| Eselman             | OT     | Druid   |
-| Roossy/Keatala      | Healer | Druid   |
-| Thordrel            | Healer | Paladin |
-| Dwarfytron          | DPS    | Hunter  |
-| OomToDoom           | DPS    | Mage    |
-| Glaivemaster Baebay | DPS    | Rogue   |
-| Ebonybolt           | DPS    | Shaman  |
-| Lynelen             | DPS    | Shaman  |
-| BestPractice        | DPS    | Warlock |
+| Player               | Role   | Class   |
+|----------------------|--------|---------|
+| Emil(Ostbirger)      | MT     | Paladin |
+| Eselman              | OT     | Druid   |
+| Mark(Roossy/Keatala) | Healer | Druid   |
+| Thordrel             | Healer | Paladin |
+| Dwarfytron           | DPS    | Hunter  |
+| OomToDoom            | DPS    | Mage    |
+| Glaivemaster Baebay  | DPS    | Rogue   |
+| Ebonybolt            | DPS    | Shaman  |
+| Lynelen              | DPS    | Shaman  |
+| BestPractice         | DPS    | Warlock |
 
 ### Team Restaurant
 
-| Player      | Role   | Class   |
-|-------------|--------|---------|
-| Mirohl      | MT     | Warrior |
-| McJudgin    | OT     | Paladin |
-| Beaverfist  | Healer | Druid   |
-| Bombzor     | Healer | Priest  |
-| Yxanb       | DPS    | Druid   |
-| Rhoator     | DPS    | Hunter  |
-| Tonz/Tonsen | DPS    | Hunter  |
-| Bergamotka  | DPS    | Shaman  |
-| McHughes    | DPS    | Warlock |
-| Verysadge   | DPS    | Warrior |
+| Player            | Role   | Class   |
+|-------------------|--------|---------|
+| Mirohl            | MT     | Warrior |
+| McJudgin          | OT     | Paladin |
+| Beaverfist        | Healer | Druid   |
+| Bombzor           | Healer | Priest  |
+| Yxanb             | DPS    | Druid   |
+| Rhoator           | DPS    | Hunter  |
+| Tonz/Tonsen       | DPS    | Hunter  |
+| Piotr(Bergamotka) | DPS    | Shaman  |
+| McHughes          | DPS    | Warlock |
+| Verysadge         | DPS    | Warrior |
 
 ## Bench
 
@@ -73,20 +73,20 @@
 
 **Team Bakery (10)**
 - MT: Marino(Varthier) (Paladin)
-- OT: Gigakox (Warrior)
-- Healer: Gresac/Younea (Druid)
-- Healer: Siljes (Priest)
-- DPS: Vaelruna (Hunter)
+- OT: Kamil(Gigakox) (Warrior)
+- Healer: Steven(Gresac/Younea) (Druid)
+- Healer: Saskia(Siljes) (Priest)
+- DPS: Mathias(Vaelruna) (Hunter)
 - DPS: Greg(Ucannotpass) (Mage)
-- DPS: Kres/Dissi (Priest)
+- DPS: Adam(Kres/Dissi) (Priest)
 - DPS: Drillbabe (Rogue)
 - DPS: Pergatori (Shaman)
 - DPS: Jabbadhutt (Warlock)
 
 **Team BaeGlaives (10)**
-- MT: Ostbirger (Paladin)
+- MT: Emil(Ostbirger) (Paladin)
 - OT: Eselman (Druid)
-- Healer: Roossy/Keatala (Druid)
+- Healer: Mark(Roossy/Keatala) (Druid)
 - Healer: Thordrel (Paladin)
 - DPS: Dwarfytron (Hunter)
 - DPS: OomToDoom (Mage)
@@ -103,7 +103,7 @@
 - DPS: Yxanb (Druid)
 - DPS: Rhoator (Hunter)
 - DPS: Tonz/Tonsen (Hunter)
-- DPS: Bergamotka (Shaman)
+- DPS: Piotr(Bergamotka) (Shaman)
 - DPS: McHughes (Warlock)
 - DPS: Verysadge (Warrior)
 

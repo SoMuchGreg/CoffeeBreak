@@ -6,10 +6,10 @@
 
 **Tanks (4):** Mirohl, Buns/Sourbuns, Venguard, Ryro
 **Warriors (2):** Verysadge, Fredfull
-**Druids (3):** Kryxs, Gresac/Younea, Zemp
+**Druids (3):** Kryxs, Steven(Gresac/Younea), Zemp
 **Paladins (2):** Thordrel, Calendril
-**Hunters (3):** Vaelruna, Lixly, Rhoator
-**Priests (4):** Kres/Dissi, Aserrah, Bhandage, Sickdeer
+**Hunters (3):** Mathias(Vaelruna), Lixly, Rhoator
+**Priests (4):** Adam(Kres/Dissi), Aserrah, Bhandage, Sickdeer
 **Mages (3):** Greg(Ucannotpass), OomToDoom, Jinothy
 **Warlocks (3):** McHughes, BestPractice, Mairen/Zorÿa
 
@@ -21,29 +21,29 @@
 
 ### High King Maulgar
 
-| Role                 | Player              | Notes           |
-|----------------------|---------------------|-----------------|
-| Maulgar Tank         | Venguard, Mirohl    | Vaelruna MD     |
-| Maulgar Healer       | Thordrel, Calendril |                 |
-| Mage Tank (Krosh)    | OomToDoom           |                 |
-| Mage Tank Healer     | Bhandage            |                 |
-| Kiggler Tank         | Gresac/Younea       | Rhoator MD      |
-| Kiggler Tank Healer  | Aserrah             |                 |
-| Olm Tank             | Ryro                | until felhunter |
-| Felhunter Subjugate  | Mairen/Zorÿa        |                 |
-| Olm Tank Healer      | —                   |                 |
-| Blindeye Tank        | Buns/Sourbuns       | Lixly MD        |
-| Blindeye Tank Healer | —                   |                 |
+| Role                 | Player                | Notes                |
+|----------------------|-----------------------|----------------------|
+| Maulgar Tank         | Venguard, Mirohl      | Mathias(Vaelruna) MD |
+| Maulgar Healer       | Thordrel, Calendril   |                      |
+| Mage Tank (Krosh)    | OomToDoom             |                      |
+| Mage Tank Healer     | Bhandage              |                      |
+| Kiggler Tank         | Steven(Gresac/Younea) | Rhoator MD           |
+| Kiggler Tank Healer  | Aserrah               |                      |
+| Olm Tank             | Ryro                  | until felhunter      |
+| Felhunter Subjugate  | Mairen/Zorÿa          |                      |
+| Olm Tank Healer      | —                     |                      |
+| Blindeye Tank        | Buns/Sourbuns         | Lixly MD             |
+| Blindeye Tank Healer | —                     |                      |
 
 ### Magtheridon — Cube Clickers
 
-| Location   | Marker   | Player            |
-|------------|----------|-------------------|
-| South      | Star     | Buns/Sourbuns     |
-| South East | Triangle | Mairen/Zorÿa      |
-| South West | Circle   | Gresac/Younea     |
-| North East | Square   | Greg(Ucannotpass) |
-| North West | Diamond  | Ryro              |
+| Location   | Marker   | Player                |
+|------------|----------|-----------------------|
+| South      | Star     | Buns/Sourbuns         |
+| South East | Triangle | Mairen/Zorÿa          |
+| South West | Circle   | Steven(Gresac/Younea) |
+| North East | Square   | Greg(Ucannotpass)     |
+| North West | Diamond  | Ryro                  |
 
 ## Notes
 

@@ -2,17 +2,17 @@
 
 ## Availability constraints
 
-| Player | Constraint                                      |
-|--------|-------------------------------------------------|
-| Jar    | Generally cannot attend Sunday raids             |
+| Player           | Constraint                           |
+|------------------|--------------------------------------|
+| Guðjón(Jarðepli) | Generally cannot attend Sunday raids |
 
 ## Must-be-together
 
 Players listed here **must be placed in the same raid team** on any given night.
 
-| Player A | Player B | Applies to | Notes |
-|----------|----------|------------|-------|
-| Ostbirger | Ebonybolt | Karazhan only | |
+| Player A        | Player B  | Applies to    | Notes |
+|-----------------|-----------|---------------|-------|
+| Emil(Ostbirger) | Ebonybolt | Karazhan only |       |
 
 ## Must-not-be-together
 
@@ -36,43 +36,43 @@ The **Needlist** lists high-value loot drops players want to roll "need" on, pai
 - **Batch updates replace, not merge.** When a single user instruction covers current needs for several players at once, treat it as a full replacement for those players — **never** layer the new pairings on top of their existing entries. Steps, in order: (1) collect every player named in the update; (2) remove each of them from every Needlist row, dropping any row that empties; (3) apply the update's pairings, inserting new rows alphabetically when items aren't yet listed. Players not named keep their entries unchanged. A player named in the update with no items is valid — after step 2 they exit the Needlist entirely, correctly recording "I need nothing right now."
 - **Invariants.** Items sorted alphabetically by name; competitors sorted alphabetically within each row; all names are canonical per `rules/04-players.md`.
 
-| Item                                | Players competing                                                  | Notes |
-|-------------------------------------|--------------------------------------------------------------------|-------|
-| Bands of Indwelling                 | Lightweit                                                          |       |
-| Barbed Choker of Discipline         | McJudgin                                                           |       |
-| Battlescar Boots                    | CptKavior                                                          |       |
-| Blade of the Unrequited             | Vaelruna                                                           |       |
-| Boots of Foretelling                | Greg(Ucannotpass), Jar                                             |       |
-| Cowl of Defiance                    | Yxanb                                                              |       |
-| Crimson Girdle of the Indomitable   | CptKavior                                                          |       |
-| Fiery Warhorse's Reins              | BestPractice, Jar, Marino(Varthier)                                |       |
-| Forestlord Striders                 | Pergatori                                                          |       |
-| Girdle of Treachery                 | Vaelruna, Yxanb                                                    |       |
-| Gloves of the Fallen Champion       | Leontes, Thordrel                                                  |       |
-| Gloves of the Fallen Defender       | Lightweit                                                          |       |
-| Grips of Deftness                   | Leontes                                                            |       |
-| Helm of the Fallen Defender         | Beaverfist, Gigakox, Kres/Dissi, Roossy/Keatala                    |       |
-| Iron Gauntlets of the Maiden        | McJudgin                                                           |       |
-| Ironstriders of Urgency             | Leontes                                                            |       |
-| Jade Ring of the Everliving         | Pergatori                                                          |       |
-| King's Defender                     | CptKavior                                                          |       |
-| Light's Justice                     | Pergatori, Siljes                                                  |       |
-| Nathrezim Mindblade                 | Beaverfist                                                         |       |
-| Nethershard Girdle                  | Greg(Ucannotpass)                                                  |       |
-| Pendant of the Violet Eye           | Thordrel                                                           |       |
-| Ribbon of Sacrifice                 | Thordrel                                                           |       |
-| Ring of a Thousand Marks            | Gigakox, Leontes, Verysadge, Yorekbarn                             |       |
-| Ring of Recurrence                  | BestPractice, Greg(Ucannotpass)                                    |       |
-| Ruby Drape of the Mysticant         | BestPractice                                                       |       |
-| Shining Chain of the Afterworld     | Lightweit                                                          |       |
-| Skulker's Greaves                   | Bergamotka, Dankyn, Gigakox, Vaelruna                              |       |
-| Spiteblade                          | Dankyn, Gigakox                                                    |       |
-| Stonebough Jerkin                   | Roossy/Keatala                                                     |       |
-| The Decapitator                     | Bergamotka, Lynelen, Yorekbarn                                     |       |
-| Tirisfal Wand of Ascendancy         | Kres/Dissi                                                         |       |
-| Trial-Fire Trousers                 | Kres/Dissi                                                         |       |
-| Vambraces of Courage                | CptKavior                                                          |       |
-| Wrynn Dynasty Greaves               | Ostbirger                                                          |       |
+| Item                              | Players competing                                                  | Notes |
+|-----------------------------------|--------------------------------------------------------------------|-------|
+| Bands of Indwelling               | Lightweit                                                          |       |
+| Barbed Choker of Discipline       | McJudgin                                                           |       |
+| Battlescar Boots                  | CptKavior                                                          |       |
+| Blade of the Unrequited           | Mathias(Vaelruna)                                                  |       |
+| Boots of Foretelling              | Greg(Ucannotpass), Guðjón(Jarðepli)                                |       |
+| Cowl of Defiance                  | Yxanb                                                              |       |
+| Crimson Girdle of the Indomitable | CptKavior                                                          |       |
+| Fiery Warhorse's Reins            | BestPractice, Guðjón(Jarðepli), Marino(Varthier)                   |       |
+| Forestlord Striders               | Pergatori                                                          |       |
+| Girdle of Treachery               | Mathias(Vaelruna), Yxanb                                           |       |
+| Gloves of the Fallen Champion     | Leontes, Thordrel                                                  |       |
+| Gloves of the Fallen Defender     | Lightweit                                                          |       |
+| Grips of Deftness                 | Leontes                                                            |       |
+| Helm of the Fallen Defender       | Adam(Kres/Dissi), Beaverfist, Kamil(Gigakox), Mark(Roossy/Keatala) |       |
+| Iron Gauntlets of the Maiden      | McJudgin                                                           |       |
+| Ironstriders of Urgency           | Leontes                                                            |       |
+| Jade Ring of the Everliving       | Pergatori                                                          |       |
+| King's Defender                   | CptKavior                                                          |       |
+| Light's Justice                   | Pergatori, Saskia(Siljes)                                          |       |
+| Nathrezim Mindblade               | Beaverfist                                                         |       |
+| Nethershard Girdle                | Greg(Ucannotpass)                                                  |       |
+| Pendant of the Violet Eye         | Thordrel                                                           |       |
+| Ribbon of Sacrifice               | Thordrel                                                           |       |
+| Ring of a Thousand Marks          | Kamil(Gigakox), Leontes, Verysadge, Yorekbarn                      |       |
+| Ring of Recurrence                | BestPractice, Greg(Ucannotpass)                                    |       |
+| Ruby Drape of the Mysticant       | BestPractice                                                       |       |
+| Shining Chain of the Afterworld   | Lightweit                                                          |       |
+| Skulker's Greaves                 | Dankyn, Kamil(Gigakox), Mathias(Vaelruna), Piotr(Bergamotka)       |       |
+| Spiteblade                        | Dankyn, Kamil(Gigakox)                                             |       |
+| Stonebough Jerkin                 | Mark(Roossy/Keatala)                                               |       |
+| The Decapitator                   | Lynelen, Piotr(Bergamotka), Yorekbarn                              |       |
+| Tirisfal Wand of Ascendancy       | Adam(Kres/Dissi)                                                   |       |
+| Trial-Fire Trousers               | Adam(Kres/Dissi)                                                   |       |
+| Vambraces of Courage              | CptKavior                                                          |       |
+| Wrynn Dynasty Greaves             | Emil(Ostbirger)                                                    |       |
 
 **Applies to:** Karazhan only.
 
@@ -86,7 +86,7 @@ No two enchanters on the same Karazhan team. With only 2 enchanters currently in
 
 | Player            | Character   |
 |-------------------|-------------|
-| Kres/Dissi        | Kresniik    |
+| Adam(Kres/Dissi)  | Kresniik    |
 | Greg(Ucannotpass) | Ucannotpass |
 
 **Applies to:** Karazhan nights only.

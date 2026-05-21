@@ -6,11 +6,11 @@
 
 **Tanks (5):** Mirohl, Ryro, Marino(Varthier), Buns/Sourbuns, Venguard
 **Warriors (2):** Verysadge, Fredfull
-**Druids (4):** Kryxs, Erushi, Zemp, Gresac/Younea
+**Druids (4):** Kryxs, Erushi, Zemp, Steven(Gresac/Younea)
 **Paladins (2):** Eebowai, Thordrel
 **Rogues (1):** Glaivemaster Baebay
-**Hunters (2):** Vaelruna, Lixly
-**Priests (2):** Kres/Dissi, Aserrah
+**Hunters (2):** Mathias(Vaelruna), Lixly
+**Priests (2):** Adam(Kres/Dissi), Aserrah
 **Mages (3):** OomToDoom, Jinothy, Greg(Ucannotpass)
 **Warlocks (3):** BestPractice, Mairen/Zorÿa, McHughes
 **Shamans (1):** Blacksi
