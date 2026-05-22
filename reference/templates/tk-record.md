@@ -212,8 +212,10 @@ user should be aware of.
 
 | Role                   | Player | Notes |
 |------------------------|--------|-------|
-| Main Tank              | ...    |       |
-| Off Tank               | ...    |       |
+| Sanguinar Tank         | ...    |       |
+| Telonicus Tank         | ...    |       |
+| Phase 4/5 Kael Tank    | ...    |       |
+| Phase 4/5 Phoenix Tank | ...    |       |
 | Warlock Tank           | ...    |       |
 | Hunter Tank            | ...    |       |
 | Staff Carrier          | ...    |       |
@@ -286,8 +288,10 @@ Format:
 - Off Tank: {Player}
 
 **Kael'Thas Sunstrider**
-- Main Tank: {Player}
-- Off Tank: {Player}
+- Sanguinar Tank: {Player}
+- Telonicus Tank: {Player}
+- Phase 4/5 Kael Tank: {Player}
+- Phase 4/5 Phoenix Tank: {Player}
 - Warlock Tank: {Player}
 - Hunter Tank: {Player}
 - Staff Carrier: {Player}

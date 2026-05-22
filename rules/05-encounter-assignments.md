@@ -20,7 +20,7 @@ The raid leader for the raid (per `config/project.md` → "Raid leadership") is 
 
 ### Assignment algorithm
 
-Run this for each role in the location's encounter table (in table order). A single player holds at most one role assignment per encounter (the **no-double-booking rule**) — not both Maulgar Tank and Mage Tank, and not two slots of the same multi-slot role (e.g., both Maulgar Healer slots). The same player may hold roles across different encounters in the same raid; the encounters run at different times.
+Run this for each role in the location's encounter table (in table order). A single player holds at most one role assignment per encounter (the **no-double-booking rule**) — not both Maulgar Tank and Mage Tank, and not two slots of the same multi-slot role (e.g., both Maulgar Healer slots). The same player may hold roles across different encounters in the same raid; the encounters run at different times. **Exception — within-phase only:** an encounter may apply no-double-booking *within* a phase group rather than across the whole encounter, letting one player hold one role per phase — see *TK → Kael'Thas tank assignment*.
 
 1. **Filter by hard constraint.** Drop roster members who don't meet the role's eligibility requirement per the location's Encounter roles table. For roles with no requirement listed, all non-already-assigned roster members are eligible.
 2. **Apply continuity preference.** Among the remaining candidates, find those who have held this exact role in prior raids (see *Continuity data sources* below). If one or more is in the roster, pick the **most recent** holder. Tiebreak by total number of prior holds (more = preferred), then alphabetical by canonical player name per `rules/04-players.md`.
@@ -429,16 +429,18 @@ If the user later wants to track any of the above, add the role to the canonical
 
 #### Kael'Thas Sunstrider
 
-| Role                   | Eligibility requirement                                                                          | Count | Notes                                                               |
-|------------------------|--------------------------------------------------------------------------------------------------|-------|---------------------------------------------------------------------|
-| Main Tank              | Core main tank rotation, **excluding Feral Druids** (see *Kael'Thas Main Tank assignment* below) | 1     | Tanks Sanguinar in P1 & P3, weapons in P2, Kael himself in P4 & P5. |
-| Off Tank               | Any tank                                                                                         | 1     | Tanks Telonicus in P1 & P3, axe in P2, phoenix in P4 & P5.          |
-| Warlock Tank           | **Must be a Warlock**                                                                            | 1     | Tanks Capernian in P1 & P3.                                         |
-| Hunter Tank            | **Must be a Hunter**                                                                             | 1     | Tanks the bow in P2.                                                |
-| Staff Carrier          | **Must be a Feral DPS Druid** (see *Kael'Thas Staff Carrier assignment* below)                   | 1     | Uses the staff weapon drop on melee. Soft preference.               |
-| Infinity Blade Carrier | Tier-by-tier class chain (see *Kael'Thas Infinity Blade Carrier assignment* below)               | 1     | Wields the Infinity Blade weapon drop. Soft preference.             |
-| Mage Interrupt         | **Must be a Mage** (see *Kael'Thas Mage Interrupt assignment* below)                             | 1     | Soft preference.                                                    |
-| DPS Shaman Interrupt   | **Must be a DPS Shaman** (see *Kael'Thas DPS Shaman Interrupt assignment* below)                 | 1     | Soft preference.                                                    |
+| Role                   | Eligibility requirement                                                                     | Count | Notes                                                                 |
+|------------------------|---------------------------------------------------------------------------------------------|-------|-----------------------------------------------------------------------|
+| Sanguinar Tank         | Any tank (see *Kael'Thas tank assignment* below)                                            | 1     | Tanks Sanguinar in P1 & P3. Soft preference: **Emil(Ostbirger)**.     |
+| Telonicus Tank         | Any tank (see *Kael'Thas tank assignment* below)                                            | 1     | Tanks Telonicus in P1 & P3. Soft preference: **Marino(Varthier)**.    |
+| Phase 4/5 Kael Tank    | Core main tank rotation, **excluding Feral Druids** (see *Kael'Thas tank assignment* below) | 1     | Tanks Kael himself in P4 & P5. Soft preference: **Marino(Varthier)**. |
+| Phase 4/5 Phoenix Tank | Any tank (see *Kael'Thas tank assignment* below)                                            | 1     | Tanks the phoenix in P4 & P5. Soft preference: **Emil(Ostbirger)**.   |
+| Warlock Tank           | **Must be a Warlock**                                                                       | 1     | Tanks Capernian in P1 & P3.                                           |
+| Hunter Tank            | **Must be a Hunter**                                                                        | 1     | Tanks the bow in P2.                                                  |
+| Staff Carrier          | **Must be a Feral DPS Druid** (see *Kael'Thas Staff Carrier assignment* below)              | 1     | Uses the staff weapon drop on melee. Soft preference.                 |
+| Infinity Blade Carrier | Tier-by-tier class chain (see *Kael'Thas Infinity Blade Carrier assignment* below)          | 1     | Wields the Infinity Blade weapon drop. Soft preference.               |
+| Mage Interrupt         | **Must be a Mage** (see *Kael'Thas Mage Interrupt assignment* below)                         | 1     | Soft preference.                                                      |
+| DPS Shaman Interrupt   | **Must be a DPS Shaman** (see *Kael'Thas DPS Shaman Interrupt assignment* below)             | 1     | Soft preference.                                                      |
 
 ### Per-role assignment details
 
@@ -459,9 +461,20 @@ Process Al'ar's three tank slots in table order:
 
 3 single-player kiter slots. **Class-first batching** (mechanic per *Common framework → Class-first batching (multi-slot)*) over two tiers: **Tier 1: Hunter**, **Tier 2: any other ranged DPS** (any roster member whose spec this raid is a ranged DPS spec).
 
-#### Kael'Thas Main Tank assignment
+#### Kael'Thas tank assignment
 
-Apply *Common framework → Core main tank rotation*, with one addition at step 1: **exclude Feral Druids** (any candidate whose `Class` column in this raid's `## Actual Roster` begins with `Druid (Feral)`). Hard exclusion — Phase 4 & 5 Kael tanking is incompatible with bear form due to ability requirements. The exclusion applies to both the initial core-tank-`Main tank` pool and the widening-fallback pool; if it empties the pool, the standard "no tank available" fallback from *Common framework → Core main tank rotation* fires.
+Four tank roles span the fight, split into two **non-overlapping phase groups**: the **P1/P3 advisor tanks** (Sanguinar Tank, Telonicus Tank) and the **P4/P5 tanks** (Phase 4/5 Kael Tank, Phase 4/5 Phoenix Tank). Each is a single-player role carrying the **soft named-player preference** in its Encounter roles table Notes, over the eligibility fallback in its Eligibility column. (These four replaced the former Main Tank / Off Tank rows; the old phase bundling doesn't map onto the per-target split, so no historical continuity bridge is defined — continuity for the new roles begins fresh, and the soft preferences drive the common case regardless.)
+
+**Assignment order (two passes).** Resolve the four roles in two passes rather than strict single-pass table order:
+
+1. **Preference pass** (table order). For each role whose named soft-preference player is in the roster and passes the role's Eligibility filter, assign that player. This **overrides step-2 continuity** (per *Common framework → Assignment algorithm* step 3). The cross-phase carve-out below lets one tank take both of their preferred roles.
+2. **Fallback pass** (table order). For each role still unfilled — its named player absent or ineligible — run the standard algorithm (steps 2–4) against the role's Eligibility filter, honoring the carve-out below. For Phase 4/5 Kael Tank that filter is the core main tank rotation, whose rotation tiebreaker stands in for step-2 continuity (per *Common framework → Core main tank rotation*).
+
+The preference is **soft**: an absent named player never leaves the slot empty — contrast the *Kael'Thas soft preference roles — shared handling* below, whose roles do leave `—`. Two passes ensure a present preferred tank keeps their preferred role even when the other preferred tank is absent.
+
+**Feral Druid exclusion (Phase 4/5 Kael Tank only).** At step 1 of the Kael Tank role, exclude Feral Druids (any candidate whose `Class` column in this raid's `## Actual Roster` begins with `Druid (Feral)`) — P4/P5 Kael tanking is incompatible with bear form due to ability requirements. Hard exclusion; applies to both the initial core-tank-`Main tank` pool and the widening-fallback pool of the core-main-tank rotation. If it empties the pool, the standard "no tank available" fallback from *Common framework → Core main tank rotation* fires. The other three tank roles carry no Feral exclusion.
+
+**No-double-booking across phases.** The no-double-booking rule (*Common framework → Assignment algorithm*) applies **within** each phase group but **not across** them: one tank may hold one P1/P3-advisor role and one P4/P5 role, since the phases run at different times. A single tank may **not** hold both P1/P3-advisor roles, nor both P4/P5 roles. The table's soft preferences are arranged so each preferred tank's two roles fall in different phase groups, so they never collide with this rule.
 
 #### Kael'Thas soft preference roles — shared handling
 
@@ -493,7 +506,7 @@ The following TK mechanics have named player roles in standard TBC strategy but 
 - **Al'ar phoenix add tanks, quill-rain spotters, Phase 2 dive markers** — organized live by the raid leader.
 - **Void Reaver knockback positioning and Pounding healing checkpoints** — handled live.
 - **Solarian Wrath of the Astromancer markers, Solarium Agents pickup, Solarium Priest interrupts** — handled live.
-- **Kael'Thas Phase 2 per-weapon pickup beyond the four roles tracked above** (Staff Carrier, Infinity Blade Carrier, Off Tank, Hunter Tank) — finer per-weapon assignments are a live raid-leader call.
+- **Kael'Thas Phase 2 per-weapon pickup beyond the roles tracked above** (Staff Carrier, Infinity Blade Carrier, Hunter Tank) — finer per-weapon assignments, including the axe and the heavy melee weapons the tanks pick up, are a live raid-leader call.
 - **Kael'Thas mind-control breakers, gravity-lapse handlers, fire-pillar dodgers, phoenix kiters** — Phase 4 & 5 mechanics organized live.
 
 If the user later wants to track any of the above, add the role to the canonical table under *Encounter roles* (TK) and update `reference/templates/tk-record.md` to match — do not create a parallel tracking system.
