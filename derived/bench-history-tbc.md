@@ -49,7 +49,6 @@ All priority-1 healer-main players: 0 benches at every location. *(No priority-1
 | Steven(Gresac/Younea) | 2        | 22.04, 29.04   | 1         | 25.03           | 0   | —         | 0  | —        | 3     |
 | Tonz/Tonsen           | 1        | 11.03          | 0         | —               | 0   | —         | 0  | —        | 1     |
 | Verysadge             | 0        | —              | 1         | 15.04           | 0   | —         | 0  | —        | 1     |
-| Yorekbarn             | 0        | —              | 1         | 03.05           | 1   | 17.05     | 0  | —        | 2     |
 | Yxanb                 | 1        | 29.04          | 1         | 22.03           | 0   | —         | 0  | —        | 2     |
 
 All other priority-2 DPS/tank-main players: 0 benches at every location.
@@ -73,6 +72,7 @@ All other priority-2 healer-main players: 0 benches at every location.
 | Dwarfytron     | 1        | 01.04          | 0         | —               | 0   | —         | 0  | —        | 1     |
 | Mark(Mellymel) | 0        | —              | 0         | —               | 1   | 17.05     | 1  | 18.05    | 2     |
 | McHughes       | 1        | 18.03          | 0         | —               | 0   | —         | 0  | —        | 1     |
+| Yorekbarn      | 0        | —              | 1         | 03.05           | 1   | 17.05     | 0  | —        | 2     |
 
 All other priority-3 DPS/tank-main players: 0 benches at every location.
 
