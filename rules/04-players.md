@@ -94,21 +94,21 @@ Currently empty. Kept so a Regular player promoted to priority `1` has a place t
 | 24 | Dankyn                | Dankyn         | Warrior | DPS (Fury)         | Tank             | 2        | Reluctant offspec                                                  |
 | 25 | David(Nemajumarad)    | Nemajumarad    | Warrior | DPS (Arms)         | Tank             | 2        | Eager offspec, Decide whether to downgrade to member by 2026-06-07 |
 | 26 | Verysadge             | Verysadge      | Warrior | DPS (Fury)         | —                | 2        |                                                                    |
-| 27 | Yorekbarn             | Yorekbarn      | Warrior | DPS (Fury)         | —                | 2        | Decide whether to downgrade to member by 2026-05-24                |
 
 #### Members
 
-| # | Player         | Character(s)    | Class   | Mainspec (role) | Offspec (role) | Priority | Notes         |
-|---|----------------|-----------------|---------|-----------------|----------------|----------|---------------|
-| 1 | Gyrodorei      | Gyrodorei       | Druid   | DPS (Feral)     | ?              | 3        |               |
-| 2 | Dwarfytron     | Dwarfytron      | Hunter  | DPS             | —              | 3        |               |
-| 3 | Mark(Mellymel) | Mellymel, Lenno | Mage    | DPS (Arcane)    | —              | 3        |               |
-| 4 | Sjwammie       | Sjwammie        | Paladin | Healer          | —              | 3        |               |
-| 5 | Medianos       | Medianos        | Priest  | DPS             | ?              | 3        |               |
-| 6 | BestPractice   | BestPractice    | Warlock | DPS             | —              | 3        |               |
-| 7 | McHughes       | McHughes        | Warlock | DPS             | —              | 3        |               |
-| 8 | Doughball      | Doughball       | Warrior | DPS (Fury)      | Tank           | 3        | Eager offspec |
-| 9 | Varva          | Varva           | Warrior | DPS             | —              | 3        |               |
+| #  | Player         | Character(s)    | Class   | Mainspec (role) | Offspec (role) | Priority | Notes         |
+|----|----------------|-----------------|---------|-----------------|----------------|----------|---------------|
+| 1  | Gyrodorei      | Gyrodorei       | Druid   | DPS (Feral)     | ?              | 3        |               |
+| 2  | Dwarfytron     | Dwarfytron      | Hunter  | DPS             | —              | 3        |               |
+| 3  | Mark(Mellymel) | Mellymel, Lenno | Mage    | DPS (Arcane)    | —              | 3        |               |
+| 4  | Sjwammie       | Sjwammie        | Paladin | Healer          | —              | 3        |               |
+| 5  | Medianos       | Medianos        | Priest  | DPS             | ?              | 3        |               |
+| 6  | BestPractice   | BestPractice    | Warlock | DPS             | —              | 3        |               |
+| 7  | McHughes       | McHughes        | Warlock | DPS             | —              | 3        |               |
+| 8  | Doughball      | Doughball       | Warrior | DPS (Fury)      | Tank           | 3        | Eager offspec |
+| 9  | Varva          | Varva           | Warrior | DPS             | —              | 3        |               |
+| 10 | Yorekbarn      | Yorekbarn       | Warrior | DPS (Fury)      | —              | 3        |               |
 
 ### Alt characters
 
