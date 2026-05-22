@@ -99,7 +99,7 @@ This applies only among soft rules themselves. Hard rules always win over soft r
 When signups fall below the format's optimal capacity, fair-rotation, priority-3, and capacity-based benching are suspended — everyone who signed up gets a spot. The only benches that still occur are:
 
 - **Structural** — format team-count math (currently applies to Karazhan only; see `Karazhan → Under-cap team count` below)
-- **Composition cap** — a hard cap fires when its trigger condition is met (e.g., the 25-man Resto Druid cap when more than 6 healers sign up); see `rules/02-bench-rotation.md` → "Bench reason vocabulary" → `composition cap`
+- **Composition cap** — a hard cap fires when its trigger condition is met (e.g., the 25-man Resto Druid cap when more than 5 healers sign up); see `rules/02-bench-rotation.md` → "Bench reason vocabulary" → `composition cap`
 
 Format-specific under-cap mechanics live with each format — see `Karazhan → Under-cap team count` and `25-man raids → Under-cap behavior (any 25-man)`.
 
@@ -236,31 +236,31 @@ These general rules apply to **every** 25-man raid we run, current and future (G
 | Role    | Count |
 |---------|-------|
 | Tank    | 3     |
-| Healer  | 5-6   |
-| DPS     | 16-17 |
+| Healer  | 5     |
+| DPS     | 17    |
 | **Total** | **25** |
 
-This is the **default** for every 25-man raid location; a location may override it in its own section below (SSC currently does — see "Serpentshrine Cavern (SSC)" below). For the default: Tanks are a fixed **3** (see `Core tanks` above). Healers are a **5-6 range**. DPS is whatever's left after tanks and healers — **16** with 6 healers, **17** with 5.
+This is the **default** for every 25-man raid location; a location may override it in its own section below (SSC currently does — see "Serpentshrine Cavern (SSC)" below). For the default: Tanks are a fixed **3** (see `Core tanks` above), healers a fixed **5**, and DPS the remaining **17**.
 
-**The healer count is the number of mainspec healers who signed up — counting all priorities** (a priority-3 healer-main counts toward the total exactly like a priority-1 or priority-2 one). **6 is the ideal**: run as many of them as signed up, up to **6** (the surplus benches when more than 6 signed up); if fewer than 5 signed up, comp flex tops the count up toward the **5** floor. **Whenever 6 or more mainspec healers signed up — any priority mix — the raid runs 6 healers; running 5 healers while a 6th mainspec healer-main sits benched is never correct** (see "Reaching 6 healers" below). By signup count:
+**The healer count is a fixed 5**, drawn from the mainspec healers who signed up across all priorities (a priority-3 healer-main counts exactly like a priority-1 or priority-2 one). Run 5 mainspec healers; any beyond 5 are benched, and if fewer than 5 signed up, comp flex tops the count up toward 5. **A mainspec healer-main is never benched while the raid is below 5 healers** (see "Reaching 5 healers" below). By signup count:
 
-- **≤ 4 mainspec healers** — below the range. Resort 1 → Resort 2 → Resort 3 from "Handling role shortages" above are offered in order to raise the healer count to **5**, the floor: Resort 1 (a mainspec-healer signup that the headcount cut benched, if any), then Resort 2 (a DPS- or tank-main whose `Offspec (role)` is Healer), then Resort 3 (an alt-bearer whose alt is a healer). The 5 floor is the ceiling for top-up — never raise the count past 5 via these resorts. If all three are exhausted without filling, the raid runs with fewer than 5 healers ("Comp flex consent" above).
-- **5 or 6 mainspec healers** — at target; run them all (the 6th may be a priority-3 Member — see "Reaching 6 healers" below). The raid is 6 healers / 16 DPS when six signed up, 5 healers / 17 DPS when exactly five did. No flex (6 comes from mainspec-healer signups, never from flexing past 5), no healer bench.
-- **≥ 7 mainspec healers** — above the range. Bench the surplus down to **6**, the ceiling, per the over-target case of "Handling role surpluses" above; fair rotation (`rules/02-bench-rotation.md`) picks who sits, subject to the Resto Druid cap below. This is over-cap behavior; under-cap, "Under-cap behavior" below governs instead.
+- **≤ 4 mainspec healers** — below target. Resort 1 → Resort 2 → Resort 3 from "Handling role shortages" above are offered in order to raise the healer count to **5**: Resort 1 (a mainspec-healer signup that the headcount cut benched, if any), then Resort 2 (a DPS- or tank-main whose `Offspec (role)` is Healer), then Resort 3 (an alt-bearer whose alt is a healer). 5 is the ceiling for top-up — never raise the count past 5 via these resorts. If all three are exhausted without filling, the raid runs with fewer than 5 healers ("Comp flex consent" above).
+- **5 mainspec healers** — at target; run them all (the 5th may be a priority-3 Member — see "Reaching 5 healers" below). The raid is 5 healers / 17 DPS. No flex, no healer bench.
+- **≥ 6 mainspec healers** — above target. Bench the surplus down to **5** per the over-target case of "Handling role surpluses" above; fair rotation (`rules/02-bench-rotation.md`) picks who sits, subject to the Resto Druid cap below. This is over-cap behavior; under-cap, "Under-cap behavior" below governs instead.
 
-**Reaching 6 healers, regardless of priority.** A priority-3 (Member) healer-main fills a healer slot like any other healer-main; the raid never runs fewer than 6 healers when 6 or more mainspec healers signed up. Two things enforce this: (1) when the Member reservation has more priority-3 signups than reserved spots, those spots are allocated by composition targets first, then fair rotation — so a priority-3 healer-main the roster needs for its 6th healer is seated ahead of a priority-3 signup in a role the roster doesn't need (`rules/02-bench-rotation.md` → "Member reservation" and "Raid spot priority (selection order)" step 3); (2) step-5 calibration (`rules/02-bench-rotation.md` → "Raid spot priority (selection order)", step 5) backstops it — a mainspec healer-main left benched while the roster is below its healer target is brought in via the *Mainspec over offspec* fill (Resort 1 above), which seats them, even a Member, over a higher-priority non-healer.
+**Reaching 5 healers, regardless of priority.** A priority-3 (Member) healer-main fills a healer slot like any other healer-main; the raid never runs fewer than 5 healers when 5 or more mainspec healers signed up. Two things enforce this: (1) when the Member reservation has more priority-3 signups than reserved spots, those spots are allocated by composition targets first, then fair rotation — so a priority-3 healer-main the roster needs for its 5th healer is seated ahead of a priority-3 signup in a role the roster doesn't need (`rules/02-bench-rotation.md` → "Member reservation" and "Raid spot priority (selection order)" step 3); (2) step-5 calibration (`rules/02-bench-rotation.md` → "Raid spot priority (selection order)", step 5) backstops it — a mainspec healer-main left benched while the roster is below its healer target is brought in via the *Mainspec over offspec* fill (Resort 1 above), which seats them, even a Member, over a higher-priority non-healer.
 
 > ⚠️ **Do not conflate "25-man" with any specific 25-man raid location.** The composition above is the **default** for every 25-man location; Gruul+Mag and TK use it unchanged, SSC overrides it (see "Serpentshrine Cavern (SSC)" below), and a future location may override too. Rules elsewhere that say "25-man" apply to *all* 25-man locations, not just Gruul+Mag.
 
 #### Under-cap behavior (any 25-man)
 
-A 25-man raid **always runs**, regardless of how few players sign up. There is no minimum threshold to cancel or downgrade the format. Composition targets become aspirational at low signup counts; the comp flex rule (General principles → "Handling role shortages") is the primary tool for filling role gaps. Hard caps like the 25-man Resto Druid cap still apply when their trigger conditions are met (e.g., more than 6 healers signing up), but those triggers are unlikely under-cap.
+A 25-man raid **always runs**, regardless of how few players sign up. There is no minimum threshold to cancel or downgrade the format. Composition targets become aspirational at low signup counts; the comp flex rule (General principles → "Handling role shortages") is the primary tool for filling role gaps. Hard caps like the 25-man Resto Druid cap still apply when their trigger conditions are met (e.g., more than 5 healers signing up), but those triggers are unlikely under-cap.
 
 #### Resto Druid cap (hard rule)
 
-- If **more than 6 healers** sign up for any 25-man raid, **at most 2 Resto Druids** may participate. Any additional Resto Druids must be benched.
+- If **more than 5 healers** sign up for any 25-man raid, **at most 2 Resto Druids** may participate. Any additional Resto Druids must be benched.
 - Resto Druids benched under this cap are still subject to fair bench rotation; how the cap interacts with rotation — which Resto Druid sits, why a capped player's cumulative bench count outpaces others over time without that being a fairness failure, and that the cap never displaces a priority-1 player — lives in `rules/02-bench-rotation.md` → "Composition caps override pure fairness". We have a relatively large Resto Druid pool, so this cap fires often.
-- This cap does **not** apply when 6 or fewer healers sign up — in that case, all signed-up Resto Druids may play (subject to the raid's healer slot count).
+- This cap does **not** apply when 5 or fewer healers sign up — in that case, all signed-up Resto Druids may play (subject to the raid's healer slot count).
 
 ### Gruul + Magtheridon
 
@@ -268,13 +268,13 @@ Uses the **default 25-man composition** (see "25-man raids → General → Defau
 
 ### Serpentshrine Cavern (SSC)
 
-SSC overrides the default composition's tank count: **4 tanks instead of 3**. DPS shifts to **15 with 6 healers, 16 with 5** (down from the default 16/17). Healers (5-6) and the Resto Druid cap are unchanged from the default.
+SSC overrides the default composition's tank count: **4 tanks instead of 3**. DPS shifts to **16** (down from the default 17). Healers (5) and the Resto Druid cap are unchanged from the default.
 
 | Role    | Count |
 |---------|-------|
 | Tank    | 4     |
-| Healer  | 5-6   |
-| DPS     | 15-16 |
+| Healer  | 5     |
+| DPS     | 16    |
 | **Total** | **25** |
 
 The 4th tank covers Fathom Lord Karathress's fourth mini-boss tank role — see `rules/05-encounter-assignments.md` → "SSC → Fathom Lord Karathress" for the per-mini-boss breakdown.

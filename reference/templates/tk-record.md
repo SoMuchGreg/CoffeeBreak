@@ -123,7 +123,7 @@ PUG entries sort last in their sub-table.
 |--------|-------|
 | ...    | ...   |
 
-**Composition check:** Target {target} for TK (per `rules/01-raid-compositions.md`). Actual: {T}/{H}/{DPS} = {total}. Status: ✅ / ⚠️ {explanation if outside target, e.g. "4 healers — 1 below the 5-healer floor, no flex accepted" or "7 healers, ran by user override"}.
+**Composition check:** Target {target} for TK (per `rules/01-raid-compositions.md`). Actual: {T}/{H}/{DPS} = {total}. Status: ✅ / ⚠️ {explanation if outside target, e.g. "4 healers — 1 below the 5-healer target, no flex accepted" or "6 healers, ran by user override"}.
 
 ## Comp flex applied                                   <!-- delete this whole section if no flex was used -->
 
