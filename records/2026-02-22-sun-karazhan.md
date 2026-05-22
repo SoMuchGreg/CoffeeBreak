@@ -5,7 +5,7 @@
 ## Signups (from Discord) — 25 (+3)
 
 **Tanks (5):** Mirohl, Ryro, Marino(Varthier), Buns/Sourbuns, Venguard
-**Warriors (2):** Verysadge, Fredfull
+**Warriors (2):** Sören(Verysadge), Fredfull
 **Druids (4):** Kryxs, Erushi, Zemp, Steven(Gresac/Younea)
 **Paladins (2):** Eebowai, Thordrel
 **Rogues (1):** Glaivemaster Baebay

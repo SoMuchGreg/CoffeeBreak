@@ -5,7 +5,7 @@
 ## Signups (from Discord) — 31 (+1 late)
 
 **Tanks (6):** Mirohl, Doughball, Kamil(Gigakox), McJudgin, Marino(Varthier), Emil(Ostbirger)
-**Warriors (2):** Verysadge, Dankyn
+**Warriors (2):** Sören(Verysadge), Dankyn
 **Druids (5):** Yxanb, Guðjón(Jarðepli), Steven(Gresac/Younea), Beaverfist, Mark(Roossy/Keatala)
 **Paladins (3):** Thordrel, Sjwammie, Lightstarr
 **Hunters (3):** Tonz/Tonsen, Mathias(Vaelruna), Dwarfytron
@@ -33,7 +33,7 @@
 | Lightstarr            | DPS    | Paladin |
 | Piotr(Bergamotka)     | DPS    | Shaman  |
 | BestPractice          | DPS    | Warlock |
-| Verysadge             | DPS    | Warrior |
+| Sören(Verysadge)     | DPS    | Warrior |
 
 ### Team Bakery
 
@@ -86,7 +86,7 @@
 - DPS: Lightstarr (Paladin)
 - DPS: Piotr(Bergamotka) (Shaman)
 - DPS: BestPractice (Warlock)
-- DPS: Verysadge (Warrior)
+- DPS: Sören(Verysadge) (Warrior)
 
 **Team Bakery (10)**
 - MT: Doughball (Warrior)

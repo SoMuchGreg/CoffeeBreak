@@ -5,7 +5,7 @@
 ## Signups (from Discord) — 20
 
 **Tanks (4):** Mirohl, Dankyn, Marino(Varthier), blep
-**Warriors (1):** Verysadge
+**Warriors (1):** Sören(Verysadge)
 **Druids (3):** Steven(Gresac/Younea), Yxanb, Guðjón(Jarðepli)
 **Paladins (1):** Thordrel
 **Rogues (2):** Glaivemaster Baebay, Drillbabe

@@ -3,7 +3,7 @@
 ## Signups (from Discord) — 26 (+1)
 
 **Tanks (4):** CptKavior, Marino(Varthier), Emil(Ostbirger), Kamil(Gigakox)
-**Warriors (2):** Verysadge, Dankyn
+**Warriors (2):** Sören(Verysadge), Dankyn
 **Druids (5):** Beaverfist, Guðjón(Jarðepli), Yxanb, Steven(Gresac/Younea), Shapkica
 **Paladins (3):** Leontes, Thordrel, Heligeman
 **Hunters (2):** Mathias(Vaelruna), Tonz/Tonsen
@@ -46,7 +46,7 @@
 | Adam(Kres/Dissi)  | DPS    | Priest (Shadow)      |
 | Lynelen           | DPS    | Shaman (Enhancement) |
 | Jabbadhutt        | DPS    | Warlock              |
-| Verysadge         | DPS    | Warrior (Fury)       |
+| Sören(Verysadge) | DPS    | Warrior (Fury)       |
 
 **Composition check:** Target per team: 2T / 2H / 6 DPS = 10. Total across 2 teams (under-cap 2-team formation per `rules/01-raid-compositions.md` → "Under-cap team count", 25-26 ambiguous case): 20. Actual: 2 × 10 = 20. Status: ✅.
 
@@ -93,7 +93,7 @@
 - DPS: Adam(Kres/Dissi) (Shadow Priest)
 - DPS: Lynelen (Enhancement Shaman)
 - DPS: Jabbadhutt (Warlock)
-- DPS: Verysadge (Fury Warrior)
+- DPS: Sören(Verysadge) (Fury Warrior)
 
 On the bench: Piotr(Bergamotka), Dankyn, Greg(Ucannotpass), Steven(Gresac/Younea), Thordrel and Yxanb. But if you show up online around raid time, there's a decent chance a spot will free up because of last-minute changes.
 
@@ -118,7 +118,7 @@ On the bench: Piotr(Bergamotka), Dankyn, Greg(Ucannotpass), Steven(Gresac/Younea
 |-----------------------------|--------------------------------------------------------------|----------------------------------------|
 | Fiery Warhorse's Reins      | Guðjón(Jarðepli) (R), Marino(Varthier) (Bak)                 | ✓ split (BestPractice not in raid)     |
 | Helm of the Fallen Defender | Beaverfist (Bak), Kamil(Gigakox) (R), Adam(Kres/Dissi) (Bak) | ⚠️ Beaverfist + Adam(Kres/Dissi) (Bak) |
-| Ring of a Thousand Marks    | Kamil(Gigakox) (R), Leontes (R), Verysadge (Bak)             | ⚠️ Kamil(Gigakox) + Leontes (R)        |
+| Ring of a Thousand Marks    | Kamil(Gigakox) (R), Leontes (R), Sören(Verysadge) (Bak)      | ⚠️ Kamil(Gigakox) + Leontes (R)        |
 | Skulker's Greaves           | Kamil(Gigakox) (R), Mathias(Vaelruna) (Bak)                  | ✓ split                                |
 
 **2/4 fully split.** HFD and Ring of a Thousand Marks are pigeonhole-forced (3 in-raid competitors / 2 teams), unavoidable. Gloves of the Fallen Champion (Leontes + Thordrel) dropped — Thordrel benched, single in-raid competitor.

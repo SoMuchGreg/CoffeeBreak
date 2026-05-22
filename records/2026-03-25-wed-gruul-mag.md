@@ -5,7 +5,7 @@
 ## Signups (from Discord) — 29 total
 
 **Tanks (3):** Marino(Varthier), Mirohl, Doughball
-**Warriors (3):** Verysadge, Dankyn, Kamil(Gigakox)
+**Warriors (3):** Sören(Verysadge), Dankyn, Kamil(Gigakox)
 **Druids (6):** Yxanb, Steven(Gresac/Younea), Mark(Roossy/Keatala), Beaverfist, Guðjón(Jarðepli), Eselman
 **Paladins (2):** Sjwammie, Thordrel
 **Rogue (1):** Glaivemaster Baebay
@@ -45,7 +45,7 @@
 | Player                                       | Class   | Notes                         |
 |----------------------------------------------|---------|-------------------------------|
 | Doughball                                    | ?       | Tanks in Kara, DPS in 25-mans |
-| Verysadge                                    | Warrior |                               |
+| Sören(Verysadge)                            | Warrior |                               |
 | Dankyn                                       | Warrior |                               |
 | Kamil(Gigakox)                               | Warrior | DPS this time, not tanking    |
 | Glaivemaster Baebay                          | Rogue   |                               |

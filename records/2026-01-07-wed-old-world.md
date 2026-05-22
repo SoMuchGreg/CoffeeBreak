@@ -5,7 +5,7 @@
 ## Signups (from Discord) — 13
 
 **Tanks (1):** Marino(Varthier)
-**Warriors (3):** Mirohl, Verysadge, Lovepotion94
+**Warriors (3):** Mirohl, Sören(Verysadge), Lovepotion94
 **Druids (2):** Adam(Kres/Dissi), Guðjón(Jarðepli)
 **Paladins (1):** Thordrel
 **Rogues (1):** Glaivemaster Baebay

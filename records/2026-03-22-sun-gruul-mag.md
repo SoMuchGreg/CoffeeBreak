@@ -5,7 +5,7 @@
 ## Signups (from Discord) — 26 (+1)
 
 **Tanks (3):** Mirohl, Marino(Varthier), Emil(Ostbirger)
-**Warriors (2):** Verysadge, Dankyn
+**Warriors (2):** Sören(Verysadge), Dankyn
 **Druids (5):** Eselman, Steven(Gresac/Younea), Mark(Roossy/Keatala), Beaverfist, Yxanb
 **Paladins (1):** Rasputin
 **Hunters (3):** Rhoator, Tonz/Tonsen, Dwarfytron

@@ -3,7 +3,7 @@
 ## Signups (from Discord) — 28 (+0)
 
 **Tanks (3):** CptKavior, Emil(Ostbirger), McJudgin
-**Warriors (3):** Kamil(Gigakox), Verysadge, Dankyn
+**Warriors (3):** Kamil(Gigakox), Sören(Verysadge), Dankyn
 **Druids (5):** Guðjón(Jarðepli), Beaverfist, Shapkica, Yxanb, Gyrodorei
 **Paladins (3):** Leontes, Thordrel, Heligeman
 **Rogues (1):** Tim(Tiinar)
@@ -72,7 +72,7 @@
 | Yxanb             | DPS    | Druid (Feral)        |
 | OomToDoom         | DPS    | Mage (Arcane)        |
 | Piotr(Bergamotka) | DPS    | Shaman (Enhancement) |
-| Verysadge         | DPS    | Warrior (Fury)       |
+| Sören(Verysadge)  | DPS    | Warrior (Fury)       |
 | PUG DPS           | DPS    | —                    |
 
 **Composition check:** Target per team: 2T / 2H / 6 DPS = 10. Total across 3 teams: 30. Actual: 3 × 10 = 30. Status: ✅. PUG recruitment per `rules/01-raid-compositions.md` → "Recording outside recruits (PUGs)" — 1 PUG DPS on Team WellPrepared, plus 1 `PUG Tank` per user override of `rules/01-raid-compositions.md` → "Insufficient-tanks override" (see Notes).
@@ -126,7 +126,7 @@
 - DPS: Yxanb (Feral Druid)
 - DPS: OomToDoom (Arcane Mage)
 - DPS: Piotr(Bergamotka) (Enhancement Shaman)
-- DPS: Verysadge (Fury Warrior)
+- DPS: Sören(Verysadge) (Fury Warrior)
 - DPS: PUG DPS
 
 ## Notes
@@ -164,7 +164,7 @@
 | Gloves of the Fallen Champion | Leontes (Bak), Thordrel (R)                                                           | ✓ split                                      |
 | Helm of the Fallen Defender   | Beaverfist (WP), Kamil(Gigakox) (R), Mark(Roossy/Keatala) (R), Adam(Kres/Dissi) (Bak) | ⚠️ Kamil(Gigakox) + Mark(Roossy/Keatala) (R) |
 | Light's Justice               | Pergatori (Bak), Saskia(Siljes) (R)                                                   | ✓ split                                      |
-| Ring of a Thousand Marks      | Kamil(Gigakox) (R), Leontes (Bak), Verysadge (WP)                                     | ✓ split                                      |
+| Ring of a Thousand Marks      | Kamil(Gigakox) (R), Leontes (Bak), Sören(Verysadge) (WP)                              | ✓ split                                      |
 | Skulker's Greaves             | Piotr(Bergamotka) (WP), Dankyn (Bak), Kamil(Gigakox) (R)                              | ✓ split                                      |
 | Spiteblade                    | Dankyn (Bak), Kamil(Gigakox) (R)                                                      | ✓ split                                      |
 | The Decapitator               | Piotr(Bergamotka) (WP), Lynelen (R)                                                   | ✓ split                                      |
@@ -179,7 +179,7 @@
 - Soft rule "1 Priest healer per team" — Bakery has none; only 2 priest healers signed up.
 - Soft rule "1 Resto Druid per team" — only Beaverfist signed up as RD healer; on WellPrepared only.
 - Soft rules "Hunter / Mage / Warlock distribution" — only 2 of each spec in raid; one team gets 0 of each.
-- Soft rule "Fury Warrior distribution" — only 2 Fury after David(Nemajumarad)'s flex to Prot; 0 on Restaurant, 1 on Bakery (Dankyn), 1 on WellPrepared (Verysadge).
+- Soft rule "Fury Warrior distribution" — only 2 Fury after David(Nemajumarad)'s flex to Prot; 0 on Restaurant, 1 on Bakery (Dankyn), 1 on WellPrepared (Sören(Verysadge)).
 
 **Post-check changes** (not re-verified by sub-agent):
 - Mark(Roossy/Keatala) (Bakery DPS) ↔ Shapkica (Restaurant DPS) per user instruction — de-stacks Druid Ferals on R; brings Roossy to R as officer.

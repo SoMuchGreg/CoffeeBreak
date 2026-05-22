@@ -5,7 +5,7 @@
 ## Signups (from Discord) — 27
 
 **Tanks (2):** CptKavior, Emil(Ostbirger)
-**Warriors (4):** Verysadge, Dankyn, Kamil(Gigakox), David(Nemajumarad)
+**Warriors (4):** Sören(Verysadge), Dankyn, Kamil(Gigakox), David(Nemajumarad)
 **Druids (4):** Shapkica, Yxanb, Beaverfist, Guðjón(Jarðepli)
 **Paladins (2):** Thordrel, Heligeman
 **Rogues (1):** Tim(Tiinar)
@@ -57,7 +57,7 @@
 | Benglock              | Warlock (Demonology) |
 | David(Nemajumarad)    | Warrior (Arms)       |
 | Dankyn                | Warrior (Fury)       |
-| Verysadge             | Warrior (Fury)       |
+| Sören(Verysadge)      | Warrior (Fury)       |
 
 **Composition check:** Target 3/5-6/16-17 for Gruul+Mag (default 25-man comp; per `rules/01-raid-compositions.md` → "25-man raids → General → Default composition"). Actual: 3/6/16 = 25. Status: ✅ on target.
 
@@ -144,7 +144,7 @@
 - Benglock (Demonology Warlock)
 - David(Nemajumarad) (Arms Warrior)
 - Dankyn (Fury Warrior)
-- Verysadge (Fury Warrior)
+- Sören(Verysadge) (Fury Warrior)
 
 ### Encounter assignments
 

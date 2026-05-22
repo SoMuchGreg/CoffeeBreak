@@ -3,7 +3,7 @@
 ## Signups (from Discord) — 29 (+0)
 
 **Tanks (6):** Mirohl, Kamil(Gigakox), CptKavior, Doughball, Emil(Ostbirger), Marino(Varthier)
-**Warriors (3):** Verysadge, Yorekbarn, Dankyn
+**Warriors (3):** Sören(Verysadge), Yorekbarn, Dankyn
 **Druids (4):** Steven(Gresac/Younea), Mark(Roossy/Keatala), Beaverfist, Yxanb
 **Paladins (3):** Leontes, Heligeman, Thordrel
 **Rogues (1):** Glaivemaster Baebay
@@ -36,7 +36,7 @@
 | Pergatori             | DPS    | Shaman (Elemental)   |
 | Piotr(Bergamotka)     | DPS    | Shaman (Enhancement) |
 | BestPractice          | DPS    | Warlock              |
-| Verysadge             | DPS    | Warrior (Fury)       |
+| Sören(Verysadge)      | DPS    | Warrior (Fury)       |
 | PUG DPS               | DPS    | —                    |
 
 ### Team Bakery
@@ -88,7 +88,7 @@
 - DPS: Pergatori (Elemental Shaman)
 - DPS: Piotr(Bergamotka) (Enhancement Shaman)
 - DPS: BestPractice (Warlock)
-- DPS: Verysadge (Fury Warrior)
+- DPS: Sören(Verysadge) (Fury Warrior)
 - DPS: PUG DPS
 
 **Team Bakery (10)**
@@ -135,7 +135,7 @@ Per `rules/03-player-constraints.md` — items where 2+ competing players are in
 | King's Defender             | CptKavior (R), Doughball (Bak)                                       | ✓ split                               |
 | Light's Justice             | Steven(Gresac/Younea) (R), Saskia(Siljes) (Bak), Thordrel (BG)       | ✓ split                               |
 | Nathrezim Mindblade         | Pergatori (R), Beaverfist (Bak)                                      | ✓ split                               |
-| Ring of a Thousand Marks    | Verysadge (R), Yorekbarn (Bak), Leontes (BG)                         | ✓ split                               |
+| Ring of a Thousand Marks    | Sören(Verysadge) (R), Yorekbarn (Bak), Leontes (BG)                  | ✓ split                               |
 | Skulker's Greaves           | Yxanb (R), Dankyn (Bak), Kamil(Gigakox) (BG), Mathias(Vaelruna) (BG) | ⚠️ Kamil(Gigakox) + Mathias(Vaelruna) |
 | Spiteblade                  | Dankyn (Bak), Glaivemaster Baebay (BG)                               | ✓ split                               |
 | The Decapitator             | Piotr(Bergamotka) (R), Yorekbarn (Bak), Lynelen (BG)                 | ✓ split                               |

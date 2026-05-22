@@ -3,7 +3,7 @@
 ## Signups (from Discord)
 
 **Tanks (7):** Mirohl, Kamil(Gigakox), Doughball, CptKavior, Marino(Varthier), McJudgin, Emil(Ostbirger)
-**Warriors (2):** Dankyn, Verysadge
+**Warriors (2):** Dankyn, Sören(Verysadge)
 **Druids (5):** Steven(Gresac/Younea), Beaverfist, Mark(Roossy/Keatala), Yxanb, Guðjón(Jarðepli)
 **Paladins (3):** Lightstarr, Thordrel, Leontes
 **Hunters (3):** Mathias(Vaelruna), Dwarfytron, Tonz/Tonsen
@@ -61,7 +61,7 @@
 | OomToDoom            | DPS           | Mage    |
 | Ebonybolt            | DPS           | Shaman  |
 | McHughes             | DPS           | Warlock |
-| Verysadge            | DPS           | Warrior |
+| Sören(Verysadge)     | DPS           | Warrior |
 
 
 *(Glaivemaster Baebay signed up late but did NOT attend this raid)*
@@ -112,7 +112,7 @@
 - DPS: OomToDoom (Mage)
 - DPS: Ebonybolt (Shaman)
 - DPS: McHughes (Warlock)
-- DPS: Verysadge (Warrior)
+- DPS: Sören(Verysadge) (Warrior)
 
 On the bench: McJudgin, CptKavior and Leontes. But if you show up online around raid time, there's a decent chance a spot will free up because of last-minute changes.
 

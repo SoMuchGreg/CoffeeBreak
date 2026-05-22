@@ -3,7 +3,7 @@
 ## Signups (from Discord) — 26 (+3 bench)
 
 **Tanks (3):** Mirohl, Emil(Ostbirger), Marino(Varthier)
-**Warriors (3):** Kamil(Gigakox), Verysadge, Dankyn
+**Warriors (3):** Kamil(Gigakox), Sören(Verysadge), Dankyn
 **Druids (3):** Steven(Gresac/Younea), Beaverfist, Guðjón(Jarðepli)
 **Paladins (3):** McJudgin, Thordrel, Leontes
 **Rogue (1):** Glaivemaster Baebay
@@ -59,7 +59,7 @@ Ran with 25 as expected.
 | Jabbadhutt          | Warlock |
 | Dankyn              | Warrior |
 | Kamil(Gigakox)      | Warrior |
-| Verysadge           | Warrior |
+| Sören(Verysadge)    | Warrior |
 
 **Composition:** 3 tanks, 6 healers, 16 DPS (25 total)
 
@@ -134,7 +134,7 @@ Ran with 25 as expected.
 - Jabbadhutt (Warlock)
 - Dankyn (Warrior)
 - Kamil(Gigakox) (Warrior)
-- Verysadge (Warrior)
+- Sören(Verysadge) (Warrior)
 
 ### Encounter assignments
 

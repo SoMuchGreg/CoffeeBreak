@@ -3,7 +3,7 @@
 ## Signups (from Discord) — 27 (+0)
 
 **Tanks (4):** Mirohl, CptKavior, Marino(Varthier), Emil(Ostbirger)
-**Warriors (3):** Dankyn, Kamil(Gigakox), Verysadge
+**Warriors (3):** Dankyn, Kamil(Gigakox), Sören(Verysadge)
 **Druids (4):** Steven(Gresac/Younea), Beaverfist, Mark(Roossy/Keatala), Yxanb
 **Paladins (3):** Thordrel, McJudgin, Leontes
 **Rogues (1):** Glaivemaster Baebay
@@ -62,7 +62,7 @@
 | McHughes            | Warlock              |
 | Dankyn              | Warrior (Fury)       |
 | Kamil(Gigakox)      | Warrior (Fury)       |
-| Verysadge           | Warrior (Fury)       |
+| Sören(Verysadge)    | Warrior (Fury)       |
 
 **Composition check:** Target 3/6/16 for Gruul+Mag (per `rules/01-raid-compositions.md`). Actual: 3/6/16 = 25. Status: ⚠️ Warlock count dropped to 1 (below Section 8's combined Destro+Affli lower bound of 3) after Ōtsu and Jabbadhutt withdrew — unfillable since no other Warlocks signed up. Role targets (tank/healer/DPS) still on point.
 
@@ -136,7 +136,7 @@
 - McHughes (Warlock)
 - Dankyn (Fury Warrior)
 - Kamil(Gigakox) (Fury Warrior)
-- Verysadge (Fury Warrior)
+- Sören(Verysadge) (Fury Warrior)
 
 ### Encounter assignments
 
@@ -171,4 +171,4 @@ On the bench: CptKavior and Lynelen. But if you show up online around raid time,
   - Adam(Kres/Dissi): signup Holy → ran Shadow.
   This is why the header reads 7 healers but the roster has 6.
 - **Lynelen benched** — Enh over Section 8 cap. Algorithm picked Piotr(Bergamotka); user overrode → Lynelen.
-- **Ōtsu and Jabbadhutt withdrew pre-raid.** Pergatori promoted off bench for Ōtsu; Verysadge promoted off bench for Jabbadhutt (Fury cap no longer binding with only 1 Warlock DPS to fit). Warlock count fell to 1, below Section 8's Destro+Affli lower bound of 3 — unfillable (no other Warlocks signed up).
+- **Ōtsu and Jabbadhutt withdrew pre-raid.** Pergatori promoted off bench for Ōtsu; Sören(Verysadge) promoted off bench for Jabbadhutt (Fury cap no longer binding with only 1 Warlock DPS to fit). Warlock count fell to 1, below Section 8's Destro+Affli lower bound of 3 — unfillable (no other Warlocks signed up).

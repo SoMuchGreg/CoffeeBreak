@@ -5,7 +5,7 @@
 ## Signups (from Discord) — 27 (+2)
 
 **Tanks (3):** CptKavior, Emil(Ostbirger), Marino(Varthier)
-**Warriors (4):** Verysadge, Kamil(Gigakox), Dankyn, David(Nemajumarad)
+**Warriors (4):** Sören(Verysadge), Kamil(Gigakox), Dankyn, David(Nemajumarad)
 **Druids (4):** Beaverfist, Steven(Gresac/Younea), Yxanb, Shapkica
 **Paladins (3):** Heligeman, Thordrel, McJudgin
 **Hunters (3):** Mathias(Vaelruna), Mark(Roossy/Keatala), Jordan(Grundiger)
@@ -64,7 +64,7 @@
 | David(Nemajumarad)   | Warrior (Arms)       |
 | CptKavior            | Warrior (Fury)       |
 | Dankyn               | Warrior (Fury)       |
-| Verysadge            | Warrior (Fury)       |
+| Sören(Verysadge)     | Warrior (Fury)       |
 
 **Composition check:** Target 3/6/16 for Gruul+Mag (per `rules/01-raid-compositions.md`). Actual: 3/6/16 = 25. Status: ✅ on target.
 
@@ -147,7 +147,7 @@
 - David(Nemajumarad) (Arms Warrior)
 - CptKavior (Fury Warrior)
 - Dankyn (Fury Warrior)
-- Verysadge (Fury Warrior)
+- Sören(Verysadge) (Fury Warrior)
 
 ### Encounter assignments
 

@@ -3,7 +3,7 @@
 ## Signups (from Discord) — 26 (+1)
 
 **Tanks (2):** CptKavior, Emil(Ostbirger)
-**Warriors (4):** Verysadge, Dankyn, Kamil(Gigakox), Yorekbarn
+**Warriors (4):** Sören(Verysadge), Dankyn, Kamil(Gigakox), Yorekbarn
 **Druids (5):** Steven(Gresac/Younea), Mark(Roossy/Keatala), Yxanb, Guðjón(Jarðepli), Beaverfist
 **Paladins (2):** Leontes, Thordrel
 **Hunters (3):** Mathias(Vaelruna), Tonz/Tonsen, Jordan(Grundiger)
@@ -62,7 +62,7 @@
 | Lynelen           | Shaman (Enhancement) |
 | Jabbadhutt        | Warlock              |
 | Dankyn            | Warrior (Fury)       |
-| Verysadge         | Warrior (Fury)       |
+| Sören(Verysadge)  | Warrior (Fury)       |
 | Yorekbarn         | Warrior (Fury)       |
 
 **Composition check:** Target 3/6/16 for Gruul+Mag (per `rules/01-raid-compositions.md`). Actual: 3/6/16 = 25. Status: ✅ on target.
@@ -150,7 +150,7 @@
 - Lynelen (Enhancement Shaman)
 - Jabbadhutt (Warlock)
 - Dankyn (Fury Warrior)
-- Verysadge (Fury Warrior)
+- Sören(Verysadge) (Fury Warrior)
 - Yorekbarn (Fury Warrior)
 
 ### Encounter assignments

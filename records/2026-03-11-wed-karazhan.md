@@ -5,7 +5,7 @@
 ## Signups (from Discord) — 22
 
 **Tanks (3):** Mirohl, Doughball, Marino(Varthier)
-**Warriors (3):** Verysadge, Dankyn, Ayujinzhu
+**Warriors (3):** Sören(Verysadge), Dankyn, Ayujinzhu
 **Druids (3):** Steven(Gresac/Younea), Guðjón(Jarðepli), Yxanb
 **Paladins (2):** Thordrel, Sjwammie
 **Rogues (1):** Glaivemaster Baebay

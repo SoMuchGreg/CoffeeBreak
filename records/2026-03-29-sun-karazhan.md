@@ -3,7 +3,7 @@
 ## Signups (from Discord)
 
 **Tanks (3):** Mirohl, Emil(Ostbirger), Marino(Varthier)
-**Warriors (2):** Verysadge, Kamil(Gigakox)
+**Warriors (2):** Sören(Verysadge), Kamil(Gigakox)
 **Druids (5):** Steven(Gresac/Younea), Mark(Roossy/Keatala), Eselman, Yxanb, Beaverfist
 **Paladin (1):** Thordrel
 **Rogues (2):** Glaivemaster Baebay, Drillbabe
@@ -61,7 +61,7 @@
 | Tonz/Tonsen       | DPS    | Hunter  |
 | Piotr(Bergamotka) | DPS    | Shaman  |
 | McHughes          | DPS    | Warlock |
-| Verysadge         | DPS    | Warrior |
+| Sören(Verysadge) | DPS    | Warrior |
 
 ## Bench
 
@@ -105,7 +105,7 @@
 - DPS: Tonz/Tonsen (Hunter)
 - DPS: Piotr(Bergamotka) (Shaman)
 - DPS: McHughes (Warlock)
-- DPS: Verysadge (Warrior)
+- DPS: Sören(Verysadge) (Warrior)
 
 ## Notes
 

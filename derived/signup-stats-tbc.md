@@ -60,7 +60,7 @@ For renames: update the `Player` cell in-place; re-sort only if the alphabetical
 | 11 | Emil(Ostbirger)       | 2026-03-22   | 19      | 95.0%       | 0                         |
 | 12 | CptKavior             | 2026-04-08   | 14      | 93.3%       | 0                         |
 | 13 | Mathias(Vaelruna)     | 2026-02-22   | 27      | 93.1%       | 0                         |
-| 14 | Verysadge             | 2026-02-22   | 27      | 93.1%       | 0                         |
+| 14 | Sören(Verysadge)      | 2026-02-22   | 27      | 93.1%       | 0                         |
 | 15 | Dankyn                | 2026-03-04   | 23      | 92.0%       | 0                         |
 | 16 | Greg(Ucannotpass)     | 2026-02-22   | 26      | 89.7%       | 0                         |
 | 17 | Kamil(Gigakox)        | 2026-03-25   | 17      | 89.5%       | 0                         |

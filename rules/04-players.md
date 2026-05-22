@@ -93,7 +93,7 @@ Currently empty. Kept so a Regular player promoted to priority `1` has a place t
 | 23 | CptKavior             | CptKavior      | Warrior | DPS (Fury)         | Tank             | 2        | First line offspec                                                 |
 | 24 | Dankyn                | Dankyn         | Warrior | DPS (Fury)         | Tank             | 2        | Reluctant offspec                                                  |
 | 25 | David(Nemajumarad)    | Nemajumarad    | Warrior | DPS (Arms)         | Tank             | 2        | Eager offspec, Decide whether to downgrade to member by 2026-06-07 |
-| 26 | Verysadge             | Verysadge      | Warrior | DPS (Fury)         | —                | 2        |                                                                    |
+| 26 | Sören(Verysadge)      | Verysadge      | Warrior | DPS (Fury)         | —                | 2        |                                                                    |
 
 #### Members
 

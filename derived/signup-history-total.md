@@ -74,7 +74,7 @@ A player's sub-table here is determined solely by their top-level grouping in `r
 |----|-----------------------|---------|
 | 1  | Mathias(Vaelruna)     | 31      |
 | 2  | Steven(Gresac/Younea) | 31      |
-| 3  | Verysadge             | 30      |
+| 3  | Sören(Verysadge)      | 30      |
 | 4  | Thordrel              | 27      |
 | 5  | Yxanb                 | 24      |
 | 6  | Dankyn                | 23      |

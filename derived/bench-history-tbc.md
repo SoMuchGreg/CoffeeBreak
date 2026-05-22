@@ -47,9 +47,9 @@ All priority-1 healer-main players: 0 benches at every location. *(No priority-1
 | McJudgin              | 1        | 08.04          | 0         | —               | 0   | —         | 0  | —        | 1     |
 | Piotr(Bergamotka)     | 1        | 29.04          | 0         | —               | 1   | 17.05     | 0  | —        | 2     |
 | Shapkica              | 0        | —              | 1         | 10.05           | 0   | —         | 0  | —        | 1     |
+| Sören(Verysadge)      | 0        | —              | 1         | 15.04           | 0   | —         | 0  | —        | 1     |
 | Steven(Gresac/Younea) | 2        | 22.04, 29.04   | 1         | 25.03           | 0   | —         | 0  | —        | 3     |
 | Tonz/Tonsen           | 1        | 11.03          | 0         | —               | 0   | —         | 0  | —        | 1     |
-| Verysadge             | 0        | —              | 1         | 15.04           | 0   | —         | 0  | —        | 1     |
 | Yxanb                 | 1        | 29.04          | 1         | 22.03           | 0   | —         | 0  | —        | 2     |
 
 All other priority-2 DPS/tank-main players: 0 benches at every location.
