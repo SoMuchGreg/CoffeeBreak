@@ -36,7 +36,6 @@ All priority-1 healer-main players: 0 benches at every location. *(No priority-1
 
 | Player                | Karazhan | Karazhan dates | Gruul+Mag | Gruul+Mag dates | SSC | SSC dates | TK | TK dates | Total |
 |-----------------------|----------|----------------|-----------|-----------------|-----|-----------|----|----------|-------|
-| Animustenax           | 0        | —              | 0         | —               | 0   | —         | 1  | 24.05    | 1     |
 | CptKavior             | 1        | 08.04          | 1         | 15.04           | 0   | —         | 0  | —        | 2     |
 | Dankyn                | 1        | 29.04          | 0         | —               | 0   | —         | 0  | —        | 1     |
 | David(Nemajumarad)    | 0        | —              | 1         | 10.05           | 0   | —         | 0  | —        | 1     |
