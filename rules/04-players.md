@@ -75,7 +75,7 @@ Currently empty. Kept so a Regular player promoted to priority `1` has a place t
 | 5  | Mathias(Vaelruna)     | Vaelruna       | Hunter  | DPS (Beastmastery) | —                | 2        |                                                                    |
 | 6  | Silverpilen           | Silverpilen    | Hunter  | DPS (Beastmastery) | —                | 2        | Decide whether to downgrade to member by 2026-07-05                |
 | 7  | Tonz/Tonsen           | Tonsen         | Hunter  | DPS (Beastmastery) | —                | 2        |                                                                    |
-| 8  | Animustenax           | Animustenax    | Mage    | DPS (Arcane)       | —                | 2        |                                                                    |
+| 8  | TJ(Animustenax)       | Animustenax    | Mage    | DPS (Arcane)       | —                | 2        | Also referred to as Ani; she/her                                   |
 | 9  | Heligeman             | Heligeman      | Paladin | Healer             | —                | 2        | Often addressed as Helige                                          |
 | 10 | Leontes               | Leontes        | Paladin | DPS                | —                | 2        |                                                                    |
 | 11 | McJudgin              | McJudgin       | Paladin | DPS                | Tank             | 2        | First line offspec                                                 |

@@ -102,7 +102,7 @@ A player's sub-table here is determined solely by their top-level grouping in `r
 | 28 | David(Nemajumarad)    | 6       |
 | 29 | Doughball             | 6       |
 | 30 | Jordan(Grundiger)     | 6       |
-| 31 | Animustenax           | 5       |
+| 31 | TJ(Animustenax)       | 5       |
 | 32 | Sjwammie              | 4       |
 | 33 | Yorekbarn             | 4       |
 | 34 | Medianos              | 3       |

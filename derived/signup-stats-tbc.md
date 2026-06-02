@@ -68,7 +68,7 @@ For renames: update the `Player` cell in-place; re-sort only if the alphabetical
 | 19 | Marino(Varthier)      | 2026-02-22   | 28      | 87.5%       | 0                         |
 | 20 | Kamil(Gigakox)        | 2026-03-25   | 19      | 86.4%       | 0                         |
 | 21 | Lynelen               | 2026-03-11   | 22      | 84.6%       | 14                        |
-| 22 | Animustenax           | 2026-05-18   | 5       | 83.3%       | 0                         |
+| 22 | TJ(Animustenax)       | 2026-05-18   | 5       | 83.3%       | 0                         |
 | 23 | Adam(Kres/Dissi)      | 2026-02-22   | 26      | 81.3%       | 3                         |
 | 24 | Thordrel              | 2026-02-22   | 25      | 78.1%       | 14                        |
 | 25 | Benglock              | 2026-05-06   | 7       | 70.0%       | 0                         |
