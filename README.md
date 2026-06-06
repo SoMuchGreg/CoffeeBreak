@@ -31,4 +31,5 @@ Claude Code reads the rule files, parses Discord signup screenshots provided by 
 - `rules/03-player-constraints.md` — Must-be-together / must-not-be-together / availability / Needlist / enchanter constraints
 - `rules/04-players.md` — Player classes, specializations, and raid spot priority
 - `rules/05-encounter-assignments.md` — Encounter role assignments for Gruul+Mag, SSC, and TK
+- `rules/06-split-location-nights.md` — Rules for raid nights attempting bosses from two or more raid locations (one roster, combined encounter section, derived composition target)
 - `reference/file-operations-manual.md` — Step-by-step guide for every type of session interaction

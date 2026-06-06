@@ -262,6 +262,10 @@ A 25-man raid **always runs**, regardless of how few players sign up. There is n
 - Resto Druids benched under this cap are still subject to fair bench rotation; how the cap interacts with rotation — which Resto Druid sits, why a capped player's cumulative bench count outpaces others over time without that being a fairness failure, and that the cap never displaces a priority-1 player — lives in `rules/02-bench-rotation.md` → "Composition caps override pure fairness". We have a relatively large Resto Druid pool, so this cap fires often.
 - This cap does **not** apply when 5 or fewer healers sign up — in that case, all signed-up Resto Druids may play (subject to the raid's healer slot count).
 
+#### Split-location raid nights
+
+When a single raid night attempts bosses from two or more 25-man raid locations, the composition target is **derived from the planned boss list** rather than from a single location's default — canonical rule: `rules/06-split-location-nights.md` → "Composition target".
+
 ### Gruul + Magtheridon
 
 Uses the **default 25-man composition** (see "25-man raids → General → Default composition" above). Gruul+Mag additionally carries per-encounter role assignments — see `rules/05-encounter-assignments.md`.

@@ -151,6 +151,8 @@ Comp-flex scope (its interaction with this rotation scope): `rules/01-raid-compo
 
 Fair rotation distributes bench assignments so that **cumulative bench counts equalize within each bench group, per raid location**. The promise scopes to a single (role group × priority × location) bucket. Bench counts are tracked **separately per raid location** (Karazhan, Gruul+Mag, SSC, TK) — a player's bench count at one location is independent of their count at any other.
 
+**Split-location raid nights.** When a single raid night attempts bosses from two or more raid locations, the bench increments **only the primary (first-played) location's column** — canonical rule: `rules/06-split-location-nights.md` → "Bench-history tracking". Within that column, every rule in this file applies unchanged.
+
 When deciding who to bench, compare players' bench counts **for the specific raid location being planned**, **within the same bench group**:
 
 - **Cross-priority comparisons are not valid.** A priority-3 player with 0 benches does not get a spot before a priority-2 player with 2 benches. Priority always wins over fairness across levels.

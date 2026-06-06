@@ -102,6 +102,7 @@ The sole source: **prior `records/*.md` files with an `## Encounter assignments`
 - **Bench rotation takes precedence.** If a past role-holder is benched, withdrawn, or absent, continuity for that role is unsatisfiable this raid — fall through to the next algorithm step. Never un-bench a player to preserve continuity; `rules/02-bench-rotation.md` always wins.
 - **Former-guild players** (`rules/04-players.md` → Former players table) contribute to the historical continuity record but are filtered out at step 1 of every assignment — they are not eligible for any current roster.
 - **Record-file update procedure** — where and how encounter assignments are written into the record file lives in `reference/file-operations-manual.md` → Step 3 and Step 4 of "Event: New signup screenshot received", and the structural templates at `reference/templates/gruul-mag-record.md`, `reference/templates/ssc-record.md`, and `reference/templates/tk-record.md`.
+- **Split-location raid nights.** When a single raid night attempts bosses from two or more raid locations, all planned bosses share a **single combined `## Encounter assignments` section** in the record file — canonical rule: `rules/06-split-location-nights.md` → "Encounter assignments". The per-boss assignment algorithm in this file is unchanged.
 
 ## Gruul+Mag
 

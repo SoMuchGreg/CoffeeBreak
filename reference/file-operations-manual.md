@@ -25,6 +25,7 @@ For cadence (when to re-read the applicable tier within a session), see `CLAUDE.
 | `rules/03-player-constraints.md` | Must-together / must-not-together / availability / Needlist / enchanter constraints |
 | `rules/04-players.md` | Existing players' classes, specs, raid spot priority, notes |
 | `rules/05-encounter-assignments.md` | Encounter role tables, eligibility/continuity algorithm, raid leader exclusion, general raid instructions — for Gruul+Mag, SSC, and TK |
+| `rules/06-split-location-nights.md` | Definition, filename and title format, composition target derivation, bench-history tracking, encounter-section structure — for raid nights attempting bosses from two or more raid locations |
 | `reference/file-operations-manual.md` | This file — workflow procedures for every event type |
 
 ### Tier 2
@@ -144,6 +145,61 @@ The `## Notes` section is for **per-raid facts that aren't derivable from the ru
 ## Event: User asks me to form raid groups
 
 The core build trigger — fires when the user explicitly asks for a roster (e.g., *"make me a roster"*, *"form the raid groups"*, *"build the comp"*). Maps to **Steps 3 and 4** of `Event: New signup screenshot received` — follow that flow. Typically combined with a signup screenshot in the same turn (Steps 1–2 then also run); when parsing has already happened in a prior turn, this trigger re-enters at Step 3.
+
+---
+
+## Event: Split-location raid night
+
+Fires when the user signals that a single raid night will attempt bosses from **two or more raid locations** — see `rules/06-split-location-nights.md` for the canonical rule (definition, composition target, naming, bench tracking, encounter section). This event captures the **deltas** from the standard `Event: New signup screenshot received` flow; everything not redefined here works as in that event.
+
+### Trigger phrases
+
+- *"3 first TK bosses then Vashj in SSC"*
+- *"Split night between TK and SSC"*
+- *"Mixed TK / SSC night"*
+- *"Finish off Vashj after the TK run"*
+- or any wording identifying bosses from two or more raid locations for a single raid night.
+
+### Required input — planned boss list
+
+Before roster-building begins, the user must communicate the **planned boss list** (definition: `rules/06-split-location-nights.md` → "Definition"). Ask if not specified, listing each boss by its canonical name (`rules/05-encounter-assignments.md` → encounter-roles tables). The first boss in the list is the **primary location** for bench tracking and record-file construction.
+
+### Step 3 delta — Build the roster
+
+Run Steps 1–2 of `Event: New signup screenshot received` as written. Steps 3.1–3.5 apply as written, with these substitutions:
+
+- **Composition target.** Derived from the planned boss list per `rules/06-split-location-nights.md` → "Composition target" — not from the per-location default.
+- **Sanity-check sub-agent (Step 3.6).** Brief the sub-agent on the split-location context and pass it the planned boss list. The sub-agent verifies the derived target, not a single-location default.
+- **Encounter assignments (Step 3.7).** For each planned boss, lift its `### {boss}` subsection from `rules/05-encounter-assignments.md` → the matching location's encounter-roles table, and run the standard assignment algorithm against the split-night roster. Bosses not on the planned list are not assigned.
+
+### Step 4 delta — Write the record file
+
+Split-night record files have **no dedicated template**; assemble them by lifting parts from the existing single-location templates. Procedure:
+
+1. **Create the file** at `records/YYYY-MM-DD-{day}-{label1}+{label2}.md` per `rules/06-split-location-nights.md` → "Filename".
+2. **Copy the primary location's template** (`reference/templates/{primary}-record.md`) as the starting scaffold.
+3. **Rewrite the H1 title, the `## Actual Roster (...)` parenthetical, and the `## Discord announcement` H2 title** per `rules/06-split-location-nights.md` → "In-file headings (title format)".
+4. **Rewrite the `**Composition check:**` line** to state the derived target with a one-line reason per `rules/06-split-location-nights.md` → "Composition target".
+5. **Rebuild the `## Encounter assignments` section** to contain only the planned bosses in play-sequence order:
+   - Delete every `### {boss}` subsection for bosses not on the planned list.
+   - For any planned boss native to the secondary location, copy its `### {boss}` subsection from that location's template (`reference/templates/{secondary}-record.md`) and paste it at the correct play-sequence position.
+6. **Rebuild the `## Discord announcement`** bullet list of encounters to mirror the new section: drop bullets for bosses not on the planned list; copy bullets for cross-location bosses from the secondary location's template's Discord-announcement section.
+
+### Update these files
+
+Follow `Event: New signup screenshot received` → Step 4 for every file *except* `derived/bench-history-tbc.md`, which uses the split-night override:
+
+| File | What to update |
+|------|----------------|
+| `records/YYYY-MM-DD-{day}-{label1}+{label2}.md` | Construct per the Step 4 delta above. |
+| `derived/bench-history-tbc.md` | For each benched player, increment **only the primary location's column** (not both). Append the new date to that column's `{location} dates` cell only. Insert a row in the bench group's table if absent; recompute Total. Per `rules/06-split-location-nights.md` → "Bench-history tracking". |
+| `derived/signup-history-total.md` | Standard update per `Event: New signup screenshot received` → Step 4 — split-location nature does not affect this file. |
+| `derived/signup-stats-tbc.md` | Standard update per `Event: New signup screenshot received` → Step 4 — split-location nature does not affect this file. |
+| `rules/04-players.md` | Standard update per `Event: New signup screenshot received` → Step 4 (new players, spec changes). |
+
+### Post-build edits
+
+`Event: Quick (ad-hoc) roster update`, `Event: Full-roster recalculation`, `Event: Player withdraws signup`, `Event: Player is a no-show`, and `Event: Post-build signup arrives` apply unchanged to split-night record files. The **primary-location-only** rule from `rules/06-split-location-nights.md` → "Bench-history tracking" persists through every post-build derived-file update — a bench added or removed post-build still touches only the primary location's column.
 
 ---
 
@@ -480,6 +536,7 @@ INPUTS for generating a record file:
   ├── rules/03-player-constraints.md
   ├── rules/04-players.md
   ├── rules/05-encounter-assignments.md   ← Encounter assignments for Gruul+Mag, SSC, and TK
+  ├── rules/06-split-location-nights.md   ← Split-night deltas (filename/title, derived comp target, primary-location bench, combined encounter section)
   ├── derived/bench-history-tbc.md     ← summary derived from records/, kept as a fast-lookup index
   ├── derived/signup-history-total.md    ← derived from records/ — statistic only, not used by any active rule
   └── derived/signup-stats-tbc.md  ← combined signup count, signup rate (percentage), and last-signup recency (days), TBC-era record files only (statistic only)
@@ -525,4 +582,5 @@ After any interaction, check:
 - [ ] Officer promoted/demoted? → `04-players.md` + `signup-history-total.md` + `bench-history-tbc.md` (priority change moves the bench row). See `Event: User promotes or demotes an officer`.
 - [ ] New record file created? → `records/YYYY-MM-DD-day-raid.md` (Gruul+Mag uses `gruul-mag-record.md`; SSC uses `ssc-record.md`; TK uses `tk-record.md`; other 25-mans use `25man-record.md`)
 - [ ] New Gruul+Mag, SSC, or TK record? → fill in `## Encounter assignments` per `rules/05-encounter-assignments.md`
+- [ ] Split-location raid night (bosses from 2+ raid locations)? → see `Event: Split-location raid night` for filename/title format, derived composition target, primary-location-only bench-history rule, and the combined `## Encounter assignments` structure (canonical rule: `rules/06-split-location-nights.md`)
 - [ ] Constraint added? → `03-player-constraints.md`
