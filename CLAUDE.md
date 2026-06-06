@@ -31,7 +31,7 @@ Content that does NOT belong in each file:
 - `rules/*.md` — not session behavior; not task workflows; not computed state; not reference facts.
 - `config/*.md` — not rules; not workflows; not reference facts.
 - `reference/*.md` (all non-manual) — not rules; not session behavior; not task workflows.
-- `derived/*.md` — not rules; not anything not mechanically derivable from `records/`.
+- `derived/*.md` — not rules; not anything not mechanically derivable from `records/`, with one sanctioned exception: the `Rank` column in `derived/signup-stats-tbc.md`, a deliberate copy of player priority from `rules/04-players.md` (rationale and sync obligation: that file's column notes). Do not add further non-derived columns without the same explicit justification.
 - `records/*.md` — not rules; not cross-raid analysis (that's `derived/`).
 - `.claude/settings.json` — not rule prose (prose belongs in `CLAUDE.md` or `rules/`).
 - `MEMORY.md` — empty by policy; see "Auto-memory policy" below.

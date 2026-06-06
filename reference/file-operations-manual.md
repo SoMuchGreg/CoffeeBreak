@@ -34,7 +34,7 @@ For cadence (when to re-read the applicable tier within a session), see `CLAUDE.
 |------|-----|
 | `derived/bench-history-tbc.md` | Cumulative bench counts; used for fair-rotation decisions per `rules/02-bench-rotation.md` |
 | `derived/signup-history-total.md` | Cumulative signup counts per player — statistic only, not consulted by any active rule; read so the current state is in context when Step 4 increments it |
-| `derived/signup-stats-tbc.md` | Combined per-player signup count, signup rate (percentage), and last-signup recency (days) for TBC-era record files only; flat table (Officers, Core tanks, and Regular players together), statistic only; read so the current state is in context when maintained |
+| `derived/signup-stats-tbc.md` | Combined per-player signup count, signup rate (percentage), and last-signup recency (days), plus a synced copy of each player's rank, for TBC-era record files only; flat table (Officers, Core tanks, and Regular players together), statistic only; read so the current state is in context when maintained |
 | `reference/class-colors-and-spec-icons.md` | Class colors and spec icon reference for parsing screenshots |
 | `reference/icons/specs/*.jpg` | Spec icon reference images (compare side-by-side when unsure) |
 | `reference/icons/classes/*.png` | Class icon reference images (compare side-by-side when unsure) |
@@ -96,7 +96,7 @@ Read both **Tier 1** and **Tier 2** of the **Reading list** at the top of this f
 | `records/YYYY-MM-DD-day-raid.md` | **Create new file.** Start from the template that matches the raid location: `reference/templates/karazhan-record.md` for Karazhan nights, `reference/templates/gruul-mag-record.md` for Gruul+Mag (adds the `## Encounter assignments` section per `rules/05-encounter-assignments.md` → "Gruul+Mag"), `reference/templates/ssc-record.md` for SSC (adds the `## Encounter assignments` section per `rules/05-encounter-assignments.md` → "SSC"), `reference/templates/tk-record.md` for TK (adds the `## Encounter assignments` section per `rules/05-encounter-assignments.md` → "TK"), or `reference/templates/25man-record.md` for any other 25-man raid location (Hyjal, BT when those unlock). Copy the template into `records/` with the date-based filename, fill in every `{placeholder}`, delete every section/sub-line marked with an HTML comment like `delete line if none` if its condition applies, and follow the section order as-is. |
 | `derived/bench-history-tbc.md` | **Update.** For each player benched this raid: find their row in the correct bench group's table per `rules/02-bench-rotation.md` → "Bench groups". Insert a new row in alphabetical position if absent. Increment the count cell for the relevant location column, append the new date, and recompute the **Total** cell (sum across location columns in the row). |
 | `derived/signup-history-total.md` | **Update.** For each distinct canonical player appearing anywhere in the new record file's `## Signups` section (any sub-line — class lists, Tentative, Late, Bench): find their row in the sub-table matching their `rules/04-players.md` classification (Officers / Core tanks / Current members / Former members), or add a new row in that sub-table if absent. Increment **Signups** by 1. Then re-sort each sub-table whose rows changed (by `Signups` desc, alphabetical case-insensitive tiebreak) and renumber `#` from `1`. Count each player once per record file regardless of how many sub-lines mention them. **Never** count Discord "Absent" reactions (ignored per Step 2) or players in `## Withdrawn signups` (see `Event: Player withdraws signup`). See that file's own "What counts as a signup" and "Maintenance" sections for the full rule. |
-| `derived/signup-stats-tbc.md` | **Update IF** the new/edited record file is in scope per that file's **Scope** section (TBC-era record files). See its **Maintenance** section for the full delta logic — in brief: apply per-player Signups deltas, record First signup for new rows, recompute Signup rate for every row whose Raids-in-window changed, recompute Last signed up X days ago for every row, refresh the "Computed as of" header, re-sort by Signup rate desc (alphabetical tiebreak), renumber. Former players are excluded. Skip entirely for out-of-scope record files (currently any old-world record file). |
+| `derived/signup-stats-tbc.md` | **Update IF** the new/edited record file is in scope per that file's **Scope** section (TBC-era record files). See its **Maintenance** section for the full delta logic — in brief: apply per-player Signups deltas, record First signup and **Rank** (from `rules/04-players.md`) for new rows, recompute Signup rate for every row whose Raids-in-window changed, recompute Last signed up X days ago for every row, refresh the "Computed as of" header, re-sort by Signup rate desc (alphabetical tiebreak), renumber. Former players are excluded. Skip entirely for out-of-scope record files (currently any old-world record file). |
 | `rules/04-players.md` | **Update IF** a new player appeared, or an existing player's spec changed. |
 
 > **Record file format is templated.** Do not invent your own structure. If something genuinely doesn't fit either template, raise it to the user before deviating — the templates are the canonical structure for record files, and consistency across record files is what makes bench history and predecessor reads reliable.
@@ -440,15 +440,22 @@ Run the post-edit consistency grep per `CLAUDE.md` → "Post-edit consistency gr
 
 ## Event: User provides player-specific information
 
-(e.g., "X is a warrior", "Y has two specs", "Z is last resort only" → translates to raid spot priority 3)
+(e.g., "X is a warrior", "Y has two specs", "Z is last resort only" → translates to raid spot priority 3; "make X a core tank" → adds X to the core-tank set)
 
 ### Update:
 
 | File | What to update |
 |------|----------------|
-| `rules/04-players.md` | Update player's class, spec, priority, or notes. When a Regular player's priority changes among `1`, `2`, and `3`, move the row to the matching **Priority N** sub-table and renumber both affected sub-tables. **If the user reveals an alt, add an entry to the Alt characters sub-table — see `rules/01-raid-compositions.md` → "Alts" for the mechanics.** |
+| `rules/04-players.md` | Update player's class, spec, priority, or notes. **Priority change** (Regular player among `1`/`2`/`3`): move the row to the matching **Priority N** sub-table and renumber both affected sub-tables. **Core-tank designation** (user designates a player a core tank, or removes that status; `rules/01-raid-compositions.md` → "Core tanks → Canonical membership"): for a **non-officer**, move the row between their Regular sub-table and the **Core tanks** sub-table — gain → Core tanks, Priority `1`; loss → a Regular sub-table, ask the user for the priority (default `2`) — and renumber both; for an **officer**, add or remove the `Core tank` token in their Officers Notes (no sub-table move — they stay in Officers). **If the user reveals an alt, add an entry to the Alt characters sub-table — see `rules/01-raid-compositions.md` → "Alts" for the mechanics.** |
+| `derived/signup-history-total.md` | **Update IF** the change moves the player between top-level groupings — i.e., **core-tank designation** (Current members ↔ Core tanks sub-table). Move the row, re-sort, and renumber both sub-tables. A plain priority change among Regular sub-tables stays within **Current members** — no action. |
+| `derived/signup-stats-tbc.md` | **Update IF** the change moves the player to a different `rules/04-players.md` sub-table (a Priority 1/2/3 change or core-tank designation) **and** they have a row here (in-scope signups): set the `Rank` cell per that file's **Maintenance → rank changes**. Spec-only / notes-only changes need no action. |
 | `derived/bench-history-tbc.md` | **Update IF** the change flips the player's bench group (per `rules/02-bench-rotation.md` → "Bench groups" for what defines a group). If they have a bench row, move it per `rules/02-bench-rotation.md` → "Respec policy (and priority changes)". If no row, no action. |
 | `rules/03-player-constraints.md` | Update if it's a must-together/must-not-together/availability constraint |
+
+### Afterwards (core-tank designation only)
+
+- **Cap check.** When designating a new core tank, verify the combined-set cap in `rules/01-raid-compositions.md` → "Core tanks → Cap: at most 3 core tanks" still holds.
+- **Tank-priority label.** If the user specifies one, record a `Main tank` / `3rd tank` token in the player's `rules/04-players.md` Notes per `rules/01-raid-compositions.md` → "Core tanks → Tank priority".
 
 ---
 
@@ -461,7 +468,7 @@ Run the post-edit consistency grep per `CLAUDE.md` → "Post-edit consistency gr
 | `rules/04-players.md` | **Joins:** add a new player row to the appropriate Regular players sub-table — typically **Raiders** (priority `2`) per the file's "Default priority for new players" rule. **Leaves:** move the row to the Former players sub-table. Do **not** strike through — placement already conveys departed status. **If the departing player has an entry in the Alt characters sub-table, remove it.** |
 | `derived/bench-history-tbc.md` | **Joins:** no action (rows are added on first bench, into the player's bench group's table per `rules/02-bench-rotation.md` → "Bench groups"). **Leaves:** if the player has a bench row in any of the six bench-group tables, move it to the Former guild members table at the bottom. Do **not** strike through — placement already conveys departed status. |
 | `derived/signup-history-total.md` | Move the row from Officers, Core tanks, or Current members to Former members; re-sort and renumber both sub-tables. Do **not** strike through (sub-table placement conveys departed status, matching `rules/04-players.md`). |
-| `derived/signup-stats-tbc.md` | Remove the departed player's row and renumber. Flat table (Officers + Core tanks + Regular players combined), so officer promotion/demotion and core-tank status changes need no action here. Row only exists if the player has in-scope signups; if absent, no action. |
+| `derived/signup-stats-tbc.md` | Remove the departed player's row and renumber. Row only exists if the player has in-scope signups; if absent, no action. (Rank changes — promotion/demotion, core-tank status, priority changes — are handled by their own events, not here.) |
 | `rules/03-player-constraints.md` | Remove any constraints involving departed player |
 
 ---
@@ -476,7 +483,7 @@ Triggered by phrases like *"X is now an officer"*, *"promote X"*, *"new officers
 |------|----------------|
 | `rules/04-players.md` | Move the row to the **Officers** sub-table at its alphabetical-by-class slot. Set Priority to `1` unless the user specifies otherwise. **If the player is also a core tank** — either because the source sub-table was Core tanks, or because the user has simultaneously designated them — add `Core tank` to the destination Notes column (canonical-membership rule: `rules/01-raid-compositions.md` → "Core tanks → Canonical membership"). Preserve any existing Notes content; comma-separate tokens (e.g. `Core tank, Main tank`). Renumber both source and destination sub-tables. |
 | `derived/signup-history-total.md` | Move the row to the **Officers** sub-table; re-sort by `Signups` desc (alphabetical case-insensitive tiebreak) and renumber both source and destination. |
-| `derived/signup-stats-tbc.md` | No action — flat table; sub-table placement is irrelevant. |
+| `derived/signup-stats-tbc.md` | If the player has a row here (in-scope signups), set the `Rank` cell to the new rank (`Officer`, or `Core tank` if moved there) per that file's **Maintenance → rank changes**. If no row, no action. |
 | `derived/bench-history-tbc.md` | If the player has a bench row, move it from their old bench group's table to their new group's table per `rules/02-bench-rotation.md` → "Respec policy (and priority changes)". Counts and dates carry forward unchanged. If they have no row, no action. |
 | `rules/03-player-constraints.md` | No action — constraints reference players by name. |
 
@@ -486,13 +493,13 @@ Triggered by phrases like *"X is now an officer"*, *"promote X"*, *"new officers
 |------|----------------|
 | `rules/04-players.md` | Move the row out of **Officers**. **If the Officers Notes contained the `Core tank` flag**, move them to the **Core tanks** sub-table and drop the `Core tank` token (redundant inside Core tanks); preserve other Notes content. **Otherwise**, move them to the appropriate Regular players sub-table — **Priority 1**, **Raiders**, or **Members**; ask the user for the priority (default `2` if unspecified). Renumber both source and destination sub-tables. |
 | `derived/signup-history-total.md` | Move the row to **Core tanks** (if the `rules/04-players.md` row is now in Core tanks) or **Current members** (if now in Regular players); re-sort and renumber both source and destination. |
-| `derived/signup-stats-tbc.md` | No action. |
+| `derived/signup-stats-tbc.md` | If the player has a row here (in-scope signups), set the `Rank` cell to the destination rank per that file's **Maintenance → rank changes**. If no row, no action. |
 | `derived/bench-history-tbc.md` | If the player has a bench row, move it from their old bench group's table to their new group's table (priority changed) per `rules/02-bench-rotation.md` → "Respec policy (and priority changes)". Counts and dates carry forward unchanged. If they have no row, no action. |
 | `rules/03-player-constraints.md` | No action. |
 
 ### Afterwards
 
-- **Cap check.** For any promotion that adds a `Core tank` flag, verify the combined-set cap in `rules/01-raid-compositions.md` → "Core tanks → Cap: at most 3 core tanks" still holds (Core tanks sub-table rows + `Core tank`-flagged Officers rows ≤ 3).
+- **Cap check.** For any promotion that adds a `Core tank` flag, verify the combined-set cap in `rules/01-raid-compositions.md` → "Core tanks → Cap: at most 3 core tanks" still holds.
 - **Verify single placement.** Run `Grep "<player>"` to confirm exactly one active row exists across Officers / Core tanks / Regular players in `rules/04-players.md`, and that the `derived/signup-history-total.md` placement matches.
 
 ---
@@ -579,7 +586,8 @@ After any interaction, check:
 - [ ] Spec changed from previous? → `04-players.md`
 - [ ] Rule added/changed? → `rules/*.md`
 - [ ] Player left/joined? → `04-players.md` + `03-player-constraints.md` + `bench-history-tbc.md`
-- [ ] Officer promoted/demoted? → `04-players.md` + `signup-history-total.md` + `bench-history-tbc.md` (priority change moves the bench row). See `Event: User promotes or demotes an officer`.
+- [ ] Officer promoted/demoted? → `04-players.md` + `signup-history-total.md` + `signup-stats-tbc.md` (Rank copy) + `bench-history-tbc.md` (priority change moves the bench row). See `Event: User promotes or demotes an officer`.
+- [ ] Regular player's rank changed (Priority 1/2/3 move, or core-tank designation)? → `04-players.md` + `signup-stats-tbc.md` (Rank copy) + `bench-history-tbc.md` (if bench group flips) + `signup-history-total.md` (core-tank designation only — moves sub-table). See `Event: User provides player-specific information`.
 - [ ] New record file created? → `records/YYYY-MM-DD-day-raid.md` (Gruul+Mag uses `gruul-mag-record.md`; SSC uses `ssc-record.md`; TK uses `tk-record.md`; other 25-mans use `25man-record.md`)
 - [ ] New Gruul+Mag, SSC, or TK record? → fill in `## Encounter assignments` per `rules/05-encounter-assignments.md`
 - [ ] Split-location raid night (bosses from 2+ raid locations)? → see `Event: Split-location raid night` for filename/title format, derived composition target, primary-location-only bench-history rule, and the combined `## Encounter assignments` structure (canonical rule: `rules/06-split-location-nights.md`)
