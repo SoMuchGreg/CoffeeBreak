@@ -1,0 +1,200 @@
+# TK + Vashj — Sunday 07.06.2026
+
+> Extra long raid — let's one-shot the early bosses to get some proper pulls on Vashj. Bring your consumables ;)
+
+## Signups (from Discord) — 25
+
+**Tanks (3):** CptKavior, Marino(Varthier), Emil(Ostbirger)
+**Warriors (1):** Sören(Verysadge)
+**Druids (4):** Beaverfist, Stephan(Tímmâ), Shapkica, Yxanb
+**Paladins (0):**
+**Rogues (1):** Tim(Tiinar)
+**Hunters (4):** Mathias(Vaelruna), Silverpilen, Mark(Roossy/Keatala), loranzoo
+**Priests (3):** Adam(Kres/Dissi), Saskia(Siljes), Lightweit
+**Mages (3):** TJ(Animustenax), Greg(Ucannotpass), Mark(Mellymel)
+**Warlocks (3):** Jabbadhutt, Benglock, Quoter
+**Shamans (3):** Steven(Gresac/Younea), Piotr(Bergamotka), Ebonybolt
+
+**Header stats:** Melee 6, Ranged 13, Healers 3
+
+## Actual Roster (TK + Vashj)
+
+### Tanks (3)
+
+| Player           | Class          |
+|------------------|----------------|
+| Emil(Ostbirger)  | Paladin (Prot) |
+| Marino(Varthier) | Paladin (Prot) |
+| CptKavior        | Warrior (Prot) |
+
+### Healers (5)
+
+| Player                | Class          |
+|-----------------------|----------------|
+| Beaverfist            | Druid (Resto)  |
+| Adam(Kres/Dissi)      | Priest (Holy)  |
+| Lightweit             | Priest (Holy)  |
+| Saskia(Siljes)        | Priest (Holy)  |
+| Steven(Gresac/Younea) | Shaman (Resto) |
+
+### DPS (17)
+
+| Player               | Class                 |
+|----------------------|-----------------------|
+| Stephan(Tímmâ)       | Druid (Balance)       |
+| Shapkica             | Druid (Feral)         |
+| Yxanb                | Druid (Feral)         |
+| loranzoo             | Hunter (BM)           |
+| Mark(Roossy/Keatala) | Hunter (BM)           |
+| Mathias(Vaelruna)    | Hunter (BM)           |
+| Silverpilen          | Hunter (BM)           |
+| Greg(Ucannotpass)    | Mage (Arcane)         |
+| Mark(Mellymel)       | Mage (Arcane)         |
+| TJ(Animustenax)      | Mage (Arcane)         |
+| Tim(Tiinar)          | Rogue (Combat)        |
+| Ebonybolt            | Shaman (Enhancement)  |
+| Piotr(Bergamotka)    | Shaman (Enhancement)  |
+| Benglock             | Warlock (Destruction) |
+| Jabbadhutt           | Warlock (Destruction) |
+| Quoter               | Warlock (Destruction) |
+| Sören(Verysadge)     | Warrior (Fury)        |
+
+**Composition check:** Target 3 / 5 / 17 (default — no Karathress in the planned boss list, so SSC's 4-tank override doesn't fire; per `rules/06-split-location-nights.md` → "Composition target"). Actual: 3 / 5 / 17 = 25. Status: ✅ on target — 25 signups exactly fill the raid; the target is reached via 3 first-line-offspec comp flexes.
+
+## Comp flex applied
+
+| Player                | Asked to switch from → to      | Tier | Accepted? | Notes                                                                                          |
+|-----------------------|--------------------------------|------|-----------|------------------------------------------------------------------------------------------------|
+| CptKavior             | DPS (Fury) → Tank (Prot)       | 0    | Yes       | First line offspec; signed up Tank icon; 3rd-tank fill. Tier 0 fires — pre-flex DPS over target (20 vs 17). |
+| Adam(Kres/Dissi)      | DPS (Shadow) → Healer (Holy)   | 0    | Yes       | First line offspec; standing consent.                                                          |
+| Steven(Gresac/Younea) | DPS (Elemental) → Healer (Resto) | 0  | Yes       | First line offspec (new this raid — see Notes); chosen over Tier-2 Ebonybolt, who stays DPS.   |
+
+## Bench (0)
+
+*(None — all 25 spots filled)*
+
+## Encounter assignments
+
+### Al'ar
+
+| Role          | Player                          | Notes                                                                                                  |
+|---------------|---------------------------------|--------------------------------------------------------------------------------------------------------|
+| Tank 1        | Marino(Varthier)                | Continuity — held 18.05 + 24.05 + 31.05 TK.                                                             |
+| Tank 2        | CptKavior                       | Warrior preference (Tank 1 is a Paladin); sole Warrior tank; continuity 18.05 + 31.05 TK.              |
+| Tank 3        | Emil(Ostbirger)                 | Tier-1 strong preference; held 18.05 + 24.05 TK.                                                        |
+| Tank 1 Healer | Beaverfist, Steven(Gresac/Younea) | Beaverfist Tier-1 Druid continuity; Steven Tier-2 (no Al'ar continuity).                              |
+| Tank 2 Healer | Lightweit, Adam(Kres/Dissi)     | Lightweit continuity 24.05 + 31.05; Adam added by user override of the raid-leader exclusion — see Notes. |
+| Tank 3 Healer | Saskia(Siljes)                  | Continuity 24.05 + 31.05 TK.                                                                            |
+
+### Void Reaver
+
+| Role        | Player                                              | Notes                                                                                |
+|-------------|-----------------------------------------------------|--------------------------------------------------------------------------------------|
+| Main Tank   | Emil(Ostbirger)                                     | Rotation tiebreaker — least-recent holder (Marino held 31.05; Emil last 24.05).      |
+| Off Tank #1 | CptKavior                                           | Continuity — held 31.05 (also 18.05) TK.                                             |
+| Off Tank #2 | Marino(Varthier)                                    | Remaining tank; continuity 24.05 TK.                                                 |
+| Kiter       | Mathias(Vaelruna), Mark(Roossy/Keatala), Silverpilen | Tier-1 Hunter class-first batching; 3 of 4 Hunters by continuity (all held 31.05). loranzoo (4th Hunter) unslotted — cap 3. |
+
+### High Astromancer Solarian
+
+| Role      | Player           | Notes                                                                           |
+|-----------|------------------|---------------------------------------------------------------------------------|
+| Main Tank | Emil(Ostbirger)  | Rotation tiebreaker — least-recent holder (Marino held 31.05; Emil last 24.05). |
+| Off Tank  | Marino(Varthier) | Other core main tank.                                                           |
+
+### Lady Vashj
+
+| Role             | Player                | Notes                                                                                       |
+|------------------|-----------------------|---------------------------------------------------------------------------------------------|
+| Main Tank        | Emil(Ostbirger)       | User's standing SSC arrangement (rotation picks Marino); held 27.05 + 03.06 SSC — see Notes. |
+| Off Tank #1      | Marino(Varthier)      | Override partner.                                                                            |
+| Off Tank #2      | CptKavior             | 3rd core tank (Kamil(Gigakox)) not in roster → any other tank.                              |
+| Main Tank Healer | Beaverfist, Lightweit | Beaverfist Tier-1 Druid continuity (27.05 + 03.06); Lightweit step-4 (Heligeman absent; alphabetical). |
+| Strider Kiter    | Benglock              | Tier-1 Elemental Shaman empty (Steven flexed to Resto); Tier-2 Warlock, step-4 alphabetical — see Notes. |
+
+## Discord announcement
+
+## TK + Vashj — Sunday 07.06
+
+> Extra long raid — let's one-shot the early bosses to get some proper pulls on Vashj. Bring your consumables ;)
+
+**Tanks (3)**
+- Emil(Ostbirger) (Protection Paladin)
+- Marino(Varthier) (Protection Paladin)
+- CptKavior (Protection Warrior)
+
+**Healers (5)**
+- Beaverfist (Restoration Druid)
+- Adam(Kres/Dissi) (Holy Priest)
+- Lightweit (Holy Priest)
+- Saskia(Siljes) (Holy Priest)
+- Steven(Gresac/Younea) (Restoration Shaman)
+
+**DPS (17)**
+- Stephan(Tímmâ) (Balance Druid)
+- Shapkica (Feral Druid)
+- Yxanb (Feral Druid)
+- loranzoo (Beast Mastery Hunter)
+- Mark(Roossy/Keatala) (Beast Mastery Hunter)
+- Mathias(Vaelruna) (Beast Mastery Hunter)
+- Silverpilen (Beast Mastery Hunter)
+- Greg(Ucannotpass) (Arcane Mage)
+- Mark(Mellymel) (Arcane Mage)
+- TJ(Animustenax) (Arcane Mage)
+- Tim(Tiinar) (Combat Rogue)
+- Ebonybolt (Enhancement Shaman)
+- Piotr(Bergamotka) (Enhancement Shaman)
+- Benglock (Destruction Warlock)
+- Jabbadhutt (Destruction Warlock)
+- Quoter (Destruction Warlock)
+- Sören(Verysadge) (Fury Warrior)
+
+### Encounter assignments
+
+**Al'ar**
+- Tank 1: Marino(Varthier)
+- Tank 2: CptKavior
+- Tank 3: Emil(Ostbirger)
+- Tank 1 Healers: Beaverfist, Steven(Gresac/Younea)
+- Tank 2 Healers: Lightweit, Adam(Kres/Dissi)
+- Tank 3 Healer: Saskia(Siljes)
+
+**Void Reaver**
+- Main Tank: Emil(Ostbirger)
+- Off Tank #1: CptKavior
+- Off Tank #2: Marino(Varthier)
+- Kiters: Mathias(Vaelruna), Mark(Roossy/Keatala), Silverpilen
+
+**High Astromancer Solarian**
+- Main Tank: Emil(Ostbirger)
+- Off Tank: Marino(Varthier)
+
+**Lady Vashj**
+- Main Tank: Emil(Ostbirger)
+- Off Tank #1: Marino(Varthier)
+- Off Tank #2: CptKavior
+- Main Tank Healer: Beaverfist, Lightweit
+- Strider Kiter: Benglock
+
+## Notes
+
+- **Split-location night** (per `rules/06-split-location-nights.md`): first 3 TK bosses (Al'ar, Void Reaver, High Astromancer Solarian, skipping Kael'Thas) then SSC's Lady Vashj. Primary location TK. Derived target 3/5/17 (Karathress not planned → no 4-tank override). Bench tracking would hit the TK column only — moot, no bench.
+- **New players** (all added to `rules/04-players.md` → Raiders, priority 2, trial note `Decide whether to downgrade to member by 2026-07-12`):
+  - **Stephan(Tímmâ)** — Druid, DPS (Balance). Canonical name read from the screenshot guild-tag rendering; confirm if needed.
+  - **loranzoo** — Hunter, DPS (Beastmastery).
+  - **Quoter** — Warlock, DPS (Destruction).
+- **Steven(Gresac/Younea) now first line offspec** — user designation this raid; `rules/04-players.md` Notes updated. Made him a Tier-0 healer-flex candidate, used for the 2nd healer flex.
+- **Comp flex — all three Tier 0.** Pre-flex distribution was 2 tanks / 3 healers / 20 DPS, so DPS was over-represented and both Tier-0 conditions held for FLO players (contrast 31.05 TK / 03.06 SSC, where DPS was at/under target and Tier 0 didn't fire). CptKavior filled the 3rd tank; Adam(Kres/Dissi) + Steven(Gresac/Younea) filled the 2 healer slots. Tier-2 Ebonybolt was not reached and stays Enhancement DPS.
+- **User overrides:**
+  - **Adam(Kres/Dissi) given Al'ar Tank 2 Healer** despite being raid leader (`config/project.md` → "Raid leadership"; in roster). User overrode the raid-leader encounter exclusion (`rules/05-encounter-assignments.md` → "Common framework → Raid leader exclusion"). Without it, only 4 encounter-eligible healers cover Al'ar's 5 tank-healer slots, leaving one empty; the override fills it.
+  - **Vashj Main Tank = Emil(Ostbirger)** — standing SSC override of the core-main-tank rotation (rotation picks Marino(Varthier)); Marino takes Off Tank #1. Consistent with 27.05 + 03.06 SSC.
+- **Vashj Strider Kiter → Benglock (Warlock, Tier-2).** Steven(Gresac/Younea), the usual Tier-1 Elemental-Shaman kiter (continuity 27.05 + 03.06 SSC), is comp-flexed to Resto this raid, emptying Tier 1.
+
+## Sanity check
+
+**Verdict: GOOD ENOUGH** — sub-agent confirmed full hard-rule compliance; the only deviations are §8 target-spec-range misses, each structurally forced.
+
+- **Protection Paladin 2** (§8 range 0-1) — forced: two core Prot Paladins (Marino(Varthier), Emil(Ostbirger)) signed up; core tanks always tank.
+- **Holy Priest 3** (§8 range 1) — forced by the 5-healer floor: Lightweit + Saskia(Siljes) are mainspec Holy healers, and Adam(Kres/Dissi) is the mandated Tier-0 healer flex. Flexing Tier-2 Ebonybolt instead would lower this but would violate the comp-flex asking order.
+- **Arcane Mage 3** (§8 range 1-2; TK targets the upper end) — forced: 3 Mages signed up and 25 = 25 leaves no bench. The TK 2-Mage protection secures the first 2; the 3rd is unprotected but nobody benches.
+- **Shadow Priest 0 / Arms Warrior 0** (under) — Shadow 0 is the flip side of Adam's mandated flex; Arms 0 because David(Nemajumarad) didn't sign up.
