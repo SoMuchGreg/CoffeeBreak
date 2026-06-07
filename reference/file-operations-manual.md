@@ -68,6 +68,7 @@ Read both **Tier 1** and **Tier 2** of the **Reading list** at the top of this f
 5. **Note each player's signup icon.** Roster placement is governed by `rules/01-raid-compositions.md` → "Role placement: mainspec is authoritative". Use the icon to flag potential long-term mainspec changes (consistent offspec signups across multiple raids); ignore one-off offspec icons.
 6. For unknown players: use icon/color to determine class+spec. If unsure, ask the user.
 7. Note late signups. (Discord "Absent" reactions are ignored — see item 1 above.)
+8. **Note the raid start time.** The screenshot shows when the raid starts. Capture it for the Discord announcement only, per "Writing the raid start time" below.
 
 ### Step 3 — Build the roster (if asked to)
 
@@ -107,9 +108,15 @@ The blockquote line at the top of every record file is the **small announcement*
 
 **Consumables reminder.** Every small announcement must end with a consumables reminder. If the captured text already mentions bringing consumables, leave it alone. Otherwise append `Bring your consumables ;)`. If no text was captured, the small announcement is simply `Bring your consumables ;)`.
 
-**Mirror in the Discord announcement section.** Repeat the small announcement — same text, blockquote form — immediately after the `## {Raid location} — {Day-full} {DD.MM}` headline inside the `## Discord announcement` section. Edits to one must propagate to the other; they always carry identical text.
+**Mirror in the Discord announcement section.** Repeat the small announcement — same text, blockquote form — immediately after the `## {Raid location} — {Day-full} {DD.MM}, {HH:MM}` headline inside the `## Discord announcement` section. Edits to one must propagate to the other; they always carry identical text.
 
 The small announcement and its Discord mirror are the only places this text lives in the record file. Do not restate in `## Notes` or anywhere else.
+
+### Writing the raid start time
+
+The raid's scheduled start time — usually 20:00, sometimes earlier — is read from the signup screenshot (Step 2). It appears in **exactly one place**: appended to the H2 title of the `## Discord announcement` section as `, {HH:MM}` (e.g. `## Tempest Keep — Monday 08.06, 20:00`). Always state it, even when it's the usual 20:00.
+
+The start time appears **nowhere else** in the record file — not in the H1 title, not in the small announcement, not in `## Notes`, and not in any planner-facing section. The screenshot is its only source; the Discord-announcement title is its only output.
 
 ### Writing the `## Notes` section of a record file
 

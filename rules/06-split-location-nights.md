@@ -53,11 +53,11 @@ Example: 3 first TK bosses, then Vashj at SSC → `2026-06-08-mon-tk+vashj.md`.
 
 The H1 title at the top of the file, the `## Actual Roster (...)` parenthetical, and the H2 title inside `## Discord announcement` all use the same mirrored format:
 
-`{Label1} + {Label2} — {Day} {DD.MM.YYYY}` (the Discord-announcement H2 uses `{DD.MM}` only, matching single-location templates).
+`{Label1} + {Label2} — {Day} {DD.MM.YYYY}` (the Discord-announcement H2 uses `{DD.MM}` only and appends the raid start time, both matching single-location templates — start-time rule: `reference/file-operations-manual.md` → "Writing the raid start time").
 
 Labels in the in-file title are written in their canonical user-facing casing: uppercase abbreviations (`TK`, `SSC`, `Gruul+Mag`) and capitalized boss names (`Vashj`, `Kael'Thas`, `Karathress`). The filename stays all-lowercase even when the title preserves casing — the two encode the same per-segment identity, different casings.
 
-Example: file `2026-06-08-mon-tk+vashj.md` → H1 `# TK + Vashj — Monday 08.06.2026` → roster heading `## Actual Roster (TK + Vashj)` → Discord-announcement H2 `## TK + Vashj — Monday 08.06`.
+Example: file `2026-06-08-mon-tk+vashj.md` → H1 `# TK + Vashj — Monday 08.06.2026` → roster heading `## Actual Roster (TK + Vashj)` → Discord-announcement H2 `## TK + Vashj — Monday 08.06, 20:00`.
 
 ## Encounter assignments
 

@@ -192,9 +192,12 @@ Canonical team order: Restaurant, Bakery, WellPrepared (per
 `rules/01-raid-compositions.md` → "Team names").
 
 Format:
-- Title: H2 (`## Karazhan — Wednesday DD.MM`) so Discord renders it
+- Title: H2 (`## Karazhan — Wednesday DD.MM, HH:MM`) so Discord renders it
   large. Weekday is the full word (Monday/Wednesday/Sunday/etc.), not
   abbreviated.
+- Start time: the `, HH:MM` suffix on the title is the raid's start time.
+  Canonical rules: reference/file-operations-manual.md → "Writing the raid
+  start time".
 - Small announcement: blockquote line immediately after the title.
   Same text as the top-of-file blockquote. Canonical rules:
   reference/file-operations-manual.md → "Writing the small announcement".
@@ -211,7 +214,7 @@ Format:
   entirely for 0 bench.
 -->
 
-## Karazhan — {Day-full} {DD.MM}
+## Karazhan — {Day-full} {DD.MM}, {HH:MM}
 
 > {Small announcement — same text as the top-of-file blockquote.}
 
