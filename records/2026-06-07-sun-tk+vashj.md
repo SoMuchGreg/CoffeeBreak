@@ -110,7 +110,7 @@
 | Off Tank #1      | Marino(Varthier)      | Override partner.                                                                            |
 | Off Tank #2      | CptKavior             | 3rd core tank (Kamil(Gigakox)) not in roster → any other tank.                              |
 | Main Tank Healer | Beaverfist, Lightweit | Beaverfist Tier-1 Druid continuity (27.05 + 03.06); Lightweit step-4 (Heligeman absent; alphabetical). |
-| Strider Kiter    | Benglock              | Tier-1 Elemental Shaman empty (Steven flexed to Resto); Tier-2 Warlock, step-4 alphabetical — see Notes. |
+| Strider Kiter    | Jabbadhutt            | Tier-2 Warlock (Tier 1 empty); user override of step-4 alphabetical pick (Benglock) — see Notes. |
 
 ## Discord announcement
 
@@ -174,7 +174,7 @@
 - Off Tank #1: Marino(Varthier)
 - Off Tank #2: CptKavior
 - Main Tank Healer: Beaverfist, Lightweit
-- Strider Kiter: Benglock
+- Strider Kiter: Jabbadhutt
 
 ## Notes
 
@@ -188,7 +188,7 @@
 - **User overrides:**
   - **Adam(Kres/Dissi) given Al'ar Tank 2 Healer** despite being raid leader (`config/project.md` → "Raid leadership"; in roster). User overrode the raid-leader encounter exclusion (`rules/05-encounter-assignments.md` → "Common framework → Raid leader exclusion"). Without it, only 4 encounter-eligible healers cover Al'ar's 5 tank-healer slots, leaving one empty; the override fills it.
   - **Vashj Main Tank = Emil(Ostbirger)** — standing SSC override of the core-main-tank rotation (rotation picks Marino(Varthier)); Marino takes Off Tank #1. Consistent with 27.05 + 03.06 SSC.
-- **Vashj Strider Kiter → Benglock (Warlock, Tier-2).** Steven(Gresac/Younea), the usual Tier-1 Elemental-Shaman kiter (continuity 27.05 + 03.06 SSC), is comp-flexed to Resto this raid, emptying Tier 1.
+  - **Vashj Strider Kiter = Jabbadhutt** — Tier 1 (Elemental Shaman) is empty (Steven(Gresac/Younea), the usual Tier-1 kiter — continuity 27.05 + 03.06 SSC — comp-flexed to Resto this raid), so the role falls to a Tier-2 Warlock; user picked Jabbadhutt over the algorithm's step-4 alphabetical choice, Benglock.
 
 ## Sanity check
 
@@ -198,3 +198,7 @@
 - **Holy Priest 3** (§8 range 1) — forced by the 5-healer floor: Lightweit + Saskia(Siljes) are mainspec Holy healers, and Adam(Kres/Dissi) is the mandated Tier-0 healer flex. Flexing Tier-2 Ebonybolt instead would lower this but would violate the comp-flex asking order.
 - **Arcane Mage 3** (§8 range 1-2; TK targets the upper end) — forced: 3 Mages signed up and 25 = 25 leaves no bench. The TK 2-Mage protection secures the first 2; the 3rd is unprotected but nobody benches.
 - **Shadow Priest 0 / Arms Warrior 0** (under) — Shadow 0 is the flip side of Adam's mandated flex; Arms 0 because David(Nemajumarad) didn't sign up.
+
+### Post-check changes
+
+- **Vashj Strider Kiter: Benglock → Jabbadhutt** (user-directed; both equally-eligible Tier-2 Warlocks). Encounter-role swap only — no roster, composition, or bench change, so the verdict above stands.
