@@ -6,7 +6,7 @@
 
 **Tanks (3):** CptKavior, Marino(Varthier), Emil(Ostbirger)
 **Warriors (1):** Sören(Verysadge)
-**Druids (4):** Beaverfist, Stephan(Tímmâ), Shapkica, Yxanb
+**Druids (4):** Beaverfist, Stephan(Tímmâ/Toadward), Shapkica, Yxanb
 **Paladins (0):**
 **Rogues (1):** Tim(Tiinar)
 **Hunters (4):** Mathias(Vaelruna), Silverpilen, Mark(Roossy/Keatala), loranzoo
@@ -29,45 +29,45 @@
 
 ### Healers (5)
 
-| Player                | Class          |
-|-----------------------|----------------|
-| Beaverfist            | Druid (Resto)  |
-| Adam(Kres/Dissi)      | Priest (Holy)  |
-| Lightweit             | Priest (Holy)  |
-| Saskia(Siljes)        | Priest (Holy)  |
-| Steven(Gresac/Younea) | Shaman (Resto) |
+| Player                  | Class         |
+|-------------------------|---------------|
+| Beaverfist              | Druid (Resto) |
+| Stephan(Tímmâ/Toadward) | Druid (Resto) |
+| Adam(Kres/Dissi)        | Priest (Holy) |
+| Lightweit               | Priest (Holy) |
+| Saskia(Siljes)          | Priest (Holy) |
 
 ### DPS (17)
 
-| Player               | Class                 |
-|----------------------|-----------------------|
-| Stephan(Tímmâ)       | Druid (Balance)       |
-| Shapkica             | Druid (Feral)         |
-| Yxanb                | Druid (Feral)         |
-| loranzoo             | Hunter (BM)           |
-| Mark(Roossy/Keatala) | Hunter (BM)           |
-| Mathias(Vaelruna)    | Hunter (BM)           |
-| Silverpilen          | Hunter (BM)           |
-| Greg(Ucannotpass)    | Mage (Arcane)         |
-| Mark(Mellymel)       | Mage (Arcane)         |
-| TJ(Animustenax)      | Mage (Arcane)         |
-| Tim(Tiinar)          | Rogue (Combat)        |
-| Ebonybolt            | Shaman (Enhancement)  |
-| Piotr(Bergamotka)    | Shaman (Enhancement)  |
-| Benglock             | Warlock (Destruction) |
-| Jabbadhutt           | Warlock (Destruction) |
-| Quoter               | Warlock (Destruction) |
-| Sören(Verysadge)     | Warrior (Fury)        |
+| Player                | Class                 |
+|-----------------------|-----------------------|
+| Shapkica              | Druid (Feral)         |
+| Yxanb                 | Druid (Feral)         |
+| loranzoo              | Hunter (BM)           |
+| Mark(Roossy/Keatala)  | Hunter (BM)           |
+| Mathias(Vaelruna)     | Hunter (BM)           |
+| Silverpilen           | Hunter (BM)           |
+| Greg(Ucannotpass)     | Mage (Arcane)         |
+| Mark(Mellymel)        | Mage (Arcane)         |
+| TJ(Animustenax)       | Mage (Arcane)         |
+| Tim(Tiinar)           | Rogue (Combat)        |
+| Steven(Gresac/Younea) | Shaman (Elemental)    |
+| Ebonybolt             | Shaman (Enhancement)  |
+| Piotr(Bergamotka)     | Shaman (Enhancement)  |
+| Benglock              | Warlock (Destruction) |
+| Jabbadhutt            | Warlock (Destruction) |
+| Quoter                | Warlock (Destruction) |
+| Sören(Verysadge)      | Warrior (Fury)        |
 
-**Composition check:** Target 3 / 5 / 17 (default — no Karathress in the planned boss list, so SSC's 4-tank override doesn't fire; per `rules/06-split-location-nights.md` → "Composition target"). Actual: 3 / 5 / 17 = 25. Status: ✅ on target — 25 signups exactly fill the raid; the target is reached via 3 first-line-offspec comp flexes.
+**Composition check:** Target 3 / 5 / 17 (default — no Karathress in the planned boss list, so SSC's 4-tank override doesn't fire; per `rules/06-split-location-nights.md` → "Composition target"). Actual: 3 / 5 / 17 = 25. Status: ✅ on target — 25 signups exactly fill the raid; the target is reached via 3 comp flexes (2 first-line-offspec, 1 user-directed — see Notes).
 
 ## Comp flex applied
 
-| Player                | Asked to switch from → to      | Tier | Accepted? | Notes                                                                                          |
-|-----------------------|--------------------------------|------|-----------|------------------------------------------------------------------------------------------------|
-| CptKavior             | DPS (Fury) → Tank (Prot)       | 0    | Yes       | First line offspec; signed up Tank icon; 3rd-tank fill. Tier 0 fires — pre-flex DPS over target (20 vs 17). |
-| Adam(Kres/Dissi)      | DPS (Shadow) → Healer (Holy)   | 0    | Yes       | First line offspec; standing consent.                                                          |
-| Steven(Gresac/Younea) | DPS (Elemental) → Healer (Resto) | 0  | Yes       | First line offspec (new this raid — see Notes); chosen over Tier-2 Ebonybolt, who stays DPS.   |
+| Player                  | Asked to switch from → to      | Tier | Accepted? | Notes                                                                                                       |
+|-------------------------|--------------------------------|------|-----------|-------------------------------------------------------------------------------------------------------------|
+| CptKavior               | DPS (Fury) → Tank (Prot)       | 0    | Yes       | First line offspec; signed up Tank icon; 3rd-tank fill. Tier 0 fires — pre-flex DPS over target (20 vs 17). |
+| Adam(Kres/Dissi)        | DPS (Shadow) → Healer (Holy)   | 0    | Yes       | First line offspec; standing consent.                                                                       |
+| Stephan(Tímmâ/Toadward) | DPS (Balance) → Healer (Resto) | —    | Yes       | Eager offspec; user-directed this rework — overrides the asking order (would flex FLO Steven). See Notes.   |
 
 ## Bench (0)
 
@@ -77,14 +77,14 @@
 
 ### Al'ar
 
-| Role          | Player                          | Notes                                                                                                  |
-|---------------|---------------------------------|--------------------------------------------------------------------------------------------------------|
-| Tank 1        | Marino(Varthier)                | Continuity — held 18.05 + 24.05 + 31.05 TK.                                                             |
-| Tank 2        | CptKavior                       | Warrior preference (Tank 1 is a Paladin); sole Warrior tank; continuity 18.05 + 31.05 TK.              |
-| Tank 3        | Emil(Ostbirger)                 | Tier-1 strong preference; held 18.05 + 24.05 TK.                                                        |
-| Tank 1 Healer | Beaverfist, Steven(Gresac/Younea) | Beaverfist Tier-1 Druid continuity; Steven Tier-2 (no Al'ar continuity).                              |
-| Tank 2 Healer | Lightweit, Adam(Kres/Dissi)     | Lightweit continuity 24.05 + 31.05; Adam added by user override of the raid-leader exclusion — see Notes. |
-| Tank 3 Healer | Saskia(Siljes)                  | Continuity 24.05 + 31.05 TK.                                                                            |
+| Role          | Player                              | Notes                                                                                                     |
+|---------------|-------------------------------------|-----------------------------------------------------------------------------------------------------------|
+| Tank 1        | Marino(Varthier)                    | Continuity — held 18.05 + 24.05 + 31.05 TK.                                                               |
+| Tank 2        | CptKavior                           | Warrior preference (Tank 1 is a Paladin); sole Warrior tank; continuity 18.05 + 31.05 TK.                 |
+| Tank 3        | Emil(Ostbirger)                     | Tier-1 strong preference; held 18.05 + 24.05 TK.                                                          |
+| Tank 1 Healer | Beaverfist, Stephan(Tímmâ/Toadward) | Beaverfist Tier-1 Druid continuity; Stephan Tier-1 Druid (class pref), new player — no Al'ar continuity.  |
+| Tank 2 Healer | Lightweit, Adam(Kres/Dissi)         | Lightweit continuity 24.05 + 31.05; Adam added by user override of the raid-leader exclusion — see Notes. |
+| Tank 3 Healer | Saskia(Siljes)                      | Continuity 24.05 + 31.05 TK.                                                                              |
 
 ### Void Reaver
 
@@ -104,13 +104,13 @@
 
 ### Lady Vashj
 
-| Role             | Player                | Notes                                                                                       |
-|------------------|-----------------------|---------------------------------------------------------------------------------------------|
-| Main Tank        | Emil(Ostbirger)       | User's standing SSC arrangement (rotation picks Marino); held 27.05 + 03.06 SSC — see Notes. |
-| Off Tank #1      | Marino(Varthier)      | Override partner.                                                                            |
-| Off Tank #2      | CptKavior             | 3rd core tank (Kamil(Gigakox)) not in roster → any other tank.                              |
+| Role             | Player                | Notes                                                                                                  |
+|------------------|-----------------------|--------------------------------------------------------------------------------------------------------|
+| Main Tank        | Emil(Ostbirger)       | User's standing SSC arrangement (rotation picks Marino); held 27.05 + 03.06 SSC — see Notes.           |
+| Off Tank #1      | Marino(Varthier)      | Override partner.                                                                                      |
+| Off Tank #2      | CptKavior             | 3rd core tank (Kamil(Gigakox)) not in roster → any other tank.                                         |
 | Main Tank Healer | Beaverfist, Lightweit | Beaverfist Tier-1 Druid continuity (27.05 + 03.06); Lightweit step-4 (Heligeman absent; alphabetical). |
-| Strider Kiter    | Jabbadhutt            | Tier-2 Warlock (Tier 1 empty); user override of step-4 alphabetical pick (Benglock) — see Notes. |
+| Strider Kiter    | Steven(Gresac/Younea) | Tier-1 Elemental Shaman; continuity 27.05 + 03.06 SSC.                                                 |
 
 ## Discord announcement
 
@@ -125,13 +125,12 @@
 
 **Healers (5)**
 - Beaverfist (Restoration Druid)
+- Stephan(Tímmâ/Toadward) (Restoration Druid)
 - Adam(Kres/Dissi) (Holy Priest)
 - Lightweit (Holy Priest)
 - Saskia(Siljes) (Holy Priest)
-- Steven(Gresac/Younea) (Restoration Shaman)
 
 **DPS (17)**
-- Stephan(Tímmâ) (Balance Druid)
 - Shapkica (Feral Druid)
 - Yxanb (Feral Druid)
 - loranzoo (Beast Mastery Hunter)
@@ -142,6 +141,7 @@
 - Mark(Mellymel) (Arcane Mage)
 - TJ(Animustenax) (Arcane Mage)
 - Tim(Tiinar) (Combat Rogue)
+- Steven(Gresac/Younea) (Elemental Shaman)
 - Ebonybolt (Enhancement Shaman)
 - Piotr(Bergamotka) (Enhancement Shaman)
 - Benglock (Destruction Warlock)
@@ -155,7 +155,7 @@
 - Tank 1: Marino(Varthier)
 - Tank 2: CptKavior
 - Tank 3: Emil(Ostbirger)
-- Tank 1 Healers: Beaverfist, Steven(Gresac/Younea)
+- Tank 1 Healers: Beaverfist, Stephan(Tímmâ/Toadward)
 - Tank 2 Healers: Lightweit, Adam(Kres/Dissi)
 - Tank 3 Healer: Saskia(Siljes)
 
@@ -174,7 +174,7 @@
 - Off Tank #1: Marino(Varthier)
 - Off Tank #2: CptKavior
 - Main Tank Healer: Beaverfist, Lightweit
-- Strider Kiter: Jabbadhutt
+- Strider Kiter: Steven(Gresac/Younea)
 
 ## Notes
 
@@ -183,12 +183,13 @@
   - **Stephan(Tímmâ)** — Druid, DPS (Balance). Canonical name read from the screenshot guild-tag rendering; confirm if needed.
   - **loranzoo** — Hunter, DPS (Beastmastery).
   - **Quoter** — Warlock, DPS (Destruction).
-- **Steven(Gresac/Younea) now first line offspec** — user designation this raid; `rules/04-players.md` Notes updated. Made him a Tier-0 healer-flex candidate, used for the 2nd healer flex.
-- **Comp flex — all three Tier 0.** Pre-flex distribution was 2 tanks / 3 healers / 20 DPS, so DPS was over-represented and both Tier-0 conditions held for FLO players (contrast 31.05 TK / 03.06 SSC, where DPS was at/under target and Tier 0 didn't fire). CptKavior filled the 3rd tank; Adam(Kres/Dissi) + Steven(Gresac/Younea) filled the 2 healer slots. Tier-2 Ebonybolt was not reached and stays Enhancement DPS.
+- **Steven(Gresac/Younea) now first line offspec** — user designation this raid; `rules/04-players.md` Notes updated. Made him a Tier-0 healer-flex candidate — not exercised this raid (the rework keeps him on mainspec Elemental; see below).
+- **Comp flex.** Pre-flex distribution was 2 tanks / 3 healers / 20 DPS, so DPS was over-represented and the Tier-0 conditions held for FLO players (contrast 31.05 TK / 03.06 SSC, where DPS was at/under target and Tier 0 didn't fire). CptKavior (Tier 0) filled the 3rd tank; Adam(Kres/Dissi) (Tier 0) and Stephan(Tímmâ/Toadward) (eager offspec, user-directed) filled the 2 healer slots. Ebonybolt was not asked and stays Enhancement DPS.
+- **Roster rework (user-directed, post-build):** Steven(Gresac/Younea) reverts Healer (Resto) → mainspec DPS (Elemental) and resumes Strider Kiter (his Tier-1 continuity role, 27.05 + 03.06 SSC); Stephan(Tímmâ/Toadward) flexes DPS (Balance) → Healer (Resto) to hold the 5th healer. Composition unchanged at 3/5/17. Slot and encounter deltas logged under Sanity check → Post-check changes.
 - **User overrides:**
   - **Adam(Kres/Dissi) given Al'ar Tank 2 Healer** despite being raid leader (`config/project.md` → "Raid leadership"; in roster). User overrode the raid-leader encounter exclusion (`rules/05-encounter-assignments.md` → "Common framework → Raid leader exclusion"). Without it, only 4 encounter-eligible healers cover Al'ar's 5 tank-healer slots, leaving one empty; the override fills it.
   - **Vashj Main Tank = Emil(Ostbirger)** — standing SSC override of the core-main-tank rotation (rotation picks Marino(Varthier)); Marino takes Off Tank #1. Consistent with 27.05 + 03.06 SSC.
-  - **Vashj Strider Kiter = Jabbadhutt** — Tier 1 (Elemental Shaman) is empty (Steven(Gresac/Younea), the usual Tier-1 kiter — continuity 27.05 + 03.06 SSC — comp-flexed to Resto this raid), so the role falls to a Tier-2 Warlock; user picked Jabbadhutt over the algorithm's step-4 alphabetical choice, Benglock.
+  - **Stephan(Tímmâ/Toadward) flexed to Resto over FLO Steven(Gresac/Younea)** — the comp-flex asking order would flex Tier-0 first-line-offspec Steven for the 2nd healer slot; user instead reverted Steven to mainspec Elemental (resuming his Strider Kiter role) and flexed eager-offspec Stephan. See the rework bullet above.
 
 ## Sanity check
 
@@ -202,3 +203,6 @@
 ### Post-check changes
 
 - **Vashj Strider Kiter: Benglock → Jabbadhutt** (user-directed; both equally-eligible Tier-2 Warlocks). Encounter-role swap only — no roster, composition, or bench change, so the verdict above stands.
+- **Roster rework (user-directed):** Steven(Gresac/Younea) Healer (Resto) → DPS (Elemental); Stephan(Tímmâ/Toadward) DPS (Balance) → Healer (Resto). Composition unchanged at 3/5/17; Resto Druid count 1 → 2 (within the cap — `rules/01-raid-compositions.md` → "Resto Druid cap (hard rule)"; cap doesn't fire at 3 mainspec healers anyway). No bench or Signups change, so the verdict above stands.
+- **Al'ar Tank 1 Healer: Steven(Gresac/Younea) → Stephan(Tímmâ/Toadward)** — Steven left the healer corps; Stephan is the replacement healer (Tier-1 Druid by class preference).
+- **Vashj Strider Kiter: Jabbadhutt → Steven(Gresac/Younea)** — Steven is back on Elemental, the Tier-1 continuity holder (27.05 + 03.06 SSC); supersedes the Benglock → Jabbadhutt fill above.

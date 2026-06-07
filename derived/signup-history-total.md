@@ -70,47 +70,47 @@ A player's sub-table here is determined solely by their top-level grouping in `r
 
 ### Current members
 
-| #  | Player                | Signups |
-|----|-----------------------|---------|
-| 1  | Mathias(Vaelruna)     | 35      |
-| 2  | Steven(Gresac/Younea) | 35      |
-| 3  | Sören(Verysadge)      | 34      |
-| 4  | Yxanb                 | 28      |
-| 5  | Thordrel              | 27      |
-| 6  | Beaverfist            | 26      |
-| 7  | Piotr(Bergamotka)     | 26      |
-| 8  | Dankyn                | 25      |
-| 9  | Jabbadhutt            | 23      |
-| 10 | Pergatori             | 23      |
-| 11 | Ebonybolt             | 22      |
-| 12 | Lynelen               | 22      |
-| 13 | Lightweit             | 19      |
-| 14 | CptKavior             | 18      |
-| 15 | Heligeman             | 17      |
-| 16 | McHughes              | 17      |
-| 17 | Saskia(Siljes)        | 16      |
-| 18 | Shapkica              | 12      |
-| 19 | BestPractice          | 11      |
-| 20 | McJudgin              | 11      |
-| 21 | Tim(Tiinar)           | 11      |
-| 22 | Tonz/Tonsen           | 11      |
-| 23 | Benglock              | 9       |
-| 24 | Leontes               | 8       |
-| 25 | Mark(Mellymel)        | 8       |
-| 26 | Dwarfytron            | 7       |
-| 27 | Boriest               | 6       |
-| 28 | David(Nemajumarad)    | 6       |
-| 29 | Doughball             | 6       |
-| 30 | Jordan(Grundiger)     | 6       |
-| 31 | TJ(Animustenax)       | 6       |
-| 32 | Sjwammie              | 4       |
-| 33 | Yorekbarn             | 4       |
-| 34 | Medianos              | 3       |
-| 35 | Silverpilen           | 3       |
-| 36 | Gyrodorei             | 1       |
-| 37 | loranzoo              | 1       |
-| 38 | Quoter                | 1       |
-| 39 | Stephan(Tímmâ)        | 1       |
+| #  | Player                  | Signups |
+|----|-------------------------|---------|
+| 1  | Mathias(Vaelruna)       | 35      |
+| 2  | Steven(Gresac/Younea)   | 35      |
+| 3  | Sören(Verysadge)        | 34      |
+| 4  | Yxanb                   | 28      |
+| 5  | Thordrel                | 27      |
+| 6  | Beaverfist              | 26      |
+| 7  | Piotr(Bergamotka)       | 26      |
+| 8  | Dankyn                  | 25      |
+| 9  | Jabbadhutt              | 23      |
+| 10 | Pergatori               | 23      |
+| 11 | Ebonybolt               | 22      |
+| 12 | Lynelen                 | 22      |
+| 13 | Lightweit               | 19      |
+| 14 | CptKavior               | 18      |
+| 15 | Heligeman               | 17      |
+| 16 | McHughes                | 17      |
+| 17 | Saskia(Siljes)          | 16      |
+| 18 | Shapkica                | 12      |
+| 19 | BestPractice            | 11      |
+| 20 | McJudgin                | 11      |
+| 21 | Tim(Tiinar)             | 11      |
+| 22 | Tonz/Tonsen             | 11      |
+| 23 | Benglock                | 9       |
+| 24 | Leontes                 | 8       |
+| 25 | Mark(Mellymel)          | 8       |
+| 26 | Dwarfytron              | 7       |
+| 27 | Boriest                 | 6       |
+| 28 | David(Nemajumarad)      | 6       |
+| 29 | Doughball               | 6       |
+| 30 | Jordan(Grundiger)       | 6       |
+| 31 | TJ(Animustenax)         | 6       |
+| 32 | Sjwammie                | 4       |
+| 33 | Yorekbarn               | 4       |
+| 34 | Medianos                | 3       |
+| 35 | Silverpilen             | 3       |
+| 36 | Gyrodorei               | 1       |
+| 37 | loranzoo                | 1       |
+| 38 | Quoter                  | 1       |
+| 39 | Stephan(Tímmâ/Toadward) | 1       |
 
 ### Former members
 
