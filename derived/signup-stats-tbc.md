@@ -75,20 +75,20 @@ For rank changes (any move between the Officers / Core tanks / Raiders / Members
 | 23 | TJ(Animustenax)         | Raider    | 2026-05-18   | 6       | 85.7%       | 0                         |
 | 24 | Kamil(Gigakox)          | Core tank | 2026-03-25   | 19      | 82.6%       | 4                         |
 | 25 | Adam(Kres/Dissi)        | Officer   | 2026-02-22   | 27      | 81.8%       | 0                         |
-| 26 | Lynelen                 | Raider    | 2026-03-11   | 22      | 81.5%       | 18                        |
+| 26 | Lynelen                 | Member    | 2026-03-11   | 22      | 81.5%       | 18                        |
 | 27 | Thordrel                | Raider    | 2026-02-22   | 25      | 75.8%       | 18                        |
 | 28 | Rickard(Benglock)       | Raider    | 2026-05-06   | 8       | 72.7%       | 0                         |
 | 29 | Saskia(Siljes)          | Raider    | 2026-03-25   | 16      | 69.6%       | 0                         |
 | 30 | Heligeman               | Raider    | 2026-04-05   | 13      | 65.0%       | 4                         |
 | 31 | Guðjón(Jarðepli)        | Officer   | 2026-02-25   | 20      | 64.5%       | 11                        |
 | 32 | Mark(Mellymel)          | Member    | 2026-04-29   | 8       | 61.5%       | 0                         |
-| 33 | Boriest                 | Raider    | 2026-05-03   | 6       | 50.0%       | 11                        |
-| 34 | David(Nemajumarad)      | Raider    | 2026-05-03   | 6       | 50.0%       | 14                        |
-| 35 | Jordan(Grundiger)       | Raider    | 2026-04-26   | 7       | 50.0%       | 14                        |
-| 36 | McJudgin                | Raider    | 2026-03-29   | 11      | 50.0%       | 7                         |
+| 33 | Boriest                 | Member    | 2026-05-03   | 6       | 50.0%       | 11                        |
+| 34 | David(Nemajumarad)      | Member    | 2026-05-03   | 6       | 50.0%       | 14                        |
+| 35 | Jordan(Grundiger)       | Member    | 2026-04-26   | 7       | 50.0%       | 14                        |
+| 36 | McJudgin                | Member    | 2026-03-29   | 11      | 50.0%       | 7                         |
 | 37 | McHughes                | Member    | 2026-02-22   | 16      | 48.5%       | 25                        |
-| 38 | Tonz/Tonsen             | Raider    | 2026-03-15   | 12      | 46.2%       | 14                        |
-| 39 | Leontes                 | Raider    | 2026-04-08   | 8       | 42.1%       | 28                        |
+| 38 | Tonz/Tonsen             | Member    | 2026-03-15   | 12      | 46.2%       | 14                        |
+| 39 | Leontes                 | Member    | 2026-04-08   | 8       | 42.1%       | 28                        |
 | 40 | BestPractice            | Member    | 2026-02-22   | 11      | 33.3%       | 49                        |
 | 41 | Dwarfytron              | Member    | 2026-03-22   | 7       | 29.2%       | 56                        |
 | 42 | Yorekbarn               | Member    | 2026-04-19   | 4       | 25.0%       | 21                        |

@@ -70,49 +70,49 @@ Currently empty. Kept so a Regular player promoted to priority `1` has a place t
 |----|-------------------------|-----------------|---------|--------------------|-------------------|----------|-----------------------------------------------------------------------|
 | 1  | Beaverfist              | Beaverfist      | Druid   | Healer             | DPS (Balance)     | 2        | First line offspec                                                    |
 | 2  | Shapkica                | Shapkica        | Druid   | DPS (Feral)        | Tank (Feral)      | 2        | Eager offspec                                                         |
-| 3  | Stephan(Tímmâ/Toadward) | Tímmâ, Toadward | Druid   | DPS (Balance)      | Healer            | 2        | Eager offspec. Decide whether to downgrade to member by 2026-07-12    |
+| 3  | Stephan(Tímmâ/Toadward) | Tímmâ, Toadward | Druid   | DPS (Balance)      | Healer            | 2        | Eager offspec                                                         |
 | 4  | Yxanb                   | Yxanb           | Druid   | DPS (Feral)        | Tank (Feral)      | 2        | Reluctant offspec                                                     |
-| 5  | Jordan(Grundiger)       | Grundiger       | Hunter  | DPS (Beastmastery) | —                 | 2        | Discord name: grundi21                                                |
-| 6  | loranzoo                | loranzoo        | Hunter  | DPS (Beastmastery) | ?                 | 2        | Decide whether to downgrade to member by 2026-07-12                   |
-| 7  | Mathias(Vaelruna)       | Vaelruna        | Hunter  | DPS (Beastmastery) | —                 | 2        |                                                                       |
-| 8  | Silverpilen             | Silverpilen     | Hunter  | DPS (Beastmastery) | —                 | 2        | Decide whether to downgrade to member by 2026-07-05                   |
-| 9  | Tonz/Tonsen             | Tonsen          | Hunter  | DPS (Beastmastery) | —                 | 2        |                                                                       |
-| 10 | TJ(Animustenax)         | Animustenax     | Mage    | DPS (Arcane)       | —                 | 2        | Also referred to as Ani; she/her                                      |
-| 11 | Heligeman               | Heligeman       | Paladin | Healer             | —                 | 2        | Often addressed as Helige                                             |
-| 12 | Leontes                 | Leontes         | Paladin | DPS                | —                 | 2        |                                                                       |
-| 13 | McJudgin                | McJudgin        | Paladin | DPS                | Tank              | 2        | First line offspec                                                    |
-| 14 | Thordrel                | Thordrel        | Paladin | Healer             | —                 | 2        |                                                                       |
-| 15 | Boriest                 | Boriest         | Priest  | Healer             | DPS               | 2        | Eager offspec. Decide whether to downgrade to member by 2026-06-07    |
-| 16 | Lightweit               | Lightweit       | Priest  | Healer             | —                 | 2        |                                                                       |
-| 17 | Saskia(Siljes)          | Siljes          | Priest  | Healer             | DPS               | 2        | Eager offspec                                                         |
-| 18 | Tim(Tiinar)             | Tiinar          | Rogue   | DPS (Combat)       | —                 | 2        |                                                                       |
-| 19 | Ebonybolt               | Ebonybolt       | Shaman  | DPS (Enhancement)  | Healer            | 2        | Ok to offspec                                                         |
-| 20 | Lynelen                 | Lynelen, Kalyl  | Shaman  | DPS (Enhancement)  | DPS (Elemental)   | 2        | Ok to offspec                                                         |
-| 21 | Pergatori               | Pergatori       | Shaman  | Healer             | DPS (Elemental)   | 2        | First line offspec                                                    |
-| 22 | Piotr(Bergamotka)       | Bergamotka      | Shaman  | DPS (Enhancement)  | DPS (Elemental)   | 2        | Ok to offspec                                                         |
-| 23 | Steven(Gresac/Younea)   | Younea, Gresac  | Shaman  | DPS (Elemental)    | Healer            | 2        | First line offspec. Druid alt (Gresac) — see Alt characters sub-table |
-| 24 | Jabbadhutt              | Jabbadhutt      | Warlock | DPS (Destruction)  | DPS (Affliction)  | 2        |                                                                       |
-| 25 | Quoterlock              | Quoter          | Warlock | DPS (Affliction)   | DPS (Destruction) | 2        | Decide whether to downgrade to member by 2026-07-12                   |
-| 26 | Rickard(Benglock)       | Benglock        | Warlock | DPS (Destruction)  | —                 | 2        |                                                                       |
-| 27 | CptKavior               | CptKavior       | Warrior | DPS (Fury)         | Tank              | 2        | First line offspec                                                    |
-| 28 | Dankyn                  | Dankyn          | Warrior | DPS (Fury)         | Tank              | 2        | Reluctant offspec                                                     |
-| 29 | David(Nemajumarad)      | Nemajumarad     | Warrior | DPS (Arms)         | Tank              | 2        | Eager offspec, Decide whether to downgrade to member by 2026-06-07    |
-| 30 | Sören(Verysadge)        | Verysadge       | Warrior | DPS (Fury)         | —                 | 2        |                                                                       |
+| 5  | loranzoo                | loranzoo        | Hunter  | DPS (Beastmastery) | ?                 | 2        | Decide whether to downgrade to member by 2026-07-12                   |
+| 6  | Mathias(Vaelruna)       | Vaelruna        | Hunter  | DPS (Beastmastery) | —                 | 2        |                                                                       |
+| 7  | Silverpilen             | Silverpilen     | Hunter  | DPS (Beastmastery) | —                 | 2        |                                                                       |
+| 8  | TJ(Animustenax)         | Animustenax     | Mage    | DPS (Arcane)       | —                 | 2        | Also referred to as Ani; she/her                                      |
+| 9  | Heligeman               | Heligeman       | Paladin | Healer             | —                 | 2        | Often addressed as Helige                                             |
+| 10 | Thordrel                | Thordrel        | Paladin | Healer             | —                 | 2        |                                                                       |
+| 11 | Lightweit               | Lightweit       | Priest  | Healer             | —                 | 2        |                                                                       |
+| 12 | Saskia(Siljes)          | Siljes          | Priest  | Healer             | DPS               | 2        | Eager offspec                                                         |
+| 13 | Tim(Tiinar)             | Tiinar          | Rogue   | DPS (Combat)       | —                 | 2        |                                                                       |
+| 14 | Ebonybolt               | Ebonybolt       | Shaman  | DPS (Enhancement)  | Healer            | 2        | Ok to offspec                                                         |
+| 15 | Pergatori               | Pergatori       | Shaman  | Healer             | DPS (Elemental)   | 2        | First line offspec                                                    |
+| 16 | Piotr(Bergamotka)       | Bergamotka      | Shaman  | DPS (Enhancement)  | DPS (Elemental)   | 2        | Ok to offspec                                                         |
+| 17 | Steven(Gresac/Younea)   | Younea, Gresac  | Shaman  | DPS (Elemental)    | Healer            | 2        | First line offspec. Druid alt (Gresac) — see Alt characters sub-table |
+| 18 | Jabbadhutt              | Jabbadhutt      | Warlock | DPS (Destruction)  | DPS (Affliction)  | 2        |                                                                       |
+| 19 | Quoterlock              | Quoter          | Warlock | DPS (Affliction)   | DPS (Destruction) | 2        | Decide whether to downgrade to member by 2026-07-12                   |
+| 20 | Rickard(Benglock)       | Benglock        | Warlock | DPS (Destruction)  | —                 | 2        |                                                                       |
+| 21 | CptKavior               | CptKavior       | Warrior | DPS (Fury)         | Tank              | 2        | First line offspec                                                    |
+| 22 | Dankyn                  | Dankyn          | Warrior | DPS (Fury)         | Tank              | 2        | Reluctant offspec                                                     |
+| 23 | Sören(Verysadge)        | Verysadge       | Warrior | DPS (Fury)         | —                 | 2        |                                                                       |
 
 #### Members
 
-| #  | Player         | Character(s)    | Class   | Mainspec (role) | Offspec (role) | Priority | Notes         |
-|----|----------------|-----------------|---------|-----------------|----------------|----------|---------------|
-| 1  | Gyrodorei      | Gyrodorei       | Druid   | DPS (Feral)     | ?              | 3        |               |
-| 2  | Dwarfytron     | Dwarfytron      | Hunter  | DPS             | —              | 3        |               |
-| 3  | Mark(Mellymel) | Mellymel, Lenno | Mage    | DPS (Arcane)    | —              | 3        |               |
-| 4  | Sjwammie       | Sjwammie        | Paladin | Healer          | —              | 3        |               |
-| 5  | Medianos       | Medianos        | Priest  | DPS             | ?              | 3        |               |
-| 6  | BestPractice   | BestPractice    | Warlock | DPS             | —              | 3        |               |
-| 7  | McHughes       | McHughes        | Warlock | DPS             | —              | 3        |               |
-| 8  | Doughball      | Doughball       | Warrior | DPS (Fury)      | Tank           | 3        | Eager offspec |
-| 9  | Varva          | Varva           | Warrior | DPS             | —              | 3        |               |
-| 10 | Yorekbarn      | Yorekbarn       | Warrior | DPS (Fury)      | —              | 3        |               |
+| #  | Player               | Character(s)    | Class   | Mainspec (role)     | Offspec (role)   | Priority | Notes                    |
+|----|----------------------|-----------------|---------|---------------------|------------------|----------|--------------------------|
+| 1  | Gyrodorei            | Gyrodorei       | Druid   | DPS (Feral)         | ?                | 3        |                          |
+| 2  | Dwarfytron           | Dwarfytron      | Hunter  | DPS                 | —                | 3        |                          |
+| 3  | Jordan(Grundiger)    | Grundiger       | Hunter  | DPS (Beastmastery)  | —                | 3        | Discord name: grundi21   |
+| 4  | Tonz/Tonsen          | Tonsen          | Hunter  | DPS (Beastmastery)  | —                | 3        |                          |
+| 5  | Mark(Mellymel)       | Mellymel, Lenno | Mage    | DPS (Arcane)        | —                | 3        |                          |
+| 6  | Leontes              | Leontes         | Paladin | DPS                 | —                | 3        |                          |
+| 7  | McJudgin             | McJudgin        | Paladin | DPS                 | Tank             | 3        | First line offspec       |
+| 8  | Sjwammie             | Sjwammie        | Paladin | Healer              | —                | 3        |                          |
+| 9  | Boriest              | Boriest         | Priest  | Healer              | DPS              | 3        | Eager offspec            |
+| 10 | Medianos             | Medianos        | Priest  | DPS                 | ?                | 3        |                          |
+| 11 | Lynelen              | Lynelen, Kalyl  | Shaman  | DPS (Enhancement)   | DPS (Elemental)  | 3        | Ok to offspec            |
+| 12 | BestPractice         | BestPractice    | Warlock | DPS                 | —                | 3        |                          |
+| 13 | McHughes             | McHughes        | Warlock | DPS                 | —                | 3        |                          |
+| 14 | David(Nemajumarad)   | Nemajumarad     | Warrior | DPS (Arms)          | Tank             | 3        | Eager offspec            |
+| 15 | Doughball            | Doughball       | Warrior | DPS (Fury)          | Tank             | 3        | Eager offspec            |
+| 16 | Varva                | Varva           | Warrior | DPS                 | —                | 3        |                          |
+| 17 | Yorekbarn            | Yorekbarn       | Warrior | DPS (Fury)          | —                | 3        |                          |
 
 ### Alt characters
 
