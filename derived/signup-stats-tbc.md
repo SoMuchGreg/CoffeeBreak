@@ -54,7 +54,7 @@ For rank changes (any move between the Officers / Core tanks / Raiders / Members
 | 2  | Lightweit               | Raider    | 2026-04-08   | 19      | 100.0%      | 0                         |
 | 3  | loranzoo                | Raider    | 2026-06-07   | 1       | 100.0%      | 0                         |
 | 4  | Piotr(Bergamotka)       | Raider    | 2026-03-15   | 26      | 100.0%      | 0                         |
-| 5  | Quoter                  | Raider    | 2026-06-07   | 1       | 100.0%      | 0                         |
+| 5  | Quoterlock              | Raider    | 2026-06-07   | 1       | 100.0%      | 0                         |
 | 6  | Silverpilen             | Raider    | 2026-05-31   | 3       | 100.0%      | 0                         |
 | 7  | Stephan(Tímmâ/Toadward) | Raider    | 2026-06-07   | 1       | 100.0%      | 0                         |
 | 8  | Steven(Gresac/Younea)   | Raider    | 2026-02-22   | 33      | 100.0%      | 0                         |
@@ -77,7 +77,7 @@ For rank changes (any move between the Officers / Core tanks / Raiders / Members
 | 25 | Adam(Kres/Dissi)        | Officer   | 2026-02-22   | 27      | 81.8%       | 0                         |
 | 26 | Lynelen                 | Raider    | 2026-03-11   | 22      | 81.5%       | 18                        |
 | 27 | Thordrel                | Raider    | 2026-02-22   | 25      | 75.8%       | 18                        |
-| 28 | Benglock                | Raider    | 2026-05-06   | 8       | 72.7%       | 0                         |
+| 28 | Rickard(Benglock)       | Raider    | 2026-05-06   | 8       | 72.7%       | 0                         |
 | 29 | Saskia(Siljes)          | Raider    | 2026-03-25   | 16      | 69.6%       | 0                         |
 | 30 | Heligeman               | Raider    | 2026-04-05   | 13      | 65.0%       | 4                         |
 | 31 | Guðjón(Jarðepli)        | Officer   | 2026-02-25   | 20      | 64.5%       | 11                        |

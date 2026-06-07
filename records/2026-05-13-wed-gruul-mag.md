@@ -12,7 +12,7 @@
 **Hunters (3):** Jordan(Grundiger), Mathias(Vaelruna), Mark(Roossy/Keatala)
 **Priests (3):** Lightweit, Boriest, Adam(Kres/Dissi)
 **Mages (1):** Greg(Ucannotpass)
-**Warlocks (2):** McHughes, Benglock
+**Warlocks (2):** McHughes, Rickard(Benglock)
 **Shamans (5):** Piotr(Bergamotka), Lynelen, Ebonybolt, Steven(Gresac/Younea), Pergatori
 
 **Header stats:** Melee 9, Ranged 8, Healers 4
@@ -54,7 +54,7 @@
 | Ebonybolt             | Shaman (Enhancement) |
 | Lynelen               | Shaman (Enhancement) |
 | McHughes              | Warlock              |
-| Benglock              | Warlock (Demonology) |
+| Rickard(Benglock)     | Warlock (Demonology) |
 | David(Nemajumarad)    | Warrior (Arms)       |
 | Dankyn                | Warrior (Fury)       |
 | Sören(Verysadge)      | Warrior (Fury)       |
@@ -78,21 +78,21 @@
 
 ### High King Maulgar
 
-| Role                 | Player               | Notes                                                                                                                                                                                   |
-|----------------------|----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Maulgar Tank         | Emil(Ostbirger)      |                                                                                                                                                                                         |
-| Maulgar Tank MD      | Mathias(Vaelruna)    |                                                                                                                                                                                         |
-| Maulgar Healer       | Thordrel, Beaverfist |                                                                                                                                                                                         |
-| Mage Tank (Krosh)    | Greg(Ucannotpass)    |                                                                                                                                                                                         |
-| Mage Tank Healer     | Mark(Roossy/Keatala) |                                                                                                                                                                                         |
-| Kiggler Tank         | Guðjón(Jarðepli)     | Balance druid solo. Per the day-of-week raid-leader rule then in effect, Guðjón(Jarðepli) (Wed RL) would have been excluded; **user override** — Guðjón(Jarðepli) took the role anyway. |
-| Kiggler Tank Healer  | Boriest              |                                                                                                                                                                                         |
-| Olm Tank             | Kamil(Gigakox)       | until felhunter                                                                                                                                                                         |
-| Felhunter Subjugate  | Benglock, McHughes   | 2 Warlocks in roster → 2 slots                                                                                                                                                          |
-| Olm Tank Healer      | —                    | only 5 healers in roster — optional slot dropped                                                                                                                                        |
-| Blindeye Tank        | CptKavior            |                                                                                                                                                                                         |
-| Blindeye Tank MD     | Jordan(Grundiger)    |                                                                                                                                                                                         |
-| Blindeye Tank Healer | Lightweit            |                                                                                                                                                                                         |
+| Role                 | Player                      | Notes                                                                                                                                                                                   |
+|----------------------|-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Maulgar Tank         | Emil(Ostbirger)             |                                                                                                                                                                                         |
+| Maulgar Tank MD      | Mathias(Vaelruna)           |                                                                                                                                                                                         |
+| Maulgar Healer       | Thordrel, Beaverfist        |                                                                                                                                                                                         |
+| Mage Tank (Krosh)    | Greg(Ucannotpass)           |                                                                                                                                                                                         |
+| Mage Tank Healer     | Mark(Roossy/Keatala)        |                                                                                                                                                                                         |
+| Kiggler Tank         | Guðjón(Jarðepli)            | Balance druid solo. Per the day-of-week raid-leader rule then in effect, Guðjón(Jarðepli) (Wed RL) would have been excluded; **user override** — Guðjón(Jarðepli) took the role anyway. |
+| Kiggler Tank Healer  | Boriest                     |                                                                                                                                                                                         |
+| Olm Tank             | Kamil(Gigakox)              | until felhunter                                                                                                                                                                         |
+| Felhunter Subjugate  | Rickard(Benglock), McHughes | 2 Warlocks in roster → 2 slots                                                                                                                                                          |
+| Olm Tank Healer      | —                           | only 5 healers in roster — optional slot dropped                                                                                                                                        |
+| Blindeye Tank        | CptKavior                   |                                                                                                                                                                                         |
+| Blindeye Tank MD     | Jordan(Grundiger)           |                                                                                                                                                                                         |
+| Blindeye Tank Healer | Lightweit                   |                                                                                                                                                                                         |
 
 ### Magtheridon — Cube Clickers
 
@@ -141,7 +141,7 @@
 - Ebonybolt (Enhancement Shaman)
 - Lynelen (Enhancement Shaman)
 - McHughes (Warlock)
-- Benglock (Demonology Warlock)
+- Rickard(Benglock) (Demonology Warlock)
 - David(Nemajumarad) (Arms Warrior)
 - Dankyn (Fury Warrior)
 - Sören(Verysadge) (Fury Warrior)
@@ -157,7 +157,7 @@
 - Kiggler Tank: Guðjón(Jarðepli)
 - Kiggler Tank Healer: Boriest
 - Olm Tank: Kamil(Gigakox)
-- Felhunter Subjugate: Benglock, McHughes
+- Felhunter Subjugate: Rickard(Benglock), McHughes
 - Olm Tank Healer: —
 - Blindeye Tank: CptKavior
 - Blindeye Tank MD: Jordan(Grundiger)
@@ -179,7 +179,7 @@ On the bench: Adam(Kres/Dissi) and Pergatori. But if you show up online around r
 - **Post-build roster changes** — applied via `Event: Quick (ad-hoc) roster update` (`reference/file-operations-manual.md`):
     - Pergatori signed up post-build (Shaman, Healer mainspec) and was discretionarily benched.
     - Heligeman resolved from Tentative to playing (Holy Paladin); seated as a Healer.
-    - Benglock resolved from Late to on-time; already in DPS roster, no slot change.
+    - Rickard(Benglock) resolved from Late to on-time; already in DPS roster, no slot change.
     - Adam(Kres/Dissi) (Priest DPS) moved from DPS roster to Bench.
     - Net comp shift: 3/5/17 → 3/6/16 (still within the default 25-man target ranges).
 - **User overrides — Adam(Kres/Dissi) benched while back-to-back protected.** He was benched on 2026-05-10 (Gruul+Mag), so both chronological and same-location protections were active for this raid per `rules/02-bench-rotation.md` → "Back-to-back bench protection". A discretionary bench may override protection (per "Composition caps and user discretion override protection"); applied at user direction.
@@ -192,12 +192,12 @@ On the bench: Adam(Kres/Dissi) and Pergatori. But if you show up online around r
 - **Enhancement Shaman 3** (§8: 1-2) — forced: Piotr(Bergamotka), Lynelen, Ebonybolt all play; 25=25 so no bench, and the DPS role is at target so no surplus-flex trigger.
 - **Holy Priest 2** (§8: 1) — forced: Lightweit and Boriest both healer-mains; roster is at the healer floor, neither benchable.
 - **Restoration Shaman 0** (§8: 1-3) — pigeonhole: only Resto-Sham main is Pergatori, who didn't sign up.
-- **Combined Destruction + Affliction Warlock ≤ 1** (§8: combined 3) — pigeonhole: only 2 Warlocks signed up and Benglock is Demonology.
+- **Combined Destruction + Affliction Warlock ≤ 1** (§8: combined 3) — pigeonhole: only 2 Warlocks signed up and Rickard(Benglock) is Demonology.
 
 **Post-check changes**:
 - Pergatori added as post-build signup (Shaman, Healer mainspec); discretionarily benched.
 - Heligeman resolved from Tentative to playing; added to Healers.
 - Adam(Kres/Dissi) moved from DPS roster to Bench (manual override; protection conflict per Notes).
-- Benglock resolved from Late to on-time class-list signup; no roster slot change.
+- Rickard(Benglock) resolved from Late to on-time class-list signup; no roster slot change.
 - Kiggler Tank reassigned `Mathias(Vaelruna), Steven(Gresac/Younea)` → `Guðjón(Jarðepli)` (user override of raid-leader exclusion; see Notes).
 - Adam(Kres/Dissi) removed from Alternative Experienced Cube Clickers — post-build bench (per the swap above) makes him ineligible for that list per `rules/05-encounter-assignments.md` → "Alternative experienced cube clickers" criterion 1 (excludes `## Bench`).

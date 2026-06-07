@@ -94,7 +94,7 @@ A player's sub-table here is determined solely by their top-level grouping in `r
 | 20 | McJudgin                | 11      |
 | 21 | Tim(Tiinar)             | 11      |
 | 22 | Tonz/Tonsen             | 11      |
-| 23 | Benglock                | 9       |
+| 23 | Rickard(Benglock)       | 9       |
 | 24 | Leontes                 | 8       |
 | 25 | Mark(Mellymel)          | 8       |
 | 26 | Dwarfytron              | 7       |
@@ -109,7 +109,7 @@ A player's sub-table here is determined solely by their top-level grouping in `r
 | 35 | Silverpilen             | 3       |
 | 36 | Gyrodorei               | 1       |
 | 37 | loranzoo                | 1       |
-| 38 | Quoter                  | 1       |
+| 38 | Quoterlock              | 1       |
 | 39 | Stephan(Tímmâ/Toadward) | 1       |
 
 ### Former members

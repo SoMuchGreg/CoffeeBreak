@@ -12,7 +12,7 @@
 **Hunters (4):** Mathias(Vaelruna), Silverpilen, Mark(Roossy/Keatala), loranzoo
 **Priests (3):** Adam(Kres/Dissi), Saskia(Siljes), Lightweit
 **Mages (3):** TJ(Animustenax), Greg(Ucannotpass), Mark(Mellymel)
-**Warlocks (3):** Jabbadhutt, Benglock, Quoter
+**Warlocks (3):** Jabbadhutt, Rickard(Benglock), Quoterlock
 **Shamans (3):** Steven(Gresac/Younea), Piotr(Bergamotka), Ebonybolt
 
 **Header stats:** Melee 6, Ranged 13, Healers 3
@@ -54,9 +54,9 @@
 | Steven(Gresac/Younea) | Shaman (Elemental)    |
 | Ebonybolt             | Shaman (Enhancement)  |
 | Piotr(Bergamotka)     | Shaman (Enhancement)  |
-| Benglock              | Warlock (Destruction) |
+| Rickard(Benglock)     | Warlock (Destruction) |
 | Jabbadhutt            | Warlock (Destruction) |
-| Quoter                | Warlock (Destruction) |
+| Quoterlock            | Warlock (Destruction) |
 | Sören(Verysadge)      | Warrior (Fury)        |
 
 **Composition check:** Target 3 / 5 / 17 (default — no Karathress in the planned boss list, so SSC's 4-tank override doesn't fire; per `rules/06-split-location-nights.md` → "Composition target"). Actual: 3 / 5 / 17 = 25. Status: ✅ on target — 25 signups exactly fill the raid; the target is reached via 3 comp flexes (2 first-line-offspec, 1 user-directed — see Notes).
@@ -144,9 +144,9 @@
 - Steven(Gresac/Younea) (Elemental Shaman)
 - Ebonybolt (Enhancement Shaman)
 - Piotr(Bergamotka) (Enhancement Shaman)
-- Benglock (Destruction Warlock)
+- Rickard(Benglock) (Destruction Warlock)
 - Jabbadhutt (Destruction Warlock)
-- Quoter (Destruction Warlock)
+- Quoterlock (Destruction Warlock)
 - Sören(Verysadge) (Fury Warrior)
 
 ### Encounter assignments
@@ -182,7 +182,7 @@
 - **New players** (all added to `rules/04-players.md` → Raiders, priority 2, trial note `Decide whether to downgrade to member by 2026-07-12`):
   - **Stephan(Tímmâ)** — Druid, DPS (Balance). Canonical name read from the screenshot guild-tag rendering; confirm if needed.
   - **loranzoo** — Hunter, DPS (Beastmastery).
-  - **Quoter** — Warlock, DPS (Destruction).
+  - **Quoterlock** — Warlock, DPS (Destruction).
 - **Steven(Gresac/Younea) now first line offspec** — user designation this raid; `rules/04-players.md` Notes updated. Made him a Tier-0 healer-flex candidate — not exercised this raid (the rework keeps him on mainspec Elemental; see below).
 - **Comp flex.** Pre-flex distribution was 2 tanks / 3 healers / 20 DPS, so DPS was over-represented and the Tier-0 conditions held for FLO players (contrast 31.05 TK / 03.06 SSC, where DPS was at/under target and Tier 0 didn't fire). CptKavior (Tier 0) filled the 3rd tank; Adam(Kres/Dissi) (Tier 0) and Stephan(Tímmâ/Toadward) (eager offspec, user-directed) filled the 2 healer slots. Ebonybolt was not asked and stays Enhancement DPS.
 - **Roster rework (user-directed, post-build):** Steven(Gresac/Younea) reverts Healer (Resto) → mainspec DPS (Elemental) and resumes Strider Kiter (his Tier-1 continuity role, 27.05 + 03.06 SSC); Stephan(Tímmâ/Toadward) flexes DPS (Balance) → Healer (Resto) to hold the 5th healer. Composition unchanged at 3/5/17. Slot and encounter deltas logged under Sanity check → Post-check changes.
@@ -202,7 +202,7 @@
 
 ### Post-check changes
 
-- **Vashj Strider Kiter: Benglock → Jabbadhutt** (user-directed; both equally-eligible Tier-2 Warlocks). Encounter-role swap only — no roster, composition, or bench change, so the verdict above stands.
+- **Vashj Strider Kiter: Rickard(Benglock) → Jabbadhutt** (user-directed; both equally-eligible Tier-2 Warlocks). Encounter-role swap only — no roster, composition, or bench change, so the verdict above stands.
 - **Roster rework (user-directed):** Steven(Gresac/Younea) Healer (Resto) → DPS (Elemental); Stephan(Tímmâ/Toadward) DPS (Balance) → Healer (Resto). Composition unchanged at 3/5/17; Resto Druid count 1 → 2 (within the cap — `rules/01-raid-compositions.md` → "Resto Druid cap (hard rule)"; cap doesn't fire at 3 mainspec healers anyway). No bench or Signups change, so the verdict above stands.
 - **Al'ar Tank 1 Healer: Steven(Gresac/Younea) → Stephan(Tímmâ/Toadward)** — Steven left the healer corps; Stephan is the replacement healer (Tier-1 Druid by class preference).
-- **Vashj Strider Kiter: Jabbadhutt → Steven(Gresac/Younea)** — Steven is back on Elemental, the Tier-1 continuity holder (27.05 + 03.06 SSC); supersedes the Benglock → Jabbadhutt fill above.
+- **Vashj Strider Kiter: Jabbadhutt → Steven(Gresac/Younea)** — Steven is back on Elemental, the Tier-1 continuity holder (27.05 + 03.06 SSC); supersedes the Rickard(Benglock) → Jabbadhutt fill above.

@@ -10,7 +10,7 @@
 **Hunters (1):** Mark(Roossy/Keatala)
 **Priests (3):** Adam(Kres/Dissi), Saskia(Siljes), Lightweit
 **Mages (2):** Mark(Mellymel), OomToDoom
-**Warlocks (2):** Benglock, Jabbadhutt
+**Warlocks (2):** Rickard(Benglock), Jabbadhutt
 **Shamans (5):** Lynelen, Piotr(Bergamotka), Ebonybolt, Pergatori, Steven(Gresac/Younea)
 
 **Header stats:** Tanks 5, Melee 9, Ranged 8, Healers 6   <!-- from original screenshot; 3 post-build signups (Gyrodorei, Tim(Tiinar), Steven(Gresac/Younea) via Younea alt), 2 withdrawals (Tonz/Tonsen, Marino(Varthier)), and 1 no-show (David(Nemajumarad)) not reflected -->
@@ -43,7 +43,7 @@
 | Mark(Mellymel)       | DPS    | Mage (Arcane)        |
 | Tim(Tiinar)          | DPS    | Rogue (Combat)       |
 | Lynelen              | DPS    | Shaman (Enhancement) |
-| Benglock             | DPS    | Warlock (Demonology) |
+| Rickard(Benglock)    | DPS    | Warlock (Demonology) |
 
 ### Team Bakery
 
@@ -103,7 +103,7 @@
 - DPS: Mark(Mellymel) (Arcane Mage)
 - DPS: Tim(Tiinar) (Combat Rogue)
 - DPS: Lynelen (Enhancement Shaman)
-- DPS: Benglock (Demonology Warlock)
+- DPS: Rickard(Benglock) (Demonology Warlock)
 
 **Team Bakery (10)**
 - MT: Emil(Ostbirger) (Protection Paladin)
@@ -132,7 +132,7 @@
 ## Notes
 
 - 28 signups → 3 teams + 2 PUG DPS on Team WellPrepared per `rules/01-raid-compositions.md` → "Under-cap team count" + "Recording outside recruits (PUGs)".
-- **Benglock first appearance** — Warlock, mainspec DPS (Demonology), priority 2. Added to `rules/04-players.md` this session.
+- **Rickard(Benglock) first appearance** — Warlock, mainspec DPS (Demonology), priority 2. Added to `rules/04-players.md` this session.
 - Tank shortage flex chain: Tier 0 (CptKavior, McJudgin first-line-offspec standing consent) then Tier 1 Eager (David(Nemajumarad) picked over Shapkica per user instruction).
 - **HFD intra-team cluster** (Mark(Roossy/Keatala) + Adam(Kres/Dissi), Bakery) — pigeonhole-forced 4-into-3.
 - **Soft rule violations forced by signups**: Bakery has no Priest healer (only 2 in raid: Saskia(Siljes) R, Lightweit WP); Hunter / Mage / Warlock each have only 2 signups → 1-1-0 distribution (Bakery missing Mage and Warlock; WellPrepared missing Hunter); Fury Warrior 0-1-1 split (only 2 Fury after David(Nemajumarad)'s flex).

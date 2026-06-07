@@ -11,7 +11,7 @@
 **Hunters (3):** Mark(Roossy/Keatala), Jordan(Grundiger), Mathias(Vaelruna)
 **Priests (4):** Adam(Kres/Dissi), Saskia(Siljes), Lightweit, Boriest
 **Mages (1):** Greg(Ucannotpass)
-**Warlocks (2):** Benglock, Jabbadhutt
+**Warlocks (2):** Rickard(Benglock), Jabbadhutt
 **Shamans (5):** Pergatori, Lynelen, Piotr(Bergamotka), Ebonybolt, Steven(Gresac/Younea)
 
 **Tentative (1):** Tim(Tiinar)
@@ -61,7 +61,7 @@
 | Ebonybolt             | Shaman (Enhancement) |
 | Lynelen               | Shaman (Enhancement) |
 | Jabbadhutt            | Warlock              |
-| Benglock              | Warlock (Demonology) |
+| Rickard(Benglock)     | Warlock (Demonology) |
 | CptKavior             | Warrior (Fury)       |
 | Dankyn                | Warrior (Fury)       |
 | Sören(Verysadge)      | Warrior (Fury)       |
@@ -80,21 +80,21 @@
 
 ### High King Maulgar
 
-| Role                 | Player               | Notes                          |
-|----------------------|----------------------|--------------------------------|
-| Maulgar Tank         | Marino(Varthier)     |                                |
-| Maulgar Tank MD      | Mark(Roossy/Keatala) |                                |
-| Maulgar Healer       | Thordrel, Beaverfist |                                |
-| Mage Tank (Krosh)    | Greg(Ucannotpass)    |                                |
-| Mage Tank Healer     | Saskia(Siljes)       |                                |
-| Kiggler Tank         | Guðjón(Jarðepli)     | Balance druid solo             |
-| Kiggler Tank Healer  | Boriest              |                                |
-| Olm Tank             | Kamil(Gigakox)       | until felhunter                |
-| Felhunter Subjugate  | Jabbadhutt, Benglock | 2 Warlocks in roster → 2 slots |
-| Olm Tank Healer      | Pergatori            |                                |
-| Blindeye Tank        | Emil(Ostbirger)      |                                |
-| Blindeye Tank MD     | Jordan(Grundiger)    |                                |
-| Blindeye Tank Healer | Lightweit            |                                |
+| Role                 | Player                        | Notes                          |
+|----------------------|-------------------------------|--------------------------------|
+| Maulgar Tank         | Marino(Varthier)              |                                |
+| Maulgar Tank MD      | Mark(Roossy/Keatala)          |                                |
+| Maulgar Healer       | Thordrel, Beaverfist          |                                |
+| Mage Tank (Krosh)    | Greg(Ucannotpass)             |                                |
+| Mage Tank Healer     | Saskia(Siljes)                |                                |
+| Kiggler Tank         | Guðjón(Jarðepli)              | Balance druid solo             |
+| Kiggler Tank Healer  | Boriest                       |                                |
+| Olm Tank             | Kamil(Gigakox)                | until felhunter                |
+| Felhunter Subjugate  | Jabbadhutt, Rickard(Benglock) | 2 Warlocks in roster → 2 slots |
+| Olm Tank Healer      | Pergatori                     |                                |
+| Blindeye Tank        | Emil(Ostbirger)               |                                |
+| Blindeye Tank MD     | Jordan(Grundiger)             |                                |
+| Blindeye Tank Healer | Lightweit                     |                                |
 
 ### Magtheridon — Cube Clickers
 
@@ -145,7 +145,7 @@
 - Ebonybolt (Enhancement Shaman)
 - Lynelen (Enhancement Shaman)
 - Jabbadhutt (Warlock)
-- Benglock (Demonology Warlock)
+- Rickard(Benglock) (Demonology Warlock)
 - CptKavior (Fury Warrior)
 - Dankyn (Fury Warrior)
 - Sören(Verysadge) (Fury Warrior)
@@ -161,7 +161,7 @@
 - Kiggler Tank: Guðjón(Jarðepli)
 - Kiggler Tank Healer: Boriest
 - Olm Tank: Kamil(Gigakox)
-- Felhunter Subjugate: Jabbadhutt, Benglock
+- Felhunter Subjugate: Jabbadhutt, Rickard(Benglock)
 - Olm Tank Healer: Pergatori
 - Blindeye Tank: Emil(Ostbirger)
 - Blindeye Tank MD: Jordan(Grundiger)
@@ -182,7 +182,7 @@ On the bench: Adam(Kres/Dissi), David(Nemajumarad) and Shapkica. But if you show
 - **Tim(Tiinar) tentative** — excluded from roster pool per `reference/file-operations-manual.md` → Step 2.
 - **Bench picks:**
   - **Dankyn (fair rotation)** — Fury Warrior over §8 max 2; Dankyn lowest G+M among Fury candidates.
-  - **Shapkica (fair rotation)** — 3rd-pick tiebreaker per `rules/02-bench-rotation.md` → "Tiebreaker cascade" (preserves the 2-Warlock pool); Feral DPS still in §8 range 1-2 after the cut, while the algorithmic-strict alphabetical fallback (Benglock) would have taken combined Warlock count further below §8's combined Destro+Affli range of 3-6.
+  - **Shapkica (fair rotation)** — 3rd-pick tiebreaker per `rules/02-bench-rotation.md` → "Tiebreaker cascade" (preserves the 2-Warlock pool); Feral DPS still in §8 range 1-2 after the cut, while the algorithmic-strict alphabetical fallback (Rickard(Benglock)) would have taken combined Warlock count further below §8's combined Destro+Affli range of 3-6.
 - **User overrides:**
   - **David(Nemajumarad) bench (manual override)** — algorithmic pick was Piotr(Bergamotka) (Enh Sham over §8 max 2). User swapped Piotr(Bergamotka) in. Tradeoffs: Enh Sham stays at 3 (over §8 max 2), Arms Warrior drops to 0 (under §8 range 1; Blood Frenzy debuff missing as no Combat Rogue in raid). Cross-location bench burden equalized between the two players (both end at 1 total).
 - **Magtheridon SW cube** = Steven(Gresac/Younea) per `rules/05-encounter-assignments.md` continuity (he held SW on 2026-03-01 and is in the roster as DPS-Elemental this raid). CptKavior (sub-agent's initial cube-experience-fallback would-be pick) moves to alternative cube clickers.
@@ -197,16 +197,16 @@ On the bench: Adam(Kres/Dissi), David(Nemajumarad) and Shapkica. But if you show
 
 **Verdict: GOOD ENOUGH** — sub-agent's original NO verdict resolved by user-accepted overrides on both flagged items.
 
-- **Bench pick #3 violation** (sub-agent flagged Benglock as wrong; recommended Shapkica) — accepted; Shapkica benched, Benglock plays. Then user further overrode bench pick #1: David(Nemajumarad) benched in place of Piotr(Bergamotka) (manual override; see ## Notes "User overrides").
+- **Bench pick #3 violation** (sub-agent flagged Rickard(Benglock) as wrong; recommended Shapkica) — accepted; Shapkica benched, Rickard(Benglock) plays. Then user further overrode bench pick #1: David(Nemajumarad) benched in place of Piotr(Bergamotka) (manual override; see ## Notes "User overrides").
 - **Magtheridon SW cube violation** (sub-agent: should be Steven(Gresac/Younea) per continuity, not CptKavior) — accepted; SW = Steven(Gresac/Younea), CptKavior moved to alternative cube clickers.
 - **Soft-rule misses (acceptable):**
   - Arms Warrior 0 (under §8 range 1) — user-override tradeoff.
   - Enhancement Shaman 3 (over §8 max 2) — user-override tradeoff (kept Piotr(Bergamotka)).
-  - Combined Destro+Affli Warlock 1 (under §8 range 3) — pigeonhole-forced (only 2 Warlocks signed up; Benglock is Demo).
+  - Combined Destro+Affli Warlock 1 (under §8 range 3) — pigeonhole-forced (only 2 Warlocks signed up; Rickard(Benglock) is Demo).
   - Combat Rogue 0 (under §8 range 1) — pigeonhole-forced (only Tim(Tiinar) signed and went tentative).
 
 **Previous verdicts:**
-- **Original sub-agent verdict: NO** — 2 fixable violations (bench pick #3 = Benglock; SW cube = CptKavior). Both addressed before finalization.
+- **Original sub-agent verdict: NO** — 2 fixable violations (bench pick #3 = Rickard(Benglock); SW cube = CptKavior). Both addressed before finalization.
 
 **Post-check changes** (Quick ad-hoc roster update; no sub-agent re-run):
 - **Adam(Kres/Dissi) ↔ Dankyn bench swap (manual override)** — Kres (P1) benched per user discretionary pick; Dankyn unbenched. DPS-pool composition shift: Shadow Priest 1→0 (under §8 range 1), Fury Warrior 2→3 (over §8 max 2). See `## Notes` for full context.
