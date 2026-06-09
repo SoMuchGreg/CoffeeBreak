@@ -193,11 +193,14 @@ user should be aware of.
 
 ### The Lurker Below
 
-| Role        | Player | Notes |
-|-------------|--------|-------|
-| Main Tank   | ...    |       |
-| Off Tank    | ...    |       |
-| Platform CC | ...    | List 4 names in order: Platform 1 CC #1, Platform 1 CC #2, Platform 2 CC #1, Platform 2 CC #2 (e.g., `Greg(Ucannotpass), Jabbadhutt, Mathias(Vaelruna), Mark(Roossy/Keatala)`). The third platform takes no CC. |
+| Role            | Player | Notes |
+|-----------------|--------|-------|
+| Main Tank       | ...    |       |
+| Off Tank        | ...    |       |
+| Platform 1 Tank | ...    |       |
+| Platform 2 Tank | ...    |       |
+| Platform 3 Tank | ...    |       |
+| Platform CC     | ...    | List 4 names in order: Platform 1 CC #1, Platform 1 CC #2, Platform 2 CC #1, Platform 2 CC #2 (e.g., `Greg(Ucannotpass), Jabbadhutt, Mathias(Vaelruna), Mark(Roossy/Keatala)`). The third platform takes no CC. |
 
 ### Leotheras the Blind
 
@@ -238,13 +241,18 @@ user should be aware of.
 
 ### Lady Vashj
 
-| Role             | Player | Notes |
-|------------------|--------|-------|
-| Main Tank        | ...    |       |
-| Off Tank #1      | ...    |       |
-| Off Tank #2      | ...    |       |
-| Main Tank Healer | ...    |       |
-| Strider Kiter    | ...    |       |
+| Role                | Player | Notes |
+|---------------------|--------|-------|
+| Main Tank           | ...    |       |
+| Off Tank #1         | ...    |       |
+| Off Tank #2         | ...    |       |
+| Main Tank Healer    | ...    |       |
+| Grounding Totem     | ...    |       |
+| Strider Kiter       | ...    |       |
+| Quadrant 1          | ranged: ...; melee: ...; healer: ... | One row per quadrant. See *Lady Vashj quadrant assignment* in `rules/05`. |
+| Quadrant 2          | ranged: ...; melee: ...; healer: ... |       |
+| Quadrant 3          | ranged: ...; melee: ...; healer: ... |       |
+| Quadrant 4          | ranged: ...; melee: ...; healer: ... |       |
 
 ## Discord announcement
 
@@ -272,7 +280,10 @@ Format:
   individual encounter names stay bold (e.g., `**Hydross the Unstable**`).
 - Multi-name encounter rows → one bullet, names comma-separated. Exception:
   Platform CC splits into one bullet per platform (Platform 1 CC, Platform 2
-  CC) so players can tell which platform they're on.
+  CC) so players can tell which platform they're on. Vashj quadrant roles
+  (Quadrant Ranged DPS / Melee DPS / Healer) regroup into one bullet per
+  quadrant (Quadrant 1–4), each listing that quadrant's ranged DPS, melee DPS,
+  and healer.
 - Bench: the closing line at the very end of the section is the bench's
   only Discord representation; the planner `## Bench` table is the source
   of truth for full bench detail. Phrasing: "X." for 1 player, "X and Y."
@@ -305,6 +316,9 @@ Format:
 **The Lurker Below**
 - Main Tank: {Player}
 - Off Tank: {Player}
+- Platform 1 Tank: {Player}
+- Platform 2 Tank: {Player}
+- Platform 3 Tank: {Player}
 - Platform 1 CC: {Player}, {Player}
 - Platform 2 CC: {Player}, {Player}
 
@@ -341,7 +355,12 @@ Format:
 - Off Tank #1: {Player}
 - Off Tank #2: {Player}
 - Main Tank Healer: {Player}
+- Grounding Totem: {Player}
 - Strider Kiter: {Player}
+- Quadrant 1: ranged: {Player}; melee: {Player}; healer: {Player}
+- Quadrant 2: ranged: {Player}; melee: {Player}; healer: {Player}
+- Quadrant 3: ranged: {Player}; melee: {Player}; healer: {Player}
+- Quadrant 4: ranged: {Player}; melee: {Player}; healer: {Player}
 
 On the bench: {Player}, {Player} and {Player}. But if you show up online around raid time, there's a decent chance a spot will free up because of last-minute changes.   <!-- delete this whole line if no one was benched -->
 

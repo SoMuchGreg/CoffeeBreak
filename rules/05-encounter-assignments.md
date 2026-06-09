@@ -20,7 +20,7 @@ The raid leader for the raid (per `config/project.md` → "Raid leadership") is 
 
 ### Assignment algorithm
 
-Run this for each role in the location's encounter table (in table order). A single player holds at most one role assignment per encounter (the **no-double-booking rule**) — not both Maulgar Tank and Mage Tank, and not two slots of the same multi-slot role (e.g., both Maulgar Healer slots). The same player may hold roles across different encounters in the same raid; the encounters run at different times. **Exception — within-phase only:** an encounter may apply no-double-booking *within* a phase group rather than across the whole encounter, letting one player hold one role per phase — see *TK → Kael'Thas tank assignment*.
+Run this for each role in the location's encounter table (in table order). A single player holds at most one role assignment per encounter (the **no-double-booking rule**) — not both Maulgar Tank and Mage Tank, and not two slots of the same multi-slot role (e.g., both Maulgar Healer slots). The same player may hold roles across different encounters in the same raid; the encounters run at different times. **Exception — within-phase only:** an encounter may apply no-double-booking *within* a phase group rather than across the whole encounter, letting one player hold one role per phase — see the phase-grouped encounters: *TK → Kael'Thas tank assignment*, *SSC → Lurker platform tank assignment*, and *SSC → Lady Vashj quadrant assignment*.
 
 1. **Filter by hard constraint.** Drop roster members who don't meet the role's eligibility requirement per the location's Encounter roles table. For roles with no requirement listed, all non-already-assigned roster members are eligible.
 2. **Apply continuity preference.** Among the remaining candidates, find those who have held this exact role in prior raids (see *Continuity data sources* below). If one or more is in the roster, pick the **most recent** holder. Tiebreak by total number of prior holds (more = preferred), then alphabetical by canonical player name per `rules/04-players.md`.
@@ -43,6 +43,19 @@ A role whose Eligibility column reads "Core main tank rotation" filters at step 
 When more than one role in the same encounter uses this filter, assign in table order; later slots exclude earlier slots' picks from candidates.
 
 **Fallback when fewer main tanks are in the roster than rotation slots demand.** If only one main tank is in the roster, that tank takes the first such slot; subsequent slots widen the step-1 filter to **any tank in the roster** (core or offspec) and run standard (most-recent) continuity. If no main tank is in the roster, the first slot also widens immediately. If no tank at all is available for a slot, leave `—` and flag per step 5.
+
+#### Hard-hitting bosses (Paladin tank soft-avoidance)
+
+Some bosses hit hard enough that a Paladin makes a weaker physical tank for them than a Warrior or Feral Druid. For the **boss-tanking roles** of a boss on the list below — the roles that tank the boss itself, **not** its adds — Paladin tanks are **softly avoided**: each such slot prefers a non-Paladin tank, and a Paladin takes one only when no non-Paladin tank is free to fill it. Add-tank roles (e.g., Lurker's Platform 1–3 Tanks, which hold the Coilfang Guardian adds) are exempt — any tank may hold them.
+
+**Hard-hitting bosses:** Morogrim Tidewalker (SSC), The Lurker Below (SSC). The list grows only on the user's instruction — add a boss here when designated.
+
+For each tank role on one of these bosses, apply a two-tier filter at step 1 of the *Assignment algorithm*, wrapping the role's base Eligibility:
+
+1. **Tier 1 — non-Paladin tanks.** Keep only roster tanks (members in this raid's `### Tanks`) whose `Class` column does not begin with `Paladin`, then run the role's normal selection (steps 2–4) over them under its base Eligibility (continuity, core-main-tank rotation, tank priority). This **reaches past the role's base pool** when that pool has no non-Paladin — e.g., a *Core main tank rotation* role widens to any non-Paladin roster tank, since the `Main tank`-flagged core tanks are currently all Paladins while the 3rd-tank core tank is a Warrior.
+2. **Tier 2 — include Paladins.** Only if Tier 1 leaves the slot unfillable (no non-Paladin tank free for it), restore the role's full base pool including Paladins and run the normal selection.
+
+The avoidance is **soft and roster-bounded**: it reorders only players already tanking this raid — it never pulls a non-tank into a tank role (that is comp flex, `rules/01-raid-compositions.md`, out of scope here per *When to run*) and never leaves a tank slot empty to dodge a Paladin. A Paladin filling a slot under Tier 2 is expected, not a hard-constraint failure — no step-5 flag fires for it. An explicit user assignment overrides the avoidance, like any soft preference.
 
 #### Class preferences (preferred class wins over continuity)
 
@@ -266,11 +279,16 @@ If the user later wants to track any of the above, add the role to the canonical
 
 #### The Lurker Below
 
-| Role        | Eligibility requirement                                                    | Count | Notes                                                                    |
-|-------------|----------------------------------------------------------------------------|-------|--------------------------------------------------------------------------|
-| Main Tank   | Core main tank rotation (see *Common framework → Core main tank rotation*) | 1     |                                                                          |
-| Off Tank    | Core main tank rotation (see *Common framework → Core main tank rotation*) | 1     |                                                                          |
-| Platform CC | Class-first batching (see *Lurker Platform CC assignment* below)           | 4     | 2 CCs on Platform 1, 2 on Platform 2; the third platform requires no CC. |
+Main Tank and Off Tank follow the Paladin tank soft-avoidance for hard-hitting bosses — see *Common framework → Hard-hitting bosses (Paladin tank soft-avoidance)*.
+
+| Role            | Eligibility requirement                                                    | Count | Notes                                                                    |
+|-----------------|----------------------------------------------------------------------------|-------|--------------------------------------------------------------------------|
+| Main Tank       | Core main tank rotation (see *Common framework → Core main tank rotation*) | 1     |                                                                          |
+| Off Tank        | Core main tank rotation (see *Common framework → Core main tank rotation*) | 1     |                                                                          |
+| Platform 1 Tank | Any tank                                                                   | 1     | Submerge phase: holds the Platform 1 Coilfang Guardian. See *Lurker platform tank assignment* below. |
+| Platform 2 Tank | Any tank                                                                   | 1     | Submerge phase: holds the Platform 2 Coilfang Guardian. See *Lurker platform tank assignment* below. |
+| Platform 3 Tank | Any tank                                                                   | 1     | Submerge phase: holds the Platform 3 Coilfang Guardian. See *Lurker platform tank assignment* below. |
+| Platform CC     | Class-first batching (see *Lurker Platform CC assignment* below)           | 4     | 2 CCs on Platform 1, 2 on Platform 2; the third platform requires no CC. |
 
 #### Leotheras the Blind
 
@@ -301,6 +319,8 @@ A 4-mini-boss council fight (Karathress and 3 lieutenants — see table below). 
 
 #### Morogrim Tidewalker
 
+Main Tank and Off Tank follow the Paladin tank soft-avoidance for hard-hitting bosses — see *Common framework → Hard-hitting bosses (Paladin tank soft-avoidance)*.
+
 | Role                | Eligibility requirement                                                    | Count | Notes                                                                 |
 |---------------------|----------------------------------------------------------------------------|-------|-----------------------------------------------------------------------|
 | Main Tank           | Core main tank rotation (see *Common framework → Core main tank rotation*) | 1     |                                                                       |
@@ -313,13 +333,17 @@ A 4-mini-boss council fight (Karathress and 3 lieutenants — see table below). 
 
 #### Lady Vashj
 
-| Role             | Eligibility requirement                                                    | Count | Notes                     |
-|------------------|----------------------------------------------------------------------------|-------|---------------------------|
-| Main Tank        | Core main tank rotation (see *Common framework → Core main tank rotation*) | 1     |                           |
-| Off Tank #1      | Core main tank rotation (see *Common framework → Core main tank rotation*) | 1     |                           |
-| Off Tank #2      | Any other tank in the roster; 3rd core tank preferred                      | 1     |                           |
-| Main Tank Healer | Any healer; Paladin/Druid preferred                                        | 2     | Focused on the boss tank. |
-| Strider Kiter    | Tier-by-tier class chain (see *Lady Vashj Strider Kiter assignment* below) | 1     |                           |
+| Role                | Eligibility requirement                                                    | Count | Notes                                                                                                                |
+|---------------------|----------------------------------------------------------------------------|-------|--------------------------------------------------------------------------------------------------------------------|
+| Main Tank           | Core main tank rotation (see *Common framework → Core main tank rotation*) | 1     |                                                                                                                    |
+| Off Tank #1         | Core main tank rotation (see *Common framework → Core main tank rotation*) | 1     |                                                                                                                    |
+| Off Tank #2         | Any other tank in the roster; 3rd core tank preferred                      | 1     |                                                                                                                    |
+| Main Tank Healer    | Any healer; Paladin/Druid preferred                                        | 2     | Focused on the boss tank.                                                                                          |
+| Grounding Totem     | **Must be an Enhancement Shaman**                                          | 1     | Grounding Totem by the Main Tank. Soft — leaves `—` if none. See *Lady Vashj Grounding Totem assignment* below.    |
+| Strider Kiter       | Tier-by-tier class chain (see *Lady Vashj Strider Kiter assignment* below) | 1     |                                                                                                                    |
+| Quadrant Ranged DPS | Class-first batching (see *Lady Vashj quadrant assignment* below)          | 4     | Phase 2: one ranged DPS per quadrant (Q1–Q4), Hunter preferred.                                                   |
+| Quadrant Melee DPS  | Any melee DPS (see *Lady Vashj quadrant assignment* below)                 | 4     | Phase 2: one melee DPS per quadrant (Q1–Q4).                                                                       |
+| Quadrant Healer     | Any healer (see *Lady Vashj quadrant assignment* below)                    | 4     | Phase 2: one healer per quadrant (Q1–Q4).                                                                          |
 
 ### Per-role assignment details
 
@@ -330,6 +354,16 @@ Frost Tank, Nature Tank, and Adds Tank are **named-player hard requirements** (t
 #### Lurker Below Platform CC assignment
 
 4 single-player CC slots distributed across two platforms: **Platform 1 CC #1** and **Platform 1 CC #2** on Platform 1; **Platform 2 CC #1** and **Platform 2 CC #2** on Platform 2. The third platform requires no CC. **Class-first batching** (mechanic per *Common framework → Class-first batching (multi-slot)*) over three tiers: **Tier 1: Mage**, **Tier 2: Warlock**, **Tier 3: Hunter**. Batching exhausts each tier across all 4 slots in order Platform 1 CC #1 → Platform 1 CC #2 → Platform 2 CC #1 → Platform 2 CC #2.
+
+#### Lurker platform tank assignment
+
+Three single-player tank roles — **Platform 1 Tank**, **Platform 2 Tank**, **Platform 3 Tank** — each holding the Coilfang Guardian on its platform during Lurker's **submerge phase**. Step 1 filters to roster tanks (`### Tanks`); run the general five-step algorithm per role (continuity per platform, then step-4 fallback).
+
+**Phase grouping (emerge vs submerge).** Main Tank and Off Tank are **emerge-phase** roles; the three platform tanks and Platform CC are **submerge-phase**. No-double-booking applies *within* each phase group but **not across** (per *Common framework → Assignment algorithm* within-phase exception) — a tank on Main Tank or Off Tank may also hold a platform tank, since the phases run at different times. The three platform tanks are distinct from each other.
+
+**Hard-hitting exemption.** As add tanks (not boss tanks), these slots are not subject to the Paladin soft-avoidance — see *Common framework → Hard-hitting bosses (Paladin tank soft-avoidance)*.
+
+**Slot count.** Counting submerge-phase reuse of the emerge tanks, the three platforms fill whenever the roster has 3+ tanks. If the roster has fewer tanks than platforms, fill in order Platform 1 → 2 → 3 and leave the rest `—` (flag per step 5).
 
 #### Leotheras Warlock Tank assignment
 
@@ -383,6 +417,24 @@ Single-player role. **Tier-by-tier class chain** (mechanic per *Common framework
 - **Tier 1: Elemental Shaman.** Filter to roster members whose `Class` column in `## Actual Roster` begins with `Shaman (Elemental)` and who are in the `### DPS` sub-table.
 - **Tier 2: Warlock.** Filter to roster Warlocks.
 - **Tier 3: Shadow Priest.** Filter to roster members whose `Class` column in `## Actual Roster` begins with `Priest` and who are in the `### DPS` sub-table.
+
+#### Lady Vashj Grounding Totem assignment
+
+Single-player role; **soft**. An Enhancement Shaman in melee range keeps a Grounding Totem down by the Main Tank to absorb a harmful cast aimed at the tank. Step-1 filter: roster members whose `Class` column in `## Actual Roster` begins with `Shaman (Enhancement)` and who are in the `### DPS` sub-table. Step 2 continuity, then step-4 fallback. **Soft fallback:** if no Enhancement Shaman is in the roster, leave the Player cell as `—` and do **not** flag — the raid leader covers it live. Boss-phase role (P1/P3); for cross-phase reuse, see the phase grouping in *Lady Vashj quadrant assignment* below.
+
+#### Lady Vashj quadrant assignment
+
+Phase 2 splits the raid across **four quadrants (Q1–Q4)**; each quadrant gets one ranged DPS (Hunter preferred), one melee DPS, and one healer to handle that quadrant's adds (Enchanted Elementals, Coilfang Elites/Striders). Three multi-slot roles, **slot index = quadrant number**:
+
+- **Quadrant Ranged DPS** (4 slots) — **class-first batching** (*Common framework → Class-first batching (multi-slot)*): **Tier 1 Hunter**, **Tier 2 any other ranged DPS** (any roster member whose spec this raid is a ranged DPS spec). Exhaust Hunters across Q1–Q4 before any other ranged DPS — with 4 Hunters in the roster, one lands in each quadrant.
+- **Quadrant Melee DPS** (4 slots) — filter to roster **melee DPS** (any roster member whose spec this raid is a melee DPS spec). Run the general five-step algorithm per slot; the no-double-booking rule keeps the four slots distinct.
+- **Quadrant Healer** (4 slots) — filter to **Healers**. Run the general five-step algorithm per slot. If the roster has fewer than 4 healers available (e.g., after the raid-leader exclusion), fill in order Q1 → Q4 and leave the rest `—`, then flag per step 5 — an unhealed quadrant is a real gap.
+
+**Phase grouping (Phase 2 vs boss phase).** The quadrant roles and **Strider Kiter** are **Phase-2** roles; Main Tank, Off Tank #1, Off Tank #2, Main Tank Healer, and Grounding Totem are **boss-phase** (P1/P3). No-double-booking applies *within* each phase group but **not across** (per *Common framework → Assignment algorithm* within-phase exception). Consequences: a Main Tank Healer may also be a Quadrant Healer; a Grounding-Totem Enhancement Shaman may also be a Quadrant Melee DPS; within Phase 2 the Strider Kiter and the quadrant slots are distinct players (Strider Kiter is processed first in table order, so it is excluded from Quadrant Ranged DPS).
+
+**Continuity.** Per-role (any prior hold of the same quadrant role); quadrant slot index is a record-keeping order — quadrants are symmetric, so a player need not return to the same numbered quadrant. These roles are new; no historical continuity bridge exists.
+
+**Recording.** The record file presents these picks **grouped by quadrant** (one row/bullet per quadrant, Q1–Q4), not by role-type — as with Platform CC, the rules-table role differs from the record's spatial grouping. The template (`reference/templates/ssc-record.md`) is the canonical presentation and holds the exact format.
 
 ### Intentionally out of scope (SSC)
 
