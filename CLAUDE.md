@@ -45,6 +45,7 @@ Content that does NOT belong in each file:
 - **Analyze screenshots thoroughly before asking.** When the user provides a screenshot, exhaust your own analysis first: zoom into details, cross-reference every visible icon, color, and label against `reference/class-colors-and-spec-icons.md` and `reference/icons/`, and re-read the relevant parsing steps in `reference/file-operations-manual.md`. Only ask the user about a screenshot's contents as a last resort, after the reference material genuinely cannot resolve the ambiguity.
 - **Demonstratives ("this", "here", "right here", etc.) usually mark a selection.** When the user uses a demonstrative, they're typically pointing at text they selected or at a file they have open — a marker the IDE normally attaches to the turn. If no such marker arrives and the referent isn't obvious from very recent conversation, **ask** the user whether they forgot to highlight — do not silently infer from file content. A missing marker usually means the user forgot to select text, not that the demonstrative is a loose pronoun; inferring risks editing the wrong file.
 - **Clarify deprecated terms.** If the user uses a term listed in `config/project.md` → "Terminology → Deprecated terms", ask which sense they mean rather than silently interpreting. The canonical list of deprecated terms lives in the glossary; do not restate the terms here.
+- **Call the §8 table the "target spec ranges".** When referring to the per-spec desired-headcount-range table (`reference/raid-composition-guide.md` §8) — in chat and in record-file prose — use its canonical name **target spec ranges** (`config/project.md` → Terminology), not "§8" / "Section 8", which are cryptic. A bare `§8` is fine only as a location pointer inside a cross-reference to the guide section.
 - **Default to he/him for player pronouns.** Don't infer gender from character names — they're not reliable signals. Use he/him in chat and record-file prose unless the player's `rules/04-players.md` Notes record confirmed pronouns; record them there when learned.
 
 ## File and git workflow
@@ -146,6 +147,38 @@ Applies to both steps:
 - **Report once, at the end of step 2** — after both steps have run. Surface every item needing the user's decision (deduplicate any item step 2's SSOT backstop re-detects from step 1) and briefly summarize what was fixed; the diff has the detail. If nothing needs a decision, a one-line confirmation is enough.
 
 Cleaning up the mechanical findings a deep check surfaces — in the uncommitted diff or in pre-existing content — is in scope, not gold-plating; it overrides the "mention it instead of fixing it" default in "Communication conventions → Stay within the scope of the prompt", because the review was explicitly requested.
+
+## Bench tier list
+
+A user-invoked, **read-only** analysis operation — triggered by **"possible bench tier list"** or any similar phrase whose core is **"bench tier"** (e.g. "bench tier list", "give me the bench tiers", "rank the benches in tiers", "possible bench tiers"). It produces a menu for the user to choose from; on its own it changes no file.
+
+### What it produces
+
+A tiered ranking of **who could be benched** for the raid under discussion, going beyond the single fair-rotation pick. Each deeper tier exposes the next bench candidate(s) by **relaxing one more rule**, cheapest-first. Use it when the user wants to weigh alternatives to the strict bench — to keep a specific player, force a class/spec count, and so on.
+
+### Inputs
+
+- The roster/bench context under discussion (the active record file, or the just-built roster).
+- Any **pins** the user gives: players forced to play (e.g. "4 hunters"), players forced off the bench (e.g. "keep Quoterlock"), or a forced composition. Pinned-in players leave the candidate pool; the tiers rank the rest.
+
+### Procedure
+
+1. **Tier 0** = the canonical fair-rotation bench per `rules/02-bench-rotation.md` (the same pick a build or recalculation would make), honoring the user's pins. No rule dropped.
+2. Build deeper tiers by relaxing the bench-selection rules in **reverse of their precedence in `rules/02`** — weakest tiebreaker first, hardest rule last. `rules/02` (with the composition protections in `rules/01-raid-compositions.md`) is the single source of truth for that precedence; the list below only walks it backwards:
+   1. Tiebreaker cascade **step 4** — alphabetical fallback (usually just the within-tier tiebreak, not a tier of its own).
+   2. Cascade **step 3** — target spec ranges, within-class nudge (25-man Pass 2 / Karazhan Tier 2).
+   3. Cascade **step 2** — cross-location bench total.
+   4. Cascade **step 1** — target spec ranges, boundary-crossing (25-man Pass 1 / Karazhan Tier 1).
+   5. **Bench Catch-up** rule (per-location cumulative count).
+   6. **Back-to-back** bench protection.
+   7. **Composition soft protections** — the 2-Mage protection; per-location soft targets (`rules/01`).
+   8. **Hard floor** (manual override only) — the priority-1 guarantee; composition caps.
+3. **Skip** a tier whose rule distinguishes no candidate this raid (e.g. nobody holds back-to-back protection). Order candidates **within** a tier by who fair rotation benches first.
+4. Per tier, state the **candidate(s)**, the **rule relaxed**, and the **cost** — what the bench does to the target spec ranges, to fairness, or to encounters (flag any candidate holding an encounter role, since moving them reshuffles `## Encounter assignments`).
+
+### Output
+
+A compact table — **Tier · Candidate(s) · Rule dropped · Cost** — cheapest-first, ending at the hard-rule floor; call out the single next bench after the strict pick. Make **no** file changes. If the user then picks a tier or player, apply it via `Event: Full-roster recalculation` or `Event: Quick (ad-hoc) roster update` (`reference/file-operations-manual.md`).
 
 ## Before generating a raid roster
 

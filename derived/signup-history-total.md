@@ -111,6 +111,7 @@ A player's sub-table here is determined solely by their top-level grouping in `r
 | 37 | Quoterlock              | 2       |
 | 38 | Stephan(Tímmâ/Toadward) | 2       |
 | 39 | Gyrodorei               | 1       |
+| 40 | SydM107                 | 1       |
 
 ### Former members
 
