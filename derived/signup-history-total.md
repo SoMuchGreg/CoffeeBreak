@@ -55,62 +55,62 @@ A player's sub-table here is determined solely by their top-level grouping in `r
 
 | # | Player               | Signups |
 |---|----------------------|---------|
-| 1 | Greg(Ucannotpass)    | 36      |
-| 2 | Adam(Kres/Dissi)     | 33      |
-| 3 | Mark(Roossy/Keatala) | 26      |
+| 1 | Greg(Ucannotpass)    | 37      |
+| 2 | Adam(Kres/Dissi)     | 34      |
+| 3 | Mark(Roossy/Keatala) | 27      |
 | 4 | Guðjón(Jarðepli)     | 24      |
-| 5 | Emil(Ostbirger)      | 22      |
+| 5 | Emil(Ostbirger)      | 23      |
 
 ### Core tanks
 
 | # | Player           | Signups |
 |---|------------------|---------|
-| 1 | Marino(Varthier) | 36      |
-| 2 | Kamil(Gigakox)   | 19      |
+| 1 | Marino(Varthier) | 37      |
+| 2 | Kamil(Gigakox)   | 20      |
 
 ### Current members
 
 | #  | Player                  | Signups |
 |----|-------------------------|---------|
-| 1  | Mathias(Vaelruna)       | 35      |
-| 2  | Steven(Gresac/Younea)   | 35      |
-| 3  | Sören(Verysadge)        | 34      |
-| 4  | Yxanb                   | 28      |
-| 5  | Thordrel                | 27      |
-| 6  | Beaverfist              | 26      |
-| 7  | Piotr(Bergamotka)       | 26      |
+| 1  | Mathias(Vaelruna)       | 36      |
+| 2  | Steven(Gresac/Younea)   | 36      |
+| 3  | Sören(Verysadge)        | 35      |
+| 4  | Yxanb                   | 29      |
+| 5  | Thordrel                | 28      |
+| 6  | Beaverfist              | 27      |
+| 7  | Piotr(Bergamotka)       | 27      |
 | 8  | Dankyn                  | 25      |
-| 9  | Jabbadhutt              | 23      |
-| 10 | Pergatori               | 23      |
-| 11 | Ebonybolt               | 22      |
+| 9  | Jabbadhutt              | 24      |
+| 10 | Pergatori               | 24      |
+| 11 | Ebonybolt               | 23      |
 | 12 | Lynelen                 | 22      |
-| 13 | Lightweit               | 19      |
-| 14 | CptKavior               | 18      |
+| 13 | Lightweit               | 20      |
+| 14 | CptKavior               | 19      |
 | 15 | Heligeman               | 17      |
 | 16 | McHughes                | 17      |
 | 17 | Saskia(Siljes)          | 16      |
-| 18 | Shapkica                | 12      |
-| 19 | BestPractice            | 11      |
-| 20 | McJudgin                | 11      |
-| 21 | Tim(Tiinar)             | 11      |
+| 18 | Shapkica                | 13      |
+| 19 | Tim(Tiinar)             | 12      |
+| 20 | BestPractice            | 11      |
+| 21 | McJudgin                | 11      |
 | 22 | Tonz/Tonsen             | 11      |
-| 23 | Rickard(Benglock)       | 9       |
+| 23 | Rickard(Benglock)       | 10      |
 | 24 | Leontes                 | 8       |
 | 25 | Mark(Mellymel)          | 8       |
 | 26 | Dwarfytron              | 7       |
-| 27 | Boriest                 | 6       |
-| 28 | David(Nemajumarad)      | 6       |
-| 29 | Doughball               | 6       |
-| 30 | Jordan(Grundiger)       | 6       |
-| 31 | TJ(Animustenax)         | 6       |
-| 32 | Sjwammie                | 4       |
-| 33 | Yorekbarn               | 4       |
-| 34 | Medianos                | 3       |
-| 35 | Silverpilen             | 3       |
-| 36 | Gyrodorei               | 1       |
-| 37 | loranzoo                | 1       |
-| 38 | Quoterlock              | 1       |
-| 39 | Stephan(Tímmâ/Toadward) | 1       |
+| 27 | TJ(Animustenax)         | 7       |
+| 28 | Boriest                 | 6       |
+| 29 | David(Nemajumarad)      | 6       |
+| 30 | Doughball               | 6       |
+| 31 | Jordan(Grundiger)       | 6       |
+| 32 | Silverpilen             | 4       |
+| 33 | Sjwammie                | 4       |
+| 34 | Yorekbarn               | 4       |
+| 35 | Medianos                | 3       |
+| 36 | loranzoo                | 2       |
+| 37 | Quoterlock              | 2       |
+| 38 | Stephan(Tímmâ/Toadward) | 2       |
+| 39 | Gyrodorei               | 1       |
 
 ### Former members
 

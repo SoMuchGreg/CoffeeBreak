@@ -262,6 +262,10 @@ A 25-man raid **always runs**, regardless of how few players sign up. There is n
 - Resto Druids benched under this cap are still subject to fair bench rotation; how the cap interacts with rotation — which Resto Druid sits, why a capped player's cumulative bench count outpaces others over time without that being a fairness failure, and that the cap never displaces a priority-1 player — lives in `rules/02-bench-rotation.md` → "Composition caps override pure fairness". We have a relatively large Resto Druid pool, so this cap fires often.
 - This cap does **not** apply when 5 or fewer healers sign up — in that case, all signed-up Resto Druids may play (subject to the raid's healer slot count).
 
+#### 2-Mage protection (TK and SSC)
+
+**TK** and **SSC** each target **2 Mages** (soft rule — see each location's section below). Wherever that target applies, the first 2 Mages are protected from benching: prefer to bench a non-Mage DPS over a Mage **only while benching the Mage would drop the raid below 2 Mages** — the protection secures the first 2 Mages and no more. A 3rd-or-later Mage is unprotected and benched like any other DPS by the standard tiebreaker cascade (`rules/02-bench-rotation.md` → "Tiebreaker cascade"). When the protection applies, it overrides the **entire** cascade — including the cross-location bench total (cascade step 2) — so the 2-Mage core is never benched while any non-Mage DPS could sit instead.
+
 #### Split-location raid nights
 
 When a single raid night attempts bosses from two or more 25-man raid locations, the composition target is **derived from the planned boss list** rather than from a single location's default — canonical rule: `rules/06-split-location-nights.md` → "Composition target".
@@ -285,10 +289,12 @@ The 4th tank covers Fathom Lord Karathress's fourth mini-boss tank role — see 
 
 **The 4th tank is never a core tank** — the Core tanks cap is 3 (`Core tanks → Cap: at most 3 core tanks` above). It is sourced via the standard role-shortage flow: Resort 2 (comp flex) — a DPS-with-tank-offspec player (Paladin, Druid, or Warrior with Tank offspec) flexes into the 4th tank slot — and, only if Resort 2 yields no tank flex, Resort 3 (alt swap) — an alt-bearer whose alt is a tank.
 
+**2 Mages** (if possible — soft rule, depends on signups). Within the project-wide Fire/Arcane Mage 1-2 range (`reference/raid-composition-guide.md` § 8), SSC targets the upper end; the first 2 are protected from benching per "2-Mage protection (TK and SSC)" above.
+
 SSC additionally carries per-encounter role assignments — see `rules/05-encounter-assignments.md` → "SSC".
 
 ### Tempest Keep (TK)
 
 Uses the **default 25-man composition** (see "25-man raids → General → Default composition" above).
 
-**2 Mages** (if possible — soft rule, depends on signups). Within the project-wide Fire/Arcane Mage 1-2 range (`reference/raid-composition-guide.md` § 8), TK targets the upper end. **Enforcement:** prefer to bench a non-Mage DPS over a Mage **only while benching the Mage would drop the raid below 2 Mages** — the protection secures the first 2 Mages and no more. A 3rd-or-later Mage is unprotected and benched like any other DPS by the standard tiebreaker cascade (`rules/02-bench-rotation.md` → "Tiebreaker cascade"). When the protection does apply, it overrides the **entire** cascade — including the cross-location bench total (cascade step 2) — for TK only, so the 2-Mage core is never benched while any non-Mage DPS could sit instead.
+**2 Mages** (if possible — soft rule, depends on signups). Within the project-wide Fire/Arcane Mage 1-2 range (`reference/raid-composition-guide.md` § 8), TK targets the upper end; the first 2 are protected from benching per "2-Mage protection (TK and SSC)" above.
