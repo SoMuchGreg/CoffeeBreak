@@ -66,32 +66,32 @@ Currently empty. Kept so a Regular player promoted to priority `1` has a place t
 
 #### Raiders
 
-| #  | Player                  | Character(s)    | Class   | Mainspec (role)    | Offspec (role)    | Priority | Notes                                                                 |
-|----|-------------------------|-----------------|---------|--------------------|-------------------|----------|-----------------------------------------------------------------------|
-| 1  | Beaverfist              | Beaverfist      | Druid   | Healer             | DPS (Balance)     | 2        | First line offspec                                                    |
-| 2  | Shapkica                | Shapkica        | Druid   | DPS (Feral)        | Tank (Feral)      | 2        | Eager offspec                                                         |
-| 3  | Stephan(Tímmâ/Toadward) | Tímmâ, Toadward | Druid   | DPS (Balance)      | Healer            | 2        | Eager offspec                                                         |
-| 4  | Yxanb                   | Yxanb           | Druid   | DPS (Feral)        | Tank (Feral)      | 2        | Reluctant offspec                                                     |
-| 5  | loranzoo                | loranzoo        | Hunter  | DPS (Beastmastery) | ?                 | 2        | Decide whether to downgrade to member by 2026-07-12                   |
-| 6  | Mathias(Vaelruna)       | Vaelruna        | Hunter  | DPS (Beastmastery) | —                 | 2        |                                                                       |
-| 7  | Silverpilen             | Silverpilen     | Hunter  | DPS (Beastmastery) | —                 | 2        |                                                                       |
-| 8  | SydM107                 | SydM107         | Mage    | DPS (Arcane)       | ?                 | 2        | Decide whether to downgrade to member by 2026-07-15                   |
-| 9  | TJ(Animustenax)         | Animustenax     | Mage    | DPS (Arcane)       | —                 | 2        | Also referred to as Ani; she/her                                      |
-| 10 | Heligeman               | Heligeman       | Paladin | Healer             | —                 | 2        | Often addressed as Helige                                             |
-| 11 | Thordrel                | Thordrel        | Paladin | Healer             | —                 | 2        |                                                                       |
-| 12 | Lightweit               | Lightweit       | Priest  | Healer             | —                 | 2        |                                                                       |
-| 13 | Saskia(Siljes)          | Siljes          | Priest  | Healer             | DPS               | 2        | Eager offspec                                                         |
-| 14 | Tim(Tiinar)             | Tiinar          | Rogue   | DPS (Combat)       | —                 | 2        |                                                                       |
-| 15 | Ebonybolt               | Ebonybolt       | Shaman  | DPS (Enhancement)  | Healer            | 2        | Ok to offspec                                                         |
-| 16 | Pergatori               | Pergatori       | Shaman  | Healer             | DPS (Elemental)   | 2        | First line offspec                                                    |
-| 17 | Piotr(Bergamotka)       | Bergamotka      | Shaman  | DPS (Enhancement)  | DPS (Elemental)   | 2        | Ok to offspec                                                         |
-| 18 | Steven(Gresac/Younea)   | Younea, Gresac  | Shaman  | DPS (Elemental)    | Healer            | 2        | First line offspec. Druid alt (Gresac) — see Alt characters sub-table |
-| 19 | Jabbadhutt              | Jabbadhutt      | Warlock | DPS (Destruction)  | DPS (Affliction)  | 2        |                                                                       |
-| 20 | Quoterlock              | Quoter          | Warlock | DPS (Affliction)   | DPS (Destruction) | 2        | Decide whether to downgrade to member by 2026-07-12                   |
-| 21 | Rickard(Benglock)       | Benglock        | Warlock | DPS (Destruction)  | —                 | 2        |                                                                       |
-| 22 | CptKavior               | CptKavior       | Warrior | DPS (Fury)         | Tank              | 2        | First line offspec                                                    |
-| 23 | Dankyn                  | Dankyn          | Warrior | DPS (Fury)         | Tank              | 2        | Reluctant offspec                                                     |
-| 24 | Sören(Verysadge)        | Verysadge       | Warrior | DPS (Fury)         | —                 | 2        |                                                                       |
+| #  | Player                  | Character(s)    | Class   | Mainspec (role)    | Offspec (role)    | Priority | Notes                                                                                         |
+|----|-------------------------|-----------------|---------|--------------------|-------------------|----------|-----------------------------------------------------------------------------------------------|
+| 1  | Beaverfist              | Beaverfist      | Druid   | Healer             | DPS (Balance)     | 2        | First line offspec                                                                            |
+| 2  | Shapkica                | Shapkica        | Druid   | DPS (Feral)        | Tank (Feral)      | 2        | Eager offspec                                                                                 |
+| 3  | Stephan(Tímmâ/Toadward) | Tímmâ, Toadward | Druid   | DPS (Balance)      | Healer            | 2        | Eager offspec                                                                                 |
+| 4  | Yxanb                   | Yxanb           | Druid   | DPS (Feral)        | Tank (Feral)      | 2        | Reluctant offspec                                                                             |
+| 5  | loranzoo                | loranzoo        | Hunter  | DPS (Beastmastery) | ?                 | 2        | Decide whether to downgrade to member by 2026-07-12                                           |
+| 6  | Mathias(Vaelruna)       | Vaelruna        | Hunter  | DPS (Beastmastery) | —                 | 2        |                                                                                               |
+| 7  | Silverpilen             | Silverpilen     | Hunter  | DPS (Beastmastery) | —                 | 2        |                                                                                               |
+| 8  | Thomas(PowerBlastin)    | PowerBlastin    | Mage    | DPS (Arcane)       | ?                 | 2        | Decide whether to downgrade to member by 2026-07-15. Sometimes signs up as SydM107 on Discord |
+| 9  | TJ(Animustenax)         | Animustenax     | Mage    | DPS (Arcane)       | —                 | 2        | Also referred to as Ani; she/her                                                              |
+| 10 | Heligeman               | Heligeman       | Paladin | Healer             | —                 | 2        | Often addressed as Helige                                                                     |
+| 11 | Thordrel                | Thordrel        | Paladin | Healer             | —                 | 2        |                                                                                               |
+| 12 | Lightweit               | Lightweit       | Priest  | Healer             | —                 | 2        |                                                                                               |
+| 13 | Saskia(Siljes)          | Siljes          | Priest  | Healer             | DPS               | 2        | Eager offspec                                                                                 |
+| 14 | Tim(Tiinar)             | Tiinar          | Rogue   | DPS (Combat)       | —                 | 2        |                                                                                               |
+| 15 | Ebonybolt               | Ebonybolt       | Shaman  | DPS (Enhancement)  | Healer            | 2        | Ok to offspec                                                                                 |
+| 16 | Pergatori               | Pergatori       | Shaman  | Healer             | DPS (Elemental)   | 2        | First line offspec                                                                            |
+| 17 | Piotr(Bergamotka)       | Bergamotka      | Shaman  | DPS (Enhancement)  | DPS (Elemental)   | 2        | Ok to offspec                                                                                 |
+| 18 | Steven(Gresac/Younea)   | Younea, Gresac  | Shaman  | DPS (Elemental)    | Healer            | 2        | First line offspec. Druid alt (Gresac) — see Alt characters sub-table                         |
+| 19 | Jabbadhutt              | Jabbadhutt      | Warlock | DPS (Destruction)  | DPS (Affliction)  | 2        |                                                                                               |
+| 20 | Quoterlock              | Quoter          | Warlock | DPS (Affliction)   | DPS (Destruction) | 2        | Decide whether to downgrade to member by 2026-07-12                                           |
+| 21 | Rickard(Benglock)       | Benglock        | Warlock | DPS (Destruction)  | —                 | 2        |                                                                                               |
+| 22 | CptKavior               | CptKavior       | Warrior | DPS (Fury)         | Tank              | 2        | First line offspec                                                                            |
+| 23 | Dankyn                  | Dankyn          | Warrior | DPS (Fury)         | Tank              | 2        | Reluctant offspec                                                                             |
+| 24 | Sören(Verysadge)        | Verysadge       | Warrior | DPS (Fury)         | —                 | 2        |                                                                                               |
 
 #### Members
 

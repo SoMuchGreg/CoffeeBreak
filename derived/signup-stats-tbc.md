@@ -68,7 +68,7 @@ A withdrawal or no-show that pulls a player out of their latest `## Signups` is 
 | 6  | Silverpilen             | Raider    | 2026-05-31   | 4       | 100.0%            | 40.0%              | 0                         |
 | 7  | Stephan(Tímmâ/Toadward) | Raider    | 2026-06-07   | 2       | 100.0%            | 20.0%              | 0                         |
 | 8  | Steven(Gresac/Younea)   | Raider    | 2026-02-22   | 34      | 100.0%            | 100.0%             | 0                         |
-| 9  | SydM107                 | Raider    | 2026-06-10   | 1       | 100.0%            | 10.0%              | 0                         |
+| 9  | Thomas(PowerBlastin)    | Raider    | 2026-06-10   | 1       | 100.0%            | 10.0%              | 0                         |
 | 10 | Tim(Tiinar)             | Raider    | 2026-05-06   | 12      | 100.0%            | 100.0%             | 0                         |
 | 11 | Yxanb                   | Raider    | 2026-03-04   | 29      | 96.7%             | 100.0%             | 0                         |
 | 12 | Pergatori               | Raider    | 2026-03-22   | 24      | 96.0%             | 90.0%              | 0                         |
