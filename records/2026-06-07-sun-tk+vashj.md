@@ -179,7 +179,7 @@
 ## Notes
 
 - **Split-location night** (per `rules/06-split-location-nights.md`): first 3 TK bosses (Al'ar, Void Reaver, High Astromancer Solarian, skipping Kael'Thas) then SSC's Lady Vashj. Primary location TK. Derived target 3/5/17 (Karathress not planned → no 4-tank override). Bench tracking would hit the TK column only — moot, no bench.
-- **New players** (all added to `rules/04-players.md` → Raiders, priority 2, trial note `Decide whether to downgrade to member by 2026-07-12`):
+- **New players** (all added to `rules/04-players.md` → Raiders, priority 2, trial note `Decide to machine-demote or ingame-promote by 2026-07-12`):
   - **Stephan(Tímmâ)** — Druid, DPS (Balance). Canonical name read from the screenshot guild-tag rendering; confirm if needed.
   - **loranzoo** — Hunter, DPS (Beastmastery).
   - **Quoterlock** — Warlock, DPS (Destruction).

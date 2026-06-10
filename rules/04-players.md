@@ -26,7 +26,7 @@ Priority is a property of the player, not of a specific raid. It changes only wh
 
 **Default priority for new players: `2`.** When a player who isn't already in the roster table appears in a Discord signup screenshot, ask the user for their class and mainspec, then add them to the **Raiders** sub-table unless the user explicitly says otherwise. Mainspec must come from the user — do not infer it from the signup icon (per `rules/01-raid-compositions.md` → "Role placement: mainspec is authoritative"). Do not guess priority `1` (always plays) or priority `3` (last resort) without explicit user instruction.
 
-**Trial period for new Raiders.** When a new player is added to the Raiders sub-table (priority `2`), fill their `Notes` cell with `Decide whether to downgrade to member by YYYY-MM-DD` — date exactly 5 weeks after the first raid the player signs up for (typically the raid whose signup screenshot revealed them, i.e., the date of the record file being created when the row is added). If the row is added before any signup is known, write `Decide whether to downgrade to member by ?` and substitute the computed date on their first signup. Applies only to new additions to the players list — not to existing players whose priority changes to `2` later.
+**Trial period for new Raiders.** A trial recruit gets a quiet benefit of the doubt: treated as a **Raider** for roster purposes while holding the **Member** rank in-game. When the trial ends, one of the two has to change — **machine-demote** (move them to the Members sub-table, matching their in-game rank) or **ingame-promote** (promote them to Raider in-game, matching this table). Either way, remove the note once decided. When a new player is added to the Raiders sub-table (priority `2`), fill their `Notes` cell with `Decide to machine-demote or ingame-promote by YYYY-MM-DD` — date exactly 5 weeks after the first raid the player signs up for (typically the raid whose signup screenshot revealed them, i.e., the date of the record file being created when the row is added). If the row is added before any signup is known, write `Decide to machine-demote or ingame-promote by ?` and substitute the computed date on their first signup. Applies only to new additions to the players list — not to existing players whose priority changes to `2` later.
 
 ## Known player roster
 
@@ -66,32 +66,32 @@ Currently empty. Kept so a Regular player promoted to priority `1` has a place t
 
 #### Raiders
 
-| #  | Player                  | Character(s)    | Class   | Mainspec (role)    | Offspec (role)    | Priority | Notes                                                                                         |
-|----|-------------------------|-----------------|---------|--------------------|-------------------|----------|-----------------------------------------------------------------------------------------------|
-| 1  | Beaverfist              | Beaverfist      | Druid   | Healer             | DPS (Balance)     | 2        | First line offspec                                                                            |
-| 2  | Shapkica                | Shapkica        | Druid   | DPS (Feral)        | Tank (Feral)      | 2        | Eager offspec                                                                                 |
-| 3  | Stephan(Tímmâ/Toadward) | Tímmâ, Toadward | Druid   | DPS (Balance)      | Healer            | 2        | Eager offspec                                                                                 |
-| 4  | Yxanb                   | Yxanb           | Druid   | DPS (Feral)        | Tank (Feral)      | 2        | Reluctant offspec                                                                             |
-| 5  | loranzoo                | loranzoo        | Hunter  | DPS (Beastmastery) | ?                 | 2        | Decide whether to downgrade to member by 2026-07-12                                           |
-| 6  | Mathias(Vaelruna)       | Vaelruna        | Hunter  | DPS (Beastmastery) | —                 | 2        |                                                                                               |
-| 7  | Silverpilen             | Silverpilen     | Hunter  | DPS (Beastmastery) | —                 | 2        |                                                                                               |
-| 8  | Thomas(PowerBlastin)    | PowerBlastin    | Mage    | DPS (Arcane)       | ?                 | 2        | Decide whether to downgrade to member by 2026-07-15. Sometimes signs up as SydM107 on Discord |
-| 9  | TJ(Animustenax)         | Animustenax     | Mage    | DPS (Arcane)       | —                 | 2        | Also referred to as Ani; she/her                                                              |
-| 10 | Heligeman               | Heligeman       | Paladin | Healer             | —                 | 2        | Often addressed as Helige                                                                     |
-| 11 | Thordrel                | Thordrel        | Paladin | Healer             | —                 | 2        |                                                                                               |
-| 12 | Lightweit               | Lightweit       | Priest  | Healer             | —                 | 2        |                                                                                               |
-| 13 | Saskia(Siljes)          | Siljes          | Priest  | Healer             | DPS               | 2        | Eager offspec                                                                                 |
-| 14 | Tim(Tiinar)             | Tiinar          | Rogue   | DPS (Combat)       | —                 | 2        |                                                                                               |
-| 15 | Ebonybolt               | Ebonybolt       | Shaman  | DPS (Enhancement)  | Healer            | 2        | Ok to offspec                                                                                 |
-| 16 | Pergatori               | Pergatori       | Shaman  | Healer             | DPS (Elemental)   | 2        | First line offspec                                                                            |
-| 17 | Piotr(Bergamotka)       | Bergamotka      | Shaman  | DPS (Enhancement)  | DPS (Elemental)   | 2        | Ok to offspec                                                                                 |
-| 18 | Steven(Gresac/Younea)   | Younea, Gresac  | Shaman  | DPS (Elemental)    | Healer            | 2        | First line offspec. Druid alt (Gresac) — see Alt characters sub-table                         |
-| 19 | Jabbadhutt              | Jabbadhutt      | Warlock | DPS (Destruction)  | DPS (Affliction)  | 2        |                                                                                               |
-| 20 | Quoterlock              | Quoter          | Warlock | DPS (Affliction)   | DPS (Destruction) | 2        | Decide whether to downgrade to member by 2026-07-12                                           |
-| 21 | Rickard(Benglock)       | Benglock        | Warlock | DPS (Destruction)  | —                 | 2        |                                                                                               |
-| 22 | CptKavior               | CptKavior       | Warrior | DPS (Fury)         | Tank              | 2        | First line offspec                                                                            |
-| 23 | Dankyn                  | Dankyn          | Warrior | DPS (Fury)         | Tank              | 2        | Reluctant offspec                                                                             |
-| 24 | Sören(Verysadge)        | Verysadge       | Warrior | DPS (Fury)         | —                 | 2        |                                                                                               |
+| #  | Player                  | Character(s)    | Class   | Mainspec (role)    | Offspec (role)    | Priority | Notes                                                                                              |
+|----|-------------------------|-----------------|---------|--------------------|-------------------|----------|----------------------------------------------------------------------------------------------------|
+| 1  | Beaverfist              | Beaverfist      | Druid   | Healer             | DPS (Balance)     | 2        | First line offspec                                                                                 |
+| 2  | Shapkica                | Shapkica        | Druid   | DPS (Feral)        | Tank (Feral)      | 2        | Eager offspec                                                                                      |
+| 3  | Stephan(Tímmâ/Toadward) | Tímmâ, Toadward | Druid   | DPS (Balance)      | Healer            | 2        | Eager offspec                                                                                      |
+| 4  | Yxanb                   | Yxanb           | Druid   | DPS (Feral)        | Tank (Feral)      | 2        | Reluctant offspec                                                                                  |
+| 5  | loranzoo                | loranzoo        | Hunter  | DPS (Beastmastery) | ?                 | 2        | Decide to machine-demote or ingame-promote by 2026-07-12                                           |
+| 6  | Mathias(Vaelruna)       | Vaelruna        | Hunter  | DPS (Beastmastery) | —                 | 2        |                                                                                                    |
+| 7  | Silverpilen             | Silverpilen     | Hunter  | DPS (Beastmastery) | —                 | 2        |                                                                                                    |
+| 8  | Thomas(PowerBlastin)    | PowerBlastin    | Mage    | DPS (Arcane)       | ?                 | 2        | Decide to machine-demote or ingame-promote by 2026-07-15. Sometimes signs up as SydM107 on Discord |
+| 9  | TJ(Animustenax)         | Animustenax     | Mage    | DPS (Arcane)       | —                 | 2        | Also referred to as Ani; she/her                                                                   |
+| 10 | Heligeman               | Heligeman       | Paladin | Healer             | —                 | 2        | Often addressed as Helige                                                                          |
+| 11 | Thordrel                | Thordrel        | Paladin | Healer             | —                 | 2        |                                                                                                    |
+| 12 | Lightweit               | Lightweit       | Priest  | Healer             | —                 | 2        |                                                                                                    |
+| 13 | Saskia(Siljes)          | Siljes          | Priest  | Healer             | DPS               | 2        | Eager offspec                                                                                      |
+| 14 | Tim(Tiinar)             | Tiinar          | Rogue   | DPS (Combat)       | —                 | 2        |                                                                                                    |
+| 15 | Ebonybolt               | Ebonybolt       | Shaman  | DPS (Enhancement)  | Healer            | 2        | Ok to offspec                                                                                      |
+| 16 | Pergatori               | Pergatori       | Shaman  | Healer             | DPS (Elemental)   | 2        | First line offspec                                                                                 |
+| 17 | Piotr(Bergamotka)       | Bergamotka      | Shaman  | DPS (Enhancement)  | DPS (Elemental)   | 2        | Ok to offspec                                                                                      |
+| 18 | Steven(Gresac/Younea)   | Younea, Gresac  | Shaman  | DPS (Elemental)    | Healer            | 2        | First line offspec. Druid alt (Gresac) — see Alt characters sub-table                              |
+| 19 | Jabbadhutt              | Jabbadhutt      | Warlock | DPS (Destruction)  | DPS (Affliction)  | 2        |                                                                                                    |
+| 20 | Quoterlock              | Quoter          | Warlock | DPS (Affliction)   | DPS (Destruction) | 2        | Decide to machine-demote or ingame-promote by 2026-07-12                                           |
+| 21 | Rickard(Benglock)       | Benglock        | Warlock | DPS (Destruction)  | —                 | 2        |                                                                                                    |
+| 22 | CptKavior               | CptKavior       | Warrior | DPS (Fury)         | Tank              | 2        | First line offspec                                                                                 |
+| 23 | Dankyn                  | Dankyn          | Warrior | DPS (Fury)         | Tank              | 2        | Reluctant offspec                                                                                  |
+| 24 | Sören(Verysadge)        | Verysadge       | Warrior | DPS (Fury)         | —                 | 2        |                                                                                                    |
 
 #### Members
 
