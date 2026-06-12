@@ -91,7 +91,8 @@ Currently empty. Kept so a Regular player promoted to priority `1` has a place t
 | 21 | Rickard(Benglock)       | Benglock        | Warlock | DPS (Destruction)  | —                 | 2        |                                                                                                    |
 | 22 | CptKavior               | CptKavior       | Warrior | DPS (Fury)         | Tank              | 2        | First line offspec                                                                                 |
 | 23 | Dankyn                  | Dankyn          | Warrior | DPS (Fury)         | Tank              | 2        | Reluctant offspec                                                                                  |
-| 24 | Sören(Verysadge)        | Verysadge       | Warrior | DPS (Fury)         | —                 | 2        |                                                                                                    |
+| 24 | Lanoxian                | Lanoxian        | Warrior | DPS (Fury)         | —                 | 2        | Decide to machine-demote or ingame-promote by 2026-07-19                                           |
+| 25 | Sören(Verysadge)        | Verysadge       | Warrior | DPS (Fury)         | —                 | 2        |                                                                                                    |
 
 #### Members
 

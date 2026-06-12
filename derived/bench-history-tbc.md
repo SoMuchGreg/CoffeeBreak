@@ -34,18 +34,21 @@ All priority-1 healer-main players: 0 benches at every location. *(No priority-1
 
 ### Priority 2 — DPS+tank
 
-| Player                | Karazhan | Karazhan dates | Gruul+Mag | Gruul+Mag dates | SSC | SSC dates | TK | TK dates | Total |
-|-----------------------|----------|----------------|-----------|-----------------|-----|-----------|----|----------|-------|
-| CptKavior             | 1        | 08.04          | 1         | 15.04           | 0   | —         | 0  | —        | 2     |
-| Dankyn                | 1        | 29.04          | 0         | —               | 0   | —         | 0  | —        | 1     |
-| Ebonybolt             | 0        | —              | 1         | 03.05           | 1   | 20.05     | 0  | —        | 2     |
-| Piotr(Bergamotka)     | 1        | 29.04          | 0         | —               | 1   | 17.05     | 0  | —        | 2     |
-| Rickard(Benglock)     | 0        | —              | 0         | —               | 1   | 10.06     | 0  | —        | 1     |
-| Shapkica              | 0        | —              | 1         | 10.05           | 0   | —         | 0  | —        | 1     |
-| Sören(Verysadge)      | 0        | —              | 1         | 15.04           | 0   | —         | 0  | —        | 1     |
-| Steven(Gresac/Younea) | 2        | 22.04, 29.04   | 1         | 25.03           | 0   | —         | 0  | —        | 3     |
-| Thomas(PowerBlastin)  | 0        | —              | 0         | —               | 1   | 10.06     | 0  | —        | 1     |
-| Yxanb                 | 1        | 29.04          | 1         | 22.03           | 0   | —         | 0  | —        | 2     |
+| Player                  | Karazhan | Karazhan dates | Gruul+Mag | Gruul+Mag dates | SSC | SSC dates | TK | TK dates | Total |
+|-------------------------|----------|----------------|-----------|-----------------|-----|-----------|----|----------|-------|
+| CptKavior               | 1        | 08.04          | 1         | 15.04           | 0   | —         | 0  | —        | 2     |
+| Dankyn                  | 1        | 29.04          | 0         | —               | 0   | —         | 0  | —        | 1     |
+| Ebonybolt               | 0        | —              | 1         | 03.05           | 1   | 20.05     | 0  | —        | 2     |
+| loranzoo                | 0        | —              | 0         | —               | 0   | —         | 1  | 14.06    | 1     |
+| Piotr(Bergamotka)       | 1        | 29.04          | 0         | —               | 1   | 17.05     | 0  | —        | 2     |
+| Rickard(Benglock)       | 0        | —              | 0         | —               | 1   | 10.06     | 0  | —        | 1     |
+| Shapkica                | 0        | —              | 1         | 10.05           | 0   | —         | 0  | —        | 1     |
+| Sören(Verysadge)        | 0        | —              | 1         | 15.04           | 0   | —         | 0  | —        | 1     |
+| Stephan(Tímmâ/Toadward) | 0        | —              | 0         | —               | 0   | —         | 1  | 14.06    | 1     |
+| Steven(Gresac/Younea)   | 2        | 22.04, 29.04   | 1         | 25.03           | 0   | —         | 0  | —        | 3     |
+| Thomas(PowerBlastin)    | 0        | —              | 0         | —               | 1   | 10.06     | 0  | —        | 1     |
+| TJ(Animustenax)         | 0        | —              | 0         | —               | 0   | —         | 1  | 14.06    | 1     |
+| Yxanb                   | 1        | 29.04          | 1         | 22.03           | 0   | —         | 1  | 14.06    | 3     |
 
 All other priority-2 DPS/tank-main players: 0 benches at every location.
 
@@ -67,7 +70,7 @@ All other priority-2 healer-main players: 0 benches at every location.
 | David(Nemajumarad) | 0        | —              | 1         | 10.05           | 0   | —         | 0  | —        | 1     |
 | Dwarfytron         | 1        | 01.04          | 0         | —               | 0   | —         | 0  | —        | 1     |
 | Jordan(Grundiger)  | 0        | —              | 0         | —               | 1   | 20.05     | 0  | —        | 1     |
-| Leontes            | 1        | 08.04          | 0         | —               | 0   | —         | 0  | —        | 1     |
+| Leontes            | 1        | 08.04          | 0         | —               | 0   | —         | 1  | 14.06    | 2     |
 | Lynelen            | 0        | —              | 1         | 15.04           | 0   | —         | 0  | —        | 1     |
 | Mark(Mellymel)     | 0        | —              | 0         | —               | 1   | 17.05     | 1  | 18.05    | 2     |
 | McHughes           | 1        | 18.03          | 0         | —               | 0   | —         | 0  | —        | 1     |
