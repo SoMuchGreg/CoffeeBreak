@@ -353,28 +353,28 @@ These debuffs affect the boss and benefit the entire raid, but require specific 
 
 Elsewhere in the project this table is the **target spec ranges** — see `config/project.md`'s glossary.
 
-| Spec | Typical Count | Reason |
-|------|--------------|--------|
-| Enhancement Shaman | 1-2 | Melee group totem twisting |
-| Elemental Shaman | 0-1 | Caster group Totem of Wrath |
-| Restoration Shaman | 1-3 | Chain Heal + totems for healer/caster groups |
-| Shadow Priest | 1-2 | Mana battery for caster groups |
-| Balance Druid | 1 | Moonkin Aura + Improved Faerie Fire |
-| Feral Druid | 1-2 | Tank + Leader of the Pack |
-| Restoration Druid | 1-2 | Tree of Life + HoTs |
-| BM Hunter | 2-4 | Top physical DPS + Ferocious Inspiration |
-| Survival Hunter | 0-1 | Expose Weakness |
-| Destruction Warlock | 3-5 | Top caster DPS, stack well |
-| Affliction Warlock | 0-1 | Malediction (+3% spell damage debuff) |
-| Arms Warrior | 1 | Blood Frenzy debuff |
-| Fury Warrior | 0-2 | Strong physical DPS |
-| Protection Warrior | 0-1 | Main tank |
-| Protection Paladin | 0-1 | AoE tank |
-| Combat Rogue | 1-2 | Improved Expose Armor |
-| Holy Paladin | 1-2 | Strong single-target heals + auras |
-| Holy Priest | 1 | Versatile healing |
-| Fire/Arcane Mage | 1-2 | Arcane Brilliance + DPS |
-| Retribution Paladin | 0-1 | Sanctity Aura (niche), Judgements |
+| Spec                | Typical Count   | Reason                                       |
+|---------------------|-----------------|----------------------------------------------|
+| Enhancement Shaman  | 1-2             | Melee group totem twisting                   |
+| Elemental Shaman    | 0-1             | Caster group Totem of Wrath                  |
+| Restoration Shaman  | 1-3             | Chain Heal + totems for healer/caster groups |
+| Shadow Priest       | 1-2             | Mana battery for caster groups               |
+| Balance Druid       | 1               | Moonkin Aura + Improved Faerie Fire          |
+| Feral Druid         | 1-2             | Tank + Leader of the Pack                    |
+| Restoration Druid   | 1-2             | Tree of Life + HoTs                          |
+| BM Hunter           | 2-4             | Top physical DPS + Ferocious Inspiration     |
+| Survival Hunter     | 0-1             | Expose Weakness                              |
+| Destruction Warlock | 3-5             | Top caster DPS, stack well                   |
+| Affliction Warlock  | 0-1             | Malediction (+3% spell damage debuff)        |
+| Arms Warrior        | 1               | Blood Frenzy debuff                          |
+| Fury Warrior        | 0-2             | Strong physical DPS                          |
+| Protection Warrior  | 0-1             | Main tank                                    |
+| Protection Paladin  | 0-1             | AoE tank                                     |
+| Combat Rogue        | 1-2             | Improved Expose Armor                        |
+| Holy Paladin        | 1-2             | Strong single-target heals + auras           |
+| Holy Priest         | 1               | Versatile healing                            |
+| Fire/Arcane Mage    | 1-2             | Arcane Brilliance + DPS                      |
+| Retribution Paladin | 0-1             | Sanctity Aura (niche), Judgements            |
 
 ---
 
