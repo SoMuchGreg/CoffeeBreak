@@ -6,6 +6,12 @@
 
 The composition tables in this file (per-team for Karazhan, per-raid for 25-mans) state the **target** count for each role: tanks, healers, DPS. They are what the user aims for. They are not absolute hard limits — see the comp flex rule below for what to do when signups don't allow the target.
 
+### Tank count: only what the encounters require
+
+Run the **fewest tanks that still cover the night's most tank-demanding encounter**; every tank beyond that is a DPS slot given up, and fewer DPS is a slower kill. A location's tank target (its section below) is exactly that peak per-encounter requirement — never a figure padded above it. Any signup not needed as a tank plays DPS.
+
+Never carry, or comp-flex in, a tank the encounters don't require — as insurance or for convenience. In particular, do **not** add or hold back a tank just to keep another tank free to re-grab a boss across a phase change: the phases don't overlap, so the tanks the roster already carries cover the later phase by reuse (see `rules/05-encounter-assignments.md` → "Lurker platform tank assignment").
+
 ### Role placement: mainspec is authoritative
 
 Each player's role for a raid is their `Mainspec (role)` column in `rules/04-players.md`, **not** the spec icon they selected on the signup screen. The player table is the curated single source of truth; signup icons are informational only and do not override it. The player table is stable and validated; signup icons are easy to misclick or use for off-night experimentation, and aren't reliable for composition planning.
@@ -285,7 +291,7 @@ SSC overrides the default composition's tank count: **4 tanks instead of 3**. DP
 | DPS     | 16    |
 | **Total** | **25** |
 
-The 4th tank covers Fathom Lord Karathress's fourth mini-boss tank role — see `rules/05-encounter-assignments.md` → "SSC → Fathom Lord Karathress" for the per-mini-boss breakdown.
+The 4th tank is SSC's peak per-encounter tank requirement, set by Fathom Lord Karathress's fourth mini-boss — **no other SSC encounter needs it** (per "General principles → Tank count: only what the encounters require" above). See `rules/05-encounter-assignments.md` → "SSC → Fathom Lord Karathress" for the per-mini-boss breakdown.
 
 **The 4th tank is never a core tank** — the Core tanks cap is 3 (`Core tanks → Cap: at most 3 core tanks` above). It is sourced via the standard role-shortage flow: Resort 2 (comp flex) — a DPS-with-tank-offspec player (Paladin, Druid, or Warrior with Tank offspec) flexes into the 4th tank slot — and, only if Resort 2 yields no tank flex, Resort 3 (alt swap) — an alt-bearer whose alt is a tank.
 

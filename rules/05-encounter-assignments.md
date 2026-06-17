@@ -365,6 +365,8 @@ Three single-player tank roles — **Platform 1 Tank**, **Platform 2 Tank**, **P
 
 **Slot count.** Counting submerge-phase reuse of the emerge tanks, the three platforms fill whenever the roster has 3+ tanks. If the roster has fewer tanks than platforms, fill in order Platform 1 → 2 → 3 and leave the rest `—` (flag per step 5).
 
+**No extra tank for Lurker.** The three platforms reuse the emerge tanks (Main Tank and Off Tank are free during submerge) plus the roster's other tanks, and the Main Tank re-grabs Lurker on emerge — so Lurker needs no tank beyond the roster's standard count. Do not add or reserve a dedicated platform tank to keep the Main Tank free; that gives up a DPS slot (`rules/01-raid-compositions.md` → "Tank count: only what the encounters require").
+
 #### Leotheras Warlock Tank assignment
 
 Single-player role; filtered to Warlocks at step 1. Step 3 strong preference: **Jabbadhutt** if in the roster — picked over a continuity holder from another Warlock (per *Assignment algorithm* step 3's override-continuity provision). If Jabbadhutt is not in the roster, run step 2 (continuity) over the remaining Warlocks. If no Warlock is in the roster, the hard constraint fails; flag per step 5.
