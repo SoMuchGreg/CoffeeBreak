@@ -46,11 +46,11 @@ When more than one role in the same encounter uses this filter, assign in table 
 
 #### Hard-hitting bosses (Paladin tank soft-avoidance)
 
-Some bosses hit hard enough that a Paladin makes a weaker physical tank for them than a Warrior or Feral Druid. For the **boss-tanking roles** of a boss on the list below — the roles that tank the boss itself, **not** its adds — Paladin tanks are **softly avoided**: each such slot prefers a non-Paladin tank, and a Paladin takes one only when no non-Paladin tank is free to fill it. Add-tank roles (e.g., Lurker's Platform 1–3 Tanks, which hold the Coilfang Guardian adds) are exempt — any tank may hold them.
+Some bosses hit hard enough that a Paladin makes a weaker physical tank for them than a Warrior or Feral Druid. For the **main-tank role** of a boss on the list below — the role that holds the boss as primary tank — a Paladin is **softly avoided**: the slot prefers a non-Paladin tank, and a Paladin takes it only when no non-Paladin tank is free to fill it. The **off-tank role** is exempt — it may be a Paladin. Add-tank roles (e.g., Lurker's Platform 1–3 Tanks, which hold the Coilfang Guardian adds) are likewise exempt — any tank may hold them.
 
 **Hard-hitting bosses:** Morogrim Tidewalker (SSC), The Lurker Below (SSC). The list grows only on the user's instruction — add a boss here when designated.
 
-For each tank role on one of these bosses, apply a two-tier filter at step 1 of the *Assignment algorithm*, wrapping the role's base Eligibility:
+For the main-tank role on one of these bosses, apply a two-tier filter at step 1 of the *Assignment algorithm*, wrapping the role's base Eligibility:
 
 1. **Tier 1 — non-Paladin tanks.** Keep only roster tanks (members in this raid's `### Tanks`) whose `Class` column does not begin with `Paladin`, then run the role's normal selection (steps 2–4) over them under its base Eligibility (continuity, core-main-tank rotation, tank priority). This **reaches past the role's base pool** when that pool has no non-Paladin — e.g., a *Core main tank rotation* role widens to any non-Paladin roster tank, since the `Main tank`-flagged core tanks are currently all Paladins while the 3rd-tank core tank is a Warrior.
 2. **Tier 2 — include Paladins.** Only if Tier 1 leaves the slot unfillable (no non-Paladin tank free for it), restore the role's full base pool including Paladins and run the normal selection.
@@ -279,7 +279,7 @@ If the user later wants to track any of the above, add the role to the canonical
 
 #### The Lurker Below
 
-Main Tank and Off Tank follow the Paladin tank soft-avoidance for hard-hitting bosses — see *Common framework → Hard-hitting bosses (Paladin tank soft-avoidance)*.
+Main Tank follows the Paladin tank soft-avoidance for hard-hitting bosses — see *Common framework → Hard-hitting bosses (Paladin tank soft-avoidance)*.
 
 | Role            | Eligibility requirement                                                    | Count | Notes                                                                    |
 |-----------------|----------------------------------------------------------------------------|-------|--------------------------------------------------------------------------|
@@ -319,7 +319,7 @@ A 4-mini-boss council fight (Karathress and 3 lieutenants — see table below). 
 
 #### Morogrim Tidewalker
 
-Main Tank and Off Tank follow the Paladin tank soft-avoidance for hard-hitting bosses — see *Common framework → Hard-hitting bosses (Paladin tank soft-avoidance)*.
+Main Tank follows the Paladin tank soft-avoidance for hard-hitting bosses — see *Common framework → Hard-hitting bosses (Paladin tank soft-avoidance)*.
 
 | Role                | Eligibility requirement                                                    | Count | Notes                                                                 |
 |---------------------|----------------------------------------------------------------------------|-------|-----------------------------------------------------------------------|
