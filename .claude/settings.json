@@ -27,5 +27,28 @@
       "Write(.claude/settings.local.json)",
       "Edit(.claude/settings.local.json)"
     ]
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 -c \"import json,sys,re\nd=json.load(sys.stdin)\nt=d.get('tool_input',{})\ns=t.get('content') or t.get('new_string') or ''\nb=[L.strip() for L in s.splitlines() if re.search(r'§ ?8|section 8',L.lower()) and 'raid-composition-guide' not in L.lower() and 'target spec ranges' not in L.lower()]\nif b:\n sys.stderr.write('Blocked: call it the target spec ranges (canonical name), not a bare §8 / Section 8 label. CLAUDE.md Communication conventions: a bare §8 is allowed only as a location pointer in a cross-reference naming reference/raid-composition-guide.md on the same line. Offending: '+' | '.join(b))\n sys.exit(2)\""
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 -c \"import json,sys,re\ntry:\n d=json.load(sys.stdin)\nexcept Exception:\n sys.exit(0)\nif d.get('stop_hook_active'): sys.exit(0)\np=d.get('transcript_path') or ''\nlast=''\ntry:\n for line in open(p):\n  line=line.strip()\n  if not line: continue\n  try:\n   o=json.loads(line)\n  except Exception:\n   continue\n  if o.get('type')=='assistant':\n   c=o.get('message',{}).get('content',[])\n   txt=''.join(x.get('text','') for x in c if isinstance(x,dict) and x.get('type')=='text')\n   if txt.strip(): last=txt\nexcept Exception:\n sys.exit(0)\nbad=[L.strip() for L in last.splitlines() if re.search(r'§ ?8|section 8',L.lower()) and 'raid-composition-guide' not in L.lower() and 'target spec ranges' not in L.lower()]\nif bad:\n sys.stderr.write('Stop blocked: your reply uses a bare §8 / Section 8 as the table name. Use the canonical name target spec ranges (CLAUDE.md Communication conventions). A bare §8 is allowed only in a cross-reference naming reference/raid-composition-guide.md. Rewrite: '+' || '.join(bad))\n sys.exit(2)\nsys.exit(0)\""
+          }
+        ]
+      }
+    ]
   }
 }

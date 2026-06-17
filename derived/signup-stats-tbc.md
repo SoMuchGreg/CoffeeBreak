@@ -18,7 +18,7 @@ Officers, Core tanks, and Regular players share a single flat table here; former
 
 ## Scope
 
-**In-scope:** TBC-era record files in `records/` — currently the 35 files from `2026-02-22-sun-karazhan.md` onward (Karazhan, Gruul's Lair, Magtheridon's Lair, Serpentshrine Cavern, Tempest Keep). TK and any further TBC content (Hyjal, BT, Sunwell) fall in-scope automatically once raided.
+**In-scope:** TBC-era record files in `records/` — currently the 36 files from `2026-02-22-sun-karazhan.md` onward (Karazhan, Gruul's Lair, Magtheridon's Lair, Serpentshrine Cavern, Tempest Keep). TK and any further TBC content (Hyjal, BT, Sunwell) fall in-scope automatically once raided.
 
 **Excluded:** the 7 old-world record files (`2026-01-*` and `2026-02-01-*`, ZG/AQ20/Ony) and any record file created for content outside TBC.
 
@@ -54,56 +54,56 @@ A withdrawal or no-show that pulls a player out of their latest `## Signups` is 
 
 ## Computed as of
 
-**2026-06-14**
+**2026-06-17**
 
 ## Players — signup stats (TBC in-scope record files)
 
 | #  | Player                  | Rank      | First signup | Signups | Signup rate total | Signup rate recent | Last signed up X days ago |
 |----|-------------------------|-----------|--------------|---------|-------------------|--------------------|---------------------------|
-| 1  | Beaverfist              | Raider    | 2026-03-15   | 28      | 100.0%            | 100.0%             | 0                         |
-| 2  | Lanoxian                | Raider    | 2026-06-14   | 1       | 100.0%            | 10.0%              | 0                         |
-| 3  | Lightweit               | Raider    | 2026-04-08   | 21      | 100.0%            | 100.0%             | 0                         |
-| 4  | loranzoo                | Raider    | 2026-06-07   | 3       | 100.0%            | 30.0%              | 0                         |
-| 5  | Piotr(Bergamotka)       | Raider    | 2026-03-15   | 28      | 100.0%            | 100.0%             | 0                         |
-| 6  | Quoterlock              | Raider    | 2026-06-07   | 3       | 100.0%            | 30.0%              | 0                         |
-| 7  | Silverpilen             | Raider    | 2026-05-31   | 5       | 100.0%            | 50.0%              | 0                         |
-| 8  | Stephan(Tímmâ/Toadward) | Raider    | 2026-06-07   | 3       | 100.0%            | 30.0%              | 0                         |
-| 9  | Steven(Gresac/Younea)   | Raider    | 2026-02-22   | 35      | 100.0%            | 100.0%             | 0                         |
-| 10 | Thomas(PowerBlastin)    | Raider    | 2026-06-10   | 2       | 100.0%            | 20.0%              | 0                         |
-| 11 | Tim(Tiinar)             | Raider    | 2026-05-06   | 13      | 100.0%            | 100.0%             | 0                         |
-| 12 | Yxanb                   | Raider    | 2026-03-04   | 30      | 96.8%             | 100.0%             | 0                         |
-| 13 | Pergatori               | Raider    | 2026-03-22   | 25      | 96.2%             | 90.0%              | 0                         |
-| 14 | CptKavior               | Raider    | 2026-04-08   | 20      | 95.2%             | 100.0%             | 0                         |
-| 15 | Mathias(Vaelruna)       | Raider    | 2026-02-22   | 33      | 94.3%             | 100.0%             | 0                         |
-| 16 | Sören(Verysadge)        | Raider    | 2026-02-22   | 33      | 94.3%             | 100.0%             | 0                         |
-| 17 | Shapkica                | Raider    | 2026-04-29   | 14      | 93.3%             | 90.0%              | 0                         |
-| 18 | Mark(Roossy/Keatala)    | Officer   | 2026-03-15   | 26      | 92.9%             | 80.0%              | 0                         |
-| 19 | Emil(Ostbirger)         | Officer   | 2026-03-22   | 24      | 92.3%             | 90.0%              | 0                         |
-| 20 | Greg(Ucannotpass)       | Officer   | 2026-02-22   | 32      | 91.4%             | 90.0%              | 0                         |
-| 21 | Jabbadhutt              | Raider    | 2026-03-15   | 25      | 89.3%             | 100.0%             | 0                         |
-| 22 | TJ(Animustenax)         | Raider    | 2026-05-18   | 8       | 88.9%             | 80.0%              | 0                         |
-| 23 | Marino(Varthier)        | Core tank | 2026-02-22   | 31      | 88.6%             | 100.0%             | 0                         |
-| 24 | Ebonybolt               | Raider    | 2026-03-22   | 23      | 88.5%             | 70.0%              | 4                         |
-| 25 | Adam(Kres/Dissi)        | Officer   | 2026-02-22   | 29      | 82.9%             | 90.0%              | 0                         |
-| 26 | Dankyn                  | Raider    | 2026-03-04   | 25      | 80.6%             | 60.0%              | 14                        |
-| 27 | Kamil(Gigakox)          | Core tank | 2026-03-25   | 20      | 80.0%             | 60.0%              | 4                         |
-| 28 | Thordrel                | Raider    | 2026-02-22   | 27      | 77.1%             | 40.0%              | 0                         |
-| 29 | Lynelen                 | Member    | 2026-03-11   | 22      | 75.9%             | 30.0%              | 25                        |
-| 30 | Rickard(Benglock)       | Raider    | 2026-05-06   | 9       | 69.2%             | 70.0%              | 4                         |
-| 31 | Saskia(Siljes)          | Raider    | 2026-03-25   | 16      | 64.0%             | 60.0%              | 7                         |
-| 32 | Guðjón(Jarðepli)        | Officer   | 2026-02-25   | 21      | 63.6%             | 60.0%              | 0                         |
-| 33 | Heligeman               | Raider    | 2026-04-05   | 14      | 63.6%             | 60.0%              | 0                         |
-| 34 | Mark(Mellymel)          | Member    | 2026-04-29   | 9       | 60.0%             | 70.0%              | 0                         |
-| 35 | McJudgin                | Member    | 2026-03-29   | 12      | 50.0%             | 40.0%              | 0                         |
-| 36 | McHughes                | Member    | 2026-02-22   | 16      | 45.7%             | 0.0%               | 32                        |
-| 37 | Boriest                 | Member    | 2026-05-03   | 6       | 42.9%             | 30.0%              | 18                        |
-| 38 | David(Nemajumarad)      | Member    | 2026-05-03   | 6       | 42.9%             | 30.0%              | 21                        |
-| 39 | Leontes                 | Member    | 2026-04-08   | 9       | 42.9%             | 10.0%              | 0                         |
-| 40 | Tonz/Tonsen             | Member    | 2026-03-11   | 12      | 41.4%             | 0.0%               | 46                        |
-| 41 | Jordan(Grundiger)       | Member    | 2026-04-26   | 6       | 37.5%             | 20.0%              | 25                        |
-| 42 | BestPractice            | Member    | 2026-02-22   | 11      | 31.4%             | 0.0%               | 56                        |
-| 43 | Dwarfytron              | Member    | 2026-03-22   | 7       | 26.9%             | 0.0%               | 63                        |
-| 44 | Yorekbarn               | Member    | 2026-04-19   | 4       | 22.2%             | 10.0%              | 28                        |
-| 45 | Doughball               | Member    | 2026-03-11   | 6       | 20.7%             | 0.0%               | 56                        |
-| 46 | Sjwammie                | Member    | 2026-03-11   | 4       | 13.8%             | 0.0%               | 74                        |
-| 47 | Gyrodorei               | Member    | 2026-05-06   | 1       | 7.7%              | 0.0%               | 39                        |
+| 1  | Beaverfist              | Raider    | 2026-03-15   | 29      | 100.0%            | 100.0%             | 0                         |
+| 2  | Lightweit               | Raider    | 2026-04-08   | 22      | 100.0%            | 100.0%             | 0                         |
+| 3  | Piotr(Bergamotka)       | Raider    | 2026-03-15   | 29      | 100.0%            | 100.0%             | 0                         |
+| 4  | Quoterlock              | Raider    | 2026-06-07   | 4       | 100.0%            | 40.0%              | 0                         |
+| 5  | Silverpilen             | Raider    | 2026-05-31   | 6       | 100.0%            | 60.0%              | 0                         |
+| 6  | Stephan(Tímmâ/Toadward) | Raider    | 2026-06-07   | 4       | 100.0%            | 40.0%              | 0                         |
+| 7  | Steven(Gresac/Younea)   | Raider    | 2026-02-22   | 36      | 100.0%            | 100.0%             | 0                         |
+| 8  | Thomas(PowerBlastin)    | Raider    | 2026-06-10   | 3       | 100.0%            | 30.0%              | 0                         |
+| 9  | Tim(Tiinar)             | Raider    | 2026-05-06   | 14      | 100.0%            | 100.0%             | 0                         |
+| 10 | Yxanb                   | Raider    | 2026-03-04   | 31      | 96.9%             | 100.0%             | 0                         |
+| 11 | CptKavior               | Raider    | 2026-04-08   | 21      | 95.5%             | 100.0%             | 0                         |
+| 12 | Mathias(Vaelruna)       | Raider    | 2026-02-22   | 34      | 94.4%             | 100.0%             | 0                         |
+| 13 | Sören(Verysadge)        | Raider    | 2026-02-22   | 34      | 94.4%             | 100.0%             | 0                         |
+| 14 | Shapkica                | Raider    | 2026-04-29   | 15      | 93.8%             | 90.0%              | 0                         |
+| 15 | Emil(Ostbirger)         | Officer   | 2026-03-22   | 25      | 92.6%             | 100.0%             | 0                         |
+| 16 | Pergatori               | Raider    | 2026-03-22   | 25      | 92.6%             | 90.0%              | 3                         |
+| 17 | Greg(Ucannotpass)       | Officer   | 2026-02-22   | 33      | 91.7%             | 100.0%             | 0                         |
+| 18 | Jabbadhutt              | Raider    | 2026-03-15   | 26      | 89.7%             | 100.0%             | 0                         |
+| 19 | Mark(Roossy/Keatala)    | Officer   | 2026-03-15   | 26      | 89.7%             | 70.0%              | 3                         |
+| 20 | Ebonybolt               | Raider    | 2026-03-22   | 24      | 88.9%             | 70.0%              | 0                         |
+| 21 | Marino(Varthier)        | Core tank | 2026-02-22   | 32      | 88.9%             | 100.0%             | 0                         |
+| 22 | Dankyn                  | Raider    | 2026-03-04   | 26      | 81.3%             | 60.0%              | 0                         |
+| 23 | Kamil(Gigakox)          | Core tank | 2026-03-25   | 21      | 80.8%             | 60.0%              | 0                         |
+| 24 | Adam(Kres/Dissi)        | Officer   | 2026-02-22   | 29      | 80.6%             | 80.0%              | 3                         |
+| 25 | TJ(Animustenax)         | Raider    | 2026-05-18   | 8       | 80.0%             | 80.0%              | 3                         |
+| 26 | Thordrel                | Raider    | 2026-02-22   | 28      | 77.8%             | 40.0%              | 0                         |
+| 27 | loranzoo                | Raider    | 2026-06-07   | 3       | 75.0%             | 30.0%              | 3                         |
+| 28 | Lynelen                 | Member    | 2026-03-11   | 22      | 73.3%             | 20.0%              | 28                        |
+| 29 | Heligeman               | Raider    | 2026-04-05   | 15      | 65.2%             | 60.0%              | 0                         |
+| 30 | Rickard(Benglock)       | Raider    | 2026-05-06   | 9       | 64.3%             | 70.0%              | 7                         |
+| 31 | Mark(Mellymel)          | Member    | 2026-04-29   | 10      | 62.5%             | 70.0%              | 0                         |
+| 32 | Guðjón(Jarðepli)        | Officer   | 2026-02-25   | 21      | 61.8%             | 50.0%              | 3                         |
+| 33 | Saskia(Siljes)          | Raider    | 2026-03-25   | 16      | 61.5%             | 50.0%              | 10                        |
+| 34 | Lanoxian                | Raider    | 2026-06-14   | 1       | 50.0%             | 10.0%              | 3                         |
+| 35 | McJudgin                | Member    | 2026-03-29   | 12      | 48.0%             | 30.0%              | 3                         |
+| 36 | Boriest                 | Member    | 2026-05-03   | 7       | 46.7%             | 30.0%              | 0                         |
+| 37 | McHughes                | Member    | 2026-02-22   | 16      | 44.4%             | 0.0%               | 35                        |
+| 38 | Leontes                 | Member    | 2026-04-08   | 9       | 40.9%             | 10.0%              | 3                         |
+| 39 | David(Nemajumarad)      | Member    | 2026-05-03   | 6       | 40.0%             | 30.0%              | 24                        |
+| 40 | Tonz/Tonsen             | Member    | 2026-03-11   | 12      | 40.0%             | 0.0%               | 49                        |
+| 41 | Jordan(Grundiger)       | Member    | 2026-04-26   | 6       | 35.3%             | 20.0%              | 28                        |
+| 42 | BestPractice            | Member    | 2026-02-22   | 11      | 30.6%             | 0.0%               | 59                        |
+| 43 | Dwarfytron              | Member    | 2026-03-22   | 7       | 25.9%             | 0.0%               | 66                        |
+| 44 | Yorekbarn               | Member    | 2026-04-19   | 4       | 21.1%             | 0.0%               | 31                        |
+| 45 | Doughball               | Member    | 2026-03-11   | 6       | 20.0%             | 0.0%               | 59                        |
+| 46 | Sjwammie                | Member    | 2026-03-11   | 4       | 13.3%             | 0.0%               | 77                        |
+| 47 | Gyrodorei               | Member    | 2026-05-06   | 1       | 7.1%              | 0.0%               | 42                        |
