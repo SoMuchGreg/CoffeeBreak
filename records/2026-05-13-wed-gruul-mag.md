@@ -188,11 +188,11 @@ On the bench: Adam(Kres/Dissi) and Pergatori. But if you show up online around r
 
 **Verdict: GOOD ENOUGH** — sub-agent confirmed full hard-rule compliance; the proposed roster is the unique deterministic output of the selection/placement algorithm. Residual blemishes are forced soft-target misses against `reference/raid-composition-guide.md` §8 (the target spec ranges; soft tiebreaker, doesn't fire here because there's no bench). None are fixable.
 
-- **Protection Warrior 2** (§8: 0-1) — forced: the unique Tier-0 tank-flex candidate (CptKavior) is a Warrior; rule mandates exhausting Tier 0 before Druid/Paladin tank flex.
-- **Enhancement Shaman 3** (§8: 1-2) — forced: Piotr(Bergamotka), Lynelen, Ebonybolt all play; 25=25 so no bench, and the DPS role is at target so no surplus-flex trigger.
-- **Holy Priest 2** (§8: 1) — forced: Lightweit and Boriest both healer-mains; roster is at the healer floor, neither benchable.
-- **Restoration Shaman 0** (§8: 1-3) — pigeonhole: only Resto-Sham main is Pergatori, who didn't sign up.
-- **Combined Destruction + Affliction Warlock ≤ 1** (§8: combined 3) — pigeonhole: only 2 Warlocks signed up and Rickard(Benglock) is Demonology.
+- **Protection Warrior 2** (target spec ranges: 0-1) — forced: the unique Tier-0 tank-flex candidate (CptKavior) is a Warrior; rule mandates exhausting Tier 0 before Druid/Paladin tank flex.
+- **Enhancement Shaman 3** (target spec ranges: 1-2) — forced: Piotr(Bergamotka), Lynelen, Ebonybolt all play; 25=25 so no bench, and the DPS role is at target so no surplus-flex trigger.
+- **Holy Priest 2** (target spec ranges: 1) — forced: Lightweit and Boriest both healer-mains; roster is at the healer floor, neither benchable.
+- **Restoration Shaman 0** (target spec ranges: 1-3) — pigeonhole: only Resto-Sham main is Pergatori, who didn't sign up.
+- **Combined Destruction + Affliction Warlock ≤ 1** (target spec ranges: combined 3) — pigeonhole: only 2 Warlocks signed up and Rickard(Benglock) is Demonology.
 
 **Post-check changes**:
 - Pergatori added as post-build signup (Shaman, Healer mainspec); discretionarily benched.

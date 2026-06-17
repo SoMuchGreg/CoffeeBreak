@@ -105,9 +105,9 @@ On the bench: Piotr(Bergamotka), Dankyn, Greg(Ucannotpass), Steven(Gresac/Younea
 - **Steven(Gresac/Younea) manual-override bench** per user instruction, consistent with his `rules/04-players.md` note.
 - **Thordrel manual-override bench** per user instruction.
 - **Beaverfist Tier 0 first-line-offspec flex** Balance DPS → Resto Healer (`rules/01-raid-compositions.md` → "Handling role shortages → Asking order → Tier 0") to fill the Bakery healer slot vacated by Thordrel; Beaverfist moved Restaurant → Bakery.
-- **Yxanb fair-rotation bench** chosen over Mathias(Vaelruna) by Karazhan Tier 1 (de-stacks Druids on Restaurant from 3→2) and Tier 2 (§8 Druid Feral=2 vs. Hunter=5). The first sub-agent verdict ran against the original Mathias(Vaelruna) pick before the user resolved the borderline tiebreaker; see Sanity check post-check changes.
+- **Yxanb fair-rotation bench** chosen over Mathias(Vaelruna) by Karazhan Tier 1 (de-stacks Druids on Restaurant from 3→2) and Tier 2 (target spec ranges: Druid Feral=2 vs. Hunter=5). The first sub-agent verdict ran against the original Mathias(Vaelruna) pick before the user resolved the borderline tiebreaker; see Sanity check post-check changes.
 - **Piotr(Bergamotka) fair-rotation bench** chosen by composition target — Piotr(Bergamotka) playing alongside Lynelen + Ebonybolt would force 3 Enhancement Shamans across 2 teams.
-- **Dankyn fair-rotation bench** chosen by Tier 2 (§8 Fury Warrior=2 < Warlock=6, so Jabbadhutt kept).
+- **Dankyn fair-rotation bench** chosen by Tier 2 (target spec ranges: Fury Warrior=2 < Warlock=6, so Jabbadhutt kept).
 - **Yxanb's Notes column updated** in `rules/04-players.md` this session: "Feral tanks only as last resort". 4-tank header count comes from Kamil(Gigakox) signing Prot (listed in screenshot's Warrior column due to class-based grouping).
 - **Pergatori added to Light's Justice Needlist** this session (`rules/03-player-constraints.md`); Saskia(Siljes) not in raid, so single in-raid competitor and no entry in Loot conflicts.
 - **HFD (Beaverfist + Adam(Kres/Dissi) on Bakery) and Ring of a Thousand Marks (Kamil(Gigakox) + Leontes on Restaurant)** — pigeonhole-forced 2-1 clusters from 3 in-raid competitors / 2 teams.
@@ -134,7 +134,7 @@ On the bench: Piotr(Bergamotka), Dankyn, Greg(Ucannotpass), Steven(Gresac/Younea
 - Soft rules "Hunter / Fury Warrior / Warlock distribution": single-instance roles after benches force 1-1 (Hunter, Mage, Enh) and solo placements (Fury Warrior, Warlock) — driven by signups, not by avoidable choices.
 
 **Post-check changes** (not re-verified by sub-agent):
-- **Bench swap:** Mathias(Vaelruna) → Yxanb (per user instruction; better aligns with Tier 1 Druid de-stacking and Tier 2 §8 Hunter > Druid Feral).
+- **Bench swap:** Mathias(Vaelruna) → Yxanb (per user instruction; better aligns with Tier 1 Druid de-stacking and Tier 2 target spec ranges Hunter > Druid Feral).
 - **Healer swap:** Heligeman moved Bakery → Restaurant; Thordrel moved Restaurant → Bakery (per user instruction).
 - **Leontes moved Bakery → Restaurant** to maintain Gloves of the Fallen Champion split with Thordrel after the healer swap.
 - **Ring of a Thousand Marks cluster moved Bak → R** as a consequence of Leontes moving R; still 2-1 pigeonhole.

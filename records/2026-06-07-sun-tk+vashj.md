@@ -193,11 +193,11 @@
 
 ## Sanity check
 
-**Verdict: GOOD ENOUGH** — sub-agent confirmed full hard-rule compliance; the only deviations are §8 target-spec-range misses, each structurally forced.
+**Verdict: GOOD ENOUGH** — sub-agent confirmed full hard-rule compliance; the only deviations are target-spec-range misses, each structurally forced.
 
-- **Protection Paladin 2** (§8 range 0-1) — forced: two core Prot Paladins (Marino(Varthier), Emil(Ostbirger)) signed up; core tanks always tank.
-- **Holy Priest 3** (§8 range 1) — forced by the 5-healer floor: Lightweit + Saskia(Siljes) are mainspec Holy healers, and Adam(Kres/Dissi) is the mandated Tier-0 healer flex. Flexing Tier-2 Ebonybolt instead would lower this but would violate the comp-flex asking order.
-- **Arcane Mage 3** (§8 range 1-2; TK targets the upper end) — forced: 3 Mages signed up and 25 = 25 leaves no bench. The TK 2-Mage protection secures the first 2; the 3rd is unprotected but nobody benches.
+- **Protection Paladin 2** (target spec ranges: 0-1) — forced: two core Prot Paladins (Marino(Varthier), Emil(Ostbirger)) signed up; core tanks always tank.
+- **Holy Priest 3** (target spec ranges: 1) — forced by the 5-healer floor: Lightweit + Saskia(Siljes) are mainspec Holy healers, and Adam(Kres/Dissi) is the mandated Tier-0 healer flex. Flexing Tier-2 Ebonybolt instead would lower this but would violate the comp-flex asking order.
+- **Arcane Mage 3** (target spec ranges: 1-2; TK targets the upper end) — forced: 3 Mages signed up and 25 = 25 leaves no bench. The TK 2-Mage protection secures the first 2; the 3rd is unprotected but nobody benches.
 - **Shadow Priest 0 / Arms Warrior 0** (under) — Shadow 0 is the flip side of Adam's mandated flex; Arms 0 because David(Nemajumarad) didn't sign up.
 
 ### Post-check changes

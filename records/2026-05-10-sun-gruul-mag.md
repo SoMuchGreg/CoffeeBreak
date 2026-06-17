@@ -181,12 +181,12 @@ On the bench: Adam(Kres/Dissi), David(Nemajumarad) and Shapkica. But if you show
 - **Steven(Gresac/Younea) mainspec change** — Younea (Shaman, Elemental DPS / offspec Healer) is now main; the Druid character demotes to alt. Played Shaman Elemental this raid. `rules/04-players.md` row moved Druid P2 → Shaman P2; alt-table swapped (Druid Healer/Balance now alt). Bench history row moved Healer P2 → DPS+tank P2 in `derived/bench-history-tbc.md`; counts carry forward per `rules/02-bench-rotation.md` → "Respec policy".
 - **Tim(Tiinar) tentative** — excluded from roster pool per `reference/file-operations-manual.md` → Step 2.
 - **Bench picks:**
-  - **Dankyn (fair rotation)** — Fury Warrior over §8 max 2; Dankyn lowest G+M among Fury candidates.
-  - **Shapkica (fair rotation)** — 3rd-pick tiebreaker per `rules/02-bench-rotation.md` → "Tiebreaker cascade" (preserves the 2-Warlock pool); Feral DPS still in §8 range 1-2 after the cut, while the algorithmic-strict alphabetical fallback (Rickard(Benglock)) would have taken combined Warlock count further below §8's combined Destro+Affli range of 3-6.
+  - **Dankyn (fair rotation)** — Fury Warrior over the target spec ranges' max of 2; Dankyn lowest G+M among Fury candidates.
+  - **Shapkica (fair rotation)** — 3rd-pick tiebreaker per `rules/02-bench-rotation.md` → "Tiebreaker cascade" (preserves the 2-Warlock pool); Feral DPS still within the target spec ranges (1-2) after the cut, while the algorithmic-strict alphabetical fallback (Rickard(Benglock)) would have taken combined Warlock count further below the target spec ranges' combined Destro+Affli band of 3-6.
 - **User overrides:**
-  - **David(Nemajumarad) bench (manual override)** — algorithmic pick was Piotr(Bergamotka) (Enh Sham over §8 max 2). User swapped Piotr(Bergamotka) in. Tradeoffs: Enh Sham stays at 3 (over §8 max 2), Arms Warrior drops to 0 (under §8 range 1; Blood Frenzy debuff missing as no Combat Rogue in raid). Cross-location bench burden equalized between the two players (both end at 1 total).
+  - **David(Nemajumarad) bench (manual override)** — algorithmic pick was Piotr(Bergamotka) (Enh Sham over the target spec ranges' max of 2). User swapped Piotr(Bergamotka) in. Tradeoffs: Enh Sham stays at 3 (over the target spec ranges' max of 2), Arms Warrior drops to 0 (under the target spec ranges' floor of 1; Blood Frenzy debuff missing as no Combat Rogue in raid). Cross-location bench burden equalized between the two players (both end at 1 total).
 - **Magtheridon SW cube** = Steven(Gresac/Younea) per `rules/05-encounter-assignments.md` continuity (he held SW on 2026-03-01 and is in the roster as DPS-Elemental this raid). CptKavior (sub-agent's initial cube-experience-fallback would-be pick) moves to alternative cube clickers.
-- **Post-build swap (manual override)** — Adam(Kres/Dissi) ↔ Dankyn bench swap. Kres (P1) benched per user discretionary pick (`rules/02-bench-rotation.md` → "User's discretionary bench picks"); Dankyn unbenched. Composition shifts: Shadow Priest 1→0 (under §8 range 1), Fury Warrior 2→3 (over §8 max 2). Kres remains Sunday raid leader (`config/project.md`); leads from bench.
+- **Post-build swap (manual override)** — Adam(Kres/Dissi) ↔ Dankyn bench swap. Kres (P1) benched per user discretionary pick (`rules/02-bench-rotation.md` → "User's discretionary bench picks"); Dankyn unbenched. Composition shifts: Shadow Priest 1→0 (under the target spec ranges' floor of 1), Fury Warrior 2→3 (over the target spec ranges' max of 2). Kres remains Sunday raid leader (`config/project.md`); leads from bench.
 - **Post-build raid-day changes** (per `Event: Player withdraws signup` + `Event: Post-build signup arrives`):
   - **OomToDoom withdrew** pre-raid — recorded in `## Withdrawn signups`. Arcane Mage 2→1.
   - **Mathias(Vaelruna) walked in** as BM Hunter DPS to fill the vacated slot. BM Hunter 2→3.
@@ -200,14 +200,14 @@ On the bench: Adam(Kres/Dissi), David(Nemajumarad) and Shapkica. But if you show
 - **Bench pick #3 violation** (sub-agent flagged Rickard(Benglock) as wrong; recommended Shapkica) — accepted; Shapkica benched, Rickard(Benglock) plays. Then user further overrode bench pick #1: David(Nemajumarad) benched in place of Piotr(Bergamotka) (manual override; see ## Notes "User overrides").
 - **Magtheridon SW cube violation** (sub-agent: should be Steven(Gresac/Younea) per continuity, not CptKavior) — accepted; SW = Steven(Gresac/Younea), CptKavior moved to alternative cube clickers.
 - **Soft-rule misses (acceptable):**
-  - Arms Warrior 0 (under §8 range 1) — user-override tradeoff.
-  - Enhancement Shaman 3 (over §8 max 2) — user-override tradeoff (kept Piotr(Bergamotka)).
-  - Combined Destro+Affli Warlock 1 (under §8 range 3) — pigeonhole-forced (only 2 Warlocks signed up; Rickard(Benglock) is Demo).
-  - Combat Rogue 0 (under §8 range 1) — pigeonhole-forced (only Tim(Tiinar) signed and went tentative).
+  - Arms Warrior 0 (under the target spec ranges' floor of 1) — user-override tradeoff.
+  - Enhancement Shaman 3 (over the target spec ranges' max of 2) — user-override tradeoff (kept Piotr(Bergamotka)).
+  - Combined Destro+Affli Warlock 1 (under the target spec ranges' floor of 3) — pigeonhole-forced (only 2 Warlocks signed up; Rickard(Benglock) is Demo).
+  - Combat Rogue 0 (under the target spec ranges' floor of 1) — pigeonhole-forced (only Tim(Tiinar) signed and went tentative).
 
 **Previous verdicts:**
 - **Original sub-agent verdict: NO** — 2 fixable violations (bench pick #3 = Rickard(Benglock); SW cube = CptKavior). Both addressed before finalization.
 
 **Post-check changes** (Quick ad-hoc roster update; no sub-agent re-run):
-- **Adam(Kres/Dissi) ↔ Dankyn bench swap (manual override)** — Kres (P1) benched per user discretionary pick; Dankyn unbenched. DPS-pool composition shift: Shadow Priest 1→0 (under §8 range 1), Fury Warrior 2→3 (over §8 max 2). See `## Notes` for full context.
-- **OomToDoom withdrew (post-build) + Mathias(Vaelruna) walked in** — DPS slot replaced like-for-like (Arcane Mage out, BM Hunter in). DPS spec composition: Arcane Mage 2→1 (in §8 range 1-2), BM Hunter 2→3 (in §8 range 2-4). Mage Tank (Krosh) reassigned OomToDoom → Greg(Ucannotpass) per orphan-role recovery (`rules/05` → only Mage in roster). See `## Notes` for full context.
+- **Adam(Kres/Dissi) ↔ Dankyn bench swap (manual override)** — Kres (P1) benched per user discretionary pick; Dankyn unbenched. DPS-pool composition shift: Shadow Priest 1→0 (under the target spec ranges' floor of 1), Fury Warrior 2→3 (over the target spec ranges' max of 2). See `## Notes` for full context.
+- **OomToDoom withdrew (post-build) + Mathias(Vaelruna) walked in** — DPS slot replaced like-for-like (Arcane Mage out, BM Hunter in). DPS spec composition: Arcane Mage 2→1 (within the target spec ranges 1-2), BM Hunter 2→3 (within the target spec ranges 2-4). Mage Tank (Krosh) reassigned OomToDoom → Greg(Ucannotpass) per orphan-role recovery (`rules/05` → only Mage in roster). See `## Notes` for full context.
