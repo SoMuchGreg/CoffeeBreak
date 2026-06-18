@@ -24,7 +24,7 @@ Run this for each role in the location's encounter table (in table order). A sin
 
 1. **Filter by hard constraint.** Drop roster members who don't meet the role's eligibility requirement per the location's Encounter roles table. For roles with no requirement listed, all non-already-assigned roster members are eligible.
 2. **Apply continuity preference.** Among the remaining candidates, find those who have held this exact role in prior raids (see *Continuity data sources* below). If one or more is in the roster, pick the **most recent** holder. Tiebreak by total number of prior holds (more = preferred), then alphabetical by canonical player name per `rules/04-players.md`.
-3. **Apply explicit strong preferences** when step 2 produces no candidate. Strong preferences (named-player, where it applies) are documented per role in the role's Encounter roles table Notes column or its per-role assignment subsection. **Some roles' strong preferences also override step-2 continuity** when the per-role subsection says so explicitly — i.e., the named player wins even if a different candidate has prior continuity at this role. Soft class preferences listed in a role's Eligibility column (e.g., "X preferred") are applied earlier — as a **step-1 tier filter** that runs before continuity — see *Class preferences (preferred class wins over continuity)* below.
+3. **Apply explicit strong preferences** when step 2 produces no candidate. Strong preferences (named-player, where it applies) are documented per role in the role's Encounter roles table Notes column or its per-role assignment subsection. **Some roles' strong preferences also override step-2 continuity** when the per-role subsection says so explicitly — i.e., the named player wins even if a different candidate has prior continuity at this role. Soft class preferences listed in a role's Eligibility column (e.g., "X preferred") are applied earlier — as a **step-1 tier filter** that runs before continuity — see *Class preferences (preferred class wins over continuity)* below. Healer roles additionally carry a global affinity sending Paladin healers to tank healing and other healers to raid healing, applied at step 1 — see *Healer role-type affinity (Paladins heal tanks)* below.
 4. **Otherwise pick any eligible roster member.** Prefer picks that don't strand a role processed later in the same encounter — i.e., if picking candidate X would leave a later-in-table-order role with no eligible candidates (because X is also that role's only viable pick), choose a different eligible candidate when one is available. The user may override when the roster is presented.
 5. **Flag to the user** when any of the following applies:
    - A hard constraint cannot be satisfied (the role's eligibility filter at step 1 empties).
@@ -67,6 +67,22 @@ Procedure for the role:
 2. **Tier 2 — broader pool.** If Tier 1 has no eligible candidate (no preferred-class member is in the roster, or every preferred-class member has already been excluded by the no-double-booking rule via a prior slot or another role in this encounter), widen the filter to the broader pool stated in the Eligibility column (e.g., "any healer") and run steps 2–5.
 
 For multi-slot roles, each slot is filled independently using this tier order; previously-assigned slots' picks are excluded from the candidate pool. A multi-slot role may split across tiers — e.g., one Druid (Tier 1) and one Priest (Tier 2) when only one Druid is in the roster.
+
+#### Healer role-type affinity (Paladins heal tanks)
+
+A global soft preference over every healer role: **Paladin healers are preferred for tank healing; non-Paladin healers are preferred for raid healing.** Soft ("if possible") — it reorders healers among themselves and never empties a slot, pulls in a non-healer, or overrides a hard eligibility filter.
+
+Classify each healer role by what it keeps alive:
+
+- **Raid-healer role** — heals the raid at large or players caught by a mechanic, not a designated tank. Currently only Morogrim **Watery Grave Healer** and Lady Vashj **Quadrant Healer**. Prefers **non-Paladins**.
+- **Tank-healer role** — every other healer role; each keeps a specific tank (or tank pair) alive. Prefers **Paladins**.
+
+Apply as a step-1 tier filter that **wraps** the role's own class preference, via the tiered-filter procedure of *Class preferences (preferred class wins over continuity)* above. The affinity supplies the **top tier**; the role's Eligibility class preference (if any) the next; "any healer" the last:
+
+- **Tank-healer role:** Tier 1 Paladin → Tier 2 the role's other Eligibility-preferred class(es) (e.g. Druid for a "Paladin/Druid preferred" role) → Tier 3 any healer. With no per-role preference, this collapses to Tier 1 Paladin → Tier 2 any healer.
+- **Raid-healer role:** Tier 1 the role's Eligibility-preferred non-Paladin class(es) (if any — e.g. Druid for Watery Grave Healer) → Tier 2 any other non-Paladin healer → Tier 3 any healer (Paladins last). With no per-role preference, this collapses to Tier 1 non-Paladin → Tier 2 any healer.
+
+Within the highest non-empty tier, the pick resolves exactly as in *Class preferences* — continuity, strong preference, any-eligible fallback, and multi-slot handling all carry over. Per-role Eligibility cells are **not** restated with this affinity; this subsection is its single global home.
 
 #### Tier-by-tier class chain
 
