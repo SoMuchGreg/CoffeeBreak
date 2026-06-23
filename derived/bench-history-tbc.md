@@ -37,7 +37,7 @@ All priority-1 healer-main players: 0 benches at every location. *(No priority-1
 | Player                  | Karazhan | Karazhan dates | Gruul+Mag | Gruul+Mag dates | SSC | SSC dates | TK | TK dates | Total |
 |-------------------------|----------|----------------|-----------|-----------------|-----|-----------|----|----------|-------|
 | CptKavior               | 1        | 08.04          | 1         | 15.04           | 0   | —         | 0  | —        | 2     |
-| Dankyn                  | 1        | 29.04          | 0         | —               | 0   | —         | 0  | —        | 1     |
+| Dankyn                  | 1        | 29.04          | 0         | —               | 1   | 24.06     | 0  | —        | 2     |
 | Ebonybolt               | 0        | —              | 1         | 03.05           | 1   | 20.05     | 1  | 21.06    | 3     |
 | Lanoxian                | 0        | —              | 0         | —               | 0   | —         | 1  | 21.06    | 1     |
 | loranzoo                | 0        | —              | 0         | —               | 0   | —         | 1  | 14.06    | 1     |
@@ -49,7 +49,7 @@ All priority-1 healer-main players: 0 benches at every location. *(No priority-1
 | Stephan(Tímmâ/Toadward) | 0        | —              | 0         | —               | 0   | —         | 1  | 14.06    | 1     |
 | Steven(Gresac/Younea)   | 2        | 22.04, 29.04   | 1         | 25.03           | 0   | —         | 0  | —        | 3     |
 | Thomas(PowerBlastin)    | 0        | —              | 0         | —               | 1   | 10.06     | 0  | —        | 1     |
-| TJ(Animustenax)         | 0        | —              | 0         | —               | 0   | —         | 1  | 14.06    | 1     |
+| TJ(Animustenax)         | 0        | —              | 0         | —               | 1   | 24.06     | 1  | 14.06    | 2     |
 | Yxanb                   | 1        | 29.04          | 1         | 22.03           | 0   | —         | 1  | 14.06    | 3     |
 
 All other priority-2 DPS/tank-main players: 0 benches at every location.
