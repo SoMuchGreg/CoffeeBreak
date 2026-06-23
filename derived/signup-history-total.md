@@ -55,64 +55,66 @@ A player's sub-table here is determined solely by their top-level grouping in `r
 
 | # | Player               | Signups |
 |---|----------------------|---------|
-| 1 | Greg(Ucannotpass)    | 39      |
-| 2 | Adam(Kres/Dissi)     | 35      |
-| 3 | Mark(Roossy/Keatala) | 28      |
-| 4 | Emil(Ostbirger)      | 25      |
-| 5 | Guðjón(Jarðepli)     | 25      |
+| 1 | Greg(Ucannotpass)    | 40      |
+| 2 | Adam(Kres/Dissi)     | 36      |
+| 3 | Mark(Roossy/Keatala) | 29      |
+| 4 | Emil(Ostbirger)      | 26      |
+| 5 | Guðjón(Jarðepli)     | 26      |
 
 ### Core tanks
 
 | # | Player           | Signups |
 |---|------------------|---------|
-| 1 | Marino(Varthier) | 39      |
-| 2 | Kamil(Gigakox)   | 21      |
+| 1 | Marino(Varthier) | 40      |
+| 2 | Kamil(Gigakox)   | 22      |
 
 ### Current members
 
 | #  | Player                  | Signups |
 |----|-------------------------|---------|
-| 1  | Mathias(Vaelruna)       | 38      |
-| 2  | Steven(Gresac/Younea)   | 38      |
-| 3  | Sören(Verysadge)        | 37      |
-| 4  | Yxanb                   | 31      |
-| 5  | Thordrel                | 30      |
-| 6  | Beaverfist              | 29      |
-| 7  | Piotr(Bergamotka)       | 29      |
+| 1  | Mathias(Vaelruna)       | 39      |
+| 2  | Steven(Gresac/Younea)   | 39      |
+| 3  | Sören(Verysadge)        | 38      |
+| 4  | Thordrel                | 31      |
+| 5  | Yxanb                   | 31      |
+| 6  | Beaverfist              | 30      |
+| 7  | Piotr(Bergamotka)       | 30      |
 | 8  | Dankyn                  | 26      |
 | 9  | Jabbadhutt              | 26      |
-| 10 | Pergatori               | 25      |
-| 11 | Ebonybolt               | 24      |
-| 12 | Lightweit               | 22      |
-| 13 | Lynelen                 | 22      |
-| 14 | CptKavior               | 21      |
+| 10 | Ebonybolt               | 25      |
+| 11 | Pergatori               | 25      |
+| 12 | Lightweit               | 23      |
+| 13 | CptKavior               | 22      |
+| 14 | Lynelen                 | 22      |
 | 15 | Heligeman               | 19      |
 | 16 | McHughes                | 17      |
-| 17 | Saskia(Siljes)          | 16      |
-| 18 | Shapkica                | 15      |
-| 19 | Tim(Tiinar)             | 14      |
+| 17 | Saskia(Siljes)          | 17      |
+| 18 | Shapkica                | 16      |
+| 19 | Tim(Tiinar)             | 15      |
 | 20 | McJudgin                | 12      |
 | 21 | Tonz/Tonsen             | 12      |
 | 22 | BestPractice            | 11      |
-| 23 | Mark(Mellymel)          | 10      |
-| 24 | Rickard(Benglock)       | 10      |
-| 25 | Leontes                 | 9       |
-| 26 | TJ(Animustenax)         | 8       |
+| 23 | Mark(Mellymel)          | 11      |
+| 24 | Leontes                 | 10      |
+| 25 | Rickard(Benglock)       | 10      |
+| 26 | TJ(Animustenax)         | 9       |
 | 27 | Boriest                 | 7       |
 | 28 | Dwarfytron              | 7       |
-| 29 | David(Nemajumarad)      | 6       |
-| 30 | Doughball               | 6       |
-| 31 | Jordan(Grundiger)       | 6       |
-| 32 | Silverpilen             | 6       |
-| 33 | Quoterlock              | 4       |
-| 34 | Sjwammie                | 4       |
-| 35 | Stephan(Tímmâ/Toadward) | 4       |
-| 36 | Yorekbarn               | 4       |
-| 37 | loranzoo                | 3       |
-| 38 | Medianos                | 3       |
-| 39 | Thomas(PowerBlastin)    | 3       |
-| 40 | Gyrodorei               | 1       |
-| 41 | Lanoxian                | 1       |
+| 29 | Silverpilen             | 7       |
+| 30 | David(Nemajumarad)      | 6       |
+| 31 | Doughball               | 6       |
+| 32 | Jordan(Grundiger)       | 6       |
+| 33 | Quoterlock              | 5       |
+| 34 | Stephan(Tímmâ/Toadward) | 5       |
+| 35 | Sjwammie                | 4       |
+| 36 | Thomas(PowerBlastin)    | 4       |
+| 37 | Yorekbarn               | 4       |
+| 38 | loranzoo                | 3       |
+| 39 | Medianos                | 3       |
+| 40 | Lanoxian                | 2       |
+| 41 | Gyrodorei               | 1       |
+| 42 | Kylthar                 | 1       |
+| 43 | Samoen&Co.              | 1       |
 
 ### Former members
 

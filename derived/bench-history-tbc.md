@@ -38,10 +38,12 @@ All priority-1 healer-main players: 0 benches at every location. *(No priority-1
 |-------------------------|----------|----------------|-----------|-----------------|-----|-----------|----|----------|-------|
 | CptKavior               | 1        | 08.04          | 1         | 15.04           | 0   | —         | 0  | —        | 2     |
 | Dankyn                  | 1        | 29.04          | 0         | —               | 0   | —         | 0  | —        | 1     |
-| Ebonybolt               | 0        | —              | 1         | 03.05           | 1   | 20.05     | 0  | —        | 2     |
+| Ebonybolt               | 0        | —              | 1         | 03.05           | 1   | 20.05     | 1  | 21.06    | 3     |
+| Lanoxian                | 0        | —              | 0         | —               | 0   | —         | 1  | 21.06    | 1     |
 | loranzoo                | 0        | —              | 0         | —               | 0   | —         | 1  | 14.06    | 1     |
 | Piotr(Bergamotka)       | 1        | 29.04          | 0         | —               | 1   | 17.05     | 0  | —        | 2     |
 | Rickard(Benglock)       | 0        | —              | 0         | —               | 1   | 10.06     | 0  | —        | 1     |
+| Samoen&Co.              | 0        | —              | 0         | —               | 0   | —         | 1  | 21.06    | 1     |
 | Shapkica                | 0        | —              | 1         | 10.05           | 0   | —         | 0  | —        | 1     |
 | Sören(Verysadge)        | 0        | —              | 1         | 15.04           | 0   | —         | 0  | —        | 1     |
 | Stephan(Tímmâ/Toadward) | 0        | —              | 0         | —               | 0   | —         | 1  | 14.06    | 1     |
@@ -72,7 +74,7 @@ All other priority-2 healer-main players: 0 benches at every location.
 | Jordan(Grundiger)  | 0        | —              | 0         | —               | 1   | 20.05     | 0  | —        | 1     |
 | Leontes            | 1        | 08.04          | 0         | —               | 0   | —         | 1  | 14.06    | 2     |
 | Lynelen            | 0        | —              | 1         | 15.04           | 0   | —         | 0  | —        | 1     |
-| Mark(Mellymel)     | 0        | —              | 0         | —               | 1   | 17.05     | 1  | 18.05    | 2     |
+| Mark(Mellymel)     | 0        | —              | 0         | —               | 1   | 17.05     | 2  | 18.05, 21.06 | 3     |
 | McHughes           | 1        | 18.03          | 0         | —               | 0   | —         | 0  | —        | 1     |
 | McJudgin           | 1        | 08.04          | 0         | —               | 0   | —         | 0  | —        | 1     |
 | Tonz/Tonsen        | 1        | 11.03          | 0         | —               | 0   | —         | 0  | —        | 1     |
